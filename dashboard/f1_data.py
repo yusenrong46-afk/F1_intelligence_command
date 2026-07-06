@@ -616,26 +616,26 @@ def answer_artifact_question(data: dict[str, Any], question: str) -> dict[str, A
     benchmark = manifest.get("benchmark_metrics") or {}
     if not text:
         return _chat_answer(
-            summary="Ask about verified rules, review items, evidence, compliance, or F1 safety.",
-            details=["F1 can explain what is verified, what is still under review, and what evidence supports a rule."],
+            summary="Ask about a rule, review item, source citation, GIS handoff, or safety gate.",
+            details=["F1 answers from the current run artifacts and keeps approvals out of chat."],
             next_step="Try a question such as: What is the maximum lot coverage?",
             citations=[],
             tone="neutral",
         )
     if any(word in text for word in ("approve", "permit", "allowed to build", "legal to build", "mark verified", "promote")):
         return _chat_answer(
-            summary="F1 chat cannot approve permits, mark rules verified, or promote review items.",
+            summary="Chat cannot approve permits, verify rules, or promote review items.",
             details=[
-                "The chatbot can explain verified rules and review gaps, but it is not a decision maker.",
+                "It can explain verified rules and review gaps, but it is not a decision maker.",
                 "Only deterministic verification can promote a rule, and downstream compliance can only use verified rules.",
             ],
-            next_step="Use GIS Handoff or the scenario builder for a scoped verified-rule check; use human review for anything uncertain.",
+            next_step="Use GIS + Compliance or the scenario builder for a scoped verified-rule check; use Review Workbench for anything uncertain.",
             citations=[],
             tone="blocked",
         )
     if "false" in text or "safe" in text or "safety" in text:
         return _chat_answer(
-            summary="The current Burnaby F1 run passes the safety gates.",
+            summary="The current Burnaby F1 run is benchmark-safe for the loaded artifacts.",
             details=[
                 f"False verified rules: {health.get('false_verified_count', 0)}.",
                 f"False approvals: {health.get('false_approval_count', 0)}.",
@@ -649,13 +649,13 @@ def answer_artifact_question(data: dict[str, Any], question: str) -> dict[str, A
     if "gis" in text or "map" in text:
         gis = data.get("gis_contract") or {}
         return _chat_answer(
-            summary="GIS receives verified rules only.",
+            summary="GIS can use verified rules only.",
             details=[
                 f"GIS export contains {gis.get('export_rule_count', health.get('verified_rule_count', 0))} verified rules.",
                 f"It excludes {gis.get('excluded_review_rule_count', health.get('review_queue_count', 0))} review items.",
                 "Review rules cannot be used by GIS.",
             ],
-            next_step="Open GIS Handoff to download the verified-only `gis_rule_contract.json`.",
+            next_step="Open GIS + Compliance to download the verified-only `gis_rule_contract.json`.",
             citations=["gis_rule_contract.json"],
             tone="safe",
         )
@@ -663,9 +663,9 @@ def answer_artifact_question(data: dict[str, Any], question: str) -> dict[str, A
         gaps = review_gap_rows(data)[:3]
         details = [f"{row['gap'].replace('_', ' ')}: {row['count']} item(s)." for row in gaps] or ["No review gaps are loaded."]
         return _chat_answer(
-            summary=f"F1 has {health.get('review_queue_count', 0)} items still held for review.",
+            summary=f"F1 has {health.get('review_queue_count', 0)} operator queue records that are not verified outputs.",
             details=details,
-            next_step="Open Human Review, choose one item, and save a draft operator action if the next step is clear.",
+            next_step="Open Review Workbench, choose one item, and save a draft operator action if the next step is clear.",
             citations=["review_queue.json", "operator_action_templates.json"],
             tone="review",
         )
@@ -673,12 +673,12 @@ def answer_artifact_question(data: dict[str, Any], question: str) -> dict[str, A
         rows = evidence_rows(data, limit=1)
         citation = rows[0] if rows else {}
         return _chat_answer(
-            summary="Every visible verified rule is tied back to source evidence.",
+            summary="Visible verified rules are tied back to source evidence.",
             details=[
                 f"Example: {citation.get('rule_id', 'n/a')} cites {citation.get('evidence_id', 'n/a')} on page {citation.get('page', 'n/a')}.",
-                "The Source Documents page also has rule-to-source navigation for verified and review items.",
+                "The Sources page also has rule-to-source navigation for verified and review items.",
             ],
-            next_step="Open Source Documents and search by rule id, evidence id, object, or quote.",
+            next_step="Open Sources and search by rule id, evidence id, object, or quote.",
             citations=[str(citation.get("evidence_id"))] if citation.get("evidence_id") else [],
             tone="neutral",
         )
@@ -696,14 +696,14 @@ def answer_artifact_question(data: dict[str, Any], question: str) -> dict[str, A
                 + (f" Evidence: {evidence_id}." if evidence_id else "")
             )
         return _chat_answer(
-            summary=f"I found {min(len(matched_rules), 4)} matching verified F1 rule(s).",
+            summary=f"I found {min(len(matched_rules), 4)} verified rule(s) that match your wording.",
             details=details,
-            next_step="Use Verified Rules to inspect the full rule family, or GIS Handoff for a scoped scenario check.",
+            next_step="Use Verified Rules to inspect the full rule family, or GIS + Compliance for a scoped scenario check.",
             citations=list(dict.fromkeys(citations)),
             tone="safe",
         )
     return _chat_answer(
-        summary="I do not have a specific verified rule match for that wording yet.",
+        summary="I cannot prove a specific verified rule from that wording yet.",
         details=[
             f"Current run contains {health.get('verified_rule_count', 0)} verified rules and {health.get('review_queue_count', 0)} review items.",
             f"Retrieval recall is {_format_pct(benchmark.get('retrieval_recall_at_6'))}; candidate recall is {_format_pct(benchmark.get('candidate_recall'))}.",

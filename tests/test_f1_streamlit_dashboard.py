@@ -48,12 +48,12 @@ def test_f1_streamlit_app_source_parses_and_imports() -> None:
     module = _load_module("f1_command_center_import_test", APP_PATH)
     assert hasattr(module, "main")
     assert module.NAV_ITEMS == [
-        "0 Results + Chat",
-        "1 Source Documents",
+        "0 Command Center",
+        "1 Sources",
         "2 Verified Rules",
-        "3 Human Review",
+        "3 Review Workbench",
         "4 Repair Evidence",
-        "5 GIS Handoff",
+        "5 GIS + Compliance",
         "6 Quality Audit",
     ]
     assert "M8.5" not in APP_PATH.read_text(encoding="utf-8")
@@ -224,7 +224,7 @@ def test_f1_data_provider_loads_command_center_manifest(tmp_path: Path) -> None:
     assert approval_answer["details"]
     gis_answer = answer_artifact_question(data, "Can GIS use review rules?")
     assert "Review rules cannot be used by GIS" in gis_answer["answer"]
-    assert gis_answer["summary"] == "GIS receives verified rules only."
+    assert gis_answer["summary"] == "GIS can use verified rules only."
     rule_answer = answer_artifact_question(data, "What is the height?")
     assert rule_answer["summary"].startswith("I found")
     assert rule_answer["citations"] == ["ev_height"]

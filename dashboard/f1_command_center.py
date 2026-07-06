@@ -41,32 +41,32 @@ from dashboard.f1_data import (  # noqa: E402
 
 
 NAV_ITEMS = [
-    "0 Results + Chat",
-    "1 Source Documents",
+    "0 Command Center",
+    "1 Sources",
     "2 Verified Rules",
-    "3 Human Review",
+    "3 Review Workbench",
     "4 Repair Evidence",
-    "5 GIS Handoff",
+    "5 GIS + Compliance",
     "6 Quality Audit",
 ]
 
 PAGE_TITLES = {
-    "0 Results + Chat": "Zoning Bylaw Verification Overview",
-    "1 Source Documents": "Source Documents",
+    "0 Command Center": "Bylaw Intelligence Command Center",
+    "1 Sources": "Source Documents",
     "2 Verified Rules": "Verified Rules",
-    "3 Human Review": "Human Review",
+    "3 Review Workbench": "Review Workbench",
     "4 Repair Evidence": "Repair Evidence",
-    "5 GIS Handoff": "GIS Handoff",
+    "5 GIS + Compliance": "GIS + Compliance",
     "6 Quality Audit": "Quality Checks",
 }
 
 PAGE_BLURBS = {
-    "0 Results + Chat": "Start with the verification result, then ask the bylaw. Details stay in the focused pages on the left.",
-    "1 Source Documents": "Official bylaw PDFs, scoped source pages, and evidence packets used by the verifier.",
+    "0 Command Center": "A city bylaw run distilled into verified rules, review work, source evidence, and bounded answers.",
+    "1 Sources": "Official bylaw PDFs, scoped source pages, and evidence packets used by the verifier.",
     "2 Verified Rules": "Source-supported rules that can be used downstream.",
-    "3 Human Review": "One held candidate at a time: why it is blocked, what evidence differs, and what to inspect next.",
+    "3 Review Workbench": "One held candidate at a time: why it is blocked, what evidence differs, and what to inspect next.",
     "4 Repair Evidence": "Shadow evidence checks: what improved, what still blocks verification, and why outputs do not change automatically.",
-    "5 GIS Handoff": "Verified-only, deduplicated rules prepared for GIS use.",
+    "5 GIS + Compliance": "Verified-only, deduplicated rules prepared for map and scenario use.",
     "6 Quality Audit": "Audit support for source coverage, status mix, and verification-flow diagnostics.",
 }
 
@@ -78,8 +78,8 @@ def main() -> None:
         raise SystemExit("Streamlit is required: .venv/bin/python -m streamlit run streamlit_app.py") from exc
 
     st.set_page_config(
-        page_title="F1 Bylaw Verification Dashboard",
-        page_icon="BV",
+        page_title="F1 Bylaw Command Center",
+        page_icon="F1",
         layout="wide",
         initial_sidebar_state="expanded",
     )
@@ -94,17 +94,17 @@ def main() -> None:
     page = _sidebar_nav(st, data)
     _page_header(st, data, page)
 
-    if page == "0 Results + Chat":
+    if page == "0 Command Center":
         _results_chat_page(st, data)
-    elif page == "1 Source Documents":
+    elif page == "1 Sources":
         _source_documents_page(st, data)
     elif page == "2 Verified Rules":
         _verified_rules_page(st, data)
-    elif page == "3 Human Review":
+    elif page == "3 Review Workbench":
         _human_review_page(st, data)
     elif page == "4 Repair Evidence":
         _repair_evidence_page(st, data)
-    elif page == "5 GIS Handoff":
+    elif page == "5 GIS + Compliance":
         _gis_handoff_page(st, data)
     else:
         _quality_audit_page(st, data)
@@ -120,7 +120,7 @@ def _sidebar_output_selector(st: Any) -> Path:
     ]
 
     st.sidebar.markdown(
-        "<div class='side-brand'><span>BV</span><b>Bylaw Verification<br>Dashboard</b></div>",
+        "<div class='side-brand'><span>F1</span><b>Bylaw Command<br>Center</b></div>",
         unsafe_allow_html=True,
     )
     st.sidebar.markdown("<div class='rail-label'>Current run</div>", unsafe_allow_html=True)
@@ -144,10 +144,10 @@ def _sidebar_nav(st: Any, data: dict[str, Any]) -> str:
     st.sidebar.markdown("<div class='rail-label'>Pipeline order</div>", unsafe_allow_html=True)
     page = st.sidebar.radio("Pipeline order", NAV_ITEMS, label_visibility="collapsed")
     st.sidebar.markdown(
-        "<div class='side-rule'><b>One rule</b><span>Verified items move forward. Uncertain items stay in review.</span></div>",
+        "<div class='side-rule'><b>Product law</b><span>Verified rules move forward. Uncertain rules stay out of GIS and approval flows.</span></div>",
         unsafe_allow_html=True,
     )
-    st.sidebar.caption("Evidence-backed bylaw intelligence. Verification controls what moves forward.")
+    st.sidebar.caption("Source-grounded bylaw intelligence. Verification controls what moves forward.")
     return page
 
 
@@ -157,24 +157,29 @@ def _page_header(st: Any, data: dict[str, Any], page: str) -> None:
     health = manifest.get("workflow_health") or {}
     benchmark = manifest.get("benchmark_metrics") or {}
     status = "Benchmark safe" if health.get("quality_gates_passed") else "Needs audit"
+    flow = _candidate_flow_counts(data)
     st.markdown(
         f"""
-        <div class="topline">
-          <span>F1 Command Center · {html.escape(city)}</span>
-          <span class="preview-dot">{html.escape(status)}</span>
+        <div class="command-topbar">
+          <div>
+            <span class="eyebrow">F1 product run</span>
+            <span class="city-chip">{html.escape(city)}</span>
+          </div>
+          <span class="health-chip">{html.escape(status)}</span>
         </div>
         <h1 class="page-title">{html.escape(PAGE_TITLES[page])}</h1>
         <p class="page-blurb">{html.escape(PAGE_BLURBS[page])}</p>
-        <div class="page-status-strip">
-          <span><b>{html.escape(str(health.get("verified_rule_count", 0)))}</b> verified</span>
-          <span><b>{html.escape(str(health.get("review_queue_count", 0)))}</b> review</span>
+        <div class="metric-pill-row">
+          <span><b>{html.escape(str(health.get("verified_rule_count", 0)))}</b> verified rules</span>
+          <span><b>{html.escape(str(health.get("review_queue_count", 0)))}</b> operator queue</span>
+          <span><b>{html.escape(str(flow.get("in_review", 0)))}</b> still needs proof</span>
           <span><b>{html.escape(_pct(benchmark.get("verified_precision")))}</b> precision</span>
           <span><b>{html.escape(str(health.get("false_verified_count", 0)))}</b> false verified</span>
+          <span><b>{html.escape(str(health.get("false_approval_count", 0)))}</b> false approvals</span>
         </div>
         """,
         unsafe_allow_html=True,
     )
-    _visual_story_strip(st)
 
 
 def _results_chat_page(st: Any, data: dict[str, Any]) -> None:
@@ -183,21 +188,13 @@ def _results_chat_page(st: Any, data: dict[str, Any]) -> None:
     flow = _candidate_flow_counts(data)
     total = max(flow["items_checked"], 1)
 
-    st.markdown(
-        "<div class='command-hero source-row'>"
-        f"<div><b>{html.escape(_city_label(manifest.get('city_key')))}</b>"
-        f"<span>{html.escape(source.get('title') or 'Official zoning bylaw source')}</span>"
-        "<small>F1 turns this bylaw slice into verified rules, review work, GIS handoff, and explainable answers.</small></div>"
-        f"<a href='{html.escape(source.get('source_url') or '#')}' target='_blank'>Open official source</a>"
-        "</div>",
-        unsafe_allow_html=True,
-    )
+    _command_briefing(st, data, manifest, source, flow)
 
     verified_pct = flow["verified"] / total * 100
     review_pct = flow["in_review"] / total * 100
     rejected_pct = flow["rejected"] / total * 100
     st.markdown(
-        "<div class='white-card flow-panel'><div class='card-title-row'><h3>Candidate Check Flow</h3><span>Verifier-owned</span></div>"
+        "<div class='white-card flow-panel'><div class='card-title-row'><div class='card-title-text'>Candidate Check Flow</div><span>Verifier-owned</span></div>"
         "<div class='flow-grid'>"
         f"<div class='flow-total'><span>Items checked</span><b>{flow['items_checked']}</b></div>"
         f"<div class='flow-card good'><span>Verified</span><b>{flow['verified']}</b><small>{verified_pct:.1f}%. Moves downstream.</small></div>"
@@ -213,18 +210,50 @@ def _results_chat_page(st: Any, data: dict[str, Any]) -> None:
 
     left, right = st.columns([1.1, 0.9])
     with left:
-        st.markdown("<div class='white-card chat-shell'><h3>Ask the Bylaw <span class='tag'>source grounded</span></h3>", unsafe_allow_html=True)
-        st.markdown(
-            "<div class='callout'>Ask a bylaw question after checking the verification result. "
-            "The answer uses F1 artifacts and cannot approve or edit rules.</div>",
-            unsafe_allow_html=True,
-        )
+        st.markdown("<div class='white-card chat-shell'><div class='card-title-row'><div class='card-title-text'>Ask the Bylaw</div><span>source grounded</span></div>", unsafe_allow_html=True)
         _ask_f1(st, data, key="home")
         st.markdown("</div>", unsafe_allow_html=True)
     with right:
         _guardrail_panel(st, data)
 
     _next_actions(st)
+
+
+def _command_briefing(
+    st: Any,
+    data: dict[str, Any],
+    manifest: dict[str, Any],
+    source: dict[str, Any],
+    flow: dict[str, int],
+) -> None:
+    benchmark = manifest.get("benchmark_metrics") or {}
+    health = manifest.get("workflow_health") or {}
+    source_title = _pretty_source_title(source.get("title") or "Official zoning bylaw source")
+    st.markdown(
+        "<div class='briefing-shell'>"
+        "<div class='brief-main'>"
+        "<div class='brief-kicker'>Source-to-decision control plane</div>"
+        f"<h2>{html.escape(_city_label(manifest.get('city_key')))} bylaw run</h2>"
+        f"<p>{html.escape(source_title)} has been turned into a working product surface: verified constraints, review work, GIS handoff, scenario checks, and source-grounded chat.</p>"
+        "<div class='system-map'>"
+        "<span>Official source</span><i></i><span>Evidence retrieval</span><i></i><span>Rule candidates</span><i></i><span>Verifier</span><i></i><span>Command center</span>"
+        "</div>"
+        "</div>"
+        "<div class='brief-scoreboard'>"
+        f"{_score_tile('Verified', flow['verified'], 'good')}"
+        f"{_score_tile('Needs proof', flow['in_review'], 'warn')}"
+        f"{_score_tile('Rejected', flow['rejected'], 'bad')}"
+        f"{_score_tile('Precision', _pct(benchmark.get('verified_precision')), 'good')}"
+        "</div>"
+        "<div class='brief-rail'>"
+        f"<a href='{html.escape(source.get('source_url') or '#')}' target='_blank'>Open source PDF</a>"
+        f"<span>{html.escape(str(health.get('review_queue_count', 0)))} operator queue records</span>"
+        f"<span>{html.escape(str(health.get('false_verified_count', 0)))} false verified</span>"
+        f"<span>{html.escape(str(health.get('false_approval_count', 0)))} false approvals</span>"
+        "</div>"
+        "</div>",
+        unsafe_allow_html=True,
+    )
 
 
 def _source_documents_page(st: Any, data: dict[str, Any]) -> None:
@@ -257,18 +286,18 @@ def _source_documents_page(st: Any, data: dict[str, Any]) -> None:
                 "sha256": source.get("sha256"),
             }
         ],
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
     st.subheader("Evidence Packets")
-    st.dataframe(retrieval_evidence_rows(data, limit=100), use_container_width=True, hide_index=True)
+    st.dataframe(retrieval_evidence_rows(data, limit=100), width="stretch", hide_index=True)
     st.subheader("Rule-to-Source Navigation")
     nav_left, nav_right = st.columns([1, 2])
     source_filter = nav_left.selectbox("Evidence source", ["", "verified", "review"], format_func=lambda value: value.title() if value else "All")
     evidence_query = nav_right.text_input("Search evidence navigation", placeholder="rule id, evidence id, object, quote...")
     st.dataframe(
         evidence_navigation_rows(data, source=source_filter, query=evidence_query, limit=200),
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
 
@@ -291,7 +320,7 @@ def _verified_rules_page(st: Any, data: dict[str, Any]) -> None:
     ]
     family_rows = [{"rule_family": key.replace("_", " ").title(), "count": len(value)} for key, value in groups.items()]
     st.markdown("<div class='rail-label light'>Rule family groups</div>", unsafe_allow_html=True)
-    st.dataframe(family_rows, use_container_width=True, hide_index=True)
+    st.dataframe(family_rows, width="stretch", hide_index=True)
 
     display_groups = _rules_by_object(filtered)
     for family, family_rules in display_groups.items():
@@ -325,13 +354,13 @@ def _human_review_page(st: Any, data: dict[str, Any]) -> None:
     _review_detail(st, item, closest)
     _operator_action_draft(st, data, item)
     with st.expander("Show grouped worklist", expanded=False):
-        st.dataframe(rows, use_container_width=True, hide_index=True)
+        st.dataframe(rows, width="stretch", hide_index=True)
     with st.expander("Show source packet", expanded=False):
-        st.dataframe(_review_evidence_table(item), use_container_width=True, hide_index=True)
+        st.dataframe(_review_evidence_table(item), width="stretch", hide_index=True)
     with st.expander("Show routing table", expanded=False):
-        st.dataframe(review_gap_rows(data), use_container_width=True, hide_index=True)
+        st.dataframe(review_gap_rows(data), width="stretch", hide_index=True)
     with st.expander("Show saved operator action log", expanded=False):
-        st.dataframe(operator_review_action_rows(data), use_container_width=True, hide_index=True)
+        st.dataframe(operator_review_action_rows(data), width="stretch", hide_index=True)
 
 
 def _review_detail(st: Any, item: dict[str, Any], closest: dict[str, Any] | None) -> None:
@@ -360,7 +389,7 @@ def _review_detail(st: Any, item: dict[str, Any], closest: dict[str, Any] | None
     )
     if closest:
         st.subheader("Highlighted differences")
-        st.dataframe(_field_comparison_rows(item, closest), use_container_width=True, hide_index=True)
+        st.dataframe(_field_comparison_rows(item, closest), width="stretch", hide_index=True)
 
 
 def _operator_action_draft(st: Any, data: dict[str, Any], item: dict[str, Any]) -> None:
@@ -432,9 +461,9 @@ def _repair_evidence_page(st: Any, data: dict[str, Any]) -> None:
     else:
         st.info("No guarded repair promotions are loaded for this run.")
     with st.expander("Show all repair rows", expanded=False):
-        st.dataframe(data.get("guarded_repair_promotions") or [], use_container_width=True)
+        st.dataframe(data.get("guarded_repair_promotions") or [], width="stretch")
     with st.expander("Show rerun table", expanded=False):
-        st.dataframe(data.get("verifier_rerun_requests") or [], use_container_width=True)
+        st.dataframe(data.get("verifier_rerun_requests") or [], width="stretch")
 
 
 def _repair_result(st: Any, data: dict[str, Any], promotion: dict[str, Any]) -> None:
@@ -459,7 +488,7 @@ def _repair_result(st: Any, data: dict[str, Any], promotion: dict[str, Any]) -> 
         "</div>",
         unsafe_allow_html=True,
     )
-    st.dataframe(proof_rows, use_container_width=True, hide_index=True)
+    st.dataframe(proof_rows, width="stretch", hide_index=True)
 
 
 def _gis_handoff_page(st: Any, data: dict[str, Any]) -> None:
@@ -520,7 +549,7 @@ def _scenario_builder(st: Any, data: dict[str, Any], rules: list[dict[str, Any]]
         f"<span>{html.escape(result['message'])}</span></div>",
         unsafe_allow_html=True,
     )
-    st.dataframe(scenario_template_rows(data), use_container_width=True, hide_index=True)
+    st.dataframe(scenario_template_rows(data), width="stretch", hide_index=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -551,16 +580,16 @@ def _quality_audit_page(st: Any, data: dict[str, Any]) -> None:
     left, right = st.columns(2)
     with left:
         st.subheader("Benchmark Gates")
-        st.dataframe(benchmark_gate_rows(data), use_container_width=True, hide_index=True)
+        st.dataframe(benchmark_gate_rows(data), width="stretch", hide_index=True)
     with right:
         st.subheader("Review Gap Mix")
-        st.dataframe(review_gap_rows(data), use_container_width=True, hide_index=True)
+        st.dataframe(review_gap_rows(data), width="stretch", hide_index=True)
     st.subheader("Checkpoint 16 Operations Trace")
     ops_left, ops_right = st.columns(2)
     with ops_left:
-        st.dataframe(operator_action_template_rows(data), use_container_width=True, hide_index=True)
+        st.dataframe(operator_action_template_rows(data), width="stretch", hide_index=True)
     with ops_right:
-        st.dataframe(operator_review_action_rows(data), use_container_width=True, hide_index=True)
+        st.dataframe(operator_review_action_rows(data), width="stretch", hide_index=True)
 
 
 def _visual_story_strip(st: Any) -> None:
@@ -582,7 +611,7 @@ def _visual_story_strip(st: Any) -> None:
         if not path.exists():
             continue
         with cols[index % 2]:
-            st.image(str(path), use_container_width=True)
+            st.image(str(path), width="stretch")
             st.markdown(
                 "<div class='hero-note'><b>"
                 + html.escape(label)
@@ -612,10 +641,12 @@ def _operations_status_panel(st: Any, data: dict[str, Any]) -> None:
     operations = data.get("operations_report") or {}
     manifest = data.get("manifest") or {}
     app_version = manifest.get("app_version") or "checkpoint_15"
+    version_digits = "".join(char for char in str(app_version) if char.isdigit())
+    app_version_label = "F1 C" + ((version_digits[-2:].lstrip("0") or version_digits) if version_digits else "?")
     st.markdown(
-        "<div class='ops-panel'><div class='card-title-row'><h3>Product operations</h3><span>checkpoint 16</span></div>"
+        "<div class='ops-panel'><div class='card-title-row'><div class='card-title-text'>Product operations</div><span>checkpoint 16</span></div>"
         "<div class='mini-grid'>"
-        f"{_mini_metric('App version', app_version, 'current product surface')}"
+        f"{_mini_metric('App version', app_version_label, 'current product surface')}"
         f"{_mini_metric('Review drafts', operations.get('action_template_count', 0), 'safe action templates')}"
         f"{_mini_metric('Scenario templates', operations.get('scenario_template_count', 0), 'verified-rule checks')}"
         f"{_mini_metric('Evidence links', operations.get('evidence_navigation_count', 0), 'rule-to-source rows')}"
@@ -629,15 +660,15 @@ def _operations_status_panel(st: Any, data: dict[str, Any]) -> None:
 def _ask_f1(st: Any, data: dict[str, Any], *, key: str) -> None:
     prompt_key = f"f1_chat_prompt_{key}"
     suggestions = [
-        "What is the minimum lot area?",
-        "How many dwelling units are allowed?",
         "What is the maximum lot coverage?",
+        "What still needs review?",
         "Can GIS use review rules?",
+        "Is this run safe enough to demo?",
     ]
     st.markdown("<div class='rail-label light'>Prompt library</div>", unsafe_allow_html=True)
     cols = st.columns(2)
     for index, suggestion in enumerate(suggestions):
-        if cols[index % 2].button(suggestion, key=f"suggestion_{key}_{index}", use_container_width=True):
+        if cols[index % 2].button(suggestion, key=f"suggestion_{key}_{index}", width="stretch"):
             st.session_state[prompt_key] = suggestion
     question = st.text_input("Ask", key=prompt_key, placeholder="Ask a bylaw question...")
     if question:
@@ -656,11 +687,17 @@ def _chat_answer_markup(answer: dict[str, Any]) -> str:
         if citations
         else "<div class='citation-row muted'><b>Citations</b><span>No citation needed for this boundary answer.</span></div>"
     )
+    label = {
+        "safe": "Verified answer",
+        "review": "Needs review",
+        "blocked": "Boundary",
+        "neutral": "F1 answer",
+    }.get(tone, "F1 answer")
     return (
         f"<div class='answer-card {html.escape(tone)}'>"
-        f"<div class='answer-kicker'>{html.escape(_plain_label(tone))}</div>"
+        f"<div class='answer-kicker'>{html.escape(label)}</div>"
         f"<h4>{html.escape(str(answer.get('summary') or answer.get('answer') or 'Answer unavailable.'))}</h4>"
-        + (f"<ul>{details}</ul>" if details else "")
+        + (f"<div class='answer-detail'><b>What this means</b><ul>{details}</ul></div>" if details else "")
         + f"<div class='next-step'><b>Next</b><span>{html.escape(str(answer.get('next_step') or 'Open the relevant F1 page for details.'))}</span></div>"
         + citation_html
         + "</div>"
@@ -669,11 +706,11 @@ def _chat_answer_markup(answer: dict[str, Any]) -> str:
 
 def _next_actions(st: Any) -> None:
     st.markdown(
-        "<div class='white-card'><div class='card-title-row'><h3>Next best actions</h3><span>Start here</span></div>"
+        "<div class='white-card'><div class='card-title-row'><div class='card-title-text'>Next best actions</div><span>Start here</span></div>"
         "<div class='action-grid'>"
         "<div><b>Explain the result</b><span>Use Ask the Bylaw for a plain-language answer with boundaries and citations.</span></div>"
-        "<div><b>Resolve review work</b><span>Open Human Review, compare the held rule, and save a draft next step.</span></div>"
-        "<div><b>Use verified outputs</b><span>Open GIS Handoff for verified-only rules and scoped scenario checks.</span></div>"
+        "<div><b>Resolve review work</b><span>Open Review Workbench, compare the held rule, and save a draft next step.</span></div>"
+        "<div><b>Use verified outputs</b><span>Open GIS + Compliance for verified-only rules and scoped scenario checks.</span></div>"
         "</div></div>",
         unsafe_allow_html=True,
     )
@@ -830,6 +867,18 @@ def _gap_reason(item: dict[str, Any]) -> str:
     return "Verifier held this candidate because " + ", ".join(_plain_label(gap) for gap in gaps[:3]) + "."
 
 
+def _score_tile(label: str, value: Any, tone: str) -> str:
+    return (
+        "<div class='score-tile "
+        + html.escape(str(tone))
+        + "'><span>"
+        + html.escape(str(label))
+        + "</span><b>"
+        + html.escape(str(value))
+        + "</b></div>"
+    )
+
+
 def _mini_metric(label: str, value: Any, note: str) -> str:
     return (
         "<div class='mini-card'><span>"
@@ -877,65 +926,83 @@ def _city_label(value: Any) -> str:
     return text.replace("R1", "R1")
 
 
+def _pretty_source_title(value: Any) -> str:
+    title = str(value or "Official zoning bylaw source").strip()
+    if title.lower().endswith(".pdf"):
+        title = title[:-4]
+    return title.replace("-", " ").replace("  ", " ")
+
+
 def _style(st: Any) -> None:
     st.markdown(
         """
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600;700&display=swap');
         :root {
-          --ink:#17202a; --muted:#667483; --line:#d9e1e8; --hair:#edf1f4;
-          --panel:#ffffff; --bg:#f4f8f8; --rail:#111827; --rail2:#0c1118;
-          --green:#1f7a4d; --green-soft:#ecf7ef; --amber:#a16207; --amber-soft:#fff7df;
-          --red:#b42318; --red-soft:#fff0ed; --blue:#245f9f; --blue-soft:#edf5fb;
-          --shadow:0 12px 28px rgba(16,24,40,.07);
+          --ink:#172033; --muted:#647184; --soft:#8b98a8; --line:#d9e3eb; --hair:#edf2f6;
+          --panel:#ffffff; --canvas:#f4f7f9; --rail:#0d1626; --rail2:#111b2d;
+          --green:#176a3b; --green-soft:#eaf7ef; --amber:#946200; --amber-soft:#fff5d9;
+          --red:#b42318; --red-soft:#fff0ed; --blue:#245d91; --blue-soft:#eaf3fb;
+          --shadow:0 20px 46px rgba(23,32,51,.11); --tight:0 9px 22px rgba(23,32,51,.075);
         }
         #MainMenu, footer, div[data-testid="stDecoration"] {display:none;}
         header[data-testid="stHeader"] {background:transparent;}
-        html, body, [class*="css"] {font-family:"IBM Plex Mono", Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink);}
-        .stApp {
-          background:
-            radial-gradient(circle at 6% 8%, rgba(255,255,255,.9) 0%, rgba(255,255,255,.24) 32%),
-            radial-gradient(circle at 82% 0%, rgba(30,122,77,.16) 0%, rgba(255,255,255,0) 48%),
-            linear-gradient(160deg, #f7fbff 0%, #f2f8f0 40%, #f4f8f8 100%);
-          background-attachment: fixed;
+        html, body, .stApp, .stApp div, .stApp p, .stApp span, .stApp label, .stApp input, .stApp textarea, .stApp button {
+          font-family:Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+          letter-spacing:0 !important;
         }
-        .block-container {max-width:1180px; padding:36px 2.2rem 56px; margin-left:0; position:relative; z-index:1;}
-        .block-container::before {
-          content:""; position:fixed; inset:0 0 auto 0; height:90px; z-index:-1; pointer-events:none;
-          background:linear-gradient(to right, #ffffff 0%, rgba(245,248,246,0) 55%);
-        }
-        section[data-testid="stSidebar"] {background:linear-gradient(180deg,var(--rail),var(--rail2));}
+        .stApp {color:var(--ink); background:linear-gradient(180deg,#fbfcfd 0%, var(--canvas) 360px, #eef3f6 100%);}
+        .block-container {max-width:1260px; padding:36px 2rem 58px; margin-left:0; position:relative; z-index:1;}
+        section[data-testid="stSidebar"] {background:linear-gradient(180deg,var(--rail),var(--rail2)); border-right:1px solid rgba(255,255,255,.08);}
         section[data-testid="stSidebar"] * {color:#f7fafc;}
         section[data-testid="stSidebar"] [data-testid="stSelectbox"] label {display:none;}
         section[data-testid="stSidebar"] [data-baseweb="select"] > div {
-          background:#202c38 !important; border:1px solid rgba(255,255,255,.16) !important; border-radius:10px !important;
+          min-height:42px; background:#182231 !important; border:1px solid rgba(255,255,255,.14) !important; border-radius:8px !important;
+          box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
         }
         section[data-testid="stSidebar"] [data-baseweb="select"] span,
         section[data-testid="stSidebar"] [data-baseweb="select"] div {color:#f7fafc !important;}
         .side-brand {display:flex; gap:13px; align-items:center; margin:24px 0 30px;}
-        .side-brand span {display:flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:10px; border:1px solid #80c991; background:#173a2b; color:white; font-weight:800;}
-        .side-brand b {font-size:16px; line-height:1.15;}
-        .rail-label {font-size:11px; letter-spacing:.12em; text-transform:uppercase; font-weight:800; color:#a8b3bf !important; margin:18px 0 8px;}
+        .side-brand span {display:flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:9px; border:1px solid #80d99e; background:#123922; color:white; font-family:"IBM Plex Mono", monospace !important; font-weight:800;}
+        .side-brand b {font-size:15px; line-height:1.18; font-weight:800;}
+        .rail-label {font-family:"IBM Plex Mono", monospace !important; font-size:11px; letter-spacing:.09em !important; text-transform:uppercase; font-weight:800; color:#aab6c5 !important; margin:20px 0 9px;}
         .rail-label.light {color:#65758b !important; margin-top:8px;}
-        .source-card, .side-rule {border:1px solid rgba(255,255,255,.12); border-radius:8px; padding:14px; background:rgba(255,255,255,.04); margin:18px 0;}
+        .source-card, .side-rule {border:1px solid rgba(255,255,255,.12); border-radius:10px; padding:14px; background:rgba(255,255,255,.05); margin:18px 0;}
         .source-card span, .side-rule span {display:block; color:#c7d0da !important; font-size:13px; line-height:1.45; margin-bottom:12px;}
-        .source-card a {color:#a7f3b5 !important; font-weight:700; text-decoration:none;}
+        .source-card a {color:#a7f3b5 !important; font-weight:800; text-decoration:none;}
         section[data-testid="stSidebar"] div[role="radiogroup"] > label {
-          padding:10px 14px; border-radius:10px; margin:2px 0; color:#d9e1ea !important; font-size:14px; font-weight:600;
+          min-height:42px; padding:10px 14px; border-radius:9px; margin:3px 0; color:#d9e1ea !important; font-size:14px; font-weight:700;
+          border:1px solid transparent;
         }
-        section[data-testid="stSidebar"] div[role="radiogroup"] > label:has(input:checked) {background:#2f7d46; color:white !important;}
+        section[data-testid="stSidebar"] div[role="radiogroup"] > label:has(input:checked) {background:#237b47; border-color:#58b979; color:white !important; box-shadow:0 8px 22px rgba(0,0,0,.18);}
         section[data-testid="stSidebar"] div[role="radiogroup"] > label > div:first-child {display:none;}
-        .topline {display:flex; justify-content:space-between; align-items:center; gap:12px; font-size:13px; color:#687789; margin-bottom:2px;}
-        .preview-dot::after {content:""; display:inline-block; width:8px; height:8px; border-radius:999px; background:var(--green); margin-left:8px;}
-        .page-title {font-size:36px; line-height:1.08; letter-spacing:0; margin:10px 0 12px;}
-        .page-blurb {font-size:16px; color:#4b5563; max-width:760px; line-height:1.55; margin-bottom:14px;}
-        .page-status-strip {display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 20px;}
-        .page-status-strip span {border:1px solid var(--line); border-radius:8px; background:white; padding:8px 10px; color:#526170; font-size:13px;}
-        .page-status-strip b {color:var(--ink); margin-right:4px;}
-        .white-card, .ops-panel, .command-hero {position:relative; background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:20px; margin:16px 0; box-shadow:var(--shadow);}
-        .white-card h3 {font-size:19px; margin:0 0 16px;}
-        .command-hero {background:linear-gradient(135deg,#ffffff,#f1f6eb); border-color:#c8e3d0; overflow:hidden;}
-        .command-hero::after {content:""; position:absolute; inset:0; pointer-events:none; opacity:.35; background:linear-gradient(130deg, transparent 0%, rgba(20,130,79,.12) 40%, transparent 70%);}
+        .command-topbar {display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:10px;}
+        .eyebrow {font-family:"IBM Plex Mono", monospace !important; font-size:12px; letter-spacing:.08em !important; text-transform:uppercase; color:#617085; font-weight:800;}
+        .city-chip, .health-chip {display:inline-flex; align-items:center; min-height:30px; margin-left:10px; border:1px solid var(--line); border-radius:999px; padding:5px 11px; background:white; color:#475569; font-size:12px; font-weight:800; box-shadow:0 3px 8px rgba(23,32,51,.04);}
+        .health-chip::after {content:""; width:8px; height:8px; border-radius:99px; background:var(--green); margin-left:8px;}
+        .page-title {font-family:Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important; font-size:42px; font-weight:800; line-height:1.06; margin:8px 0 10px; color:#111827;}
+        .page-blurb {font-size:16px; color:#4c5b6d; max-width:810px; line-height:1.58; margin:0 0 14px;}
+        .metric-pill-row {display:flex; flex-wrap:wrap; gap:9px; margin:14px 0 20px;}
+        .metric-pill-row span {border:1px solid var(--line); border-radius:999px; background:white; padding:8px 12px; color:#526170; font-size:13px; box-shadow:0 3px 8px rgba(23,32,51,.04);}
+        .metric-pill-row b {font-family:"IBM Plex Mono", monospace !important; color:#15202d; margin-right:5px;}
+        .white-card, .ops-panel {position:relative; background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:20px; margin:16px 0; box-shadow:var(--tight);}
+        .white-card h3, .ops-panel h3 {font-size:18px; line-height:1.2; margin:0 0 14px;}
+        .white-card p, .ops-panel p {color:#536273; line-height:1.55;}
+        .briefing-shell {display:grid; grid-template-columns:1.42fr 1fr; gap:18px; padding:22px; margin:18px 0 16px; background:linear-gradient(135deg,#ffffff 0%,#f8fbf9 100%); border:1px solid #cfdce7; border-radius:12px; box-shadow:var(--shadow);}
+        .brief-main h2 {font-size:30px; font-weight:800; margin:4px 0 8px; color:#111827;}
+        .brief-main p {margin:0; color:#4d5b6d; line-height:1.5; max-width:720px;}
+        .brief-kicker {font-family:"IBM Plex Mono", monospace !important; font-size:11px; letter-spacing:.08em !important; text-transform:uppercase; font-weight:800; color:var(--green);}
+        .system-map {display:grid; grid-template-columns:auto 1fr auto 1fr auto 1fr auto 1fr auto; gap:8px; align-items:center; margin-top:18px;}
+        .system-map span {display:flex; min-height:34px; align-items:center; justify-content:center; border:1px solid var(--line); background:#f8fafb; border-radius:9px; padding:0 10px; font-size:12px; font-weight:800; color:#334155; white-space:nowrap;}
+        .system-map i {height:2px; background:linear-gradient(90deg,var(--green),var(--blue)); border-radius:99px;}
+        .brief-scoreboard {display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px;}
+        .score-tile {border:1px solid var(--line); border-radius:10px; padding:14px; background:#f8fafb;}
+        .score-tile span {display:block; font-family:"IBM Plex Mono", monospace !important; text-transform:uppercase; letter-spacing:.06em !important; font-size:11px; font-weight:800; color:#516174;}
+        .score-tile b {display:block; font-family:"IBM Plex Mono", monospace !important; font-size:28px; line-height:1; margin-top:10px; color:#13202d;}
+        .score-tile.good {background:var(--green-soft); border-color:#bfdfca;} .score-tile.warn {background:var(--amber-soft); border-color:#ecd08a;} .score-tile.bad {background:var(--red-soft); border-color:#f4c8c2;}
+        .brief-rail {grid-column:1 / -1; display:flex; flex-wrap:wrap; gap:10px; align-items:center; border-top:1px solid var(--hair); padding-top:14px;}
+        .brief-rail a, .brief-rail span {border:1px solid var(--line); background:#f8fafb; border-radius:999px; padding:7px 11px; font-size:13px; font-weight:800; color:#425266; text-decoration:none;}
+        .brief-rail a {background:#f0f8f3; color:var(--green); border-color:#c4e1cf;}
         .source-row {display:flex; justify-content:space-between; align-items:center; gap:18px;}
         .source-row span {display:block; color:var(--muted); font-size:13px; margin-top:6px;}
         .source-row small {display:block; margin-top:8px; color:#425466; line-height:1.45; max-width:620px;}
@@ -944,42 +1011,49 @@ def _style(st: Any) -> None:
         .hero-note b {font-size:11px; text-transform:uppercase; letter-spacing:.08em; display:block; color:#4c5566;}
         .hero-note span {display:block; color:#475569; font-size:13px; line-height:1.45;}
         .card-title-row {display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:14px;}
-        .card-title-row h3 {margin:0;}
-        .card-title-row span {font-size:12px; color:var(--green); background:var(--green-soft); border:1px solid #cfe9d6; border-radius:999px; padding:4px 10px; font-weight:800;}
-        .flow-grid {display:grid; grid-template-columns:1.15fr 1fr 1fr 1fr; gap:14px; align-items:stretch; margin-top:8px;}
-        .flow-total, .flow-card {border:1px solid var(--line); border-radius:8px; padding:18px; transition:transform .2s ease, border-color .2s ease;}
-        .flow-total span, .flow-card span {display:block; text-transform:uppercase; font-size:12px; font-weight:800; letter-spacing:.06em; color:#475569;}
-        .flow-total b, .flow-card b {display:block; font-size:36px; line-height:1.05; margin:12px 0 6px;}
+        .card-title-text {font-family:Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important; font-size:19px; line-height:1.2; font-weight:800 !important; color:var(--ink);}
+        .card-title-row [data-testid="stHeadingWithActionElements"] {margin:0;}
+        .card-title-row [data-testid="stHeaderActionElements"] {display:none !important;}
+        .card-title-row h3 {margin:0 !important; padding:0 !important; font-size:18px !important; line-height:1.2 !important; font-weight:800 !important;}
+        .card-title-row h3 span:first-child {display:inline !important; color:var(--ink) !important; background:transparent !important; border:0 !important; padding:0 !important;}
+        .card-title-row > span {font-size:12px; color:var(--green); background:var(--green-soft); border:1px solid #cfe9d6; border-radius:999px; padding:4px 10px; font-weight:800;}
+        .flow-grid {display:grid; grid-template-columns:1.05fr 1fr 1fr 1fr; gap:12px; align-items:stretch; margin-top:8px;}
+        .flow-total, .flow-card {border:1px solid var(--line); border-radius:8px; padding:17px; transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;}
+        .flow-total span, .flow-card span {display:block; font-family:"IBM Plex Mono", monospace !important; text-transform:uppercase; font-size:11px; font-weight:800; letter-spacing:.06em !important; color:#475569;}
+        .flow-total b, .flow-card b {display:block; font-family:"IBM Plex Mono", monospace !important; font-size:38px; line-height:1.02; margin:13px 0 7px;}
         .flow-card small {color:#4b5563; line-height:1.35;}
         .flow-card.good {background:var(--green-soft); border-color:#bfe7c8;} .flow-card.warn {background:var(--amber-soft); border-color:#f1d899;} .flow-card.bad {background:var(--red-soft); border-color:#ffd0ca;}
         .flow-card.good b {color:var(--green);} .flow-card.warn b {color:var(--amber);} .flow-card.bad b {color:var(--red);}
-        .flow-card:hover, .mini-card:hover {transform:translateY(-2px); border-color:#adc9dd;}
+        .flow-card:hover, .mini-card:hover {transform:translateY(-2px); border-color:#adc9dd; box-shadow:0 10px 24px rgba(21,34,50,.08);}
         .flow-bar {display:flex; height:12px; overflow:hidden; border-radius:999px; margin:16px 0 10px; background:#e5e7eb;}
         .flow-bar i.good {background:var(--green);} .flow-bar i.warn {background:var(--amber);} .flow-bar i.bad {background:var(--red);}
         .flow-foot {display:flex; justify-content:space-between; color:#5f6b7a; font-size:13px;} .flow-foot b {color:var(--green);}
         .tag {float:right; background:var(--green-soft); color:var(--green); border-radius:999px; padding:4px 10px; font-size:12px;}
         .callout {background:var(--blue-soft); border:1px solid #cee1f2; border-radius:8px; padding:14px; margin-bottom:14px; color:#243b2a;}
         .tiny-note {color:#5f6b7a; font-size:13px; line-height:1.5; margin:12px 0 0;}
-        .guard-grid, .mini-grid {display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px;}
+        .guard-grid {display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px;}
+        .mini-grid {display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px;}
         .guard-grid div, .mini-card {border:1px solid var(--line); border-radius:8px; padding:14px; background:#fbfcfd; transition:transform .2s ease, border-color .2s ease;}
-        .guard-grid span, .mini-card span {display:block; text-transform:uppercase; font-size:11px; letter-spacing:.06em; font-weight:800; color:#526170;}
-        .guard-grid b, .mini-card b {display:block; font-size:27px; margin-top:8px;} .mini-card small {display:block; color:#667085; margin-top:5px; line-height:1.35;}
+        .guard-grid span, .mini-card span {display:block; font-family:"IBM Plex Mono", monospace !important; text-transform:uppercase; font-size:11px; letter-spacing:.06em !important; font-weight:800; color:#526170;}
+        .guard-grid b, .mini-card b {display:block; font-family:"IBM Plex Mono", monospace !important; font-size:27px; margin-top:8px;} .mini-card small {display:block; color:#667085; margin-top:5px; line-height:1.35;}
         .action-grid {display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px;} .action-grid div {background:#f8fafc; border:1px solid var(--hair); border-radius:8px; padding:15px;} .action-grid b {display:block; margin-bottom:7px;} .action-grid span {color:#5f6b7a; font-size:14px; line-height:1.45;}
-        .answer-card {border:1px solid var(--line); border-radius:8px; padding:16px; margin-top:16px; background:#fbfcfd;}
+        .answer-card {border:1px solid var(--line); border-radius:8px; padding:16px; margin-top:16px; background:#fbfcfd; box-shadow:inset 4px 0 0 #cbd7e3;}
         .answer-card.safe {border-color:#bfe7c8; background:var(--green-soft);}
         .answer-card.review {border-color:#f1d899; background:var(--amber-soft);}
         .answer-card.blocked {border-color:#ffd0ca; background:var(--red-soft);}
-        .answer-kicker {font-size:11px; text-transform:uppercase; letter-spacing:.08em; font-weight:900; color:#526170; margin-bottom:7px;}
+        .answer-kicker {font-family:"IBM Plex Mono", monospace !important; font-size:11px; text-transform:uppercase; letter-spacing:.08em !important; font-weight:900; color:#526170; margin-bottom:7px;}
         .answer-card h4 {font-size:17px; line-height:1.35; margin:0 0 10px;}
+        .answer-detail {border-top:1px solid rgba(15,23,42,.08); padding-top:11px; margin-top:8px;}
+        .answer-detail b {display:block; font-size:12px; color:#475569; margin-bottom:6px;}
         .answer-card ul {margin:0 0 12px 18px; padding:0;}
         .answer-card li {margin:6px 0; line-height:1.45;}
         .next-step, .citation-row {display:grid; grid-template-columns:82px 1fr; gap:12px; border-top:1px solid rgba(15,23,42,.1); padding-top:10px; margin-top:10px; font-size:13px; line-height:1.45;}
         .next-step b, .citation-row b {color:#425466; text-transform:uppercase; letter-spacing:.06em; font-size:11px;}
         .citation-row.muted span {color:#6b7280;}
         .rule-card {display:grid; grid-template-columns:34px 1fr; gap:12px; padding:12px 0; border-bottom:1px solid var(--hair);}
-        .rule-card span {display:flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:7px; background:#eef2f6; font-weight:800; color:#526170;}
+        .rule-card span {display:flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:7px; background:#eef2f6; font-family:"IBM Plex Mono", monospace !important; font-weight:800; color:#526170;}
         .rule-card p {margin:2px 0 0; font-size:15px; line-height:1.45;}
-        .review-grid {display:grid; grid-template-columns:1fr 1fr; gap:16px;} .kv {display:grid; grid-template-columns:130px 1fr; border-top:1px solid var(--hair); padding:10px 0; gap:12px;} .kv b {color:#526170; text-transform:uppercase; font-size:11px; letter-spacing:.06em;} .claim {font-size:17px; line-height:1.5;}
+        .review-grid {display:grid; grid-template-columns:1fr 1fr; gap:16px;} .kv {display:grid; grid-template-columns:130px 1fr; border-top:1px solid var(--hair); padding:10px 0; gap:12px;} .kv b {color:#526170; font-family:"IBM Plex Mono", monospace !important; text-transform:uppercase; font-size:11px; letter-spacing:.06em !important;} .claim {font-size:17px; line-height:1.5;}
         .quality-row {display:grid; grid-template-columns:110px 1fr 44px; gap:12px; align-items:center; margin:10px 0;} .quality-row div {height:12px; background:#edf0f4; border-radius:999px; overflow:hidden;} .quality-row i {display:block; height:100%; background:var(--green);}
         .result-box {border:1px solid var(--line); border-radius:8px; padding:14px; margin:14px 0; display:grid; gap:4px;}
         .result-box.good {background:var(--green-soft); border-color:#bfe7c8;}
@@ -991,21 +1065,23 @@ def _style(st: Any) -> None:
         [data-testid="stMetric"] {border:1px solid var(--line); border-radius:8px; background:white; padding:12px;}
         div.stButton > button, div.stDownloadButton > button, a[data-testid="stLinkButton"] {
           border-radius:8px !important; border:1px solid #cbd7e2 !important; background:#f8fafc !important; color:#17202a !important;
-          min-height:38px; font-weight:750 !important;
+          min-height:39px; font-weight:800 !important; box-shadow:0 2px 7px rgba(16,24,40,.04);
         }
         div.stButton > button:hover, div.stDownloadButton > button:hover, a[data-testid="stLinkButton"]:hover {
           border-color:#9fb6c9 !important; background:#eef5fa !important;
         }
-        div[data-testid="stText"] textarea {
+        input, textarea, div[data-testid="stText"] textarea {
           border:1px solid var(--line) !important; border-radius:8px !important;
         }
         @keyframes appear {
           from {opacity:0; transform:translateY(6px);}
           to {opacity:1; transform:translateY(0);}
         }
-        .white-card, .command-hero {animation:appear .24s ease both;}
+        .white-card, .briefing-shell {animation:appear .24s ease both;}
         @media (max-width: 900px) {
-          .flow-grid, .guard-grid, .mini-grid, .action-grid, .review-grid, .funnel-row, .page-status-strip {grid-template-columns:1fr;}
+          .briefing-shell, .flow-grid, .guard-grid, .mini-grid, .action-grid, .review-grid, .funnel-row, .metric-pill-row {grid-template-columns:1fr;}
+          .system-map {grid-template-columns:1fr;}
+          .system-map i {height:18px; width:2px; margin:0 auto;}
           .flow-foot, .source-row {display:block;}
           .hero-note {grid-template-columns:1fr;}
         }
