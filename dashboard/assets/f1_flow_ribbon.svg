@@ -1,0 +1,39 @@
+<svg width="1100" height="240" viewBox="0 0 1100 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1100" height="240" rx="20" fill="#f6fbf9"/>
+  <rect x="24" y="70" width="1052" height="100" rx="20" fill="#ffffff" stroke="#cfdeee"/>
+
+  <rect x="56" y="98" width="150" height="44" rx="12" fill="#1f7a4d" fill-opacity="0.08" stroke="#8ec9a3"/>
+  <text x="79" y="124" fill="#1f7a4d" font-family="Arial" font-size="13" font-weight="700">Extracted rule</text>
+
+  <rect x="248" y="98" width="150" height="44" rx="12" fill="#245f9f" fill-opacity="0.08" stroke="#92b8df"/>
+  <text x="273" y="124" fill="#245f9f" font-family="Arial" font-size="13" font-weight="700">Evidence indexed</text>
+
+  <rect x="440" y="98" width="150" height="44" rx="12" fill="#f0b429" fill-opacity="0.15" stroke="#e6b34c"/>
+  <text x="463" y="124" fill="#a16207" font-family="Arial" font-size="13" font-weight="700">Repair proposal</text>
+
+  <rect x="632" y="98" width="150" height="44" rx="12" fill="#f0f4fb" stroke="#bed3ea"/>
+  <text x="659" y="124" fill="#245f9f" font-family="Arial" font-size="13" font-weight="700">Verifier rerun</text>
+
+  <rect x="824" y="98" width="150" height="44" rx="12" fill="#d9f5de" stroke="#9fd8b2"/>
+  <text x="853" y="124" fill="#1f7a4d" font-family="Arial" font-size="13" font-weight="700">Verified / export</text>
+
+  <line x1="206" y1="120" x2="248" y2="120" stroke="#8ea7bd" stroke-width="4"/>
+  <line x1="398" y1="120" x2="440" y2="120" stroke="#8ea7bd" stroke-width="4"/>
+  <line x1="590" y1="120" x2="632" y2="120" stroke="#8ea7bd" stroke-width="4"/>
+  <line x1="782" y1="120" x2="824" y2="120" stroke="#8ea7bd" stroke-width="4"/>
+
+  <path d="M206 120 L216 115 L216 125 Z" fill="#8ea7bd"/>
+  <path d="M398 120 L408 115 L408 125 Z" fill="#8ea7bd"/>
+  <path d="M590 120 L600 115 L600 125 Z" fill="#8ea7bd"/>
+  <path d="M782 120 L792 115 L792 125 Z" fill="#8ea7bd"/>
+
+  <text x="56" y="51" fill="#17202a" font-size="22" font-family="Arial" font-weight="700">Command Safety Ribbon</text>
+  <text x="56" y="33" fill="#5f6b7a" font-size="13" font-family="Arial">Only verifier-passed evidence can cross to the downstream layers</text>
+
+  <line x1="56" y1="170" x2="1044" y2="170" stroke="#e5ebf1" stroke-width="2"/>
+  <text x="56" y="195" fill="#344150" font-size="12" font-family="Arial">review_needed / context_required</text>
+  <text x="236" y="195" fill="#344150" font-size="12" font-family="Arial">kept in review packets</text>
+  <text x="416" y="195" fill="#344150" font-size="12" font-family="Arial">no hidden auto-promotion</text>
+  <text x="610" y="195" fill="#344150" font-size="12" font-family="Arial">fail-closed on gap</text>
+  <text x="800" y="195" fill="#344150" font-size="12" font-family="Arial">GIS only uses verified slice</text>
+</svg>

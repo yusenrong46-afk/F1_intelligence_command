@@ -1,0 +1,1474 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M7 — Bylaw Verification: The Interactive Guide</title>
+<style>
+:root{
+  --ink:#1f2328; --soft:#57606a; --faint:#8b949e; --line:#d0d7de; --hair:#eaeef2; --subtle:#f6f8fa;
+  --accent:#0969da; --accent-soft:#ddf4ff;
+  --verified:#1a7f37; --verified-bg:#e6f4ea;
+  --review:#9a6700; --review-bg:#fdf5e3;
+  --rejected:#cf222e; --rejected-bg:#fbe9eb;
+  --notused:#6e7781; --notused-bg:#f0f1f3;
+  --key:#0969da; --key-bg:#ddf4ff;
+  --why:#1a7f37; --why-bg:#e6f4ea;
+  --mistake:#cf222e; --mistake-bg:#fbe9eb;
+  --bg:#8250df; --bg-bg:#f3eefb;
+  --try:#0a7ea3; --try-bg:#e2f3f8;
+  --code-bg:#0d1117; --code-ink:#c9d1d9;
+  --serif:Georgia,"Iowan Old Style",Cambria,"Times New Roman",serif;
+  --sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono","Roboto Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--serif);color:var(--ink);background:#f4f6f8;margin:0;line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.sans{font-family:var(--sans)}
+
+/* layout */
+.shell{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:262px minmax(0,1fr);gap:0;background:#fff;box-shadow:0 1px 4px rgba(31,35,40,.08);min-height:100vh}
+.rail{border-right:1px solid var(--hair);background:#fbfcfd}
+.rail-inner{position:sticky;top:0;max-height:100vh;overflow-y:auto;padding:22px 16px 60px}
+.content{padding:30px 52px 120px;max-width:920px}
+@media (max-width:1000px){
+  .shell{grid-template-columns:1fr}
+  .rail{border-right:0;border-bottom:1px solid var(--hair);position:sticky;top:0;z-index:30}
+  .rail-inner{position:static;max-height:none;padding:0}
+  .rail details{margin:0}
+  .content{padding:24px 20px 90px}
+}
+
+/* ToC */
+.toc-brand{font-family:var(--sans);font-weight:800;font-size:15px;letter-spacing:-.01em;margin-bottom:2px}
+.toc-sub{font-family:var(--sans);font-size:11px;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px}
+.toc-part{font-family:var(--sans);font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--faint);margin:16px 0 5px}
+.toc a{display:block;font-family:var(--sans);font-size:13px;color:var(--soft);text-decoration:none;padding:3px 9px;border-radius:6px;border-left:2px solid transparent;line-height:1.35}
+.toc a:hover{background:var(--subtle);color:var(--ink)}
+.toc a.active{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:600}
+.rail summary{font-family:var(--sans);font-weight:700;font-size:14px;cursor:pointer;padding:12px 18px;display:none}
+@media (max-width:1000px){.rail summary{display:block}.rail .toc{padding:0 18px 16px}}
+
+/* typography */
+.banner{font-family:var(--sans);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:36px;font-weight:850;letter-spacing:-.025em;line-height:1.12;margin:.25em 0 .3em}
+h2{font-size:25px;font-weight:800;letter-spacing:-.02em;margin:2.2em 0 .55em;padding-bottom:.28em;border-bottom:2px solid var(--hair);scroll-margin-top:14px}
+h2 .num{color:var(--accent);font-weight:800}
+h3{font-size:18.5px;font-weight:750;margin:1.7em 0 .45em;letter-spacing:-.01em}
+h4{font-size:15px;font-weight:700;margin:1.2em 0 .3em;text-transform:uppercase;letter-spacing:.05em;color:var(--soft)}
+p{margin:.75em 0}
+.part-head{font-family:var(--sans);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-top:2.6em;padding-top:1.1em;border-top:3px double var(--line)}
+.lede{font-size:18.5px;color:var(--soft);font-style:italic}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+strong{font-weight:700}
+ul,ol{padding-left:1.35em}li{margin:.32em 0}
+hr{border:0;border-top:1px solid var(--hair);margin:2.4em 0}
+.small{font-size:13.5px;color:var(--soft)}
+
+/* inline code + pre */
+code{font-family:var(--mono);font-size:.82em;background:var(--subtle);padding:2px 6px;border-radius:5px;border:1px solid var(--hair);color:#5b21b6;white-space:nowrap}
+.codewrap{position:relative;margin:1.1em 0}
+.codewrap .lang{position:absolute;top:0;right:0;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8b949e;background:#161b22;border-radius:0 9px 0 9px;padding:3px 9px}
+.copy-btn{position:absolute;top:7px;right:62px;font-family:var(--sans);font-size:11px;color:#8b949e;background:#161b22;border:1px solid #30363d;border-radius:6px;padding:3px 9px;cursor:pointer;opacity:0;transition:opacity .15s}
+.codewrap:hover .copy-btn{opacity:1}
+.copy-btn:hover{color:#fff}
+pre{background:var(--code-bg);color:var(--code-ink);border-radius:10px;padding:16px 18px;overflow-x:auto;font-size:13px;line-height:1.62;margin:0;border:1px solid #30363d}
+pre code{font-family:var(--mono);background:none;border:0;padding:0;color:inherit;font-size:13px;white-space:pre}
+.tok-com{color:#8b949e;font-style:italic}
+.tok-str{color:#a5d6ff}
+.tok-num{color:#79c0ff}
+.tok-kw{color:#ff7b72}
+.tok-fn{color:#d2a8ff}
+.tok-key{color:#7ee787}
+.tok-bool{color:#79c0ff}
+
+/* tables */
+table{border-collapse:collapse;width:100%;margin:1.1em 0;font-family:var(--sans);font-size:13.5px}
+.tablewrap{overflow-x:auto;margin:1.1em 0}
+th,td{border:1px solid var(--line);padding:8px 12px;text-align:left;vertical-align:top}
+th{background:var(--subtle);font-weight:700}
+tr:nth-child(even) td{background:#fcfdfe}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+
+/* callouts */
+.callout{margin:1.3em 0;padding:13px 18px 13px 16px;border-left:4px solid var(--accent);border-radius:0 9px 9px 0;background:var(--subtle);font-size:15.5px}
+.callout .lbl{font-family:var(--sans);font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;margin-bottom:3px;display:flex;align-items:center;gap:6px}
+.callout p{margin:.35em 0}
+.callout.key{border-color:var(--key);background:var(--key-bg)}.callout.key .lbl{color:var(--key)}
+.callout.why{border-color:var(--why);background:var(--why-bg)}.callout.why .lbl{color:var(--why)}
+.callout.mistake{border-color:var(--mistake);background:var(--mistake-bg)}.callout.mistake .lbl{color:var(--mistake)}
+.callout.try{border-color:var(--try);background:var(--try-bg)}.callout.try .lbl{color:var(--try)}
+details.bg{margin:1.2em 0;border:1px solid #e3d6f7;border-left:4px solid var(--bg);border-radius:0 9px 9px 0;background:var(--bg-bg);overflow:hidden}
+details.bg>summary{font-family:var(--sans);font-size:13.5px;font-weight:700;color:var(--bg);cursor:pointer;padding:11px 16px;list-style:none;display:flex;align-items:center;gap:8px}
+details.bg>summary::-webkit-details-marker{display:none}
+details.bg>summary::before{content:"▸";font-size:11px;transition:transform .15s}
+details.bg[open]>summary::before{transform:rotate(90deg)}
+details.bg .body{padding:2px 18px 14px;font-size:14.5px}
+details.bg .body p:first-child{margin-top:.2em}
+.tag{font-family:var(--sans);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--bg);background:#fff;border:1px solid #e3d6f7;border-radius:20px;padding:1px 8px;margin-left:auto}
+
+/* hero */
+.hero{margin:8px 0 8px}
+.hero h1{margin-top:.1em}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 6px}
+.chip{font-family:var(--sans);font-size:12.5px;font-weight:600;border-radius:30px;padding:6px 13px;border:1px solid var(--line);background:#fff;display:flex;align-items:center;gap:7px}
+.chip b{font-size:15px;font-weight:800}
+.chip.v{border-color:#abd5b6;background:var(--verified-bg)}.chip.v b{color:var(--verified)}
+.chip.p{border-color:#a8c7f0;background:var(--accent-soft)}.chip.p b{color:var(--accent)}
+.chip.z{border-color:#e7b3b8;background:var(--rejected-bg)}.chip.z b{color:var(--rejected)}
+.chip.c{border-color:#e6cf94;background:var(--review-bg)}.chip.c b{color:var(--review)}
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:18px 0;font-family:var(--sans);font-size:12px}
+.legend .l{padding:7px 10px;border-radius:8px;border-left:3px solid}
+.legend .l b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.legend .l.k{border-color:var(--key);background:var(--key-bg)}.legend .l.k b{color:var(--key)}
+.legend .l.w{border-color:var(--why);background:var(--why-bg)}.legend .l.w b{color:var(--why)}
+.legend .l.m{border-color:var(--mistake);background:var(--mistake-bg)}.legend .l.m b{color:var(--mistake)}
+.legend .l.b{border-color:var(--bg);background:var(--bg-bg)}.legend .l.b b{color:var(--bg)}
+.legend .l.t{border-color:var(--try);background:var(--try-bg)}.legend .l.t b{color:var(--try)}
+
+/* bucket badges */
+.bk{font-family:var(--sans);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;border-radius:6px;padding:2px 8px;white-space:nowrap}
+.bk.verified{color:var(--verified);background:var(--verified-bg);border:1px solid #abd5b6}
+.bk.review{color:var(--review);background:var(--review-bg);border:1px solid #e6cf94}
+.bk.rejected{color:var(--rejected);background:var(--rejected-bg);border:1px solid #e7b3b8}
+.bk.notused{color:var(--notused);background:var(--notused-bg);border:1px solid #ccd1d6}
+
+/* figures */
+figure.diagram{margin:22px 0;text-align:center}
+figure.diagram svg{max-width:100%;height:auto}
+figcaption{font-family:var(--sans);font-size:12.5px;color:var(--soft);margin-top:9px;font-style:italic}
+.svg-card{border:1px solid var(--hair);border-radius:14px;padding:14px;background:#fff;overflow-x:auto}
+
+/* interactive: generic widget shell */
+.widget{border:1px solid var(--line);border-radius:14px;margin:1.5em 0;overflow:hidden;background:#fff}
+.widget-head{font-family:var(--sans);font-size:12px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--try);background:var(--try-bg);padding:9px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px}
+.widget-head .ico{font-size:14px}
+.widget-body{padding:18px}
+
+/* stepper */
+.stepper{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.step-btn{font-family:var(--sans);font-size:12.5px;font-weight:600;border:1px solid var(--line);background:#fff;color:var(--soft);border-radius:8px;padding:7px 12px;cursor:pointer;transition:.12s}
+.step-btn:hover{border-color:var(--accent)}
+.step-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.step-btn .n{display:inline-block;font-weight:800;opacity:.7;margin-right:5px}
+.track{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:680px){.track{grid-template-columns:1fr}}
+.track-col{border:1px solid var(--line);border-radius:11px;padding:13px;font-family:var(--sans);font-size:13px;background:var(--subtle)}
+.track-col.v{border-color:#abd5b6}.track-col.r{border-color:#e6cf94}
+.track-col h5{font-family:var(--sans);margin:0 0 8px;font-size:13px;font-weight:800;display:flex;justify-content:space-between;align-items:center}
+.kv{display:flex;gap:7px;margin:2px 0;font-size:12.5px}
+.kv .k{color:var(--soft);min-width:96px}
+.kv .val{font-family:var(--mono);font-size:12px;color:var(--ink)}
+.stage-note{font-family:var(--sans);font-size:13px;color:var(--soft);background:var(--subtle);border-radius:9px;padding:11px 14px;margin-bottom:14px;border-left:3px solid var(--accent)}
+
+/* check chips */
+.checks{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.check{font-family:var(--sans);font-size:11.5px;font-weight:600;border-radius:6px;padding:2px 8px;display:inline-flex;align-items:center;gap:4px}
+.check.ok{color:var(--verified);background:var(--verified-bg);border:1px solid #abd5b6}
+.check.gap{color:var(--review);background:var(--review-bg);border:1px solid #e6cf94}
+.check.bad{color:var(--rejected);background:var(--rejected-bg);border:1px solid #e7b3b8}
+
+/* gap classifier */
+.gc{display:grid;grid-template-columns:1fr 290px;gap:18px}
+@media(max-width:740px){.gc{grid-template-columns:1fr}}
+.gc-groups{display:flex;flex-direction:column;gap:13px}
+.gc-group h5{font-family:var(--sans);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;margin:0 0 6px}
+.gc-group.crit h5{color:var(--rejected)}.gc-group.rev h5{color:var(--review)}.gc-group.nu h5{color:var(--notused)}.gc-group.adv h5{color:var(--accent)}
+.tog{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11.5px;padding:4px 0;cursor:pointer;user-select:none}
+.tog input{display:none}
+.sw{width:32px;height:18px;border-radius:20px;background:#ccd1d6;position:relative;transition:.15s;flex:none}
+.sw::after{content:"";position:absolute;width:14px;height:14px;border-radius:50%;background:#fff;top:2px;left:2px;transition:.15s;box-shadow:0 1px 2px rgba(0,0,0,.25)}
+.tog input:checked+.sw{background:var(--accent)}
+.tog input:checked+.sw::after{left:16px}
+.tog.crit input:checked+.sw{background:var(--rejected)}
+.tog.rev input:checked+.sw{background:var(--review)}
+.tog.nu input:checked+.sw{background:var(--notused)}
+.gc-out{border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center;position:sticky;top:14px;align-self:start;background:var(--subtle)}
+.gc-out .big{font-family:var(--sans);font-size:22px;font-weight:850;margin:8px 0;padding:8px;border-radius:9px}
+.gc-out .reason{font-family:var(--sans);font-size:12.5px;color:var(--soft);min-height:48px}
+.gc-out .formula{font-family:var(--mono);font-size:11px;color:var(--faint);margin-top:10px;border-top:1px dashed var(--line);padding-top:9px;text-align:left}
+.presets{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.preset{font-family:var(--sans);font-size:11px;border:1px solid var(--line);background:#fff;border-radius:20px;padding:3px 9px;cursor:pointer}
+.preset:hover{border-color:var(--accent);color:var(--accent)}
+
+/* bars / funnel */
+.bars{display:flex;flex-direction:column;gap:9px;font-family:var(--sans)}
+.bar-row{display:grid;grid-template-columns:130px 1fr 54px;align-items:center;gap:10px;font-size:13px}
+.bar-track{background:var(--hair);border-radius:7px;height:26px;overflow:hidden}
+.bar-fill{height:100%;border-radius:7px;transition:width .6s cubic-bezier(.22,1,.36,1);min-width:2px}
+.bar-fill.cand{background:#8b949e}.bar-fill.verified{background:var(--verified)}.bar-fill.review{background:var(--review)}.bar-fill.rejected{background:var(--rejected)}.bar-fill.notused{background:var(--notused)}
+.bar-val{font-variant-numeric:tabular-nums;font-weight:700;text-align:right}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:4px;border-bottom:1px solid var(--line);margin-bottom:0}
+.tab-btn{font-family:var(--mono);font-size:12px;border:1px solid transparent;border-bottom:0;background:none;color:var(--soft);padding:7px 12px;cursor:pointer;border-radius:8px 8px 0 0}
+.tab-btn:hover{color:var(--ink);background:var(--subtle)}
+.tab-btn.active{background:var(--code-bg);color:#fff}
+.tabpane{display:none}.tabpane.active{display:block}
+
+/* city comparator */
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:14px;font-family:var(--sans);font-size:12.5px}
+.seg button{border:0;background:#fff;padding:6px 14px;cursor:pointer;color:var(--soft)}
+.seg button.active{background:var(--accent);color:#fff}
+
+/* chatbot mock */
+.chat{font-family:var(--sans);max-width:100%}
+.chat-window{background:var(--subtle);border:1px solid var(--line);border-radius:11px;padding:14px;min-height:120px;margin-bottom:10px}
+.chat-msg{margin:9px 0;display:flex;gap:9px}
+.chat-msg .who{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;width:38px;flex:none;padding-top:3px}
+.chat-msg.u .who{color:var(--accent)}.chat-msg.a .who{color:var(--verified)}
+.chat-bubble{font-size:13.5px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.chat-msg.u .chat-bubble{background:var(--accent-soft);border-color:#a8c7f0}
+.cite{font-family:var(--mono);font-size:10.5px;color:var(--verified);background:var(--verified-bg);border:1px solid #abd5b6;border-radius:5px;padding:1px 6px;margin:0 2px;white-space:nowrap}
+.hintchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.hintchip{font-size:12px;border:1px solid var(--line);background:#fff;border-radius:20px;padding:4px 11px;cursor:pointer}
+.hintchip:hover{border-color:var(--accent);color:var(--accent)}
+.chat-advisory{font-size:11px;color:var(--review);background:var(--review-bg);border:1px solid #e6cf94;border-radius:7px;padding:5px 10px;margin-top:8px}
+
+/* misc */
+.fieldcard{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--subtle);font-family:var(--mono);font-size:12.5px;margin:1em 0;overflow-x:auto}
+.gloss dt{font-family:var(--sans);font-weight:700;margin-top:14px;font-size:14.5px}
+.gloss dt .pin{font-family:var(--sans);font-size:10px;font-weight:600;color:var(--accent);background:var(--accent-soft);border-radius:5px;padding:1px 6px;margin-left:6px;text-transform:none;letter-spacing:0}
+.gloss dd{margin:2px 0 0;font-size:14.5px;color:var(--ink)}
+.fnmap{font-family:var(--mono);font-size:12.5px}
+.fnmap b{color:#5b21b6}
+mark{background:#fff3bf;padding:0 2px;border-radius:3px}
+mark.g{background:#c6f6d5}mark.a{background:#ffe8cc}
+</style>
+
+<div class="shell">
+<nav class="rail">
+  <details open><summary>Contents ▾</summary>
+  <div class="rail-inner">
+    <div class="toc-brand">M7 · The Interactive Guide</div>
+    <div class="toc-sub">Bylaw Rule Verification</div>
+    <div class="toc">
+      <div class="toc-part">Part I · Foundations</div>
+      <a href="#s-intro">1 · What you built</a>
+      <a href="#s-problem">2 · The problem</a>
+      <a href="#s-py">3 · Python catch-up</a>
+      <a href="#s-ml">4 · ML / CS catch-up</a>
+      <div class="toc-part">Part II · The big idea</div>
+      <a href="#s-thesis">5 · Propose-then-verify</a>
+      <a href="#s-arch">6 · Architecture</a>
+      <a href="#s-example">7 · The running example</a>
+      <div class="toc-part">Part III · Stage by stage</div>
+      <a href="#s-extract">8 · Extraction (proposes)</a>
+      <a href="#s-verify">9 · Verification (proves)</a>
+      <a href="#s-buckets">10 · Gaps → buckets</a>
+      <a href="#s-matrix">11 · Matrix &amp; config</a>
+      <div class="toc-part">Part IV · Safety &amp; truth</div>
+      <a href="#s-safety">12 · The safety contract</a>
+      <a href="#s-c5">13 · The C5 lesson</a>
+      <a href="#s-measure">14 · Honest measurement</a>
+      <div class="toc-part">Part V · Surfaces &amp; results</div>
+      <a href="#s-outputs">15 · Outputs &amp; GIS</a>
+      <a href="#s-dashboard">16 · The dashboard</a>
+      <a href="#s-results">17 · Results</a>
+      <div class="toc-part">Part VI · Reflection</div>
+      <a href="#s-breakthroughs">18 · Breakthroughs</a>
+      <a href="#s-limits">19 · Limits &amp; how to improve</a>
+      <a href="#s-glossary">20 · Glossary</a>
+      <a href="#s-appendix">21 · Appendix</a>
+    </div>
+  </div>
+  </details>
+</nav>
+
+<main class="content">
+<section class="hero">
+  <div class="banner">M7 · Zoning Bylaw Rule Verification · Technical &amp; Learning Guide</div>
+  <h1>From a 1,000-page bylaw PDF to rules you can trust</h1>
+  <p class="lede">A guided, interactive tour of M7 — the pipeline that reads municipal zoning bylaws, lets an AI <em>propose</em> rules, and lets deterministic code <em>decide</em> which ones are true. Written so that even the parts you "vibe-coded" finally make sense.</p>
+  <div class="chips">
+    <span class="chip v">Burnaby R1 <b>87</b> verified</span>
+    <span class="chip p">verified precision <b>1.00</b></span>
+    <span class="chip z"><b>0</b> false-verifies</span>
+    <span class="chip c">scored coverage <b>0.318</b></span>
+    <span class="chip p"><b>483</b> tests pass</span>
+  </div>
+  <p>This document is built for two readers at once: the <strong>engineer or reviewer</strong> who wants the architecture, the code, and the safety argument; and <strong>you, the builder</strong>, who assembled a lot of this with AI help and wants to genuinely understand what every piece does. Wherever a Python feature or an ML concept shows up, there is a purple <em>catch-up</em> box you can expand — skip them if you already know the material.</p>
+  <div class="legend">
+    <div class="l k"><b>◆ Core idea</b>Remember this</div>
+    <div class="l w"><b>✓ Why it works</b>The reasoning / payoff</div>
+    <div class="l m"><b>✗ Pitfall</b>A real bug or trap</div>
+    <div class="l b"><b>▸ Catch-up</b>Background you can expand</div>
+    <div class="l t"><b>⚡ Try it</b>An interactive panel</div>
+  </div>
+  <div class="callout key">
+    <div class="lbl">◆ The one sentence</div>
+    <p><strong>Propose with AI. Decide with deterministic rules. Publish only what the bylaw literally supports.</strong> Everything else in M7 — the retrieval, the matrix geometry, the four buckets, the honest denominator — exists to protect that sentence.</p>
+  </div>
+</section>
+
+<div class="part-head">Part I · Foundations</div>
+
+<h2 id="s-intro"><span class="num">1.</span> What you actually built, in plain words</h2>
+<p>Canadian municipalities publish <strong>zoning bylaws</strong>: long legal PDFs that say things like <em>"the minimum lot area is 281 m²"</em> or <em>"the maximum building height is 11.5 m."</em> Planners, permit reviewers, and GIS (mapping) teams need those statements as clean, structured data — rows like <code>lot_area ≥ 281 m²</code> — so software can check a proposed building or draw a zoning map.</p>
+<p>Doing that by hand is slow and error-prone. Doing it with a raw large language model (LLM) is fast but <em>dangerous</em>: the model will confidently invent rules that aren't in the document. M7 threads the needle. It:</p>
+<ol>
+  <li><strong>Reads</strong> the bylaw PDF and finds the passages likely to contain rules (retrieval).</li>
+  <li><strong>Asks an LLM to propose</strong> candidate rules as structured fields — but the model is explicitly told <em>not</em> to decide whether a rule is correct.</li>
+  <li><strong>Verifies every candidate with plain, auditable code</strong> that checks each field against the exact cited sentence. Only candidates that survive are marked <span class="bk verified">verified</span>.</li>
+  <li><strong>Publishes</strong> the verified rules to a GIS hand-off file and a dashboard, and offers an advisory chatbot to explore the bylaw.</li>
+</ol>
+<p>The product spans three pilot cities — <strong>Burnaby R1</strong> (a compact small-scale-housing district), <strong>Calgary R-CG</strong> (buried inside a 1,053-page omnibus bylaw), and <strong>Vancouver RS</strong> — proving the approach generalizes rather than being hand-fit to one document.</p>
+<div class="callout why">
+  <div class="lbl">✓ Why this framing matters</div>
+  <p>The whole system is organized around <em>one trust boundary</em>: the line between "a machine guessed this" and "code proved this against the source." Once you see that boundary, every file in the repo falls into one of two roles — a <strong>proposer</strong> (allowed to be creative, never trusted) or a <strong>verifier / measurement</strong> component (boring, deterministic, the only authority).</p>
+</div>
+
+<h2 id="s-problem"><span class="num">2.</span> The problem, and why it is genuinely hard</h2>
+<ul>
+  <li><strong>Bylaws are long and messy.</strong> Calgary's runs 1,053 pages. Rules hide in flowing prose <em>and</em> in dimensional <strong>tables</strong> — grids of dwelling-type × unit-count × value. A naive text reader misses most of the table rules entirely.</li>
+  <li><strong>The same number means different things.</strong> "1.2 m" might be a side-yard setback, an <em>easement</em> width, or a fence height. Bind it to the wrong concept and you publish a false rule that looks perfectly plausible.</li>
+  <li><strong>LLMs hallucinate.</strong> Even with retrieval, 2025-era AI legal tools still fabricate or mis-attribute <strong>roughly 17–33% of citations</strong>. You cannot ship raw model output as if it were law.</li>
+  <li><strong>The cost of a wrong rule is asymmetric.</strong> A missed rule is an inconvenience (a human fills the gap). A <em>wrong</em> "verified" setback could mis-approve a building. So M7's number-one job is <strong>never to verify something the bylaw doesn't say</strong> — even at the cost of parking some true rules in a human-review queue.</li>
+</ul>
+<div class="callout key">
+  <div class="lbl">◆ Core idea — asymmetric risk</div>
+  <p>M7 is deliberately <strong>biased toward caution</strong>. A false "verified" is a catastrophe; a rule held for review is just unfinished work. Every design decision downstream follows from that asymmetry.</p>
+</div>
+
+<h2 id="s-py"><span class="num">3.</span> Python catch-up — the language features in this codebase</h2>
+<p>You wrote (or generated) a lot of modern, type-annotated Python. Here is a tour of the constructs you'll actually see in M7's files, each with a real snippet. Expand only what you need.</p>
+
+<details class="bg"><summary>Type hints: <code>list[str]</code>, <code>dict[str, Any]</code>, <code>| None</code> <span class="tag">used everywhere</span></summary>
+<div class="body">
+<p>Python doesn't enforce types at runtime, but <em>annotations</em> document what a function expects and lets tools catch mistakes. In M7 you'll see signatures like <code>def verify_candidates(config, evidence_units, rule_candidates) -> dict[str, list[dict[str, Any]]]</code>.</p>
+<ul>
+<li><code>list[str]</code> — a list whose items are strings.</li>
+<li><code>dict[str, Any]</code> — a dictionary whose keys are strings and whose values can be anything. This is the "JSON object" shape used for every rule.</li>
+<li><code>X | None</code> — "an X, or nothing." The verifier uses <code>evidence: dict[str, Any] | None</code> because a candidate might cite an evidence id that doesn't exist.</li>
+<li><code>from __future__ import annotations</code> at the top of each file makes all annotations lazy strings, so you can write <code>list[str]</code> on older Pythons without errors.</li>
+</ul>
+</div>
+</details>
+
+<details class="bg"><summary><code>frozenset</code> and set algebra — the heart of the decision policy <span class="tag">decision_policy.py</span></summary>
+<div class="body">
+<p>A <strong>set</strong> is an unordered collection of unique items with fast membership tests and algebra: <code>A - B</code> (difference), <code>A &amp; B</code> (intersection), <code>A | B</code> (union). A <strong>frozenset</strong> is just a set that can't be modified after creation — perfect for a fixed catalog of rule-codes that should never change at runtime.</p>
+<p>M7's entire safety verdict is three set operations:</p>
+<div class="codewrap" data-lang="py"><pre><code>blocking = set(support_gaps) - ADVISORY_GAPS   # drop advisory-only flags
+if not blocking:                 return VERIFIED   # nothing left to object to
+if CRITICAL_REJECTION_GAPS &amp; blocking: return REJECTED   # any hard contradiction?
+if NOT_USED_GAPS &amp; blocking:     return NOT_USED   # not an enforceable rule
+return REVIEW_NEEDED                               # plausible, but unproven</code></pre></div>
+<p>That's it. The "AI" makes none of this decision — it's four lines of set math you can read aloud.</p>
+</div>
+</details>
+
+<details class="bg"><summary>Regular expressions &amp; the digit-boundary trick <span class="tag">support_checks.py</span></summary>
+<div class="body">
+<p>A <strong>regex</strong> is a tiny pattern language for finding text. M7 leans on it heavily, and one detail matters for safety: when checking whether the value <code>5</code> appears in evidence, you must <em>not</em> match the <code>5</code> inside <code>7.5</code> or inside a section reference like <code>101.5.2</code>. The code uses a "negative look-behind / look-ahead" — <code>(?&lt;![\d.])5(?!\.?\d)</code> — meaning "a 5 with no digit-or-dot immediately before or after it." Without this boundary, a candidate value of 5 would be falsely "found" in unrelated numbers, and a hard-rejection gate would silently pass.</p>
+</div>
+</details>
+
+<details class="bg"><summary>Comprehensions, f-strings, <code>pathlib</code>, JSON ↔ dict <span class="tag">everywhere</span></summary>
+<div class="body">
+<ul>
+<li><strong>List/dict comprehension</strong> — <code>[r for r in rules if r["status"] == "verified"]</code> builds a new list in one line; the verifier uses these to split candidates into buckets.</li>
+<li><strong>f-string</strong> — <code>f"{value} must be &lt;= {limit}."</code> embeds variables directly inside a string.</li>
+<li><strong><code>pathlib.Path</code></strong> — the modern way to handle file paths: <code>Path(run_dir) / "verified_rules.json"</code>.</li>
+<li><strong>JSON ↔ dict</strong> — <code>json.load(f)</code> turns a file of text into Python dicts/lists; <code>json.dump()</code> writes them back. Every artifact M7 produces is a JSON file, and in Python each rule is just a <code>dict</code>.</li>
+</ul>
+</div>
+</details>
+
+<h2 id="s-ml"><span class="num">4.</span> ML / CS catch-up — the concepts behind the magic</h2>
+<p>These are the ideas the AI-generated code quietly relies on. Each box ends with <em>where it lives in M7</em> so you can connect concept to file.</p>
+
+<details class="bg"><summary>Deterministic vs probabilistic — the most important distinction in the whole project <span class="tag">core</span></summary>
+<div class="body">
+<p>A <strong>probabilistic</strong> system (an LLM) can give different answers to the same input and is "usually right." A <strong>deterministic</strong> system always gives the same output for the same input and is "provably consistent." M7's design insight is to use the probabilistic part only where creativity helps (finding candidate rules) and the deterministic part wherever correctness is non-negotiable (deciding what's true).</p>
+<p><em>Where in M7:</em> the LLM extractor is probabilistic (<code>native_extraction.py</code>); the verifier and decision policy are 100% deterministic (<code>verification.py</code>, <code>decision_policy.py</code>, <code>support_checks.py</code>).</p>
+</div>
+</details>
+
+<details class="bg"><summary>What an LLM is, and why it hallucinates <span class="tag">extraction</span></summary>
+<div class="body">
+<p>A large language model predicts the next <strong>token</strong> (a word-piece) given the previous ones. It has no notion of "true" — only "plausible continuation." When it doesn't know, it produces fluent, confident text anyway. That's a <strong>hallucination</strong>. For legal text this is fatal: the model will happily write a setback value that reads like the bylaw but isn't in it.</p>
+<p><em>Where in M7:</em> the entire verification layer exists because of this. The LLM proposes; it is never believed.</p>
+</div>
+</details>
+
+<details class="bg"><summary>Embeddings, RAG, BM25, dense vectors, RRF — how M7 "finds the right passage" <span class="tag">bylaw_rag.py</span></summary>
+<div class="body">
+<p><strong>RAG</strong> (retrieval-augmented generation) means: before asking the LLM anything, fetch the most relevant source passages and feed <em>only those</em> to the model, so it answers from real text instead of memory.</p>
+<ul>
+<li><strong>BM25</strong> — a classic keyword-ranking formula (the same family search engines used for decades). Fully deterministic, no model download. Great at exact words, blind to synonyms.</li>
+<li><strong>Embeddings / dense vectors</strong> — a neural model turns each passage into a list of numbers (a "vector") so that passages with similar <em>meaning</em> sit near each other, even with different words. M7 can optionally add this leg (<code>baai/bge-m3</code>).</li>
+<li><strong>Hybrid + RRF</strong> — M7 runs BM25 and (optionally) dense retrieval, then fuses their rankings with <strong>Reciprocal Rank Fusion</strong>: <code>score += 1 / (60 + rank)</code>. A passage ranked highly by either method floats to the top. The constant 60 is the standard RRF <code>k</code>.</li>
+<li><strong>Reranker / cross-encoder</strong> — a heavier model (<code>cohere/rerank-4-fast</code>) that re-scores the top candidates by reading the query and passage <em>together</em>, catching subtle relevance the first pass missed.</li>
+</ul>
+<p><em>Where in M7:</em> <code>bylaw_rag.py</code> builds the index and does BM25+RRF; the deterministic query-expansion (mapping "tall"→"height") closes BM25's synonym gap without any model.</p>
+</div>
+</details>
+
+<details class="bg"><summary>JSON-schema-constrained extraction <span class="tag">native_extraction.py</span></summary>
+<div class="body">
+<p>Rather than parse free-form prose, M7 asks the model to return a strict JSON object (<code>response_format: {"type":"json_object"}</code>, <code>temperature: 0</code>). This forces the output into the exact field shape the verifier expects — <code>{rule_object, value, unit, operator, scope, ...}</code> — and removes a whole class of parsing bugs.</p>
+</div>
+</details>
+
+<details class="bg"><summary>Precision vs recall, gold sets, adversarial tests <span class="tag">benchmark/</span></summary>
+<div class="body">
+<p><strong>Precision</strong> = of the rules we marked verified, what fraction are actually correct? <strong>Recall</strong> = of all the true rules, what fraction did we capture? They trade off. M7 pins <strong>precision at 1.00</strong> (every verified rule is correct) and treats recall as the thing to grow — but only via better extraction, never by loosening the verifier.</p>
+<ul>
+<li><strong>Gold set</strong> — a hand-written list of the correct rules for each city (e.g. 40 for Burnaby), authored independently so the benchmark isn't grading its own homework.</li>
+<li><strong>Adversarial tests</strong> — deliberately tricky candidates (inverted operators, easement widths, ranges) that <em>must</em> be blocked. M7's suites block 24/24 (Burnaby), 6/6 (Calgary), 4/4 (Vancouver).</li>
+</ul>
+</div>
+</details>
+
+<div class="part-head">Part II · The big idea</div>
+
+<h2 id="s-thesis"><span class="num">5.</span> The thesis: propose-then-verify</h2>
+<p>Most "AI reads documents" projects fail at exactly one point: they <em>believe the model</em>. M7's central bet is that you can keep an LLM's recall and creativity while eliminating its risk — by demoting it to a <strong>proposer</strong> and putting a deterministic <strong>verifier</strong> in charge of every published claim.</p>
+<p>Concretely, the LLM is told in its own system prompt: <em>"You extract zoning rule candidates from quoted bylaw text. Return only valid JSON. Do not decide whether a rule is correct."</em> The phrase "do not decide" is load-bearing. The model's job ends at <em>suggestion</em>.</p>
+<div class="callout key">
+  <div class="lbl">◆ Core idea — the trust boundary</div>
+  <p>There is exactly one line in the system where "a machine guessed" becomes "code proved it against the source." Nothing the proposer attaches — no confidence score, no "I'm sure" flag, no model label — can carry a rule across that line. Only the deterministic gates can.</p>
+</div>
+<p>This is why a high-recall but occasionally-wrong model is <em>safe</em> to use here: its mistakes can only ever cost recall (a true rule held for review), never precision (a false rule published). The verifier is the circuit breaker.</p>
+
+<h2 id="s-arch"><span class="num">6.</span> Architecture — the three stages</h2>
+<p>The pipeline is three stages with one hard boundary between proposing and deciding. Read the diagram left to right.</p>
+<figure class="diagram"><div class="svg-card">
+<svg viewBox="0 0 940 392" role="img" aria-label="M7 three-stage architecture">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#57606a"/></marker>
+    <marker id="ahg" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#1a7f37"/></marker>
+  </defs>
+  <!-- trust boundary -->
+  <line x1="404" y1="20" x2="404" y2="372" stroke="#cf222e" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="404" y="14" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="800" fill="#cf222e" letter-spacing=".08em">THE TRUST BOUNDARY</text>
+  <text x="205" y="372" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#8b949e">AI proposes — never trusted</text>
+  <text x="675" y="372" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#8b949e">Code decides — sole authority</text>
+
+  <!-- PDF -->
+  <rect x="16" y="150" width="64" height="80" rx="6" fill="#fff" stroke="#8b949e" stroke-width="1.5"/>
+  <path d="pre-M74 150 v16 h16" fill="none" stroke="#8b949e" stroke-width="1.5"/>
+  <text x="48" y="245" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#57606a">Bylaw PDF</text>
+  <text x="48" y="258" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#8b949e">page-scoped</text>
+  <line x1="82" y1="190" x2="120" y2="190" stroke="#57606a" stroke-width="1.6" marker-end="url(#ah)"/>
+
+  <!-- Stage 1 -->
+  <rect x="124" y="60" width="262" height="260" rx="12" fill="#f3eefb" stroke="#8250df" stroke-width="1.5"/>
+  <text x="255" y="82" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="800" fill="#8250df">STAGE 1 · EXTRACTION</text>
+  <text x="255" y="97" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#8250df" font-style="italic">probabilistic · proposes</text>
+  <g font-family="Inter,sans-serif" font-size="11" fill="#1f2328">
+    <rect x="140" y="110" width="230" height="30" rx="6" fill="#fff" stroke="#d9c8f2"/><text x="255" y="129" text-anchor="middle">Hybrid retrieval — BM25 + RRF</text>
+    <rect x="140" y="146" width="230" height="30" rx="6" fill="#fff" stroke="#d9c8f2"/><text x="255" y="165" text-anchor="middle">Reranker (cross-encoder)</text>
+    <rect x="140" y="182" width="230" height="30" rx="6" fill="#fff" stroke="#d9c8f2"/><text x="255" y="201" text-anchor="middle">LLM extractor · gemini-3.1</text>
+    <rect x="140" y="218" width="230" height="30" rx="6" fill="#fff" stroke="#d9c8f2"/><text x="255" y="237" text-anchor="middle">Deterministic matrix parser</text>
+  </g>
+  <text x="255" y="272" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#57606a">rule_candidates.json</text>
+  <text x="255" y="287" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10" fill="#57606a">evidence_units.json</text>
+  <line x1="386" y1="190" x2="442" y2="190" stroke="#57606a" stroke-width="1.6" marker-end="url(#ah)"/>
+
+  <!-- Stage 2 -->
+  <rect x="446" y="86" width="206" height="208" rx="12" fill="#fff" stroke="#0969da" stroke-width="2.5"/>
+  <text x="549" y="108" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="800" fill="#0969da">STAGE 2 · VERIFY</text>
+  <text x="549" y="123" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#0969da" font-style="italic">deterministic · decides</text>
+  <g font-family="Inter,sans-serif" font-size="10.5" fill="#1f2328" text-anchor="middle">
+    <text x="549" y="150">value in evidence?</text>
+    <text x="549" y="170">unit compatible?</text>
+    <text x="549" y="190">operator / direction?</text>
+    <text x="549" y="210">scope · applies_to?</text>
+    <text x="549" y="230">sentence shape sane?</text>
+  </g>
+  <text x="549" y="262" text-anchor="middle" font-family="ui-monospace,monospace" font-size="9.5" fill="#57606a">support_gaps → decision_policy</text>
+  <text x="549" y="278" text-anchor="middle" font-family="ui-monospace,monospace" font-size="9.5" fill="#57606a">the only authority</text>
+
+  <!-- buckets -->
+  <g font-family="Inter,sans-serif" font-size="11" font-weight="700">
+    <line x1="652" y1="150" x2="700" y2="120" stroke="#1a7f37" stroke-width="1.6" marker-end="url(#ahg)"/>
+    <rect x="704" y="104" width="138" height="34" rx="7" fill="#e6f4ea" stroke="#1a7f37"/><text x="773" y="126" text-anchor="middle" fill="#1a7f37">verified</text>
+    <line x1="652" y1="180" x2="700" y2="170" stroke="#9a6700" stroke-width="1.4" marker-end="url(#ah)"/>
+    <rect x="704" y="150" width="138" height="34" rx="7" fill="#fdf5e3" stroke="#9a6700"/><text x="773" y="172" text-anchor="middle" fill="#9a6700">review_needed</text>
+    <line x1="652" y1="210" x2="700" y2="218" stroke="#cf222e" stroke-width="1.4" marker-end="url(#ah)"/>
+    <rect x="704" y="196" width="138" height="34" rx="7" fill="#fbe9eb" stroke="#cf222e"/><text x="773" y="218" text-anchor="middle" fill="#cf222e">rejected</text>
+    <line x1="652" y1="240" x2="700" y2="266" stroke="#6e7781" stroke-width="1.4" marker-end="url(#ah)"/>
+    <rect x="704" y="242" width="138" height="34" rx="7" fill="#f0f1f3" stroke="#6e7781"/><text x="773" y="264" text-anchor="middle" fill="#6e7781">not_used</text>
+  </g>
+
+  <!-- Stage 3 + outputs -->
+  <rect x="704" y="300" width="138" height="56" rx="9" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="773" y="322" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0969da">STAGE 3</text>
+  <text x="773" y="338" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#0969da">measure · GIS · dashboard</text>
+  <path d="M773 138 v158" fill="none" stroke="#1a7f37" stroke-width="1.6" stroke-dasharray="3 3" marker-end="url(#ahg)"/>
+  <text x="786" y="220" font-family="Inter,sans-serif" font-size="9" fill="#1a7f37" transform="rotate(0)">only verified</text>
+</svg>
+</div><figcaption>The three stages, split by the trust boundary. Two extraction paths (LLM + deterministic matrix) feed candidates to a single deterministic verifier, which sorts every candidate into one of four buckets. Only the <span class="bk verified">verified</span> bucket flows on to measurement, the GIS hand-off, and the dashboard.</figcaption></figure>
+
+<h2 id="s-example"><span class="num">7.</span> Meet the running example</h2>
+<p>One real pair of rules will follow us through every stage. On page 1 of Burnaby's R1 bylaw, a subdivision table contains this fragment (this is the literal extracted text):</p>
+<div class="fieldcard">… Lot Area .3 &nbsp;<mark class="g">Minimum Lot Area - 281 m2</mark>&nbsp; <mark class="a">Maximum Lot Area 280 m2</mark>&nbsp; - .1 At the time of registration of the subdivision plan …</div>
+<p>Two sibling claims live one space apart, and they will <strong>deliberately diverge</strong>: the minimum becomes a published rule, the maximum is parked for a human. That divergence is the entire safety story in miniature.</p>
+<figure class="diagram"><div class="svg-card">
+<svg viewBox="0 0 900 300" role="img" aria-label="Running example divergence">
+  <defs><marker id="ah2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#57606a"/></marker></defs>
+  <rect x="320" y="16" width="260" height="48" rx="9" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="450" y="36" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" fill="#1f2328">one table cell, two values</text>
+  <text x="450" y="52" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" fill="#1f2328">Min 281 m²  /  Max 280 m²</text>
+  <line x1="400" y1="64" x2="250" y2="96" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah2)"/>
+  <line x1="500" y1="64" x2="650" y2="96" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah2)"/>
+
+  <!-- left: 281 -->
+  <rect x="70" y="100" width="320" height="180" rx="11" fill="#e6f4ea" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="230" y="122" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="800" fill="#1a7f37">candidate burnaby_r1_001 · lot_area MIN</text>
+  <g font-family="ui-monospace,monospace" font-size="10.5" fill="#1f2328" text-anchor="middle">
+    <text x="230" y="146">value 281 ✓ in evidence</text>
+    <text x="230" y="164">unit m² ✓ compatible</text>
+    <text x="230" y="182">operator ≥ matches "minimum" ✓</text>
+    <text x="230" y="200">family lot_area = "min" ✓ aligned</text>
+    <text x="230" y="218">scope · applies_to ✓ grounded</text>
+  </g>
+  <text x="230" y="244" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11" fill="#1a7f37">support_gaps = [ ]</text>
+  <rect x="160" y="252" width="140" height="22" rx="6" fill="#1a7f37"/><text x="230" y="267" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#fff">→ VERIFIED</text>
+
+  <!-- right: 280 -->
+  <rect x="510" y="100" width="320" height="180" rx="11" fill="#fdf5e3" stroke="#9a6700" stroke-width="1.5"/>
+  <text x="670" y="122" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="800" fill="#9a6700">candidate burnaby_r1_002 · lot_area MAX</text>
+  <g font-family="ui-monospace,monospace" font-size="10.5" fill="#1f2328" text-anchor="middle">
+    <text x="670" y="146">value 280 ✓ in evidence</text>
+    <text x="670" y="164">unit m² ✓ compatible</text>
+    <text x="670" y="182">operator ≤ matches "maximum" ✓</text>
+    <text x="670" y="200" fill="#cf222e">family lot_area = "min" ✗ ≤ is a MAX</text>
+    <text x="670" y="218" fill="#9a6700">single text source → wants consensus</text>
+  </g>
+  <text x="670" y="244" text-anchor="middle" font-family="ui-monospace,monospace" font-size="9.5" fill="#9a6700">gaps = [direction_mismatch, requires_review]</text>
+  <rect x="590" y="252" width="160" height="22" rx="6" fill="#9a6700"/><text x="670" y="267" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="800" fill="#fff">→ REVIEW_NEEDED</text>
+</svg>
+</div><figcaption>Same cell, opposite fates. The 281 m² minimum aligns with the configured direction for <code>lot_area</code> ("min") and clears every gate. The 280 m² "maximum" reads as a max on a family the city has declared minimum-only — a <code>rule_family_direction_mismatch</code> — so it is held, never destroyed.</figcaption></figure>
+
+<div class="callout try">
+  <div class="lbl">⚡ Try it — walk the example through all three stages</div>
+  <p>Step through the pipeline and watch <em>the same two candidates</em> transform: raw text → structured candidates → per-field verification → bucket → measurement. Everything below is the real data from the Burnaby run.</p>
+</div>
+<div class="widget" id="stage-explorer">
+  <div class="widget-head"><span class="ico">⚡</span> Interactive · Stage Explorer</div>
+  <div class="widget-body">
+    <div class="stepper" id="se-steps"></div>
+    <div class="stage-note" id="se-note"></div>
+    <div class="track" id="se-track"></div>
+  </div>
+</div>
+
+<div class="part-head">Part III · Stage by stage</div>
+
+<h2 id="s-extract"><span class="num">8.</span> Stage 1 — Extraction (the proposer)</h2>
+<p>Stage 1's only job is to surface <em>candidate</em> rules with the exact source text that justifies them. It is allowed to be wrong; the verifier is the safety net. Four moving parts:</p>
+
+<h3>8.1 Page-scoping — don't read 1,053 pages when you need 3</h3>
+<p>For a huge omnibus bylaw (Calgary), reading everything floods retrieval with numbers from unrelated districts. When a <code>provenance.json</code> pins the relevant page range, <code>restrict_intermediate_to_pages()</code> clips the document <em>before</em> retrieval, while preserving the original page numbers so citations stay honest. This single fix is why Calgary's recall jumped (more on that in §13).</p>
+
+<h3>8.2 Hybrid retrieval — finding the right passage deterministically</h3>
+<p>M7 indexes the bylaw and ranks passages with <strong>BM25</strong> (a deterministic keyword score), optionally fused with a dense-embedding ranking via <strong>Reciprocal Rank Fusion</strong>. Because BM25 is synonym-blind, a small deterministic <em>query expansion</em> maps colloquial words into the corpus vocabulary ("tall" → "height") using the verifier's own shared word lists — so expansion never invents meaning, it only widens the net.</p>
+<figure class="diagram"><div class="svg-card">
+<svg viewBox="0 0 900 250" role="img" aria-label="Hybrid RAG retrieval">
+  <defs><marker id="ah3" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#57606a"/></marker></defs>
+  <rect x="16" y="100" width="120" height="46" rx="9" fill="#ddf4ff" stroke="#0969da"/><text x="76" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0969da">question /</text><text x="76" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0969da">rule query</text>
+  <rect x="160" y="100" width="120" height="46" rx="9" fill="#f3eefb" stroke="#8250df"/><text x="220" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#8250df">deterministic</text><text x="220" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#8250df">query expansion</text>
+  <line x1="136" y1="123" x2="158" y2="123" stroke="#57606a" stroke-width="1.5" marker-end="url(#ah3)"/>
+  <rect x="320" y="56" width="120" height="40" rx="9" fill="#fff" stroke="#8b949e"/><text x="380" y="80" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#1f2328">BM25 ranks</text>
+  <rect x="320" y="150" width="120" height="40" rx="9" fill="#fff" stroke="#8b949e"/><text x="380" y="170" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" fill="#1f2328">dense ranks</text><text x="380" y="183" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#8b949e">(optional)</text>
+  <line x1="280" y1="118" x2="318" y2="84" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah3)"/>
+  <line x1="280" y1="128" x2="318" y2="166" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah3)"/>
+  <rect x="480" y="100" width="130" height="46" rx="9" fill="#fff3bf" stroke="#9a6700"/><text x="545" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#9a6700">RRF fusion</text><text x="545" y="135" text-anchor="middle" font-family="ui-monospace,monospace" font-size="9.5" fill="#9a6700">1/(60+rank)</text>
+  <line x1="440" y1="76" x2="478" y2="112" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah3)"/>
+  <line x1="440" y1="170" x2="478" y2="134" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah3)"/>
+  <rect x="650" y="100" width="110" height="46" rx="9" fill="#fff" stroke="#8b949e"/><text x="705" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#1f2328">reranker</text><text x="705" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" fill="#8b949e">cross-encoder</text>
+  <line x1="610" y1="123" x2="648" y2="123" stroke="#57606a" stroke-width="1.5" marker-end="url(#ah3)"/>
+  <rect x="800" y="100" width="84" height="46" rx="9" fill="#e6f4ea" stroke="#1a7f37"/><text x="842" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700" fill="#1a7f37">top-k</text><text x="842" y="135" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#1a7f37">packs → LLM</text>
+  <line x1="760" y1="123" x2="798" y2="123" stroke="#57606a" stroke-width="1.5" marker-end="url(#ah3)"/>
+</svg>
+</div><figcaption>The retrieval pipeline in <code>bylaw_rag.py</code>. BM25 is always on (deterministic, zero downloads); the dense leg is optional. RRF fuses their rankings, the reranker sharpens the top, and only the best few "packs" reach the LLM.</figcaption></figure>
+<p>The fusion itself is four lines — note the deterministic tie-break that makes the same question always return the same clauses:</p>
+<div class="codewrap" data-lang="py"><pre><code>def search(self, question, *, top_k=5):
+    bm25_rank  = self._bm25_ranks(question)     # {chunk_index: rank}
+    dense_rank = self._dense_ranks(question)    # or None (BM25-only)
+    fused = []
+    for index, chunk in enumerate(self.chunks):
+        score = 0.0
+        if index in bm25_rank:  score += 1.0 / (RRF_K + bm25_rank[index])
+        if dense_rank and index in dense_rank:
+                                score += 1.0 / (RRF_K + dense_rank[index])
+        if score &gt; 0.0:  fused.append((score, chunk))
+    fused.sort(key=lambda it: (-it[0], str(it[1]["chunk_id"])))  # deterministic
+    return [chunk for _, chunk in fused[:top_k]]</code></pre></div>
+
+<h3>8.3 The LLM extractor — creative, constrained, and explicitly not an authority</h3>
+<p>The retrieved packs go to <code>google/gemini-3.1-flash-lite</code> through OpenRouter, with temperature 0 and a forced JSON response. The model choice was a measured decision, not a vibe:</p>
+<div class="codewrap" data-lang="py"><pre><code># Adopted after a Calgary R-CG A/B (2026-06-16): gemini-3.1-flash-lite verified
+# 16 R-CG rules at precision 1.00 / recall 0.84 vs gpt-oss-120b's 8 at 0.68,
+# with adversarial ALL BLOCKED and zero source-support failures for both.
+DEFAULT_CHAT_MODEL      = "google/gemini-3.1-flash-lite"   # the proposer
+DEFAULT_EMBEDDING_MODEL = "baai/bge-m3"                    # optional dense leg
+DEFAULT_RERANK_MODEL    = "cohere/rerank-4-fast"           # cross-encoder
+
+body = {
+    "model": self.model, "temperature": 0, "max_tokens": 1200,
+    "response_format": {"type": "json_object"},            # structured, not prose
+    "messages": [
+        {"role": "system", "content":
+            "You extract zoning rule candidates from quoted bylaw text. "
+            "Return only valid JSON. Do not decide whether a rule is correct."},
+        {"role": "user", "content": prompt},
+    ],
+}</code></pre></div>
+<div class="callout why">
+  <div class="lbl">✓ Why "model-agnostic" is a feature</div>
+  <p>Because the verifier never trusts the model, you can swap in a better one and recall rises with <em>zero</em> change to the safety contract. The A/B above doubled Calgary's verified count by changing one string — and precision stayed at 1.00 because the gates did their job regardless.</p>
+</div>
+<p>For our running example, the extractor proposes this candidate (this is the shape the verifier receives):</p>
+<div class="codewrap" data-lang="json"><pre><code>{
+  "rule_object": "lot_area",
+  "constraint_type": "minimum",
+  "constraint_scope": "lot_area",
+  "applies_to": "lot",
+  "operator": "&gt;=",
+  "value": "281",
+  "unit": "m2",
+  "condition": "Minimum Lot Area",
+  "source": {
+    "evidence_id": "m7_pack_0002_ev_001",
+    "page": 1,
+    "evidence_text": "Minimum Lot Area - 281 m2"
+  }
+}</code></pre></div>
+
+<h2 id="s-verify"><span class="num">9.</span> Stage 2 — Verification (the heart of the system)</h2>
+<p>Everything important happens here. <code>verify_candidates()</code> takes the config, the evidence units, and the candidates, and returns them sorted into buckets. Its own docstring describes a four-step loop:</p>
+<ol>
+  <li><strong>Look up</strong> the cited evidence by id (a missing id is itself a hard-rejection gap).</li>
+  <li><strong>Normalize</strong> the candidate and enrich evidence with parent-clause context for enumerated sub-items.</li>
+  <li><strong>Collect <code>support_gaps</code></strong> — run every deterministic check and record each failure as a named code.</li>
+  <li><strong>Decide</strong> — hand the gap list to <code>decision_policy</code>, which returns the bucket.</li>
+</ol>
+
+<h3>9.1 The field gates — "is this exact claim visible in the cited sentence?"</h3>
+<p>These are narrow, evidence-facing yes/no checks. They never extract and never promote; they only answer questions. Three are worth seeing because each closes a real failure mode.</p>
+<p><strong>Value check (digit-boundary).</strong> A candidate value must literally appear in the cited text — and "5" must not be satisfied by "7.5". This feeds a <em>hard-rejection</em> gate, so a sloppy substring match would let false citations through:</p>
+<div class="codewrap" data-lang="py"><pre><code>def contains_value(evidence_text, value):
+    """Every value token must appear with digit boundaries — '5' is not '7.5'."""
+    tokens = _value_tokens(value)            # "281" -> ["281"]
+    if not tokens:
+        return True
+    normalized = evidence_text.replace(",", "")
+    return all(token_visible(normalized, token) for token in tokens)</code></pre></div>
+<p><strong>Operator check (default-closed).</strong> The operator must be backed by the evidence's wording — "maximum"/"not exceed" for <code>&lt;=</code>, "minimum"/"at least" for <code>&gt;=</code>. If a future operator is added with no wording branch, the function returns <code>False</code> rather than silently passing:</p>
+<div class="codewrap" data-lang="py"><pre><code>if operator in {"&lt;=", "max", "maximum", "not_exceed"}:
+    return any(p in text for p in ["maximum", "not exceed", "up to", "limited to"])
+if operator in {"&gt;=", "min", "minimum", "at_least"}:
+    return any(p in text for p in ["minimum", "not less", "at least", "shall have"])
+# ... explicit branch per operator ...
+return False   # default-closed: never verify an operator with zero evidence wording</code></pre></div>
+<p><strong>Imperial-unit hold.</strong> A rule stated in feet on a metric family is never silently compared to a metre threshold and never auto-converted — that would forge source fidelity. It is routed to review:</p>
+<div class="codewrap" data-lang="py"><pre><code>IMPERIAL_UNIT_TOKENS = frozenset({
+    "ft", "ft.", "feet", "foot", "'", "in", "inch", "inches", '"',
+    "sf", "sq ft", "acre", "acres", "mile", "miles",
+})
+def is_imperial_unit(unit):
+    return str(unit or "").strip().lower() in IMPERIAL_UNIT_TOKENS</code></pre></div>
+
+<h3>9.2 The shape gates — "the value is present, but the sentence means something else"</h3>
+<p>The subtlest false-verifies pass every field check: the value, unit, and scope words really are in the evidence. <code>evidence_shape_gaps()</code> reads the <em>shape</em> of the sentence carrying the value and catches three classes that are otherwise invisible:</p>
+<ul>
+<li><strong><code>definition_not_rule</code></strong> — the value sits inside a defined-term sentence (<em>"corner parcel" means … not exceeding 135 degrees</em>). Vocabulary, not a regulation.</li>
+<li><strong><code>allowance_trigger_threshold</code></strong> — the value is the threshold that <em>unlocks</em> an allowance ("no maximum … where … 3.0 m"), or — the famous case — an <em>easement width</em> that reduces a setback to zero (see §13).</li>
+<li><strong><code>range_bound_not_maximum</code> / <code>coefficient_operand_not_value</code></strong> — a flattened range ("1 to 3 Units; 4 to 6 Units") or a ratio coefficient ("0.25 multiplied by the site area") mis-read as an absolute cap.</li>
+</ul>
+<div class="callout mistake">
+  <div class="lbl">✗ Pitfall these gates close</div>
+  <p>Every one of these is a <em>real number in the real text</em> — so a keyword or substring verifier would happily publish it. They are review-or-reject only because the deterministic gates read the surrounding clause structure, not just the digits.</p>
+</div>
+
+<h3>9.3 Two proof routes: text-span vs matrix-anchor</h3>
+<p>Prose evidence is proven by <strong>text-span</strong> checks (the gates above). Table evidence can additionally carry a <strong>matrix anchor</strong> — recovered table geometry — letting the verifier prove a value belongs to a specific column, not just that it appears somewhere in the row. We unpack that in §11.</p>
+
+<figure class="diagram"><div class="svg-card">
+<svg viewBox="0 0 760 360" role="img" aria-label="Verifier gate ladder">
+  <defs><marker id="ah4" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#57606a"/></marker></defs>
+  <rect x="300" y="12" width="160" height="34" rx="8" fill="#f3eefb" stroke="#8250df"/><text x="380" y="33" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#8250df">candidate enters</text>
+  <g font-family="Inter,sans-serif" font-size="11">
+    <!-- gates -->
+    <rect x="250" y="62" width="260" height="30" rx="7" fill="#fff" stroke="#0969da"/><text x="380" y="82" text-anchor="middle" fill="#1f2328">evidence id exists? value in text?</text>
+    <rect x="250" y="104" width="260" height="30" rx="7" fill="#fff" stroke="#0969da"/><text x="380" y="124" text-anchor="middle" fill="#1f2328">unit compatible? operator wording?</text>
+    <rect x="250" y="146" width="260" height="30" rx="7" fill="#fff" stroke="#0969da"/><text x="380" y="166" text-anchor="middle" fill="#1f2328">family direction? scope · applies_to?</text>
+    <rect x="250" y="188" width="260" height="30" rx="7" fill="#fff" stroke="#0969da"/><text x="380" y="208" text-anchor="middle" fill="#1f2328">sentence shape sane? (def / easement)</text>
+    <line x1="380" y1="46" x2="380" y2="60" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah4)"/>
+    <line x1="380" y1="92" x2="380" y2="102" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah4)"/>
+    <line x1="380" y1="134" x2="380" y2="144" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah4)"/>
+    <line x1="380" y1="176" x2="380" y2="186" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah4)"/>
+    <!-- collect -->
+    <rect x="280" y="240" width="200" height="34" rx="8" fill="#fff3bf" stroke="#9a6700"/><text x="380" y="261" text-anchor="middle" font-weight="700" fill="#9a6700">support_gaps = [ … ]</text>
+    <line x1="380" y1="218" x2="380" y2="238" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah4)"/>
+  </g>
+  <!-- side: failed gates feed gaps -->
+  <text x="540" y="140" font-family="Inter,sans-serif" font-size="10" fill="#8b949e">each failed gate</text>
+  <text x="540" y="153" font-family="Inter,sans-serif" font-size="10" fill="#8b949e">appends a named</text>
+  <text x="540" y="166" font-family="Inter,sans-serif" font-size="10" fill="#8b949e">gap code →</text>
+  <path d="M510 178 q40 30 -30 64" fill="none" stroke="#9a6700" stroke-width="1.3" stroke-dasharray="3 3" marker-end="url(#ah4)"/>
+  <!-- decision -->
+  <rect x="250" y="296" width="260" height="34" rx="8" fill="#ddf4ff" stroke="#0969da"/><text x="380" y="317" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0969da">decision_policy → one of four buckets</text>
+  <line x1="380" y1="274" x2="380" y2="294" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah4)"/>
+</svg>
+</div><figcaption>The verifier is a ladder of deterministic gates. It does not "score" a candidate — it accumulates named <code>support_gaps</code>, then hands the list to the decision policy. No gap means nothing to object to.</figcaption></figure>
+
+<div class="callout try">
+  <div class="lbl">⚡ Try it — read the real verifier code</div>
+  <p>The actual functions, lightly trimmed. Click through the tabs.</p>
+</div>
+<div class="widget" id="code-tabs">
+  <div class="widget-head"><span class="ico">⚡</span> Interactive · The verifier in its own words</div>
+  <div class="widget-body" style="padding:0">
+    <div class="tabs" id="ct-tabs"></div>
+    <div id="ct-panes" style="padding:14px 16px"></div>
+  </div>
+</div>
+
+<h2 id="s-buckets"><span class="num">10.</span> From gaps to buckets — the decision policy</h2>
+<p>The verifier produces gaps; <code>decision_policy.py</code> is the <em>only</em> place that turns gaps into a verdict. Keeping it isolated makes the safety policy auditable in one screenful. There are four named catalogs of gaps (all <code>frozenset</code>s) and one tiny function.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Gap catalog</th><th>Meaning</th><th>Routes to</th><th>Examples</th></tr></thead>
+<tbody>
+<tr><td><strong>CRITICAL_REJECTION</strong></td><td>A contradiction or unsafe-malformed citation. The number itself is wrong or absent.</td><td><span class="bk rejected">rejected</span></td><td><code>value_not_found_in_evidence</code>, <code>unit_not_found_in_evidence</code>, <code>table_operator_refuted</code>, <code>value_bound_to_foreign_unit</code>, <code>column_value_mismatch</code></td></tr>
+<tr><td><strong>MISSING_SCOPE</strong></td><td>Plausible, but a recall-limited cue couldn't be proven — a human or better evidence can repair it.</td><td><span class="bk review">review_needed</span></td><td><code>rule_family_direction_mismatch</code>, <code>applies_to_not_supported</code>, <code>range_bound_not_maximum</code>, <code>non_metric_unit_requires_review</code>, <code>text_candidate_requires_review</code></td></tr>
+<tr><td><strong>NOT_USED</strong></td><td>A real extraction artifact, but not an enforceable numeric rule for this contract.</td><td><span class="bk notused">not_used</span></td><td><code>cross_reference_only</code>, <code>definition_not_rule</code>, <code>outside_current_rule_contract</code>, <code>outside_target_section</code></td></tr>
+<tr><td><strong>ADVISORY</strong></td><td>Informs the audit trail but <em>never</em> blocks — the upstream model's opinion can't veto a clean verify.</td><td>(non-blocking)</td><td><code>upstream_extraction_requested_review</code></td></tr>
+</tbody></table></div>
+<p>And the function that consumes them — short enough to read in full:</p>
+<div class="codewrap" data-lang="py"><pre><code>def verification_decision_from_gaps(support_gaps):
+    gaps = set(support_gaps)
+    blocking = gaps - ADVISORY_GAPS          # advisory flags can never veto
+    if not blocking:                  return VERIFIED
+    if CRITICAL_REJECTION_GAPS &amp; blocking:  return REJECTED
+    if NOT_USED_GAPS &amp; blocking:      return NOT_USED
+    return REVIEW_NEEDED                      # plausible but unproven</code></pre></div>
+<figure class="diagram"><div class="svg-card">
+<svg viewBox="0 0 880 220" role="img" aria-label="Decision cascade">
+  <defs><marker id="ah5" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#57606a"/></marker></defs>
+  <rect x="16" y="86" width="150" height="48" rx="9" fill="#fdf5e3" stroke="#9a6700"/><text x="91" y="106" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10.5" fill="#9a6700">support_gaps</text><text x="91" y="122" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10.5" fill="#9a6700">− ADVISORY</text>
+  <text x="91" y="150" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" fill="#8b949e">= blocking</text>
+  <line x1="166" y1="110" x2="206" y2="110" stroke="#57606a" stroke-width="1.5" marker-end="url(#ah5)"/>
+  <!-- diamond chain -->
+  <g font-family="Inter,sans-serif" font-size="10.5">
+    <rect x="208" y="92" width="120" height="36" rx="18" fill="#fff" stroke="#8b949e"/><text x="268" y="114" text-anchor="middle">blocking empty?</text>
+    <rect x="360" y="92" width="120" height="36" rx="18" fill="#fff" stroke="#cf222e"/><text x="420" y="114" text-anchor="middle" fill="#cf222e">any CRITICAL?</text>
+    <rect x="512" y="92" width="120" height="36" rx="18" fill="#fff" stroke="#6e7781"/><text x="572" y="114" text-anchor="middle" fill="#6e7781">any NOT_USED?</text>
+    <rect x="664" y="92" width="120" height="36" rx="18" fill="#fff" stroke="#9a6700"/><text x="724" y="114" text-anchor="middle" fill="#9a6700">otherwise</text>
+    <line x1="328" y1="110" x2="358" y2="110" stroke="#57606a" stroke-width="1.3" marker-end="url(#ah5)"/>
+    <line x1="480" y1="110" x2="510" y2="110" stroke="#57606a" stroke-width="1.3" marker-end="url(#ah5)"/>
+    <line x1="632" y1="110" x2="662" y2="110" stroke="#57606a" stroke-width="1.3" marker-end="url(#ah5)"/>
+    <!-- outcomes -->
+    <text x="268" y="60" text-anchor="middle" font-size="9" fill="#8b949e">yes ↓</text>
+    <rect x="216" y="32" width="104" height="26" rx="6" fill="#e6f4ea" stroke="#1a7f37"/><text x="268" y="50" text-anchor="middle" font-weight="800" fill="#1a7f37">VERIFIED</text>
+    <line x1="268" y1="92" x2="268" y2="60" stroke="#1a7f37" stroke-width="1.3" marker-end="url(#ah5)"/>
+    <rect x="368" y="160" width="104" height="26" rx="6" fill="#fbe9eb" stroke="#cf222e"/><text x="420" y="178" text-anchor="middle" font-weight="800" fill="#cf222e">REJECTED</text>
+    <line x1="420" y1="128" x2="420" y2="158" stroke="#cf222e" stroke-width="1.3" marker-end="url(#ah5)"/>
+    <rect x="520" y="160" width="104" height="26" rx="6" fill="#f0f1f3" stroke="#6e7781"/><text x="572" y="178" text-anchor="middle" font-weight="800" fill="#6e7781">NOT_USED</text>
+    <line x1="572" y1="128" x2="572" y2="158" stroke="#6e7781" stroke-width="1.3" marker-end="url(#ah5)"/>
+    <rect x="672" y="160" width="104" height="26" rx="6" fill="#fdf5e3" stroke="#9a6700"/><text x="724" y="178" text-anchor="middle" font-weight="800" fill="#9a6700">REVIEW</text>
+    <line x1="724" y1="128" x2="724" y2="158" stroke="#9a6700" stroke-width="1.3" marker-end="url(#ah5)"/>
+  </g>
+</svg>
+</div><figcaption>The cascade is order-sensitive: emptiness wins first (verify), then hard contradictions (reject), then out-of-contract (not_used), and everything else falls to review. This ordering is the whole safety policy.</figcaption></figure>
+<div class="callout key">
+  <div class="lbl">◆ Core idea — the tiering rationale</div>
+  <p>A <em>scope/operator/direction</em> miss lands in <strong>review</strong>: these are "absence-of-cue" heuristics with limited recall, so a miss usually means "wording not recognized," which a human can repair. But a <em>value or unit absent from the cited evidence</em> is a hard <strong>rejection</strong>: the citation itself is wrong, and no amount of context can make a number that isn't in the evidence safe to publish.</p>
+</div>
+
+<div class="callout try">
+  <div class="lbl">⚡ Try it — be the decision policy</div>
+  <p>Toggle which gaps a candidate has. The verdict updates live using the <em>exact</em> cascade above. Notice that flipping only the advisory flag never changes a clean verify — and load the running example to see why 280 m² is held.</p>
+</div>
+<div class="widget" id="gap-classifier">
+  <div class="widget-head"><span class="ico">⚡</span> Interactive · Live support-gap classifier</div>
+  <div class="widget-body">
+    <div class="gc">
+      <div class="gc-groups" id="gc-groups"></div>
+      <div class="gc-out">
+        <div style="font-family:var(--sans);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--soft)">verdict</div>
+        <div class="big" id="gc-verdict">VERIFIED</div>
+        <div class="reason" id="gc-reason"></div>
+        <div class="formula" id="gc-formula"></div>
+        <div style="font-family:var(--sans);font-size:11px;font-weight:700;color:var(--soft);margin-top:10px">presets</div>
+        <div class="presets" id="gc-presets"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 id="s-matrix"><span class="num">11.</span> The matrix path &amp; config-as-policy</h2>
+<p>Most of Burnaby's dimensional rules — lot widths, coverages, heights — live in a table, and roughly four out of five verified Burnaby rules come from the <strong>matrix path</strong> rather than prose. Linearized table text loses the column structure: the page text contains every column's words, so word-overlap can neither prove nor refute <em>which</em> column a value came from. Only geometry can.</p>
+<h3>11.1 Matrix anchors — recovering the grid</h3>
+<p><code>table_matrix.py</code> reads the city's cached, hash-pinned source PDF with <code>pdfplumber</code>, recovers the column bands (x-ranges under each header), and attaches a <code>matrix_anchor</code> to a table evidence unit — but <em>only on a unique row match</em>. An ambiguous match attaches nothing.</p>
+<figure class="diagram"><div class="svg-card">
+<svg viewBox="0 0 820 260" role="img" aria-label="Matrix anchor geometry">
+  <!-- header bands -->
+  <rect x="40" y="30" width="160" height="36" fill="#f6f8fa" stroke="#d0d7de"/><text x="120" y="53" text-anchor="middle" font-family="Inter,sans-serif" font-size="10.5" font-weight="700">row label</text>
+  <rect x="200" y="30" width="180" height="36" fill="#ddf4ff" stroke="#0969da"/><text x="290" y="48" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#0969da">Rowhouse</text><text x="290" y="61" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#0969da">1 to 3 Units</text>
+  <rect x="380" y="30" width="200" height="36" fill="#ddf4ff" stroke="#0969da"/><text x="480" y="48" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#0969da">Small-Scale Multi-Unit</text><text x="480" y="61" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#0969da">1 to 2 Units</text>
+  <rect x="580" y="30" width="180" height="36" fill="#ddf4ff" stroke="#0969da"/><text x="670" y="48" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#0969da">Small-Scale Multi-Unit</text><text x="670" y="61" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#0969da">3 to 4 Units</text>
+  <!-- data row -->
+  <rect x="40" y="66" width="160" height="44" fill="#fff" stroke="#d0d7de"/><text x="120" y="86" text-anchor="middle" font-family="Inter,sans-serif" font-size="10">Maximum Lot</text><text x="120" y="99" text-anchor="middle" font-family="Inter,sans-serif" font-size="10">Coverage</text>
+  <rect x="200" y="66" width="180" height="44" fill="#fff" stroke="#d0d7de"/><text x="290" y="92" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11">55%</text>
+  <rect x="380" y="66" width="200" height="44" fill="#e6f4ea" stroke="#1a7f37" stroke-width="2"/><text x="480" y="86" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10">&lt;567 m²: 40%</text><text x="480" y="100" text-anchor="middle" font-family="ui-monospace,monospace" font-size="10">&gt;567 m²: 30%</text>
+  <rect x="580" y="66" width="180" height="44" fill="#fff" stroke="#d0d7de"/><text x="670" y="92" text-anchor="middle" font-family="ui-monospace,monospace" font-size="11">45%</text>
+  <!-- anchor callout -->
+  <rect x="300" y="150" width="360" height="92" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <text x="316" y="170" font-family="ui-monospace,monospace" font-size="10" fill="#7ee787">matrix_anchor:</text>
+  <text x="316" y="186" font-family="ui-monospace,monospace" font-size="10" fill="#c9d1d9">  row_label: "Maximum Lot Coverage"</text>
+  <text x="316" y="202" font-family="ui-monospace,monospace" font-size="10" fill="#c9d1d9">  band: "Small-Scale Multi-Unit | 1-2"</text>
+  <text x="316" y="218" font-family="ui-monospace,monospace" font-size="10" fill="#a5d6ff">  branches: [&lt;567→40%, &gt;567→30%]</text>
+  <text x="316" y="234" font-family="ui-monospace,monospace" font-size="10" fill="#c9d1d9">  spans_all: false</text>
+  <line x1="480" y1="110" x2="480" y2="148" stroke="#1a7f37" stroke-width="1.6" stroke-dasharray="3 3"/>
+</svg>
+</div><figcaption>The verifier can now prove that "40%" belongs to the <em>Small-Scale Multi-Unit · 1–2 Units</em> column under the <em>Lots &lt; 567 m²</em> branch — geometry the linear text could never establish. A claim about the wrong column becomes a <code>column_value_mismatch</code> (hard reject).</figcaption></figure>
+<div class="callout why">
+  <div class="lbl">✓ Why "inert, never guessing" matters</div>
+  <p>The anchor layer is purely additive: with no PDF it attaches nothing and the verifier falls back to text-span proof, so prose-only cities keep working. It is "allowed to be inert, never allowed to guess" — exactly the conservative posture the whole system takes.</p>
+</div>
+
+<h3>11.2 Config as policy — the knobs that made 280 m² divergent</h3>
+<p>Each city has a JSON config that encodes <em>policy</em>, not code. Three knobs are doing real safety work in our example:</p>
+<div class="codewrap" data-lang="json"><pre><code>"rule_family_direction": {            // which way each family must point
+  "lot_area": "min", "setback": "min", "building_separation": "min",
+  "height": "max", "storeys": "max", "lot_coverage": "max",
+  "dwelling_units": "max"
+},
+"structured_table_scope_patterns": [  // quarantine degraded duplicates
+  { "rule_object": "setback", "all_terms": ["interior side yard", "1.2"],
+    "not_terms": ["end"], "action": "review",
+    "note": "1.2 m is the end-unit exception; without 'end' it's a
+             degraded duplicate of the 0 m base — hold for review" }
+],
+"cross_family_sibling_groups": [ ["lot_coverage", "impervious_surface"] ]</code></pre></div>
+<p>That first knob is exactly why our 280 m² "maximum lot area" is held: the city declares <code>lot_area</code> a <em>minimum</em> family, so a <code>&lt;=</code> reading raises <code>rule_family_direction_mismatch</code>. The second knob shows the system quarantining a value (<code>1.2 m</code> interior side yard) that would otherwise be a plausible-but-degraded duplicate — policy expressed as data, reviewable by a planner without touching Python.</p>
+
+<div class="part-head">Part IV · Safety &amp; truth</div>
+
+<h2 id="s-safety"><span class="num">12.</span> The safety contract — what can never break</h2>
+<p>M7 is governed by a small set of invariants. They are not aspirations — each is pinned by automated tests and re-checked every run, and the build fails if any goes red.</p>
+<figure class="diagram"><div class="svg-card">
+<svg viewBox="0 0 760 250" role="img" aria-label="Safety contract shield">
+  <path d="M380 16 L700 70 V150 C700 210 560 238 380 244 C200 238 60 210 60 150 V70 Z" fill="#e6f4ea" stroke="#1a7f37" stroke-width="2.5"/>
+  <g font-family="Inter,sans-serif" font-size="13" fill="#1f2328">
+    <text x="380" y="58" text-anchor="middle" font-size="13" font-weight="800" fill="#1a7f37">THE INVARIANTS</text>
+    <text x="150" y="96" font-size="16" fill="#1a7f37">✓</text><text x="172" y="96">verified precision = 1.00</text>
+    <text x="150" y="124" font-size="16" fill="#1a7f37">✓</text><text x="172" y="124">false-verified count = 0</text>
+    <text x="150" y="152" font-size="16" fill="#1a7f37">✓</text><text x="172" y="152">verified source-support failures = 0</text>
+    <text x="150" y="180" font-size="16" fill="#1a7f37">✓</text><text x="172" y="180">adversarial cases ALL blocked</text>
+    <text x="150" y="208" font-size="16" fill="#1a7f37">✓</text><text x="172" y="208">extraction labels never promote a rule</text>
+  </g>
+</svg>
+</div><figcaption>The five guarantees. The deterministic verifier is the sole authority; the GIS hand-off consumes only verified rules; the chatbot is advisory and may never verify, approve, or reject.</figcaption></figure>
+<p>The Burnaby quality gates, all green in the committed run:</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Gate</th><th>Status</th><th>Gate</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td><code>verified_precision_is_1</code></td><td>✅</td><td><code>verified_source_support_failures_is_0</code></td><td>✅</td></tr>
+<tr><td><code>false_verified_is_0</code></td><td>✅</td><td><code>proposal_decision_accuracy_is_1</code></td><td>✅</td></tr>
+<tr><td><code>false_approval_is_0</code></td><td>✅</td><td><code>extraction_coverage_recall_at_least_0_95</code></td><td>✅</td></tr>
+<tr><td><code>retrieval_recall_at_least_0_95</code></td><td>✅</td><td><code>verified_or_review_recall_at_least_0_90</code></td><td>✅</td></tr>
+</tbody></table></div>
+<p>The asymmetry between precision and recall is the design in one picture — the top-right cell is forbidden, and everything else is acceptable:</p>
+<figure class="diagram"><div class="svg-card">
+<svg viewBox="0 0 560 300" role="img" aria-label="Precision-recall confusion matrix">
+  <text x="280" y="20" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#57606a">what the system did →</text>
+  <text x="22" y="170" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#57606a" transform="rotate(-90 22 170)">what the bylaw says ↓</text>
+  <text x="200" y="44" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#1f2328">verified it</text>
+  <text x="420" y="44" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#1f2328">held it (review)</text>
+  <text x="60" y="110" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#1f2328" transform="rotate(-90 60 110)">true rule</text>
+  <text x="60" y="230" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#1f2328" transform="rotate(-90 60 230)">not a rule</text>
+  <rect x="100" y="56" width="200" height="100" fill="#e6f4ea" stroke="#1a7f37"/><text x="200" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#1a7f37">correct verify</text><text x="200" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#1a7f37">the goal</text>
+  <rect x="320" y="56" width="200" height="100" fill="#fdf5e3" stroke="#9a6700"/><text x="420" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#9a6700">held a true rule</text><text x="420" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#9a6700">acceptable — costs recall</text>
+  <rect x="100" y="176" width="200" height="100" fill="#fbe9eb" stroke="#cf222e" stroke-width="2.5"/><text x="200" y="216" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="800" fill="#cf222e">FALSE VERIFY</text><text x="200" y="236" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#cf222e">forbidden zone — must be 0</text>
+  <rect x="320" y="176" width="200" height="100" fill="#f0f1f3" stroke="#6e7781"/><text x="420" y="216" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#6e7781">correctly held</text><text x="420" y="236" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#6e7781">fine</text>
+</svg>
+</div><figcaption>Three of the four cells are acceptable. M7 spends all of its engineering keeping the bottom-left cell empty — even though that pushes some true rules into the top-right (held) cell.</figcaption></figure>
+
+<h2 id="s-c5"><span class="num">13.</span> The C5 lesson — the most important thing in this whole project</h2>
+<p>This section is the one to internalize, because it is the temptation you (or a future maintainer) will feel most strongly: <em>"recall is only 0.82 verified — let me loosen the verifier a little to push more rules through."</em> M7 tried exactly that, measured the result, and reverted it. Here's the story in three acts.</p>
+
+<h3>13.1 The easement bug — a value that's real but means the opposite</h3>
+<p>Calgary R-CG §539(4) says, roughly: <em>"the minimum building setback from a side property line may be reduced to a zero setback where … a 1.2 metre private maintenance easement"</em> is provided. A keyword extractor sees "setback … 1.2 metre" and proposes <code>setback ≥ 1.2 m</code>. But the 1.2 m is the <strong>easement width that unlocks a zero setback</strong> — verifying it would publish a 1.2 m minimum side setback the bylaw never states. The fix is a deterministic shape gate: hold when <em>every</em> occurrence of the value is glued to "easement" (the real correct setbacks elsewhere are not, so they still verify).</p>
+<div class="codewrap" data-lang="py"><pre><code># s.539(4): a setback value bound to "easement" is the easement WIDTH that
+# unlocks a (zero) setback — not the setback itself. Hold it.
+if str(candidate.get("rule_object")) == "setback" and all(
+    re.search(r"\beasement\b", lowered[occ.end(): occ.end() + 45]) for occ in occurrences
+):
+    gaps.append("allowance_trigger_threshold")</code></pre></div>
+
+<h3>13.2 The range-bound leak — a lower bound masquerading as the cap</h3>
+<p>A flattened table row "1 to 3 Units; 4 to 6 Units" was mis-extracted as <code>dwelling_units ≤ 3</code> for the lot, when the lot maximum is actually 6. The guard (<code>range_bound_not_maximum</code>) holds a count whose value is <em>not</em> the largest same-family value the source region offers, unless the scope carries a disambiguator (front/rear/accessory). Real value, wrong role → review, never verify.</p>
+
+<h3>13.3 The reverted rescue — why recall is never bought with looser gates</h3>
+<p>The "C5" attempt tried to lift recall by auto-promoting single-source, consensus-held <span class="bk review">review</span> rules straight to <span class="bk verified">verified</span>. The count went up — and a ground-truth audit found it had injected <em>real false-verifies</em> (a separation distance borrowed from a height clause; the range-bound count above). It was reverted in full.</p>
+<figure class="diagram"><div class="svg-card">
+<svg viewBox="0 0 820 200" role="img" aria-label="C5 revert timeline">
+  <defs><marker id="ah6" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#57606a"/></marker></defs>
+  <line x1="40" y1="100" x2="780" y2="100" stroke="#d0d7de" stroke-width="2"/>
+  <circle cx="140" cy="100" r="7" fill="#9a6700"/><text x="140" y="78" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#9a6700">recall feels low</text><text x="140" y="128" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#8b949e">verified recall 0.82</text>
+  <circle cx="370" cy="100" r="7" fill="#0969da"/><text x="370" y="78" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0969da">try: promote held rules</text><text x="370" y="128" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#8b949e">count goes up ↑</text>
+  <circle cx="560" cy="100" r="7" fill="#cf222e"/><text x="560" y="78" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#cf222e">audit: false-verifies!</text><text x="560" y="128" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#cf222e">precision broken</text>
+  <circle cx="730" cy="100" r="7" fill="#1a7f37"/><text x="730" y="78" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#1a7f37">REVERTED</text><text x="730" y="128" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#1a7f37">precision = 1.0 restored</text>
+  <line x1="150" y1="100" x2="360" y2="100" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah6)"/>
+  <line x1="380" y1="100" x2="550" y2="100" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah6)"/>
+  <line x1="570" y1="100" x2="720" y2="100" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah6)"/>
+</svg>
+</div><figcaption>The verifier is already at its safe recall ceiling. The bug classes from this episode became named, tested gates (the easement and range-bound guards above), so the same leak can never reopen.</figcaption></figure>
+<div class="callout key">
+  <div class="lbl">◆ Core idea — the rule for all future work</div>
+  <p><strong>Raise recall by improving extraction and evidence assembly, never by relaxing the verification gates.</strong> Scored coverage is grown by giving the verifier better, more complete evidence — not by lowering the bar it has to clear.</p>
+</div>
+
+<h2 id="s-measure"><span class="num">14.</span> Honest measurement — the scored legal-slot denominator (M7 scored)</h2>
+<p>"How much of the bylaw did we cover?" is a trap question, because the denominator is easy to game. Count every numeric signal in the corpus and your coverage looks tiny; count only what you found and it looks perfect. M7 scored defines a denominator you can <em>defend</em>.</p>
+<p>A <strong>legal slot</strong> is a distinct enforceable rule. M7 scored keeps only slots that are <strong>corpus-derived</strong> (never the verifier's own outputs — otherwise the denominator would be a function of the numerator), of a <strong>recognized family</strong>, and <strong>inside the city's GIS contract</strong>. Then it collapses duplicates by legal identity:</p>
+<div class="codewrap" data-lang="py"><pre><code>def slot_is_scored(slot):
+    """Corpus-derived, known family, and inside the GIS contract."""
+    if not is_source_denominator_slot(slot):              return False
+    if normalize_family(slot["rule_family_signal"]) in NOISE_FAMILIES:  return False
+    return slot["gis_contract_relevance"] == "in_gis_contract"
+
+def legal_slot_key(slot):
+    """One legal rule = (family, value, unit). Scope is deliberately excluded —
+    source-inferred scope is greedy on table cells, so keying on it would both
+    fracture true matches and inflate the count. Scope CORRECTNESS is enforced
+    by the verifier's gates, not by this measurement."""
+    return (normalize_family(slot["rule_family_signal"]),
+            normalized_number(slot["value"]),
+            normalize_unit(slot["unit"]))</code></pre></div>
+<figure class="diagram"><div class="svg-card">
+<svg viewBox="0 0 860 180" role="img" aria-label="Scored slot denominator funnel">
+  <defs><marker id="ah7" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#57606a"/></marker></defs>
+  <g font-family="Inter,sans-serif" text-anchor="middle">
+    <rect x="10" y="60" width="120" height="60" rx="9" fill="#f0f1f3" stroke="#6e7781"/><text x="70" y="86" font-size="20" font-weight="800" fill="#6e7781">440</text><text x="70" y="106" font-size="9.5" fill="#6e7781">raw signals</text>
+    <rect x="180" y="60" width="120" height="60" rx="9" fill="#f6f8fa" stroke="#8b949e"/><text x="240" y="86" font-size="20" font-weight="800" fill="#57606a">304</text><text x="240" y="106" font-size="9.5" fill="#57606a">corpus-derived</text>
+    <rect x="350" y="60" width="120" height="60" rx="9" fill="#ddf4ff" stroke="#0969da"/><text x="410" y="86" font-size="20" font-weight="800" fill="#0969da">205</text><text x="410" y="106" font-size="9.5" fill="#0969da">family + contract</text>
+    <rect x="520" y="60" width="120" height="60" rx="9" fill="#fdf5e3" stroke="#9a6700"/><text x="580" y="86" font-size="20" font-weight="800" fill="#9a6700">66</text><text x="580" y="106" font-size="9.5" fill="#9a6700">distinct legal slots</text>
+    <rect x="690" y="60" width="120" height="60" rx="9" fill="#e6f4ea" stroke="#1a7f37"/><text x="750" y="86" font-size="20" font-weight="800" fill="#1a7f37">21</text><text x="750" y="106" font-size="9.5" fill="#1a7f37">verified-covered</text>
+    <line x1="132" y1="90" x2="178" y2="90" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah7)"/>
+    <line x1="302" y1="90" x2="348" y2="90" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah7)"/>
+    <line x1="472" y1="90" x2="518" y2="90" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah7)"/>
+    <line x1="642" y1="90" x2="688" y2="90" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah7)"/>
+    <text x="430" y="150" font-size="13" font-weight="700" fill="#1a7f37">scored verified coverage = 21 / 66 = 0.318</text>
+  </g>
+</svg>
+</div><figcaption>Burnaby's real denominator funnel. The honest coverage number is <strong>0.318</strong>, not the flattering "87 of 87 verified = 100%." This conservative figure is what makes the project trustworthy to a municipality.</figcaption></figure>
+
+<div class="callout try">
+  <div class="lbl">⚡ Try it — build the denominator step by step</div>
+  <p>Click through each filter and watch the slot count shrink toward the defensible legal denominator, then see how many the verifier covers.</p>
+</div>
+<div class="widget" id="coverage-stepper">
+  <div class="widget-head"><span class="ico">⚡</span> Interactive · Scored coverage, step by step</div>
+  <div class="widget-body">
+    <div class="stepper" id="cov-steps"></div>
+    <div style="display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center">
+      <div style="text-align:center"><div id="cov-count" style="font-family:var(--sans);font-size:46px;font-weight:850;color:var(--accent);line-height:1">440</div><div id="cov-label" class="small">raw numeric signals</div></div>
+      <div><div class="stage-note" id="cov-note" style="margin:0"></div></div>
+    </div>
+  </div>
+</div>
+<div class="callout why">
+  <div class="lbl">✓ Why exclude scope from the legal key</div>
+  <p>Source-inferred scope is "greedy" — a value in a multi-column yard row picks up "front" from a neighbouring column. Keying the denominator on scope would both split true matches and mislabel slots. So the <em>measurement</em> ignores scope (a documented, mildly coverage-inflating approximation), while scope <em>correctness</em> stays enforced exactly where it must be: the verifier's deterministic gates.</p>
+</div>
+
+<div class="part-head">Part V · Surfaces &amp; results</div>
+
+<h2 id="s-outputs"><span class="num">15.</span> Outputs &amp; the GIS hand-off</h2>
+<p>The pipeline emits a family of JSON artifacts. Three matter most, and they have <em>different</em> jobs:</p>
+<div class="tablewrap"><table>
+<thead><tr><th>File</th><th>Audience</th><th>Contents</th></tr></thead>
+<tbody>
+<tr><td><code>verified_rules.json</code></td><td>audit / humans</td><td>Every verified rule with its full <code>proof_trace</code> — the per-field "why" (evidence quote + reason). The accountability record.</td></tr>
+<tr><td><code>gis_rule_contract.json</code></td><td>downstream GIS</td><td>The slim, verified-only, de-duplicated contract: <code>rule_object, operator, value, unit, geometry, citation</code>. Nothing internal. This is the <em>only</em> input GIS consumes.</td></tr>
+<tr><td><code>review_needed.json</code></td><td>review queue</td><td>Plausible-but-unproven rules with their exact gaps, ready for a human to resolve.</td></tr>
+</tbody></table></div>
+<p>A verified rule is projected to the slim contract by <code>project_gis_contract_rule()</code>, which strips internal traces and keeps a clean citation. A CI <strong>drift guard</strong> re-projects <code>verified_rules.json</code> and asserts it matches the committed <code>gis_rule_contract.json</code> byte-for-byte, so the GIS feed can never silently diverge from the audited truth.</p>
+<p>Our running example, as the GIS team sees it:</p>
+<div class="codewrap" data-lang="json"><pre><code>{
+  "rule_object": "lot_area", "operator": "&gt;=", "value": "281", "unit": "m2",
+  "verification_status": "verified",
+  "citation": {
+    "document": "R1Small-Scale-Multi-Unit-Housing-District.pdf",
+    "page": 1, "evidence_id": "m7_pack_0002_ev_001",
+    "quote": "Minimum Lot Area - 281 m2"
+  }
+}</code></pre></div>
+
+<h2 id="s-dashboard"><span class="num">16.</span> The Civic Console dashboard</h2>
+<p>A read-only Streamlit app renders the committed JSON — it never recomputes a verdict. Every count drills down to the exact rules behind it. Four tabs:</p>
+<ul>
+<li><strong>Summary</strong> — the funnel (candidates → verified / review / rejected / not_used), scored-coverage panel, and top review reasons.</li>
+<li><strong>Review Queue</strong> — held rules rendered as plain-English sentences with the unproven fields highlighted in <span style="color:var(--rejected);font-weight:700">red</span>, plus suggested next actions.</li>
+<li><strong>GIS Hand-off</strong> — a preview of <code>gis_rule_contract.json</code>, the verified-only feed.</li>
+<li><strong>Ask the Bylaw</strong> — a grounded RAG chatbot (BM25 + rerank + <code>gemini-3.1-flash-lite</code>) that answers questions and <em>cites a section for every claim</em>. It is strictly advisory — its system prompt forbids it to verify, approve, reject, or promote a rule.</li>
+</ul>
+<div class="callout try">
+  <div class="lbl">⚡ Try it — a mock of "Ask the Bylaw"</div>
+  <p>A tiny offline replica over our running example. Click a suggested question; the answer appears with citations. (No network — canned responses that mirror the grounded, cite-everything contract.)</p>
+</div>
+<div class="widget" id="chatbot">
+  <div class="widget-head"><span class="ico">⚡</span> Interactive · Ask the Bylaw (mock)</div>
+  <div class="widget-body">
+    <div class="chat">
+      <div class="hintchips" id="cb-hints"></div>
+      <div class="chat-window" id="cb-window"></div>
+      <div class="chat-advisory">⚠ Advisory only — this assistant retrieves and summarizes; it never verifies, approves, or rejects a rule. Citations point to the source so a human can check.</div>
+    </div>
+  </div>
+</div>
+
+<h2 id="s-results"><span class="num">17.</span> Results across the three cities</h2>
+<p>The same unchanged verifier runs over three very different bylaws. Precision is 1.00 and false-verifies are 0 everywhere — the differences are in recall and coverage, exactly where extraction quality (not the verifier) is the lever.</p>
+<div class="widget" id="comparator">
+  <div class="widget-head"><span class="ico">⚡</span> Interactive · City results comparator</div>
+  <div class="widget-body">
+    <div class="seg" id="cmp-seg"><button data-view="table" class="active">Table</button><button data-view="bars">Bars</button></div>
+    <div id="cmp-body"></div>
+  </div>
+</div>
+<div class="callout try">
+  <div class="lbl">⚡ Try it — the Burnaby funnel</div>
+  <p>How 144 candidates become 87 verified. The 57 held rules are not failures — they are the recall frontier waiting on better evidence.</p>
+</div>
+<div class="widget" id="funnel">
+  <div class="widget-head"><span class="ico">⚡</span> Interactive · Burnaby R1 funnel</div>
+  <div class="widget-body"><div class="bars" id="funnel-bars"></div></div>
+</div>
+
+<div class="part-head">Part VI · Reflection</div>
+
+<h2 id="s-breakthroughs"><span class="num">18.</span> Why it's good — the genuine breakthroughs</h2>
+<p>Stripped of hype, here is what is actually novel and well-built about M7:</p>
+<ol>
+<li><strong>A deterministic sole-authority gate with a provable zero-false-verify guarantee.</strong> Pure-LLM legal extractors hallucinate 17–33% of citations; M7's verified set has a measured false-verify rate of <em>zero</em> across three cities, because no probabilistic signal can promote a rule. The guarantee is structural, not statistical.</li>
+<li><strong>Deterministic matrix extraction.</strong> Recovering table geometry turns each (row × column) cell into an independently <em>provable</em> candidate — the source of roughly 4 in 5 verified Burnaby rules, and a capability most text-only RAG systems simply don't have.</li>
+<li><strong>Honest measurement.</strong> The scored legal-slot denominator (§14) refuses to grade its own homework: it excludes the verifier's own outputs and reports a conservative 0.318, not a flattering 100%. Independently-authored gold and a literal PDF audit back it up.</li>
+<li><strong>Leak classes captured as named, tested gates.</strong> Operator inversion, easement width, range-lower-bound, foreign unit, definition sentence, allowance trigger — each is a one-line auditable rule plus a regression test, so a closed bug can never quietly reopen.</li>
+<li><strong>Cross-city generalization with one unchanged verifier.</strong> Burnaby, Calgary, and Vancouver share the same verification code; only the JSON config (policy-as-data) differs. The system isn't overfit to one bylaw.</li>
+</ol>
+
+<h2 id="s-limits"><span class="num">19.</span> Honest limitations &amp; how to improve</h2>
+<p>The project is deliberately candid about what it doesn't do. None of these are verifier bugs — they are recall and provenance limits, and the fixes all live <em>upstream</em> of the trust gate.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Limitation</th><th>Why it exists</th><th>The right lever</th></tr></thead>
+<tbody>
+<tr><td>Recall capped — some true rules sit in review (heritage conditionals, single-source prose).</td><td>By design: promoting them risks false-verifies (the C5 lesson).</td><td>Better evidence assembly, not looser gates.</td></tr>
+<tr><td>Modest scored coverage (Calgary, Vancouver lower than Burnaby).</td><td>Extraction is still incomplete on table-heavy / sparse-gold districts.</td><td>Richer table-proof completeness; larger authored gold for Vancouver.</td></tr>
+<tr><td>Provenance labels can lag (a row cites §534 where the clause is §535).</td><td>Section attribution happens at extraction; value/page stay correct.</td><td>Refactor the section-attribution step in extraction.</td></tr>
+<tr><td>One Burnaby fire rule (<code>br1_fire_003</code>) stays unverified.</td><td>Non-deterministic / hard-to-anchor evidence.</td><td>Targeted evidence repair for single-source prose families.</td></tr>
+</tbody></table></div>
+<h3>Concrete next levers (a to-do list for future-you)</h3>
+<ul>
+<li><strong>Strengthen evidence assembly for review rules</strong> — build more complete evidence packs so the verifier has enough to prove scope/condition, moving rules from <span class="bk review">review</span> to <span class="bk verified">verified</span> <em>without</em> changing a single gate.</li>
+<li><strong>Deepen matrix proof</strong> — better header-band binding, continuation-row merging, and branch (conditional-cell) semantics, so more table cells become provable.</li>
+<li><strong>Expand Vancouver gold</strong> — systematically author the principal/duplex/triplex sections so the benchmark denominator reflects reality.</li>
+<li><strong>Shadow-evaluate frontier methods</strong> — try retrieval/RAG scoring upgrades (e.g. LegalBench-RAG-style metrics, table-image retrieval) in a shadow lane; adopt only if they beat the safety gates first.</li>
+<li><strong>Fix provenance attribution</strong> — decouple the section label from the value so citations are exact.</li>
+</ul>
+<div class="callout key">
+  <div class="lbl">◆ The mental model to keep</div>
+  <p>Every future improvement is a question of "<em>can the verifier now prove more, because we gave it better input?</em>" — never "<em>can we make the verifier accept more?</em>" Keep that distinction and the safety contract survives every change you make.</p>
+</div>
+
+<h2 id="s-glossary"><span class="num">20.</span> Glossary</h2>
+<dl class="gloss">
+<dt>Adversarial test</dt><dd>A deliberately tricky candidate (inverted operator, easement width, flattened range) that the verifier <em>must</em> block. M7 blocks 24/24 (Burnaby), 6/6 (Calgary), 4/4 (Vancouver).</dd>
+<dt>BM25 <span class="pin">§8</span></dt><dd>A classic, deterministic keyword-ranking formula used for retrieval. Exact-word strong, synonym-blind.</dd>
+<dt>Candidate</dt><dd>A proposed rule from extraction, before verification. Allowed to be wrong.</dd>
+<dt>Deterministic <span class="pin">§4</span></dt><dd>Same input always yields the same output. The verifier and decision policy are fully deterministic.</dd>
+<dt>Embedding <span class="pin">§4</span></dt><dd>A numeric vector representing a passage's meaning, so semantically similar text sits nearby.</dd>
+<dt>Evidence unit</dt><dd>A cited chunk of source text (with page, type, and optional matrix anchor) that a candidate points to.</dd>
+<dt>frozenset <span class="pin">§3</span></dt><dd>An immutable Python set. Used for the fixed gap catalogs so the safety policy can't mutate at runtime.</dd>
+<dt>Gold set <span class="pin">§4</span></dt><dd>A hand-authored list of correct rules per city, used to measure recall/precision independently.</dd>
+<dt>Hallucination <span class="pin">§4</span></dt><dd>Fluent, confident, but unsupported model output. The reason the verifier exists.</dd>
+<dt>Legal slot <span class="pin">§14</span></dt><dd>A distinct enforceable rule, keyed by (family, value, unit). The honest coverage denominator.</dd>
+<dt>Matrix anchor <span class="pin">§11</span></dt><dd>Recovered table geometry (column bands, branches) attached to table evidence, enabling column-level proof.</dd>
+<dt>Precision / recall <span class="pin">§4</span></dt><dd>Precision = fraction of verified rules that are correct (pinned at 1.0). Recall = fraction of true rules captured (the thing to grow).</dd>
+<dt>Proof trace</dt><dd>The per-field record (evidence quote + reason) explaining why each claim was supported. Lives in <code>verified_rules.json</code>.</dd>
+<dt>RAG <span class="pin">§4</span></dt><dd>Retrieval-augmented generation — fetch relevant passages first, then have the model answer only from them.</dd>
+<dt>Reranker / cross-encoder <span class="pin">§8</span></dt><dd>A heavier model that re-scores top retrieval hits by reading query and passage together.</dd>
+<dt>RRF <span class="pin">§8</span></dt><dd>Reciprocal Rank Fusion — combine multiple rankings via <code>1/(60+rank)</code>.</dd>
+<dt>Support gap</dt><dd>A named code recorded when a deterministic check fails. The decision policy maps the gap set to a bucket.</dd>
+<dt>Trust boundary <span class="pin">§5</span></dt><dd>The single line between "AI proposed" and "code proved." Nothing probabilistic crosses it.</dd>
+</dl>
+
+<h2 id="s-appendix"><span class="num">21.</span> Appendix — file map &amp; how to run</h2>
+<h3>The files that matter</h3>
+<div class="fieldcard fnmap">
+<b>native_extraction.py</b>  — proposer: RAG + LLM candidate extraction<br>
+<b>bylaw_rag.py</b>          — hybrid BM25+RRF retrieval (also powers the chatbot)<br>
+<b>table_matrix.py</b>       — deterministic matrix geometry + anchors<br>
+<b>verification.py</b>       — verify_candidates(): the trust gate<br>
+<b>support_checks.py</b>     — the atomic field/shape checks<br>
+<b>decision_policy.py</b>    — gaps → {verified, review, rejected, not_used}<br>
+<b>m7_measure.py</b>         — M7 scored scored legal-slot measurement<br>
+<b>slim_pipeline.py</b>      — orchestrates repair → verify → GIS export<br>
+<b>dashboard/streamlit_app.py</b> — the read-only Civic Console<br>
+<b>configs/&lt;city&gt;.json</b>     — policy-as-data per city
+</div>
+<h3>Run it end to end</h3>
+<div class="codewrap" data-lang="bash"><pre><code>cd Burnaby_prototype
+
+# 1 · Extract + verify (M7 native pipeline, gemini-3.1-flash-lite)
+.venv/bin/python scripts/run_m7_bakeoff.py --city burnaby_r1 \
+    --models google/gemini-3.1-flash-lite
+
+# 2 · Verify only, reusing an existing extraction
+.venv/bin/python scripts/run_slim_verifier.py --city burnaby_r1 \
+    --native-extraction outputs/m7_runs/burnaby_r1/google_gemini_3_1_flash_lite
+
+# 3 · Honest measurement (M7 scored scored slots)
+.venv/bin/python scripts/run_m7_measure.py --city burnaby_r1 \
+    --run-id m7_gemini31 --model google/gemini-3.1-flash-lite
+
+# 4 · Explore in the dashboard
+.venv/bin/python -m streamlit run dashboard/streamlit_app.py --server.port 8620</code></pre></div>
+<hr>
+<p class="small">Generated as a self-contained, dependency-free HTML guide for the M7 release. Every number, record, and code excerpt is drawn from the committed Burnaby R1 run and the project source. Companion docs: <code>M7_TECH_DOC.html</code> (reference), <code>M7_TEXTBOOK.html</code> (study guide), <code>M7_PRESENTATION_NOTE.html</code> (talk), <code>M7_FINAL_RELEASE.md</code> (runbook).</p>
+
+</main>
+</div>
+
+<script>
+(function(){
+'use strict';
+function $(s,r){return (r||document).querySelector(s);}
+function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+function el(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e;}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+/* ---------- 1 · syntax highlighter + code decoration ---------- */
+var KW={
+  py:new Set(['def','class','return','if','elif','else','for','while','in','not','and','or','is','None','True','False','import','from','as','with','try','except','finally','raise','lambda','yield','assert','pass','continue','break','global','nonlocal','del','await','async','self']),
+  json:new Set(['true','false','null']),
+  bash:new Set(['cd','python','python3','venv','bin'])
+};
+function highlight(code,lang){
+  var kw=KW[lang]||new Set();
+  var re=/(#[^\n]*|\/\/[^\n]*)|("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')|(\b\d+(?:\.\d+)*\b)|([A-Za-z_][A-Za-z0-9_]*)/g;
+  var out='',last=0,m;
+  while((m=re.exec(code))){
+    out+=esc(code.slice(last,m.index));
+    var t=m[0];
+    if(m[1]){out+='<span class="tok-com">'+esc(t)+'</span>';}
+    else if(m[2]){
+      var after=code.slice(re.lastIndex).match(/^\s*:/);
+      if(lang==='json'&&after)out+='<span class="tok-key">'+esc(t)+'</span>';
+      else out+='<span class="tok-str">'+esc(t)+'</span>';
+    }
+    else if(m[3]){out+='<span class="tok-num">'+esc(t)+'</span>';}
+    else{
+      if(kw.has(t))out+='<span class="tok-kw">'+esc(t)+'</span>';
+      else if(code[re.lastIndex]==='(')out+='<span class="tok-fn">'+esc(t)+'</span>';
+      else out+=esc(t);
+    }
+    last=re.lastIndex;
+  }
+  out+=esc(code.slice(last));
+  return out;
+}
+function decorateCode(wrap){
+  var lang=wrap.getAttribute('data-lang')||'py';
+  var code=wrap.querySelector('code');
+  if(!code||wrap.dataset.done)return;
+  var raw=code.textContent;
+  code.innerHTML=highlight(raw,lang);
+  wrap.appendChild(el('span','lang',lang));
+  var btn=el('button','copy-btn','copy');
+  btn.addEventListener('click',function(){
+    if(navigator.clipboard)navigator.clipboard.writeText(raw);
+    btn.textContent='copied';setTimeout(function(){btn.textContent='copy';},1200);
+  });
+  wrap.appendChild(btn);
+  wrap.dataset.done='1';
+}
+$$('.codewrap').forEach(decorateCode);
+
+/* ---------- 2 · scrollspy ToC ---------- */
+(function(){
+  var links=$$('.toc a'),map={};
+  links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+  var heads=$$('main h2[id]');
+  if(!('IntersectionObserver' in window)||!heads.length)return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        links.forEach(function(a){a.classList.remove('active');});
+        if(map[en.target.id])map[en.target.id].classList.add('active');
+      }
+    });
+  },{rootMargin:'-8% 0px -82% 0px',threshold:0});
+  heads.forEach(function(h){io.observe(h);});
+})();
+
+/* ---------- 3 · stage explorer (running example) ---------- */
+var EX={
+  v:{id:'burnaby_r1_001',label:'lot_area · MINIMUM',cls:'verified',
+    raw:'Minimum Lot Area - 281 m2',
+    cand:{rule_object:'lot_area',constraint_type:'minimum',operator:'>=',value:'281',unit:'m2',applies_to:'lot'},
+    checks:[['rule_object','ok','"lot_area" appears in evidence'],['value','ok','281 visible (digit-boundary)'],['unit','ok','m² compatible with lot_area'],['operator','ok','"minimum" wording → ≥'],['family direction','ok','config: lot_area = min, ≥ aligns'],['scope / applies_to','ok','grounded in local text']],
+    gaps:[],bucket:'verified',
+    slot:'legal slot (lot_area, 281, m2) → counted as covered',
+    out:'→ gis_rule_contract.json'},
+  r:{id:'burnaby_r1_002',label:'lot_area · MAXIMUM',cls:'review',
+    raw:'Maximum Lot Area 280 m2',
+    cand:{rule_object:'lot_area',constraint_type:'maximum',operator:'<=',value:'280',unit:'m2',applies_to:'lot'},
+    checks:[['rule_object','ok','"lot_area" appears in evidence'],['value','ok','280 visible'],['unit','ok','m² compatible'],['operator','ok','"maximum" wording → ≤'],['family direction','bad','config: lot_area = MIN, but ≤ is a max → mismatch'],['scope / applies_to','gap','single text source → wants consensus']],
+    gaps:['rule_family_direction_mismatch','text_candidate_requires_review'],bucket:'review_needed',
+    slot:'held — not counted as covered (awaits a human)',
+    out:'→ review_needed.json'}
+};
+var STAGES=[
+  {key:'raw',short:'0 · Raw text',note:'The literal text extracted from page 1. One subdivision-table cell holds two values, one space apart.'},
+  {key:'cand',short:'1 · Extraction',note:'The LLM proposes structured candidates from the cited text. It may suggest anything; it decides nothing.'},
+  {key:'verify',short:'2 · Verification',note:'Each field is checked against the cited sentence. A failed check appends a named support_gap.'},
+  {key:'bucket',short:'2 · Decision',note:'decision_policy maps the gap set to a bucket. No blocking gaps → verified.'},
+  {key:'measure',short:'3 · Output',note:'Verified rules become legal slots and flow to the GIS contract; held rules wait in the review queue.'}
+];
+function renderTrack(side,stageKey){
+  var d=EX[side];
+  var col=el('div','track-col '+(side==='v'?'v':'r'));
+  col.appendChild(el('h5','','<span>'+d.id+'</span><span class="bk '+d.cls+'">'+d.label+'</span>'));
+  var body=el('div');
+  if(stageKey==='raw'){
+    body.appendChild(el('div','kv','<span class="k">page 1 text</span><span class="val">'+esc(d.raw)+'</span>'));
+  }else if(stageKey==='cand'){
+    Object.keys(d.cand).forEach(function(k){
+      body.appendChild(el('div','kv','<span class="k">'+k+'</span><span class="val">'+esc(String(d.cand[k]))+'</span>'));
+    });
+  }else if(stageKey==='verify'){
+    var checks=el('div','checks');
+    d.checks.forEach(function(c){
+      var sym=c[1]==='ok'?'✓':(c[1]==='bad'?'✗':'?');
+      checks.appendChild(el('span','check '+c[1],sym+' '+c[0]));
+    });
+    body.appendChild(checks);
+    d.checks.forEach(function(c){
+      if(c[1]!=='ok')body.appendChild(el('div','kv','<span class="k">'+c[0]+'</span><span class="val">'+esc(c[2])+'</span>'));
+    });
+  }else if(stageKey==='bucket'){
+    body.appendChild(el('div','kv','<span class="k">support_gaps</span><span class="val">'+(d.gaps.length?esc('['+d.gaps.join(', ')+']'):'[ ]')+'</span>'));
+    var b=el('div');b.style.marginTop='8px';
+    b.innerHTML='<span class="bk '+d.cls+'" style="font-size:13px">→ '+d.bucket.toUpperCase()+'</span>';
+    body.appendChild(b);
+  }else if(stageKey==='measure'){
+    body.appendChild(el('div','kv','<span class="k">measurement</span><span class="val">'+esc(d.slot)+'</span>'));
+    body.appendChild(el('div','kv','<span class="k">output file</span><span class="val">'+esc(d.out)+'</span>'));
+  }
+  col.appendChild(body);
+  return col;
+}
+(function(){
+  var stepsEl=$('#se-steps'),noteEl=$('#se-note'),trackEl=$('#se-track');
+  if(!stepsEl)return;
+  var cur=0;
+  function draw(){
+    stepsEl.innerHTML='';
+    STAGES.forEach(function(s,i){
+      var b=el('button','step-btn'+(i===cur?' active':''),s.short);
+      b.addEventListener('click',function(){cur=i;draw();});
+      stepsEl.appendChild(b);
+    });
+    noteEl.textContent=STAGES[cur].note;
+    trackEl.innerHTML='';
+    trackEl.appendChild(renderTrack('v',STAGES[cur].key));
+    trackEl.appendChild(renderTrack('r',STAGES[cur].key));
+  }
+  draw();
+})();
+
+/* ---------- 4 · code tabs ---------- */
+var CT=[
+ {id:'decision',label:'decision_policy',lang:'py',code:
+"def verification_decision_from_gaps(support_gaps):\n    gaps = set(support_gaps)\n    blocking = gaps - ADVISORY_GAPS          # advisory flags can never veto\n    if not blocking:                       return VERIFIED\n    if CRITICAL_REJECTION_GAPS & blocking: return REJECTED\n    if NOT_USED_GAPS & blocking:           return NOT_USED\n    return REVIEW_NEEDED                    # plausible but unproven"},
+ {id:'value',label:'contains_value',lang:'py',code:
+"def contains_value(evidence_text, value):\n    \"\"\"Every value token must appear with digit boundaries: '5' is not '7.5'.\"\"\"\n    tokens = _value_tokens(value)            # \"281\" -> [\"281\"]\n    if not tokens:\n        return True\n    normalized = evidence_text.replace(\",\", \"\")\n    return all(token_visible(normalized, token) for token in tokens)"},
+ {id:'operator',label:'operator_supported',lang:'py',code:
+"# the operator must be backed by the evidence wording, else default-closed\nif operator in {\"<=\", \"max\", \"maximum\", \"not_exceed\"}:\n    return any(p in text for p in [\"maximum\", \"not exceed\", \"up to\", \"limited to\"])\nif operator in {\">=\", \"min\", \"minimum\", \"at_least\"}:\n    return any(p in text for p in [\"minimum\", \"not less\", \"at least\", \"shall have\"])\n# ... one explicit branch per supported operator ...\nreturn False   # never verify an operator with zero evidence wording"},
+ {id:'rrf',label:'BylawIndex.search',lang:'py',code:
+"def search(self, question, *, top_k=5):\n    bm25_rank  = self._bm25_ranks(question)\n    dense_rank = self._dense_ranks(question)   # or None (BM25-only)\n    fused = []\n    for index, chunk in enumerate(self.chunks):\n        score = 0.0\n        if index in bm25_rank:  score += 1.0 / (RRF_K + bm25_rank[index])\n        if dense_rank and index in dense_rank:\n                                score += 1.0 / (RRF_K + dense_rank[index])\n        if score > 0.0:  fused.append((score, chunk))\n    fused.sort(key=lambda it: (-it[0], str(it[1][\"chunk_id\"])))  # deterministic\n    return [chunk for _, chunk in fused[:top_k]]"},
+ {id:'slot',label:'legal_slot_key',lang:'py',code:
+"def legal_slot_key(slot):\n    # one legal rule = (family, value, unit). Scope is deliberately excluded:\n    # source-inferred scope is greedy on table cells, so keying on it would\n    # both fracture true matches and inflate the count. Scope CORRECTNESS is\n    # enforced by the verifier's gates, not by this measurement denominator.\n    return (normalize_family(slot[\"rule_family_signal\"]),\n            normalized_number(slot[\"value\"]),\n            normalize_unit(slot[\"unit\"]))"}
+];
+(function(){
+  var tabsEl=$('#ct-tabs'),panesEl=$('#ct-panes');
+  if(!tabsEl)return;
+  CT.forEach(function(t,i){
+    var b=el('button','tab-btn'+(i===0?' active':''),t.label);
+    b.addEventListener('click',function(){
+      $$('.tab-btn',tabsEl).forEach(function(x){x.classList.remove('active');});
+      $$('.tabpane',panesEl).forEach(function(x){x.classList.remove('active');});
+      b.classList.add('active');
+      $('#pane-'+t.id).classList.add('active');
+    });
+    tabsEl.appendChild(b);
+    var pane=el('div','tabpane'+(i===0?' active':''));pane.id='pane-'+t.id;
+    var wrap=el('div','codewrap');wrap.setAttribute('data-lang',t.lang);
+    var pre=el('pre'),code=el('code');code.textContent=t.code;pre.appendChild(code);wrap.appendChild(pre);
+    pane.appendChild(wrap);panesEl.appendChild(pane);
+    decorateCode(wrap);
+  });
+})();
+
+/* ---------- 5 · live gap classifier ---------- */
+var GAPS={
+  crit:[['value_not_found_in_evidence'],['unit_not_found_in_evidence'],['table_operator_refuted'],['value_bound_to_foreign_unit']],
+  rev:[['rule_family_direction_mismatch'],['applies_to_not_supported'],['range_bound_not_maximum'],['non_metric_unit_requires_review'],['text_candidate_requires_review']],
+  nu:[['definition_not_rule'],['outside_current_rule_contract']],
+  adv:[['upstream_extraction_requested_review']]
+};
+var CRIT_SET=new Set(GAPS.crit.map(function(g){return g[0];}));
+var NU_SET=new Set(GAPS.nu.map(function(g){return g[0];}));
+var ADV_SET=new Set(GAPS.adv.map(function(g){return g[0];}));
+(function(){
+  var groupsEl=$('#gc-groups');if(!groupsEl)return;
+  var active=new Set();
+  var meta=[['crit','Critical → reject'],['rev','Review (scope / direction)'],['nu','Not used'],['adv','Advisory (never blocks)']];
+  meta.forEach(function(gm){
+    var g=el('div','gc-group '+gm[0]);
+    g.appendChild(el('h5','',gm[1]));
+    GAPS[gm[0]].forEach(function(code){
+      var lbl=el('label','tog '+gm[0]);
+      var inp=document.createElement('input');inp.type='checkbox';inp.value=code[0];
+      lbl.appendChild(inp);lbl.appendChild(el('span','sw'));lbl.appendChild(el('span','',code[0]));
+      inp.addEventListener('change',function(){if(inp.checked)active.add(code[0]);else active.delete(code[0]);update();});
+      g.appendChild(lbl);
+    });
+    groupsEl.appendChild(g);
+  });
+  function decide(){
+    var blocking=[];active.forEach(function(x){if(!ADV_SET.has(x))blocking.push(x);});
+    if(blocking.length===0)return'verified';
+    for(var i=0;i<blocking.length;i++)if(CRIT_SET.has(blocking[i]))return'rejected';
+    for(var j=0;j<blocking.length;j++)if(NU_SET.has(blocking[j]))return'not_used';
+    return'review_needed';
+  }
+  var REASON={verified:'Nothing left to object to — every deterministic gate passed.',rejected:'A hard contradiction: the citation itself is wrong. Reserved for unsafe/contradicted candidates.',not_used:'A real extraction artifact, but not an enforceable numeric rule for this contract.',review_needed:'Plausible, but a cue could not be proven — a human or better evidence can repair it.'};
+  var BG={verified:'var(--verified-bg)',rejected:'var(--rejected-bg)',not_used:'var(--notused-bg)',review_needed:'var(--review-bg)'};
+  var FG={verified:'var(--verified)',rejected:'var(--rejected)',not_used:'var(--notused)',review_needed:'var(--review)'};
+  function update(){
+    var d=decide();
+    var v=$('#gc-verdict');v.textContent=d.toUpperCase();v.style.background=BG[d];v.style.color=FG[d];
+    $('#gc-reason').textContent=REASON[d];
+    var blocking=0;active.forEach(function(x){if(!ADV_SET.has(x))blocking++;});
+    var adv=active.size-blocking;
+    $('#gc-formula').innerHTML='blocking = '+(blocking?blocking+' gap'+(blocking>1?'s':''):'∅')+(adv?'<br>advisory dropped: '+adv:'');
+  }
+  var presets=[['All clear (∅)',[]],['Running example: 280 m²',['rule_family_direction_mismatch','text_candidate_requires_review']],['Wrong number',['value_not_found_in_evidence']],['Definition sentence',['definition_not_rule']],['Only advisory',['upstream_extraction_requested_review']]];
+  var pEl=$('#gc-presets');
+  presets.forEach(function(p){
+    var b=el('button','preset',p[0]);
+    b.addEventListener('click',function(){
+      active=new Set(p[1]);
+      $$('#gc-groups input').forEach(function(inp){inp.checked=active.has(inp.value);});
+      update();
+    });
+    pEl.appendChild(b);
+  });
+  update();
+})();
+
+/* ---------- 6 · coverage stepper ---------- */
+var COV=[
+ {n:440,short:'Raw 440',label:'raw numeric signals',note:'Every number the corpus exposes — far too noisy to be a fair denominator.'},
+ {n:304,short:'Corpus 304',label:'corpus-derived slots',note:"Drop the verifier's own outputs: the denominator must never be a function of the numerator."},
+ {n:205,short:'Scored 205',label:'known family + in-contract',note:"Keep only recognized rule families inside the city's GIS contract."},
+ {n:66,short:'Legal 66',label:'distinct legal slots',note:'Collapse duplicates on (family, value, unit). This is the defensible denominator.'},
+ {n:21,short:'Covered 21',label:'verified-covered legal slots',note:'Of 66 legal slots the verifier proves 21 → scored coverage 21 / 66 = 0.318.'}
+];
+(function(){
+  var steps=$('#cov-steps');if(!steps)return;
+  var cur=0;
+  function draw(){
+    steps.innerHTML='';
+    COV.forEach(function(s,i){
+      var b=el('button','step-btn'+(i===cur?' active':''),s.short);
+      b.addEventListener('click',function(){cur=i;draw();});
+      steps.appendChild(b);
+    });
+    $('#cov-count').textContent=COV[cur].n;
+    $('#cov-label').textContent=COV[cur].label;
+    $('#cov-note').textContent=COV[cur].note;
+  }
+  draw();
+})();
+
+/* ---------- 7 · Ask-the-Bylaw mock ---------- */
+var QA=[
+ {q:'What is the minimum lot area?',a:'The minimum lot area for a small-scale multi-unit (rowhouse) interior lot is <b>281 m²</b>. <span class="cite">§101.3 · p.1</span>'},
+ {q:'Is there a maximum lot area?',a:'The table lists a "Maximum Lot Area" of 280 m², but that reads as a maximum on a family the city treats as minimum-only, so it is held for human review rather than published as a rule. <span class="cite">§101.3 · p.1</span>'},
+ {q:'What is the maximum lot coverage?',a:'For small-scale multi-unit lots, maximum lot coverage is <b>40%</b> on lots under 567 m² and <b>30%</b> on larger lots. <span class="cite">§101.4 · p.2</span>'},
+ {q:'Do you decide which rules are correct?',a:'No — I only retrieve and summarize the bylaw text and cite it. I never verify, approve, or reject a rule; the deterministic verifier is the sole authority. <span class="cite">advisory</span>'}
+];
+(function(){
+  var win=$('#cb-window'),hints=$('#cb-hints');if(!win)return;
+  function add(who,html){
+    var m=el('div','chat-msg '+(who==='you'?'u':'a'));
+    m.appendChild(el('span','who',who==='you'?'You':'Bylaw'));
+    m.appendChild(el('div','chat-bubble',html));
+    win.appendChild(m);win.scrollTop=win.scrollHeight;
+  }
+  add('bot','Ask about the Burnaby R1 small-scale-housing rules — pick a suggested question below.');
+  QA.forEach(function(item){
+    var c=el('button','hintchip',item.q);
+    c.addEventListener('click',function(){add('you',esc(item.q));setTimeout(function(){add('bot',item.a);},260);});
+    hints.appendChild(c);
+  });
+})();
+
+/* ---------- 8 · city comparator ---------- */
+var CMP=[
+ {city:'Burnaby R1',gold:40,verified:87,review:57,vrec:0.825,vrrec:0.975,prec:1.00,fv:0,cov:0.318},
+ {city:'Calgary R-CG',gold:19,verified:29,review:42,vrec:0.947,vrrec:1.000,prec:1.00,fv:0,cov:0.161},
+ {city:'Vancouver RS',gold:7,verified:10,review:31,vrec:1.000,vrrec:1.000,prec:1.00,fv:0,cov:0.091}
+];
+(function(){
+  var body=$('#cmp-body'),seg=$('#cmp-seg');if(!body)return;
+  function table(){
+    var h='<div class="tablewrap"><table><thead><tr><th>City</th><th class="num">gold</th><th class="num">verified</th><th class="num">review</th><th class="num">verified recall</th><th class="num">v+r recall</th><th class="num">precision</th><th class="num">false-verify</th><th class="num">scored cov.</th></tr></thead><tbody>';
+    CMP.forEach(function(c){
+      h+='<tr><td>'+c.city+'</td><td class="num">'+c.gold+'</td><td class="num">'+c.verified+'</td><td class="num">'+c.review+'</td><td class="num">'+c.vrec.toFixed(3)+'</td><td class="num">'+c.vrrec.toFixed(3)+'</td><td class="num">'+c.prec.toFixed(2)+'</td><td class="num">'+c.fv+'</td><td class="num">'+c.cov.toFixed(3)+'</td></tr>';
+    });
+    body.innerHTML=h+'</tbody></table></div>';
+  }
+  function bars(){
+    var max=Math.max.apply(null,CMP.map(function(c){return c.verified+c.review;}));
+    var h='<div class="bars">';
+    CMP.forEach(function(c){
+      var vw=Math.round(c.verified/max*100),rw=Math.round(c.review/max*100);
+      h+='<div class="bar-row"><div>'+c.city+'</div><div class="bar-track" style="display:flex"><div class="bar-fill verified" style="width:'+vw+'%"></div><div class="bar-fill review" style="width:'+rw+'%"></div></div><div class="bar-val">'+c.verified+' / '+c.review+'</div></div>';
+    });
+    h+='</div><div class="small" style="margin-top:9px"><span class="bk verified">verified</span> + <span class="bk review">review</span> per city · precision 1.00 and false-verify 0 for all three.</div>';
+    body.innerHTML=h;
+  }
+  $$('button',seg).forEach(function(b){
+    b.addEventListener('click',function(){
+      $$('button',seg).forEach(function(x){x.classList.remove('active');});
+      b.classList.add('active');
+      (b.getAttribute('data-view')==='bars'?bars:table)();
+    });
+  });
+  table();
+})();
+
+/* ---------- 9 · Burnaby funnel ---------- */
+(function(){
+  var host=$('#funnel-bars');if(!host)return;
+  var rows=[['candidates',144,'cand'],['verified',87,'verified'],['review_needed',57,'review'],['rejected',0,'rejected'],['not_used',0,'notused']];
+  var max=144,html='';
+  rows.forEach(function(r){
+    var w=Math.round(r[1]/max*100);
+    html+='<div class="bar-row"><div>'+r[0]+'</div><div class="bar-track"><div class="bar-fill '+r[2]+'" style="width:0%" data-w="'+w+'"></div></div><div class="bar-val">'+r[1]+'</div></div>';
+  });
+  host.innerHTML=html;
+  requestAnimationFrame(function(){$$('.bar-fill',host).forEach(function(f){f.style.width=f.getAttribute('data-w')+'%';});});
+})();
+
+})();
+</script>

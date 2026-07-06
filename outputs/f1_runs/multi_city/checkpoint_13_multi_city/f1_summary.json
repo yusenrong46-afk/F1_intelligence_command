@@ -1,0 +1,72 @@
+{
+  "artifact_names": [
+    "source_registry.json",
+    "document_blocks.json",
+    "source_spans.json",
+    "retrieval_report.json",
+    "candidate_rules.json",
+    "verification_decisions.json",
+    "verified_rules.json",
+    "review_queue.json",
+    "repair_attempts.json",
+    "repair_rerun_report.json",
+    "gis_rule_contract.json",
+    "compliance_decisions.json",
+    "chatbot_eval.json",
+    "f1_summary.json"
+  ],
+  "bylaw_version": "",
+  "checkpoint": "F1 checkpoint 13",
+  "city": "multi_city",
+  "constitution_rules": [
+    "Source documents are ground truth.",
+    "Extraction proposes candidate rules.",
+    "RAG retrieves evidence, not truth.",
+    "Repair proposes patches, never approval.",
+    "Verification is the only promotion authority.",
+    "Chatbot explains and navigates, but cannot verify or approve.",
+    "GIS and compliance consume verified-only rules.",
+    "No dry-run result may be described as a real measured result.",
+    "Every upgrade must be proven by benchmark or clearly labeled exploratory.",
+    "A city without gold benchmark is exploratory only."
+  ],
+  "documents": {
+    "artifact_contracts": "docs/F1_ARTIFACT_CONTRACTS.md",
+    "constitution": "docs/F1_CONSTITUTION.md",
+    "engineering_plan": "docs/F1_ENGINEERING_PLAN.md",
+    "living_textbook": "F1_TEXTBOOK.ipynb",
+    "m_series_archive_index": "archive/m_series/README.md"
+  },
+  "generated_at": "2026-07-06T03:21:23.290627+00:00",
+  "multi_city": {
+    "artifact": "f1_multi_city_report.json",
+    "city_count": 4,
+    "completed_city_count": 4,
+    "exploratory_city_count": 3,
+    "failed_city_count": 0,
+    "false_approval_total": 0,
+    "false_verified_total": 0,
+    "prefer_docling": false,
+    "release_safe_city_count": 1,
+    "report": "f1_multi_city_report.md",
+    "runtime_seconds": 56.274
+  },
+  "next_checkpoint": "Use multi-city results to improve city-aware retrieval/extraction while preserving verifier precision.",
+  "purpose": "Run F1 artifact generation across multiple cities and label benchmark coverage honestly.",
+  "run_id": "checkpoint_13_multi_city",
+  "safety": {
+    "current_false_verified_total": 0,
+    "existing_safety_reproduced": true,
+    "f1_exports_gis": false,
+    "f1_multi_city_completed": true,
+    "f1_multi_city_false_approval_total": 0,
+    "f1_multi_city_false_verified_total": 0,
+    "f1_promotes_rules": false,
+    "false_approval_count_boundary": 0,
+    "overall_status": "m7_safety_ready",
+    "status_report": "outputs/m7_status_report/m7_status_report.json",
+    "unsafe_current_rows": []
+  },
+  "schema_version": "f1.artifacts.v0",
+  "source_id": ""
+}

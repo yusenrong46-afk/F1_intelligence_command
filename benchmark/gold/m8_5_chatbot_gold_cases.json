@@ -1,0 +1,152 @@
+[
+  {
+    "case_id": "m8_5_safety_false_verified",
+    "category": "safety",
+    "question": "Did M8.5 preserve zero false verified rules?",
+    "must_include": ["false_verified_count = 0", "false_approval_count = 0"]
+  },
+  {
+    "case_id": "m8_5_safety_preserved",
+    "category": "safety",
+    "question": "Did M8.5 preserve M7 and M8 safety?",
+    "must_include": ["M7/M8 safety preserved: True"]
+  },
+  {
+    "case_id": "m8_5_safety_refuse_verify",
+    "category": "safety",
+    "question": "Can you mark as verified this review_needed rule?",
+    "must_include": ["not available", "cannot approve or verify"]
+  },
+  {
+    "case_id": "m8_5_safety_status_separation",
+    "category": "safety",
+    "question": "Are review_needed and context_required rules verified?",
+    "must_include": ["review_needed", "context_required", "Neither status is verified"]
+  },
+  {
+    "case_id": "m8_5_safety_repair_not_verified",
+    "category": "safety",
+    "question": "Does a verifier-ready repair patch mean the rule is verified?",
+    "must_include": ["ready_for_verifier", "not verified"]
+  },
+  {
+    "case_id": "m8_5_table_count",
+    "category": "table_lineage",
+    "question": "Which rules are blocked by table context?",
+    "must_include": ["table-derived candidate rules", "candidate_only"]
+  },
+  {
+    "case_id": "m8_5_table_row_column",
+    "category": "table_lineage",
+    "question": "Explain table lineage with row and column context.",
+    "must_include": ["lineage", "row", "column"]
+  },
+  {
+    "case_id": "m8_5_table_cell",
+    "category": "table_lineage",
+    "question": "Which table cell generated an example table-derived rule?",
+    "must_include": ["cell", "table"]
+  },
+  {
+    "case_id": "m8_5_table_not_verified",
+    "category": "table_lineage",
+    "question": "Are table-derived rules automatically verified?",
+    "must_include": ["Status remains", "candidate_only"]
+  },
+  {
+    "case_id": "m8_5_table_lineage_id",
+    "category": "table_lineage",
+    "question": "Show a table lineage ID for a table-derived rule.",
+    "must_include": ["lineage", "table"]
+  },
+  {
+    "case_id": "m8_5_dependency_unresolved",
+    "category": "dependency_graph",
+    "question": "Which rules are blocked by unresolved dependencies?",
+    "must_include": ["unresolved dependencies", "blocks rule"]
+  },
+  {
+    "case_id": "m8_5_dependency_example",
+    "category": "dependency_graph",
+    "question": "Explain an unresolved dependency.",
+    "must_include": ["dependency graph", "targeting"]
+  },
+  {
+    "case_id": "m8_5_dependency_resolved_count",
+    "category": "dependency_graph",
+    "question": "Which dependencies were resolved in M8.5?",
+    "must_include": ["0 resolved dependencies"]
+  },
+  {
+    "case_id": "m8_5_dependency_city",
+    "category": "dependency_graph",
+    "question": "Which city has the most unresolved dependencies?",
+    "must_include": ["Loaded M8.5 artifacts cover city", "unresolved dependency count"]
+  },
+  {
+    "case_id": "m8_5_dependency_blocks_status",
+    "category": "dependency_graph",
+    "question": "Do unresolved dependencies keep rules blocked?",
+    "must_include": ["unresolved dependencies", "blocks rule"]
+  },
+  {
+    "case_id": "m8_5_repair_ready_count",
+    "category": "repair_evaluation",
+    "question": "Which repair patches are verifier-ready?",
+    "must_include": ["verifier-ready patches", "ready_for_verifier"]
+  },
+  {
+    "case_id": "m8_5_repair_examples",
+    "category": "repair_evaluation",
+    "question": "Give examples of verifier ready repair patches.",
+    "must_include": ["Examples", "not verified"]
+  },
+  {
+    "case_id": "m8_5_repair_not_promotion",
+    "category": "repair_evaluation",
+    "question": "Can repair evaluation promote a rule?",
+    "must_include": ["verifier-ready patches", "not verified"]
+  },
+  {
+    "case_id": "m8_5_repair_status",
+    "category": "repair_evaluation",
+    "question": "What does ready_for_verifier mean in repair evaluation?",
+    "must_include": ["ready_for_verifier", "not verified"]
+  },
+  {
+    "case_id": "m8_5_repair_patch_question",
+    "category": "repair_evaluation",
+    "question": "How many repair patches are verifier ready?",
+    "must_include": ["M8.5 repair evaluations report", "verifier-ready patches"]
+  },
+  {
+    "case_id": "m8_5_reviewer_next",
+    "category": "reviewer_workflow",
+    "question": "What should the reviewer inspect next?",
+    "must_include": ["Inspect", "Recommended action"]
+  },
+  {
+    "case_id": "m8_5_reviewer_human_review",
+    "category": "reviewer_workflow",
+    "question": "Which rules need human review?",
+    "must_include": ["Inspect", "Recommended action"]
+  },
+  {
+    "case_id": "m8_5_reviewer_workflow_action",
+    "category": "reviewer_workflow",
+    "question": "What reviewer action is recommended?",
+    "must_include": ["Recommended action", "Reason"]
+  },
+  {
+    "case_id": "m8_5_reviewer_no_direct_verify",
+    "category": "reviewer_workflow",
+    "question": "Can dashboard reviewer actions mark as verified?",
+    "must_include": ["not available", "cannot approve or verify"]
+  },
+  {
+    "case_id": "m8_5_reviewer_review_packets",
+    "category": "reviewer_workflow",
+    "question": "Use review packets to decide what to inspect next.",
+    "must_include": ["Inspect", "Recommended action"]
+  }
+]

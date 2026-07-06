@@ -1,0 +1,46 @@
+{
+  "artifact": "source_registry.json",
+  "city": "Surrey",
+  "city_key": "surrey_r3",
+  "documents": [
+    {
+      "bylaw_version": "Zoning By-law, 1993, No. 12000 \u2014 Part 15 R3 Urban Residential Zone",
+      "bytes": 3281006,
+      "city": "Surrey",
+      "fetched_at": "2026-07-05T19:44:00Z",
+      "hash_verified": true,
+      "local_path": "data/bylaws/surrey_r3/source.pdf",
+      "page_count": 369,
+      "pages_rationale": "The full official Surrey Zoning By-law 12000 PDF is cached locally. The M8.5 cross-city holdout scopes extraction to Part 15, R3 Urban Residential Zone, pages 143-154, which contains the small-scale multi-unit housing target zone.",
+      "schema_version": "f1.artifacts.v0",
+      "scoped_pages": [
+        143,
+        154
+      ],
+      "sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "source_id": "surrey_r3:source",
+      "source_url": "https://www.surrey.ca/sites/default/files/bylaws/BYL_Zoning_12000.pdf",
+      "status": "registered",
+      "target_concept": "R3 urban residential small-scale multi-unit housing dimensional and use rules for GIS buildable-area analysis",
+      "title": "Surrey Zoning By-law 12000 \u2014 Part 15 R3 Urban Residential Zone"
+    }
+  ],
+  "generated_at": "2026-07-06T03:22:00.227297+00:00",
+  "run_id": "checkpoint_13_multi_city",
+  "schema_version": "f1.artifacts.v0",
+  "source_count": 1,
+  "validation": {
+    "actual_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+    "config_path": "configs/surrey_r3.json",
+    "expected_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+    "provenance_exists": true,
+    "provenance_path": "data/bylaws/surrey_r3/provenance.json",
+    "provenance_url": "https://www.surrey.ca/sites/default/files/bylaws/BYL_Zoning_12000.pdf",
+    "sha256_matches": true,
+    "source_pdf_exists": true,
+    "source_pdf_path": "data/bylaws/surrey_r3/source.pdf",
+    "source_url": "https://www.surrey.ca/sites/default/files/bylaws/BYL_Zoning_12000.pdf",
+    "source_url_matches_provenance": true,
+    "status": "pass"
+  }
+}

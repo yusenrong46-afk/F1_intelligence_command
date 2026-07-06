@@ -1,0 +1,3206 @@
+[
+  {
+    "block_id": "block_48eec95176237adf",
+    "block_type": "page_text",
+    "char_end": 2367,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "12.1",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_7dfbd734327d63c4",
+    "text": "Part 15 \u2013 R3, Urban Residential Zone\nPart 15\nR3\nUrban Residential Zone\n(BL 21281, 21390, 21474, 21595, 21701, 21852, 22014)\nA. Intent\nThis R3 Zone is intended for small-scale multi-unit housing on urban sized lots typically 560 sq.\nm or larger, which may accommodate 2 to 6 dwelling units, and is subject to the remainder of\nthis Part 15.\nB. Permitted Uses\n1. Land, buildings and structures in this R3 Zone must only be used for the following uses,\nor a combination of principal uses and accessory uses if the maximum number of\ndwelling units is not exceeded as follows:\nMaximum\nNumber of Accessory\nLot Size Lot Location Principal Uses\nDwelling Uses\nUnits1\n(a) \u2265 4,050 sq.\ni. All Areas Up to 2 Single Family Dwelling\nm\ni. Inside Transit- Up to 2 Single Family Dwelling Secondary\nOriented Areas2 Suite6\nSingle Family Dwelling\nGarden Suite\nor\nii. All areas, except\n(b) < 4,050 sq. m\nB.1.(b)i and iii\nUp to 4 Duplex\nCoach House\nand \u2265 280 sq. or\nm Houseplex3\nBed and\nSingle Family Dwelling\nBreakfast4\niii. Eligible lots or\nwithin Frequent Up to 6 Duplex\nBoarders or\nBus Stop Areas or\nLodgers4\nHouseplex3\ni. Inside Transit-\nShort-Term\nOriented Up to 2 Single Family Dwelling\nRental5\n(c) < 280 sq. m\nAreas2\nii. All areas, except\nUp to 3 Single Family Dwelling\nB.1.(c)i\n1 Despite the permitted uses in Table B.1, the following lands allow no more than 2 dwelling units on a lot:\n(a) Land that is protected under Section 12.1(2) of the Heritage Conservation Act;\n(b) Land that as of December 7, 2023 was designated as protected under a bylaw made under Section 611 [heritage\ndesignation protection] of the Local Government Act; and\n(c) Land that is not connected to a community water or community sewer system provided as a service by a\nmunicipality or regional district.\n2 One of the exemptions in Section 3 of the Local Government Zoning Bylaw Regulation is that small-scale multi-unit\nhousing requirements do not apply in relation to land that is within a transit-oriented area.\n3 A houseplex may be permitted on a corner lot, a through lot, or a lot with lane access.\n4 Bed and breakfast use and the keeping of boarders or lodgers are only permitted in accordance with Section B.7 of\nPart 4 General Provisions.\n5 Short-Term Rental is only permitted in accordance with Section B.7 of Part 4 General Provisions.\n6 A secondary suite is not permitted in a houseplex.\n- 15.1 -"
+  },
+  {
+    "block_id": "block_0100db754aadab1e",
+    "block_type": "paragraph",
+    "char_end": 356,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_ac6ead8f44d84929",
+    "text": "Part 15 \u2013 R3, Urban Residential Zone Part 15 R3 Urban Residential Zone (BL 21281, 21390, 21474, 21595, 21701, 21852, 22014) A. Intent This R3 Zone is intended for small-scale multi-unit housing on urban sized lots typically 560 sq. m or larger, which may accommodate 2 to 6 dwelling units, and is subject to the remainder of this Part 15. B. Permitted Uses"
+  },
+  {
+    "block_id": "block_fa668d994f04b9db",
+    "block_type": "list_item",
+    "char_end": 91,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_09e4314225726bc0",
+    "text": "1. Land, buildings and structures in this R3 Zone must only be used for the following uses,"
+  },
+  {
+    "block_id": "block_b3c3c5052ee17aa9",
+    "block_type": "paragraph",
+    "char_end": 207,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_1bd6a54ac2abf89f",
+    "text": "or a combination of principal uses and accessory uses if the maximum number of dwelling units is not exceeded as follows: Maximum Number of Accessory Lot Size Lot Location Principal Uses Dwelling Uses Units1"
+  },
+  {
+    "block_id": "block_c5f5e4fd84152c6e",
+    "block_type": "list_item",
+    "char_end": 15,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_5298213e2bc25380",
+    "text": "(a) \u2265 4,050 sq."
+  },
+  {
+    "block_id": "block_34dd0529a1a6404c",
+    "block_type": "paragraph",
+    "char_end": 189,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_e9f42fc8ca40c513",
+    "text": "i. All Areas Up to 2 Single Family Dwelling m i. Inside Transit- Up to 2 Single Family Dwelling Secondary Oriented Areas2 Suite6 Single Family Dwelling Garden Suite or ii. All areas, except"
+  },
+  {
+    "block_id": "block_7c9658c0c347b7e9",
+    "block_type": "list_item",
+    "char_end": 17,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_dbf70a3458825111",
+    "text": "(b) < 4,050 sq. m"
+  },
+  {
+    "block_id": "block_bfa31b45c9e8302c",
+    "block_type": "paragraph",
+    "char_end": 296,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_35db2d7a5c101711",
+    "text": "B.1.(b)i and iii Up to 4 Duplex Coach House and \u2265 280 sq. or m Houseplex3 Bed and Single Family Dwelling Breakfast4 iii. Eligible lots or within Frequent Up to 6 Duplex Boarders or Bus Stop Areas or Lodgers4 Houseplex3 i. Inside Transit- Short-Term Oriented Up to 2 Single Family Dwelling Rental5"
+  },
+  {
+    "block_id": "block_d3bbe143a7a5d227",
+    "block_type": "list_item",
+    "char_end": 15,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_8a4aa562977be8e8",
+    "text": "(c) < 280 sq. m"
+  },
+  {
+    "block_id": "block_3d70e851143181e8",
+    "block_type": "paragraph",
+    "char_end": 177,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_c8a87a5a3ea42010",
+    "text": "Areas2 ii. All areas, except Up to 3 Single Family Dwelling B.1.(c)i 1 Despite the permitted uses in Table B.1, the following lands allow no more than 2 dwelling units on a lot:"
+  },
+  {
+    "block_id": "block_6d22000d2ef372d8",
+    "block_type": "list_item",
+    "char_end": 82,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "12.1",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_229ba7f48f5ae4ad",
+    "text": "(a) Land that is protected under Section 12.1(2) of the Heritage Conservation Act;"
+  },
+  {
+    "block_id": "block_754e4955d8a20f8a",
+    "block_type": "list_item",
+    "char_end": 111,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_f5041b863324d0d4",
+    "text": "(b) Land that as of December 7, 2023 was designated as protected under a bylaw made under Section 611 [heritage"
+  },
+  {
+    "block_id": "block_12cfc531bd4c35a0",
+    "block_type": "paragraph",
+    "char_end": 56,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_2c57bc6754c5268c",
+    "text": "designation protection] of the Local Government Act; and"
+  },
+  {
+    "block_id": "block_73676da282eddc7f",
+    "block_type": "list_item",
+    "char_end": 104,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_678b505ab2e01eac",
+    "text": "(c) Land that is not connected to a community water or community sewer system provided as a service by a"
+  },
+  {
+    "block_id": "block_323ff195921e1cd0",
+    "block_type": "paragraph",
+    "char_end": 629,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_c3c593018fbd088d",
+    "text": "municipality or regional district. 2 One of the exemptions in Section 3 of the Local Government Zoning Bylaw Regulation is that small-scale multi-unit housing requirements do not apply in relation to land that is within a transit-oriented area. 3 A houseplex may be permitted on a corner lot, a through lot, or a lot with lane access. 4 Bed and breakfast use and the keeping of boarders or lodgers are only permitted in accordance with Section B.7 of Part 4 General Provisions. 5 Short-Term Rental is only permitted in accordance with Section B.7 of Part 4 General Provisions. 6 A secondary suite is not permitted in a houseplex."
+  },
+  {
+    "block_id": "block_31d28f3da7a48104",
+    "block_type": "list_item",
+    "char_end": 8,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.1",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_7db343fb45fc0257",
+    "text": "- 15.1 -"
+  },
+  {
+    "block_id": "block_594f500ca5b8a406",
+    "block_type": "table",
+    "char_end": 50,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 4,
+      "ingest_backend": "pdfplumber",
+      "row_count": 2,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 1
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_626e811064bf387e",
+    "text": " | Part 15 |  | R3\n | Urban Residential Zone |  | "
+  },
+  {
+    "block_id": "block_d685a16f6f7120d0",
+    "block_type": "table",
+    "char_end": 1301,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 11,
+      "ingest_backend": "pdfplumber",
+      "row_count": 21,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 2
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_339fceeceb9a5277",
+    "text": "Lot Size | Lot Location |  |  |  | Maximum |  | Principal Uses |  |  | Accessory\nUses\n |  |  |  |  | Number of |  |  |  |  | \n |  |  |  |  | Dwelling |  |  |  |  | \n |  |  |  |  | Units1 |  |  |  |  | \n(a) \u2265 4,050 sq.\nm | i. All Areas |  |  | Up to 2 |  |  | Single Family Dwelling |  |  | Secondary\nSuite6\nGarden Suite\nCoach House\nBed and\nBreakfast4\nBoarders or\nLodgers4\nShort-Term\nRental5\n(b) < 4,050 sq. m\nand \u2265 280 sq.\nm | i. Inside Transit-\nOriented Areas2 |  |  | Up to 2 |  |  | Single Family Dwelling |  |  | \n | ii. All areas, except\nB.1.(b)i and iii |  |  | Up to 4 |  |  |  | Single Family Dwelling |  | \n |  |  |  |  |  |  |  | or |  | \n |  |  |  |  |  |  |  | Duplex |  | \n |  |  |  |  |  |  |  | or |  | \n |  |  |  |  |  |  |  | Houseplex3 |  | \n | iii. Eligible lots\nwithin Frequent\nBus Stop Areas |  |  | Up to 6 |  |  |  | Single Family Dwelling |  | \n |  |  |  |  |  |  |  | or |  | \n |  |  |  |  |  |  |  | Duplex |  | \n |  |  |  |  |  |  |  | or |  | \n |  |  |  |  |  |  |  | Houseplex3 |  | \n(c) < 280 sq. m |  | i. Inside Transit- |  | Up to 2 |  |  | Single Family Dwelling |  |  | \n |  | Oriented |  |  |  |  |  |  |  | \n |  | Areas2 |  |  |  |  |  |  |  | \n |  | ii. All areas, except |  | Up to 3 |  |  | Single Family Dwelling |  |  | \n |  | B.1.(c)i |  |  |  |  |  |  |  | "
+  },
+  {
+    "block_id": "block_520793c6a87309b2",
+    "block_type": "table",
+    "char_end": 14,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 1,
+      "ingest_backend": "pdfplumber",
+      "row_count": 2,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 3
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_3b80cc8ce75bd031",
+    "text": "Accessory\nUses"
+  },
+  {
+    "block_id": "block_5eb0231702f17570",
+    "block_type": "table",
+    "char_end": 34,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 1,
+      "ingest_backend": "pdfplumber",
+      "row_count": 2,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 4
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_2245e0a7e2ce7099",
+    "text": "i. Inside Transit-\nOriented Areas2"
+  },
+  {
+    "block_id": "block_f08888011358468d",
+    "block_type": "table",
+    "char_end": 37,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 1,
+      "ingest_backend": "pdfplumber",
+      "row_count": 2,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 5
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_5aa8962c89f80d6c",
+    "text": "i. All areas, except\nB.1.(b)i and iii"
+  },
+  {
+    "block_id": "block_94654ff06e7cee70",
+    "block_type": "table",
+    "char_end": 49,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 1,
+      "ingest_backend": "pdfplumber",
+      "row_count": 3,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 6
+    },
+    "page": 143,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_5d010539bf77023e",
+    "text": "iii. Eligible lots\nwithin Frequent\nBus Stop Areas"
+  },
+  {
+    "block_id": "block_3a19c5b744c85577",
+    "block_type": "page_text",
+    "char_end": 1129,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "0.60",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_d22b19d1db86f2ef",
+    "text": "Part 15 R3\nC. Subdivision\n1. Minimum Lot Sizes:\nLots created through subdivision in this R3 Zone must conform to the following\nminimum standards:\nSize or Dimension Minimum Requirement\nLot Area 560 sq. m\nLot Width 15 m\nLot Depth 28 m\nD. Density\n(BL 21701, 22014)\n1. Subdivision:\nFor the purpose of subdivision, the maximum number of lots per hectare is 18.\n2. Building Construction:\nFor building construction in this R3 Zone:\nFloor Area Ratio1, Floor Area\nBuilding Type Lot Size\nand Building Size Requirements\na. The floor area ratio must not exceed 0.60 for the first\n560 sq. m of lot area and 0.35 for the remaining lot\narea in excess of 560 sq. m, provided a minimum of 39\nsq. m. of the total floor area is used only as a garage or\n(a) Single Family\ncarport, except for eligible lots within frequent bus\nDwelling2 with\ni. All lots stop areas where a garage or carport is not required.\nor without a\nSecondary Suite\nb. Despite Section D.2.(a)i.a., single family dwellings must\nhave a minimum ground level floor area of 84 sq. m and\na minimum building width of 7 m., and must not exceed\na maximum floor area is 465 sq. m.\n- 15.2 -"
+  },
+  {
+    "block_id": "block_3f13fceb9fbc1953",
+    "block_type": "paragraph",
+    "char_end": 25,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_971ff974097935fb",
+    "text": "Part 15 R3 C. Subdivision"
+  },
+  {
+    "block_id": "block_cabd204129384829",
+    "block_type": "list_item",
+    "char_end": 21,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_4011c0b0e7fee3c1",
+    "text": "1. Minimum Lot Sizes:"
+  },
+  {
+    "block_id": "block_8c0a0205a7fb82e7",
+    "block_type": "paragraph",
+    "char_end": 213,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_f160fa9eb72897ca",
+    "text": "Lots created through subdivision in this R3 Zone must conform to the following minimum standards: Size or Dimension Minimum Requirement Lot Area 560 sq. m Lot Width 15 m Lot Depth 28 m D. Density (BL 21701, 22014)"
+  },
+  {
+    "block_id": "block_1ab5490f4f31795d",
+    "block_type": "list_item",
+    "char_end": 15,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_9fa3de41452c6b0a",
+    "text": "1. Subdivision:"
+  },
+  {
+    "block_id": "block_a60477eabf164774",
+    "block_type": "paragraph",
+    "char_end": 77,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_7ccac161a9eb5a64",
+    "text": "For the purpose of subdivision, the maximum number of lots per hectare is 18."
+  },
+  {
+    "block_id": "block_40df6393eee6c368",
+    "block_type": "list_item",
+    "char_end": 25,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_38c678a5039a2e71",
+    "text": "2. Building Construction:"
+  },
+  {
+    "block_id": "block_1c836eae311e5404",
+    "block_type": "paragraph",
+    "char_end": 351,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "0.60",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_fcf89127b5d9fd5a",
+    "text": "For building construction in this R3 Zone: Floor Area Ratio1, Floor Area Building Type Lot Size and Building Size Requirements a. The floor area ratio must not exceed 0.60 for the first 560 sq. m of lot area and 0.35 for the remaining lot area in excess of 560 sq. m, provided a minimum of 39 sq. m. of the total floor area is used only as a garage or"
+  },
+  {
+    "block_id": "block_c21c79090ffb7ea8",
+    "block_type": "list_item",
+    "char_end": 17,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_a993ab20d4fdb2bb",
+    "text": "(a) Single Family"
+  },
+  {
+    "block_id": "block_2c338d3b5a0b0667",
+    "block_type": "paragraph",
+    "char_end": 368,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_776ca61de3e8d8c6",
+    "text": "carport, except for eligible lots within frequent bus Dwelling2 with i. All lots stop areas where a garage or carport is not required. or without a Secondary Suite b. Despite Section D.2.(a)i.a., single family dwellings must have a minimum ground level floor area of 84 sq. m and a minimum building width of 7 m., and must not exceed a maximum floor area is 465 sq. m."
+  },
+  {
+    "block_id": "block_5e16c7f5b3d69d51",
+    "block_type": "list_item",
+    "char_end": 8,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.2",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_923be544661b5573",
+    "text": "- 15.2 -"
+  },
+  {
+    "block_id": "block_b4b90dec5eb0573e",
+    "block_type": "table",
+    "char_end": 94,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 2,
+      "ingest_backend": "pdfplumber",
+      "row_count": 4,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 1
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_6cbd589cb9b3ee4f",
+    "text": "Size or Dimension | Minimum Requirement\nLot Area | 560 sq. m\nLot Width | 15 m\nLot Depth | 28 m"
+  },
+  {
+    "block_id": "block_4e50164905eafcc7",
+    "block_type": "table",
+    "char_end": 727,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 5,
+      "ingest_backend": "pdfplumber",
+      "row_count": 3,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 2
+    },
+    "page": 144,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "0.60",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_b04f35407a0f719d",
+    "text": "Building Type | Lot Size |  | Floor Area Ratio1, Floor Area | \n |  |  | and Building Size Requirements | \n(a) Single Family\nDwelling2 with\nor without a\nSecondary Suite | i. All lots | a. The floor area ratio must not exceed 0.60 for the first\n560 sq. m of lot area and 0.35 for the remaining lot\narea in excess of 560 sq. m, provided a minimum of 39\nsq. m. of the total floor area is used only as a garage or\ncarport, except for eligible lots within frequent bus\nstop areas where a garage or carport is not required.\nb. Despite Section D.2.(a)i.a., single family dwellings must\nhave a minimum ground level floor area of 84 sq. m and\na minimum building width of 7 m., and must not exceed\na maximum floor area is 465 sq. m. |  | "
+  },
+  {
+    "block_id": "block_2e8e401a596f74cf",
+    "block_type": "page_text",
+    "char_end": 2249,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_c4604dcb19a33c0a",
+    "text": "Part 15 R3\na. The floor area ratio must not exceed 1.0, provided a\nminimum of 44 sq. m. of the total floor area is used only\nas a garage or carport within the duplex, except for\neligible lots within frequent bus stop areas where a\ngarage or carport is not required.\n(b) Duplex3 with or\nwithout a i. All lots b. Despite the definition of floor area ratio, basements are\nSecondary Suite included in the floor area ratio calculation for duplexes.\nc. Despite Section D.2.(b)i.a., duplexes must have a\nminimum ground level floor area of 84 sq. m and a\nminimum building width of 7 m, and must not exceed a\nmaximum floor area of 560 sq. m including basements.\na. The floor area ratio must not exceed 1.0 for the first\n560 sq. m of lot area and 0.60 for the remaining lot\narea in excess of 560 sq. m, provided a minimum of 22\nsq. m of the total floor area of each dwelling unit is\nused only as a garage or carport for the houseplex,\nexcept for eligible lots within frequent bus stop areas\nwhere a garage or carport is not required.\nb. Despite the definition of floor area ratio, basements\nare not included in the floor area ratio calculation for a\n(c) Houseplex i. All lots\nhouseplex.\nc. Despite Section D.2.(c)i.a., a houseplex must have a\nminimum ground level floor area of 84 sq. m and a\nminimum building width of 15 m, and must not exceed\na maximum floor area is 600 sq. m not including\nbasements, provided a minimum of 22 sq. m. of the\nfloor area of each dwelling unit is used only as a garage\nor carport, except for eligible lots within frequent bus\nstop areas where a garage or carport is not required.\na. The floor area of a coach house is permitted in addition\nto the floor area ratio permitted for single family\ndwellings, duplexes and houseplexes in Sections D.2.(a),\n(b) and (c) provided that a coach house must have a\nminimum floor area of 35 sq.m. and a maximum total\ni. Not floor area of 75 sq. m., excluding the garage or carport.\n(d) Coach House\napplicable\nb. Despite D.2(d)i.a., if the floor area of the single family\ndwelling, duplex or houseplex in Sections D.2.(a), (b)\nand (c) has not achieved the maximum floor area on the\nlot, the remainder of the floor area may be used for the\ncoach house up to a maximum size of 120 sq.m.\n- 15.3 -"
+  },
+  {
+    "block_id": "block_45f36a7e1f7980f8",
+    "block_type": "paragraph",
+    "char_end": 265,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_d2bb0cb92cf6a149",
+    "text": "Part 15 R3 a. The floor area ratio must not exceed 1.0, provided a minimum of 44 sq. m. of the total floor area is used only as a garage or carport within the duplex, except for eligible lots within frequent bus stop areas where a garage or carport is not required."
+  },
+  {
+    "block_id": "block_df79aada2ace1057",
+    "block_type": "list_item",
+    "char_end": 19,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_c54ae028ac11197e",
+    "text": "(b) Duplex3 with or"
+  },
+  {
+    "block_id": "block_f2016bc5bc9d9905",
+    "block_type": "paragraph",
+    "char_end": 853,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_87c7c759bd4a03ee",
+    "text": "without a i. All lots b. Despite the definition of floor area ratio, basements are Secondary Suite included in the floor area ratio calculation for duplexes. c. Despite Section D.2.(b)i.a., duplexes must have a minimum ground level floor area of 84 sq. m and a minimum building width of 7 m, and must not exceed a maximum floor area of 560 sq. m including basements. a. The floor area ratio must not exceed 1.0 for the first 560 sq. m of lot area and 0.60 for the remaining lot area in excess of 560 sq. m, provided a minimum of 22 sq. m of the total floor area of each dwelling unit is used only as a garage or carport for the houseplex, except for eligible lots within frequent bus stop areas where a garage or carport is not required. b. Despite the definition of floor area ratio, basements are not included in the floor area ratio calculation for a"
+  },
+  {
+    "block_id": "block_2f60af8a637f08c6",
+    "block_type": "list_item",
+    "char_end": 25,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_65d014928bfd5e4a",
+    "text": "(c) Houseplex i. All lots"
+  },
+  {
+    "block_id": "block_0a6baa94c4cf9dff",
+    "block_type": "paragraph",
+    "char_end": 604,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_0a63027da9513b93",
+    "text": "houseplex. c. Despite Section D.2.(c)i.a., a houseplex must have a minimum ground level floor area of 84 sq. m and a minimum building width of 15 m, and must not exceed a maximum floor area is 600 sq. m not including basements, provided a minimum of 22 sq. m. of the floor area of each dwelling unit is used only as a garage or carport, except for eligible lots within frequent bus stop areas where a garage or carport is not required. a. The floor area of a coach house is permitted in addition to the floor area ratio permitted for single family dwellings, duplexes and houseplexes in Sections D.2.(a),"
+  },
+  {
+    "block_id": "block_510173cddfee0a6f",
+    "block_type": "list_item",
+    "char_end": 51,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_ff10b4de650b908c",
+    "text": "(b) and (c) provided that a coach house must have a"
+  },
+  {
+    "block_id": "block_f3f08f18991d7c96",
+    "block_type": "paragraph",
+    "char_end": 115,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_c3b09da87524613c",
+    "text": "minimum floor area of 35 sq.m. and a maximum total i. Not floor area of 75 sq. m., excluding the garage or carport."
+  },
+  {
+    "block_id": "block_a4a4a27b67a1b3f4",
+    "block_type": "list_item",
+    "char_end": 15,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_e4a01cf2abadcdfe",
+    "text": "(d) Coach House"
+  },
+  {
+    "block_id": "block_4b1258e3887f87cc",
+    "block_type": "paragraph",
+    "char_end": 285,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_636c57c42838c787",
+    "text": "applicable b. Despite D.2(d)i.a., if the floor area of the single family dwelling, duplex or houseplex in Sections D.2.(a), (b) and (c) has not achieved the maximum floor area on the lot, the remainder of the floor area may be used for the coach house up to a maximum size of 120 sq.m."
+  },
+  {
+    "block_id": "block_c9ffeba05cd6656a",
+    "block_type": "list_item",
+    "char_end": 8,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.3",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_2a4e6f2ff130716a",
+    "text": "- 15.3 -"
+  },
+  {
+    "block_id": "block_f00ea983991ce9a1",
+    "block_type": "table",
+    "char_end": 2379,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 5,
+      "ingest_backend": "pdfplumber",
+      "row_count": 13,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 1
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_df912648a62b64a3",
+    "text": "(b) Duplex3 with or\nwithout a\nSecondary Suite | i. All lots | a. The floor area ratio must not exceed 1.0, provided a\nminimum of 44 sq. m. of the total floor area is used only\nas a garage or carport within the duplex, except for\neligible lots within frequent bus stop areas where a\ngarage or carport is not required.\nb. Despite the definition of floor area ratio, basements are\nincluded in the floor area ratio calculation for duplexes.\nc. Despite Section D.2.(b)i.a., duplexes must have a\nminimum ground level floor area of 84 sq. m and a\nminimum building width of 7 m, and must not exceed a\nmaximum floor area of 560 sq. m including basements. |  | \n(c) Houseplex | i. All lots | a. The floor area ratio must not exceed 1.0 for the first\n560 sq. m of lot area and 0.60 for the remaining lot\narea in excess of 560 sq. m, provided a minimum of 22\nsq. m of the total floor area of each dwelling unit is\nused only as a garage or carport for the houseplex,\nexcept for eligible lots within frequent bus stop areas\nwhere a garage or carport is not required.\nb. Despite the definition of floor area ratio, basements\nare not included in the floor area ratio calculation for a\nhouseplex.\nc. Despite Section D.2.(c)i.a., a houseplex must have a\nminimum ground level floor area of 84 sq. m and a\nminimum building width of 15 m, and must not exceed\na maximum floor area is 600 sq. m not including\nbasements, provided a minimum of 22 sq. m. of the\nfloor area of each dwelling unit is used only as a garage\nor carport, except for eligible lots within frequent bus\nstop areas where a garage or carport is not required. |  | \n(d) Coach House | i. Not\napplicable |  | a. The floor area of a coach house is permitted in addition | \n |  |  | to the floor area ratio permitted for single family | \n |  |  | dwellings, duplexes and houseplexes in Sections D.2.(a), | \n |  |  | (b) and (c) provided that a coach house must have a | \n |  |  | minimum floor area of 35 sq.m. and a maximum total | \n |  |  | floor area of 75 sq. m., excluding the garage or carport. | \n |  |  | b. Despite D.2(d)i.a., if the floor area of the single family | \n |  |  | dwelling, duplex or houseplex in Sections D.2.(a), (b) | \n |  |  | and (c) has not achieved the maximum floor area on the | \n |  |  | lot, the remainder of the floor area may be used for the | \n |  |  | coach house up to a maximum size of 120 sq.m. | "
+  },
+  {
+    "block_id": "block_04cba00174b0e684",
+    "block_type": "table",
+    "char_end": 17,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 1,
+      "ingest_backend": "pdfplumber",
+      "row_count": 2,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 2
+    },
+    "page": 145,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_01856ca3d70a8799",
+    "text": "i. Not\napplicable"
+  },
+  {
+    "block_id": "block_24cebac709172082",
+    "block_type": "page_text",
+    "char_end": 2158,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.8",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_3a560a3dc486d087",
+    "text": "Part 15 R3\na. The floor area of a garden suite is permitted in addition\nto the floor area ratio permitted for single family\ndwellings, duplexes and houseplexes in Sections D.2.(a),\n(b) and (c), provided that a garden suite must have a\nminimum floor area of 35 sq.m. and a maximum total\ni. Not floor area of 75 sq. m.\n(e) Garden Suite\napplicable\nb. Despite D.2(e)i.a., if the floor area of the single family\ndwelling, duplex or houseplex in Sections D.2.(a), (b)\nand (c) has not achieved the maximum floor area on the\nlot, the remainder of the floor area may be used for the\ngarden suite up to a maximum size of 120 sq.m.\n1 Floor area ratio must also be calculated in accordance with Section D.3.(a) and (b).\n2 Refer to Section D.4(a) for second and third storey requirements.\n3 Refer to Section D.4(b) for second and third storey requirements.\n3. Floor Area Ratio Calculation:\n(a) In this R3 Zone, the following must be included in the calculation of floor area\nratio:\ni. Covered areas used for parking in accordance with Section D.2;\nii. The area of an accessory building in excess of 10 sq. m;\niii. Covered outdoor space with a height of 1.8 m or greater, except for a\nmaximum 10% of the maximum allowable floor area of which 10 sq. m\nmust be reserved for a front porch or veranda; and\niv. Floor area including a garage or carport with a height exceeding 3.66 m\nmust be multiplied by 2, excluding:\na. Staircases;\nb. 19 sq. m for principal buildings;\nc. Floor area directly below a sloped ceiling less than 4.58 m in\nheight, provided that the area has at least one wall 3.66 m or less\nin height; and\n(b) In this R3 Zone, the following may be excluded from the calculation of floor area\nratio:\ni. If the minimum ground floor elevation is less than the minimum flood and\nbuilding elevations, as specified by the Provincial Government and in the\nSurrey Building Bylaw, as amended, non-habitable floor area may be\nexcluded from the floor area ratio calculation as follows:\na. A ground floor foyer provided that the foyer area does not exceed\n10 sq. m in area; and\nb. Any portion of the ground floor, including covered outdoor space\nat the ground level.\n- 15.4 -"
+  },
+  {
+    "block_id": "block_1eb91bdfbf9b6062",
+    "block_type": "paragraph",
+    "char_end": 180,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_ff69c79a1f75d622",
+    "text": "Part 15 R3 a. The floor area of a garden suite is permitted in addition to the floor area ratio permitted for single family dwellings, duplexes and houseplexes in Sections D.2.(a),"
+  },
+  {
+    "block_id": "block_f8872ea4d6cdc11b",
+    "block_type": "list_item",
+    "char_end": 53,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_76ac0a373ccfdc2f",
+    "text": "(b) and (c), provided that a garden suite must have a"
+  },
+  {
+    "block_id": "block_81f0a0e044426aed",
+    "block_type": "paragraph",
+    "char_end": 81,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_0c5b8b53fa87150f",
+    "text": "minimum floor area of 35 sq.m. and a maximum total i. Not floor area of 75 sq. m."
+  },
+  {
+    "block_id": "block_d7a89b270b978ab8",
+    "block_type": "list_item",
+    "char_end": 16,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_cb63ca4b91d416ba",
+    "text": "(e) Garden Suite"
+  },
+  {
+    "block_id": "block_0fed785dbb17b0af",
+    "block_type": "paragraph",
+    "char_end": 509,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_8bad5cbf7e8053be",
+    "text": "applicable b. Despite D.2(e)i.a., if the floor area of the single family dwelling, duplex or houseplex in Sections D.2.(a), (b) and (c) has not achieved the maximum floor area on the lot, the remainder of the floor area may be used for the garden suite up to a maximum size of 120 sq.m. 1 Floor area ratio must also be calculated in accordance with Section D.3.(a) and (b). 2 Refer to Section D.4(a) for second and third storey requirements. 3 Refer to Section D.4(b) for second and third storey requirements."
+  },
+  {
+    "block_id": "block_67e4811bcfa31043",
+    "block_type": "list_item",
+    "char_end": 32,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_bef92c1547cf285a",
+    "text": "3. Floor Area Ratio Calculation:"
+  },
+  {
+    "block_id": "block_28c030bd6326b425",
+    "block_type": "list_item",
+    "char_end": 84,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_6d15369dbbc2044c",
+    "text": "(a) In this R3 Zone, the following must be included in the calculation of floor area"
+  },
+  {
+    "block_id": "block_a942991f16229a72",
+    "block_type": "paragraph",
+    "char_end": 638,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.8",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_2820c9f0703b47c1",
+    "text": "ratio: i. Covered areas used for parking in accordance with Section D.2; ii. The area of an accessory building in excess of 10 sq. m; iii. Covered outdoor space with a height of 1.8 m or greater, except for a maximum 10% of the maximum allowable floor area of which 10 sq. m must be reserved for a front porch or veranda; and iv. Floor area including a garage or carport with a height exceeding 3.66 m must be multiplied by 2, excluding: a. Staircases; b. 19 sq. m for principal buildings; c. Floor area directly below a sloped ceiling less than 4.58 m in height, provided that the area has at least one wall 3.66 m or less in height; and"
+  },
+  {
+    "block_id": "block_460e020703dfdef0",
+    "block_type": "list_item",
+    "char_end": 85,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_0662bb66946bc4ac",
+    "text": "(b) In this R3 Zone, the following may be excluded from the calculation of floor area"
+  },
+  {
+    "block_id": "block_eaea1878bd63f540",
+    "block_type": "paragraph",
+    "char_end": 462,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_835a1b9122fd5945",
+    "text": "ratio: i. If the minimum ground floor elevation is less than the minimum flood and building elevations, as specified by the Provincial Government and in the Surrey Building Bylaw, as amended, non-habitable floor area may be excluded from the floor area ratio calculation as follows: a. A ground floor foyer provided that the foyer area does not exceed 10 sq. m in area; and b. Any portion of the ground floor, including covered outdoor space at the ground level."
+  },
+  {
+    "block_id": "block_11b927f4368132a0",
+    "block_type": "list_item",
+    "char_end": 8,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.4",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_f27a8b8cf09b56f0",
+    "text": "- 15.4 -"
+  },
+  {
+    "block_id": "block_a0728aec53a8d069",
+    "block_type": "table",
+    "char_end": 739,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 5,
+      "ingest_backend": "pdfplumber",
+      "row_count": 11,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 1
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_51ae451f78878425",
+    "text": "(e) Garden Suite | i. Not\napplicable |  | a. The floor area of a garden suite is permitted in addition | \n |  |  | to the floor area ratio permitted for single family | \n |  |  | dwellings, duplexes and houseplexes in Sections D.2.(a), | \n |  |  | (b) and (c), provided that a garden suite must have a | \n |  |  | minimum floor area of 35 sq.m. and a maximum total | \n |  |  | floor area of 75 sq. m. | \n |  |  | b. Despite D.2(e)i.a., if the floor area of the single family | \n |  |  | dwelling, duplex or houseplex in Sections D.2.(a), (b) | \n |  |  | and (c) has not achieved the maximum floor area on the | \n |  |  | lot, the remainder of the floor area may be used for the | \n |  |  | garden suite up to a maximum size of 120 sq.m. | "
+  },
+  {
+    "block_id": "block_e191898f391ba7db",
+    "block_type": "table",
+    "char_end": 16,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 1,
+      "ingest_backend": "pdfplumber",
+      "row_count": 2,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 2
+    },
+    "page": 146,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_9fbefa5a02ac8880",
+    "text": ". Not\napplicable"
+  },
+  {
+    "block_id": "block_6e138fc8db18c361",
+    "block_type": "page_text",
+    "char_end": 2584,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.5",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_3a435afb2a3bf621",
+    "text": "Part 15 R3\n4. Principal Building Second and Third Storey Floor Area\n(a) For single family dwellings, the maximum permitted floor area of a second storey\nfor a principal building must not exceed 80% of the floor area of the first storey\nincluding attached garage and that portion of any porch or veranda at the front\nthat is covered by a roof. The reduced floor area of the second storey must be\naccomplished by a 20% offset at the second storey level from the wall at the first\nstorey level from either the front or side walls or a combination thereof, such\nthat the offset is fully visible anywhere along the front lot line and/or flanking lot\nline of the lot;\n(b) For duplexes, the maximum permitted floor area of the second and third storeys\nfor a principal building must not exceed 90% of the floor area of the first storey\nincluding attached garage and that portion of any porch or veranda at the front\nthat is covered by a roof. The reduced floor area of the second and third storeys\nmust be accomplished by a 10% offset at both the second and third storey levels\nfrom the wall at the first storey level from either the front or side walls or a\ncombination thereof, such that the offset is fully visible anywhere along the front\nlot line and/or flanking lot line of the lot. The 10% offset may include a porch or\nveranda at the front that is covered by a roof at the second storey level; and\n(c) Section D.4.(a) does not apply to existing two storey single family dwellings in\nthis Zone with building permits issued prior to July 11, 1994.\nE. Lot Coverage\n1. The maximum lot coverage for all buildings and structures in this R3 Zone must be as\nfollows:\nBuilding Type Lot Size Maximum Lot Coverage\n\u2264 560 sq. m 40%\nSingle Family Dwelling 40% reduced at a rate of 2% for each\nwith or without a Secondary > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until\nSuite 25% is reached\n> 1,262 sq. m 25%\n\u2264 560 sq. m 50%\nSingle Family Dwelling\n50% reduced at a rate of 2% for each\nwith or without a Secondary\n> 560 sq. m. but \u2264 1,262 sq. m 93 sq. m of additional lot area until\nSuite, Coach House, or\n30% is reached\nGarden Suite\n> 1,262 sq. m 30%\n\u2264 560 sq. m 50%\n50% reduced at a rate of 2% for each\nDuplex with or without a\n> 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until\nSecondary Suite\n35% is reached\n> 1,262 sq. m 35%\n\u2264 560 sq. m 50%\nDuplex with or without a 50% reduced at a rate of 2% for each\nSecondary Suite, Coach > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until\nHouse, or Garden Suite 35% is reached\n> 1,262 sq. m 35%\n- 15.5 -"
+  },
+  {
+    "block_id": "block_372389fb0ef02b3c",
+    "block_type": "paragraph",
+    "char_end": 10,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_ecaa316d9674d7af",
+    "text": "Part 15 R3"
+  },
+  {
+    "block_id": "block_2fe45d74cc44a8cc",
+    "block_type": "list_item",
+    "char_end": 56,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_cd99d6ed7266861f",
+    "text": "4. Principal Building Second and Third Storey Floor Area"
+  },
+  {
+    "block_id": "block_fe9187936bbc0ff6",
+    "block_type": "list_item",
+    "char_end": 84,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_bcf651bf7d6d7a29",
+    "text": "(a) For single family dwellings, the maximum permitted floor area of a second storey"
+  },
+  {
+    "block_id": "block_869a03359efad831",
+    "block_type": "paragraph",
+    "char_end": 508,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_9c4299baf6cbe1cd",
+    "text": "for a principal building must not exceed 80% of the floor area of the first storey including attached garage and that portion of any porch or veranda at the front that is covered by a roof. The reduced floor area of the second storey must be accomplished by a 20% offset at the second storey level from the wall at the first storey level from either the front or side walls or a combination thereof, such that the offset is fully visible anywhere along the front lot line and/or flanking lot line of the lot;"
+  },
+  {
+    "block_id": "block_023e3d549171700a",
+    "block_type": "list_item",
+    "char_end": 82,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_5659321d46eee7c1",
+    "text": "(b) For duplexes, the maximum permitted floor area of the second and third storeys"
+  },
+  {
+    "block_id": "block_1bac139afa94fc5a",
+    "block_type": "paragraph",
+    "char_end": 652,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_3f8a0c9a700c1012",
+    "text": "for a principal building must not exceed 90% of the floor area of the first storey including attached garage and that portion of any porch or veranda at the front that is covered by a roof. The reduced floor area of the second and third storeys must be accomplished by a 10% offset at both the second and third storey levels from the wall at the first storey level from either the front or side walls or a combination thereof, such that the offset is fully visible anywhere along the front lot line and/or flanking lot line of the lot. The 10% offset may include a porch or veranda at the front that is covered by a roof at the second storey level; and"
+  },
+  {
+    "block_id": "block_dbc58fc2e23550e1",
+    "block_type": "list_item",
+    "char_end": 84,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_f6565b9865a752c1",
+    "text": "(c) Section D.4.(a) does not apply to existing two storey single family dwellings in"
+  },
+  {
+    "block_id": "block_6b73876f9c069339",
+    "block_type": "paragraph",
+    "char_end": 78,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_f1e30d22c04d61b2",
+    "text": "this Zone with building permits issued prior to July 11, 1994. E. Lot Coverage"
+  },
+  {
+    "block_id": "block_c751a28b1ee9fb90",
+    "block_type": "list_item",
+    "char_end": 87,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_d3095fba0a815299",
+    "text": "1. The maximum lot coverage for all buildings and structures in this R3 Zone must be as"
+  },
+  {
+    "block_id": "block_138c465198b668a7",
+    "block_type": "paragraph",
+    "char_end": 925,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_1996e7708bfbd79d",
+    "text": "follows: Building Type Lot Size Maximum Lot Coverage \u2264 560 sq. m 40% Single Family Dwelling 40% reduced at a rate of 2% for each with or without a Secondary > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until Suite 25% is reached > 1,262 sq. m 25% \u2264 560 sq. m 50% Single Family Dwelling 50% reduced at a rate of 2% for each with or without a Secondary > 560 sq. m. but \u2264 1,262 sq. m 93 sq. m of additional lot area until Suite, Coach House, or 30% is reached Garden Suite > 1,262 sq. m 30% \u2264 560 sq. m 50% 50% reduced at a rate of 2% for each Duplex with or without a > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until Secondary Suite 35% is reached > 1,262 sq. m 35% \u2264 560 sq. m 50% Duplex with or without a 50% reduced at a rate of 2% for each Secondary Suite, Coach > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until House, or Garden Suite 35% is reached > 1,262 sq. m 35%"
+  },
+  {
+    "block_id": "block_3b4fb675b4aad1e2",
+    "block_type": "list_item",
+    "char_end": 8,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.5",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_5b0c64f6c61fd7fe",
+    "text": "- 15.5 -"
+  },
+  {
+    "block_id": "block_fea519e0d84bdcc6",
+    "block_type": "table",
+    "char_end": 1164,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 7,
+      "ingest_backend": "pdfplumber",
+      "row_count": 15,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 1
+    },
+    "page": 147,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_402a692506bff2a9",
+    "text": "Building Type | Lot Size |  |  | Maximum Lot Coverage |  | \nSingle Family Dwelling\nwith or without a Secondary\nSuite |  | \u2264 | 560 sq. m |  | 40% | \n | > 560 sq. m but \u2264 1,262 sq. m |  |  |  | 40% reduced at a rate of 2% for each | \n |  |  |  |  | 93 sq. m of additional lot area until | \n |  |  |  |  | 25% is reached | \n | > 1,262 sq. m |  |  |  | 25% | \nSingle Family Dwelling\nwith or without a Secondary\nSuite, Coach House, or\nGarden Suite |  | \u2264 | 560 sq. m | 50% |  | \n | > 560 sq. m. but \u2264 1,262 sq. m |  |  | 50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n30% is reached |  | \n | > 1,262 sq. m |  |  | 30% |  | \nDuplex with or without a\nSecondary Suite |  | \u2264 | 560 sq. m | 50% |  | \n | > 560 sq. m but \u2264 1,262 sq. m |  |  | 50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached |  | \n | > 1,262 sq. m |  |  | 35% |  | \nDuplex with or without a\nSecondary Suite, Coach\nHouse, or Garden Suite |  | \u2264 | 560 sq. m | 50% |  | \n | > 560 sq. m but \u2264 1,262 sq. m |  |  | 50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached |  | \n | > 1,262 sq. m |  |  | 35% |  | "
+  },
+  {
+    "block_id": "block_1523df146baf5aad",
+    "block_type": "page_text",
+    "char_end": 1631,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 148,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "6.5",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_5df9c753682a5a6d",
+    "text": "Part 15 R3\n\u2264 560 sq. m 60%\n60% reduced at a rate of 2% for each\nHouseplex with or without a\n> 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until\nSecondary Suite\n35% is reached\n> 1,262 sq. m 35%\n\u2264 560 sq. m 60%\nHouseplex with or without a 60% reduced at a rate of 2% for each\nSecondary Suite or Coach > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until\nHouse 35% is reached\n> 1,262 sq. m 35%\nF. Yards and Setbacks\n1. Buildings and structures, subject to Section F.2., must be sited in this R3 Zone in\naccordance with the following minimum setbacks:\nBuilding Interior Lot Corner Lot Interior Lot Corner Lot\nType Lane Access 1 Lane Access No Lane No Lane\nSingle Family Dwelling with or without a Secondary Suite\nFront Yard 6.5 m 6.5 m 6.5 m 6.5 m\nRear Yard 7.5 m 7.5 m 7.5 m 7.5 m\nSide Yard 1.8 m 1.8 m 1.8 m 1.8 m\nStreet Side Yard n/a 3.6 m n/a 3.6 m\nDuplex with or without a Secondary Suite\nFront Yard 6.0 m 6.0 m 6.0 m 6.0 m\nRear Yard 7.5 m 7.5 m 7.5 m 7.5 m\nSide Yard 1.2 m 1.2 m 1.2 m 1.2 m\nStreet Side Yard n/a 2.4 m n/a 2.4 m\nHouseplex\n3.5 m\nFront Yard 3.5 m 3.5 m\nRear Yard 7.5 m 7.5 m Not Permitted 7.5 m\nSide Yard 1.2 m 1.2 m 1.2 m\nStreet Side Yard n/a 2.4 m 2.4 m\nCoach House\nFront Yard Not Permitted Not Permitted Not Permitted\nRear Yard 1.2 m 1.2 m 1.8 m\nSide Yard 1.2 m 1.2 m Not Permitted 1.8m\nStreet Side Yard 2.4 m 2.4 m 2.4 m\nSeparation 5.0 m 5.0 m 5.0 m\nGarden Suite\nFront Yard Not Permitted Not Permitted Not Permitted Not Permitted\nRear Yard 1.2 m 1.2 m 1.8 m 1.8 m\nSide Yard 1.8 m 1.8m 1.8 m 1.8m\nStreet Side Yard 2.4 m 2.4 m 2.4 m 2.4 m\nSeparation 5.0 m 5.0 m 5.0 m 5.0 m\n- 15.6 -"
+  },
+  {
+    "block_id": "block_25d51b1c1d10f352",
+    "block_type": "paragraph",
+    "char_end": 443,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 148,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_41233e91c007f49d",
+    "text": "Part 15 R3 \u2264 560 sq. m 60% 60% reduced at a rate of 2% for each Houseplex with or without a > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until Secondary Suite 35% is reached > 1,262 sq. m 35% \u2264 560 sq. m 60% Houseplex with or without a 60% reduced at a rate of 2% for each Secondary Suite or Coach > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until House 35% is reached > 1,262 sq. m 35% F. Yards and Setbacks"
+  },
+  {
+    "block_id": "block_e6c01b670e438968",
+    "block_type": "list_item",
+    "char_end": 86,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 148,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_2c35ce432695e279",
+    "text": "1. Buildings and structures, subject to Section F.2., must be sited in this R3 Zone in"
+  },
+  {
+    "block_id": "block_74e9b4daa1fe0973",
+    "block_type": "paragraph",
+    "char_end": 539,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 148,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "6.5",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_fee0eea8e48b58e5",
+    "text": "accordance with the following minimum setbacks: Building Interior Lot Corner Lot Interior Lot Corner Lot Type Lane Access 1 Lane Access No Lane No Lane Single Family Dwelling with or without a Secondary Suite Front Yard 6.5 m 6.5 m 6.5 m 6.5 m Rear Yard 7.5 m 7.5 m 7.5 m 7.5 m Side Yard 1.8 m 1.8 m 1.8 m 1.8 m Street Side Yard n/a 3.6 m n/a 3.6 m Duplex with or without a Secondary Suite Front Yard 6.0 m 6.0 m 6.0 m 6.0 m Rear Yard 7.5 m 7.5 m 7.5 m 7.5 m Side Yard 1.2 m 1.2 m 1.2 m 1.2 m Street Side Yard n/a 2.4 m n/a 2.4 m Houseplex"
+  },
+  {
+    "block_id": "block_efaf431be46ca537",
+    "block_type": "heading",
+    "char_end": 5,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 148,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "3.5",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_1502c62896fe9475",
+    "text": "3.5 m"
+  },
+  {
+    "block_id": "block_8e738d6c0b870030",
+    "block_type": "paragraph",
+    "char_end": 545,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 148,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "3.5",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_1e685d9cea0904a1",
+    "text": "Front Yard 3.5 m 3.5 m Rear Yard 7.5 m 7.5 m Not Permitted 7.5 m Side Yard 1.2 m 1.2 m 1.2 m Street Side Yard n/a 2.4 m 2.4 m Coach House Front Yard Not Permitted Not Permitted Not Permitted Rear Yard 1.2 m 1.2 m 1.8 m Side Yard 1.2 m 1.2 m Not Permitted 1.8m Street Side Yard 2.4 m 2.4 m 2.4 m Separation 5.0 m 5.0 m 5.0 m Garden Suite Front Yard Not Permitted Not Permitted Not Permitted Not Permitted Rear Yard 1.2 m 1.2 m 1.8 m 1.8 m Side Yard 1.8 m 1.8m 1.8 m 1.8m Street Side Yard 2.4 m 2.4 m 2.4 m 2.4 m Separation 5.0 m 5.0 m 5.0 m 5.0 m"
+  },
+  {
+    "block_id": "block_3d5c923d71410e1e",
+    "block_type": "list_item",
+    "char_end": 8,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 148,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.6",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_ff4aa9f9aa91a4c9",
+    "text": "- 15.6 -"
+  },
+  {
+    "block_id": "block_cdf4c096fdc3a747",
+    "block_type": "table",
+    "char_end": 472,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 5,
+      "ingest_backend": "pdfplumber",
+      "row_count": 6,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 1
+    },
+    "page": 148,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "3.5",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_3d160ebbd9644fc0",
+    "text": "Houseplex with or without a\nSecondary Suite |  | \u2264 | 560 sq. m | 60%\n | > 560 sq. m but \u2264 1,262 sq. m |  |  | 60% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached\n | > 1,262 sq. m |  |  | 35%\nHouseplex with or without a\nSecondary Suite or Coach\nHouse |  | \u2264 | 560 sq. m | 60%\n | > 560 sq. m but \u2264 1,262 sq. m |  |  | 60% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached\n | > 1,262 sq. m |  |  | 35%"
+  },
+  {
+    "block_id": "block_9c7e0e058b10d073",
+    "block_type": "table",
+    "char_end": 2172,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 15,
+      "ingest_backend": "pdfplumber",
+      "row_count": 29,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 2
+    },
+    "page": 148,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "3.5",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_dbedd6f8c8a64100",
+    "text": " | Building |  |  | Interior Lot |  |  | Corner Lot |  |  | Interior Lot |  |  | Corner Lot | \n | Type |  |  | 1\nLane Access |  |  | Lane Access |  |  | No Lane |  |  | No Lane | \n | Single Family Dwelling with or without a Secondary Suite |  |  |  |  |  |  |  |  |  |  |  |  | \nFront Yard |  |  | 6.5 m |  |  | 6.5 m |  |  | 6.5 m |  |  | 6.5 m |  | \nRear Yard |  |  | 7.5 m |  |  | 7.5 m |  |  | 7.5 m |  |  | 7.5 m |  | \nSide Yard |  |  | 1.8 m |  |  | 1.8 m |  |  | 1.8 m |  |  | 1.8 m |  | \nStreet Side Yard |  |  | n/a |  |  | 3.6 m |  |  | n/a |  |  | 3.6 m |  | \n | Duplex with or without a Secondary Suite |  |  |  |  |  |  |  |  |  |  |  |  | \nFront Yard |  |  | 6.0 m |  |  | 6.0 m |  |  | 6.0 m |  |  | 6.0 m |  | \nRear Yard |  |  | 7.5 m |  |  | 7.5 m |  |  | 7.5 m |  |  | 7.5 m |  | \nSide Yard |  |  | 1.2 m |  |  | 1.2 m |  |  | 1.2 m |  |  | 1.2 m |  | \nStreet Side Yard |  |  | n/a |  |  | 2.4 m |  |  | n/a |  |  | 2.4 m |  | \n | Houseplex |  |  |  |  |  |  |  |  |  |  |  |  | \nFront Yard |  |  | 3.5 m |  |  | 3.5 m |  |  | Not Permitted |  |  | 3.5 m |  | \nRear Yard |  |  | 7.5 m |  |  | 7.5 m |  |  |  |  |  | 7.5 m |  | \nSide Yard |  |  | 1.2 m |  |  | 1.2 m |  |  |  |  |  | 1.2 m |  | \nStreet Side Yard |  |  | n/a |  |  | 2.4 m |  |  |  |  |  | 2.4 m |  | \n | Coach House |  |  |  |  |  |  |  |  |  |  |  |  | \nFront Yard |  |  | Not Permitted |  |  | Not Permitted |  |  | Not Permitted |  |  | Not Permitted |  | \nRear Yard |  |  | 1.2 m |  |  | 1.2 m |  |  |  |  |  | 1.8 m |  | \nSide Yard |  |  | 1.2 m |  |  | 1.2 m |  |  |  |  |  | 1.8m |  | \nStreet Side Yard |  |  | 2.4 m |  |  | 2.4 m |  |  |  |  |  | 2.4 m |  | \nSeparation |  |  | 5.0 m |  |  | 5.0 m |  |  |  |  |  | 5.0 m |  | \n | Garden Suite |  |  |  |  |  |  |  |  |  |  |  |  | \nFront Yard |  |  | Not Permitted |  |  | Not Permitted |  |  | Not Permitted |  |  | Not Permitted |  | \nRear Yard |  |  | 1.2 m |  |  | 1.2 m |  |  | 1.8 m |  |  | 1.8 m |  | \nSide Yard |  |  | 1.8 m |  |  | 1.8m |  |  | 1.8 m |  |  | 1.8m |  | \nStreet Side Yard |  |  | 2.4 m |  |  | 2.4 m |  |  | 2.4 m |  |  | 2.4 m |  | \nSeparation |  |  | 5.0 m |  |  | 5.0 m |  |  | 5.0 m |  |  | 5.0 m |  | "
+  },
+  {
+    "block_id": "block_9f2b474fe1611806",
+    "block_type": "page_text",
+    "char_end": 2055,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 149,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.2",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_1079325de753090f",
+    "text": "Part 15 R3\nOther Accessory Buildings & Structures > 10 sq. m\nFront Yard Not Permitted Not Permitted Not Permitted Not Permitted\nRear Yard 1.2 m 1.2 m 1.8 m 1.8 m\nSide Yard 1.0 m 1.0 m 1.0 m 1.0 m\nStreet Side Yard n/a 3.6 m n/a 3.6 m\nOther Accessory Buildings & Structures \u2264 10 sq. m\nFront Yard 18.0 m 18.0 m 18.0 m 18.0 m\nRear Yard 0 m 0 m 0 m 0 m\nSide Yard 0 m 0 m 0 m 0 m\nStreet Side Yard n/a 1.8 m n/a 1.8 m\n1 Or a through lot.\n2. Setback Reductions and Variations\nDespite Table F.1, the following setback reductions and variations in this R3 Zone are\npermitted:\n(a) Single Family Dwelling with or without Secondary Suite\ni. Front Yard:\na. Except for a garage, the front yard setback may be relaxed at the\nlower floor level to 5.0 m for a maximum of 50% of the width of\nthe single family dwelling;\nb. If a minimum of 50% of the width of the single family dwelling is\nset back 9 m, the setback to an attached garage may be relaxed to\n6.0 m;\nc. With the exception of a garage with its main access doors facing a\nside yard, an attached garage to the single family dwelling must\nnot extend towards the highway for more than half the depth of\nthe said garage, measured from the front face of the single family\ndwelling, excluding any front face of the exterior wall above the\nsaid garage. If an attached garage with its main access doors\nfacing a highway contains more than 2 parallel parking bays, the\nadditional parking bay(s) and the garage entrance leading to the\nadditional parking bay(s) must be set back at least 1 m from the\nfront of the said garage;\nd. The required front yard setback is increased to 10 m to the front\nface of an attached garage on lots that front onto a cul-de-sac\nbulb and which have a frontage of less than 8.0 m, as determined\nby measuring a straight line drawn between the two front corners\nof the lot; and\ne. Exterior staircases, landings, and planters that are more than 0.6\nmetres above existing grade, which are attached to the single\nfamily dwelling may be setback a minimum of 4.5 m from the\nfront lot line; and\n- 15.7 -"
+  },
+  {
+    "block_id": "block_cf5eb5cdc5ff660f",
+    "block_type": "paragraph",
+    "char_end": 430,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 149,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.2",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_b06dad13173177bf",
+    "text": "Part 15 R3 Other Accessory Buildings & Structures > 10 sq. m Front Yard Not Permitted Not Permitted Not Permitted Not Permitted Rear Yard 1.2 m 1.2 m 1.8 m 1.8 m Side Yard 1.0 m 1.0 m 1.0 m 1.0 m Street Side Yard n/a 3.6 m n/a 3.6 m Other Accessory Buildings & Structures \u2264 10 sq. m Front Yard 18.0 m 18.0 m 18.0 m 18.0 m Rear Yard 0 m 0 m 0 m 0 m Side Yard 0 m 0 m 0 m 0 m Street Side Yard n/a 1.8 m n/a 1.8 m 1 Or a through lot."
+  },
+  {
+    "block_id": "block_6d4f0cc3ebafbb55",
+    "block_type": "list_item",
+    "char_end": 36,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 149,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_887e2c0fe210a6c2",
+    "text": "2. Setback Reductions and Variations"
+  },
+  {
+    "block_id": "block_dd8b7ab7ab707f9e",
+    "block_type": "paragraph",
+    "char_end": 97,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 149,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_a0c0092e03919e22",
+    "text": "Despite Table F.1, the following setback reductions and variations in this R3 Zone are permitted:"
+  },
+  {
+    "block_id": "block_27e3ede515c258e8",
+    "block_type": "list_item",
+    "char_end": 58,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 149,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_dccd4a99ae0a53e2",
+    "text": "(a) Single Family Dwelling with or without Secondary Suite"
+  },
+  {
+    "block_id": "block_49d3948a5851df5a",
+    "block_type": "paragraph",
+    "char_end": 310,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 149,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "5.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_ec16fac964cf81f1",
+    "text": "i. Front Yard: a. Except for a garage, the front yard setback may be relaxed at the lower floor level to 5.0 m for a maximum of 50% of the width of the single family dwelling; b. If a minimum of 50% of the width of the single family dwelling is set back 9 m, the setback to an attached garage may be relaxed to"
+  },
+  {
+    "block_id": "block_631e5bac666e992f",
+    "block_type": "heading",
+    "char_end": 6,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 149,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "6.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_8f27661baf7b29dd",
+    "text": "6.0 m;"
+  },
+  {
+    "block_id": "block_dce80bd2047846c1",
+    "block_type": "paragraph",
+    "char_end": 1103,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 149,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "8.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_67b7f3b4c4c5719f",
+    "text": "c. With the exception of a garage with its main access doors facing a side yard, an attached garage to the single family dwelling must not extend towards the highway for more than half the depth of the said garage, measured from the front face of the single family dwelling, excluding any front face of the exterior wall above the said garage. If an attached garage with its main access doors facing a highway contains more than 2 parallel parking bays, the additional parking bay(s) and the garage entrance leading to the additional parking bay(s) must be set back at least 1 m from the front of the said garage; d. The required front yard setback is increased to 10 m to the front face of an attached garage on lots that front onto a cul-de-sac bulb and which have a frontage of less than 8.0 m, as determined by measuring a straight line drawn between the two front corners of the lot; and e. Exterior staircases, landings, and planters that are more than 0.6 metres above existing grade, which are attached to the single family dwelling may be setback a minimum of 4.5 m from the front lot line; and"
+  },
+  {
+    "block_id": "block_e9849c3ea1a45c6a",
+    "block_type": "list_item",
+    "char_end": 8,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 149,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.7",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_e65b929d679dd84d",
+    "text": "- 15.7 -"
+  },
+  {
+    "block_id": "block_864dfdb3d97621e8",
+    "block_type": "table",
+    "char_end": 605,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 9,
+      "ingest_backend": "pdfplumber",
+      "row_count": 10,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 1
+    },
+    "page": 149,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "6.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_b704c7ab7b7439e1",
+    "text": " | Other Accessory Buildings & Structures > 10 sq. m |  |  |  |  |  |  | \nFront Yard |  | Not Permitted |  |  | Not Permitted | Not Permitted | Not Permitted | \nRear Yard |  | 1.2 m |  |  | 1.2 m | 1.8 m | 1.8 m | \nSide Yard |  | 1.0 m |  |  | 1.0 m | 1.0 m | 1.0 m | \nStreet Side Yard |  | n/a |  |  | 3.6 m | n/a | 3.6 m | \n | Other Accessory Buildings & Structures |  | \u2264 | 10 sq. m |  |  |  | \nFront Yard |  | 18.0 m |  |  | 18.0 m | 18.0 m | 18.0 m | \nRear Yard |  | 0 m |  |  | 0 m | 0 m | 0 m | \nSide Yard |  | 0 m |  |  | 0 m | 0 m | 0 m | \nStreet Side Yard |  | n/a |  |  | 1.8 m | n/a | 1.8 m | "
+  },
+  {
+    "block_id": "block_2fa24e2cd783674c",
+    "block_type": "page_text",
+    "char_end": 2126,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "6.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_0f405770aa2030de",
+    "text": "Part 15 R3\nii. Rear Yard:\na. 50% of the length of the rear building face may be setback a\ndistance of 6.0 m from the rear lot line provided the remainder of\nthe building face is setback at least 8.5 m from the rear lot line;\nand\niii. Side Yard:\na. The side yard setback may be reduced to 1.2 m along one side lot\nline adjoining a lot zoned for small-scale multi-unit housing,\nprovided that the side yard setback on the opposite side of the lot\nis increased to 2.4 m.\n(b) Duplex with or without Secondary Suites\ni. Front Yard:\na. Exterior staircases, landings, and planters that are more than 0.6\nmetres above existing grade, which are attached to the principal\nbuilding may be setback a minimum of 4.5 m from the front lot line;\nand\nb. For lots with rear lane access, the front yard setback for a duplex\nmay be reduced to 4.0 m.\n(c) Houseplex\ni. Front Yard:\na. The front yard setback of the houseplex may be reduced to a\nminimum of 2.0 metres for the first storey by an enclosed and\nuninhabitable space such as a porch or verandah, provided that the\nsaid porch or verandah is a minimum of 1.5 m deep, covered from\nabove and is an integral part of the houseplex.\n(d) Coach House\ni. Rear Yard:\na. The rear yard setback of a coach house may be reduced to 1.0 m if\nthe coach house is constructed above a garage or carport; and\nii. Separation:\na. The minimum separation may be reduced to 3.0 m for stairs and\noutdoor space such as a deck or patio that may be covered by a\nroof.\n(e) Garden Suite\ni. Separation:\na. The minimum separation may be reduced to 3.0 m for stairs and\noutdoor space such as a deck or patio that may be covered by a\nroof.\n(f) Other Accessory Buildings and Structures > 10 sq. m\ni. Separation:\na. A minimum separation of 5 m is required between the single\nfamily dwelling or duplex and any accessory buildings and\nstructures exceeding 2.4 m in building height, including detached\ngarage or carport regardless of building height. The minimum\nseparation may be reduced to 3.0 m for stairs and for an outdoor\nspace such as a deck or patio that occupies a maximum of 10 sq. m\nand may be covered by a roof.\n- 15.8 -"
+  },
+  {
+    "block_id": "block_96500fe812c63501",
+    "block_type": "paragraph",
+    "char_end": 466,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "6.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_8c88c807f65cdf1e",
+    "text": "Part 15 R3 ii. Rear Yard: a. 50% of the length of the rear building face may be setback a distance of 6.0 m from the rear lot line provided the remainder of the building face is setback at least 8.5 m from the rear lot line; and iii. Side Yard: a. The side yard setback may be reduced to 1.2 m along one side lot line adjoining a lot zoned for small-scale multi-unit housing, provided that the side yard setback on the opposite side of the lot is increased to 2.4 m."
+  },
+  {
+    "block_id": "block_ff570e92fee12029",
+    "block_type": "list_item",
+    "char_end": 43,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_16987d51cbb84fe1",
+    "text": "(b) Duplex with or without Secondary Suites"
+  },
+  {
+    "block_id": "block_0e08b11678cb8517",
+    "block_type": "paragraph",
+    "char_end": 317,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "0.6",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_a034551b54c0d9af",
+    "text": "i. Front Yard: a. Exterior staircases, landings, and planters that are more than 0.6 metres above existing grade, which are attached to the principal building may be setback a minimum of 4.5 m from the front lot line; and b. For lots with rear lane access, the front yard setback for a duplex may be reduced to 4.0 m."
+  },
+  {
+    "block_id": "block_922b4011254f767f",
+    "block_type": "list_item",
+    "char_end": 13,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_fb65a2e4d7428fc6",
+    "text": "(c) Houseplex"
+  },
+  {
+    "block_id": "block_fadd60a145bd16e7",
+    "block_type": "paragraph",
+    "char_end": 318,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "2.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_7649d7c32c044a40",
+    "text": "i. Front Yard: a. The front yard setback of the houseplex may be reduced to a minimum of 2.0 metres for the first storey by an enclosed and uninhabitable space such as a porch or verandah, provided that the said porch or verandah is a minimum of 1.5 m deep, covered from above and is an integral part of the houseplex."
+  },
+  {
+    "block_id": "block_fe02bf46af9ceacc",
+    "block_type": "list_item",
+    "char_end": 15,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_47415f5f13cade53",
+    "text": "(d) Coach House"
+  },
+  {
+    "block_id": "block_f9772b72eee0c72a",
+    "block_type": "paragraph",
+    "char_end": 294,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_ce7a9ad5d82d2544",
+    "text": "i. Rear Yard: a. The rear yard setback of a coach house may be reduced to 1.0 m if the coach house is constructed above a garage or carport; and ii. Separation: a. The minimum separation may be reduced to 3.0 m for stairs and outdoor space such as a deck or patio that may be covered by a roof."
+  },
+  {
+    "block_id": "block_9f24f6f4af3653cb",
+    "block_type": "list_item",
+    "char_end": 16,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_947883a02afad85b",
+    "text": "(e) Garden Suite"
+  },
+  {
+    "block_id": "block_e31e6e174ff7244d",
+    "block_type": "paragraph",
+    "char_end": 148,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "3.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_d40e39505be84020",
+    "text": "i. Separation: a. The minimum separation may be reduced to 3.0 m for stairs and outdoor space such as a deck or patio that may be covered by a roof."
+  },
+  {
+    "block_id": "block_52cf132663ebbb81",
+    "block_type": "list_item",
+    "char_end": 55,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_9851fc8f3582e46e",
+    "text": "(f) Other Accessory Buildings and Structures > 10 sq. m"
+  },
+  {
+    "block_id": "block_641ceb31b6a2fac3",
+    "block_type": "paragraph",
+    "char_end": 422,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "2.4",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_402ddb632ee913e4",
+    "text": "i. Separation: a. A minimum separation of 5 m is required between the single family dwelling or duplex and any accessory buildings and structures exceeding 2.4 m in building height, including detached garage or carport regardless of building height. The minimum separation may be reduced to 3.0 m for stairs and for an outdoor space such as a deck or patio that occupies a maximum of 10 sq. m and may be covered by a roof."
+  },
+  {
+    "block_id": "block_c162669426bf29c1",
+    "block_type": "list_item",
+    "char_end": 8,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 150,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.8",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_e5abdab151523497",
+    "text": "- 15.8 -"
+  },
+  {
+    "block_id": "block_2ccf45eae0c07f9d",
+    "block_type": "page_text",
+    "char_end": 2440,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 151,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "7.3",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_0f531ce1b357c2e6",
+    "text": "Part 15 R3\nG. Height of Buildings and Structures\n1. Building and structure heights in this R3 Zone must be in accordance with the following\nrequirements:\nBuilding Type Requirement\nBuilding Height with sloped roof Must not exceed 9 m\nSingle Family Dwelling Building height where any portion of\nMust not exceed 7.3 m\nwith or without a the roof has a slope less than < 1:4\nSecondary Suite Building height in floodplain, as\nMust not exceed 10 m1\nreferred to in Part 8 Floodproofing\nMust not exceed 3 storeys inclusive\nBuilding Height with sloped roof of the basement, up to a maximum\nof 11 m\nMust not exceed 3 storeys inclusive\nDuplex with or without Building height where any portion of\nof the basement, up to a maximum\na Secondary Suite the roof has a slope less than < 1:4\nof 9.3 m\nMust not exceed 3 storeys inclusive\nBuilding height in floodplain, as\nof the basement, up to a maximum\nreferred to in Part 8 Floodproofing\nof 12 m1\nMust not exceed 3 storeys inclusive\nBuilding Height with sloped roof of the basement, up to a maximum\nof 9 m\nMust not exceed 3 storeys inclusive\nBuilding height where any portion of\nHouseplex of the basement, up to a maximum\nthe roof has a slope less than < 1:4\nof 7.3 m\nMust not exceed 3 storeys inclusive\nBuilding height in floodplain, as\nof the basement, up to a maximum\nreferred to in Part 8 Floodproofing\nof 12 m1\nMust not exceed 2 storeys inclusive\nof the basement, up to a maximum\nBuilding height with sloped roof\nof 7.0 m and a maximum roof peak\nheight of 8.3 m1\nCoach House or\nMust not exceed 2 storeys inclusive\nGarden Suite Building height where any portion of\nof the basement, up to a maximum\nthe roof has a slope less than < 1:4\nof 6.5 m\nMust not exceed 2 storeys inclusive\nBuilding height in floodplain, as\nof the basement, up to a maximum\nreferred to in Part 8 Floodproofing\nof 8.5 m1\nMust not exceed 4, but may be\nincreased to 5 m where the roof\nAccessory Building slope and construction materials of\nan accessory building are the same\nas that of the principal building\nStructures Must not exceed 4 m\n1 The increased building height is permitted for single family dwellings, duplexes, houseplexes, coach houses and\ngarden suites when the ground floor is used for parking or non-habitable space only, provided the minimum\nground floor elevation is less than the minimum flood and building elevations as specified by the Provincial\nGovernment and in the Surrey Building Bylaw, as amended.\n- 15.9 -"
+  },
+  {
+    "block_id": "block_9042c0666e80d889",
+    "block_type": "paragraph",
+    "char_end": 48,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 151,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_270f49038ffa8f00",
+    "text": "Part 15 R3 G. Height of Buildings and Structures"
+  },
+  {
+    "block_id": "block_1caad68b17f4f3ea",
+    "block_type": "list_item",
+    "char_end": 90,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 151,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_7219fab40a27f32b",
+    "text": "1. Building and structure heights in this R3 Zone must be in accordance with the following"
+  },
+  {
+    "block_id": "block_396c7ee8d2855e88",
+    "block_type": "paragraph",
+    "char_end": 2291,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 151,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "7.3",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_b9b9f3383726c784",
+    "text": "requirements: Building Type Requirement Building Height with sloped roof Must not exceed 9 m Single Family Dwelling Building height where any portion of Must not exceed 7.3 m with or without a the roof has a slope less than < 1:4 Secondary Suite Building height in floodplain, as Must not exceed 10 m1 referred to in Part 8 Floodproofing Must not exceed 3 storeys inclusive Building Height with sloped roof of the basement, up to a maximum of 11 m Must not exceed 3 storeys inclusive Duplex with or without Building height where any portion of of the basement, up to a maximum a Secondary Suite the roof has a slope less than < 1:4 of 9.3 m Must not exceed 3 storeys inclusive Building height in floodplain, as of the basement, up to a maximum referred to in Part 8 Floodproofing of 12 m1 Must not exceed 3 storeys inclusive Building Height with sloped roof of the basement, up to a maximum of 9 m Must not exceed 3 storeys inclusive Building height where any portion of Houseplex of the basement, up to a maximum the roof has a slope less than < 1:4 of 7.3 m Must not exceed 3 storeys inclusive Building height in floodplain, as of the basement, up to a maximum referred to in Part 8 Floodproofing of 12 m1 Must not exceed 2 storeys inclusive of the basement, up to a maximum Building height with sloped roof of 7.0 m and a maximum roof peak height of 8.3 m1 Coach House or Must not exceed 2 storeys inclusive Garden Suite Building height where any portion of of the basement, up to a maximum the roof has a slope less than < 1:4 of 6.5 m Must not exceed 2 storeys inclusive Building height in floodplain, as of the basement, up to a maximum referred to in Part 8 Floodproofing of 8.5 m1 Must not exceed 4, but may be increased to 5 m where the roof Accessory Building slope and construction materials of an accessory building are the same as that of the principal building Structures Must not exceed 4 m 1 The increased building height is permitted for single family dwellings, duplexes, houseplexes, coach houses and garden suites when the ground floor is used for parking or non-habitable space only, provided the minimum ground floor elevation is less than the minimum flood and building elevations as specified by the Provincial Government and in the Surrey Building Bylaw, as amended."
+  },
+  {
+    "block_id": "block_0c53dde265aa40c3",
+    "block_type": "list_item",
+    "char_end": 8,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 151,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.9",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_9de620de13b2c4be",
+    "text": "- 15.9 -"
+  },
+  {
+    "block_id": "block_d022430235b766a7",
+    "block_type": "table",
+    "char_end": 1735,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 3,
+      "ingest_backend": "pdfplumber",
+      "row_count": 13,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 1
+    },
+    "page": 151,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "7.3",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_5d884b393794b628",
+    "text": "Building Type |  | Requirement\nSingle Family Dwelling\nwith or without a\nSecondary Suite | Building Height with sloped roof | Must not exceed 9 m\n | Building height where any portion of\nthe roof has a slope less than < 1:4 | Must not exceed 7.3 m\n | Building height in floodplain, as\nreferred to in Part 8 Floodproofing | Must not exceed 10 m1\nDuplex with or without\na Secondary Suite | Building Height with sloped roof | Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 11 m\n | Building height where any portion of\nthe roof has a slope less than < 1:4 | Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 9.3 m\n | Building height in floodplain, as\nreferred to in Part 8 Floodproofing | Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 12 m1\nHouseplex | Building Height with sloped roof | Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 9 m\n | Building height where any portion of\nthe roof has a slope less than < 1:4 | Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 7.3 m\n | Building height in floodplain, as\nreferred to in Part 8 Floodproofing | Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 12 m1\nCoach House or\nGarden Suite | Building height with sloped roof | Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 7.0 m and a maximum roof peak\nheight of 8.3 m1\n | Building height where any portion of\nthe roof has a slope less than < 1:4 | Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 6.5 m\n | Building height in floodplain, as\nreferred to in Part 8 Floodproofing | Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 8.5 m1"
+  },
+  {
+    "block_id": "block_d50c6d8b53c97b60",
+    "block_type": "table",
+    "char_end": 220,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "column_count": 2,
+      "ingest_backend": "pdfplumber",
+      "row_count": 2,
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+      "table_index": 2
+    },
+    "page": 151,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_f0557ed399d4572c",
+    "text": "Accessory Building | Must not exceed 4, but may be\nincreased to 5 m where the roof\nslope and construction materials of\nan accessory building are the same\nas that of the principal building\nStructures | Must not exceed 4 m"
+  },
+  {
+    "block_id": "block_359c353bf0b5f55f",
+    "block_type": "page_text",
+    "char_end": 2838,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "8.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_629546fb4b9d0611",
+    "text": "Part 15 R3\nH. Off-Street Parking and Loading/Unloading\n1. For all areas:\nParking Calculation:\n(a) Refer to Table D.1 of Part 5 Off-Street Parking and Loading/Unloading; and\n(b) Where boarders or lodgers or bed and breakfast users are accommodated, the\nfollowing additional parking is required, except for eligible lots within frequent\nbus stop areas:\ni. Bed and Breakfast \u2013 1 parking space per bedroom available; and\nii. Boarders or Lodgers \u2013 1 parking space per boarder or lodger.\n2. Parking Areas:\nVehicle parking areas must be limited as follows:\n(a) Vehicle parking is permitted in either the front yard, rear yard, side yard, or\ngarage, carport or parking pad;\n(b) Parking spaces must be located only on a driveway leading to a garage, carport\nor parking pad;\n(c) Despite Section H.2(b), only driveways may accommodate parking within the\nfront yard or side yard, to a maximum of 3 vehicles;\n(d) For duplexes, a side-by-side garage for each dwelling unit is only permitted for\nlots 18 m or wider. Only single or tandem garages are permitted for lots under\n18 m in width; and\n(e) For houseplexes, garages must be detached with rear lane access.\n3. Driveways:\nDriveways are permitted as follows:\n(a) Driveways may be constructed off either the frontage or flanking street of a lot;\n(b) Every lot may have one driveway with a total surface or paved area as follows:\ni. Uniform maximum width of 8.0 m extending from the lot line to the\ngarage, carport or parking pad; and\nii. Width may be increased to a maximum of 55% of the total area of the\nrequired front yard or required side yard within which the driveway is\nlocated;\n(c) Despite Section H.3(b) of this R3 Zone, a driveway width may be increased to\nprovide access to additional parking spaces in a garage, carport or parking pad\nwhere those parking areas have more than 2 side-by-side parking spaces,\nprovided that:\ni. The increased width is a maximum of 3 m times the number of adjacent\nside-by-side parking spaces, measured at the required front yard\nsetback; and\nii. The driveway is uniformly tapered over the required front yard to a\nmaximum width of 8.0 m at the front lot line; and\n(d) Where a driveway is constructed in a side yard off a flanking street all references\nto front yard within this Section must be read as side yard.\n4. Outdoor Parking and Storage:\nOutdoor parking or storage of vehicles house trailers, utility trailers, campers or boats\nancillary to a residential use must be limited as follows:\n(a) A maximum of 4 vehicles or 3 vehicles and 1 house trailer, utility trailer, camper\nor boat may be parked or stored outdoors but only if said vehicles are ancillary\nto a residential use;\n(b) Outside parking or storage of a house trailer or boat is not permitted within the\nfront yard setback, or within the required side yards adjacent to the dwelling\n- 15.10 -"
+  },
+  {
+    "block_id": "block_2d20326bb997afa5",
+    "block_type": "paragraph",
+    "char_end": 54,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_a083622ce41fc83f",
+    "text": "Part 15 R3 H. Off-Street Parking and Loading/Unloading"
+  },
+  {
+    "block_id": "block_b6ce9131f1771d3d",
+    "block_type": "list_item",
+    "char_end": 17,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_2c984e77eab3c8c9",
+    "text": "1. For all areas:"
+  },
+  {
+    "block_id": "block_dad354a19da3dfe3",
+    "block_type": "paragraph",
+    "char_end": 20,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_7a32c447881a023d",
+    "text": "Parking Calculation:"
+  },
+  {
+    "block_id": "block_ef1ccdefa6334322",
+    "block_type": "list_item",
+    "char_end": 78,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_3a8218ac233456af",
+    "text": "(a) Refer to Table D.1 of Part 5 Off-Street Parking and Loading/Unloading; and"
+  },
+  {
+    "block_id": "block_f004d3fb6ac91a7d",
+    "block_type": "list_item",
+    "char_end": 78,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_c2b54330dd54730e",
+    "text": "(b) Where boarders or lodgers or bed and breakfast users are accommodated, the"
+  },
+  {
+    "block_id": "block_6697533768fcc401",
+    "block_type": "paragraph",
+    "char_end": 229,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_cf5ed3ae6efad236",
+    "text": "following additional parking is required, except for eligible lots within frequent bus stop areas: i. Bed and Breakfast \u2013 1 parking space per bedroom available; and ii. Boarders or Lodgers \u2013 1 parking space per boarder or lodger."
+  },
+  {
+    "block_id": "block_a0cf7f1f0c4bd0c6",
+    "block_type": "list_item",
+    "char_end": 17,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_f76e7d90fdb91e02",
+    "text": "2. Parking Areas:"
+  },
+  {
+    "block_id": "block_411e0c3b495e327e",
+    "block_type": "paragraph",
+    "char_end": 49,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_2c3da468e6fd5c1e",
+    "text": "Vehicle parking areas must be limited as follows:"
+  },
+  {
+    "block_id": "block_3d6efdbfc3a40f23",
+    "block_type": "list_item",
+    "char_end": 83,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_756a67d1f2ce1345",
+    "text": "(a) Vehicle parking is permitted in either the front yard, rear yard, side yard, or"
+  },
+  {
+    "block_id": "block_48e908ea78ad15f7",
+    "block_type": "paragraph",
+    "char_end": 31,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_aa7108c452f69b2c",
+    "text": "garage, carport or parking pad;"
+  },
+  {
+    "block_id": "block_0bd8df9aa7ef3a34",
+    "block_type": "list_item",
+    "char_end": 82,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_35abcb4c7b47baa5",
+    "text": "(b) Parking spaces must be located only on a driveway leading to a garage, carport"
+  },
+  {
+    "block_id": "block_1c7b0903e0e39148",
+    "block_type": "paragraph",
+    "char_end": 15,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_d6a0073e6e7aa514",
+    "text": "or parking pad;"
+  },
+  {
+    "block_id": "block_51ad1681d16e396d",
+    "block_type": "list_item",
+    "char_end": 77,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_e68fc0e6df5fc5ac",
+    "text": "(c) Despite Section H.2(b), only driveways may accommodate parking within the"
+  },
+  {
+    "block_id": "block_219a3029c75dd497",
+    "block_type": "paragraph",
+    "char_end": 52,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_f3c48a2c37d9adaa",
+    "text": "front yard or side yard, to a maximum of 3 vehicles;"
+  },
+  {
+    "block_id": "block_1c1ec5cfe8fa862a",
+    "block_type": "list_item",
+    "char_end": 84,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_2d04e4ff87921716",
+    "text": "(d) For duplexes, a side-by-side garage for each dwelling unit is only permitted for"
+  },
+  {
+    "block_id": "block_530d4774f5ac61ba",
+    "block_type": "paragraph",
+    "char_end": 97,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_aa039dec1a722f86",
+    "text": "lots 18 m or wider. Only single or tandem garages are permitted for lots under 18 m in width; and"
+  },
+  {
+    "block_id": "block_7b1bb7a5ca19d303",
+    "block_type": "list_item",
+    "char_end": 68,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_368fb091460ec296",
+    "text": "(e) For houseplexes, garages must be detached with rear lane access."
+  },
+  {
+    "block_id": "block_3dbba662cc15e955",
+    "block_type": "list_item",
+    "char_end": 13,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_330462be03f33cfc",
+    "text": "3. Driveways:"
+  },
+  {
+    "block_id": "block_4d27d6c9c7586d6a",
+    "block_type": "paragraph",
+    "char_end": 35,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_db04a912949118ea",
+    "text": "Driveways are permitted as follows:"
+  },
+  {
+    "block_id": "block_83f705cc57957977",
+    "block_type": "list_item",
+    "char_end": 85,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_5589d83b9d7ac64f",
+    "text": "(a) Driveways may be constructed off either the frontage or flanking street of a lot;"
+  },
+  {
+    "block_id": "block_b07c58c7bef65911",
+    "block_type": "list_item",
+    "char_end": 82,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_77638f7bc76f825d",
+    "text": "(b) Every lot may have one driveway with a total surface or paved area as follows:"
+  },
+  {
+    "block_id": "block_d9cd1db09256bceb",
+    "block_type": "paragraph",
+    "char_end": 256,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "8.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_c4084a93b52b89dd",
+    "text": "i. Uniform maximum width of 8.0 m extending from the lot line to the garage, carport or parking pad; and ii. Width may be increased to a maximum of 55% of the total area of the required front yard or required side yard within which the driveway is located;"
+  },
+  {
+    "block_id": "block_d6022259983fde0b",
+    "block_type": "list_item",
+    "char_end": 80,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_b532358fa8bd0a73",
+    "text": "(c) Despite Section H.3(b) of this R3 Zone, a driveway width may be increased to"
+  },
+  {
+    "block_id": "block_0381cb3d7eb542fd",
+    "block_type": "paragraph",
+    "char_end": 438,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "8.0",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_e0cf958222c144cf",
+    "text": "provide access to additional parking spaces in a garage, carport or parking pad where those parking areas have more than 2 side-by-side parking spaces, provided that: i. The increased width is a maximum of 3 m times the number of adjacent side-by-side parking spaces, measured at the required front yard setback; and ii. The driveway is uniformly tapered over the required front yard to a maximum width of 8.0 m at the front lot line; and"
+  },
+  {
+    "block_id": "block_fad36a3fc7b24a27",
+    "block_type": "list_item",
+    "char_end": 87,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_f106a163ad32abb0",
+    "text": "(d) Where a driveway is constructed in a side yard off a flanking street all references"
+  },
+  {
+    "block_id": "block_deaac1d8f0afe801",
+    "block_type": "paragraph",
+    "char_end": 60,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_276337cb2b14251e",
+    "text": "to front yard within this Section must be read as side yard."
+  },
+  {
+    "block_id": "block_e34c773197722d91",
+    "block_type": "list_item",
+    "char_end": 31,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_cb541f9bb46c3029",
+    "text": "4. Outdoor Parking and Storage:"
+  },
+  {
+    "block_id": "block_2204586f88412655",
+    "block_type": "paragraph",
+    "char_end": 148,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_b6059e3f8e4b27c1",
+    "text": "Outdoor parking or storage of vehicles house trailers, utility trailers, campers or boats ancillary to a residential use must be limited as follows:"
+  },
+  {
+    "block_id": "block_8b98debfb1120460",
+    "block_type": "list_item",
+    "char_end": 86,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_4209ec3f05b7087e",
+    "text": "(a) A maximum of 4 vehicles or 3 vehicles and 1 house trailer, utility trailer, camper"
+  },
+  {
+    "block_id": "block_5ba9398c01e8a9f6",
+    "block_type": "paragraph",
+    "char_end": 102,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_e328f0feecb8761c",
+    "text": "or boat may be parked or stored outdoors but only if said vehicles are ancillary to a residential use;"
+  },
+  {
+    "block_id": "block_20e1374c15187249",
+    "block_type": "list_item",
+    "char_end": 85,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_026e6c9bf350e7ee",
+    "text": "(b) Outside parking or storage of a house trailer or boat is not permitted within the"
+  },
+  {
+    "block_id": "block_3be7e60b7fbd64c1",
+    "block_type": "paragraph",
+    "char_end": 78,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_75a5013ba0ca6073",
+    "text": "front yard setback, or within the required side yards adjacent to the dwelling"
+  },
+  {
+    "block_id": "block_eaf5d9e63a318111",
+    "block_type": "list_item",
+    "char_end": 9,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 152,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.10",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_00ecf3c599564bdc",
+    "text": "- 15.10 -"
+  },
+  {
+    "block_id": "block_4c23a6aeb52cd4fa",
+    "block_type": "page_text",
+    "char_end": 1985,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.8",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_9042eb853d16829a",
+    "text": "Part 15 R3\nunit, or within 1 m of the side lot line;\n(c) Despite Section H.4(b) of this R3 Zone, 1 house trailer or 1 boat may be parked a\nminimum of 1 m from the front lot line and/or side lot line in the front driveway,\nto the side of the front driveway or in the side yard, on lots that have no\nvehicular access to the rear yard or where access is not feasible through\nlandscaping or fencing modifications; and\n(d) Despite Section H.4(c) of this R3 Zone, house trailers or boats are not permitted\nto be parked on corner lots in the area bounded by the intersecting lot lines at a\nstreet corner and a straight-line joining points 9 m along the said lot lines from\nthe point of intersection of the two lot lines.\nI. Landscaping and Screening\n1. General Landscaping:\nAll developed portions of the lot not covered by buildings, structures or paved areas\nmust be landscaped including the retention of mature trees. This landscaping must be\nmaintained.\n2. Porous and Non-Porous Surfaces:\nA minimum of 30% of the lot must be covered by porous surfaces.\n3. Outdoor Parking and Storage:\nFor outdoor parking or storage:\n(a) House trailers or boats parked or stored in any area of a lot other than a\ndriveway or parking pad must be adequately screened as follows:\ni. All Yards: Compact evergreen trees or shrubs a minimum of 1.8 m high;\nexcept:\nii. Rear Yard: A solid fence a minimum of 1.8 m high may be used in place of\nthe trees or shrubs;\n(b) Screening required in Section I.3(a) of this Zone must be located between the\nhouse trailer or boat and any portion of the lot line within 7.5 m of the house\ntrailer or boat in order to obscure the view from the abutting lot or street; and\n(c) Despite Section I.3(b) of this Zone, screening of a house trailer or boat on a\ncorner lot must not be located in an area bounded by the intersecting lot lines at\na street corner and a straight-line joining points 9 m along the said lot lines from\nthe point of intersection of the 2 lot lines.\n- 15.11 -"
+  },
+  {
+    "block_id": "block_02b80d7e2938f9e3",
+    "block_type": "paragraph",
+    "char_end": 52,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_d6432a592f42b0e1",
+    "text": "Part 15 R3 unit, or within 1 m of the side lot line;"
+  },
+  {
+    "block_id": "block_13c0020f0b0302e1",
+    "block_type": "list_item",
+    "char_end": 85,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_6cdfa0eafabb71d2",
+    "text": "(c) Despite Section H.4(b) of this R3 Zone, 1 house trailer or 1 boat may be parked a"
+  },
+  {
+    "block_id": "block_da30b08455a7dfb0",
+    "block_type": "paragraph",
+    "char_end": 274,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_c373cebcee6dcdf9",
+    "text": "minimum of 1 m from the front lot line and/or side lot line in the front driveway, to the side of the front driveway or in the side yard, on lots that have no vehicular access to the rear yard or where access is not feasible through landscaping or fencing modifications; and"
+  },
+  {
+    "block_id": "block_c45e411935447c87",
+    "block_type": "list_item",
+    "char_end": 85,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_f24620884ca75325",
+    "text": "(d) Despite Section H.4(c) of this R3 Zone, house trailers or boats are not permitted"
+  },
+  {
+    "block_id": "block_e9c3b21fd3b932f8",
+    "block_type": "paragraph",
+    "char_end": 242,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_3b53438bd7b3c7dc",
+    "text": "to be parked on corner lots in the area bounded by the intersecting lot lines at a street corner and a straight-line joining points 9 m along the said lot lines from the point of intersection of the two lot lines. I. Landscaping and Screening"
+  },
+  {
+    "block_id": "block_24a42fdb4636b1d4",
+    "block_type": "list_item",
+    "char_end": 23,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_aebc6c558b153502",
+    "text": "1. General Landscaping:"
+  },
+  {
+    "block_id": "block_8d5c26c0e99d33c0",
+    "block_type": "paragraph",
+    "char_end": 182,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_6047b61b40ec85d7",
+    "text": "All developed portions of the lot not covered by buildings, structures or paved areas must be landscaped including the retention of mature trees. This landscaping must be maintained."
+  },
+  {
+    "block_id": "block_84b6ba3e259db330",
+    "block_type": "list_item",
+    "char_end": 34,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_80c8530523a563ed",
+    "text": "2. Porous and Non-Porous Surfaces:"
+  },
+  {
+    "block_id": "block_cff57ba8dae76345",
+    "block_type": "paragraph",
+    "char_end": 63,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_ff066edd948f0f0f",
+    "text": "A minimum of 30% of the lot must be covered by porous surfaces."
+  },
+  {
+    "block_id": "block_b4a3e8801721104b",
+    "block_type": "list_item",
+    "char_end": 31,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_fcc92c96b3d6a3da",
+    "text": "3. Outdoor Parking and Storage:"
+  },
+  {
+    "block_id": "block_ec16f5f0c88f9e49",
+    "block_type": "paragraph",
+    "char_end": 31,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_1dc95e22b1363694",
+    "text": "For outdoor parking or storage:"
+  },
+  {
+    "block_id": "block_640cfe50094be2ac",
+    "block_type": "list_item",
+    "char_end": 78,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_359e6abe301c0ed7",
+    "text": "(a) House trailers or boats parked or stored in any area of a lot other than a"
+  },
+  {
+    "block_id": "block_fa88a1a21b03df2f",
+    "block_type": "paragraph",
+    "char_end": 242,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.8",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_3bfaac0d8876fb11",
+    "text": "driveway or parking pad must be adequately screened as follows: i. All Yards: Compact evergreen trees or shrubs a minimum of 1.8 m high; except: ii. Rear Yard: A solid fence a minimum of 1.8 m high may be used in place of the trees or shrubs;"
+  },
+  {
+    "block_id": "block_a7455c2a1fad7bed",
+    "block_type": "list_item",
+    "char_end": 81,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_22a17f8846aff3a5",
+    "text": "(b) Screening required in Section I.3(a) of this Zone must be located between the"
+  },
+  {
+    "block_id": "block_c8f69b53a7cc0af2",
+    "block_type": "paragraph",
+    "char_end": 161,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "7.5",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_37ac115428a9f735",
+    "text": "house trailer or boat and any portion of the lot line within 7.5 m of the house trailer or boat in order to obscure the view from the abutting lot or street; and"
+  },
+  {
+    "block_id": "block_23d63aa80fb79378",
+    "block_type": "list_item",
+    "char_end": 82,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_85dc36667484532f",
+    "text": "(c) Despite Section I.3(b) of this Zone, screening of a house trailer or boat on a"
+  },
+  {
+    "block_id": "block_604074f8d40e3f26",
+    "block_type": "paragraph",
+    "char_end": 213,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_2d73511c0d3eb324",
+    "text": "corner lot must not be located in an area bounded by the intersecting lot lines at a street corner and a straight-line joining points 9 m along the said lot lines from the point of intersection of the 2 lot lines."
+  },
+  {
+    "block_id": "block_57164d1b3f4b1bdf",
+    "block_type": "list_item",
+    "char_end": 9,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 153,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.11",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_a2387f390039d347",
+    "text": "- 15.11 -"
+  },
+  {
+    "block_id": "block_1b478c7e52203843",
+    "block_type": "page_text",
+    "char_end": 1276,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 154,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.12",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_1b5a5bae4e38a380",
+    "text": "Part 15 R3\nJ. Special Regulations\n1. Floodplain:\nFor lots within a designated floodplain as referred to in Part 8 Floodproofing, the uses\npermitted in this Zone must only be permitted if the lot has a minimum frontage of 15 m\nand minimum lot area of 464 sq. m. Only flood resistant building materials are\npermitted below the minimum flood and building elevations, as specified by the\nProvincial Government and in the Surrey Building Bylaw, as amended.\n2. Basement Access:\n(a) Basement access and basement wells serving a principal building in this R3 Zone\nmust be sited as follows:\ni. For single family dwellings and duplexes, basement access and basement\nwells may encroach into the required front yard setback, provided the\nmaximum area does not exceed 10 sq. m;\nii. Basement access and basement wells may encroach into the required rear\nyard setback, provided the maximum area does not exceed 28 sq. m;\niii. Basement access and basement wells may be located within the side yard,\nbut not within the required side yard setback, provided the maximum\narea does not exceed 10 sq. m; and\niv. The area of the basement access and basement wells must include the\nstairs, and the cumulative area of all basement access and basement wells\non a lot must not exceed 28 sq. m.\n- 15.12 -"
+  },
+  {
+    "block_id": "block_0588cd6fd8ad2315",
+    "block_type": "paragraph",
+    "char_end": 33,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 154,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_6381dec96f2b8157",
+    "text": "Part 15 R3 J. Special Regulations"
+  },
+  {
+    "block_id": "block_341c7d6f499d38e5",
+    "block_type": "list_item",
+    "char_end": 14,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 154,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_5aa90dbdfe5f023f",
+    "text": "1. Floodplain:"
+  },
+  {
+    "block_id": "block_f344139d238105bb",
+    "block_type": "paragraph",
+    "char_end": 402,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 154,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_0d947aa2bad1609f",
+    "text": "For lots within a designated floodplain as referred to in Part 8 Floodproofing, the uses permitted in this Zone must only be permitted if the lot has a minimum frontage of 15 m and minimum lot area of 464 sq. m. Only flood resistant building materials are permitted below the minimum flood and building elevations, as specified by the Provincial Government and in the Surrey Building Bylaw, as amended."
+  },
+  {
+    "block_id": "block_2989abeabd28da61",
+    "block_type": "list_item",
+    "char_end": 19,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 154,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_55dc8668c1754e6f",
+    "text": "2. Basement Access:"
+  },
+  {
+    "block_id": "block_08f80ac32633df01",
+    "block_type": "list_item",
+    "char_end": 83,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 154,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_9dd0969986adc7e2",
+    "text": "(a) Basement access and basement wells serving a principal building in this R3 Zone"
+  },
+  {
+    "block_id": "block_6c9a655e77f944f5",
+    "block_type": "paragraph",
+    "char_end": 710,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 154,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_643876e8aea4ac37",
+    "text": "must be sited as follows: i. For single family dwellings and duplexes, basement access and basement wells may encroach into the required front yard setback, provided the maximum area does not exceed 10 sq. m; ii. Basement access and basement wells may encroach into the required rear yard setback, provided the maximum area does not exceed 28 sq. m; iii. Basement access and basement wells may be located within the side yard, but not within the required side yard setback, provided the maximum area does not exceed 10 sq. m; and iv. The area of the basement access and basement wells must include the stairs, and the cumulative area of all basement access and basement wells on a lot must not exceed 28 sq. m."
+  },
+  {
+    "block_id": "block_4a45b5b415d01fb6",
+    "block_type": "list_item",
+    "char_end": 9,
+    "char_start": 0,
+    "city": "Surrey",
+    "metadata": {
+      "city_key": "surrey_r3",
+      "ingest_backend": "pdfplumber",
+      "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd"
+    },
+    "page": 154,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "15.12",
+    "source_id": "surrey_r3:source",
+    "span_id": "span_c3187a6b65b127bc",
+    "text": "- 15.12 -"
+  }
+]

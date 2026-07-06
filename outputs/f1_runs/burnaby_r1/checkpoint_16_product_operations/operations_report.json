@@ -1,0 +1,16 @@
+{
+  "action_template_count": 13,
+  "artifact": "operations_report.json",
+  "city_key": "burnaby_r1",
+  "evidence_navigation_count": 77,
+  "generated_at": "2026-07-06T05:37:55.678197+00:00",
+  "note": "Checkpoint 16 adds operator-facing drafts and scenario templates. It does not promote, approve, or edit verified outputs.",
+  "operator_actions_persisted_count": 0,
+  "run_id": "checkpoint_16_product_operations",
+  "scenario_template_count": 38,
+  "schema_version": "f1.artifacts.v0",
+  "verified_only_boundary_preserved": true,
+  "writes_gis_contract": false,
+  "writes_rule_status": false,
+  "writes_verified_rules": false
+}

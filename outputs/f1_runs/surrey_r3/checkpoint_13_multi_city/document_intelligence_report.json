@@ -1,0 +1,18 @@
+{
+  "artifact": "document_intelligence",
+  "city": "Surrey",
+  "city_key": "surrey_r3",
+  "generated_at": "2026-07-06T03:22:19.555029+00:00",
+  "ingest_backend": "pdfplumber",
+  "run_id": "checkpoint_13_multi_city",
+  "schema_version": "f1.artifacts.v0",
+  "source_id": "surrey_r3:source",
+  "source_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+  "summary": {
+    "document_block_count": 175,
+    "heading_block_count": 2,
+    "page_count": 12,
+    "source_span_count": 175,
+    "table_block_count": 18
+  }
+}

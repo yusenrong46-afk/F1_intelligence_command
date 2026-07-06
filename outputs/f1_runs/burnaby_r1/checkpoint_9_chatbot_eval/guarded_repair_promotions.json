@@ -1,0 +1,65 @@
+[
+  {
+    "changed_fields": {
+      "applies_to": "maximum lot coverage as set out in Section 101.4"
+    },
+    "decision_status": "repaired_successfully",
+    "evidence_ids": [
+      "f1_retrieval_008_01"
+    ],
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_008_01",
+        "page": 6,
+        "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60% and impervious surface area up to 70%;",
+        "section_id": "101.4",
+        "span_id": "span_5b9983c378a883e1"
+      }
+    },
+    "patch_id": "f1_guarded_repair_0006",
+    "rule_id": "f1_candidate_0006",
+    "schema_version": "f1.artifacts.v0"
+  },
+  {
+    "changed_fields": {
+      "applies_to": "principal building located between a front and rear principal"
+    },
+    "decision_status": "repaired_successfully",
+    "evidence_ids": [
+      "f1_retrieval_011_03"
+    ],
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_011_03",
+        "page": 3,
+        "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line.",
+        "section_id": "6.0",
+        "span_id": "span_7d843e53a0844892"
+      }
+    },
+    "patch_id": "f1_guarded_repair_0009",
+    "rule_id": "f1_candidate_0009",
+    "schema_version": "f1.artifacts.v0"
+  },
+  {
+    "changed_fields": {
+      "applies_to": "dwelling units"
+    },
+    "decision_status": "repaired_successfully",
+    "evidence_ids": [
+      "f1_retrieval_012_01"
+    ],
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_012_01",
+        "page": 6,
+        "quote": "All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that:",
+        "section_id": "1.0",
+        "span_id": "span_22f5e0f59d63579b"
+      }
+    },
+    "patch_id": "f1_guarded_repair_0010",
+    "rule_id": "f1_candidate_0010",
+    "schema_version": "f1.artifacts.v0"
+  }
+]

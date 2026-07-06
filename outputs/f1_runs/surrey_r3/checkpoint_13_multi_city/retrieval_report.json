@@ -1,0 +1,1901 @@
+{
+  "artifact": "retrieval_report.json",
+  "city_key": "surrey_r3",
+  "evidence": [
+    {
+      "block_type": "table",
+      "evidence_id": "f1_retrieval_001_01",
+      "page": 151,
+      "query": "maximum height",
+      "quote": "Building Type | | Requirement Single Family Dwelling with or without a Secondary Suite | Building Height with sloped roof | Must not exceed 9 m | Building height where any portion of the roof has a slope less than < 1:4 | Must not exceed 7.3 m | Building height in floodplain, as referred to in Part 8 Floodproofing | Must not exceed 10 m1 Duplex with or without a Secondary Suite | Building Height with sloped roof | Mu",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030886,
+      "section_id": "7.3",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 9,
+        "overlap_count": 2
+      },
+      "span_id": "span_5d884b393794b628",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_001_02",
+      "page": 150,
+      "query": "maximum height",
+      "quote": "i. Separation: a. A minimum separation of 5 m is required between the single family dwelling or duplex and any accessory buildings and structures exceeding 2.4 m in building height, including detached garage or carport regardless of building height. The minimum separation may be reduced to 3.0 m for stairs and for an outdoor space such as a deck or patio that occupies a maximum of 10 sq. m and may be covered by a roo",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.03031,
+      "section_id": "2.4",
+      "signals": {
+        "bm25_rank": 5,
+        "lexical_rank": 7,
+        "overlap_count": 2
+      },
+      "span_id": "span_402ddb632ee913e4",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_001_03",
+      "page": 146,
+      "query": "maximum height",
+      "quote": "ratio: i. Covered areas used for parking in accordance with Section D.2; ii. The area of an accessory building in excess of 10 sq. m; iii. Covered outdoor space with a height of 1.8 m or greater, except for a maximum 10% of the maximum allowable floor area of which 10 sq. m must be reserved for a front porch or veranda; and iv. Floor area including a garage or carport with a height exceeding 3.66 m must be multiplied",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.02971,
+      "section_id": "1.8",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 11,
+        "overlap_count": 2
+      },
+      "span_id": "span_2820c9f0703b47c1",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_001_04",
+      "page": 151,
+      "query": "maximum height",
+      "quote": "requirements: Building Type Requirement Building Height with sloped roof Must not exceed 9 m Single Family Dwelling Building height where any portion of Must not exceed 7.3 m with or without a the roof has a slope less than < 1:4 Secondary Suite Building height in floodplain, as Must not exceed 10 m1 referred to in Part 8 Floodproofing Must not exceed 3 storeys inclusive Building Height with sloped roof of the baseme",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.029643,
+      "section_id": "7.3",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 14,
+        "overlap_count": 2
+      },
+      "span_id": "span_b9b9f3383726c784",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_001_05",
+      "page": 151,
+      "query": "maximum height",
+      "quote": "Part 15 R3 G. Height of Buildings and Structures 1. Building and structure heights in this R3 Zone must be in accordance with the following requirements: Building Type Requirement Building Height with sloped roof Must not exceed 9 m Single Family Dwelling Building height where any portion of Must not exceed 7.3 m with or without a the roof has a slope less than < 1:4 Secondary Suite Building height in floodplain, as ",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.029206,
+      "section_id": "7.3",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 15,
+        "overlap_count": 2
+      },
+      "span_id": "span_0f531ce1b357c2e6",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_001_06",
+      "page": 146,
+      "query": "maximum height",
+      "quote": "Part 15 R3 a. The floor area of a garden suite is permitted in addition to the floor area ratio permitted for single family dwellings, duplexes and houseplexes in Sections D.2.(a), (b) and (c), provided that a garden suite must have a minimum floor area of 35 sq.m. and a maximum total i. Not floor area of 75 sq. m. (e) Garden Suite applicable b. Despite D.2(e)i.a., if the floor area of the single family dwelling, dup",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.027584,
+      "section_id": "1.8",
+      "signals": {
+        "bm25_rank": 7,
+        "lexical_rank": 19,
+        "overlap_count": 2
+      },
+      "span_id": "span_3a560a3dc486d087",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_002_01",
+      "page": 149,
+      "query": "minimum setback",
+      "quote": "i. Front Yard: a. Except for a garage, the front yard setback may be relaxed at the lower floor level to 5.0 m for a maximum of 50% of the width of the single family dwelling; b. If a minimum of 50% of the width of the single family dwelling is set back 9 m, the setback to an attached garage may be relaxed to",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032002,
+      "section_id": "5.0",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 3,
+        "overlap_count": 2
+      },
+      "span_id": "span_ec16fac964cf81f1",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_002_02",
+      "page": 150,
+      "query": "minimum setback",
+      "quote": "i. Front Yard: a. Exterior staircases, landings, and planters that are more than 0.6 metres above existing grade, which are attached to the principal building may be setback a minimum of 4.5 m from the front lot line; and b. For lots with rear lane access, the front yard setback for a duplex may be reduced to 4.0 m.",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031545,
+      "section_id": "0.6",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 6,
+        "overlap_count": 2
+      },
+      "span_id": "span_a034551b54c0d9af",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_002_03",
+      "page": 150,
+      "query": "minimum setback",
+      "quote": "i. Front Yard: a. The front yard setback of the houseplex may be reduced to a minimum of 2.0 metres for the first storey by an enclosed and uninhabitable space such as a porch or verandah, provided that the said porch or verandah is a minimum of 1.5 m deep, covered from above and is an integral part of the houseplex.",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.03101,
+      "section_id": "2.0",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 5,
+        "overlap_count": 2
+      },
+      "span_id": "span_7649d7c32c044a40",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_002_04",
+      "page": 150,
+      "query": "minimum setback",
+      "quote": "i. Rear Yard: a. The rear yard setback of a coach house may be reduced to 1.0 m if the coach house is constructed above a garage or carport; and ii. Separation: a. The minimum separation may be reduced to 3.0 m for stairs and outdoor space such as a deck or patio that may be covered by a roof.",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030331,
+      "section_id": "1.0",
+      "signals": {
+        "bm25_rank": 8,
+        "lexical_rank": 4,
+        "overlap_count": 2
+      },
+      "span_id": "span_ce7a9ad5d82d2544",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_002_05",
+      "page": 154,
+      "query": "minimum setback",
+      "quote": "Part 15 R3 J. Special Regulations 1. Floodplain: For lots within a designated floodplain as referred to in Part 8 Floodproofing, the uses permitted in this Zone must only be permitted if the lot has a minimum frontage of 15 m and minimum lot area of 464 sq. m. Only flood resistant building materials are permitted below the minimum flood and building elevations, as specified by the Provincial Government and in the Sur",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.028624,
+      "section_id": "15.12",
+      "signals": {
+        "bm25_rank": 7,
+        "lexical_rank": 13,
+        "overlap_count": 2
+      },
+      "span_id": "span_1b5a5bae4e38a380",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_002_06",
+      "page": 150,
+      "query": "minimum setback",
+      "quote": "Part 15 R3 ii. Rear Yard: a. 50% of the length of the rear building face may be setback a distance of 6.0 m from the rear lot line provided the remainder of the building face is setback at least 8.5 m from the rear lot line; and iii. Side Yard: a. The side yard setback may be reduced to 1.2 m along one side lot line adjoining a lot zoned for small-scale multi-unit housing, provided that the side yard setback on the o",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.028531,
+      "section_id": "6.0",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 19,
+        "overlap_count": 2
+      },
+      "span_id": "span_0f405770aa2030de",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_003_01",
+      "page": 147,
+      "query": "lot coverage",
+      "quote": "this Zone with building permits issued prior to July 11, 1994. E. Lot Coverage",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032787,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 1,
+        "overlap_count": 2
+      },
+      "span_id": "span_f1e30d22c04d61b2",
+      "supports_fields": [
+        "value",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_003_02",
+      "page": 147,
+      "query": "lot coverage",
+      "quote": "1. The maximum lot coverage for all buildings and structures in this R3 Zone must be as",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032002,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 3,
+        "overlap_count": 2
+      },
+      "span_id": "span_d3095fba0a815299",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "table",
+      "evidence_id": "f1_retrieval_003_03",
+      "page": 147,
+      "query": "lot coverage",
+      "quote": "Building Type | Lot Size | | | Maximum Lot Coverage | | Single Family Dwelling with or without a Secondary Suite | | \u2264 | 560 sq. m | | 40% | | > 560 sq. m but \u2264 1,262 sq. m | | | | 40% reduced at a rate of 2% for each | | | | | | 93 sq. m of additional lot area until | | | | | | 25% is reached | | > 1,262 sq. m | | | | 25% | Single Family Dwelling with or without a Secondary Suite, Coach House, or Garden Suite | | \u2264 ",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.03125,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 4,
+        "overlap_count": 2
+      },
+      "span_id": "span_402a692506bff2a9",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_003_04",
+      "page": 147,
+      "query": "lot coverage",
+      "quote": "follows: Building Type Lot Size Maximum Lot Coverage \u2264 560 sq. m 40% Single Family Dwelling 40% reduced at a rate of 2% for each with or without a Secondary > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until Suite 25% is reached > 1,262 sq. m 25% \u2264 560 sq. m 50% Single Family Dwelling 50% reduced at a rate of 2% for each with or without a Secondary > 560 sq. m. but \u2264 1,262 sq. m 93 sq. m of additiona",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030769,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 5,
+        "lexical_rank": 5,
+        "overlap_count": 2
+      },
+      "span_id": "span_1996e7708bfbd79d",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_003_05",
+      "page": 147,
+      "query": "lot coverage",
+      "quote": "Part 15 R3 4. Principal Building Second and Third Storey Floor Area (a) For single family dwellings, the maximum permitted floor area of a second storey for a principal building must not exceed 80% of the floor area of the first storey including attached garage and that portion of any porch or veranda at the front that is covered by a roof. The reduced floor area of the second storey must be accomplished by a 20% off",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.028694,
+      "section_id": "15.5",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 18,
+        "overlap_count": 2
+      },
+      "span_id": "span_3a435afb2a3bf621",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_003_06",
+      "page": 144,
+      "query": "lot coverage",
+      "quote": "1. Minimum Lot Sizes:",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030214,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 11,
+        "lexical_rank": 2,
+        "overlap_count": 1
+      },
+      "span_id": "span_4011c0b0e7fee3c1",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_004_01",
+      "page": 143,
+      "query": "dwelling units",
+      "quote": "or a combination of principal uses and accessory uses if the maximum number of dwelling units is not exceeded as follows: Maximum Number of Accessory Lot Size Lot Location Principal Uses Dwelling Uses Units1",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032787,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 1,
+        "overlap_count": 2
+      },
+      "span_id": "span_1bd6a54ac2abf89f",
+      "supports_fields": [
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_004_02",
+      "page": 143,
+      "query": "dwelling units",
+      "quote": "Areas2 ii. All areas, except Up to 3 Single Family Dwelling B.1.(c)i 1 Despite the permitted uses in Table B.1, the following lands allow no more than 2 dwelling units on a lot:",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032258,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 2,
+        "overlap_count": 2
+      },
+      "span_id": "span_c8a87a5a3ea42010",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_004_03",
+      "page": 143,
+      "query": "dwelling units",
+      "quote": "Part 15 \u2013 R3, Urban Residential Zone Part 15 R3 Urban Residential Zone (BL 21281, 21390, 21474, 21595, 21701, 21852, 22014) A. Intent This R3 Zone is intended for small-scale multi-unit housing on urban sized lots typically 560 sq. m or larger, which may accommodate 2 to 6 dwelling units, and is subject to the remainder of this Part 15. B. Permitted Uses",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031258,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 5,
+        "overlap_count": 2
+      },
+      "span_id": "span_ac6ead8f44d84929",
+      "supports_fields": [
+        "value",
+        "unit",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_004_04",
+      "page": 143,
+      "query": "dwelling units",
+      "quote": "Part 15 \u2013 R3, Urban Residential Zone Part 15 R3 Urban Residential Zone (BL 21281, 21390, 21474, 21595, 21701, 21852, 22014) A. Intent This R3 Zone is intended for small-scale multi-unit housing on urban sized lots typically 560 sq. m or larger, which may accommodate 2 to 6 dwelling units, and is subject to the remainder of this Part 15. B. Permitted Uses 1. Land, buildings and structures in this R3 Zone must only be ",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.028958,
+      "section_id": "12.1",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 15,
+        "overlap_count": 2
+      },
+      "span_id": "span_7dfbd734327d63c4",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_004_05",
+      "page": 149,
+      "query": "dwelling units",
+      "quote": "(a) Single Family Dwelling with or without Secondary Suite",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030798,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 7,
+        "lexical_rank": 3,
+        "overlap_count": 1
+      },
+      "span_id": "span_dccd4a99ae0a53e2",
+      "supports_fields": [
+        "unit",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_004_06",
+      "page": 152,
+      "query": "dwelling units",
+      "quote": "front yard setback, or within the required side yards adjacent to the dwelling",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030331,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 8,
+        "lexical_rank": 4,
+        "overlap_count": 1
+      },
+      "span_id": "span_75a5013ba0ca6073",
+      "supports_fields": [
+        "unit",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_005_01",
+      "page": 150,
+      "query": "building separation",
+      "quote": "i. Separation: a. A minimum separation of 5 m is required between the single family dwelling or duplex and any accessory buildings and structures exceeding 2.4 m in building height, including detached garage or carport regardless of building height. The minimum separation may be reduced to 3.0 m for stairs and for an outdoor space such as a deck or patio that occupies a maximum of 10 sq. m and may be covered by a roo",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031778,
+      "section_id": "2.4",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 5,
+        "overlap_count": 2
+      },
+      "span_id": "span_402ddb632ee913e4",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "table",
+      "evidence_id": "f1_retrieval_005_02",
+      "page": 148,
+      "query": "building separation",
+      "quote": "| Building | | | Interior Lot | | | Corner Lot | | | Interior Lot | | | Corner Lot | | Type | | | 1 Lane Access | | | Lane Access | | | No Lane | | | No Lane | | Single Family Dwelling with or without a Secondary Suite | | | | | | | | | | | | | Front Yard | | | 6.5 m | | | 6.5 m | | | 6.5 m | | | 6.5 m | | Rear Yard | | | 7.5 m | | | 7.5 m | | | 7.5 m | | | 7.5 m | | Side Yard | | | 1.8 m | | | 1.8 m | | | 1.8 m | | ",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031025,
+      "section_id": "3.5",
+      "signals": {
+        "bm25_rank": 6,
+        "lexical_rank": 3,
+        "overlap_count": 2
+      },
+      "span_id": "span_dbedd6f8c8a64100",
+      "supports_fields": [
+        "value",
+        "unit",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_005_03",
+      "page": 150,
+      "query": "building separation",
+      "quote": "Part 15 R3 ii. Rear Yard: a. 50% of the length of the rear building face may be setback a distance of 6.0 m from the rear lot line provided the remainder of the building face is setback at least 8.5 m from the rear lot line; and iii. Side Yard: a. The side yard setback may be reduced to 1.2 m along one side lot line adjoining a lot zoned for small-scale multi-unit housing, provided that the side yard setback on the o",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.029762,
+      "section_id": "6.0",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 12,
+        "overlap_count": 2
+      },
+      "span_id": "span_0f405770aa2030de",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_005_04",
+      "page": 148,
+      "query": "building separation",
+      "quote": "Part 15 R3 \u2264 560 sq. m 60% 60% reduced at a rate of 2% for each Houseplex with or without a > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until Secondary Suite 35% is reached > 1,262 sq. m 35% \u2264 560 sq. m 60% Houseplex with or without a 60% reduced at a rate of 2% for each Secondary Suite or Coach > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until House 35% is reached > 1,262 sq. m 35",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.027826,
+      "section_id": "6.5",
+      "signals": {
+        "bm25_rank": 15,
+        "lexical_rank": 9,
+        "overlap_count": 2
+      },
+      "span_id": "span_5df9c753682a5a6d",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_005_05",
+      "page": 144,
+      "query": "building separation",
+      "quote": "2. Building Construction:",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030679,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 10,
+        "lexical_rank": 1,
+        "overlap_count": 1
+      },
+      "span_id": "span_38c678a5039a2e71",
+      "supports_fields": [
+        "value",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_005_06",
+      "page": 150,
+      "query": "building separation",
+      "quote": "i. Separation: a. The minimum separation may be reduced to 3.0 m for stairs and outdoor space such as a deck or patio that may be covered by a roof.",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030415,
+      "section_id": "3.0",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 10,
+        "overlap_count": 1
+      },
+      "span_id": "span_d40e39505be84020",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_006_01",
+      "page": 146,
+      "query": "floor area",
+      "quote": "minimum floor area of 35 sq.m. and a maximum total i. Not floor area of 75 sq. m.",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031258,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 5,
+        "overlap_count": 2
+      },
+      "span_id": "span_0c5b8b53fa87150f",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_006_02",
+      "page": 144,
+      "query": "floor area",
+      "quote": "For building construction in this R3 Zone: Floor Area Ratio1, Floor Area Building Type Lot Size and Building Size Requirements a. The floor area ratio must not exceed 0.60 for the first 560 sq. m of lot area and 0.35 for the remaining lot area in excess of 560 sq. m, provided a minimum of 39 sq. m. of the total floor area is used only as a garage or",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030478,
+      "section_id": "0.60",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 11,
+        "overlap_count": 2
+      },
+      "span_id": "span_fcf89127b5d9fd5a",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_006_03",
+      "page": 146,
+      "query": "floor area",
+      "quote": "3. Floor Area Ratio Calculation:",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030478,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 11,
+        "lexical_rank": 1,
+        "overlap_count": 2
+      },
+      "span_id": "span_bef92c1547cf285a",
+      "supports_fields": [
+        "value",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_006_04",
+      "page": 147,
+      "query": "floor area",
+      "quote": "4. Principal Building Second and Third Storey Floor Area",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.029287,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 16,
+        "lexical_rank": 2,
+        "overlap_count": 2
+      },
+      "span_id": "span_cd99d6ed7266861f",
+      "supports_fields": [
+        "value",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_006_05",
+      "page": 145,
+      "query": "floor area",
+      "quote": "minimum floor area of 35 sq.m. and a maximum total i. Not floor area of 75 sq. m., excluding the garage or carport.",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.029199,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 9,
+        "lexical_rank": 8,
+        "overlap_count": 2
+      },
+      "span_id": "span_c3b09da87524613c",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "table",
+      "evidence_id": "f1_retrieval_006_06",
+      "page": 146,
+      "query": "floor area",
+      "quote": "(e) Garden Suite | i. Not applicable | | a. The floor area of a garden suite is permitted in addition | | | | to the floor area ratio permitted for single family | | | | dwellings, duplexes and houseplexes in Sections D.2.(a), | | | | (b) and (c), provided that a garden suite must have a | | | | minimum floor area of 35 sq.m. and a maximum total | | | | floor area of 75 sq. m. | | | | b. Despite D.2(e)i.a., if the fl",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.029116,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 17,
+        "overlap_count": 2
+      },
+      "span_id": "span_51ae451f78878425",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    }
+  ],
+  "generated_at": "2026-07-06T03:22:19.559641+00:00",
+  "queries": [
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "table",
+          "evidence_id": "f1_retrieval_001_01",
+          "page": 151,
+          "query": "maximum height",
+          "quote": "Building Type | | Requirement Single Family Dwelling with or without a Secondary Suite | Building Height with sloped roof | Must not exceed 9 m | Building height where any portion of the roof has a slope less than < 1:4 | Must not exceed 7.3 m | Building height in floodplain, as referred to in Part 8 Floodproofing | Must not exceed 10 m1 Duplex with or without a Secondary Suite | Building Height with sloped roof | Mu",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030886,
+          "section_id": "7.3",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 9,
+            "overlap_count": 2
+          },
+          "span_id": "span_5d884b393794b628",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_001_02",
+          "page": 150,
+          "query": "maximum height",
+          "quote": "i. Separation: a. A minimum separation of 5 m is required between the single family dwelling or duplex and any accessory buildings and structures exceeding 2.4 m in building height, including detached garage or carport regardless of building height. The minimum separation may be reduced to 3.0 m for stairs and for an outdoor space such as a deck or patio that occupies a maximum of 10 sq. m and may be covered by a roo",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.03031,
+          "section_id": "2.4",
+          "signals": {
+            "bm25_rank": 5,
+            "lexical_rank": 7,
+            "overlap_count": 2
+          },
+          "span_id": "span_402ddb632ee913e4",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_001_03",
+          "page": 146,
+          "query": "maximum height",
+          "quote": "ratio: i. Covered areas used for parking in accordance with Section D.2; ii. The area of an accessory building in excess of 10 sq. m; iii. Covered outdoor space with a height of 1.8 m or greater, except for a maximum 10% of the maximum allowable floor area of which 10 sq. m must be reserved for a front porch or veranda; and iv. Floor area including a garage or carport with a height exceeding 3.66 m must be multiplied",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.02971,
+          "section_id": "1.8",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 11,
+            "overlap_count": 2
+          },
+          "span_id": "span_2820c9f0703b47c1",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_001_04",
+          "page": 151,
+          "query": "maximum height",
+          "quote": "requirements: Building Type Requirement Building Height with sloped roof Must not exceed 9 m Single Family Dwelling Building height where any portion of Must not exceed 7.3 m with or without a the roof has a slope less than < 1:4 Secondary Suite Building height in floodplain, as Must not exceed 10 m1 referred to in Part 8 Floodproofing Must not exceed 3 storeys inclusive Building Height with sloped roof of the baseme",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.029643,
+          "section_id": "7.3",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 14,
+            "overlap_count": 2
+          },
+          "span_id": "span_b9b9f3383726c784",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_001_05",
+          "page": 151,
+          "query": "maximum height",
+          "quote": "Part 15 R3 G. Height of Buildings and Structures 1. Building and structure heights in this R3 Zone must be in accordance with the following requirements: Building Type Requirement Building Height with sloped roof Must not exceed 9 m Single Family Dwelling Building height where any portion of Must not exceed 7.3 m with or without a the roof has a slope less than < 1:4 Secondary Suite Building height in floodplain, as ",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.029206,
+          "section_id": "7.3",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 15,
+            "overlap_count": 2
+          },
+          "span_id": "span_0f531ce1b357c2e6",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_001_06",
+          "page": 146,
+          "query": "maximum height",
+          "quote": "Part 15 R3 a. The floor area of a garden suite is permitted in addition to the floor area ratio permitted for single family dwellings, duplexes and houseplexes in Sections D.2.(a), (b) and (c), provided that a garden suite must have a minimum floor area of 35 sq.m. and a maximum total i. Not floor area of 75 sq. m. (e) Garden Suite applicable b. Despite D.2(e)i.a., if the floor area of the single family dwelling, dup",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.027584,
+          "section_id": "1.8",
+          "signals": {
+            "bm25_rank": 7,
+            "lexical_rank": 19,
+            "overlap_count": 2
+          },
+          "span_id": "span_3a560a3dc486d087",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "maximum height",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_002_01",
+          "page": 149,
+          "query": "minimum setback",
+          "quote": "i. Front Yard: a. Except for a garage, the front yard setback may be relaxed at the lower floor level to 5.0 m for a maximum of 50% of the width of the single family dwelling; b. If a minimum of 50% of the width of the single family dwelling is set back 9 m, the setback to an attached garage may be relaxed to",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032002,
+          "section_id": "5.0",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 3,
+            "overlap_count": 2
+          },
+          "span_id": "span_ec16fac964cf81f1",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_002_02",
+          "page": 150,
+          "query": "minimum setback",
+          "quote": "i. Front Yard: a. Exterior staircases, landings, and planters that are more than 0.6 metres above existing grade, which are attached to the principal building may be setback a minimum of 4.5 m from the front lot line; and b. For lots with rear lane access, the front yard setback for a duplex may be reduced to 4.0 m.",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031545,
+          "section_id": "0.6",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 6,
+            "overlap_count": 2
+          },
+          "span_id": "span_a034551b54c0d9af",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_002_03",
+          "page": 150,
+          "query": "minimum setback",
+          "quote": "i. Front Yard: a. The front yard setback of the houseplex may be reduced to a minimum of 2.0 metres for the first storey by an enclosed and uninhabitable space such as a porch or verandah, provided that the said porch or verandah is a minimum of 1.5 m deep, covered from above and is an integral part of the houseplex.",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.03101,
+          "section_id": "2.0",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 5,
+            "overlap_count": 2
+          },
+          "span_id": "span_7649d7c32c044a40",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_002_04",
+          "page": 150,
+          "query": "minimum setback",
+          "quote": "i. Rear Yard: a. The rear yard setback of a coach house may be reduced to 1.0 m if the coach house is constructed above a garage or carport; and ii. Separation: a. The minimum separation may be reduced to 3.0 m for stairs and outdoor space such as a deck or patio that may be covered by a roof.",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030331,
+          "section_id": "1.0",
+          "signals": {
+            "bm25_rank": 8,
+            "lexical_rank": 4,
+            "overlap_count": 2
+          },
+          "span_id": "span_ce7a9ad5d82d2544",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_002_05",
+          "page": 154,
+          "query": "minimum setback",
+          "quote": "Part 15 R3 J. Special Regulations 1. Floodplain: For lots within a designated floodplain as referred to in Part 8 Floodproofing, the uses permitted in this Zone must only be permitted if the lot has a minimum frontage of 15 m and minimum lot area of 464 sq. m. Only flood resistant building materials are permitted below the minimum flood and building elevations, as specified by the Provincial Government and in the Sur",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.028624,
+          "section_id": "15.12",
+          "signals": {
+            "bm25_rank": 7,
+            "lexical_rank": 13,
+            "overlap_count": 2
+          },
+          "span_id": "span_1b5a5bae4e38a380",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_002_06",
+          "page": 150,
+          "query": "minimum setback",
+          "quote": "Part 15 R3 ii. Rear Yard: a. 50% of the length of the rear building face may be setback a distance of 6.0 m from the rear lot line provided the remainder of the building face is setback at least 8.5 m from the rear lot line; and iii. Side Yard: a. The side yard setback may be reduced to 1.2 m along one side lot line adjoining a lot zoned for small-scale multi-unit housing, provided that the side yard setback on the o",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.028531,
+          "section_id": "6.0",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 19,
+            "overlap_count": 2
+          },
+          "span_id": "span_0f405770aa2030de",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "minimum setback",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_003_01",
+          "page": 147,
+          "query": "lot coverage",
+          "quote": "this Zone with building permits issued prior to July 11, 1994. E. Lot Coverage",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032787,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 1,
+            "overlap_count": 2
+          },
+          "span_id": "span_f1e30d22c04d61b2",
+          "supports_fields": [
+            "value",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_003_02",
+          "page": 147,
+          "query": "lot coverage",
+          "quote": "1. The maximum lot coverage for all buildings and structures in this R3 Zone must be as",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032002,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 3,
+            "overlap_count": 2
+          },
+          "span_id": "span_d3095fba0a815299",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "table",
+          "evidence_id": "f1_retrieval_003_03",
+          "page": 147,
+          "query": "lot coverage",
+          "quote": "Building Type | Lot Size | | | Maximum Lot Coverage | | Single Family Dwelling with or without a Secondary Suite | | \u2264 | 560 sq. m | | 40% | | > 560 sq. m but \u2264 1,262 sq. m | | | | 40% reduced at a rate of 2% for each | | | | | | 93 sq. m of additional lot area until | | | | | | 25% is reached | | > 1,262 sq. m | | | | 25% | Single Family Dwelling with or without a Secondary Suite, Coach House, or Garden Suite | | \u2264 ",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.03125,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 4,
+            "overlap_count": 2
+          },
+          "span_id": "span_402a692506bff2a9",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_003_04",
+          "page": 147,
+          "query": "lot coverage",
+          "quote": "follows: Building Type Lot Size Maximum Lot Coverage \u2264 560 sq. m 40% Single Family Dwelling 40% reduced at a rate of 2% for each with or without a Secondary > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until Suite 25% is reached > 1,262 sq. m 25% \u2264 560 sq. m 50% Single Family Dwelling 50% reduced at a rate of 2% for each with or without a Secondary > 560 sq. m. but \u2264 1,262 sq. m 93 sq. m of additiona",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030769,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 5,
+            "lexical_rank": 5,
+            "overlap_count": 2
+          },
+          "span_id": "span_1996e7708bfbd79d",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_003_05",
+          "page": 147,
+          "query": "lot coverage",
+          "quote": "Part 15 R3 4. Principal Building Second and Third Storey Floor Area (a) For single family dwellings, the maximum permitted floor area of a second storey for a principal building must not exceed 80% of the floor area of the first storey including attached garage and that portion of any porch or veranda at the front that is covered by a roof. The reduced floor area of the second storey must be accomplished by a 20% off",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.028694,
+          "section_id": "15.5",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 18,
+            "overlap_count": 2
+          },
+          "span_id": "span_3a435afb2a3bf621",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_003_06",
+          "page": 144,
+          "query": "lot coverage",
+          "quote": "1. Minimum Lot Sizes:",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030214,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 11,
+            "lexical_rank": 2,
+            "overlap_count": 1
+          },
+          "span_id": "span_4011c0b0e7fee3c1",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "lot coverage",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_004_01",
+          "page": 143,
+          "query": "dwelling units",
+          "quote": "or a combination of principal uses and accessory uses if the maximum number of dwelling units is not exceeded as follows: Maximum Number of Accessory Lot Size Lot Location Principal Uses Dwelling Uses Units1",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032787,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 1,
+            "overlap_count": 2
+          },
+          "span_id": "span_1bd6a54ac2abf89f",
+          "supports_fields": [
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_004_02",
+          "page": 143,
+          "query": "dwelling units",
+          "quote": "Areas2 ii. All areas, except Up to 3 Single Family Dwelling B.1.(c)i 1 Despite the permitted uses in Table B.1, the following lands allow no more than 2 dwelling units on a lot:",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032258,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 2,
+            "overlap_count": 2
+          },
+          "span_id": "span_c8a87a5a3ea42010",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_004_03",
+          "page": 143,
+          "query": "dwelling units",
+          "quote": "Part 15 \u2013 R3, Urban Residential Zone Part 15 R3 Urban Residential Zone (BL 21281, 21390, 21474, 21595, 21701, 21852, 22014) A. Intent This R3 Zone is intended for small-scale multi-unit housing on urban sized lots typically 560 sq. m or larger, which may accommodate 2 to 6 dwelling units, and is subject to the remainder of this Part 15. B. Permitted Uses",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031258,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 5,
+            "overlap_count": 2
+          },
+          "span_id": "span_ac6ead8f44d84929",
+          "supports_fields": [
+            "value",
+            "unit",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_004_04",
+          "page": 143,
+          "query": "dwelling units",
+          "quote": "Part 15 \u2013 R3, Urban Residential Zone Part 15 R3 Urban Residential Zone (BL 21281, 21390, 21474, 21595, 21701, 21852, 22014) A. Intent This R3 Zone is intended for small-scale multi-unit housing on urban sized lots typically 560 sq. m or larger, which may accommodate 2 to 6 dwelling units, and is subject to the remainder of this Part 15. B. Permitted Uses 1. Land, buildings and structures in this R3 Zone must only be ",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.028958,
+          "section_id": "12.1",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 15,
+            "overlap_count": 2
+          },
+          "span_id": "span_7dfbd734327d63c4",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_004_05",
+          "page": 149,
+          "query": "dwelling units",
+          "quote": "(a) Single Family Dwelling with or without Secondary Suite",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030798,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 7,
+            "lexical_rank": 3,
+            "overlap_count": 1
+          },
+          "span_id": "span_dccd4a99ae0a53e2",
+          "supports_fields": [
+            "unit",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_004_06",
+          "page": 152,
+          "query": "dwelling units",
+          "quote": "front yard setback, or within the required side yards adjacent to the dwelling",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030331,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 8,
+            "lexical_rank": 4,
+            "overlap_count": 1
+          },
+          "span_id": "span_75a5013ba0ca6073",
+          "supports_fields": [
+            "unit",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "dwelling units",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_005_01",
+          "page": 150,
+          "query": "building separation",
+          "quote": "i. Separation: a. A minimum separation of 5 m is required between the single family dwelling or duplex and any accessory buildings and structures exceeding 2.4 m in building height, including detached garage or carport regardless of building height. The minimum separation may be reduced to 3.0 m for stairs and for an outdoor space such as a deck or patio that occupies a maximum of 10 sq. m and may be covered by a roo",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031778,
+          "section_id": "2.4",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 5,
+            "overlap_count": 2
+          },
+          "span_id": "span_402ddb632ee913e4",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "table",
+          "evidence_id": "f1_retrieval_005_02",
+          "page": 148,
+          "query": "building separation",
+          "quote": "| Building | | | Interior Lot | | | Corner Lot | | | Interior Lot | | | Corner Lot | | Type | | | 1 Lane Access | | | Lane Access | | | No Lane | | | No Lane | | Single Family Dwelling with or without a Secondary Suite | | | | | | | | | | | | | Front Yard | | | 6.5 m | | | 6.5 m | | | 6.5 m | | | 6.5 m | | Rear Yard | | | 7.5 m | | | 7.5 m | | | 7.5 m | | | 7.5 m | | Side Yard | | | 1.8 m | | | 1.8 m | | | 1.8 m | | ",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031025,
+          "section_id": "3.5",
+          "signals": {
+            "bm25_rank": 6,
+            "lexical_rank": 3,
+            "overlap_count": 2
+          },
+          "span_id": "span_dbedd6f8c8a64100",
+          "supports_fields": [
+            "value",
+            "unit",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_005_03",
+          "page": 150,
+          "query": "building separation",
+          "quote": "Part 15 R3 ii. Rear Yard: a. 50% of the length of the rear building face may be setback a distance of 6.0 m from the rear lot line provided the remainder of the building face is setback at least 8.5 m from the rear lot line; and iii. Side Yard: a. The side yard setback may be reduced to 1.2 m along one side lot line adjoining a lot zoned for small-scale multi-unit housing, provided that the side yard setback on the o",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.029762,
+          "section_id": "6.0",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 12,
+            "overlap_count": 2
+          },
+          "span_id": "span_0f405770aa2030de",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_005_04",
+          "page": 148,
+          "query": "building separation",
+          "quote": "Part 15 R3 \u2264 560 sq. m 60% 60% reduced at a rate of 2% for each Houseplex with or without a > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until Secondary Suite 35% is reached > 1,262 sq. m 35% \u2264 560 sq. m 60% Houseplex with or without a 60% reduced at a rate of 2% for each Secondary Suite or Coach > 560 sq. m but \u2264 1,262 sq. m 93 sq. m of additional lot area until House 35% is reached > 1,262 sq. m 35",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.027826,
+          "section_id": "6.5",
+          "signals": {
+            "bm25_rank": 15,
+            "lexical_rank": 9,
+            "overlap_count": 2
+          },
+          "span_id": "span_5df9c753682a5a6d",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_005_05",
+          "page": 144,
+          "query": "building separation",
+          "quote": "2. Building Construction:",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030679,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 10,
+            "lexical_rank": 1,
+            "overlap_count": 1
+          },
+          "span_id": "span_38c678a5039a2e71",
+          "supports_fields": [
+            "value",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_005_06",
+          "page": 150,
+          "query": "building separation",
+          "quote": "i. Separation: a. The minimum separation may be reduced to 3.0 m for stairs and outdoor space such as a deck or patio that may be covered by a roof.",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030415,
+          "section_id": "3.0",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 10,
+            "overlap_count": 1
+          },
+          "span_id": "span_d40e39505be84020",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "building separation",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_006_01",
+          "page": 146,
+          "query": "floor area",
+          "quote": "minimum floor area of 35 sq.m. and a maximum total i. Not floor area of 75 sq. m.",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031258,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 5,
+            "overlap_count": 2
+          },
+          "span_id": "span_0c5b8b53fa87150f",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_006_02",
+          "page": 144,
+          "query": "floor area",
+          "quote": "For building construction in this R3 Zone: Floor Area Ratio1, Floor Area Building Type Lot Size and Building Size Requirements a. The floor area ratio must not exceed 0.60 for the first 560 sq. m of lot area and 0.35 for the remaining lot area in excess of 560 sq. m, provided a minimum of 39 sq. m. of the total floor area is used only as a garage or",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030478,
+          "section_id": "0.60",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 11,
+            "overlap_count": 2
+          },
+          "span_id": "span_fcf89127b5d9fd5a",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_006_03",
+          "page": 146,
+          "query": "floor area",
+          "quote": "3. Floor Area Ratio Calculation:",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030478,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 11,
+            "lexical_rank": 1,
+            "overlap_count": 2
+          },
+          "span_id": "span_bef92c1547cf285a",
+          "supports_fields": [
+            "value",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_006_04",
+          "page": 147,
+          "query": "floor area",
+          "quote": "4. Principal Building Second and Third Storey Floor Area",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.029287,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 16,
+            "lexical_rank": 2,
+            "overlap_count": 2
+          },
+          "span_id": "span_cd99d6ed7266861f",
+          "supports_fields": [
+            "value",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_006_05",
+          "page": 145,
+          "query": "floor area",
+          "quote": "minimum floor area of 35 sq.m. and a maximum total i. Not floor area of 75 sq. m., excluding the garage or carport.",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.029199,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 9,
+            "lexical_rank": 8,
+            "overlap_count": 2
+          },
+          "span_id": "span_c3b09da87524613c",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "table",
+          "evidence_id": "f1_retrieval_006_06",
+          "page": 146,
+          "query": "floor area",
+          "quote": "(e) Garden Suite | i. Not applicable | | a. The floor area of a garden suite is permitted in addition | | | | to the floor area ratio permitted for single family | | | | dwellings, duplexes and houseplexes in Sections D.2.(a), | | | | (b) and (c), provided that a garden suite must have a | | | | minimum floor area of 35 sq.m. and a maximum total | | | | floor area of 75 sq. m. | | | | b. Despite D.2(e)i.a., if the fl",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.029116,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 17,
+            "overlap_count": 2
+          },
+          "span_id": "span_51ae451f78878425",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "floor area",
+      "top_k": 6
+    }
+  ],
+  "reranker": "lexical_overlap",
+  "retrieval_method": "lexical_bm25_rrf",
+  "run_id": "checkpoint_13_multi_city",
+  "schema_version": "f1.artifacts.v0",
+  "summary": {
+    "note": "Checkpoint 3 retrieval quality is a smoke metric, not legal verification.",
+    "queries_with_hits": 6,
+    "query_count": 6,
+    "retrieval_quality_status": "pass",
+    "source_span_count": 175,
+    "total_hit_count": 36
+  }
+}

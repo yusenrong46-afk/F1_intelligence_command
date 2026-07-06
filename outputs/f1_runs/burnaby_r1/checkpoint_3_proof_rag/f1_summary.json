@@ -1,0 +1,86 @@
+{
+  "artifact_names": [
+    "source_registry.json",
+    "document_blocks.json",
+    "source_spans.json",
+    "retrieval_report.json",
+    "candidate_rules.json",
+    "verification_decisions.json",
+    "verified_rules.json",
+    "review_queue.json",
+    "repair_attempts.json",
+    "repair_rerun_report.json",
+    "gis_rule_contract.json",
+    "compliance_decisions.json",
+    "chatbot_eval.json",
+    "f1_summary.json"
+  ],
+  "bylaw_version": "",
+  "checkpoint": "F1 checkpoint 3",
+  "city": "burnaby_r1",
+  "constitution_rules": [
+    "Source documents are ground truth.",
+    "Extraction proposes candidate rules.",
+    "RAG retrieves evidence, not truth.",
+    "Repair proposes patches, never approval.",
+    "Verification is the only promotion authority.",
+    "Chatbot explains and navigates, but cannot verify or approve.",
+    "GIS and compliance consume verified-only rules.",
+    "No dry-run result may be described as a real measured result.",
+    "Every upgrade must be proven by benchmark or clearly labeled exploratory.",
+    "A city without gold benchmark is exploratory only."
+  ],
+  "document_intelligence": {
+    "document_block_count": 112,
+    "document_blocks": "document_blocks.json",
+    "ingest_backend": "docling",
+    "page_count": 7,
+    "report": "document_intelligence_report.json",
+    "source_span_count": 112,
+    "source_spans": "source_spans.json",
+    "table_block_count": 4
+  },
+  "documents": {
+    "artifact_contracts": "docs/F1_ARTIFACT_CONTRACTS.md",
+    "constitution": "docs/F1_CONSTITUTION.md",
+    "engineering_plan": "docs/F1_ENGINEERING_PLAN.md",
+    "living_textbook": "F1_TEXTBOOK.ipynb",
+    "m_series_archive_index": "archive/m_series/README.md"
+  },
+  "generated_at": "2026-07-06T02:31:06.288375+00:00",
+  "next_checkpoint": "Add extraction with strict structured outputs and field-level citations.",
+  "purpose": "Build proof-aware retrieval over F1 source spans without giving retrieval promotion authority.",
+  "retrieval": {
+    "artifact": "retrieval_report.json",
+    "queries_with_hits": 6,
+    "query_count": 6,
+    "reranker": "lexical_overlap",
+    "retrieval_method": "lexical_bm25_rrf",
+    "retrieval_quality_status": "pass",
+    "total_hit_count": 36
+  },
+  "run_id": "checkpoint_3_proof_rag",
+  "safety": {
+    "current_false_verified_total": 0,
+    "existing_safety_reproduced": true,
+    "f1_document_intelligence_promotes_rules": false,
+    "f1_exports_gis": false,
+    "f1_promotes_rules": false,
+    "f1_retrieval_promotes_rules": false,
+    "f1_source_registry_status": "pass",
+    "false_approval_count_boundary": 0,
+    "overall_status": "m7_safety_ready",
+    "status_report": "outputs/m7_status_report/m7_status_report.json",
+    "unsafe_current_rows": []
+  },
+  "schema_version": "f1.artifacts.v0",
+  "source_id": "",
+  "source_registry": {
+    "artifact": "source_registry.json",
+    "provenance_exists": true,
+    "sha256_matches": true,
+    "source_count": 1,
+    "source_pdf_exists": true,
+    "validation_status": "pass"
+  }
+}

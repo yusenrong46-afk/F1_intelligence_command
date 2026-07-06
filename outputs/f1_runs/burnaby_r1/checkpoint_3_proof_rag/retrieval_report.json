@@ -1,0 +1,1879 @@
+{
+  "artifact": "retrieval_report.json",
+  "city_key": "burnaby_r1",
+  "evidence": [
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_001_01",
+      "page": 6,
+      "query": "maximum height",
+      "quote": "(c) all original architectural appurtenances, such as chimneys, railings, vents, decorative features, or similar, may be excluded from the maximum permitted height of a principal building;",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032266,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 3,
+        "overlap_count": 2
+      },
+      "span_id": "span_e22b574557574f92",
+      "supports_fields": [
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "table",
+      "evidence_id": "f1_retrieval_001_02",
+      "page": 2,
+      "query": "maximum height",
+      "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Cover",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030622,
+      "section_id": "101.4",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 9,
+        "overlap_count": 2
+      },
+      "span_id": "span_e81e0e23450ce24f",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_001_03",
+      "page": 6,
+      "query": "maximum height",
+      "quote": "101.6.3 Access and Fire Safety Dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; ",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.025808,
+      "section_id": "101.6.3",
+      "signals": {
+        "bm25_rank": 17,
+        "lexical_rank": 18,
+        "overlap_count": 2
+      },
+      "span_id": "span_a20ee106bd881a3f",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_001_04",
+      "page": 5,
+      "query": "maximum height",
+      "quote": "An accessory structure not being a building, excluding a fence or a retaining wall, located outside of a required yard, shall not exceed 4.6 m in height. 101.5.6 Child Care Facilities A child care facility in the R1 District must: (a) be limited to a maximum of 25 children; (b) be located on a corner lot; (c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwelling units ",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.025158,
+      "section_id": "4.6",
+      "signals": {
+        "bm25_rank": 20,
+        "lexical_rank": 19,
+        "overlap_count": 2
+      },
+      "span_id": "span_74067e46d2ff39be",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_001_05",
+      "page": 7,
+      "query": "maximum height",
+      "quote": "101.7.1 Height",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032266,
+      "section_id": "101.7.1",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 1,
+        "overlap_count": 1
+      },
+      "span_id": "span_b9700ac59f7adacd",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_001_06",
+      "page": 7,
+      "query": "maximum height",
+      "quote": "Diagram: Height Measurement",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031754,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 2,
+        "overlap_count": 1
+      },
+      "span_id": "span_e96e6d2c78fd593d",
+      "supports_fields": [
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_002_01",
+      "page": 2,
+      "query": "minimum setback",
+      "quote": "101.4 Development Regulations (B/L No. 14783-25-12-09) .1 Maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a Section 219 Covenant prohibiting the construction of more than 3 dwelling units on the lot. .2 See Sections 101.6.1 and 6.12 for permitted projections into required yards and see Section 6.13 for additional setbacks that may be required for vision clearance areas. .3 Inte",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030214,
+      "section_id": "101.4",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 11,
+        "overlap_count": 2
+      },
+      "span_id": "span_ce0e3bb3aec52363",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_002_02",
+      "page": 4,
+      "query": "minimum setback",
+      "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031545,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 6,
+        "lexical_rank": 1,
+        "overlap_count": 1
+      },
+      "span_id": "span_819d31e00929e032",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_002_03",
+      "page": 6,
+      "query": "minimum setback",
+      "quote": "(d) lot line setbacks for street yards may meet a minimum of 2.0 m;",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031258,
+      "section_id": "2.0",
+      "signals": {
+        "bm25_rank": 5,
+        "lexical_rank": 3,
+        "overlap_count": 1
+      },
+      "span_id": "span_66d9d3bd47f4ad89",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_002_04",
+      "page": 5,
+      "query": "minimum setback",
+      "quote": "The following features may project into the required minimum separation between buildings on the same lot:",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030622,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 9,
+        "lexical_rank": 2,
+        "overlap_count": 1
+      },
+      "span_id": "span_3eda5e1fa18aa840",
+      "supports_fields": [
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_002_05",
+      "page": 2,
+      "query": "minimum setback",
+      "quote": ".4 Accessory buildings are not permitted within the minimum separations between principal buildings - see Section 101.6.1 for permitted projections into minimum separations.",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030579,
+      "section_id": "101.6.1",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 8,
+        "overlap_count": 1
+      },
+      "span_id": "span_bb31c1a9aad84206",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_002_06",
+      "page": 6,
+      "query": "minimum setback",
+      "quote": "(b) is clear of any projections or obstructions to a minimum of 2.5 m in height.",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030331,
+      "section_id": "2.5",
+      "signals": {
+        "bm25_rank": 8,
+        "lexical_rank": 4,
+        "overlap_count": 1
+      },
+      "span_id": "span_30654b385fc352b0",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_003_01",
+      "page": 6,
+      "query": "lot coverage",
+      "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60% and impervious surface area up to 70%;",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032787,
+      "section_id": "101.4",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 1,
+        "overlap_count": 2
+      },
+      "span_id": "span_5b9983c378a883e1",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "table",
+      "evidence_id": "f1_retrieval_003_02",
+      "page": 2,
+      "query": "lot coverage",
+      "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Cover",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.029643,
+      "section_id": "101.4",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 14,
+        "overlap_count": 2
+      },
+      "span_id": "span_e81e0e23450ce24f",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_003_03",
+      "page": 6,
+      "query": "lot coverage",
+      "quote": "101.6.3 Access and Fire Safety Dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; ",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.027119,
+      "section_id": "101.6.3",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 27,
+        "overlap_count": 2
+      },
+      "span_id": "span_a20ee106bd881a3f",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_003_04",
+      "page": 3,
+      "query": "lot coverage",
+      "quote": "Diagram: Siting on a through lot",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031514,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 5,
+        "lexical_rank": 2,
+        "overlap_count": 1
+      },
+      "span_id": "span_a9a517209e675ec0",
+      "supports_fields": [
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_003_05",
+      "page": 5,
+      "query": "lot coverage",
+      "quote": "(b) be located on a corner lot;",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031025,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 6,
+        "lexical_rank": 3,
+        "overlap_count": 1
+      },
+      "span_id": "span_36fa961521c667c1",
+      "supports_fields": [
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_003_06",
+      "page": 3,
+      "query": "lot coverage",
+      "quote": "Diagram: Separation between detached units on a wider lot",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030331,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 8,
+        "lexical_rank": 4,
+        "overlap_count": 1
+      },
+      "span_id": "span_7f31e822d5694fb3",
+      "supports_fields": [
+        "unit",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_004_01",
+      "page": 4,
+      "query": "dwelling units",
+      "quote": "101.5.1 All Dwelling Units",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032522,
+      "section_id": "101.5.1",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 1,
+        "overlap_count": 2
+      },
+      "span_id": "span_4a484ff026feeedd",
+      "supports_fields": [
+        "value",
+        "unit",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "table",
+      "evidence_id": "f1_retrieval_004_02",
+      "page": 4,
+      "query": "dwelling units",
+      "quote": "| Total Dwelling Units on a Lot | Total Dwelling Units on a Lot | 1 to 3 Units | 4 to 6 Units Minimum 3+ Bedroom Units: | 1 Unit | 2 Units",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032522,
+      "section_id": "101.5",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 2,
+        "overlap_count": 2
+      },
+      "span_id": "span_5d92ccba38582fdf",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_004_03",
+      "page": 6,
+      "query": "dwelling units",
+      "quote": "All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that:",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031746,
+      "section_id": "1.0",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 3,
+        "overlap_count": 2
+      },
+      "span_id": "span_22f5e0f59d63579b",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_004_04",
+      "page": 4,
+      "query": "dwelling units",
+      "quote": "The minimum number of dwelling units with at least 3 bedrooms must be provided on a lot as follows:",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.03125,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 4,
+        "overlap_count": 2
+      },
+      "span_id": "span_7eaef9b9d2553b3e",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_004_05",
+      "page": 6,
+      "query": "dwelling units",
+      "quote": "Dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system.",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030769,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 5,
+        "lexical_rank": 5,
+        "overlap_count": 2
+      },
+      "span_id": "span_8f4f3ffe2dcf7729",
+      "supports_fields": [
+        "value",
+        "unit",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_004_06",
+      "page": 5,
+      "query": "dwelling units",
+      "quote": "(c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwelling units on a lot;",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030303,
+      "section_id": "101.4",
+      "signals": {
+        "bm25_rank": 6,
+        "lexical_rank": 6,
+        "overlap_count": 2
+      },
+      "span_id": "span_354aafb088435ab4",
+      "supports_fields": [
+        "value",
+        "unit",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_005_01",
+      "page": 7,
+      "query": "building separation",
+      "quote": "101.7.2 Building Separation",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032787,
+      "section_id": "101.7.2",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 1,
+        "overlap_count": 2
+      },
+      "span_id": "span_2c0fd95e876595ed",
+      "supports_fields": [
+        "value",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_005_02",
+      "page": 7,
+      "query": "building separation",
+      "quote": "Required separation distances between buildings are measured from the nearest point of each building face.",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032258,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 2,
+        "overlap_count": 2
+      },
+      "span_id": "span_eb8d646c38e5da77",
+      "supports_fields": [
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_005_03",
+      "page": 3,
+      "query": "building separation",
+      "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line.",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031498,
+      "section_id": "6.0",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 4,
+        "overlap_count": 2
+      },
+      "span_id": "span_7d843e53a0844892",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_005_04",
+      "page": 3,
+      "query": "building separation",
+      "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line. Diagram: Separation between buildings Diagram: Siting on a through lot (B/L No. 14783-25-12-09) Diagram: Separat",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030777,
+      "section_id": "6.0",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 6,
+        "overlap_count": 2
+      },
+      "span_id": "span_6d33ce0a64ff7992",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_005_05",
+      "page": 7,
+      "query": "building separation",
+      "quote": "101.7 Measurements and Calculations 101.7.1 Height The height of a principal or accessory building shall be measured from the lower of the average front or average rear elevation, as defined by the lower of the average natural grade or finished grade along the exterior of the building facing the respective front or rear lot line, to the midpoint of a sloped roof or the highest point of a flat the roof. The midpoint o",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.029083,
+      "section_id": "101.7",
+      "signals": {
+        "bm25_rank": 5,
+        "lexical_rank": 13,
+        "overlap_count": 2
+      },
+      "span_id": "span_2c3549b65b9b1c52",
+      "supports_fields": [
+        "value",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_005_06",
+      "page": 5,
+      "query": "building separation",
+      "quote": "An accessory structure not being a building, excluding a fence or a retaining wall, located outside of a required yard, shall not exceed 4.6 m in height. 101.5.6 Child Care Facilities A child care facility in the R1 District must: (a) be limited to a maximum of 25 children; (b) be located on a corner lot; (c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwelling units ",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.026316,
+      "section_id": "4.6",
+      "signals": {
+        "bm25_rank": 16,
+        "lexical_rank": 16,
+        "overlap_count": 2
+      },
+      "span_id": "span_74067e46d2ff39be",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_006_01",
+      "page": 4,
+      "query": "floor area",
+      "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032787,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 1,
+        "overlap_count": 2
+      },
+      "span_id": "span_819d31e00929e032",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_006_02",
+      "page": 4,
+      "query": "floor area",
+      "quote": "101.5 Use-Specific Regulations 101.5.1 All Dwelling Units The minimum number of dwelling units with at least 3 bedrooms must be provided on a lot as follows: At least one dwelling unit on a lot must have the main entrance oriented to an abutting street or, in the case of a through lot with multiple principal buildings and site access from both frontages, at least one dwelling unit per street frontage. 101.5.2 Rowhous",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030077,
+      "section_id": "101.5",
+      "signals": {
+        "bm25_rank": 7,
+        "lexical_rank": 6,
+        "overlap_count": 2
+      },
+      "span_id": "span_f8dcf022f64fdfdf",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_006_03",
+      "page": 6,
+      "query": "floor area",
+      "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60% and impervious surface area up to 70%;",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032002,
+      "section_id": "101.4",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 2,
+        "overlap_count": 1
+      },
+      "span_id": "span_5b9983c378a883e1",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "table",
+      "evidence_id": "f1_retrieval_006_04",
+      "page": 1,
+      "query": "floor area",
+      "quote": "| Dwelling Type | Dwelling Type | Rowhouse .1 | Small-Scale Multi-Unit Minimum Lot Width .2 | Minimum Lot Width .2 | Minimum Lot Width .2 Interior Lot | 5 m, except 6.2m for end unit lots | 10 m Corner Lot - Street | 8 m | 10 m Corner Lot - Lane | 6.2m | 10 m Lot Area .3 | Lot Area .3 | Lot Area .3 Minimum Lot Area | - | 281 m 2 Maximum Lot Area | 280 m 2 | -",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031754,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 4,
+        "overlap_count": 1
+      },
+      "span_id": "span_5b4be0511def1293",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_006_05",
+      "page": 2,
+      "query": "floor area",
+      "quote": ".1 Maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a Section 219 Covenant prohibiting the construction of more than 3 dwelling units on the lot.",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031498,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 3,
+        "overlap_count": 1
+      },
+      "span_id": "span_79f426f9d29a85e3",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_006_06",
+      "page": 5,
+      "query": "floor area",
+      "quote": "An outdoor amenity space with a minimum width of 2.0 m and area of 10.0 m 2 must be provided for each primary dwelling unit for its exclusive use and be accessible from the primary dwelling unit it serves. (B/L No. 14783-25-12-09)",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030769,
+      "section_id": "2.0",
+      "signals": {
+        "bm25_rank": 5,
+        "lexical_rank": 5,
+        "overlap_count": 1
+      },
+      "span_id": "span_0dacb0d18e0afd86",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    }
+  ],
+  "generated_at": "2026-07-06T02:31:16.502463+00:00",
+  "queries": [
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_001_01",
+          "page": 6,
+          "query": "maximum height",
+          "quote": "(c) all original architectural appurtenances, such as chimneys, railings, vents, decorative features, or similar, may be excluded from the maximum permitted height of a principal building;",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032266,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 3,
+            "overlap_count": 2
+          },
+          "span_id": "span_e22b574557574f92",
+          "supports_fields": [
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "table",
+          "evidence_id": "f1_retrieval_001_02",
+          "page": 2,
+          "query": "maximum height",
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Cover",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030622,
+          "section_id": "101.4",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 9,
+            "overlap_count": 2
+          },
+          "span_id": "span_e81e0e23450ce24f",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_001_03",
+          "page": 6,
+          "query": "maximum height",
+          "quote": "101.6.3 Access and Fire Safety Dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; ",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.025808,
+          "section_id": "101.6.3",
+          "signals": {
+            "bm25_rank": 17,
+            "lexical_rank": 18,
+            "overlap_count": 2
+          },
+          "span_id": "span_a20ee106bd881a3f",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_001_04",
+          "page": 5,
+          "query": "maximum height",
+          "quote": "An accessory structure not being a building, excluding a fence or a retaining wall, located outside of a required yard, shall not exceed 4.6 m in height. 101.5.6 Child Care Facilities A child care facility in the R1 District must: (a) be limited to a maximum of 25 children; (b) be located on a corner lot; (c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwelling units ",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.025158,
+          "section_id": "4.6",
+          "signals": {
+            "bm25_rank": 20,
+            "lexical_rank": 19,
+            "overlap_count": 2
+          },
+          "span_id": "span_74067e46d2ff39be",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_001_05",
+          "page": 7,
+          "query": "maximum height",
+          "quote": "101.7.1 Height",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032266,
+          "section_id": "101.7.1",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 1,
+            "overlap_count": 1
+          },
+          "span_id": "span_b9700ac59f7adacd",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_001_06",
+          "page": 7,
+          "query": "maximum height",
+          "quote": "Diagram: Height Measurement",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031754,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 2,
+            "overlap_count": 1
+          },
+          "span_id": "span_e96e6d2c78fd593d",
+          "supports_fields": [
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "maximum height",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_002_01",
+          "page": 2,
+          "query": "minimum setback",
+          "quote": "101.4 Development Regulations (B/L No. 14783-25-12-09) .1 Maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a Section 219 Covenant prohibiting the construction of more than 3 dwelling units on the lot. .2 See Sections 101.6.1 and 6.12 for permitted projections into required yards and see Section 6.13 for additional setbacks that may be required for vision clearance areas. .3 Inte",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030214,
+          "section_id": "101.4",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 11,
+            "overlap_count": 2
+          },
+          "span_id": "span_ce0e3bb3aec52363",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_002_02",
+          "page": 4,
+          "query": "minimum setback",
+          "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031545,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 6,
+            "lexical_rank": 1,
+            "overlap_count": 1
+          },
+          "span_id": "span_819d31e00929e032",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_002_03",
+          "page": 6,
+          "query": "minimum setback",
+          "quote": "(d) lot line setbacks for street yards may meet a minimum of 2.0 m;",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031258,
+          "section_id": "2.0",
+          "signals": {
+            "bm25_rank": 5,
+            "lexical_rank": 3,
+            "overlap_count": 1
+          },
+          "span_id": "span_66d9d3bd47f4ad89",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_002_04",
+          "page": 5,
+          "query": "minimum setback",
+          "quote": "The following features may project into the required minimum separation between buildings on the same lot:",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030622,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 9,
+            "lexical_rank": 2,
+            "overlap_count": 1
+          },
+          "span_id": "span_3eda5e1fa18aa840",
+          "supports_fields": [
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_002_05",
+          "page": 2,
+          "query": "minimum setback",
+          "quote": ".4 Accessory buildings are not permitted within the minimum separations between principal buildings - see Section 101.6.1 for permitted projections into minimum separations.",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030579,
+          "section_id": "101.6.1",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 8,
+            "overlap_count": 1
+          },
+          "span_id": "span_bb31c1a9aad84206",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_002_06",
+          "page": 6,
+          "query": "minimum setback",
+          "quote": "(b) is clear of any projections or obstructions to a minimum of 2.5 m in height.",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030331,
+          "section_id": "2.5",
+          "signals": {
+            "bm25_rank": 8,
+            "lexical_rank": 4,
+            "overlap_count": 1
+          },
+          "span_id": "span_30654b385fc352b0",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "minimum setback",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_003_01",
+          "page": 6,
+          "query": "lot coverage",
+          "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60% and impervious surface area up to 70%;",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032787,
+          "section_id": "101.4",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 1,
+            "overlap_count": 2
+          },
+          "span_id": "span_5b9983c378a883e1",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "table",
+          "evidence_id": "f1_retrieval_003_02",
+          "page": 2,
+          "query": "lot coverage",
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Cover",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.029643,
+          "section_id": "101.4",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 14,
+            "overlap_count": 2
+          },
+          "span_id": "span_e81e0e23450ce24f",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_003_03",
+          "page": 6,
+          "query": "lot coverage",
+          "quote": "101.6.3 Access and Fire Safety Dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; ",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.027119,
+          "section_id": "101.6.3",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 27,
+            "overlap_count": 2
+          },
+          "span_id": "span_a20ee106bd881a3f",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_003_04",
+          "page": 3,
+          "query": "lot coverage",
+          "quote": "Diagram: Siting on a through lot",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031514,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 5,
+            "lexical_rank": 2,
+            "overlap_count": 1
+          },
+          "span_id": "span_a9a517209e675ec0",
+          "supports_fields": [
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_003_05",
+          "page": 5,
+          "query": "lot coverage",
+          "quote": "(b) be located on a corner lot;",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031025,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 6,
+            "lexical_rank": 3,
+            "overlap_count": 1
+          },
+          "span_id": "span_36fa961521c667c1",
+          "supports_fields": [
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_003_06",
+          "page": 3,
+          "query": "lot coverage",
+          "quote": "Diagram: Separation between detached units on a wider lot",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030331,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 8,
+            "lexical_rank": 4,
+            "overlap_count": 1
+          },
+          "span_id": "span_7f31e822d5694fb3",
+          "supports_fields": [
+            "unit",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "lot coverage",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_004_01",
+          "page": 4,
+          "query": "dwelling units",
+          "quote": "101.5.1 All Dwelling Units",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032522,
+          "section_id": "101.5.1",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 1,
+            "overlap_count": 2
+          },
+          "span_id": "span_4a484ff026feeedd",
+          "supports_fields": [
+            "value",
+            "unit",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "table",
+          "evidence_id": "f1_retrieval_004_02",
+          "page": 4,
+          "query": "dwelling units",
+          "quote": "| Total Dwelling Units on a Lot | Total Dwelling Units on a Lot | 1 to 3 Units | 4 to 6 Units Minimum 3+ Bedroom Units: | 1 Unit | 2 Units",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032522,
+          "section_id": "101.5",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 2,
+            "overlap_count": 2
+          },
+          "span_id": "span_5d92ccba38582fdf",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_004_03",
+          "page": 6,
+          "query": "dwelling units",
+          "quote": "All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that:",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031746,
+          "section_id": "1.0",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 3,
+            "overlap_count": 2
+          },
+          "span_id": "span_22f5e0f59d63579b",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_004_04",
+          "page": 4,
+          "query": "dwelling units",
+          "quote": "The minimum number of dwelling units with at least 3 bedrooms must be provided on a lot as follows:",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.03125,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 4,
+            "overlap_count": 2
+          },
+          "span_id": "span_7eaef9b9d2553b3e",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_004_05",
+          "page": 6,
+          "query": "dwelling units",
+          "quote": "Dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system.",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030769,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 5,
+            "lexical_rank": 5,
+            "overlap_count": 2
+          },
+          "span_id": "span_8f4f3ffe2dcf7729",
+          "supports_fields": [
+            "value",
+            "unit",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_004_06",
+          "page": 5,
+          "query": "dwelling units",
+          "quote": "(c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwelling units on a lot;",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030303,
+          "section_id": "101.4",
+          "signals": {
+            "bm25_rank": 6,
+            "lexical_rank": 6,
+            "overlap_count": 2
+          },
+          "span_id": "span_354aafb088435ab4",
+          "supports_fields": [
+            "value",
+            "unit",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "dwelling units",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_005_01",
+          "page": 7,
+          "query": "building separation",
+          "quote": "101.7.2 Building Separation",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032787,
+          "section_id": "101.7.2",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 1,
+            "overlap_count": 2
+          },
+          "span_id": "span_2c0fd95e876595ed",
+          "supports_fields": [
+            "value",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_005_02",
+          "page": 7,
+          "query": "building separation",
+          "quote": "Required separation distances between buildings are measured from the nearest point of each building face.",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032258,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 2,
+            "overlap_count": 2
+          },
+          "span_id": "span_eb8d646c38e5da77",
+          "supports_fields": [
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_005_03",
+          "page": 3,
+          "query": "building separation",
+          "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line.",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031498,
+          "section_id": "6.0",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 4,
+            "overlap_count": 2
+          },
+          "span_id": "span_7d843e53a0844892",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_005_04",
+          "page": 3,
+          "query": "building separation",
+          "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line. Diagram: Separation between buildings Diagram: Siting on a through lot (B/L No. 14783-25-12-09) Diagram: Separat",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030777,
+          "section_id": "6.0",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 6,
+            "overlap_count": 2
+          },
+          "span_id": "span_6d33ce0a64ff7992",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_005_05",
+          "page": 7,
+          "query": "building separation",
+          "quote": "101.7 Measurements and Calculations 101.7.1 Height The height of a principal or accessory building shall be measured from the lower of the average front or average rear elevation, as defined by the lower of the average natural grade or finished grade along the exterior of the building facing the respective front or rear lot line, to the midpoint of a sloped roof or the highest point of a flat the roof. The midpoint o",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.029083,
+          "section_id": "101.7",
+          "signals": {
+            "bm25_rank": 5,
+            "lexical_rank": 13,
+            "overlap_count": 2
+          },
+          "span_id": "span_2c3549b65b9b1c52",
+          "supports_fields": [
+            "value",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_005_06",
+          "page": 5,
+          "query": "building separation",
+          "quote": "An accessory structure not being a building, excluding a fence or a retaining wall, located outside of a required yard, shall not exceed 4.6 m in height. 101.5.6 Child Care Facilities A child care facility in the R1 District must: (a) be limited to a maximum of 25 children; (b) be located on a corner lot; (c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwelling units ",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.026316,
+          "section_id": "4.6",
+          "signals": {
+            "bm25_rank": 16,
+            "lexical_rank": 16,
+            "overlap_count": 2
+          },
+          "span_id": "span_74067e46d2ff39be",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "building separation",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_006_01",
+          "page": 4,
+          "query": "floor area",
+          "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032787,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 1,
+            "overlap_count": 2
+          },
+          "span_id": "span_819d31e00929e032",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_006_02",
+          "page": 4,
+          "query": "floor area",
+          "quote": "101.5 Use-Specific Regulations 101.5.1 All Dwelling Units The minimum number of dwelling units with at least 3 bedrooms must be provided on a lot as follows: At least one dwelling unit on a lot must have the main entrance oriented to an abutting street or, in the case of a through lot with multiple principal buildings and site access from both frontages, at least one dwelling unit per street frontage. 101.5.2 Rowhous",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030077,
+          "section_id": "101.5",
+          "signals": {
+            "bm25_rank": 7,
+            "lexical_rank": 6,
+            "overlap_count": 2
+          },
+          "span_id": "span_f8dcf022f64fdfdf",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_006_03",
+          "page": 6,
+          "query": "floor area",
+          "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60% and impervious surface area up to 70%;",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032002,
+          "section_id": "101.4",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 2,
+            "overlap_count": 1
+          },
+          "span_id": "span_5b9983c378a883e1",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "table",
+          "evidence_id": "f1_retrieval_006_04",
+          "page": 1,
+          "query": "floor area",
+          "quote": "| Dwelling Type | Dwelling Type | Rowhouse .1 | Small-Scale Multi-Unit Minimum Lot Width .2 | Minimum Lot Width .2 | Minimum Lot Width .2 Interior Lot | 5 m, except 6.2m for end unit lots | 10 m Corner Lot - Street | 8 m | 10 m Corner Lot - Lane | 6.2m | 10 m Lot Area .3 | Lot Area .3 | Lot Area .3 Minimum Lot Area | - | 281 m 2 Maximum Lot Area | 280 m 2 | -",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031754,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 4,
+            "overlap_count": 1
+          },
+          "span_id": "span_5b4be0511def1293",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_006_05",
+          "page": 2,
+          "query": "floor area",
+          "quote": ".1 Maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a Section 219 Covenant prohibiting the construction of more than 3 dwelling units on the lot.",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031498,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 3,
+            "overlap_count": 1
+          },
+          "span_id": "span_79f426f9d29a85e3",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_006_06",
+          "page": 5,
+          "query": "floor area",
+          "quote": "An outdoor amenity space with a minimum width of 2.0 m and area of 10.0 m 2 must be provided for each primary dwelling unit for its exclusive use and be accessible from the primary dwelling unit it serves. (B/L No. 14783-25-12-09)",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030769,
+          "section_id": "2.0",
+          "signals": {
+            "bm25_rank": 5,
+            "lexical_rank": 5,
+            "overlap_count": 1
+          },
+          "span_id": "span_0dacb0d18e0afd86",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "floor area",
+      "top_k": 6
+    }
+  ],
+  "reranker": "lexical_overlap",
+  "retrieval_method": "lexical_bm25_rrf",
+  "run_id": "checkpoint_3_proof_rag",
+  "schema_version": "f1.artifacts.v0",
+  "summary": {
+    "note": "Checkpoint 3 retrieval quality is a smoke metric, not legal verification.",
+    "queries_with_hits": 6,
+    "query_count": 6,
+    "retrieval_quality_status": "pass",
+    "source_span_count": 112,
+    "total_hit_count": 36
+  }
+}

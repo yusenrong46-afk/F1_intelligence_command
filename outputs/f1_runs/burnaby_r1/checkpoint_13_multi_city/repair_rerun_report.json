@@ -1,0 +1,16 @@
+{
+  "artifact": "repair_rerun_report.json",
+  "attempt_count": 5,
+  "eligible_rule_count": 5,
+  "false_verified_count": 0,
+  "guarded_repair_promotion_count": 3,
+  "note": "Repair proposes proof patches; deterministic verification remains the promotion authority.",
+  "promotion_ready_count": 3,
+  "remaining_review_queue_count": 3,
+  "repair_rerun_not_used_count": 2,
+  "repair_rerun_rejected_count": 0,
+  "repair_rerun_review_needed_count": 0,
+  "review_needed_reduction_from_repair_rerun": 3,
+  "review_only_attempt_count": 1,
+  "schema_version": "f1.artifacts.v0"
+}

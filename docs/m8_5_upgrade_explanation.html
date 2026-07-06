@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M8.5 Upgrade Explanation</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5b6575;
+      --line: #d8dee9;
+      --blue: #2563eb;
+      --green: #168a4a;
+      --amber: #b7791f;
+      --red: #b42342;
+      --violet: #6d3fd1;
+      --bg: #f7f9fc;
+      --panel: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+      padding: 48px 32px 32px;
+    }
+    main { max-width: 1180px; margin: 0 auto; padding: 28px 24px 64px; }
+    h1 { margin: 0 0 12px; font-size: 40px; line-height: 1.08; letter-spacing: 0; }
+    h2 { margin: 38px 0 14px; font-size: 24px; letter-spacing: 0; }
+    h3 { margin: 24px 0 8px; font-size: 18px; letter-spacing: 0; }
+    p { margin: 0 0 14px; }
+    .eyebrow { color: var(--blue); font-weight: 700; text-transform: uppercase; font-size: 12px; letter-spacing: .08em; }
+    .subtitle { max-width: 920px; color: var(--muted); font-size: 18px; }
+    .grid { display: grid; gap: 16px; }
+    .grid.cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .metric-label { color: var(--muted); font-size: 13px; }
+    .metric-value { font-size: 30px; font-weight: 760; margin-top: 2px; }
+    .metric-value.green { color: var(--green); }
+    .metric-value.amber { color: var(--amber); }
+    .metric-value.blue { color: var(--blue); }
+    .metric-value.red { color: var(--red); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 12px 0 22px;
+    }
+    th, td { padding: 11px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: #eef3fb; font-size: 13px; color: #26364f; }
+    tr:last-child td { border-bottom: 0; }
+    code, pre {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 13px;
+    }
+    pre {
+      background: #101828;
+      color: #eef4ff;
+      border-radius: 8px;
+      padding: 16px;
+      overflow-x: auto;
+      border: 1px solid #25324a;
+    }
+    .callout {
+      border-left: 4px solid var(--blue);
+      background: #eef5ff;
+      padding: 14px 16px;
+      border-radius: 6px;
+      margin: 16px 0;
+    }
+    .warn { border-left-color: var(--amber); background: #fff8e8; }
+    .safe { border-left-color: var(--green); background: #ecfdf3; }
+    .svg-panel {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      overflow-x: auto;
+      margin: 14px 0 24px;
+    }
+    .bar { height: 14px; background: #e7ecf4; border-radius: 999px; overflow: hidden; }
+    .bar span { display: block; height: 100%; background: var(--blue); }
+    @media (max-width: 900px) {
+      .grid.cols-4, .grid.cols-3 { grid-template-columns: 1fr; }
+      h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Burnaby R1 zoning verification system</div>
+    <h1>M8.5 Upgrade Explanation</h1>
+    <p class="subtitle">M8 explained blocked rules. M8.5 helps resolve blocked rules safely by adding table lineage, legal dependency graphs, repair evaluation, reviewer workbench artifacts, multi-city stress testing, and a stronger artifact-grounded chatbot.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Executive Summary</h2>
+      <p>M8.5 is an additive verification workbench on top of M8. It does not replace the deterministic verifier, and it does not allow repair, dashboard, reviewer actions, or chatbot answers to directly verify rules.</p>
+      <div class="callout safe">
+        <strong>Core invariant:</strong> Extraction proposes. Retrieval finds missing context. Repair patches weak candidates. Verification proves or rejects. Dashboard explains. Chatbot analyzes. GIS consumes only verified rules.
+      </div>
+      <div class="grid cols-4">
+        <div class="card"><div class="metric-label">False verified</div><div class="metric-value green">0</div></div>
+        <div class="card"><div class="metric-label">False approvals</div><div class="metric-value green">0</div></div>
+        <div class="card"><div class="metric-label">Chatbot gold</div><div class="metric-value blue">25/25</div></div>
+        <div class="card"><div class="metric-label">Release check</div><div class="metric-value green">Pass</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>M8 Baseline Preserved</h2>
+      <table>
+        <thead><tr><th>Metric</th><th>M8 baseline</th><th>M8.5 Burnaby</th></tr></thead>
+        <tbody>
+          <tr><td>Verified-like rules</td><td>87</td><td>87</td></tr>
+          <tr><td>Review needed</td><td>48</td><td>48</td></tr>
+          <tr><td>Context required</td><td>9</td><td>9</td></tr>
+          <tr><td>False verified</td><td>0</td><td>0</td></tr>
+          <tr><td>False approvals</td><td>0</td><td>0</td></tr>
+        </tbody>
+      </table>
+      <p>M8.5 does not claim automatic legal improvement through new verified counts. Its measured improvement is workbench capability: more precise table, dependency, repair, reviewer, dashboard, chatbot, and multi-city artifacts around the same safety boundary.</p>
+    </section>
+
+    <section>
+      <h2>M8.5 Architecture</h2>
+      <div class="svg-panel">
+        <svg width="1080" height="390" viewBox="0 0 1080 390" role="img" aria-label="M8.5 architecture flow">
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L0,6 L9,3 z" fill="#5b6575"></path>
+            </marker>
+          </defs>
+          <rect x="20" y="26" width="170" height="320" rx="8" fill="#eaf2ff" stroke="#8bb7ff"></rect>
+          <text x="105" y="54" text-anchor="middle" font-weight="700">M8 inputs</text>
+          <text x="105" y="92" text-anchor="middle" font-size="13">source spans</text>
+          <text x="105" y="122" text-anchor="middle" font-size="13">structured rules</text>
+          <text x="105" y="152" text-anchor="middle" font-size="13">repair attempts</text>
+          <text x="105" y="182" text-anchor="middle" font-size="13">M8 summary</text>
+
+          <rect x="245" y="26" width="190" height="320" rx="8" fill="#ecfdf3" stroke="#80c89a"></rect>
+          <text x="340" y="54" text-anchor="middle" font-weight="700">M8.5 workbench</text>
+          <text x="340" y="92" text-anchor="middle" font-size="13">table lineage</text>
+          <text x="340" y="122" text-anchor="middle" font-size="13">dependency graph</text>
+          <text x="340" y="152" text-anchor="middle" font-size="13">repair evaluation</text>
+          <text x="340" y="182" text-anchor="middle" font-size="13">review packets</text>
+          <text x="340" y="212" text-anchor="middle" font-size="13">analytics</text>
+
+          <rect x="495" y="26" width="190" height="320" rx="8" fill="#fff8e8" stroke="#e4b45f"></rect>
+          <text x="590" y="54" text-anchor="middle" font-weight="700">Safety boundary</text>
+          <text x="590" y="92" text-anchor="middle" font-size="13">repair cannot promote</text>
+          <text x="590" y="122" text-anchor="middle" font-size="13">review cannot verify</text>
+          <text x="590" y="152" text-anchor="middle" font-size="13">chatbot cannot override</text>
+          <text x="590" y="182" text-anchor="middle" font-size="13">verifier decides</text>
+          <text x="590" y="212" text-anchor="middle" font-size="13">GIS verified-only</text>
+
+          <rect x="745" y="26" width="300" height="320" rx="8" fill="#f4efff" stroke="#b197fc"></rect>
+          <text x="895" y="54" text-anchor="middle" font-weight="700">Reader and release surfaces</text>
+          <text x="895" y="92" text-anchor="middle" font-size="13">dashboard pages</text>
+          <text x="895" y="122" text-anchor="middle" font-size="13">artifact-grounded chatbot</text>
+          <text x="895" y="152" text-anchor="middle" font-size="13">multi-city stress</text>
+          <text x="895" y="182" text-anchor="middle" font-size="13">release check</text>
+          <text x="895" y="212" text-anchor="middle" font-size="13">stakeholder docs</text>
+
+          <line x1="190" y1="185" x2="245" y2="185" stroke="#5b6575" stroke-width="2" marker-end="url(#arrow)"></line>
+          <line x1="435" y1="185" x2="495" y2="185" stroke="#5b6575" stroke-width="2" marker-end="url(#arrow)"></line>
+          <line x1="685" y1="185" x2="745" y2="185" stroke="#5b6575" stroke-width="2" marker-end="url(#arrow)"></line>
+          <text x="218" y="172" text-anchor="middle" font-size="12" fill="#5b6575">read</text>
+          <text x="465" y="172" text-anchor="middle" font-size="12" fill="#5b6575">gate</text>
+          <text x="715" y="172" text-anchor="middle" font-size="12" fill="#5b6575">explain</text>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <h2>What M8.5 Adds</h2>
+      <table>
+        <thead><tr><th>Ambiguity type</th><th>M8.5 mechanism</th><th>Why it matters</th></tr></thead>
+        <tbody>
+          <tr><td>Structural ambiguity</td><td>Table lineage</td><td>Preserves table ID, row label, column label, cell text, value, unit, page, section, and source span.</td></tr>
+          <tr><td>Legal-context ambiguity</td><td>Dependency graph</td><td>Tracks cross-references, definitions, exceptions, covenants, heritage constraints, and unresolved context.</td></tr>
+          <tr><td>Patch-safety ambiguity</td><td>Repair evaluator</td><td>Determines whether a patch is safe for verifier rerun, needs human review, lacks evidence, or creates contradiction risk.</td></tr>
+          <tr><td>Human-in-the-loop ambiguity</td><td>Reviewer workbench</td><td>Creates review packets and verifier rerun request artifacts without allowing reviewers to directly verify rules.</td></tr>
+          <tr><td>Generalization ambiguity</td><td>Multi-city stress</td><td>Runs Burnaby, Vancouver, and Calgary without inventing unavailable city data.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Measured Burnaby M8.5 Results</h2>
+      <div class="grid cols-4">
+        <div class="card"><div class="metric-label">Table-derived candidates</div><div class="metric-value blue">137</div></div>
+        <div class="card"><div class="metric-label">Dependencies</div><div class="metric-value amber">4</div></div>
+        <div class="card"><div class="metric-label">Repair evaluations</div><div class="metric-value blue">171</div></div>
+        <div class="card"><div class="metric-label">Review packets</div><div class="metric-value violet">57</div></div>
+      </div>
+      <table>
+        <thead><tr><th>Metric</th><th>Measured value</th><th>Interpretation</th></tr></thead>
+        <tbody>
+          <tr><td>Table-derived rules</td><td>137</td><td>Candidate-only table claims; not directly verified.</td></tr>
+          <tr><td>Table-derived verified</td><td>0</td><td>Correct: table candidates require deterministic verifier review.</td></tr>
+          <tr><td>Verifier-ready patches</td><td>78</td><td>Ready for verifier rerun, not verified.</td></tr>
+          <tr><td>Review packets</td><td>57</td><td>Human-review work now has structured artifacts.</td></tr>
+          <tr><td>Dependencies</td><td>4 unresolved</td><td>Legal context blockers are visible.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Multi-City Stress</h2>
+      <table>
+        <thead><tr><th>City</th><th>Status</th><th>Table-derived rules</th><th>Dependencies</th><th>Review packets</th><th>False verified</th></tr></thead>
+        <tbody>
+          <tr><td>burnaby_r1</td><td>measured</td><td>137</td><td>4</td><td>57</td><td>0</td></tr>
+          <tr><td>vancouver_rs</td><td>measured</td><td>0</td><td>3</td><td>32</td><td>0</td></tr>
+          <tr><td>calgary_rcg</td><td>measured</td><td>0</td><td>1</td><td>46</td><td>0</td></tr>
+        </tbody>
+      </table>
+      <div class="card">
+        <h3>Cross-city safety</h3>
+        <p>Measured cities: 3. Skipped cities: 0. Failed cities: 0. Cross-city false verified total: 0. Cross-city false approval total: 0.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Validation Commands</h2>
+      <pre><code>.venv/bin/python scripts/run_m8_5_release_check.py
+.venv/bin/python -m pytest -q tests/test_m8_5_*.py
+.venv/bin/python scripts/run_m8_5_pipeline.py --city burnaby_r1 --config configs/burnaby_r1.json --m8-input-dir outputs/m8_runs/burnaby_r1/local_m8 --output-dir outputs/m8_5_runs/burnaby_r1/local_m8_5 --max-repair-attempts 3 --enable-table-parsing --enable-dependency-graph --enable-review-packets --dry-run
+.venv/bin/python benchmark/evaluate_m8_5_chatbot.py --output-dir outputs/m8_5_runs/burnaby_r1/local_m8_5
+.venv/bin/python scripts/run_m8_5_multi_city_stress.py --dry-run</code></pre>
+      <table>
+        <thead><tr><th>Release check item</th><th>Return code</th></tr></thead>
+        <tbody>
+          <tr><td>compileall</td><td>0</td></tr>
+          <tr><td>M7 status</td><td>0</td></tr>
+          <tr><td>M8 release check</td><td>0</td></tr>
+          <tr><td>M8.5 unit tests</td><td>0</td></tr>
+          <tr><td>M8.5 pipeline smoke</td><td>0</td></tr>
+          <tr><td>M8.5 multi-city dry run</td><td>0</td></tr>
+          <tr><td>M8.5 chatbot gold</td><td>0</td></tr>
+          <tr><td>artifact existence</td><td>0</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Measured Versus Target</h2>
+      <table>
+        <thead><tr><th>Area</th><th>Measured now</th><th>Still target / future</th></tr></thead>
+        <tbody>
+          <tr><td>Safety</td><td>False verified 0, false approvals 0</td><td>Keep this invariant under larger bylaw families.</td></tr>
+          <tr><td>Table lineage</td><td>Burnaby table-derived candidates generated</td><td>Improve Vancouver/Calgary table extraction where current count is 0.</td></tr>
+          <tr><td>Dependency graph</td><td>Unresolved dependencies visible</td><td>Resolve more dependencies automatically with source-backed section retrieval.</td></tr>
+          <tr><td>Repair evaluator</td><td>78 Burnaby patches ready for verifier review</td><td>Connect verifier rerun workflow to reviewed patches without weakening gates.</td></tr>
+          <tr><td>Reviewer workbench</td><td>Review packets generated</td><td>Add persistent reviewer actions and rerun lifecycle in UI.</td></tr>
+          <tr><td>Chatbot</td><td>25/25 deterministic gold</td><td>Optional LLM wording only if bounded by the same artifacts.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Remaining Limitations</h2>
+      <div class="callout warn">
+        <p><strong>M8.5 is a stronger verification workbench, not an automatic legal approval engine.</strong> It improves evidence precision, review readiness, and generalization visibility, but blocked legal rules still need deterministic verification and sometimes human review.</p>
+      </div>
+      <ul>
+        <li>Vancouver and Calgary table-derived counts are zero under the current simple parser.</li>
+        <li>Dependency graph artifacts identify blockers but do not yet retrieve and resolve all referenced sections.</li>
+        <li>Reviewer actions are modeled, but a persistent dashboard action workflow is still future work.</li>
+        <li>Browser-level smoke testing of each optional Streamlit page remains useful before a public demo.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Recommended M9 Direction</h2>
+      <table>
+        <thead><tr><th>M9 direction</th><th>Purpose</th><th>Safety rule</th></tr></thead>
+        <tbody>
+          <tr><td>Table parser v2</td><td>Recover tables in Vancouver and Calgary, including footnotes and section-specific layouts.</td><td>All table rules remain candidate-only until verifier acceptance.</td></tr>
+          <tr><td>Dependency resolver v2</td><td>Retrieve referenced sections and attach definition/exception evidence automatically.</td><td>Unresolved or conflicting dependencies stay out of verified GIS output.</td></tr>
+          <tr><td>Reviewer action persistence</td><td>Let reviewers approve evidence links and request verifier reruns through auditable artifacts.</td><td>Reviewer actions trigger verifier reruns; they do not verify.</td></tr>
+          <tr><td>Verifier rerun queue</td><td>Consume approved evidence/context packets and produce final verifier decisions.</td><td>Deterministic verifier remains final authority.</td></tr>
+          <tr><td>LLM explanation layer</td><td>Improve narrative answers for stakeholders.</td><td>LLM reads artifacts only and refuses unsupported conclusions.</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

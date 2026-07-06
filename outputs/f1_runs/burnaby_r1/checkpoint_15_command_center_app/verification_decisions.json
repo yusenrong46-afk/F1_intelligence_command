@@ -1,0 +1,703 @@
+[
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0014",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0015",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0016",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0018",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0019",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0020",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0021",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0023",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0024",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0025",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0026",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0027",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0028",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0029",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0030",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0031",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0032",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0033",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0034",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0035",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0036",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0037",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0038",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0039",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0040",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0041",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0042",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0043",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0044",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0045",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_04"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0047",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_04"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0048",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_04"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0049",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_04"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0050",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_04"
+    ],
+    "reason": "all required fields have cited deterministic support",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0051",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_01"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0001",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_004_02"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0002",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_005_02"
+    ],
+    "reason": "candidate fields are not fully supported by cited evidence",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0003",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "support_gaps": [
+      "unit_not_supported"
+    ],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_006_01"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0004",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_007_01"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0005",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_008_01"
+    ],
+    "reason": "guarded repair patch passed deterministic verification",
+    "repair_history": [
+      "f1_guarded_repair_0006"
+    ],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0006",
+    "schema_version": "f1.artifacts.v0",
+    "status": "repaired_successfully",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_009_01"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0007",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_010_02"
+    ],
+    "reason": "candidate fields are not fully supported by cited evidence",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0008",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "support_gaps": [
+      "operator_not_supported"
+    ],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_011_03"
+    ],
+    "reason": "guarded repair patch passed deterministic verification",
+    "repair_history": [
+      "f1_guarded_repair_0009"
+    ],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0009",
+    "schema_version": "f1.artifacts.v0",
+    "status": "repaired_successfully",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_012_01"
+    ],
+    "reason": "guarded repair patch passed deterministic verification",
+    "repair_history": [
+      "f1_guarded_repair_0010"
+    ],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0010",
+    "schema_version": "f1.artifacts.v0",
+    "status": "repaired_successfully",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_015_01"
+    ],
+    "reason": "verifier proof passed, but candidate is outside the configured F1 release contract",
+    "repair_history": [
+      "f1_guarded_repair_0011"
+    ],
+    "risk_flags": [
+      "outside_f1_release_contract"
+    ],
+    "rule_id": "f1_candidate_0011",
+    "schema_version": "f1.artifacts.v0",
+    "status": "not_used",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_001_03"
+    ],
+    "reason": "candidate fields are not fully supported by cited evidence",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0012",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "support_gaps": [
+      "value_citation_missing",
+      "unit_citation_missing",
+      "operator_not_supported"
+    ],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_001_03"
+    ],
+    "reason": "candidate fields are not fully supported by cited evidence",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0013",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "support_gaps": [
+      "value_citation_missing",
+      "unit_citation_missing",
+      "operator_not_supported"
+    ],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "candidate fields are not fully supported by cited evidence",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0017",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "support_gaps": [
+      "applies_to_not_supported"
+    ],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "reason": "candidate fields are not fully supported by cited evidence",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0022",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "support_gaps": [
+      "applies_to_not_supported"
+    ],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_04"
+    ],
+    "reason": "candidate fields are not fully supported by cited evidence",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0046",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "support_gaps": [
+      "operator_not_supported"
+    ],
+    "unresolved_dependencies": []
+  }
+]

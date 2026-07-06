@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M7 — Speech Note (Zoning Bylaw Rule Verifier)</title>
+<style>
+  :root{
+    --ink:#1f2328; --soft:#57606a; --line:#d0d7de; --acc:#0969da;
+    --v:#1a7f37; --r:#9a6700; --x:#cf222e; --bg:#fff; --panel:#f6f8fa;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:Georgia,"Iowan Old Style",serif; line-height:1.7; font-size:18px;
+  }
+  .wrap{max-width:820px; margin:0 auto; padding:56px 28px 96px}
+  h1{font-family:Inter,system-ui,sans-serif; font-size:30px; line-height:1.25; margin:0 0 6px}
+  .sub{font-family:Inter,system-ui,sans-serif; color:var(--soft); font-size:15px; margin:0 0 8px}
+  .thesis{
+    font-family:Inter,system-ui,sans-serif; font-weight:700; font-size:20px; color:var(--acc);
+    border-left:4px solid var(--acc); padding:10px 18px; margin:22px 0 34px;
+    background:var(--panel); border-radius:0 8px 8px 0;
+  }
+  h2{
+    font-family:Inter,system-ui,sans-serif; font-size:13px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--acc); margin:40px 0 6px;
+  }
+  h2 .n{color:var(--soft); margin-right:8px}
+  p{margin:14px 0}
+  figure{margin:28px 0}
+  figcaption{font-family:Inter,system-ui,sans-serif; font-size:13px; color:var(--soft); text-align:center; margin-top:8px}
+  svg{display:block; width:100%; height:auto; background:var(--panel); border:1px solid var(--line); border-radius:12px}
+  /* per-part block */
+  .part{margin:30px 0 8px; padding:2px 0 2px 18px; border-left:3px solid var(--line)}
+  .part.auth{border-left-color:var(--v)}
+  .tag{
+    font-family:Inter,system-ui,sans-serif; font-size:12px; font-weight:700; letter-spacing:.04em;
+    color:var(--ink); display:flex; flex-wrap:wrap; gap:8px; align-items:baseline; margin-bottom:2px;
+  }
+  .tag .num{color:var(--acc)} .tag.auth .num{color:var(--v)}
+  .tag code{font-size:11.5px; color:var(--soft); font-weight:400}
+  .cue{font-family:Inter,system-ui,sans-serif; font-size:13px; color:var(--soft); font-style:italic; margin:6px 0}
+  pre{
+    font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace; font-size:13px; line-height:1.5;
+    background:#0d1117; color:#e6edf3; padding:16px 18px; border-radius:10px; overflow:auto; margin:10px 0 4px;
+  }
+  pre .c{color:#8b949e} pre .k{color:#ff7b72} pre .s{color:#a5d6ff} pre .f{color:#d2a8ff} pre .n{color:#79c0ff}
+  .nums{font-family:Inter,system-ui,sans-serif; background:var(--panel); border:1px solid var(--line);
+    border-radius:12px; padding:18px 22px; margin:24px 0; font-size:16px}
+  .nums b{color:var(--v)} .nums .zero{color:var(--x)}
+  em.term{font-style:italic; color:var(--ink)}
+  .footer{margin-top:54px; padding-top:18px; border-top:1px solid var(--line);
+    font-family:Inter,system-ui,sans-serif; font-size:13px; color:var(--soft)}
+  @media print{ body{font-size:12pt} .wrap{padding:0} pre{background:#f6f8fa;color:#1f2328} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Zoning Bylaw Rule Verifier — M7</h1>
+  <p class="sub">Speech note · what to say in the meeting · ~7–8 minutes with the code walkthrough</p>
+
+  <div class="thesis">“Propose with AI. Decide with deterministic rules. Let nothing else be the authority.”</div>
+
+  <h2><span class="n">1</span> Opening — what we built</h2>
+  <p>
+    Every Canadian city publishes its zoning bylaw as a long legal PDF. Calgary’s runs to over a thousand
+    pages. Buried inside that text are the rules planners and GIS teams need every day — things like “the
+    minimum side setback is one-point-two metres.” The problem is that those rules are written for lawyers,
+    not for software, and they hide in two very different places: in ordinary prose, and in dense
+    dimensional tables. What we built reads the whole bylaw, asks an AI to <em class="term">propose</em>
+    candidate rules, and then runs every candidate through a deterministic verifier that only accepts a
+    rule if its exact value, unit, direction, and scope are literally there in the cited source text. The
+    one idea to walk away with: the AI is allowed to suggest, but only the verifier is allowed to decide.
+  </p>
+
+  <h2><span class="n">2</span> Why this is hard</h2>
+  <p>
+    It would be easy to assume you could just hand the PDF to a large language model and ask for the rules —
+    but that is the trap. Independent studies this past year show legal AI tools still hallucinate between
+    seventeen and thirty-three percent of their citations, even when handed the source text. On top of that,
+    the same number can mean completely different things depending on context — “one-point-two metres” might
+    be a side setback, an easement width, or the height of a fence — and if you get that association wrong,
+    you have just published a rule the bylaw never stated. The cost of being wrong is real: a bad setback
+    could mis-approve a building. So the system’s first duty is a negative one — never verify something the
+    bylaw does not say, even if that means leaving some genuinely true rules in a human-review queue.
+  </p>
+
+  <h2><span class="n">3</span> The architecture — one trust boundary</h2>
+  <p>
+    The whole design is organised around a single trust boundary, and this diagram is the heart of the talk.
+    On the left is the proposer tier, and everything there is allowed to be wrong. On the right, inside the
+    thick green border, is the authority tier — plain, auditable code with no AI in it at all. The line for
+    the slide: <strong>extraction proposes, verification proves, and the GIS layer consumes only verified
+    rules.</strong> Let me now walk through each box and show you the single most important piece of code
+    behind it.
+  </p>
+  <figure>
+    <svg viewBox="0 0 900 420" font-family="Inter, system-ui, sans-serif" font-size="13">
+      <defs>
+        <marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+          <path d="M0,0 L7,3 L0,6 Z" fill="#0969da"/>
+        </marker>
+      </defs>
+      <rect x="20" y="20" width="360" height="380" rx="14" fill="#fff" stroke="#d0d7de" stroke-dasharray="5 4"/>
+      <text x="40" y="46" fill="#57606a" font-weight="700" font-size="12" letter-spacing="1">PROPOSER TIER — may be wrong</text>
+      <rect x="120" y="60" width="160" height="48" rx="9" fill="#f6f8fa" stroke="#d0d7de"/>
+      <text x="200" y="83" text-anchor="middle" fill="#1f2328" font-weight="700">Bylaw PDF</text>
+      <text x="200" y="99" text-anchor="middle" fill="#57606a" font-size="11">page-scoped to the zone</text>
+      <rect x="44" y="140" width="150" height="58" rx="9" fill="#fff" stroke="#d0d7de"/>
+      <text x="119" y="163" text-anchor="middle" fill="#1f2328" font-weight="700">Retrieval / RAG</text>
+      <text x="119" y="180" text-anchor="middle" fill="#57606a" font-size="11">find relevant passages</text>
+      <rect x="210" y="140" width="150" height="58" rx="9" fill="#fff" stroke="#d0d7de"/>
+      <text x="285" y="159" text-anchor="middle" fill="#1f2328" font-weight="700">Matrix parser</text>
+      <text x="285" y="175" text-anchor="middle" fill="#57606a" font-size="11">tables, cell by cell</text>
+      <text x="285" y="189" text-anchor="middle" fill="#57606a" font-size="11">(deterministic)</text>
+      <rect x="44" y="226" width="316" height="50" rx="9" fill="#fff" stroke="#d0d7de"/>
+      <text x="202" y="248" text-anchor="middle" fill="#1f2328" font-weight="700">LLM extraction · gemini-3.1</text>
+      <text x="202" y="265" text-anchor="middle" fill="#57606a" font-size="11">proposes prose rules + source repair</text>
+      <rect x="60" y="312" width="284" height="58" rx="9" fill="#eef6ff" stroke="#0969da"/>
+      <text x="202" y="335" text-anchor="middle" fill="#0969da" font-weight="700">rule_candidates + evidence_units</text>
+      <text x="202" y="352" text-anchor="middle" fill="#57606a" font-size="11">the one internal contract</text>
+      <path d="M200,108 L119,140" fill="none" stroke="#0969da" stroke-width="1.6" marker-end="url(#ar)"/>
+      <path d="M200,108 L285,140" fill="none" stroke="#0969da" stroke-width="1.6" marker-end="url(#ar)"/>
+      <path d="M119,198 L190,226" fill="none" stroke="#0969da" stroke-width="1.6" marker-end="url(#ar)"/>
+      <path d="M285,198 L215,226" fill="none" stroke="#0969da" stroke-width="1.6" marker-end="url(#ar)"/>
+      <path d="M202,276 L202,312" fill="none" stroke="#0969da" stroke-width="1.6" marker-end="url(#ar)"/>
+      <path d="M344,341 L470,341 L470,150 L520,150" fill="none" stroke="#0969da" stroke-width="2.2" marker-end="url(#ar)"/>
+      <rect x="520" y="40" width="360" height="200" rx="14" fill="#fff" stroke="#1a7f37" stroke-width="2.5"/>
+      <text x="540" y="66" fill="#1a7f37" font-weight="700" font-size="12" letter-spacing="1">AUTHORITY TIER — no AI</text>
+      <text x="700" y="92" text-anchor="middle" fill="#1f2328" font-weight="700">verification.py</text>
+      <text x="700" y="110" text-anchor="middle" fill="#57606a" font-size="11">the trust-gate loop</text>
+      <text x="700" y="138" text-anchor="middle" fill="#1f2328" font-weight="700">support_checks.py</text>
+      <text x="700" y="156" text-anchor="middle" fill="#57606a" font-size="11">value · unit · direction · scope</text>
+      <text x="700" y="184" text-anchor="middle" fill="#1f2328" font-weight="700">decision_policy.py</text>
+      <text x="700" y="202" text-anchor="middle" fill="#57606a" font-size="11">gaps → bucket · same input, same output</text>
+      <path d="M700,240 L700,272" fill="none" stroke="#0969da" stroke-width="2.2" marker-end="url(#ar)"/>
+      <rect x="528" y="282" width="80" height="48" rx="8" fill="#eaf6ec" stroke="#1a7f37"/>
+      <text x="568" y="305" text-anchor="middle" fill="#1a7f37" font-weight="700">VERIFIED</text>
+      <text x="568" y="321" text-anchor="middle" fill="#57606a" font-size="10">trusted</text>
+      <rect x="616" y="282" width="80" height="48" rx="8" fill="#fdf6e3" stroke="#9a6700"/>
+      <text x="656" y="305" text-anchor="middle" fill="#9a6700" font-weight="700">REVIEW</text>
+      <text x="656" y="321" text-anchor="middle" fill="#57606a" font-size="10">needs human</text>
+      <rect x="704" y="282" width="80" height="48" rx="8" fill="#fbe9e7" stroke="#cf222e"/>
+      <text x="744" y="305" text-anchor="middle" fill="#cf222e" font-weight="700">REJECTED</text>
+      <text x="744" y="321" text-anchor="middle" fill="#57606a" font-size="10">poison/wrong</text>
+      <rect x="792" y="282" width="80" height="48" rx="8" fill="#f6f8fa" stroke="#57606a"/>
+      <text x="832" y="305" text-anchor="middle" fill="#57606a" font-weight="700">NOT_USED</text>
+      <text x="832" y="321" text-anchor="middle" fill="#57606a" font-size="10">artifact</text>
+      <path d="M568,330 L568,366" fill="none" stroke="#1a7f37" stroke-width="2.2" marker-end="url(#ar)"/>
+      <rect x="528" y="372" width="344" height="34" rx="8" fill="#eaf6ec" stroke="#1a7f37"/>
+      <text x="700" y="394" text-anchor="middle" fill="#1a7f37" font-weight="700" font-size="12">verified-only → GIS contract · dashboard · grounded chatbot</text>
+    </svg>
+    <figcaption>One trust boundary: the creative tier funnels into one contract; the deterministic authority tier decides; only verified rules reach consumers.</figcaption>
+  </figure>
+
+  <h2><span class="n">4</span> Inside each part — with the code</h2>
+
+  <div class="part">
+    <div class="tag"><span class="num">PART 1 ·</span> Page-scope the PDF <code>extraction/pdf_ingest.py · native_extraction.py</code></div>
+    <p>
+      Before we read a single rule, we cut the thousand-page document down to just the pages that govern the
+      zone we care about. This matters for honesty as much as speed: if we extracted from the whole book, our
+      “recall” would be measured against a denominator that includes hundreds of irrelevant pages. So the very
+      first thing the pipeline does is restrict the document to the pages declared in provenance.
+    </p>
+    <p class="cue">Point to: the “Bylaw PDF — page-scoped” box.</p>
+<pre><span class="c"># native_extraction.py — scope the document to the zone's pages first</span>
+intermediate = restrict_intermediate_to_pages(
+    intermediate, <span class="f">page_ranges_from_provenance</span>(provenance)
+)</pre>
+  </div>
+
+  <div class="part">
+    <div class="tag"><span class="num">PART 2 ·</span> Retrieval &amp; the rule-signal sweep <code>native_extraction.py</code></div>
+    <p>
+      Within those pages we don’t just dump everything at the model. We build targeted queries from the zone’s
+      own vocabulary — setback, height, lot coverage, and so on — and retrieve the passages most likely to
+      contain a rule, then sweep for rule-like signals (a regulated object next to a number). This is the
+      “find the needle” step; its only job is to surface candidate text, never to judge it.
+    </p>
+    <p class="cue">Point to: the “Retrieval / RAG” box.</p>
+<pre><span class="c"># native_extraction.py — queries are built from the zone's own vocabulary,</span>
+<span class="c"># then packs of likely-relevant source text are retrieved for extraction</span>
+queries = <span class="f">build_retrieval_queries</span>(config)     <span class="c"># setback, height, coverage, ...</span>
+packs   = <span class="f">retrieve_packs</span>(source_chunks, queries, top_n=...)</pre>
+  </div>
+
+  <div class="part">
+    <div class="tag"><span class="num">PART 3 ·</span> The matrix parser — tables, cell by cell <code>table_natural_logic.py</code></div>
+    <p>
+      This is the part I’m proudest of, and it’s the big M7 unlock. Most rules in modern bylaws live in
+      dimensional tables — a grid of dwelling-type against value. Instead of asking the model to “read the
+      table,” we read it deterministically: each cell becomes one candidate, and we prove it from the table’s
+      own geometry. The title tells us the rule family, the row and column headers tell us the scope, and the
+      cell tells us the value. No language model is in this loop, so it cannot hallucinate a cell that isn’t
+      there.
+    </p>
+    <p class="cue">Point to: the “Matrix parser (deterministic)” box.</p>
+<pre><span class="c"># table_natural_logic.py — prove a table cell WITHOUT an LLM</span>
+<span class="k">def</span> <span class="f">table_proof_trace</span>(candidate, evidence, ...):
+    row_header    = str(evidence.get(<span class="s">"row_header"</span>) or <span class="s">""</span>)
+    column_header = str(evidence.get(<span class="s">"column_header"</span>) or <span class="s">""</span>)
+    cell_value    = str(evidence.get(<span class="s">"cell_value"</span>) or <span class="s">""</span>)
+    <span class="k">return</span> {
+        <span class="c"># title proves the family: "Minimum Lot Line Setbacks"</span>
+        <span class="s">"rule_object"</span>: _prove_rule_object(candidate, table_title, row_header, ...),
+        <span class="c"># row/column prove the scope: "Lane Yard", "Rear Principal"</span>
+        <span class="s">"scope"</span>:       _prove_text_claim(candidate.get(<span class="s">"constraint_scope"</span>), ...),
+        <span class="c"># operator comes from words like Minimum/Maximum, not the cell</span>
+    }</pre>
+  </div>
+
+  <div class="part">
+    <div class="tag"><span class="num">PART 4 ·</span> The LLM extractor — a leashed proposer <code>native_extraction.py</code></div>
+    <p>
+      For the prose rules we do use the language model — but notice how tightly it’s leashed by its own prompt.
+      We tell it to extract only what is visibly in this exact text, never to infer a missing value, never to
+      use outside knowledge, and — crucially — if it can’t see whether a rule is a minimum or a maximum, to
+      leave the operator blank rather than guess. A blank operator simply sends the candidate to review. The
+      model is rewarded for honesty, not for filling in blanks.
+    </p>
+    <p class="cue">Point to: the “LLM extraction · gemini-3.1” box.</p>
+<pre><span class="c"># native_extraction.py — the proposer is constrained by its prompt</span>
+<span class="s">"Extract only numeric zoning rule CANDIDATES from the source text below."</span>
+<span class="s">"Do not infer missing values. Do not use outside knowledge."</span>
+<span class="s">"If the operator/direction wording is not visible, set operator to \"\""</span>
+<span class="s">"  instead of guessing or dropping the rule;"</span>
+<span class="s">"  incomplete candidates go to review downstream."</span></pre>
+  </div>
+
+  <div class="part">
+    <div class="tag"><span class="num">PART 5 ·</span> The one internal contract <code>rule_candidates + evidence_units</code></div>
+    <p>
+      Every path — the matrix parser, the LLM, and even legacy upstream extractors — funnels into one identical
+      shape. A candidate is just structured fields plus a pointer to the evidence that supposedly supports it.
+      Standardising on this contract is what lets a single verifier judge everything the same way, no matter
+      where the candidate came from.
+    </p>
+    <p class="cue">Point to: the blue “rule_candidates + evidence_units” box — the funnel.</p>
+<pre><span class="c"># one candidate = structured fields + a citation to its evidence</span>
+{<span class="s">"rule_object"</span>:<span class="s">"height"</span>, <span class="s">"operator"</span>:<span class="s">"&lt;="</span>, <span class="s">"value"</span>:<span class="s">"8.5"</span>, <span class="s">"unit"</span>:<span class="s">"m"</span>,
+ <span class="s">"applies_to"</span>:<span class="s">"principal building"</span>, <span class="s">"condition"</span>:<span class="s">""</span>, <span class="s">"exception"</span>:<span class="s">""</span>,
+ <span class="s">"source_quote"</span>:<span class="s">"building height ... must not exceed 8.5 m"</span>,
+ <span class="s">"evidence_id"</span>:<span class="s">"..."</span>}   <span class="c"># ← points at the exact evidence_unit it must be proven against</span></pre>
+  </div>
+
+  <div class="part auth">
+    <div class="tag auth"><span class="num">PART 6 ·</span> The trust-gate loop <code>verification.py</code></div>
+    <p>
+      Now we cross into the authority tier. The main verifier does exactly four things for every candidate, and
+      its own docstring says so. It looks up the candidate’s evidence, normalises the candidate into our
+      contract, runs the deterministic support checks and collects a list of <em class="term">support
+      gaps</em> — one entry for every check that failed — and then splits the result into verified or
+      not-verified. The important mental model: the loop’s job is just to <em class="term">collect failures</em>.
+    </p>
+    <p class="cue">Point to: “verification.py — the trust-gate loop”.</p>
+<pre><span class="k">def</span> <span class="f">verify_candidates</span>(config, evidence_units, candidates):
+    <span class="s">"""1. look up the candidate's evidence;
+       2. normalize the candidate into our contract;
+       3. run support checks and collect support_gaps;
+       4. split rules into verified or review/rejected output."""</span>
+    ...
+    support_gaps = []
+    <span class="k">if</span> value_missing:      support_gaps.append(<span class="s">"value_not_found_in_evidence"</span>)
+    <span class="k">if</span> unit_missing:       support_gaps.append(<span class="s">"unit_not_found_in_evidence"</span>)
+    <span class="k">if</span> direction_wrong:    support_gaps.append(<span class="s">"rule_family_direction_mismatch"</span>)
+    <span class="k">if</span> scope_unsupported:  support_gaps.append(<span class="s">"constraint_scope_not_supported"</span>)
+    decision = <span class="f">verification_decision_from_gaps</span>(support_gaps)</pre>
+  </div>
+
+  <div class="part auth">
+    <div class="tag auth"><span class="num">PART 7 ·</span> The gates — the direction check <code>support_checks.py</code></div>
+    <p>
+      Here is one of those gates, and it’s the one that catches the most dangerous error: a flipped direction.
+      If the model claims a value is a maximum, the evidence text has to actually contain maximum-type wording —
+      “maximum,” “not exceed,” “up to.” If it claims a minimum, it needs “minimum,” “not less,” “at least.” A
+      number with no matching direction word in the source cannot pass. That single check is what stops a
+      minimum setback from being published as a maximum, which is the textbook way a false rule slips through.
+    </p>
+    <p class="cue">Point to: “support_checks.py — value · unit · direction · scope”.</p>
+<pre><span class="k">def</span> <span class="f">operator_supported</span>(candidate, evidence_text) -> bool:
+    operator = {<span class="s">"≤"</span>:<span class="s">"&lt;="</span>, <span class="s">"≥"</span>:<span class="s">"&gt;="</span>}.get(operator, operator)  <span class="c"># canonicalize</span>
+    text = evidence_text.lower()
+    <span class="k">if</span> operator <span class="k">in</span> {<span class="s">"&lt;="</span>,<span class="s">"max"</span>,<span class="s">"maximum"</span>}:
+        <span class="k">return</span> any(p <span class="k">in</span> text <span class="k">for</span> p <span class="k">in</span> [<span class="s">"maximum"</span>,<span class="s">"not exceed"</span>,<span class="s">"up to"</span>,<span class="s">"limited to"</span>])
+    <span class="k">if</span> operator <span class="k">in</span> {<span class="s">"&gt;="</span>,<span class="s">"min"</span>,<span class="s">"minimum"</span>}:
+        <span class="k">return</span> any(p <span class="k">in</span> text <span class="k">for</span> p <span class="k">in</span> [<span class="s">"minimum"</span>,<span class="s">"not less"</span>,<span class="s">"no less"</span>,<span class="s">"at least"</span>])
+    ...</pre>
+  </div>
+
+  <div class="part auth">
+    <div class="tag auth"><span class="num">PART 8 ·</span> Gaps → bucket — the decision <code>decision_policy.py</code></div>
+    <p>
+      And this is the climax — the entire safety story collapses into one short function anyone in this room
+      could read. The first line is the whole philosophy: a rule is verified <em class="term">only</em> when
+      there are zero blocking gaps — only when every gate passed. There is no confidence score, no “the model
+      seemed pretty sure.” Proven or not. And notice the order: critical rejections first, then not-used, then
+      review. When the system is in any doubt, it falls toward safety, never toward verified. Because this is
+      deterministic, the same candidate with the same evidence gives the same bucket every single time — which
+      is exactly what lets us test it and audit it by hand.
+    </p>
+    <p class="cue">Point to: “decision_policy.py — gaps → bucket”, then the four bucket chips.</p>
+<pre><span class="c"># src/burnaby_prototype/decision_policy.py</span>
+<span class="k">def</span> <span class="f">verification_decision_from_gaps</span>(support_gaps) -> str:
+    gaps = set(support_gaps)
+    blocking = gaps - ADVISORY_GAPS
+    <span class="k">if not</span> blocking:                          <span class="c"># every gate passed</span>
+        <span class="k">return</span> VERIFIED
+    <span class="k">if</span> CRITICAL_REJECTION_GAPS &amp; blocking:    <span class="c"># poisoned / contradicted</span>
+        <span class="k">return</span> REJECTED
+    <span class="k">if</span> NOT_USED_GAPS &amp; blocking:              <span class="c"># real artifact, not a rule</span>
+        <span class="k">return</span> NOT_USED
+    <span class="k">return</span> REVIEW_NEEDED                       <span class="c"># plausible, needs a human</span></pre>
+  </div>
+
+  <h2><span class="n">5</span> A concrete example — the bug it caught</h2>
+  <p>
+    Let me make that tangible. Suppose the model proposes “side setback, minimum one-point-two metres.” Before
+    that can ever be trusted, the verifier asks a series of literal questions through the gates you just saw.
+    Is one-point-two actually in the quoted clause? Is the unit metres? Is it a minimum and not a maximum? Is
+    the clause genuinely about a setback? Is it the right scope — the side line, this zone? In Calgary, this is
+    exactly what saved us. The extractor had proposed a one-point-two metre side setback, but when the verifier
+    checked the rule object and the surrounding clause, the real source turned out to be a one-point-two metre
+    easement width — the same number, attached to a completely different rule. The verifier blocked it. That
+    single catch is why our Calgary count is twenty-nine verified rules and not thirty.
+  </p>
+
+  <h2><span class="n">6</span> The results, and an honest caveat</h2>
+  <div class="nums">
+    Across all three pilot cities, audited against the real PDFs:
+    Burnaby <b>87</b> verified, Vancouver <b>10</b>, Calgary <b>29</b> —
+    verified precision <b>1.00</b> everywhere, and <span class="zero">zero false-verifies</span>.
+    Four hundred and eighty-five tests pass, and the adversarial poison cases are all blocked.
+  </div>
+  <p>
+    What changed in M7 is that we taught the system to read the dimensional tables cell by cell instead of only
+    the prose; we fed Calgary the full thousand-page bylaw scoped to the right pages rather than a small slice;
+    and we settled on a single strongest model instead of a noisy bake-off. Calgary alone went from sixteen
+    verified rules to twenty-nine. But here is the honest part, and it’s the most important sentence in the
+    whole talk: every one of those recall gains came from better <em class="term">extraction</em>, not from
+    relaxing the verifier. We actually tried a change on the verifier side to lift the numbers further, and it
+    started letting false rules through — so we reverted it. The verifier sits at its safe ceiling, and we
+    chose to keep it there.
+  </p>
+
+  <h2><span class="n">7</span> Closing — why you can trust it</h2>
+  <p>
+    So why can you trust this? Because the power is deliberately separated: the creative AI literally cannot
+    promote a rule — only the deterministic code can, and a test enforces that the verification path never even
+    imports the AI modules. Because we attack it on every build with poisoned candidates that have to be
+    blocked. Because we audited the verified rules against the actual bylaws, not just our own answer key —
+    which is how the Calgary easement bug surfaced. And because the answer key itself is never visible to the
+    runtime, so it cannot leak. The hallway version, if someone stops you afterward: the AI suggests, the
+    deterministic verifier decides, and it has never once verified a rule the bylaw doesn’t say.
+  </p>
+
+  <div class="footer">
+    Structure reference: <code>docs/M7_PROJECT_STRUCTURE.md</code> · Full technical write-up:
+    <code>docs/M7_TECH_DOC.html</code> · Live numbers reproduce via
+    <code>scripts/run_consolidated_prototype.py status</code>.
+  </div>
+
+</div>
+</body>
+</html>

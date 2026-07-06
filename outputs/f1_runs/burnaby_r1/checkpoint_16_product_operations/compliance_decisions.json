@@ -1,0 +1,772 @@
+[
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0014_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0014"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0014_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0014"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0015_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0015"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0015_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0015"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0016_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0016"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0016_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0016"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0018_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0018"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0018_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0018"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0019_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0019"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0019_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0019"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0020_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0020"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0020_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0020"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0021_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0021"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0021_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0021"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0023_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0023"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0023_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0023"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0024_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0024"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0024_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0024"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0025_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0025"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0025_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0025"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0026_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0026"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0026_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0026"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0027_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0027"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0027_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0027"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0028_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0028"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0028_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0028"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0029_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0029"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0029_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0029"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0030_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0030"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0030_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0030"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0031_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0031"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0031_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0031"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0032_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0032"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0032_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0032"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0033_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0033"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0033_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0033"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0034_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0034"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0034_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0034"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0035_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0035"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0035_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0035"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0036_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0036"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0036_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0036"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0037_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0037"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0037_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0037"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0038_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0038"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0038_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0038"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0039_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0039"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0039_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0039"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0040_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0040"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0040_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0040"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0041_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0041"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0041_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0041"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0042_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0042"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0042_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0042"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0043_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0043"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0043_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0043"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0044_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0044"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0044_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0044"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0045_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0045"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0045_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0045"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0047_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0047"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0047_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0047"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0048_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0048"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0048_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0048"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0049_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0049"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0049_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0049"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0050_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0050"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0050_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0050"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0051_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0051"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0051_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0051"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0006_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0006"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0006_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0006"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0009_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0009"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0009_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0009"
+    ]
+  },
+  {
+    "reason": "Scenario passes the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0010_pass",
+    "schema_version": "f1.artifacts.v0",
+    "status": "approved",
+    "verified_rule_ids": [
+      "f1_candidate_0010"
+    ]
+  },
+  {
+    "reason": "Scenario fails the verified rule.",
+    "review_rule_ids": [],
+    "scenario_id": "f1_smoke_f1_candidate_0010_fail",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "verified_rule_ids": [
+      "f1_candidate_0010"
+    ]
+  },
+  {
+    "reason": "No verified rule covers this scenario.",
+    "review_rule_ids": [
+      "f1_candidate_0001"
+    ],
+    "scenario_id": "f1_smoke_f1_candidate_0001_needs_review",
+    "schema_version": "f1.artifacts.v0",
+    "status": "needs_review",
+    "verified_rule_ids": []
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "reason": "No verified rule covers this scenario.",
+    "review_rule_ids": [
+      "f1_candidate_0001"
+    ],
+    "scenario_id": "f1_smoke_f1_candidate_0001_needs_review",
+    "schema_version": "f1.artifacts.v0",
+    "status": "needs_review",
+    "verified_rule_ids": []
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "artifact": "source_registry.json",
+  "city": "Vancouver",
+  "city_key": "vancouver_rs",
+  "documents": [
+    {
+      "bylaw_version": "Vancouver Zoning and Development By-law \u2014 Section 11.3 (Laneway Houses)",
+      "bytes": 869241,
+      "city": "Vancouver",
+      "fetched_at": "2026-06-11T20:11:55+00:00",
+      "hash_verified": true,
+      "local_path": "data/bylaws/vancouver_rs/source.pdf",
+      "page_count": 22,
+      "pages_rationale": "",
+      "schema_version": "f1.artifacts.v0",
+      "scoped_pages": [],
+      "sha256": "80f30e5782fe5a62b1a6a7f768713f93fdea120245739831394d6b14b0555111",
+      "source_id": "vancouver_rs:source",
+      "source_url": "https://bylaws.vancouver.ca/zoning/zoning-by-law-section-11.pdf",
+      "status": "registered",
+      "target_concept": "laneway-house buildable-area rules for GIS",
+      "title": "Vancouver Zoning and Development By-law \u2014 Section 11.3 (Laneway Houses)"
+    }
+  ],
+  "generated_at": "2026-07-06T03:21:23.644335+00:00",
+  "run_id": "checkpoint_13_multi_city",
+  "schema_version": "f1.artifacts.v0",
+  "source_count": 1,
+  "validation": {
+    "actual_sha256": "80f30e5782fe5a62b1a6a7f768713f93fdea120245739831394d6b14b0555111",
+    "config_path": "configs/vancouver_rs.json",
+    "expected_sha256": "80f30e5782fe5a62b1a6a7f768713f93fdea120245739831394d6b14b0555111",
+    "provenance_exists": true,
+    "provenance_path": "data/bylaws/vancouver_rs/provenance.json",
+    "provenance_url": "https://bylaws.vancouver.ca/zoning/zoning-by-law-section-11.pdf",
+    "sha256_matches": true,
+    "source_pdf_exists": true,
+    "source_pdf_path": "data/bylaws/vancouver_rs/source.pdf",
+    "source_url": "https://bylaws.vancouver.ca/zoning/zoning-by-law-section-11.pdf",
+    "source_url_matches_provenance": true,
+    "status": "pass"
+  }
+}

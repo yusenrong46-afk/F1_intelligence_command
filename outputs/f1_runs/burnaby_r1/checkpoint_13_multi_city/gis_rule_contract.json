@@ -1,0 +1,81 @@
+{
+  "artifact": "gis_rule_contract.json",
+  "city_key": "burnaby_r1",
+  "excluded_review_rule_count": 3,
+  "export_rule_count": 3,
+  "input_verified_rule_count": 3,
+  "rules": [
+    {
+      "applies_to": "lot line setbacks for street yards",
+      "citation": {
+        "evidence_id": "f1_retrieval_002_06",
+        "page": 6,
+        "quote": "2.0 m",
+        "section_id": "2.0",
+        "span_id": "span_96f7888616883e11"
+      },
+      "city": "burnaby_r1",
+      "condition": "",
+      "constraint_scope": "minimum setback",
+      "exception": "",
+      "geometry_target": "lot_line",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0002",
+      "rule_object": "setback",
+      "schema_version": "f1.artifacts.v0",
+      "unit": "m",
+      "value": "2",
+      "value_numeric": 2.0,
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "maximum lot coverage as set out in Section 101.4",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_01",
+        "page": 6,
+        "quote": "60%",
+        "section_id": "101.4",
+        "span_id": "span_75aa1d5cd765c6aa"
+      },
+      "city": "burnaby_r1",
+      "condition": "",
+      "constraint_scope": "lot coverage",
+      "exception": "",
+      "geometry_target": "parcel_polygon",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0003",
+      "rule_object": "lot_coverage",
+      "schema_version": "f1.artifacts.v0",
+      "unit": "%",
+      "value": "60",
+      "value_numeric": 60.0,
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "principal building located between a front and rear principal",
+      "citation": {
+        "evidence_id": "f1_retrieval_005_02",
+        "page": 3,
+        "quote": "6.0 m",
+        "section_id": "6.0",
+        "span_id": "span_6d33ce0a64ff7992"
+      },
+      "city": "burnaby_r1",
+      "condition": "",
+      "constraint_scope": "building separation",
+      "exception": "",
+      "geometry_target": "building_footprint",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0005",
+      "rule_object": "building_separation",
+      "schema_version": "f1.artifacts.v0",
+      "unit": "m",
+      "value": "6",
+      "value_numeric": 6.0,
+      "verification_status": "verified"
+    }
+  ],
+  "run_id": "checkpoint_13_multi_city",
+  "schema_version": "f1.artifacts.v0",
+  "verified_only": true
+}

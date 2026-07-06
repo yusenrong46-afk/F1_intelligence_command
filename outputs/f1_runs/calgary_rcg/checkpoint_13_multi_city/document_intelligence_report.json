@@ -1,0 +1,18 @@
+{
+  "artifact": "document_intelligence",
+  "city": "Calgary",
+  "city_key": "calgary_rcg",
+  "generated_at": "2026-07-06T03:22:00.197181+00:00",
+  "ingest_backend": "pdfplumber",
+  "run_id": "checkpoint_13_multi_city",
+  "schema_version": "f1.artifacts.v0",
+  "source_id": "calgary_rcg:source",
+  "source_sha256": "25d15e8d3a3ed10b90d9c029eff8a337ba899f5f330d64f509e8995874740d48",
+  "summary": {
+    "document_block_count": 592,
+    "heading_block_count": 128,
+    "page_count": 27,
+    "source_span_count": 592,
+    "table_block_count": 2
+  }
+}

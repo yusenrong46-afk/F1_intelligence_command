@@ -1,0 +1,881 @@
+{
+  "purpose": "Advisory bylaw retrieval corpus. Never read by the verifier.",
+  "chunk_count": 125,
+  "chunks": [
+    {
+      "chunk_id": "surrey_r3_4_001",
+      "section": "4",
+      "page": 143,
+      "text": "General Provisions.",
+      "evidence_type": "clause"
+    },
+    {
+      "chunk_id": "surrey_r3_table_001_r001",
+      "section": "",
+      "page": 143,
+      "text": "Table context: Part 15 Part 15: Urban Residential Zone",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r001",
+      "section": "",
+      "page": 143,
+      "text": "Table context: Maximum Maximum: Number of",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r002",
+      "section": "",
+      "page": 143,
+      "text": "Table context: Maximum Maximum: Dwelling",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r003",
+      "section": "",
+      "page": 143,
+      "text": "Table context: Maximum Maximum: Units1",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r004",
+      "section": "",
+      "page": 143,
+      "text": "Table context: (a) ≥ 4,050 sq.\nm (a) ≥ 4,050 sq.\nm | Lot Location: i. All Areas; Up to 2; Principal Uses: Single Family Dwelling; Accessory\nUses: Secondary\nSuite6\nGarden Suite\nCoach House\nBed and\nBreakfast4\nBoarders or\nLodgers4\nShort-Term\nRental5",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r005",
+      "section": "",
+      "page": 143,
+      "text": "Table context: (b) < 4,050 sq. m\nand ≥ 280 sq.\nm (b) < 4,050 sq. m\nand ≥ 280 sq.\nm | Lot Location: i. Inside Transit-\nOriented Areas2; Up to 2; Principal Uses: Single Family Dwelling",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r006",
+      "section": "",
+      "page": 143,
+      "text": "Lot Location: ii. All areas, except\nB.1.(b)i and iii; Up to 4; Single Family Dwelling",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r007",
+      "section": "",
+      "page": 143,
+      "text": "or",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r008",
+      "section": "",
+      "page": 143,
+      "text": "Duplex",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r009",
+      "section": "",
+      "page": 143,
+      "text": "or",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r010",
+      "section": "",
+      "page": 143,
+      "text": "Houseplex3",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r011",
+      "section": "",
+      "page": 143,
+      "text": "Lot Location: iii. Eligible lots\nwithin Frequent\nBus Stop Areas; Up to 6; Single Family Dwelling",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r012",
+      "section": "",
+      "page": 143,
+      "text": "or",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r013",
+      "section": "",
+      "page": 143,
+      "text": "Duplex",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r014",
+      "section": "",
+      "page": 143,
+      "text": "or",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r015",
+      "section": "",
+      "page": 143,
+      "text": "Houseplex3",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r016",
+      "section": "",
+      "page": 143,
+      "text": "Table context: (c) < 280 sq. m (c) < 280 sq. m | i. Inside Transit-; Up to 2; Principal Uses: Single Family Dwelling",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r017",
+      "section": "",
+      "page": 143,
+      "text": "Oriented",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r018",
+      "section": "",
+      "page": 143,
+      "text": "Areas2",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r019",
+      "section": "",
+      "page": 143,
+      "text": "ii. All areas, except; Up to 3; Principal Uses: Single Family Dwelling",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_002_r020",
+      "section": "",
+      "page": 143,
+      "text": "B.1.(c)i",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_003_r001",
+      "section": "",
+      "page": 143,
+      "text": "Table context: Uses Uses | Uses",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_004_r001",
+      "section": "",
+      "page": 143,
+      "text": "Table context: Oriented Areas2 Oriented Areas2 | Oriented Areas2",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_005_r001",
+      "section": "",
+      "page": 143,
+      "text": "Table context: B.1.(b)i and iii B.1.(b)i and iii | B.1.(b)i and iii",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_006_r001",
+      "section": "",
+      "page": 143,
+      "text": "Table context: within Frequent within Frequent | within Frequent",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_006_r002",
+      "section": "",
+      "page": 143,
+      "text": "Table context: Bus Stop Areas Bus Stop Areas | Bus Stop Areas",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_007_r001",
+      "section": "",
+      "page": 144,
+      "text": "Table context: Lot Area | Minimum Requirement Lot Area | Minimum Requirement: 560 sq. m",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_007_r002",
+      "section": "",
+      "page": 144,
+      "text": "Table context: Lot Width | Minimum Requirement Lot Width | Minimum Requirement: 15 m",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_007_r003",
+      "section": "",
+      "page": 144,
+      "text": "Table context: Lot Depth | Minimum Requirement Lot Depth | Minimum Requirement: 28 m",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_008_r001",
+      "section": "",
+      "page": 144,
+      "text": "Table context: Floor Area Ratio1, Floor Area Floor Area Ratio1, Floor Area: and Building Size Requirements",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_008_r002",
+      "section": "",
+      "page": 144,
+      "text": "Table context: (a) Single Family\nDwelling2 with\nor without a\nSecondary Suite (a) Single Family\nDwelling2 with\nor without a\nSecondary Suite | Lot Size: i. All lots; a. The floor area ratio must not exceed 0.60 for the first\n560 sq. m of lot area and 0.35 for the remaining lot\narea in excess of 560 sq. m, provided a minimum of 39\nsq. m. of the total floor area is used only as a garage or\ncarport, except for eligible lots within frequent bus\nstop areas where a garage or carport is not required.\nb. Despite Section D.2.(a)i.a., single family dwellings must\nhave a minimum ground level floor area of 84 sq. m and\na minimum building width of 7 m., and must not exceed\na maximum floor area is 465 sq. m.",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r001",
+      "section": "",
+      "page": 145,
+      "text": "Table context: (c) Houseplex (c) Houseplex | i. All lots: i. All lots; a. The floor area ratio must not exceed 1.0, provided a\nminimum of 44 sq. m. of the total floor area is used only\nas a garage or carport within the duplex, except for\neligible lots within frequent bus stop areas where a\ngarage or carport is not required.\nb. Despite the definition of floor area ratio, basements are\nincluded in the floor area ratio calculation for duplexes.\nc. Despite Section D.2.(b)i.a., duplexes must have a\nminimum ground level floor area of 84 sq. m and a\nminimum building width of 7 m, and must not exceed a\nmaximum floor area of 560 sq. m including basements.: a. The floor area ratio must not exceed 1.0 for the first\n560 sq. m of lot area and 0.60 for the remaining lot\narea in excess of 560 sq. m, provided a minimum of 22\nsq. m of the total floor area of each dwelling unit is\nused only as a garage or carport for the houseplex,\nexcept for eligible lots within frequent bus stop areas\nwhere a garage or carport is not required.\nb. Despite the definition of floor area ratio, basements\nare not included in the floor area ratio calculation for a\nhouseplex.\nc. Despite Section D.2.(c)i.a., a houseplex must have a\nminimum ground level floor area of 84 sq. m and a\nminimum building width of 15 m, and must not exceed\na maximum floor area is 600 sq. m not including\nbasements, provided a minimum of 22 sq. m. of the\nfloor area of each dwelling unit is used only as a garage\nor carport, except for eligible lots within frequent bus\nstop areas where a garage or carport is not required.",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r002",
+      "section": "",
+      "page": 145,
+      "text": "Table context: (d) Coach House (d) Coach House | i. All lots: i. Not\napplicable; a. The floor area of a coach house is permitted in addition",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r003",
+      "section": "",
+      "page": 145,
+      "text": "to the floor area ratio permitted for single family",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r004",
+      "section": "",
+      "page": 145,
+      "text": "dwellings, duplexes and houseplexes in Sections D.2.(a),",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r005",
+      "section": "",
+      "page": 145,
+      "text": "(b) and (c) provided that a coach house must have a",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r006",
+      "section": "",
+      "page": 145,
+      "text": "minimum floor area of 35 sq.m. and a maximum total",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r007",
+      "section": "",
+      "page": 145,
+      "text": "floor area of 75 sq. m., excluding the garage or carport.",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r008",
+      "section": "",
+      "page": 145,
+      "text": "b. Despite D.2(d)i.a., if the floor area of the single family",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r009",
+      "section": "",
+      "page": 145,
+      "text": "dwelling, duplex or houseplex in Sections D.2.(a), (b)",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r010",
+      "section": "",
+      "page": 145,
+      "text": "and (c) has not achieved the maximum floor area on the",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r011",
+      "section": "",
+      "page": 145,
+      "text": "lot, the remainder of the floor area may be used for the",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_009_r012",
+      "section": "",
+      "page": 145,
+      "text": "coach house up to a maximum size of 120 sq.m.",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_010_r001",
+      "section": "",
+      "page": 145,
+      "text": "Table context: applicable applicable | applicable",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_011_r001",
+      "section": "",
+      "page": 146,
+      "text": "Table context: a. The floor area of a garden suite is permitted in addition a. The floor area of a garden suite is permitted in addition: to the floor area ratio permitted for single family",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_011_r002",
+      "section": "",
+      "page": 146,
+      "text": "Table context: a. The floor area of a garden suite is permitted in addition a. The floor area of a garden suite is permitted in addition: dwellings, duplexes and houseplexes in Sections D.2.(a),",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_011_r003",
+      "section": "",
+      "page": 146,
+      "text": "Table context: a. The floor area of a garden suite is permitted in addition a. The floor area of a garden suite is permitted in addition: (b) and (c), provided that a garden suite must have a",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_011_r004",
+      "section": "",
+      "page": 146,
+      "text": "Table context: a. The floor area of a garden suite is permitted in addition a. The floor area of a garden suite is permitted in addition: minimum floor area of 35 sq.m. and a maximum total",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_011_r005",
+      "section": "",
+      "page": 146,
+      "text": "Table context: a. The floor area of a garden suite is permitted in addition a. The floor area of a garden suite is permitted in addition: floor area of 75 sq. m.",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_011_r006",
+      "section": "",
+      "page": 146,
+      "text": "Table context: a. The floor area of a garden suite is permitted in addition a. The floor area of a garden suite is permitted in addition: b. Despite D.2(e)i.a., if the floor area of the single family",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_011_r007",
+      "section": "",
+      "page": 146,
+      "text": "Table context: a. The floor area of a garden suite is permitted in addition a. The floor area of a garden suite is permitted in addition: dwelling, duplex or houseplex in Sections D.2.(a), (b)",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_011_r008",
+      "section": "",
+      "page": 146,
+      "text": "Table context: a. The floor area of a garden suite is permitted in addition a. The floor area of a garden suite is permitted in addition: and (c) has not achieved the maximum floor area on the",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_011_r009",
+      "section": "",
+      "page": 146,
+      "text": "Table context: a. The floor area of a garden suite is permitted in addition a. The floor area of a garden suite is permitted in addition: lot, the remainder of the floor area may be used for the",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_011_r010",
+      "section": "",
+      "page": 146,
+      "text": "Table context: a. The floor area of a garden suite is permitted in addition a. The floor area of a garden suite is permitted in addition: garden suite up to a maximum size of 120 sq.m.",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_012_r001",
+      "section": "",
+      "page": 146,
+      "text": "Table context: applicable applicable | applicable",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r001",
+      "section": "",
+      "page": 147,
+      "text": "Table context: Single Family Dwelling\nwith or without a Secondary\nSuite Single Family Dwelling\nwith or without a Secondary\nSuite | ≤; 560 sq. m; 40%",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r002",
+      "section": "",
+      "page": 147,
+      "text": "Lot Size: > 560 sq. m but ≤ 1,262 sq. m; 40% reduced at a rate of 2% for each",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r003",
+      "section": "",
+      "page": 147,
+      "text": "93 sq. m of additional lot area until",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r004",
+      "section": "",
+      "page": 147,
+      "text": "25% is reached",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r005",
+      "section": "",
+      "page": 147,
+      "text": "Lot Size: > 1,262 sq. m; 25%",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r006",
+      "section": "",
+      "page": 147,
+      "text": "Table context: Single Family Dwelling\nwith or without a Secondary\nSuite, Coach House, or\nGarden Suite Single Family Dwelling\nwith or without a Secondary\nSuite, Coach House, or\nGarden Suite | ≤; 560 sq. m; Maximum Lot Coverage: 50%",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r007",
+      "section": "",
+      "page": 147,
+      "text": "Lot Size: > 560 sq. m. but ≤ 1,262 sq. m; Maximum Lot Coverage: 50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n30% is reached",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r008",
+      "section": "",
+      "page": 147,
+      "text": "Lot Size: > 1,262 sq. m; Maximum Lot Coverage: 30%",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r009",
+      "section": "",
+      "page": 147,
+      "text": "Table context: Duplex with or without a\nSecondary Suite Duplex with or without a\nSecondary Suite | ≤; 560 sq. m; Maximum Lot Coverage: 50%",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r010",
+      "section": "",
+      "page": 147,
+      "text": "Lot Size: > 560 sq. m but ≤ 1,262 sq. m; Maximum Lot Coverage: 50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r011",
+      "section": "",
+      "page": 147,
+      "text": "Lot Size: > 1,262 sq. m; Maximum Lot Coverage: 35%",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r012",
+      "section": "",
+      "page": 147,
+      "text": "Table context: Duplex with or without a\nSecondary Suite, Coach\nHouse, or Garden Suite Duplex with or without a\nSecondary Suite, Coach\nHouse, or Garden Suite | ≤; 560 sq. m; Maximum Lot Coverage: 50%",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r013",
+      "section": "",
+      "page": 147,
+      "text": "Lot Size: > 560 sq. m but ≤ 1,262 sq. m; Maximum Lot Coverage: 50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_013_r014",
+      "section": "",
+      "page": 147,
+      "text": "Lot Size: > 1,262 sq. m; Maximum Lot Coverage: 35%",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_014_r001",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m 3.5 m | > 560 sq. m but ≤ 1,262 sq. m; 60%: 60% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_014_r002",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m 3.5 m | > 1,262 sq. m; 60%: 35%",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_014_r003",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Houseplex with or without a\nSecondary Suite or Coach\nHouse 3.5 m | Houseplex with or without a\nSecondary Suite or Coach\nHouse | ≤: ≤; 560 sq. m: 560 sq. m; 60%: 60%",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_014_r004",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m 3.5 m | > 560 sq. m but ≤ 1,262 sq. m; 60%: 60% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_014_r005",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m 3.5 m | > 1,262 sq. m; 60%: 35%",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r001",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m 3.5 m | Building: Type; Interior Lot: 1\nLane Access; Corner Lot: Lane Access; Interior Lot: No Lane; Corner Lot: No Lane",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r002",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Building 3.5 m | Building: Single Family Dwelling with or without a Secondary Suite",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r003",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Front Yard 3.5 m | Front Yard | 6.5 m; 6.5 m; 6.5 m; 6.5 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r004",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Rear Yard 3.5 m | Rear Yard | 7.5 m; 7.5 m; 7.5 m; 7.5 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r005",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Side Yard 3.5 m | Side Yard | 1.8 m; 1.8 m; 1.8 m; 1.8 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r006",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Street Side Yard 3.5 m | Street Side Yard | n/a; 3.6 m; n/a; 3.6 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r007",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Building 3.5 m | Building: Duplex with or without a Secondary Suite",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r008",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Front Yard 3.5 m | Front Yard | 6.0 m; 6.0 m; 6.0 m; 6.0 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r009",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Rear Yard 3.5 m | Rear Yard | 7.5 m; 7.5 m; 7.5 m; 7.5 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r010",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Side Yard 3.5 m | Side Yard | 1.2 m; 1.2 m; 1.2 m; 1.2 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r011",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Street Side Yard 3.5 m | Street Side Yard | n/a; 2.4 m; n/a; 2.4 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r012",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Building 3.5 m | Building: Houseplex",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r013",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Front Yard 3.5 m | Front Yard | 3.5 m; 3.5 m; Not Permitted; 3.5 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r014",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Rear Yard 3.5 m | Rear Yard | 7.5 m; 7.5 m; 7.5 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r015",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Side Yard 3.5 m | Side Yard | 1.2 m; 1.2 m; 1.2 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r016",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Street Side Yard 3.5 m | Street Side Yard | n/a; 2.4 m; 2.4 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r017",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Building 3.5 m | Building: Coach House",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r018",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Front Yard 3.5 m | Front Yard | Not Permitted; Not Permitted; Not Permitted; Not Permitted",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r019",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Rear Yard 3.5 m | Rear Yard | 1.2 m; 1.2 m; 1.8 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r020",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Side Yard 3.5 m | Side Yard | 1.2 m; 1.2 m; 1.8m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r021",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Street Side Yard 3.5 m | Street Side Yard | 2.4 m; 2.4 m; 2.4 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r022",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Separation 3.5 m | Separation | 5.0 m; 5.0 m; 5.0 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r023",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Building 3.5 m | Building: Garden Suite",
+      "evidence_type": "table_cell"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r024",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Front Yard 3.5 m | Front Yard | Not Permitted; Not Permitted; Not Permitted; Not Permitted",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r025",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Rear Yard 3.5 m | Rear Yard | 1.2 m; 1.2 m; 1.8 m; 1.8 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r026",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Side Yard 3.5 m | Side Yard | 1.8 m; 1.8m; 1.8 m; 1.8m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r027",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Street Side Yard 3.5 m | Street Side Yard | 2.4 m; 2.4 m; 2.4 m; 2.4 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_015_r028",
+      "section": "",
+      "page": 148,
+      "text": "Heading: 3.5 m Table context: 3.5 m | Separation 3.5 m | Separation | 5.0 m; 5.0 m; 5.0 m; 5.0 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_016_r001",
+      "section": "",
+      "page": 149,
+      "text": "Heading: 6.0 m; Table context: 6.0 m; | Front Yard 6.0 m; | Front Yard | Not Permitted; Not Permitted; Not Permitted; Not Permitted",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_016_r002",
+      "section": "",
+      "page": 149,
+      "text": "Heading: 6.0 m; Table context: 6.0 m; | Rear Yard 6.0 m; | Rear Yard | 1.2 m; 1.2 m; 1.8 m; 1.8 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_016_r003",
+      "section": "",
+      "page": 149,
+      "text": "Heading: 6.0 m; Table context: 6.0 m; | Side Yard 6.0 m; | Side Yard | 1.0 m; 1.0 m; 1.0 m; 1.0 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_016_r004",
+      "section": "",
+      "page": 149,
+      "text": "Heading: 6.0 m; Table context: 6.0 m; | Street Side Yard 6.0 m; | Street Side Yard | n/a; 3.6 m; n/a; 3.6 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_016_r005",
+      "section": "",
+      "page": 149,
+      "text": "Heading: 6.0 m; Table context: 6.0 m; 6.0 m; | Other Accessory Buildings & Structures > 10 sq. m: Other Accessory Buildings & Structures; ≤; 10 sq. m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_016_r006",
+      "section": "",
+      "page": 149,
+      "text": "Heading: 6.0 m; Table context: 6.0 m; | Front Yard 6.0 m; | Front Yard | 18.0 m; 18.0 m; 18.0 m; 18.0 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_016_r007",
+      "section": "",
+      "page": 149,
+      "text": "Heading: 6.0 m; Table context: 6.0 m; | Rear Yard 6.0 m; | Rear Yard | 0 m; 0 m; 0 m; 0 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_016_r008",
+      "section": "",
+      "page": 149,
+      "text": "Heading: 6.0 m; Table context: 6.0 m; | Side Yard 6.0 m; | Side Yard | 0 m; 0 m; 0 m; 0 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_016_r009",
+      "section": "",
+      "page": 149,
+      "text": "Heading: 6.0 m; Table context: 6.0 m; | Street Side Yard 6.0 m; | Street Side Yard | n/a; 1.8 m; n/a; 1.8 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r001",
+      "section": "",
+      "page": 151,
+      "text": "Table context: Single Family Dwelling\nwith or without a\nSecondary Suite Single Family Dwelling\nwith or without a\nSecondary Suite | Building Height with sloped roof; Requirement: Must not exceed 9 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r002",
+      "section": "",
+      "page": 151,
+      "text": "Building height where any portion of\nthe roof has a slope less than < 1:4; Requirement: Must not exceed 7.3 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r003",
+      "section": "",
+      "page": 151,
+      "text": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing; Requirement: Must not exceed 10 m1",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r004",
+      "section": "",
+      "page": 151,
+      "text": "Table context: Duplex with or without\na Secondary Suite Duplex with or without\na Secondary Suite | Building Height with sloped roof; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 11 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r005",
+      "section": "",
+      "page": 151,
+      "text": "Building height where any portion of\nthe roof has a slope less than < 1:4; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 9.3 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r006",
+      "section": "",
+      "page": 151,
+      "text": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 12 m1",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r007",
+      "section": "",
+      "page": 151,
+      "text": "Table context: Houseplex Houseplex | Building Height with sloped roof; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 9 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r008",
+      "section": "",
+      "page": 151,
+      "text": "Building height where any portion of\nthe roof has a slope less than < 1:4; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 7.3 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r009",
+      "section": "",
+      "page": 151,
+      "text": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 12 m1",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r010",
+      "section": "",
+      "page": 151,
+      "text": "Table context: Coach House or\nGarden Suite Coach House or\nGarden Suite | Building height with sloped roof; Requirement: Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 7.0 m and a maximum roof peak\nheight of 8.3 m1",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r011",
+      "section": "",
+      "page": 151,
+      "text": "Building height where any portion of\nthe roof has a slope less than < 1:4; Requirement: Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 6.5 m",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_017_r012",
+      "section": "",
+      "page": 151,
+      "text": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing; Requirement: Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 8.5 m1",
+      "evidence_type": "table_row"
+    },
+    {
+      "chunk_id": "surrey_r3_table_018_r001",
+      "section": "",
+      "page": 151,
+      "text": "Table context: Structures | Must not exceed 4, but may be\nincreased to 5 m where the roof\nslope and construction materials of\nan accessory building are the same\nas that of the principal building Structures | Must not exceed 4, but may be\nincreased to 5 m where the roof\nslope and construction materials of\nan accessory building are the same\nas that of the principal building: Must not exceed 4 m",
+      "evidence_type": "table_cell"
+    }
+  ]
+}

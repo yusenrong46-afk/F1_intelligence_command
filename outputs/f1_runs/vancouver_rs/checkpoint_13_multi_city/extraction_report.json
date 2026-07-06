@@ -1,0 +1,24 @@
+{
+  "all_candidates_review_needed": true,
+  "artifact": "extraction_report.json",
+  "candidate_count": 3,
+  "method": "retrieval_measurement_candidate_extractor",
+  "note": "Checkpoint 4 extraction proposes structured candidates only; verification is a later gate.",
+  "promoted_count": 0,
+  "schema_version": "f1.artifacts.v0",
+  "skipped": [
+    {
+      "query": "maximum height",
+      "reason": "no_measurement_hit"
+    },
+    {
+      "query": "dwelling units",
+      "reason": "no_measurement_hit"
+    },
+    {
+      "query": "building separation",
+      "reason": "no_measurement_hit"
+    }
+  ],
+  "skipped_count": 3
+}

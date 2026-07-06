@@ -1,0 +1,5714 @@
+[
+  {
+    "chunk_id": "surrey_r3_4_001",
+    "page": 143,
+    "section": "4",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "General Provisions.",
+    "evidence_type": "clause",
+    "metadata": {
+      "evidence_type": "clause",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "extract_clauses",
+      "source_layer": "m7_full_bylaw_source",
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_001_r001",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "Part 15",
+    "cell_value": "Urban Residential Zone",
+    "text": "Part 15: Urban Residential Zone",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Urban Residential Zone",
+          "column_header": "Part 15"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 1,
+      "target_alias_hit": true,
+      "discovery_score": 8.0,
+      "discovery_confidence": 0.667,
+      "lane": "context_only",
+      "selected_because": [
+        "target_term_hit:target_concept_terms",
+        "target_term_hit:urban residential zone"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r001",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "Maximum",
+    "cell_value": "Number of",
+    "text": "Maximum: Number of",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Number of",
+          "column_header": "Maximum"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": false,
+      "discovery_score": 1.0,
+      "discovery_confidence": 0.083,
+      "lane": "context_only",
+      "selected_because": [
+        "rule_cue_signal"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r002",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "Maximum",
+    "cell_value": "Dwelling",
+    "text": "Maximum: Dwelling",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Dwelling",
+          "column_header": "Maximum"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": false,
+      "discovery_score": 1.0,
+      "discovery_confidence": 0.083,
+      "lane": "context_only",
+      "selected_because": [
+        "rule_cue_signal"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r003",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "Maximum",
+    "cell_value": "Units1",
+    "text": "Maximum: Units1",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Units1",
+          "column_header": "Maximum"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": false,
+      "discovery_score": 1.0,
+      "discovery_confidence": 0.083,
+      "lane": "context_only",
+      "selected_because": [
+        "rule_cue_signal"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r004",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "(a) ≥ 4,050 sq.\nm",
+    "column_header": "",
+    "cell_value": "",
+    "text": "(a) ≥ 4,050 sq.\nm | Lot Location: i. All Areas; Up to 2; Principal Uses: Single Family Dwelling; Accessory\nUses: Secondary\nSuite6\nGarden Suite\nCoach House\nBed and\nBreakfast4\nBoarders or\nLodgers4\nShort-Term\nRental5",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "i. All Areas",
+          "column_header": "Lot Location"
+        },
+        {
+          "cell_value": "Up to 2",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Single Family Dwelling",
+          "column_header": "Principal Uses"
+        },
+        {
+          "cell_value": "Secondary\nSuite6\nGarden Suite\nCoach House\nBed and\nBreakfast4\nBoarders or\nLodgers4\nShort-Term\nRental5",
+          "column_header": "Accessory\nUses"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": true,
+      "discovery_score": 16.5,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:coach house",
+        "target_term_hit:garden suite",
+        "target_term_hit:single family dwelling",
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r005",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "(b) < 4,050 sq. m\nand ≥ 280 sq.\nm",
+    "column_header": "",
+    "cell_value": "",
+    "text": "(b) < 4,050 sq. m\nand ≥ 280 sq.\nm | Lot Location: i. Inside Transit-\nOriented Areas2; Up to 2; Principal Uses: Single Family Dwelling",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "i. Inside Transit-\nOriented Areas2",
+          "column_header": "Lot Location"
+        },
+        {
+          "cell_value": "Up to 2",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Single Family Dwelling",
+          "column_header": "Principal Uses"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 2,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": true,
+      "discovery_score": 8.5,
+      "discovery_confidence": 0.708,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:single family dwelling",
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r006",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Lot Location: ii. All areas, except\nB.1.(b)i and iii; Up to 4; Single Family Dwelling",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "ii. All areas, except\nB.1.(b)i and iii",
+          "column_header": "Lot Location"
+        },
+        {
+          "cell_value": "Up to 4",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Single Family Dwelling",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": true,
+      "discovery_score": 4.0,
+      "discovery_confidence": 0.333,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:single family dwelling"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r007",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "or",
+    "text": "or",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "or",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r008",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "Duplex",
+    "text": "Duplex",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Duplex",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": true,
+      "discovery_score": 4.0,
+      "discovery_confidence": 0.333,
+      "lane": "context_only",
+      "selected_because": [
+        "target_term_hit:duplex"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r009",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "or",
+    "text": "or",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "or",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r010",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "Houseplex3",
+    "text": "Houseplex3",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Houseplex3",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": true,
+      "discovery_score": 4.0,
+      "discovery_confidence": 0.333,
+      "lane": "context_only",
+      "selected_because": [
+        "target_term_hit:houseplex"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r011",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Lot Location: iii. Eligible lots\nwithin Frequent\nBus Stop Areas; Up to 6; Single Family Dwelling",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "iii. Eligible lots\nwithin Frequent\nBus Stop Areas",
+          "column_header": "Lot Location"
+        },
+        {
+          "cell_value": "Up to 6",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Single Family Dwelling",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": true,
+      "discovery_score": 4.0,
+      "discovery_confidence": 0.333,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:single family dwelling"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r012",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "or",
+    "text": "or",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "or",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r013",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "Duplex",
+    "text": "Duplex",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Duplex",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": true,
+      "discovery_score": 4.0,
+      "discovery_confidence": 0.333,
+      "lane": "context_only",
+      "selected_because": [
+        "target_term_hit:duplex"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r014",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "or",
+    "text": "or",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "or",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r015",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "Houseplex3",
+    "text": "Houseplex3",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Houseplex3",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": true,
+      "discovery_score": 4.0,
+      "discovery_confidence": 0.333,
+      "lane": "context_only",
+      "selected_because": [
+        "target_term_hit:houseplex"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r016",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "(c) < 280 sq. m",
+    "column_header": "",
+    "cell_value": "",
+    "text": "(c) < 280 sq. m | i. Inside Transit-; Up to 2; Principal Uses: Single Family Dwelling",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "i. Inside Transit-",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Up to 2",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Single Family Dwelling",
+          "column_header": "Principal Uses"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": true,
+      "discovery_score": 8.5,
+      "discovery_confidence": 0.708,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:single family dwelling",
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r017",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "Oriented",
+    "text": "Oriented",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Oriented",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r018",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "Areas2",
+    "text": "Areas2",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Areas2",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r019",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "ii. All areas, except; Up to 3; Principal Uses: Single Family Dwelling",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "ii. All areas, except",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Up to 3",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Single Family Dwelling",
+          "column_header": "Principal Uses"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": true,
+      "discovery_score": 4.0,
+      "discovery_confidence": 0.333,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:single family dwelling"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_002_r020",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "B.1.(c)i",
+    "text": "B.1.(c)i",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "B.1.(c)i",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 2,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_003_r001",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Uses",
+    "column_header": "",
+    "cell_value": "Uses",
+    "text": "Uses | Uses",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Uses",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 3,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_004_r001",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Oriented Areas2",
+    "column_header": "",
+    "cell_value": "Oriented Areas2",
+    "text": "Oriented Areas2 | Oriented Areas2",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Oriented Areas2",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 4,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_005_r001",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "B.1.(b)i and iii",
+    "column_header": "",
+    "cell_value": "B.1.(b)i and iii",
+    "text": "B.1.(b)i and iii | B.1.(b)i and iii",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "B.1.(b)i and iii",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 5,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_006_r001",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "within Frequent",
+    "column_header": "",
+    "cell_value": "within Frequent",
+    "text": "within Frequent | within Frequent",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "within Frequent",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 6,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_006_r002",
+    "page": 143,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Bus Stop Areas",
+    "column_header": "",
+    "cell_value": "Bus Stop Areas",
+    "text": "Bus Stop Areas | Bus Stop Areas",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Bus Stop Areas",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 6,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_007_r001",
+    "page": 144,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Lot Area",
+    "column_header": "Minimum Requirement",
+    "cell_value": "560 sq. m",
+    "text": "Lot Area | Minimum Requirement: 560 sq. m",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "560 sq. m",
+          "column_header": "Minimum Requirement"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 7,
+      "target_alias_hit": false,
+      "discovery_score": 7.5,
+      "discovery_confidence": 0.625,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_007_r002",
+    "page": 144,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Lot Width",
+    "column_header": "Minimum Requirement",
+    "cell_value": "15 m",
+    "text": "Lot Width | Minimum Requirement: 15 m",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "15 m",
+          "column_header": "Minimum Requirement"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 7,
+      "target_alias_hit": false,
+      "discovery_score": 6.0,
+      "discovery_confidence": 0.5,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_007_r003",
+    "page": 144,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Lot Depth",
+    "column_header": "Minimum Requirement",
+    "cell_value": "28 m",
+    "text": "Lot Depth | Minimum Requirement: 28 m",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "28 m",
+          "column_header": "Minimum Requirement"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 7,
+      "target_alias_hit": false,
+      "discovery_score": 6.0,
+      "discovery_confidence": 0.5,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_008_r001",
+    "page": 144,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "Floor Area Ratio1, Floor Area",
+    "cell_value": "and Building Size Requirements",
+    "text": "Floor Area Ratio1, Floor Area: and Building Size Requirements",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "and Building Size Requirements",
+          "column_header": "Floor Area Ratio1, Floor Area"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 8,
+      "target_alias_hit": true,
+      "discovery_score": 7.0,
+      "discovery_confidence": 0.583,
+      "lane": "context_only",
+      "selected_because": [
+        "target_term_hit:target_concept_terms",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_008_r002",
+    "page": 144,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "(a) Single Family\nDwelling2 with\nor without a\nSecondary Suite",
+    "column_header": "",
+    "cell_value": "",
+    "text": "(a) Single Family\nDwelling2 with\nor without a\nSecondary Suite | Lot Size: i. All lots; a. The floor area ratio must not exceed 0.60 for the first\n560 sq. m of lot area and 0.35 for the remaining lot\narea in excess of 560 sq. m, provided a minimum of 39\nsq. m. of the total floor area is used only as a garage or\ncarport, except for eligible lots within frequent bus\nstop areas where a garage or carport is not required.\nb. Despite Section D.2.(a)i.a., single family dwellings must\nhave a minimum ground level floor area of 84 sq. m and\na minimum building width of 7 m., and must not exceed\na maximum floor area is 465 sq. m.",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "i. All lots",
+          "column_header": "Lot Size"
+        },
+        {
+          "cell_value": "a. The floor area ratio must not exceed 0.60 for the first\n560 sq. m of lot area and 0.35 for the remaining lot\narea in excess of 560 sq. m, provided a minimum of 39\nsq. m. of the total floor area is used only as a garage or\ncarport, except for eligible lots within frequent bus\nstop areas where a garage or carport is not required.\nb. Despite Section D.2.(a)i.a., single family dwellings must\nhave a minimum ground level floor area of 84 sq. m and\na minimum building width of 7 m., and must not exceed\na maximum floor area is 465 sq. m.",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 6,
+      "rule_cue_count": 16,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 8,
+      "target_alias_hit": true,
+      "discovery_score": 20.5,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:secondary suite",
+        "target_term_hit:single family dwelling",
+        "target_term_hit:target_concept_terms",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r001",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "(c) Houseplex",
+    "column_header": "",
+    "cell_value": "",
+    "text": "(c) Houseplex | i. All lots: i. All lots; a. The floor area ratio must not exceed 1.0, provided a\nminimum of 44 sq. m. of the total floor area is used only\nas a garage or carport within the duplex, except for\neligible lots within frequent bus stop areas where a\ngarage or carport is not required.\nb. Despite the definition of floor area ratio, basements are\nincluded in the floor area ratio calculation for duplexes.\nc. Despite Section D.2.(b)i.a., duplexes must have a\nminimum ground level floor area of 84 sq. m and a\nminimum building width of 7 m, and must not exceed a\nmaximum floor area of 560 sq. m including basements.: a. The floor area ratio must not exceed 1.0 for the first\n560 sq. m of lot area and 0.60 for the remaining lot\narea in excess of 560 sq. m, provided a minimum of 22\nsq. m of the total floor area of each dwelling unit is\nused only as a garage or carport for the houseplex,\nexcept for eligible lots within frequent bus stop areas\nwhere a garage or carport is not required.\nb. Despite the definition of floor area ratio, basements\nare not included in the floor area ratio calculation for a\nhouseplex.\nc. Despite Section D.2.(c)i.a., a houseplex must have a\nminimum ground level floor area of 84 sq. m and a\nminimum building width of 15 m, and must not exceed\na maximum floor area is 600 sq. m not including\nbasements, provided a minimum of 22 sq. m. of the\nfloor area of each dwelling unit is used only as a garage\nor carport, except for eligible lots within frequent bus\nstop areas where a garage or carport is not required.",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "i. All lots",
+          "column_header": "i. All lots"
+        },
+        {
+          "cell_value": "a. The floor area ratio must not exceed 1.0 for the first\n560 sq. m of lot area and 0.60 for the remaining lot\narea in excess of 560 sq. m, provided a minimum of 22\nsq. m of the total floor area of each dwelling unit is\nused only as a garage or carport for the houseplex,\nexcept for eligible lots within frequent bus stop areas\nwhere a garage or carport is not required.\nb. Despite the definition of floor area ratio, basements\nare not included in the floor area ratio calculation for a\nhouseplex.\nc. Despite Section D.2.(c)i.a., a houseplex must have a\nminimum ground level floor area of 84 sq. m and a\nminimum building width of 15 m, and must not exceed\na maximum floor area is 600 sq. m not including\nbasements, provided a minimum of 22 sq. m. of the\nfloor area of each dwelling unit is used only as a garage\nor carport, except for eligible lots within frequent bus\nstop areas where a garage or carport is not required.",
+          "column_header": "a. The floor area ratio must not exceed 1.0, provided a\nminimum of 44 sq. m. of the total floor area is used only\nas a garage or carport within the duplex, except for\neligible lots within frequent bus stop areas where a\ngarage or carport is not required.\nb. Despite the definition of floor area ratio, basements are\nincluded in the floor area ratio calculation for duplexes.\nc. Despite Section D.2.(b)i.a., duplexes must have a\nminimum ground level floor area of 84 sq. m and a\nminimum building width of 7 m, and must not exceed a\nmaximum floor area of 560 sq. m including basements."
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 11,
+      "rule_cue_count": 37,
+      "rule_types": [
+        "dimensional_standard",
+        "definition"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": true,
+      "discovery_score": 24.5,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:duplex",
+        "target_term_hit:frequent bus stop area",
+        "target_term_hit:houseplex",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r002",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "(d) Coach House",
+    "column_header": "",
+    "cell_value": "",
+    "text": "(d) Coach House | i. All lots: i. Not\napplicable; a. The floor area of a coach house is permitted in addition",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "i. Not\napplicable",
+          "column_header": "i. All lots"
+        },
+        {
+          "cell_value": "a. The floor area of a coach house is permitted in addition",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 0,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": true,
+      "discovery_score": 4.75,
+      "discovery_confidence": 0.396,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:coach house",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r003",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "to the floor area ratio permitted for single family",
+    "text": "to the floor area ratio permitted for single family",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "to the floor area ratio permitted for single family",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": true,
+      "discovery_score": 5.5,
+      "discovery_confidence": 0.458,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:target_concept_terms",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r004",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "dwellings, duplexes and houseplexes in Sections D.2.(a),",
+    "text": "dwellings, duplexes and houseplexes in Sections D.2.(a),",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "dwellings, duplexes and houseplexes in Sections D.2.(a),",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": true,
+      "discovery_score": 8.0,
+      "discovery_confidence": 0.667,
+      "lane": "context_only",
+      "selected_because": [
+        "target_term_hit:duplex",
+        "target_term_hit:houseplex"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r005",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "(b) and (c) provided that a coach house must have a",
+    "text": "(b) and (c) provided that a coach house must have a",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "(b) and (c) provided that a coach house must have a",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "general_rule"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": true,
+      "discovery_score": 5.5,
+      "discovery_confidence": 0.458,
+      "lane": "context_only",
+      "selected_because": [
+        "target_term_hit:coach house",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r006",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "minimum floor area of 35 sq.m. and a maximum total",
+    "text": "minimum floor area of 35 sq.m. and a maximum total",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "minimum floor area of 35 sq.m. and a maximum total",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 3,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": true,
+      "discovery_score": 12.5,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:target_concept_terms",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r007",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "floor area of 75 sq. m., excluding the garage or carport.",
+    "text": "floor area of 75 sq. m., excluding the garage or carport.",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "floor area of 75 sq. m., excluding the garage or carport.",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": false,
+      "discovery_score": 6.0,
+      "discovery_confidence": 0.5,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r008",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "b. Despite D.2(d)i.a., if the floor area of the single family",
+    "text": "b. Despite D.2(d)i.a., if the floor area of the single family",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "b. Despite D.2(d)i.a., if the floor area of the single family",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": false,
+      "discovery_score": 1.0,
+      "discovery_confidence": 0.083,
+      "lane": "context_only",
+      "selected_because": [
+        "rule_cue_signal"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r009",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "dwelling, duplex or houseplex in Sections D.2.(a), (b)",
+    "text": "dwelling, duplex or houseplex in Sections D.2.(a), (b)",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "dwelling, duplex or houseplex in Sections D.2.(a), (b)",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": true,
+      "discovery_score": 8.0,
+      "discovery_confidence": 0.667,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:duplex",
+        "target_term_hit:houseplex"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r010",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "and (c) has not achieved the maximum floor area on the",
+    "text": "and (c) has not achieved the maximum floor area on the",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "and (c) has not achieved the maximum floor area on the",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": true,
+      "discovery_score": 7.0,
+      "discovery_confidence": 0.583,
+      "lane": "context_only",
+      "selected_because": [
+        "target_term_hit:target_concept_terms",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r011",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "lot, the remainder of the floor area may be used for the",
+    "text": "lot, the remainder of the floor area may be used for the",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "lot, the remainder of the floor area may be used for the",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": true,
+      "discovery_score": 5.5,
+      "discovery_confidence": 0.458,
+      "lane": "context_only",
+      "selected_because": [
+        "target_term_hit:target_concept_terms",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_009_r012",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "coach house up to a maximum size of 120 sq.m.",
+    "text": "coach house up to a maximum size of 120 sq.m.",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "coach house up to a maximum size of 120 sq.m.",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 9,
+      "target_alias_hit": true,
+      "discovery_score": 10.0,
+      "discovery_confidence": 0.833,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:coach house",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_010_r001",
+    "page": 145,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "applicable",
+    "column_header": "",
+    "cell_value": "applicable",
+    "text": "applicable | applicable",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "applicable",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 10,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_011_r001",
+    "page": 146,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "a. The floor area of a garden suite is permitted in addition",
+    "cell_value": "to the floor area ratio permitted for single family",
+    "text": "a. The floor area of a garden suite is permitted in addition: to the floor area ratio permitted for single family",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "to the floor area ratio permitted for single family",
+          "column_header": "a. The floor area of a garden suite is permitted in addition"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 11,
+      "target_alias_hit": true,
+      "discovery_score": 11.0,
+      "discovery_confidence": 0.917,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:garden suite",
+        "target_term_hit:target_concept_terms",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_011_r002",
+    "page": 146,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "a. The floor area of a garden suite is permitted in addition",
+    "cell_value": "dwellings, duplexes and houseplexes in Sections D.2.(a),",
+    "text": "a. The floor area of a garden suite is permitted in addition: dwellings, duplexes and houseplexes in Sections D.2.(a),",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "dwellings, duplexes and houseplexes in Sections D.2.(a),",
+          "column_header": "a. The floor area of a garden suite is permitted in addition"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 11,
+      "target_alias_hit": true,
+      "discovery_score": 17.5,
+      "discovery_confidence": 1.0,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:duplex",
+        "target_term_hit:garden suite",
+        "target_term_hit:houseplex",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_011_r003",
+    "page": 146,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "a. The floor area of a garden suite is permitted in addition",
+    "cell_value": "(b) and (c), provided that a garden suite must have a",
+    "text": "a. The floor area of a garden suite is permitted in addition: (b) and (c), provided that a garden suite must have a",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "(b) and (c), provided that a garden suite must have a",
+          "column_header": "a. The floor area of a garden suite is permitted in addition"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 11,
+      "target_alias_hit": true,
+      "discovery_score": 11.0,
+      "discovery_confidence": 0.917,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:garden suite",
+        "target_term_hit:target_concept_terms",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_011_r004",
+    "page": 146,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "a. The floor area of a garden suite is permitted in addition",
+    "cell_value": "minimum floor area of 35 sq.m. and a maximum total",
+    "text": "a. The floor area of a garden suite is permitted in addition: minimum floor area of 35 sq.m. and a maximum total",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "minimum floor area of 35 sq.m. and a maximum total",
+          "column_header": "a. The floor area of a garden suite is permitted in addition"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 4,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 11,
+      "target_alias_hit": true,
+      "discovery_score": 16.5,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:garden suite",
+        "target_term_hit:target_concept_terms",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_011_r005",
+    "page": 146,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "a. The floor area of a garden suite is permitted in addition",
+    "cell_value": "floor area of 75 sq. m.",
+    "text": "a. The floor area of a garden suite is permitted in addition: floor area of 75 sq. m.",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "floor area of 75 sq. m.",
+          "column_header": "a. The floor area of a garden suite is permitted in addition"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 11,
+      "target_alias_hit": true,
+      "discovery_score": 11.5,
+      "discovery_confidence": 0.958,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:garden suite",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_011_r006",
+    "page": 146,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "a. The floor area of a garden suite is permitted in addition",
+    "cell_value": "b. Despite D.2(e)i.a., if the floor area of the single family",
+    "text": "a. The floor area of a garden suite is permitted in addition: b. Despite D.2(e)i.a., if the floor area of the single family",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "b. Despite D.2(e)i.a., if the floor area of the single family",
+          "column_header": "a. The floor area of a garden suite is permitted in addition"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 11,
+      "target_alias_hit": true,
+      "discovery_score": 7.0,
+      "discovery_confidence": 0.583,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:garden suite",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_011_r007",
+    "page": 146,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "a. The floor area of a garden suite is permitted in addition",
+    "cell_value": "dwelling, duplex or houseplex in Sections D.2.(a), (b)",
+    "text": "a. The floor area of a garden suite is permitted in addition: dwelling, duplex or houseplex in Sections D.2.(a), (b)",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "dwelling, duplex or houseplex in Sections D.2.(a), (b)",
+          "column_header": "a. The floor area of a garden suite is permitted in addition"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 11,
+      "target_alias_hit": true,
+      "discovery_score": 13.5,
+      "discovery_confidence": 1.0,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:duplex",
+        "target_term_hit:garden suite",
+        "target_term_hit:houseplex",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_011_r008",
+    "page": 146,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "a. The floor area of a garden suite is permitted in addition",
+    "cell_value": "and (c) has not achieved the maximum floor area on the",
+    "text": "a. The floor area of a garden suite is permitted in addition: and (c) has not achieved the maximum floor area on the",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "and (c) has not achieved the maximum floor area on the",
+          "column_header": "a. The floor area of a garden suite is permitted in addition"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 3,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 11,
+      "target_alias_hit": true,
+      "discovery_score": 12.0,
+      "discovery_confidence": 1.0,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:garden suite",
+        "target_term_hit:target_concept_terms",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_011_r009",
+    "page": 146,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "a. The floor area of a garden suite is permitted in addition",
+    "cell_value": "lot, the remainder of the floor area may be used for the",
+    "text": "a. The floor area of a garden suite is permitted in addition: lot, the remainder of the floor area may be used for the",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "lot, the remainder of the floor area may be used for the",
+          "column_header": "a. The floor area of a garden suite is permitted in addition"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 11,
+      "target_alias_hit": true,
+      "discovery_score": 11.0,
+      "discovery_confidence": 0.917,
+      "lane": "use_permission",
+      "selected_because": [
+        "target_term_hit:garden suite",
+        "target_term_hit:target_concept_terms",
+        "rule_cue_signal"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_011_r010",
+    "page": 146,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "a. The floor area of a garden suite is permitted in addition",
+    "cell_value": "garden suite up to a maximum size of 120 sq.m.",
+    "text": "a. The floor area of a garden suite is permitted in addition: garden suite up to a maximum size of 120 sq.m.",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "garden suite up to a maximum size of 120 sq.m.",
+          "column_header": "a. The floor area of a garden suite is permitted in addition"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "permission",
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 11,
+      "target_alias_hit": true,
+      "discovery_score": 11.5,
+      "discovery_confidence": 0.958,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:garden suite",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_012_r001",
+    "page": 146,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "applicable",
+    "column_header": "",
+    "cell_value": "applicable",
+    "text": "applicable | applicable",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "applicable",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 12,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r001",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Single Family Dwelling\nwith or without a Secondary\nSuite",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Single Family Dwelling\nwith or without a Secondary\nSuite | ≤; 560 sq. m; 40%",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "≤",
+          "column_header": ""
+        },
+        {
+          "cell_value": "560 sq. m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "40%",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": true,
+      "discovery_score": 8.5,
+      "discovery_confidence": 0.708,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:single family dwelling",
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r002",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Lot Size: > 560 sq. m but ≤ 1,262 sq. m; 40% reduced at a rate of 2% for each",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 560 sq. m but ≤ 1,262 sq. m",
+          "column_header": "Lot Size"
+        },
+        {
+          "cell_value": "40% reduced at a rate of 2% for each",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 2,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r003",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "93 sq. m of additional lot area until",
+    "text": "93 sq. m of additional lot area until",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "93 sq. m of additional lot area until",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": false,
+      "discovery_score": 6.0,
+      "discovery_confidence": 0.5,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r004",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "25% is reached",
+    "text": "25% is reached",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "25% is reached",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 0,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": false,
+      "discovery_score": 0.0,
+      "discovery_confidence": 0.0,
+      "lane": "context_only",
+      "selected_because": [],
+      "discovery_selected": false,
+      "selection_tier": "discarded_low_score",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r005",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Lot Size: > 1,262 sq. m; 25%",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 1,262 sq. m",
+          "column_header": "Lot Size"
+        },
+        {
+          "cell_value": "25%",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r006",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Single Family Dwelling\nwith or without a Secondary\nSuite, Coach House, or\nGarden Suite",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Single Family Dwelling\nwith or without a Secondary\nSuite, Coach House, or\nGarden Suite | ≤; 560 sq. m; Maximum Lot Coverage: 50%",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "≤",
+          "column_header": ""
+        },
+        {
+          "cell_value": "560 sq. m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "50%",
+          "column_header": "Maximum Lot Coverage"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": true,
+      "discovery_score": 18.0,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:coach house",
+        "target_term_hit:garden suite",
+        "target_term_hit:single family dwelling",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r007",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Lot Size: > 560 sq. m. but ≤ 1,262 sq. m; Maximum Lot Coverage: 50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n30% is reached",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 560 sq. m. but ≤ 1,262 sq. m",
+          "column_header": "Lot Size"
+        },
+        {
+          "cell_value": "50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n30% is reached",
+          "column_header": "Maximum Lot Coverage"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 3,
+      "rule_cue_count": 3,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": true,
+      "discovery_score": 10.75,
+      "discovery_confidence": 0.896,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:target_concept_terms",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r008",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Lot Size: > 1,262 sq. m; Maximum Lot Coverage: 30%",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 1,262 sq. m",
+          "column_header": "Lot Size"
+        },
+        {
+          "cell_value": "30%",
+          "column_header": "Maximum Lot Coverage"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": false,
+      "discovery_score": 6.0,
+      "discovery_confidence": 0.5,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r009",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Duplex with or without a\nSecondary Suite",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Duplex with or without a\nSecondary Suite | ≤; 560 sq. m; Maximum Lot Coverage: 50%",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "≤",
+          "column_header": ""
+        },
+        {
+          "cell_value": "560 sq. m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "50%",
+          "column_header": "Maximum Lot Coverage"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": true,
+      "discovery_score": 14.0,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:duplex",
+        "target_term_hit:secondary suite",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r010",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Lot Size: > 560 sq. m but ≤ 1,262 sq. m; Maximum Lot Coverage: 50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 560 sq. m but ≤ 1,262 sq. m",
+          "column_header": "Lot Size"
+        },
+        {
+          "cell_value": "50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+          "column_header": "Maximum Lot Coverage"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 3,
+      "rule_cue_count": 3,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": true,
+      "discovery_score": 10.75,
+      "discovery_confidence": 0.896,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:target_concept_terms",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r011",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Lot Size: > 1,262 sq. m; Maximum Lot Coverage: 35%",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 1,262 sq. m",
+          "column_header": "Lot Size"
+        },
+        {
+          "cell_value": "35%",
+          "column_header": "Maximum Lot Coverage"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": false,
+      "discovery_score": 6.0,
+      "discovery_confidence": 0.5,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r012",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Duplex with or without a\nSecondary Suite, Coach\nHouse, or Garden Suite",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Duplex with or without a\nSecondary Suite, Coach\nHouse, or Garden Suite | ≤; 560 sq. m; Maximum Lot Coverage: 50%",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "≤",
+          "column_header": ""
+        },
+        {
+          "cell_value": "560 sq. m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "50%",
+          "column_header": "Maximum Lot Coverage"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": true,
+      "discovery_score": 18.0,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:duplex",
+        "target_term_hit:garden suite",
+        "target_term_hit:secondary suite",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r013",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Lot Size: > 560 sq. m but ≤ 1,262 sq. m; Maximum Lot Coverage: 50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 560 sq. m but ≤ 1,262 sq. m",
+          "column_header": "Lot Size"
+        },
+        {
+          "cell_value": "50% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+          "column_header": "Maximum Lot Coverage"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 3,
+      "rule_cue_count": 3,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": true,
+      "discovery_score": 10.75,
+      "discovery_confidence": 0.896,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:target_concept_terms",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_013_r014",
+    "page": 147,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Lot Size: > 1,262 sq. m; Maximum Lot Coverage: 35%",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 1,262 sq. m",
+          "column_header": "Lot Size"
+        },
+        {
+          "cell_value": "35%",
+          "column_header": "Maximum Lot Coverage"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 2,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 13,
+      "target_alias_hit": false,
+      "discovery_score": 6.0,
+      "discovery_confidence": 0.5,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_014_r001",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | > 560 sq. m but ≤ 1,262 sq. m; 60%: 60% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 560 sq. m but ≤ 1,262 sq. m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "60% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+          "column_header": "60%"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 4,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 14,
+      "target_alias_hit": true,
+      "discovery_score": 9.25,
+      "discovery_confidence": 0.771,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:target_concept_terms",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_014_r002",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | > 1,262 sq. m; 60%: 35%",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 1,262 sq. m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "35%",
+          "column_header": "60%"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 2,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 14,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_014_r003",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Houseplex with or without a\nSecondary Suite or Coach\nHouse",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Houseplex with or without a\nSecondary Suite or Coach\nHouse | ≤: ≤; 560 sq. m: 560 sq. m; 60%: 60%",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "≤",
+          "column_header": "≤"
+        },
+        {
+          "cell_value": "560 sq. m",
+          "column_header": "560 sq. m"
+        },
+        {
+          "cell_value": "60%",
+          "column_header": "60%"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 3,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 14,
+      "target_alias_hit": true,
+      "discovery_score": 12.5,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:houseplex",
+        "target_term_hit:secondary suite",
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_014_r004",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | > 560 sq. m but ≤ 1,262 sq. m; 60%: 60% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 560 sq. m but ≤ 1,262 sq. m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "60% reduced at a rate of 2% for each\n93 sq. m of additional lot area until\n35% is reached",
+          "column_header": "60%"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 4,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 14,
+      "target_alias_hit": true,
+      "discovery_score": 9.25,
+      "discovery_confidence": 0.771,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:target_concept_terms",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_014_r005",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | > 1,262 sq. m; 60%: 35%",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "> 1,262 sq. m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "35%",
+          "column_header": "60%"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 2,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 14,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r001",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Building: Type; Interior Lot: 1\nLane Access; Corner Lot: Lane Access; Interior Lot: No Lane; Corner Lot: No Lane",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Type",
+          "column_header": "Building"
+        },
+        {
+          "cell_value": "1\nLane Access",
+          "column_header": "Interior Lot"
+        },
+        {
+          "cell_value": "Lane Access",
+          "column_header": "Corner Lot"
+        },
+        {
+          "cell_value": "No Lane",
+          "column_header": "Interior Lot"
+        },
+        {
+          "cell_value": "No Lane",
+          "column_header": "Corner Lot"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r002",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "",
+    "column_header": "Building",
+    "cell_value": "Single Family Dwelling with or without a Secondary Suite",
+    "text": "3.5 m | Building: Single Family Dwelling with or without a Secondary Suite",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Single Family Dwelling with or without a Secondary Suite",
+          "column_header": "Building"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": true,
+      "discovery_score": 12.5,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:secondary suite",
+        "target_term_hit:single family dwelling",
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r003",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Front Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Front Yard | 6.5 m; 6.5 m; 6.5 m; 6.5 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "6.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "6.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "6.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "6.5 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r004",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Rear Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Rear Yard | 7.5 m; 7.5 m; 7.5 m; 7.5 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "7.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "7.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "7.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "7.5 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r005",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Side Yard | 1.8 m; 1.8 m; 1.8 m; 1.8 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r006",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Street Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Street Side Yard | n/a; 3.6 m; n/a; 3.6 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "n/a",
+          "column_header": ""
+        },
+        {
+          "cell_value": "3.6 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "n/a",
+          "column_header": ""
+        },
+        {
+          "cell_value": "3.6 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 3,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r007",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "",
+    "column_header": "Building",
+    "cell_value": "Duplex with or without a Secondary Suite",
+    "text": "3.5 m | Building: Duplex with or without a Secondary Suite",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Duplex with or without a Secondary Suite",
+          "column_header": "Building"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": true,
+      "discovery_score": 12.5,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:duplex",
+        "target_term_hit:secondary suite",
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r008",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Front Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Front Yard | 6.0 m; 6.0 m; 6.0 m; 6.0 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "6.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "6.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "6.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "6.0 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r009",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Rear Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Rear Yard | 7.5 m; 7.5 m; 7.5 m; 7.5 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "7.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "7.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "7.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "7.5 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r010",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Side Yard | 1.2 m; 1.2 m; 1.2 m; 1.2 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r011",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Street Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Street Side Yard | n/a; 2.4 m; n/a; 2.4 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "n/a",
+          "column_header": ""
+        },
+        {
+          "cell_value": "2.4 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "n/a",
+          "column_header": ""
+        },
+        {
+          "cell_value": "2.4 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 3,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r012",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "",
+    "column_header": "Building",
+    "cell_value": "Houseplex",
+    "text": "3.5 m | Building: Houseplex",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Houseplex",
+          "column_header": "Building"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": true,
+      "discovery_score": 8.5,
+      "discovery_confidence": 0.708,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:houseplex",
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r013",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Front Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Front Yard | 3.5 m; 3.5 m; Not Permitted; 3.5 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "3.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "3.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        },
+        {
+          "cell_value": "3.5 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 4,
+      "rule_cue_count": 0,
+      "rule_types": [
+        "permission"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r014",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Rear Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Rear Yard | 7.5 m; 7.5 m; 7.5 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "7.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "7.5 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "7.5 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 4,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r015",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Side Yard | 1.2 m; 1.2 m; 1.2 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 4,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r016",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Street Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Street Side Yard | n/a; 2.4 m; 2.4 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "n/a",
+          "column_header": ""
+        },
+        {
+          "cell_value": "2.4 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "2.4 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 3,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r017",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "",
+    "column_header": "Building",
+    "cell_value": "Coach House",
+    "text": "3.5 m | Building: Coach House",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Coach House",
+          "column_header": "Building"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": true,
+      "discovery_score": 8.5,
+      "discovery_confidence": 0.708,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:coach house",
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r018",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Front Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Front Yard | Not Permitted; Not Permitted; Not Permitted; Not Permitted",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [
+        "permission"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "weak_context",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r019",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Rear Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Rear Yard | 1.2 m; 1.2 m; 1.8 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 4,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r020",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Side Yard | 1.2 m; 1.2 m; 1.8m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 4,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r021",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Street Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Street Side Yard | 2.4 m; 2.4 m; 2.4 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "2.4 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "2.4 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "2.4 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 4,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r022",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Separation",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Separation | 5.0 m; 5.0 m; 5.0 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "5.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "5.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "5.0 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 4,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 6.0,
+      "discovery_confidence": 0.5,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r023",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "",
+    "column_header": "Building",
+    "cell_value": "Garden Suite",
+    "text": "3.5 m | Building: Garden Suite",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Garden Suite",
+          "column_header": "Building"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": true,
+      "discovery_score": 8.5,
+      "discovery_confidence": 0.708,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:garden suite",
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r024",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Front Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Front Yard | Not Permitted; Not Permitted; Not Permitted; Not Permitted",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [
+        "permission"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r025",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Rear Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Rear Yard | 1.2 m; 1.2 m; 1.8 m; 1.8 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r026",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Side Yard | 1.8 m; 1.8m; 1.8 m; 1.8m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r027",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Street Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Street Side Yard | 2.4 m; 2.4 m; 2.4 m; 2.4 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "2.4 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "2.4 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "2.4 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "2.4 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_015_r028",
+    "page": 148,
+    "section": "",
+    "heading": "3.5 m",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "3.5 m",
+    "row_header": "Separation",
+    "column_header": "",
+    "cell_value": "",
+    "text": "3.5 m | Separation | 5.0 m; 5.0 m; 5.0 m; 5.0 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "5.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "5.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "5.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "5.0 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 1,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 15,
+      "target_alias_hit": false,
+      "discovery_score": 6.0,
+      "discovery_confidence": 0.5,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_016_r001",
+    "page": 149,
+    "section": "",
+    "heading": "6.0 m;",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "6.0 m;",
+    "row_header": "Front Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "6.0 m; | Front Yard | Not Permitted; Not Permitted; Not Permitted; Not Permitted",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Not Permitted",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 0,
+      "rule_types": [
+        "permission"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 16,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_016_r002",
+    "page": 149,
+    "section": "",
+    "heading": "6.0 m;",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "6.0 m;",
+    "row_header": "Rear Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "6.0 m; | Rear Yard | 1.2 m; 1.2 m; 1.8 m; 1.8 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.2 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 16,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_016_r003",
+    "page": 149,
+    "section": "",
+    "heading": "6.0 m;",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "6.0 m;",
+    "row_header": "Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "6.0 m; | Side Yard | 1.0 m; 1.0 m; 1.0 m; 1.0 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "1.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.0 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 16,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_016_r004",
+    "page": 149,
+    "section": "",
+    "heading": "6.0 m;",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "6.0 m;",
+    "row_header": "Street Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "6.0 m; | Street Side Yard | n/a; 3.6 m; n/a; 3.6 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "n/a",
+          "column_header": ""
+        },
+        {
+          "cell_value": "3.6 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "n/a",
+          "column_header": ""
+        },
+        {
+          "cell_value": "3.6 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 3,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 16,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_016_r005",
+    "page": 149,
+    "section": "",
+    "heading": "6.0 m;",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "6.0 m;",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "6.0 m; | Other Accessory Buildings & Structures > 10 sq. m: Other Accessory Buildings & Structures; ≤; 10 sq. m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Other Accessory Buildings & Structures",
+          "column_header": "Other Accessory Buildings & Structures > 10 sq. m"
+        },
+        {
+          "cell_value": "≤",
+          "column_header": ""
+        },
+        {
+          "cell_value": "10 sq. m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 3,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 16,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_016_r006",
+    "page": 149,
+    "section": "",
+    "heading": "6.0 m;",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "6.0 m;",
+    "row_header": "Front Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "6.0 m; | Front Yard | 18.0 m; 18.0 m; 18.0 m; 18.0 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "18.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "18.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "18.0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "18.0 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 16,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_016_r007",
+    "page": 149,
+    "section": "",
+    "heading": "6.0 m;",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "6.0 m;",
+    "row_header": "Rear Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "6.0 m; | Rear Yard | 0 m; 0 m; 0 m; 0 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "0 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 16,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_016_r008",
+    "page": 149,
+    "section": "",
+    "heading": "6.0 m;",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "6.0 m;",
+    "row_header": "Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "6.0 m; | Side Yard | 0 m; 0 m; 0 m; 0 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "0 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "0 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 5,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 16,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_016_r009",
+    "page": 149,
+    "section": "",
+    "heading": "6.0 m;",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "6.0 m;",
+    "row_header": "Street Side Yard",
+    "column_header": "",
+    "cell_value": "",
+    "text": "6.0 m; | Street Side Yard | n/a; 1.8 m; n/a; 1.8 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "n/a",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        },
+        {
+          "cell_value": "n/a",
+          "column_header": ""
+        },
+        {
+          "cell_value": "1.8 m",
+          "column_header": ""
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 3,
+      "rule_cue_count": 0,
+      "rule_types": [],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 16,
+      "target_alias_hit": false,
+      "discovery_score": 4.5,
+      "discovery_confidence": 0.375,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r001",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Single Family Dwelling\nwith or without a\nSecondary Suite",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Single Family Dwelling\nwith or without a\nSecondary Suite | Building Height with sloped roof; Requirement: Must not exceed 9 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building Height with sloped roof",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 9 m",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 3,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": true,
+      "discovery_score": 14.75,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:secondary suite",
+        "target_term_hit:single family dwelling",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r002",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Building height where any portion of\nthe roof has a slope less than < 1:4; Requirement: Must not exceed 7.3 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building height where any portion of\nthe roof has a slope less than < 1:4",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 7.3 m",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 3,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": false,
+      "discovery_score": 6.75,
+      "discovery_confidence": 0.562,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "medium"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r003",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing; Requirement: Must not exceed 10 m1",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 10 m1",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 0,
+      "rule_cue_count": 3,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": false,
+      "discovery_score": 1.0,
+      "discovery_confidence": 0.083,
+      "lane": "context_only",
+      "selected_because": [
+        "rule_cue_signal"
+      ],
+      "discovery_selected": false,
+      "selection_tier": "discarded_over_budget",
+      "drop_risk": "high"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r004",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Duplex with or without\na Secondary Suite",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Duplex with or without\na Secondary Suite | Building Height with sloped roof; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 11 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building Height with sloped roof",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 11 m",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 2,
+      "rule_cue_count": 5,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": true,
+      "discovery_score": 16.25,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:duplex",
+        "target_term_hit:secondary suite",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r005",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Building height where any portion of\nthe roof has a slope less than < 1:4; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 9.3 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building height where any portion of\nthe roof has a slope less than < 1:4",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 9.3 m",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 2,
+      "rule_cue_count": 5,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": false,
+      "discovery_score": 8.25,
+      "discovery_confidence": 0.688,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r006",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 12 m1",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 12 m1",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 5,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": false,
+      "discovery_score": 8.25,
+      "discovery_confidence": 0.688,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r007",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Houseplex",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Houseplex | Building Height with sloped roof; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 9 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building Height with sloped roof",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 9 m",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 2,
+      "rule_cue_count": 5,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": true,
+      "discovery_score": 12.25,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:houseplex",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r008",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Building height where any portion of\nthe roof has a slope less than < 1:4; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 7.3 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building height where any portion of\nthe roof has a slope less than < 1:4",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 7.3 m",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 2,
+      "rule_cue_count": 5,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": false,
+      "discovery_score": 8.25,
+      "discovery_confidence": 0.688,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r009",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing; Requirement: Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 12 m1",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 3 storeys inclusive\nof the basement, up to a maximum\nof 12 m1",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 5,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": false,
+      "discovery_score": 8.25,
+      "discovery_confidence": 0.688,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r010",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Coach House or\nGarden Suite",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Coach House or\nGarden Suite | Building height with sloped roof; Requirement: Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 7.0 m and a maximum roof peak\nheight of 8.3 m1",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building height with sloped roof",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 7.0 m and a maximum roof peak\nheight of 8.3 m1",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 2,
+      "rule_cue_count": 7,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": true,
+      "discovery_score": 16.5,
+      "discovery_confidence": 1.0,
+      "lane": "table_rule",
+      "selected_because": [
+        "target_term_hit:coach house",
+        "target_term_hit:garden suite",
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "core",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r011",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Building height where any portion of\nthe roof has a slope less than < 1:4; Requirement: Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 6.5 m",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building height where any portion of\nthe roof has a slope less than < 1:4",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 6.5 m",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 2,
+      "rule_cue_count": 5,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": false,
+      "discovery_score": 8.25,
+      "discovery_confidence": 0.688,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_017_r012",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "",
+    "column_header": "",
+    "cell_value": "",
+    "text": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing; Requirement: Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 8.5 m1",
+    "evidence_type": "table_row",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Building height in floodplain, as\nreferred to in Part 8 Floodproofing",
+          "column_header": ""
+        },
+        {
+          "cell_value": "Must not exceed 2 storeys inclusive\nof the basement, up to a maximum\nof 8.5 m1",
+          "column_header": "Requirement"
+        }
+      ],
+      "evidence_type": "table_row",
+      "measurement_count": 1,
+      "rule_cue_count": 5,
+      "rule_types": [
+        "dimensional_standard"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 17,
+      "target_alias_hit": false,
+      "discovery_score": 8.25,
+      "discovery_confidence": 0.688,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "low"
+    }
+  },
+  {
+    "chunk_id": "surrey_r3_table_018_r001",
+    "page": 151,
+    "section": "",
+    "heading": "",
+    "parent_text": "",
+    "child_text": "",
+    "table_title": "",
+    "row_header": "Structures",
+    "column_header": "Must not exceed 4, but may be\nincreased to 5 m where the roof\nslope and construction materials of\nan accessory building are the same\nas that of the principal building",
+    "cell_value": "Must not exceed 4 m",
+    "text": "Structures | Must not exceed 4, but may be\nincreased to 5 m where the roof\nslope and construction materials of\nan accessory building are the same\nas that of the principal building: Must not exceed 4 m",
+    "evidence_type": "table_cell",
+    "metadata": {
+      "cells": [
+        {
+          "cell_value": "Must not exceed 4 m",
+          "column_header": "Must not exceed 4, but may be\nincreased to 5 m where the roof\nslope and construction materials of\nan accessory building are the same\nas that of the principal building"
+        }
+      ],
+      "evidence_type": "table_cell",
+      "measurement_count": 2,
+      "rule_cue_count": 4,
+      "rule_types": [
+        "general_rule"
+      ],
+      "source": "pdf_table",
+      "source_layer": "m7_full_bylaw_source",
+      "table_index": 18,
+      "target_alias_hit": false,
+      "discovery_score": 8.5,
+      "discovery_confidence": 0.708,
+      "lane": "table_rule",
+      "selected_because": [
+        "measurement_signal",
+        "rule_cue_signal",
+        "table_row_with_measurement"
+      ],
+      "discovery_selected": true,
+      "selection_tier": "support",
+      "drop_risk": "low"
+    }
+  }
+]

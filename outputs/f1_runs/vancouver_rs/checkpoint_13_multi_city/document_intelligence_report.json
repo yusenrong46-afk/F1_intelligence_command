@@ -1,0 +1,18 @@
+{
+  "artifact": "document_intelligence",
+  "city": "Vancouver",
+  "city_key": "vancouver_rs",
+  "generated_at": "2026-07-06T03:21:24.311484+00:00",
+  "ingest_backend": "pdfplumber",
+  "run_id": "checkpoint_13_multi_city",
+  "schema_version": "f1.artifacts.v0",
+  "source_id": "vancouver_rs:source",
+  "source_sha256": "80f30e5782fe5a62b1a6a7f768713f93fdea120245739831394d6b14b0555111",
+  "summary": {
+    "document_block_count": 518,
+    "heading_block_count": 214,
+    "page_count": 22,
+    "source_span_count": 518,
+    "table_block_count": 3
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "artifact": "compliance_report.json",
+  "false_approval_count": 0,
+  "note": "Checkpoint 8 uses generated smoke scenarios; release approval still requires city benchmark cases.",
+  "scenario_count": 77,
+  "schema_version": "f1.artifacts.v0",
+  "status_counts": {
+    "approved": 38,
+    "needs_review": 1,
+    "rejected": 38
+  },
+  "verified_only_contract": true
+}

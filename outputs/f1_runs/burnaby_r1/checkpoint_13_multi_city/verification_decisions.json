@@ -1,0 +1,96 @@
+[
+  {
+    "evidence_ids": [
+      "f1_retrieval_001_06"
+    ],
+    "reason": "verifier proof passed, but candidate is outside the configured F1 release contract",
+    "repair_history": [
+      "f1_guarded_repair_0001"
+    ],
+    "risk_flags": [
+      "outside_f1_release_contract"
+    ],
+    "rule_id": "f1_candidate_0001",
+    "schema_version": "f1.artifacts.v0",
+    "status": "not_used",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_002_06"
+    ],
+    "reason": "guarded repair patch passed deterministic verification",
+    "repair_history": [
+      "f1_guarded_repair_0002"
+    ],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0002",
+    "schema_version": "f1.artifacts.v0",
+    "status": "repaired_successfully",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_01"
+    ],
+    "reason": "guarded repair patch passed deterministic verification",
+    "repair_history": [
+      "f1_guarded_repair_0003"
+    ],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0003",
+    "schema_version": "f1.artifacts.v0",
+    "status": "repaired_successfully",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_004_03"
+    ],
+    "reason": "candidate fields are not fully supported by cited evidence",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0004",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "support_gaps": [
+      "operator_not_supported"
+    ],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_005_02"
+    ],
+    "reason": "guarded repair patch passed deterministic verification",
+    "repair_history": [
+      "f1_guarded_repair_0005"
+    ],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0005",
+    "schema_version": "f1.artifacts.v0",
+    "status": "repaired_successfully",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_006_01"
+    ],
+    "reason": "verifier proof passed, but candidate is outside the configured F1 release contract",
+    "repair_history": [
+      "f1_guarded_repair_0006"
+    ],
+    "risk_flags": [
+      "outside_f1_release_contract"
+    ],
+    "rule_id": "f1_candidate_0006",
+    "schema_version": "f1.artifacts.v0",
+    "status": "not_used",
+    "support_gaps": [],
+    "unresolved_dependencies": []
+  }
+]

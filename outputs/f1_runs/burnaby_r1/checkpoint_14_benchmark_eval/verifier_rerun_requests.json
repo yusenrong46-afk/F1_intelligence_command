@@ -1,0 +1,58 @@
+[
+  {
+    "evidence_ids": [
+      "f1_retrieval_008_01"
+    ],
+    "patch_id": "f1_guarded_repair_0006",
+    "request_id": "f1_rerun_0006",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0006",
+    "schema_version": "f1.artifacts.v0",
+    "status": "completed",
+    "support_gaps": [],
+    "unresolved_dependencies": [],
+    "verifier_status": "verified"
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_011_03"
+    ],
+    "patch_id": "f1_guarded_repair_0009",
+    "request_id": "f1_rerun_0009",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0009",
+    "schema_version": "f1.artifacts.v0",
+    "status": "completed",
+    "support_gaps": [],
+    "unresolved_dependencies": [],
+    "verifier_status": "verified"
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_012_01"
+    ],
+    "patch_id": "f1_guarded_repair_0010",
+    "request_id": "f1_rerun_0010",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0010",
+    "schema_version": "f1.artifacts.v0",
+    "status": "completed",
+    "support_gaps": [],
+    "unresolved_dependencies": [],
+    "verifier_status": "verified"
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_015_01"
+    ],
+    "patch_id": "f1_guarded_repair_0011",
+    "request_id": "f1_rerun_0011",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0011",
+    "schema_version": "f1.artifacts.v0",
+    "status": "completed",
+    "support_gaps": [],
+    "unresolved_dependencies": [],
+    "verifier_status": "verified"
+  }
+]

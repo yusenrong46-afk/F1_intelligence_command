@@ -1,0 +1,17 @@
+[
+  {
+    "case_id": "m8_safety_preserved",
+    "question": "Did M8 preserve the M7 zero-false-verified guarantee?",
+    "must_include": ["False verified count", "preserves"]
+  },
+  {
+    "case_id": "m8_repair_count",
+    "question": "Which rules were repaired?",
+    "must_include": ["repaired_successfully", "Repair attempts"]
+  },
+  {
+    "case_id": "m8_review_reason",
+    "question": "Why is this rule under review?",
+    "must_include": ["under review", "Citation"]
+  }
+]

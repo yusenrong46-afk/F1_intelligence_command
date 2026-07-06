@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/burnaby_prototype/schemas/f1_source_registry.schema.json",
+  "title": "F1 Source Registry",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "artifact", "city_key", "run_id", "documents", "validation"],
+  "properties": {
+    "schema_version": {
+      "const": "f1.artifacts.v0"
+    },
+    "artifact": {
+      "const": "source_registry.json"
+    },
+    "city_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "documents": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source_id", "city", "title", "source_url", "sha256", "local_path", "hash_verified", "status"],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "city": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "minLength": 64
+          },
+          "local_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hash_verified": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["status", "source_pdf_exists", "provenance_exists", "sha256_matches", "source_url_matches_provenance"],
+      "properties": {
+        "status": {
+          "enum": ["pass", "needs_attention"]
+        },
+        "source_pdf_exists": {
+          "type": "boolean"
+        },
+        "provenance_exists": {
+          "type": "boolean"
+        },
+        "sha256_matches": {
+          "type": "boolean"
+        },
+        "source_url_matches_provenance": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

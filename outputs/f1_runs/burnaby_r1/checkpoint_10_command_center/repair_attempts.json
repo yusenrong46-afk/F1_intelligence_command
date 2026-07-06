@@ -1,0 +1,409 @@
+[
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate needs applicability or scope context before verifier rerun",
+    "patch_id": "f1_repair_0001",
+    "risk_flags": [
+      "needs_context"
+    ],
+    "rule_id": "f1_candidate_0001",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "lot area applies to dwelling building unit",
+      "minimum lot area",
+      "maximum lot area",
+      "lot coverage",
+      "community heritage register lot coverage impervious surface street yard"
+    ],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate needs applicability or scope context before verifier rerun",
+    "patch_id": "f1_repair_0002",
+    "risk_flags": [
+      "needs_context"
+    ],
+    "rule_id": "f1_candidate_0002",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "lot area applies to dwelling building unit",
+      "minimum lot area",
+      "maximum lot area",
+      "lot coverage",
+      "community heritage register lot coverage impervious surface street yard"
+    ],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [
+      "unit_not_supported"
+    ],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate has unsupported field evidence; retrieve stronger proof before patching",
+    "patch_id": "f1_repair_0003",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0003",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "height value unit table row",
+      "maximum height"
+    ],
+    "unresolved_dependencies": [],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate needs applicability or scope context before verifier rerun",
+    "patch_id": "f1_repair_0004",
+    "risk_flags": [
+      "needs_context"
+    ],
+    "rule_id": "f1_candidate_0004",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "storeys applies to dwelling building unit",
+      "maximum storeys"
+    ],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate needs applicability or scope context before verifier rerun",
+    "patch_id": "f1_repair_0005",
+    "risk_flags": [
+      "needs_context"
+    ],
+    "rule_id": "f1_candidate_0005",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "setback applies to dwelling building unit",
+      "minimum setback"
+    ],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "proof_patch",
+    "changed_fields": {
+      "applies_to": "maximum lot coverage as set out in Section 101.4"
+    },
+    "city_key": "burnaby_r1",
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_008_01",
+        "page": 6,
+        "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60% and impervious surface area up to 70%;",
+        "section_id": "101.4",
+        "span_id": "span_5b9983c378a883e1"
+      }
+    },
+    "gap_types": [],
+    "model": "deterministic_context_patch",
+    "no_patch_reason": "",
+    "patch_id": "f1_guarded_repair_0006",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0006",
+    "schema_version": "f1.artifacts.v0",
+    "status": "proof_patch_ready",
+    "suggested_retrieval_queries": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": true
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate needs applicability or scope context before verifier rerun",
+    "patch_id": "f1_repair_0007",
+    "risk_flags": [
+      "needs_context"
+    ],
+    "rule_id": "f1_candidate_0007",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "impervious surface applies to dwelling building unit",
+      "impervious surfaces",
+      "community heritage register lot coverage impervious surface street yard"
+    ],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [
+      "operator_not_supported"
+    ],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate has unsupported field evidence; retrieve stronger proof before patching",
+    "patch_id": "f1_repair_0008",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0008",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "dwelling units maximum minimum shall not exceed at least",
+      "dwelling units"
+    ],
+    "unresolved_dependencies": [],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "proof_patch",
+    "changed_fields": {
+      "applies_to": "principal building located between a front and rear principal"
+    },
+    "city_key": "burnaby_r1",
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_011_03",
+        "page": 3,
+        "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line.",
+        "section_id": "6.0",
+        "span_id": "span_7d843e53a0844892"
+      }
+    },
+    "gap_types": [],
+    "model": "deterministic_context_patch",
+    "no_patch_reason": "",
+    "patch_id": "f1_guarded_repair_0009",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0009",
+    "schema_version": "f1.artifacts.v0",
+    "status": "proof_patch_ready",
+    "suggested_retrieval_queries": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": true
+  },
+  {
+    "action": "proof_patch",
+    "changed_fields": {
+      "applies_to": "dwelling units"
+    },
+    "city_key": "burnaby_r1",
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_012_01",
+        "page": 6,
+        "quote": "All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that:",
+        "section_id": "1.0",
+        "span_id": "span_22f5e0f59d63579b"
+      }
+    },
+    "gap_types": [],
+    "model": "deterministic_context_patch",
+    "no_patch_reason": "",
+    "patch_id": "f1_guarded_repair_0010",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0010",
+    "schema_version": "f1.artifacts.v0",
+    "status": "proof_patch_ready",
+    "suggested_retrieval_queries": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": true
+  },
+  {
+    "action": "proof_patch",
+    "changed_fields": {
+      "applies_to": "living unit"
+    },
+    "city_key": "burnaby_r1",
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_015_01",
+        "page": 4,
+        "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+        "section_id": "",
+        "span_id": "span_819d31e00929e032"
+      }
+    },
+    "gap_types": [],
+    "model": "deterministic_context_patch",
+    "no_patch_reason": "",
+    "patch_id": "f1_guarded_repair_0011",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0011",
+    "schema_version": "f1.artifacts.v0",
+    "status": "proof_patch_ready",
+    "suggested_retrieval_queries": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": true
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [
+      "value_citation_missing",
+      "unit_citation_missing",
+      "operator_not_supported"
+    ],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate has unsupported field evidence; retrieve stronger proof before patching",
+    "patch_id": "f1_repair_0012",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0012",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "permitted use value unit table row",
+      "permitted use maximum minimum shall not exceed at least",
+      "permitted uses small-scale multi-unit housing",
+      "group home permitted"
+    ],
+    "unresolved_dependencies": [],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [
+      "value_citation_missing",
+      "unit_citation_missing",
+      "operator_not_supported"
+    ],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate has unsupported field evidence; retrieve stronger proof before patching",
+    "patch_id": "f1_repair_0013",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0013",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "permitted use value unit table row",
+      "permitted use maximum minimum shall not exceed at least",
+      "permitted uses small-scale multi-unit housing",
+      "group home permitted"
+    ],
+    "unresolved_dependencies": [],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [
+      "applies_to_not_supported"
+    ],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate has unsupported field evidence; retrieve stronger proof before patching",
+    "patch_id": "f1_repair_0014",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0017",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "minimum lot area",
+      "maximum lot area",
+      "lot coverage",
+      "community heritage register lot coverage impervious surface street yard"
+    ],
+    "unresolved_dependencies": [],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [
+      "applies_to_not_supported"
+    ],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate has unsupported field evidence; retrieve stronger proof before patching",
+    "patch_id": "f1_repair_0015",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0022",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "impervious surfaces",
+      "community heritage register lot coverage impervious surface street yard"
+    ],
+    "unresolved_dependencies": [],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [
+      "operator_not_supported"
+    ],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate has unsupported field evidence; retrieve stronger proof before patching",
+    "patch_id": "f1_repair_0016",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0046",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "automatic sprinkler maximum minimum shall not exceed at least",
+      "automatic sprinkler"
+    ],
+    "unresolved_dependencies": [],
+    "verifier_rerun_ready": false
+  }
+]

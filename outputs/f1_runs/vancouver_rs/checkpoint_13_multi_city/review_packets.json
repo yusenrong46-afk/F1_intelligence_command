@@ -1,0 +1,47 @@
+[
+  {
+    "evidence_ids": [
+      "f1_retrieval_002_02"
+    ],
+    "packet_id": "f1_review_0001",
+    "question": "Which source span exactly supports the missing fields for this setback candidate?",
+    "rule_id": "f1_candidate_0001",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_01"
+    ],
+    "packet_id": "f1_review_0002",
+    "question": "What applicability or scope context is required before verifying this lot coverage candidate?",
+    "rule_id": "f1_candidate_0002",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_006_06"
+    ],
+    "packet_id": "f1_review_0003",
+    "question": "Which source span exactly supports the missing fields for this floor area candidate?",
+    "rule_id": "f1_candidate_0003",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  }
+]

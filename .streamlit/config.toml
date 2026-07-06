@@ -1,0 +1,26 @@
+# Dashboard theme — "Civic Primer". The palette extends the GitHub-Primer
+# family already used by STATUS_COLORS (verified #1a7f37, review #9a6700,
+# rejected #cf222e, not_used #57606a), so status semantics stay untouched.
+# Streamlit >= 1.46 understands every key below; older versions warn and
+# ignore the newer ones (borderColor, baseRadius, chartCategoricalColors).
+
+[theme]
+base = "light"
+primaryColor = "#1f7a4d"
+backgroundColor = "#f4f8f8"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#17202a"
+linkColor = "#245f9f"
+borderColor = "#d4dde6"
+baseRadius = "8px"
+font = "IBM Plex Mono"
+chartCategoricalColors = ["#1f7a4d", "#245f9f", "#9a6700", "#b42318", "#567087", "#8250df"]
+
+[theme.sidebar]
+backgroundColor = "#101827"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

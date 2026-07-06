@@ -1,0 +1,2030 @@
+[
+  {
+    "block_id": "block_b33fd14d08faad38",
+    "block_type": "page_text",
+    "char_end": 811,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.1",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_5e3abcc55ff57fbc",
+    "text": "101. SMALL-SCALE MULTI-UNIT HOUSING DISTRICT (R1)\n101.1 Intent\nThis District provides for the use and development of primarily ground-oriented residential dwellings up to a maximum of 6 dwelling units on a lot.\n101.2 Permitted Uses\n(B/L No. 14694-24-11-04)\n101.3 Subdivision Regulations\n. 1  At the time of registration of the subdivision plan to create two or more rowhouse lots, the registration of a Section 219 Covenant will be required to ensure that all adjoining rowhouse dwellings will be constructed at the same time.\n.2  Panhandle lots or other irregular lot configurations are not permitted except in accordance with Section 101.6.4 or where constrained by restrictive site conditions as determined by the Approving Officer.\n.3  Rowhouse lots may exceed 280 m 2  subject to Section 101.4 footnote .1."
+  },
+  {
+    "block_id": "block_8cf32d7a637b97b8",
+    "block_type": "heading",
+    "char_end": 49,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_767b1f03a0a58d57",
+    "text": "101. SMALL-SCALE MULTI-UNIT HOUSING DISTRICT (R1)"
+  },
+  {
+    "block_id": "block_613f189e8e4e2f80",
+    "block_type": "heading",
+    "char_end": 12,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.1",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_7f5ae65351f76532",
+    "text": "101.1 Intent"
+  },
+  {
+    "block_id": "block_408604d070769274",
+    "block_type": "paragraph",
+    "char_end": 147,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_f68dcc8a90b6f103",
+    "text": "This District provides for the use and development of primarily ground-oriented residential dwellings up to a maximum of 6 dwelling units on a lot."
+  },
+  {
+    "block_id": "block_755410ce77c19e84",
+    "block_type": "heading",
+    "char_end": 20,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.2",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_ad689d01a0b0dc26",
+    "text": "101.2 Permitted Uses"
+  },
+  {
+    "block_id": "block_fdf1b1ba617c145f",
+    "block_type": "paragraph",
+    "char_end": 24,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_d8723365675181b5",
+    "text": "(B/L No. 14694-24-11-04)"
+  },
+  {
+    "block_id": "block_cbe9876ef7d0ea08",
+    "block_type": "heading",
+    "char_end": 29,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.3",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_420edcbcb072b7d1",
+    "text": "101.3 Subdivision Regulations"
+  },
+  {
+    "block_id": "block_d35e20ccb35f22ef",
+    "block_type": "paragraph",
+    "char_end": 239,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_81baca9d35a3198e",
+    "text": ". 1  At the time of registration of the subdivision plan to create two or more rowhouse lots, the registration of a Section 219 Covenant will be required to ensure that all adjoining rowhouse dwellings will be constructed at the same time."
+  },
+  {
+    "block_id": "block_c02810dfe28f8e9d",
+    "block_type": "paragraph",
+    "char_end": 208,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.6.4",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_0e3cd6270176e6c5",
+    "text": ".2  Panhandle lots or other irregular lot configurations are not permitted except in accordance with Section 101.6.4 or where constrained by restrictive site conditions as determined by the Approving Officer."
+  },
+  {
+    "block_id": "block_29d20fdb118177ce",
+    "block_type": "paragraph",
+    "char_end": 75,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.4",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_067a8abb321c82e5",
+    "text": ".3  Rowhouse lots may exceed 280 m 2  subject to Section 101.4 footnote .1."
+  },
+  {
+    "block_id": "block_545589d751cf7ce1",
+    "block_type": "table",
+    "char_end": 427,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "column_count": 2,
+      "ingest_backend": "docling",
+      "row_count": 12,
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac",
+      "table_index": 1
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_d12a894ec614dbb9",
+    "text": "Principal Use | Use-Specific Regulations\nSmall-Scale Multi-Unit Housing | -\nRowhouse Dwellings | 101.5.2\nBoarding, Lodging, or Rooming House | 101.5.3\nGroup Home | -\nSupportive Housing (Category A) | 101.5.4\nChild Care Facilities | 101.5.6\nAccessory Use | Use-Specific Regulations\nBoarding Use (up to 2 boarders) | -\nHome Occupations | 6.8, 6.8A\nUrban Agriculture | 6.30\nAccessory Buildings, Structures, and Uses | 101.5.5, 6.6"
+  },
+  {
+    "block_id": "block_a1114a5c44be3591",
+    "block_type": "table",
+    "char_end": 363,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "column_count": 3,
+      "ingest_backend": "docling",
+      "row_count": 9,
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac",
+      "table_index": 2
+    },
+    "page": 1,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_5b4be0511def1293",
+    "text": " | Dwelling Type | Dwelling Type\n | Rowhouse .1 | Small-Scale Multi-Unit\nMinimum Lot Width .2 | Minimum Lot Width .2 | Minimum Lot Width .2\nInterior Lot | 5 m, except 6.2m for end unit lots | 10 m\nCorner Lot - Street | 8 m | 10 m\nCorner Lot - Lane | 6.2m | 10 m\nLot Area .3 | Lot Area .3 | Lot Area .3\nMinimum Lot Area | - | 281 m 2\nMaximum Lot Area | 280 m 2 | -"
+  },
+  {
+    "block_id": "block_29694f6291ba487b",
+    "block_type": "page_text",
+    "char_end": 831,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 2,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.4",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_ce0e3bb3aec52363",
+    "text": "101.4 Development Regulations\n(B/L No. 14783-25-12-09)\n.1 Maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a Section 219 Covenant prohibiting the construction of more than 3 dwelling units on the lot.\n.2  See Sections 101.6.1 and 6.12 for permitted projections into required yards and see Section 6.13 for additional setbacks that may be required for vision clearance areas.\n.3  Interior side yard setbacks are not required for rowhouse dwelling units on a lot line between two adjoining rowhouse dwellings with a shared party wall.  For an end unit of a rowhouse development, the interior side yard setback is 1.2 m.\n.4  Accessory buildings are not permitted within the minimum separations between principal buildings - see Section 101.6.1 for permitted projections into minimum separations."
+  },
+  {
+    "block_id": "block_dd844e4b236d9a40",
+    "block_type": "heading",
+    "char_end": 29,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 2,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.4",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_cc58574808fcfbef",
+    "text": "101.4 Development Regulations"
+  },
+  {
+    "block_id": "block_bdcdf24b6eee10ce",
+    "block_type": "paragraph",
+    "char_end": 24,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 2,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_c26ca94a6bed0cc1",
+    "text": "(B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_813510c2cab957fe",
+    "block_type": "paragraph",
+    "char_end": 184,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 2,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_79f426f9d29a85e3",
+    "text": ".1 Maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a Section 219 Covenant prohibiting the construction of more than 3 dwelling units on the lot."
+  },
+  {
+    "block_id": "block_4ce0bfb4dd7cc6ed",
+    "block_type": "list_item",
+    "char_end": 173,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 2,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.6.1",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_f95af7e14878b9c3",
+    "text": ".2  See Sections 101.6.1 and 6.12 for permitted projections into required yards and see Section 6.13 for additional setbacks that may be required for vision clearance areas."
+  },
+  {
+    "block_id": "block_89b70f4b04e4fe0c",
+    "block_type": "list_item",
+    "char_end": 242,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 2,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.2",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_c9f4d821343aa034",
+    "text": ".3  Interior side yard setbacks are not required for rowhouse dwelling units on a lot line between two adjoining rowhouse dwellings with a shared party wall.  For an end unit of a rowhouse development, the interior side yard setback is 1.2 m."
+  },
+  {
+    "block_id": "block_bbe9fd208b703ba5",
+    "block_type": "list_item",
+    "char_end": 174,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 2,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.6.1",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_bb31c1a9aad84206",
+    "text": ".4  Accessory buildings are not permitted within the minimum separations between principal buildings - see Section 101.6.1 for permitted projections into minimum separations."
+  },
+  {
+    "block_id": "block_90584e56ab677f35",
+    "block_type": "table",
+    "char_end": 2663,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "column_count": 5,
+      "ingest_backend": "docling",
+      "row_count": 25,
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac",
+      "table_index": 1
+    },
+    "page": 2,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.4",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_e81e0e23450ce24f",
+    "text": " | Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type\nPermitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only\nMinimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2\nMaximum Lot Area .1 | 280m 2 | - | - | -\nMaximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage\nAll Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45%\nImpervious Surfaces | 70% | 60% | 60% | 70%\nMaximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height\nFront Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings\nHeight | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m\nStoreys (basement inclusive) | 3 storeys | 2.5 storeys | 3 storeys | 3 storeys\nRear Principal Buildings | Rear Principal Buildings | Rear Principal Buildings | Rear Principal Buildings | Rear Principal Buildings\nHeight | sloping roof: 7.5m | flat roof: 7.0m | sloping roof: 7.5m | flat roof: 7.0m | sloping roof: 7.5m | flat roof: 7.0m | sloping roof: 7.5m | flat roof: 7.0m\nStoreys (basement inclusive) | 2 storeys | 2 storeys | 2 storeys | 2 storeys\nAccessory Buildings | 4.0m | 1 storey | 4.0m | 1 storey | 4.0m | 1 storey | 4.0m | 1 storey\nMinimum Lot Line Setbacks for All Buildings .2 .3 | Minimum Lot Line Setbacks for All Buildings .2 .3 | Minimum Lot Line Setbacks for All Buildings .2 .3 | Minimum Lot Line Setbacks for All Buildings .2 .3 | Minimum Lot Line Setbacks for All Buildings .2 .3\nStreet Yard | 3.0m | front: 4.0m | flanking: 3.0m | front: 4.0m | flanking: 3.0m | front: 4.0m | flanking: 3.0m\nLane Yard | 1.5m | 1.5m | 1.5m | 1.5m\nInterior Rear Yard | 3.0 m, except 1.5m for accessory buildings | 3.0 m, except 1.5m for accessory buildings | 3.0 m, except 1.5m for accessory buildings | 3.0 m, except 1.5m for accessory buildings\nInterior Side Yard | 0 m, except 1.2 m for end unit lots | 1.2 m | 1.2 m | 1.2 m\nMinimum Separation of Buildings on the Same Lot .4 .5 | Minimum Separation of Buildings on the Same Lot .4 .5 | Minimum Separation of Buildings on the Same Lot .4 .5 | Minimum Separation of Buildings on the Same Lot .4 .5 | Minimum Separation of Buildings on the Same Lot .4 .5\nBetween Front Principals | - | 2.4 m | 2.4 m | 2.4 m\nBetween Rear Principals | - | 2.4 m | 2.4 m | 2.4 m\nBetween Front & Rear Principals | 6.0 m | 6.0 m | 6.0 m | 6.0 m\nBetween All Other Buildings | 2.4 m | 2.4 m | 2.4 m | 2.4 m"
+  },
+  {
+    "block_id": "block_9260f296422a6bf1",
+    "block_type": "page_text",
+    "char_end": 545,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 3,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "6.0",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_6d33ce0a64ff7992",
+    "text": ".5  Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line.\nDiagram: Separation between buildings\nDiagram: Siting on a through lot\n(B/L No. 14783-25-12-09)\nDiagram: Separation between detached units on a wider lot\n(B/L No. 14783-25-12-09)\nDiagram: Siting on rowhouse lots\n(B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_8d12b3e98bfe2009",
+    "block_type": "list_item",
+    "char_end": 308,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 3,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "6.0",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_7d843e53a0844892",
+    "text": ".5  Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line."
+  },
+  {
+    "block_id": "block_8ba1ba85a536bfe3",
+    "block_type": "heading",
+    "char_end": 37,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 3,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_39d19a85cc2fa547",
+    "text": "Diagram: Separation between buildings"
+  },
+  {
+    "block_id": "block_974340bc01617bf3",
+    "block_type": "paragraph",
+    "char_end": 32,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 3,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_a9a517209e675ec0",
+    "text": "Diagram: Siting on a through lot"
+  },
+  {
+    "block_id": "block_460dd2a752051a90",
+    "block_type": "paragraph",
+    "char_end": 24,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 3,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_b1b7f1f21728e9a4",
+    "text": "(B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_9befb681c9b98d81",
+    "block_type": "heading",
+    "char_end": 57,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 3,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_7f31e822d5694fb3",
+    "text": "Diagram: Separation between detached units on a wider lot"
+  },
+  {
+    "block_id": "block_873953784581d0f9",
+    "block_type": "paragraph",
+    "char_end": 24,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 3,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_acc5e760843cf37a",
+    "text": "(B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_269f953347f92d28",
+    "block_type": "heading",
+    "char_end": 32,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 3,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_030639ea71e2bcce",
+    "text": "Diagram: Siting on rowhouse lots"
+  },
+  {
+    "block_id": "block_cc498872a0b3b923",
+    "block_type": "paragraph",
+    "char_end": 24,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 3,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_95da53354ede9fda",
+    "text": "(B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_4ecc06d3133a3913",
+    "block_type": "page_text",
+    "char_end": 2429,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.5",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_f8dcf022f64fdfdf",
+    "text": "101.5 Use-Specific Regulations\n101.5.1 All Dwelling Units\nThe minimum number of dwelling units with at least 3 bedrooms must be provided on a lot as follows:\nAt least one dwelling unit on a lot must have the main entrance oriented to an abutting street or, in the case of a through lot with multiple principal buildings and site access from both frontages, at least one dwelling unit per street frontage.\n101.5.2 Rowhouse Dwellings\nContiguous rowhouse lots must provide an illuminated and publicly accessible pedestrian walkway spaced every 100 m or less from a street, lane, or walkway that intersects the fronting street and that:\n(a) links the fronting street with the parallel lane, street, or trail network at the rear of the lot;\n(b) is at least 1.5 m wide and clear to a height of at least 2.5 m; and\n(c) is subject to a statutory right of way registered in favour of the City.\n101.5.3 Boarding, Lodging, or Rooming Houses\nBoarding, lodging or rooming houses are permitted for not more than 5 persons, when situated in a single family dwelling on a lot with an area of not less than 560 m 2 , subject to the condition that it is included as part of a comprehensive development plan to which the provisions of the Comprehensive Development District apply.\n101.5.4 Supportive Housing\nCategory A Supportive Housing facilities are permitted on a lot as the only principal use, subject to the following conditions:\n(a) each living unit shall have a minimum floor area of 27 m 2 ;\n(b) it meets the development regulations under Section 101.4 for small-scale multi-unit lots with 1 to 3 units; and\n(c) the use shall be included as part of a comprehensive development plan to which the provisions of the Comprehensive Development District apply.\n101.5.5 Accessory Buildings, Structures, and Uses\nParking:\n(a) Parking shall be provided in an attached or detached garage, carport or outdoor parking pad at the rear of the lot when accessible from an abutting lane or street. Where there is no direct access to the rear of the lot or the Director Engineering is satisfied that access to the rear is not feasible because of an extreme grade, parking may be provided elsewhere on the lot.\n(b) A garage or carport may be constructed below grade, provided that no part of such structure shall extend more than 1.2 m above the surface of the surrounding ground at any point other than the driveway, nor be less than 1.2 m from a lot line."
+  },
+  {
+    "block_id": "block_21ff324d02d25963",
+    "block_type": "heading",
+    "char_end": 30,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.5",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_7c7a9f92f12f37c5",
+    "text": "101.5 Use-Specific Regulations"
+  },
+  {
+    "block_id": "block_6d40b9847997a719",
+    "block_type": "heading",
+    "char_end": 26,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.5.1",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_4a484ff026feeedd",
+    "text": "101.5.1 All Dwelling Units"
+  },
+  {
+    "block_id": "block_43be3fc1235287b8",
+    "block_type": "list_item",
+    "char_end": 99,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_7eaef9b9d2553b3e",
+    "text": "The minimum number of dwelling units with at least 3 bedrooms must be provided on a lot as follows:"
+  },
+  {
+    "block_id": "block_e565d01b4621e7e6",
+    "block_type": "list_item",
+    "char_end": 246,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_4711dca33c9d9c8a",
+    "text": "At least one dwelling unit on a lot must have the main entrance oriented to an abutting street or, in the case of a through lot with multiple principal buildings and site access from both frontages, at least one dwelling unit per street frontage."
+  },
+  {
+    "block_id": "block_e3bff7671ea2f3fd",
+    "block_type": "list_item",
+    "char_end": 26,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.5.2",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_a4ae1a680597a9f9",
+    "text": "101.5.2 Rowhouse Dwellings"
+  },
+  {
+    "block_id": "block_2923d2fe09b40daf",
+    "block_type": "list_item",
+    "char_end": 200,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_b798ee20e9b926e1",
+    "text": "Contiguous rowhouse lots must provide an illuminated and publicly accessible pedestrian walkway spaced every 100 m or less from a street, lane, or walkway that intersects the fronting street and that:"
+  },
+  {
+    "block_id": "block_5aee52e6260e0cfe",
+    "block_type": "list_item",
+    "char_end": 102,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_4eacbc78c3c46a22",
+    "text": "(a) links the fronting street with the parallel lane, street, or trail network at the rear of the lot;"
+  },
+  {
+    "block_id": "block_0ec67958acee1368",
+    "block_type": "list_item",
+    "char_end": 71,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.5",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_8938ce5ef833d039",
+    "text": "(b) is at least 1.5 m wide and clear to a height of at least 2.5 m; and"
+  },
+  {
+    "block_id": "block_890c1ab6a5415d70",
+    "block_type": "list_item",
+    "char_end": 76,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_a91b58716743e47e",
+    "text": "(c) is subject to a statutory right of way registered in favour of the City."
+  },
+  {
+    "block_id": "block_676d103b4b4d9a58",
+    "block_type": "list_item",
+    "char_end": 44,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.5.3",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_6fc715c701295d3b",
+    "text": "101.5.3 Boarding, Lodging, or Rooming Houses"
+  },
+  {
+    "block_id": "block_03bb2d7cdd52d94f",
+    "block_type": "list_item",
+    "char_end": 331,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_fd4a8157ebf6d3d0",
+    "text": "Boarding, lodging or rooming houses are permitted for not more than 5 persons, when situated in a single family dwelling on a lot with an area of not less than 560 m 2 , subject to the condition that it is included as part of a comprehensive development plan to which the provisions of the Comprehensive Development District apply."
+  },
+  {
+    "block_id": "block_807403eb17cedc2d",
+    "block_type": "list_item",
+    "char_end": 26,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.5.4",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_3178561fa635b9f5",
+    "text": "101.5.4 Supportive Housing"
+  },
+  {
+    "block_id": "block_52172102ada19fb9",
+    "block_type": "list_item",
+    "char_end": 127,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_864016b6a5452988",
+    "text": "Category A Supportive Housing facilities are permitted on a lot as the only principal use, subject to the following conditions:"
+  },
+  {
+    "block_id": "block_6b26b9f72303c2c4",
+    "block_type": "list_item",
+    "char_end": 64,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_819d31e00929e032",
+    "text": "(a) each living unit shall have a minimum floor area of 27 m 2 ;"
+  },
+  {
+    "block_id": "block_11bbe11795019de1",
+    "block_type": "list_item",
+    "char_end": 115,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.4",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_e66deadb4685846e",
+    "text": "(b) it meets the development regulations under Section 101.4 for small-scale multi-unit lots with 1 to 3 units; and"
+  },
+  {
+    "block_id": "block_93e5fec9c3371476",
+    "block_type": "list_item",
+    "char_end": 146,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_9e672afc08156e00",
+    "text": "(c) the use shall be included as part of a comprehensive development plan to which the provisions of the Comprehensive Development District apply."
+  },
+  {
+    "block_id": "block_5cbf33967557d03f",
+    "block_type": "heading",
+    "char_end": 49,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.5.5",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_2d8b11cc608d9ba1",
+    "text": "101.5.5 Accessory Buildings, Structures, and Uses"
+  },
+  {
+    "block_id": "block_22734b6c2ee763b7",
+    "block_type": "list_item",
+    "char_end": 8,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_7657b86504720a3d",
+    "text": "Parking:"
+  },
+  {
+    "block_id": "block_1bb5b5b488f55fa7",
+    "block_type": "list_item",
+    "char_end": 378,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_54f5c9fecc10de15",
+    "text": "(a) Parking shall be provided in an attached or detached garage, carport or outdoor parking pad at the rear of the lot when accessible from an abutting lane or street. Where there is no direct access to the rear of the lot or the Director Engineering is satisfied that access to the rear is not feasible because of an extreme grade, parking may be provided elsewhere on the lot."
+  },
+  {
+    "block_id": "block_4841e2fa02248dc2",
+    "block_type": "list_item",
+    "char_end": 246,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.2",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_7866cb7e5d10a423",
+    "text": "(b) A garage or carport may be constructed below grade, provided that no part of such structure shall extend more than 1.2 m above the surface of the surrounding ground at any point other than the driveway, nor be less than 1.2 m from a lot line."
+  },
+  {
+    "block_id": "block_8d75f49ff7ded0b3",
+    "block_type": "table",
+    "char_end": 140,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "column_count": 3,
+      "ingest_backend": "docling",
+      "row_count": 3,
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac",
+      "table_index": 1
+    },
+    "page": 4,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.5",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_5d92ccba38582fdf",
+    "text": " | Total Dwelling Units on a Lot | Total Dwelling Units on a Lot\n | 1 to 3 Units | 4 to 6 Units\nMinimum 3+ Bedroom Units: | 1 Unit | 2 Units"
+  },
+  {
+    "block_id": "block_cae643e843428561",
+    "block_type": "page_text",
+    "char_end": 2076,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "4.6",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_74067e46d2ff39be",
+    "text": "An accessory structure not being a building, excluding a fence or a retaining wall, located outside of a required yard, shall not exceed 4.6 m in height.\n101.5.6 Child Care Facilities\nA child care facility in the R1 District must:\n(a) be limited to a maximum of 25 children;\n(b) be located on a corner lot;\n(c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwelling units on a lot;\n(d) be located on a lot that does not contain a dwelling unit or any other principal use; and\n(e) comply with all other applicable regulations under this Bylaw.\n(B/L No. 14694-24-11-04)\n101.6 General Regulations\n101.6.1 Projections\nThe following features may project into the required minimum separation between buildings on the same lot:\n(a) steps and stairs;\n(b) ornamental features, such as arbors, trellises, fish ponds, flag poles, or similar landscape features;\n(c) terraces, decks, or other similar surfaces that are 1.0 m or less above grade;\n(d) balconies, covered decks, uncovered decks, canopies, sunshades, or other similar features, including supporting structures, that are greater than 1.0 m above grade up to a maximum of 25% of the width of a required separation;\n(e) belt courses, cornices, gutters, sills, chimneys, bay windows, or other similar features up to the lesser of 0.9 m or 25% of the width of a required separation;\n(f) sunken access areas and window wells as per Section 6.9;\n(g) outdoor appliances; and\n(h) eaves up to the lesser of 1.2 m (3.94 ft.) or 25% of the width of a required separation.\n(B/L No. 14694-24-11-04)\nPermitted projections into required yards are subject to Section 6.12, except that in the R1 District projections into required lane yards are limited to a maximum of 0.8 m to provide adequate fire truck clearance. (B/L No. 14783-25-12-09)\n101.6.2 Outdoor Areas\nAn outdoor amenity space with a minimum width of 2.0 m and area of 10.0 m 2  must be provided for each primary dwelling unit for its exclusive use and be accessible from the primary dwelling unit it serves. (B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_a770db6b2a4a8708",
+    "block_type": "list_item",
+    "char_end": 153,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "4.6",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_d4d66998dc2d1065",
+    "text": "An accessory structure not being a building, excluding a fence or a retaining wall, located outside of a required yard, shall not exceed 4.6 m in height."
+  },
+  {
+    "block_id": "block_722f67fc679d26e7",
+    "block_type": "list_item",
+    "char_end": 29,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.5.6",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_7904d63e7d4f413a",
+    "text": "101.5.6 Child Care Facilities"
+  },
+  {
+    "block_id": "block_c0c8883ef1a3e5ee",
+    "block_type": "list_item",
+    "char_end": 46,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_e23771b0441fd66f",
+    "text": "A child care facility in the R1 District must:"
+  },
+  {
+    "block_id": "block_5bb79c317fcf95bb",
+    "block_type": "list_item",
+    "char_end": 43,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_e2bbb767e0a440d0",
+    "text": "(a) be limited to a maximum of 25 children;"
+  },
+  {
+    "block_id": "block_8c9763dd82a321af",
+    "block_type": "list_item",
+    "char_end": 31,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_36fa961521c667c1",
+    "text": "(b) be located on a corner lot;"
+  },
+  {
+    "block_id": "block_94468ec1ec32d6c9",
+    "block_type": "list_item",
+    "char_end": 122,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.4",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_354aafb088435ab4",
+    "text": "(c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwelling units on a lot;"
+  },
+  {
+    "block_id": "block_6f4237373da40890",
+    "block_type": "list_item",
+    "char_end": 93,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_b4ecf18b5e70d128",
+    "text": "(d) be located on a lot that does not contain a dwelling unit or any other principal use; and"
+  },
+  {
+    "block_id": "block_1229fe1563236825",
+    "block_type": "list_item",
+    "char_end": 66,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_6016d9230063e990",
+    "text": "(e) comply with all other applicable regulations under this Bylaw."
+  },
+  {
+    "block_id": "block_d9978c02dcb2c861",
+    "block_type": "paragraph",
+    "char_end": 24,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_8c1177b354e8f00d",
+    "text": "(B/L No. 14694-24-11-04)"
+  },
+  {
+    "block_id": "block_c2f3fb2ca2cc4637",
+    "block_type": "heading",
+    "char_end": 25,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.6",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_ae0c01c484943f20",
+    "text": "101.6 General Regulations"
+  },
+  {
+    "block_id": "block_e24186e627f43852",
+    "block_type": "heading",
+    "char_end": 19,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.6.1",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_860ad8b1f805c030",
+    "text": "101.6.1 Projections"
+  },
+  {
+    "block_id": "block_06f342dd97ff4ed1",
+    "block_type": "list_item",
+    "char_end": 106,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_3eda5e1fa18aa840",
+    "text": "The following features may project into the required minimum separation between buildings on the same lot:"
+  },
+  {
+    "block_id": "block_01ba923bc44f0b82",
+    "block_type": "list_item",
+    "char_end": 21,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_4ce4be89513c5a26",
+    "text": "(a) steps and stairs;"
+  },
+  {
+    "block_id": "block_e7ec900015586483",
+    "block_type": "list_item",
+    "char_end": 106,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_3e8cc8892c04cc60",
+    "text": "(b) ornamental features, such as arbors, trellises, fish ponds, flag poles, or similar landscape features;"
+  },
+  {
+    "block_id": "block_f82366d8d829d8b4",
+    "block_type": "list_item",
+    "char_end": 82,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.0",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_e06f137ead97083f",
+    "text": "(c) terraces, decks, or other similar surfaces that are 1.0 m or less above grade;"
+  },
+  {
+    "block_id": "block_328a13319ba6689c",
+    "block_type": "list_item",
+    "char_end": 229,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.0",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_5c9a31fdca22befb",
+    "text": "(d) balconies, covered decks, uncovered decks, canopies, sunshades, or other similar features, including supporting structures, that are greater than 1.0 m above grade up to a maximum of 25% of the width of a required separation;"
+  },
+  {
+    "block_id": "block_6af1b74d25982edd",
+    "block_type": "list_item",
+    "char_end": 164,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "0.9",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_bb8c358d72f7f9f2",
+    "text": "(e) belt courses, cornices, gutters, sills, chimneys, bay windows, or other similar features up to the lesser of 0.9 m or 25% of the width of a required separation;"
+  },
+  {
+    "block_id": "block_6a106c0434856165",
+    "block_type": "list_item",
+    "char_end": 60,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "6.9",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_d8c8a4625d5cf13b",
+    "text": "(f) sunken access areas and window wells as per Section 6.9;"
+  },
+  {
+    "block_id": "block_c5adeaebc0e3d2c2",
+    "block_type": "list_item",
+    "char_end": 27,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_fc33d3f2743fbbea",
+    "text": "(g) outdoor appliances; and"
+  },
+  {
+    "block_id": "block_f5beded16126f015",
+    "block_type": "list_item",
+    "char_end": 92,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.2",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_3d3ed8f470eb4a8b",
+    "text": "(h) eaves up to the lesser of 1.2 m (3.94 ft.) or 25% of the width of a required separation."
+  },
+  {
+    "block_id": "block_f80761786a60da1f",
+    "block_type": "paragraph",
+    "char_end": 24,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_0a8ff1fad668f6f5",
+    "text": "(B/L No. 14694-24-11-04)"
+  },
+  {
+    "block_id": "block_0995c103726ac335",
+    "block_type": "list_item",
+    "char_end": 239,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "6.12",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_9f9f251bb1f7d86f",
+    "text": "Permitted projections into required yards are subject to Section 6.12, except that in the R1 District projections into required lane yards are limited to a maximum of 0.8 m to provide adequate fire truck clearance. (B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_576824e827c053c2",
+    "block_type": "list_item",
+    "char_end": 21,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.6.2",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_5ff32e04b0dfbe64",
+    "text": "101.6.2 Outdoor Areas"
+  },
+  {
+    "block_id": "block_a4f1ae4b41277e32",
+    "block_type": "list_item",
+    "char_end": 231,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 5,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "2.0",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_0dacb0d18e0afd86",
+    "text": "An outdoor amenity space with a minimum width of 2.0 m and area of 10.0 m 2  must be provided for each primary dwelling unit for its exclusive use and be accessible from the primary dwelling unit it serves. (B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_9b8e039fd959ac72",
+    "block_type": "page_text",
+    "char_end": 2211,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.6.3",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_a20ee106bd881a3f",
+    "text": "101.6.3 Access and Fire Safety\nDwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system.\nAll dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that:\n(a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; and\n(b) is clear of any projections or obstructions to a minimum of 2.5 m in height.\n101.6.4 Heritage\nNotwithstanding the R1 District regulations otherwise stated in this Bylaw, subject to approval of the Director of Planning and Development and the registration of a Section 219 Covenant to prohibit any works on the lot which would destroy, or irreversibly alter or damage the heritage resource and its heritage character, some or all of the following regulations may apply to lots in the R1 District on the Community Heritage Register:\n(a) panhandle lots and other irregularly shaped lots may be permitted subject to the following:\n(i) lots with lane access shall have a minimum panhandle width of 1 m that is clear to a height of 2.5 m; and\n(ii) lots without lane access shall have a minimum panhandle width of 4.5 m that is clear to a height of 2.5 m;\n(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60% and impervious surface area up to 70%;\n(c) all original architectural appurtenances, such as chimneys, railings, vents, decorative features, or similar, may be excluded from the maximum permitted height of a principal building;\n(d) lot line setbacks for street yards may meet a minimum of 2.0 m;\n(e) the minimum separation between buildings on the same lot as required under Section 101.4 may be reduced;\n(f) Section 101.5.1 does not apply; and\n(g) Parking:\n(i) off-street vehicular parking spaces are not required;\n(ii) retention and continued use of driveways that do not otherwise conform with the requirements of this Bylaw may be permitted; and\n(iii) parking may be provided within the required yards, and any existing parking areas on the lot that do not conform with the requirements of this Bylaw may continue to be used.\n(B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_348b20a5adae44ec",
+    "block_type": "heading",
+    "char_end": 30,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.6.3",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_09963f8546a4419a",
+    "text": "101.6.3 Access and Fire Safety"
+  },
+  {
+    "block_id": "block_427dde07fddbf9ae",
+    "block_type": "list_item",
+    "char_end": 116,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_8f4f3ffe2dcf7729",
+    "text": "Dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system."
+  },
+  {
+    "block_id": "block_d0f4d1e4cb1c6a24",
+    "block_type": "list_item",
+    "char_end": 88,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "1.0",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_22f5e0f59d63579b",
+    "text": "All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that:"
+  },
+  {
+    "block_id": "block_ceb63265073b1d1d",
+    "block_type": "list_item",
+    "char_end": 186,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_3cbbefea369b4dbc",
+    "text": "(a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; and"
+  },
+  {
+    "block_id": "block_7c15d145e9d5eb62",
+    "block_type": "list_item",
+    "char_end": 80,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "2.5",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_30654b385fc352b0",
+    "text": "(b) is clear of any projections or obstructions to a minimum of 2.5 m in height."
+  },
+  {
+    "block_id": "block_094fdd607919d50e",
+    "block_type": "heading",
+    "char_end": 16,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.6.4",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_ee0a4874f63a98ba",
+    "text": "101.6.4 Heritage"
+  },
+  {
+    "block_id": "block_897cc63d43c8ab8c",
+    "block_type": "list_item",
+    "char_end": 436,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_8384554d9b37efd2",
+    "text": "Notwithstanding the R1 District regulations otherwise stated in this Bylaw, subject to approval of the Director of Planning and Development and the registration of a Section 219 Covenant to prohibit any works on the lot which would destroy, or irreversibly alter or damage the heritage resource and its heritage character, some or all of the following regulations may apply to lots in the R1 District on the Community Heritage Register:"
+  },
+  {
+    "block_id": "block_bbb8a1ec49b0c61f",
+    "block_type": "list_item",
+    "char_end": 95,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_5e66d89120d73950",
+    "text": "(a) panhandle lots and other irregularly shaped lots may be permitted subject to the following:"
+  },
+  {
+    "block_id": "block_e667b73384fc7cea",
+    "block_type": "list_item",
+    "char_end": 109,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "2.5",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_e5a47a35ff4ede60",
+    "text": "(i) lots with lane access shall have a minimum panhandle width of 1 m that is clear to a height of 2.5 m; and"
+  },
+  {
+    "block_id": "block_1119515e8a328d85",
+    "block_type": "list_item",
+    "char_end": 111,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "4.5",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_d3507df835a907fa",
+    "text": "(ii) lots without lane access shall have a minimum panhandle width of 4.5 m that is clear to a height of 2.5 m;"
+  },
+  {
+    "block_id": "block_5c8b8d6fd94e463d",
+    "block_type": "list_item",
+    "char_end": 118,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.4",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_5b9983c378a883e1",
+    "text": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60% and impervious surface area up to 70%;"
+  },
+  {
+    "block_id": "block_b57ce93754b4ac8f",
+    "block_type": "list_item",
+    "char_end": 188,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_e22b574557574f92",
+    "text": "(c) all original architectural appurtenances, such as chimneys, railings, vents, decorative features, or similar, may be excluded from the maximum permitted height of a principal building;"
+  },
+  {
+    "block_id": "block_e9e299122d4816d2",
+    "block_type": "list_item",
+    "char_end": 67,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "2.0",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_66d9d3bd47f4ad89",
+    "text": "(d) lot line setbacks for street yards may meet a minimum of 2.0 m;"
+  },
+  {
+    "block_id": "block_f9751affd2ae9432",
+    "block_type": "list_item",
+    "char_end": 108,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.4",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_fa3d5f46d832cf6c",
+    "text": "(e) the minimum separation between buildings on the same lot as required under Section 101.4 may be reduced;"
+  },
+  {
+    "block_id": "block_ff4a9e2b9e43736d",
+    "block_type": "list_item",
+    "char_end": 39,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.5.1",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_63f1573586ddc3f6",
+    "text": "(f) Section 101.5.1 does not apply; and"
+  },
+  {
+    "block_id": "block_091f4e69f68ca162",
+    "block_type": "list_item",
+    "char_end": 12,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_db6337ec3c3c5e17",
+    "text": "(g) Parking:"
+  },
+  {
+    "block_id": "block_0a67c85add49328b",
+    "block_type": "list_item",
+    "char_end": 57,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_5abfee3084cb298c",
+    "text": "(i) off-street vehicular parking spaces are not required;"
+  },
+  {
+    "block_id": "block_20bf0cdc7a82b6ce",
+    "block_type": "list_item",
+    "char_end": 133,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_ec67efd0fa9cf8c4",
+    "text": "(ii) retention and continued use of driveways that do not otherwise conform with the requirements of this Bylaw may be permitted; and"
+  },
+  {
+    "block_id": "block_8d3951214e8774ef",
+    "block_type": "list_item",
+    "char_end": 179,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_68fddc4c448ae03d",
+    "text": "(iii) parking may be provided within the required yards, and any existing parking areas on the lot that do not conform with the requirements of this Bylaw may continue to be used."
+  },
+  {
+    "block_id": "block_6e1859ffb86f9318",
+    "block_type": "paragraph",
+    "char_end": 24,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 6,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_a50625ef5a73bc76",
+    "text": "(B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_e4a2d3ffdc80d393",
+    "block_type": "page_text",
+    "char_end": 1189,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.7",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_2c3549b65b9b1c52",
+    "text": "101.7 Measurements and Calculations\n101.7.1 Height\nThe height of a principal or accessory building shall be measured from the lower of the average front or average rear elevation, as defined by the lower of the average natural grade or finished grade along the exterior of the building facing the respective front or rear lot line, to the midpoint of a sloped roof or the highest point of a flat the roof. The midpoint of a sloped roof is considered to be one half of the vertical distance of a sloped roof structure measured from the top plate of the uppermost storey to the highest point of the roof. (B/L No. 14783-25-12-09)\nDiagram: Height Measurement\n(B/L No. 14694-24-11-04)\nRepealed. (B/L No. 14783-25-12-09)\nThe height of a detached garage or carport shall be measured from the finished grade at the point used for vehicular access.\n101.7.2 Building Separation\nRequired separation distances between buildings are measured from the nearest point of each building face.\n101.8 Additional Regulations\nAdditional zoning regulations apply, including, but not limited to, those found in:\n(a) Section 6: Supplementary Regulations\n(b) Schedule 8: Off-Street Parking\n(B/L No. 14661-24-06-10)"
+  },
+  {
+    "block_id": "block_3050d995e62623af",
+    "block_type": "heading",
+    "char_end": 35,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.7",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_4d31029eeb589945",
+    "text": "101.7 Measurements and Calculations"
+  },
+  {
+    "block_id": "block_2bf00562e9ac3fb6",
+    "block_type": "heading",
+    "char_end": 14,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.7.1",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_b9700ac59f7adacd",
+    "text": "101.7.1 Height"
+  },
+  {
+    "block_id": "block_2cded9a8d4e4ec77",
+    "block_type": "list_item",
+    "char_end": 576,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_8e1e4aec56c81ea6",
+    "text": "The height of a principal or accessory building shall be measured from the lower of the average front or average rear elevation, as defined by the lower of the average natural grade or finished grade along the exterior of the building facing the respective front or rear lot line, to the midpoint of a sloped roof or the highest point of a flat the roof. The midpoint of a sloped roof is considered to be one half of the vertical distance of a sloped roof structure measured from the top plate of the uppermost storey to the highest point of the roof. (B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_46d0ab3bbdd1436b",
+    "block_type": "heading",
+    "char_end": 27,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_e96e6d2c78fd593d",
+    "text": "Diagram: Height Measurement"
+  },
+  {
+    "block_id": "block_fc9afb0c49fa48ab",
+    "block_type": "paragraph",
+    "char_end": 24,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_caf5a0dfbe26ae8a",
+    "text": "(B/L No. 14694-24-11-04)"
+  },
+  {
+    "block_id": "block_d63ee3fabeea727b",
+    "block_type": "list_item",
+    "char_end": 34,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_6eea415cbe46a48e",
+    "text": "Repealed. (B/L No. 14783-25-12-09)"
+  },
+  {
+    "block_id": "block_fde7e03b6b745ab4",
+    "block_type": "list_item",
+    "char_end": 124,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_3d96b413c3b5b9b6",
+    "text": "The height of a detached garage or carport shall be measured from the finished grade at the point used for vehicular access."
+  },
+  {
+    "block_id": "block_f1c721843c213253",
+    "block_type": "list_item",
+    "char_end": 27,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.7.2",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_2c0fd95e876595ed",
+    "text": "101.7.2 Building Separation"
+  },
+  {
+    "block_id": "block_24de44c9b109960b",
+    "block_type": "list_item",
+    "char_end": 106,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_eb8d646c38e5da77",
+    "text": "Required separation distances between buildings are measured from the nearest point of each building face."
+  },
+  {
+    "block_id": "block_b3b2bb4252c644a1",
+    "block_type": "heading",
+    "char_end": 28,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "101.8",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_be450a36e464cec2",
+    "text": "101.8 Additional Regulations"
+  },
+  {
+    "block_id": "block_cdb9fdde5b541f3e",
+    "block_type": "list_item",
+    "char_end": 83,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_8ee0aa34bc4ea533",
+    "text": "Additional zoning regulations apply, including, but not limited to, those found in:"
+  },
+  {
+    "block_id": "block_b583818ab05ef0c2",
+    "block_type": "list_item",
+    "char_end": 40,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_3d9f9793ca60ecde",
+    "text": "(a) Section 6: Supplementary Regulations"
+  },
+  {
+    "block_id": "block_4979c9b0930ed362",
+    "block_type": "list_item",
+    "char_end": 34,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_9ed99254a78940c4",
+    "text": "(b) Schedule 8: Off-Street Parking"
+  },
+  {
+    "block_id": "block_b89cbfb02d19e7e6",
+    "block_type": "paragraph",
+    "char_end": 24,
+    "char_start": 0,
+    "city": "Burnaby",
+    "metadata": {
+      "city_key": "burnaby_r1",
+      "ingest_backend": "docling",
+      "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac"
+    },
+    "page": 7,
+    "schema_version": "f1.artifacts.v0",
+    "section_id": "",
+    "source_id": "burnaby_r1:source",
+    "span_id": "span_dcd3dc00094a5c0a",
+    "text": "(B/L No. 14661-24-06-10)"
+  }
+]

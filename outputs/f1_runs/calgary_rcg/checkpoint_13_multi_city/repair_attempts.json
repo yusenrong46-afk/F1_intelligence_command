@@ -1,0 +1,72 @@
+[
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "calgary_rcg",
+    "field_proofs": {},
+    "gap_types": [],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate needs applicability or scope context before verifier rerun",
+    "patch_id": "f1_repair_0001",
+    "risk_flags": [
+      "needs_context"
+    ],
+    "rule_id": "f1_candidate_0001",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "lot coverage applies to dwelling building unit",
+      "lot coverage"
+    ],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "calgary_rcg",
+    "field_proofs": {},
+    "gap_types": [],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate needs applicability or scope context before verifier rerun",
+    "patch_id": "f1_repair_0002",
+    "risk_flags": [
+      "needs_context"
+    ],
+    "rule_id": "f1_candidate_0002",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "dwelling units applies to dwelling building unit",
+      "dwelling units"
+    ],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "calgary_rcg",
+    "field_proofs": {},
+    "gap_types": [
+      "operator_not_supported"
+    ],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate has unsupported field evidence; retrieve stronger proof before patching",
+    "patch_id": "f1_repair_0003",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0003",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "floor area maximum minimum shall not exceed at least",
+      "floor area"
+    ],
+    "unresolved_dependencies": [],
+    "verifier_rerun_ready": false
+  }
+]

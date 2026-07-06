@@ -1,0 +1,322 @@
+[
+  {
+    "applies_to": "",
+    "city": "surrey_r3",
+    "condition": "",
+    "constraint_scope": "maximum height",
+    "evidence_ids": [
+      "f1_retrieval_001_01"
+    ],
+    "exception": "",
+    "operator": "<=",
+    "raw": {
+      "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+      "field_citations": {
+        "constraint_scope": {
+          "evidence_id": "f1_retrieval_001_01",
+          "page": 151,
+          "quote": "Building Type | | Requirement Single Family Dwelling with or without a Secondary Suite | Building Height with sloped roof | Must not exceed 9 m | Building height where any portion of the roof has a slope less than < 1:4 | Must not exceed 7.3 m | Building height in floodplain, as referred to in Part 8 Floodproofing | Must not exceed 10 m1 Duplex with or without a Secondary Suite | Building Height with sloped roof | Mu",
+          "section_id": "7.3",
+          "span_id": "span_5d884b393794b628"
+        },
+        "operator": {
+          "evidence_id": "f1_retrieval_001_01",
+          "page": 151,
+          "quote": "Building Type | | Requirement Single Family Dwelling with or without a Secondary Suite | Building Height with sloped roof | Must not exceed 9 m | Building height where any portion of the roof has a slope less than < 1:4 | Must not exceed 7.3 m | Building height in floodplain, as referred to in Part 8 Floodproofing | Must not exceed 10 m1 Duplex with or without a Secondary Suite | Building Height with sloped roof | Mu",
+          "section_id": "7.3",
+          "span_id": "span_5d884b393794b628"
+        },
+        "rule_object": {
+          "evidence_id": "f1_retrieval_001_01",
+          "page": 151,
+          "quote": "Building Type | | Requirement Single Family Dwelling with or without a Secondary Suite | Building Height with sloped roof | Must not exceed 9 m | Building height where any portion of the roof has a slope less than < 1:4 | Must not exceed 7.3 m | Building height in floodplain, as referred to in Part 8 Floodproofing | Must not exceed 10 m1 Duplex with or without a Secondary Suite | Building Height with sloped roof | Mu",
+          "section_id": "7.3",
+          "span_id": "span_5d884b393794b628"
+        },
+        "unit": {
+          "evidence_id": "f1_retrieval_001_01",
+          "page": 151,
+          "quote": "9 m",
+          "section_id": "7.3",
+          "span_id": "span_5d884b393794b628"
+        },
+        "value": {
+          "evidence_id": "f1_retrieval_001_01",
+          "page": 151,
+          "quote": "9 m",
+          "section_id": "7.3",
+          "span_id": "span_5d884b393794b628"
+        }
+      },
+      "page": 151,
+      "query": "maximum height",
+      "run_id": "checkpoint_13_multi_city",
+      "section_id": "7.3",
+      "span_id": "span_5d884b393794b628"
+    },
+    "rule_id": "f1_candidate_0001",
+    "rule_object": "height",
+    "rule_type": "height",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_needed",
+    "unit": "m",
+    "value": "9",
+    "zone": ""
+  },
+  {
+    "applies_to": "",
+    "city": "surrey_r3",
+    "condition": "",
+    "constraint_scope": "minimum setback",
+    "evidence_ids": [
+      "f1_retrieval_002_01"
+    ],
+    "exception": "",
+    "operator": ">=",
+    "raw": {
+      "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+      "field_citations": {
+        "constraint_scope": {
+          "evidence_id": "f1_retrieval_002_01",
+          "page": 149,
+          "quote": "i. Front Yard: a. Except for a garage, the front yard setback may be relaxed at the lower floor level to 5.0 m for a maximum of 50% of the width of the single family dwelling; b. If a minimum of 50% of the width of the single family dwelling is set back 9 m, the setback to an attached garage may be relaxed to",
+          "section_id": "5.0",
+          "span_id": "span_ec16fac964cf81f1"
+        },
+        "operator": {
+          "evidence_id": "f1_retrieval_002_01",
+          "page": 149,
+          "quote": "i. Front Yard: a. Except for a garage, the front yard setback may be relaxed at the lower floor level to 5.0 m for a maximum of 50% of the width of the single family dwelling; b. If a minimum of 50% of the width of the single family dwelling is set back 9 m, the setback to an attached garage may be relaxed to",
+          "section_id": "5.0",
+          "span_id": "span_ec16fac964cf81f1"
+        },
+        "rule_object": {
+          "evidence_id": "f1_retrieval_002_01",
+          "page": 149,
+          "quote": "i. Front Yard: a. Except for a garage, the front yard setback may be relaxed at the lower floor level to 5.0 m for a maximum of 50% of the width of the single family dwelling; b. If a minimum of 50% of the width of the single family dwelling is set back 9 m, the setback to an attached garage may be relaxed to",
+          "section_id": "5.0",
+          "span_id": "span_ec16fac964cf81f1"
+        },
+        "unit": {
+          "evidence_id": "f1_retrieval_002_01",
+          "page": 149,
+          "quote": "5.0 m",
+          "section_id": "5.0",
+          "span_id": "span_ec16fac964cf81f1"
+        },
+        "value": {
+          "evidence_id": "f1_retrieval_002_01",
+          "page": 149,
+          "quote": "5.0 m",
+          "section_id": "5.0",
+          "span_id": "span_ec16fac964cf81f1"
+        }
+      },
+      "page": 149,
+      "query": "minimum setback",
+      "run_id": "checkpoint_13_multi_city",
+      "section_id": "5.0",
+      "span_id": "span_ec16fac964cf81f1"
+    },
+    "rule_id": "f1_candidate_0002",
+    "rule_object": "setback",
+    "rule_type": "setback",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_needed",
+    "unit": "m",
+    "value": "5",
+    "zone": ""
+  },
+  {
+    "applies_to": "",
+    "city": "surrey_r3",
+    "condition": "",
+    "constraint_scope": "lot coverage",
+    "evidence_ids": [
+      "f1_retrieval_003_03"
+    ],
+    "exception": "",
+    "operator": "<=",
+    "raw": {
+      "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+      "field_citations": {
+        "constraint_scope": {
+          "evidence_id": "f1_retrieval_003_03",
+          "page": 147,
+          "quote": "Building Type | Lot Size | | | Maximum Lot Coverage | | Single Family Dwelling with or without a Secondary Suite | | \u2264 | 560 sq. m | | 40% | | > 560 sq. m but \u2264 1,262 sq. m | | | | 40% reduced at a rate of 2% for each | | | | | | 93 sq. m of additional lot area until | | | | | | 25% is reached | | > 1,262 sq. m | | | | 25% | Single Family Dwelling with or without a Secondary Suite, Coach House, or Garden Suite | | \u2264 ",
+          "section_id": "",
+          "span_id": "span_402a692506bff2a9"
+        },
+        "operator": {
+          "evidence_id": "f1_retrieval_003_03",
+          "page": 147,
+          "quote": "Building Type | Lot Size | | | Maximum Lot Coverage | | Single Family Dwelling with or without a Secondary Suite | | \u2264 | 560 sq. m | | 40% | | > 560 sq. m but \u2264 1,262 sq. m | | | | 40% reduced at a rate of 2% for each | | | | | | 93 sq. m of additional lot area until | | | | | | 25% is reached | | > 1,262 sq. m | | | | 25% | Single Family Dwelling with or without a Secondary Suite, Coach House, or Garden Suite | | \u2264 ",
+          "section_id": "",
+          "span_id": "span_402a692506bff2a9"
+        },
+        "rule_object": {
+          "evidence_id": "f1_retrieval_003_03",
+          "page": 147,
+          "quote": "Building Type | Lot Size | | | Maximum Lot Coverage | | Single Family Dwelling with or without a Secondary Suite | | \u2264 | 560 sq. m | | 40% | | > 560 sq. m but \u2264 1,262 sq. m | | | | 40% reduced at a rate of 2% for each | | | | | | 93 sq. m of additional lot area until | | | | | | 25% is reached | | > 1,262 sq. m | | | | 25% | Single Family Dwelling with or without a Secondary Suite, Coach House, or Garden Suite | | \u2264 ",
+          "section_id": "",
+          "span_id": "span_402a692506bff2a9"
+        },
+        "unit": {
+          "evidence_id": "f1_retrieval_003_03",
+          "page": 147,
+          "quote": "40%",
+          "section_id": "",
+          "span_id": "span_402a692506bff2a9"
+        },
+        "value": {
+          "evidence_id": "f1_retrieval_003_03",
+          "page": 147,
+          "quote": "40%",
+          "section_id": "",
+          "span_id": "span_402a692506bff2a9"
+        }
+      },
+      "page": 147,
+      "query": "lot coverage",
+      "run_id": "checkpoint_13_multi_city",
+      "section_id": "",
+      "span_id": "span_402a692506bff2a9"
+    },
+    "rule_id": "f1_candidate_0003",
+    "rule_object": "lot_coverage",
+    "rule_type": "lot_coverage",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_needed",
+    "unit": "%",
+    "value": "40",
+    "zone": ""
+  },
+  {
+    "applies_to": "",
+    "city": "surrey_r3",
+    "condition": "",
+    "constraint_scope": "building separation",
+    "evidence_ids": [
+      "f1_retrieval_005_01"
+    ],
+    "exception": "",
+    "operator": ">=",
+    "raw": {
+      "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+      "field_citations": {
+        "constraint_scope": {
+          "evidence_id": "f1_retrieval_005_01",
+          "page": 150,
+          "quote": "i. Separation: a. A minimum separation of 5 m is required between the single family dwelling or duplex and any accessory buildings and structures exceeding 2.4 m in building height, including detached garage or carport regardless of building height. The minimum separation may be reduced to 3.0 m for stairs and for an outdoor space such as a deck or patio that occupies a maximum of 10 sq. m and may be covered by a roo",
+          "section_id": "2.4",
+          "span_id": "span_402ddb632ee913e4"
+        },
+        "operator": {
+          "evidence_id": "f1_retrieval_005_01",
+          "page": 150,
+          "quote": "i. Separation: a. A minimum separation of 5 m is required between the single family dwelling or duplex and any accessory buildings and structures exceeding 2.4 m in building height, including detached garage or carport regardless of building height. The minimum separation may be reduced to 3.0 m for stairs and for an outdoor space such as a deck or patio that occupies a maximum of 10 sq. m and may be covered by a roo",
+          "section_id": "2.4",
+          "span_id": "span_402ddb632ee913e4"
+        },
+        "rule_object": {
+          "evidence_id": "f1_retrieval_005_01",
+          "page": 150,
+          "quote": "i. Separation: a. A minimum separation of 5 m is required between the single family dwelling or duplex and any accessory buildings and structures exceeding 2.4 m in building height, including detached garage or carport regardless of building height. The minimum separation may be reduced to 3.0 m for stairs and for an outdoor space such as a deck or patio that occupies a maximum of 10 sq. m and may be covered by a roo",
+          "section_id": "2.4",
+          "span_id": "span_402ddb632ee913e4"
+        },
+        "unit": {
+          "evidence_id": "f1_retrieval_005_01",
+          "page": 150,
+          "quote": "5 m",
+          "section_id": "2.4",
+          "span_id": "span_402ddb632ee913e4"
+        },
+        "value": {
+          "evidence_id": "f1_retrieval_005_01",
+          "page": 150,
+          "quote": "5 m",
+          "section_id": "2.4",
+          "span_id": "span_402ddb632ee913e4"
+        }
+      },
+      "page": 150,
+      "query": "building separation",
+      "run_id": "checkpoint_13_multi_city",
+      "section_id": "2.4",
+      "span_id": "span_402ddb632ee913e4"
+    },
+    "rule_id": "f1_candidate_0004",
+    "rule_object": "building_separation",
+    "rule_type": "building_separation",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_needed",
+    "unit": "m",
+    "value": "5",
+    "zone": ""
+  },
+  {
+    "applies_to": "",
+    "city": "surrey_r3",
+    "condition": "",
+    "constraint_scope": "floor area",
+    "evidence_ids": [
+      "f1_retrieval_006_01"
+    ],
+    "exception": "",
+    "operator": ">=",
+    "raw": {
+      "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+      "field_citations": {
+        "constraint_scope": {
+          "evidence_id": "f1_retrieval_006_01",
+          "page": 146,
+          "quote": "minimum floor area of 35 sq.m. and a maximum total i. Not floor area of 75 sq. m.",
+          "section_id": "",
+          "span_id": "span_0c5b8b53fa87150f"
+        },
+        "operator": {
+          "evidence_id": "f1_retrieval_006_01",
+          "page": 146,
+          "quote": "minimum floor area of 35 sq.m. and a maximum total i. Not floor area of 75 sq. m.",
+          "section_id": "",
+          "span_id": "span_0c5b8b53fa87150f"
+        },
+        "rule_object": {
+          "evidence_id": "f1_retrieval_006_01",
+          "page": 146,
+          "quote": "minimum floor area of 35 sq.m. and a maximum total i. Not floor area of 75 sq. m.",
+          "section_id": "",
+          "span_id": "span_0c5b8b53fa87150f"
+        },
+        "unit": {
+          "evidence_id": "f1_retrieval_006_01",
+          "page": 146,
+          "quote": "35 sq.m",
+          "section_id": "",
+          "span_id": "span_0c5b8b53fa87150f"
+        },
+        "value": {
+          "evidence_id": "f1_retrieval_006_01",
+          "page": 146,
+          "quote": "35 sq.m",
+          "section_id": "",
+          "span_id": "span_0c5b8b53fa87150f"
+        }
+      },
+      "page": 146,
+      "query": "floor area",
+      "run_id": "checkpoint_13_multi_city",
+      "section_id": "",
+      "span_id": "span_0c5b8b53fa87150f"
+    },
+    "rule_id": "f1_candidate_0005",
+    "rule_object": "floor_area",
+    "rule_type": "floor_area",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_needed",
+    "unit": "m2",
+    "value": "35",
+    "zone": ""
+  }
+]

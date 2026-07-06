@@ -1,0 +1,92 @@
+[
+  {
+    "evidence_ids": [
+      "f1_retrieval_001_04"
+    ],
+    "packet_id": "f1_review_0001",
+    "question": "What applicability or scope context is required before verifying this height candidate?",
+    "rule_id": "f1_candidate_0001",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_002_03"
+    ],
+    "packet_id": "f1_review_0002",
+    "question": "What applicability or scope context is required before verifying this setback candidate?",
+    "rule_id": "f1_candidate_0002",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_01"
+    ],
+    "packet_id": "f1_review_0003",
+    "question": "What applicability or scope context is required before verifying this lot coverage candidate?",
+    "rule_id": "f1_candidate_0003",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_004_02"
+    ],
+    "packet_id": "f1_review_0004",
+    "question": "Which source span exactly supports the missing fields for this dwelling units candidate?",
+    "rule_id": "f1_candidate_0004",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_005_03"
+    ],
+    "packet_id": "f1_review_0005",
+    "question": "What applicability or scope context is required before verifying this building separation candidate?",
+    "rule_id": "f1_candidate_0005",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_006_01"
+    ],
+    "packet_id": "f1_review_0006",
+    "question": "What applicability or scope context is required before verifying this floor area candidate?",
+    "rule_id": "f1_candidate_0006",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  }
+]

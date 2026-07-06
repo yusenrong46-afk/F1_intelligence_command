@@ -1,0 +1,10 @@
+{
+  "actions": [],
+  "artifact": "operator_review_actions.json",
+  "city_key": "burnaby_r1",
+  "generated_at": "2026-07-06T05:37:55.678197+00:00",
+  "note": "Append-only local operator notes. These do not verify, approve, promote, or export rules.",
+  "run_id": "checkpoint_16_product_operations",
+  "schema_version": "f1.artifacts.v0",
+  "writes_rule_status": false
+}

@@ -1,0 +1,245 @@
+[
+  {
+    "applies_to": "lot line setbacks for street yards",
+    "city": "burnaby_r1",
+    "condition": "",
+    "constraint_scope": "minimum setback",
+    "evidence_ids": [
+      "f1_retrieval_002_06"
+    ],
+    "exception": "",
+    "operator": ">=",
+    "raw": {
+      "extraction_note": "Candidate copy repaired by proof patch; deterministic verification decides promotion.",
+      "field_citations": {
+        "applies_to": {
+          "evidence_id": "f1_retrieval_002_06",
+          "page": 6,
+          "quote": "(d) lot line setbacks for street yards may meet a minimum of 2.0 m;",
+          "section_id": "2.0",
+          "span_id": "span_96f7888616883e11"
+        },
+        "constraint_scope": {
+          "evidence_id": "f1_retrieval_002_06",
+          "page": 6,
+          "quote": "(d) lot line setbacks for street yards may meet a minimum of 2.0 m;",
+          "section_id": "2.0",
+          "span_id": "span_96f7888616883e11"
+        },
+        "operator": {
+          "evidence_id": "f1_retrieval_002_06",
+          "page": 6,
+          "quote": "(d) lot line setbacks for street yards may meet a minimum of 2.0 m;",
+          "section_id": "2.0",
+          "span_id": "span_96f7888616883e11"
+        },
+        "rule_object": {
+          "evidence_id": "f1_retrieval_002_06",
+          "page": 6,
+          "quote": "(d) lot line setbacks for street yards may meet a minimum of 2.0 m;",
+          "section_id": "2.0",
+          "span_id": "span_96f7888616883e11"
+        },
+        "unit": {
+          "evidence_id": "f1_retrieval_002_06",
+          "page": 6,
+          "quote": "2.0 m",
+          "section_id": "2.0",
+          "span_id": "span_96f7888616883e11"
+        },
+        "value": {
+          "evidence_id": "f1_retrieval_002_06",
+          "page": 6,
+          "quote": "2.0 m",
+          "section_id": "2.0",
+          "span_id": "span_96f7888616883e11"
+        }
+      },
+      "page": 6,
+      "query": "minimum setback",
+      "repair_history": [
+        {
+          "action": "proof_patch",
+          "changed_fields": {
+            "applies_to": "lot line setbacks for street yards"
+          },
+          "model": "deterministic_context_patch",
+          "patch_id": "f1_guarded_repair_0002"
+        }
+      ],
+      "run_id": "checkpoint_13_multi_city",
+      "section_id": "2.0",
+      "span_id": "span_96f7888616883e11"
+    },
+    "rule_id": "f1_candidate_0002",
+    "rule_object": "setback",
+    "rule_type": "setback",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "unit": "m",
+    "value": "2",
+    "zone": ""
+  },
+  {
+    "applies_to": "maximum lot coverage as set out in Section 101.4",
+    "city": "burnaby_r1",
+    "condition": "",
+    "constraint_scope": "lot coverage",
+    "evidence_ids": [
+      "f1_retrieval_003_01"
+    ],
+    "exception": "",
+    "operator": "<=",
+    "raw": {
+      "extraction_note": "Candidate copy repaired by proof patch; deterministic verification decides promotion.",
+      "field_citations": {
+        "applies_to": {
+          "evidence_id": "f1_retrieval_003_01",
+          "page": 6,
+          "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60%",
+          "section_id": "101.4",
+          "span_id": "span_75aa1d5cd765c6aa"
+        },
+        "constraint_scope": {
+          "evidence_id": "f1_retrieval_003_01",
+          "page": 6,
+          "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60%",
+          "section_id": "101.4",
+          "span_id": "span_75aa1d5cd765c6aa"
+        },
+        "operator": {
+          "evidence_id": "f1_retrieval_003_01",
+          "page": 6,
+          "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60%",
+          "section_id": "101.4",
+          "span_id": "span_75aa1d5cd765c6aa"
+        },
+        "rule_object": {
+          "evidence_id": "f1_retrieval_003_01",
+          "page": 6,
+          "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60%",
+          "section_id": "101.4",
+          "span_id": "span_75aa1d5cd765c6aa"
+        },
+        "unit": {
+          "evidence_id": "f1_retrieval_003_01",
+          "page": 6,
+          "quote": "60%",
+          "section_id": "101.4",
+          "span_id": "span_75aa1d5cd765c6aa"
+        },
+        "value": {
+          "evidence_id": "f1_retrieval_003_01",
+          "page": 6,
+          "quote": "60%",
+          "section_id": "101.4",
+          "span_id": "span_75aa1d5cd765c6aa"
+        }
+      },
+      "page": 6,
+      "query": "lot coverage",
+      "repair_history": [
+        {
+          "action": "proof_patch",
+          "changed_fields": {
+            "applies_to": "maximum lot coverage as set out in Section 101.4"
+          },
+          "model": "deterministic_context_patch",
+          "patch_id": "f1_guarded_repair_0003"
+        }
+      ],
+      "run_id": "checkpoint_13_multi_city",
+      "section_id": "101.4",
+      "span_id": "span_75aa1d5cd765c6aa"
+    },
+    "rule_id": "f1_candidate_0003",
+    "rule_object": "lot_coverage",
+    "rule_type": "lot_coverage",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "unit": "%",
+    "value": "60",
+    "zone": ""
+  },
+  {
+    "applies_to": "principal building located between a front and rear principal",
+    "city": "burnaby_r1",
+    "condition": "",
+    "constraint_scope": "building separation",
+    "evidence_ids": [
+      "f1_retrieval_005_02"
+    ],
+    "exception": "",
+    "operator": ">=",
+    "raw": {
+      "extraction_note": "Candidate copy repaired by proof patch; deterministic verification decides promotion.",
+      "field_citations": {
+        "applies_to": {
+          "evidence_id": "f1_retrieval_005_02",
+          "page": 3,
+          "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line. Diagram: Separation between buildings Diagram: Separation between detached units on a wider lot (B/L No. 14783-2",
+          "section_id": "6.0",
+          "span_id": "span_6d33ce0a64ff7992"
+        },
+        "constraint_scope": {
+          "evidence_id": "f1_retrieval_005_02",
+          "page": 3,
+          "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line. Diagram: Separation between buildings Diagram: Separation between detached units on a wider lot (B/L No. 14783-2",
+          "section_id": "6.0",
+          "span_id": "span_6d33ce0a64ff7992"
+        },
+        "operator": {
+          "evidence_id": "f1_retrieval_005_02",
+          "page": 3,
+          "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line. Diagram: Separation between buildings Diagram: Separation between detached units on a wider lot (B/L No. 14783-2",
+          "section_id": "6.0",
+          "span_id": "span_6d33ce0a64ff7992"
+        },
+        "rule_object": {
+          "evidence_id": "f1_retrieval_005_02",
+          "page": 3,
+          "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line. Diagram: Separation between buildings Diagram: Separation between detached units on a wider lot (B/L No. 14783-2",
+          "section_id": "6.0",
+          "span_id": "span_6d33ce0a64ff7992"
+        },
+        "unit": {
+          "evidence_id": "f1_retrieval_005_02",
+          "page": 3,
+          "quote": "6.0 m",
+          "section_id": "6.0",
+          "span_id": "span_6d33ce0a64ff7992"
+        },
+        "value": {
+          "evidence_id": "f1_retrieval_005_02",
+          "page": 3,
+          "quote": "6.0 m",
+          "section_id": "6.0",
+          "span_id": "span_6d33ce0a64ff7992"
+        }
+      },
+      "page": 3,
+      "query": "building separation",
+      "repair_history": [
+        {
+          "action": "proof_patch",
+          "changed_fields": {
+            "applies_to": "principal building located between a front and rear principal"
+          },
+          "model": "deterministic_context_patch",
+          "patch_id": "f1_guarded_repair_0005"
+        }
+      ],
+      "run_id": "checkpoint_13_multi_city",
+      "section_id": "6.0",
+      "span_id": "span_6d33ce0a64ff7992"
+    },
+    "rule_id": "f1_candidate_0005",
+    "rule_object": "building_separation",
+    "rule_type": "building_separation",
+    "schema_version": "f1.artifacts.v0",
+    "status": "verified",
+    "unit": "m",
+    "value": "6",
+    "zone": ""
+  }
+]

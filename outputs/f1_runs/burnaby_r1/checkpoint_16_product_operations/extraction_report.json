@@ -1,0 +1,39 @@
+{
+  "all_candidates_review_needed": true,
+  "artifact": "extraction_report.json",
+  "candidate_count": 51,
+  "method": "retrieval_measurement_candidate_extractor",
+  "note": "Checkpoint 4 extraction proposes structured candidates only; verification is a later gate.",
+  "promoted_count": 0,
+  "schema_version": "f1.artifacts.v0",
+  "skipped": [
+    {
+      "query": "permitted uses small-scale multi-unit housing",
+      "reason": "unsupported_query_family"
+    },
+    {
+      "query": "group home permitted",
+      "reason": "unsupported_query_family"
+    },
+    {
+      "query": "automatic sprinkler",
+      "reason": "unsupported_query_family"
+    },
+    {
+      "query": "community heritage register lot coverage impervious surface street yard",
+      "reason": "unsupported_query_family"
+    },
+    {
+      "query": "table_101_4",
+      "reason": "table_terms_missing",
+      "spec": "dwelling_units:Rowhouse:lot:3units:"
+    },
+    {
+      "query": "table_101_4",
+      "reason": "table_terms_missing",
+      "spec": "dwelling_units:Small-Scale Multi-Unit 1 to 2 Units:lot:2units:"
+    }
+  ],
+  "skipped_count": 6,
+  "table_candidate_count": 40
+}

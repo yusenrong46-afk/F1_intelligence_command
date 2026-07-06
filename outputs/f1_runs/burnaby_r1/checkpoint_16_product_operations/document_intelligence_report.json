@@ -1,0 +1,18 @@
+{
+  "artifact": "document_intelligence",
+  "city": "Burnaby",
+  "city_key": "burnaby_r1",
+  "generated_at": "2026-07-06T05:37:55.608695+00:00",
+  "ingest_backend": "docling",
+  "run_id": "checkpoint_16_product_operations",
+  "schema_version": "f1.artifacts.v0",
+  "source_id": "burnaby_r1:source",
+  "source_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac",
+  "summary": {
+    "document_block_count": 112,
+    "heading_block_count": 19,
+    "page_count": 7,
+    "source_span_count": 112,
+    "table_block_count": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "url": "https://www.surrey.ca/sites/default/files/bylaws/BYL_Zoning_12000.pdf",
+  "fetched_at": "2026-07-05T19:44:00Z",
+  "sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+  "bytes": 3281006,
+  "pages": [
+    143,
+    154
+  ],
+  "pages_rationale": "The full official Surrey Zoning By-law 12000 PDF is cached locally. The M8.5 cross-city holdout scopes extraction to Part 15, R3 Urban Residential Zone, pages 143-154, which contains the small-scale multi-unit housing target zone.",
+  "page_count": 369
+}

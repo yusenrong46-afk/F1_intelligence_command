@@ -1,0 +1,28 @@
+{
+  "artifact": "f1_city_summary.json",
+  "candidate_count": 5,
+  "city_key": "surrey_r3",
+  "false_approval_count": 0,
+  "false_verified_count": 0,
+  "gis_export_rule_count": 0,
+  "gold_rule_count": 0,
+  "guarded_repair_promotion_count": 0,
+  "ingest_backend": "pdfplumber",
+  "output_dir": "outputs/f1_runs/surrey_r3/checkpoint_13_multi_city",
+  "page_count": 12,
+  "proposal_case_count": 0,
+  "release_label": "exploratory_no_gold",
+  "retrieval_queries_with_hits": 6,
+  "retrieval_query_count": 6,
+  "review_queue_count": 5,
+  "run_id": "checkpoint_13_multi_city",
+  "runtime_seconds": 19.345,
+  "schema_version": "f1.artifacts.v0",
+  "source_registry_status": "pass",
+  "source_span_count": 175,
+  "status": "completed",
+  "status_counts": {
+    "context_required": 5
+  },
+  "verified_count": 0
+}

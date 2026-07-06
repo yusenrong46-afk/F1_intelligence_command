@@ -1,0 +1,464 @@
+[
+  {
+    "candidate": {
+      "applies_to": "",
+      "city": "burnaby_r1",
+      "condition": "",
+      "constraint_scope": "maximum height",
+      "evidence_ids": [
+        "f1_retrieval_001_04"
+      ],
+      "exception": "",
+      "operator": "<=",
+      "raw": {
+        "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+        "field_citations": {
+          "constraint_scope": {
+            "evidence_id": "f1_retrieval_001_04",
+            "page": 5,
+            "quote": "An accessory structure not being a building, excluding a fence or a retaining wall, located outside of a required yard, shall not exceed 4.6 m in height. 101.5.6 Child Care Facilities A child care facility in the R1 District must: (a) be limited to a maximum of 25 children; (b) be located on a corner lot; (c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwelling units ",
+            "section_id": "4.6",
+            "span_id": "span_74067e46d2ff39be"
+          },
+          "operator": {
+            "evidence_id": "f1_retrieval_001_04",
+            "page": 5,
+            "quote": "An accessory structure not being a building, excluding a fence or a retaining wall, located outside of a required yard, shall not exceed 4.6 m in height. 101.5.6 Child Care Facilities A child care facility in the R1 District must: (a) be limited to a maximum of 25 children; (b) be located on a corner lot; (c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwelling units ",
+            "section_id": "4.6",
+            "span_id": "span_74067e46d2ff39be"
+          },
+          "rule_object": {
+            "evidence_id": "f1_retrieval_001_04",
+            "page": 5,
+            "quote": "An accessory structure not being a building, excluding a fence or a retaining wall, located outside of a required yard, shall not exceed 4.6 m in height. 101.5.6 Child Care Facilities A child care facility in the R1 District must: (a) be limited to a maximum of 25 children; (b) be located on a corner lot; (c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwelling units ",
+            "section_id": "4.6",
+            "span_id": "span_74067e46d2ff39be"
+          },
+          "unit": {
+            "evidence_id": "f1_retrieval_001_04",
+            "page": 5,
+            "quote": "4.6 m",
+            "section_id": "4.6",
+            "span_id": "span_74067e46d2ff39be"
+          },
+          "value": {
+            "evidence_id": "f1_retrieval_001_04",
+            "page": 5,
+            "quote": "4.6 m",
+            "section_id": "4.6",
+            "span_id": "span_74067e46d2ff39be"
+          }
+        },
+        "page": 5,
+        "query": "maximum height",
+        "run_id": "checkpoint_5_verification",
+        "section_id": "4.6",
+        "span_id": "span_74067e46d2ff39be"
+      },
+      "rule_id": "f1_candidate_0001",
+      "rule_object": "height",
+      "rule_type": "height",
+      "schema_version": "f1.artifacts.v0",
+      "status": "review_needed",
+      "unit": "m",
+      "value": "4.6",
+      "zone": ""
+    },
+    "evidence_ids": [
+      "f1_retrieval_001_04"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "rule_id": "f1_candidate_0001",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "candidate": {
+      "applies_to": "",
+      "city": "burnaby_r1",
+      "condition": "",
+      "constraint_scope": "minimum setback",
+      "evidence_ids": [
+        "f1_retrieval_002_03"
+      ],
+      "exception": "",
+      "operator": ">=",
+      "raw": {
+        "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+        "field_citations": {
+          "constraint_scope": {
+            "evidence_id": "f1_retrieval_002_03",
+            "page": 6,
+            "quote": "(d) lot line setbacks for street yards may meet a minimum of 2.0 m;",
+            "section_id": "2.0",
+            "span_id": "span_66d9d3bd47f4ad89"
+          },
+          "operator": {
+            "evidence_id": "f1_retrieval_002_03",
+            "page": 6,
+            "quote": "(d) lot line setbacks for street yards may meet a minimum of 2.0 m;",
+            "section_id": "2.0",
+            "span_id": "span_66d9d3bd47f4ad89"
+          },
+          "rule_object": {
+            "evidence_id": "f1_retrieval_002_03",
+            "page": 6,
+            "quote": "(d) lot line setbacks for street yards may meet a minimum of 2.0 m;",
+            "section_id": "2.0",
+            "span_id": "span_66d9d3bd47f4ad89"
+          },
+          "unit": {
+            "evidence_id": "f1_retrieval_002_03",
+            "page": 6,
+            "quote": "2.0 m",
+            "section_id": "2.0",
+            "span_id": "span_66d9d3bd47f4ad89"
+          },
+          "value": {
+            "evidence_id": "f1_retrieval_002_03",
+            "page": 6,
+            "quote": "2.0 m",
+            "section_id": "2.0",
+            "span_id": "span_66d9d3bd47f4ad89"
+          }
+        },
+        "page": 6,
+        "query": "minimum setback",
+        "run_id": "checkpoint_5_verification",
+        "section_id": "2.0",
+        "span_id": "span_66d9d3bd47f4ad89"
+      },
+      "rule_id": "f1_candidate_0002",
+      "rule_object": "setback",
+      "rule_type": "setback",
+      "schema_version": "f1.artifacts.v0",
+      "status": "review_needed",
+      "unit": "m",
+      "value": "2",
+      "zone": ""
+    },
+    "evidence_ids": [
+      "f1_retrieval_002_03"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "rule_id": "f1_candidate_0002",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "candidate": {
+      "applies_to": "",
+      "city": "burnaby_r1",
+      "condition": "",
+      "constraint_scope": "lot coverage",
+      "evidence_ids": [
+        "f1_retrieval_003_01"
+      ],
+      "exception": "",
+      "operator": "<=",
+      "raw": {
+        "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+        "field_citations": {
+          "constraint_scope": {
+            "evidence_id": "f1_retrieval_003_01",
+            "page": 6,
+            "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60% and impervious surface area up to 70%;",
+            "section_id": "101.4",
+            "span_id": "span_5b9983c378a883e1"
+          },
+          "operator": {
+            "evidence_id": "f1_retrieval_003_01",
+            "page": 6,
+            "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60% and impervious surface area up to 70%;",
+            "section_id": "101.4",
+            "span_id": "span_5b9983c378a883e1"
+          },
+          "rule_object": {
+            "evidence_id": "f1_retrieval_003_01",
+            "page": 6,
+            "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60% and impervious surface area up to 70%;",
+            "section_id": "101.4",
+            "span_id": "span_5b9983c378a883e1"
+          },
+          "unit": {
+            "evidence_id": "f1_retrieval_003_01",
+            "page": 6,
+            "quote": "60%",
+            "section_id": "101.4",
+            "span_id": "span_5b9983c378a883e1"
+          },
+          "value": {
+            "evidence_id": "f1_retrieval_003_01",
+            "page": 6,
+            "quote": "60%",
+            "section_id": "101.4",
+            "span_id": "span_5b9983c378a883e1"
+          }
+        },
+        "page": 6,
+        "query": "lot coverage",
+        "run_id": "checkpoint_5_verification",
+        "section_id": "101.4",
+        "span_id": "span_5b9983c378a883e1"
+      },
+      "rule_id": "f1_candidate_0003",
+      "rule_object": "lot_coverage",
+      "rule_type": "lot_coverage",
+      "schema_version": "f1.artifacts.v0",
+      "status": "review_needed",
+      "unit": "%",
+      "value": "60",
+      "zone": ""
+    },
+    "evidence_ids": [
+      "f1_retrieval_003_01"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "rule_id": "f1_candidate_0003",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "candidate": {
+      "applies_to": "",
+      "city": "burnaby_r1",
+      "condition": "",
+      "constraint_scope": "dwelling units",
+      "evidence_ids": [
+        "f1_retrieval_004_02"
+      ],
+      "exception": "",
+      "operator": "<=",
+      "raw": {
+        "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+        "field_citations": {
+          "constraint_scope": {
+            "evidence_id": "f1_retrieval_004_02",
+            "page": 4,
+            "quote": "| Total Dwelling Units on a Lot | Total Dwelling Units on a Lot | 1 to 3 Units | 4 to 6 Units Minimum 3+ Bedroom Units: | 1 Unit | 2 Units",
+            "section_id": "101.5",
+            "span_id": "span_5d92ccba38582fdf"
+          },
+          "operator": {
+            "evidence_id": "f1_retrieval_004_02",
+            "page": 4,
+            "quote": "| Total Dwelling Units on a Lot | Total Dwelling Units on a Lot | 1 to 3 Units | 4 to 6 Units Minimum 3+ Bedroom Units: | 1 Unit | 2 Units",
+            "section_id": "101.5",
+            "span_id": "span_5d92ccba38582fdf"
+          },
+          "rule_object": {
+            "evidence_id": "f1_retrieval_004_02",
+            "page": 4,
+            "quote": "| Total Dwelling Units on a Lot | Total Dwelling Units on a Lot | 1 to 3 Units | 4 to 6 Units Minimum 3+ Bedroom Units: | 1 Unit | 2 Units",
+            "section_id": "101.5",
+            "span_id": "span_5d92ccba38582fdf"
+          },
+          "unit": {
+            "evidence_id": "f1_retrieval_004_02",
+            "page": 4,
+            "quote": "3 Units",
+            "section_id": "101.5",
+            "span_id": "span_5d92ccba38582fdf"
+          },
+          "value": {
+            "evidence_id": "f1_retrieval_004_02",
+            "page": 4,
+            "quote": "3 Units",
+            "section_id": "101.5",
+            "span_id": "span_5d92ccba38582fdf"
+          }
+        },
+        "page": 4,
+        "query": "dwelling units",
+        "run_id": "checkpoint_5_verification",
+        "section_id": "101.5",
+        "span_id": "span_5d92ccba38582fdf"
+      },
+      "rule_id": "f1_candidate_0004",
+      "rule_object": "dwelling_units",
+      "rule_type": "dwelling_units",
+      "schema_version": "f1.artifacts.v0",
+      "status": "review_needed",
+      "unit": "units",
+      "value": "3",
+      "zone": ""
+    },
+    "evidence_ids": [
+      "f1_retrieval_004_02"
+    ],
+    "reason": "candidate fields are not fully supported by cited evidence",
+    "rule_id": "f1_candidate_0004",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "support_gaps": [
+      "operator_not_supported"
+    ],
+    "unresolved_dependencies": []
+  },
+  {
+    "candidate": {
+      "applies_to": "",
+      "city": "burnaby_r1",
+      "condition": "",
+      "constraint_scope": "building separation",
+      "evidence_ids": [
+        "f1_retrieval_005_03"
+      ],
+      "exception": "",
+      "operator": ">=",
+      "raw": {
+        "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+        "field_citations": {
+          "constraint_scope": {
+            "evidence_id": "f1_retrieval_005_03",
+            "page": 3,
+            "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line.",
+            "section_id": "6.0",
+            "span_id": "span_7d843e53a0844892"
+          },
+          "operator": {
+            "evidence_id": "f1_retrieval_005_03",
+            "page": 3,
+            "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line.",
+            "section_id": "6.0",
+            "span_id": "span_7d843e53a0844892"
+          },
+          "rule_object": {
+            "evidence_id": "f1_retrieval_005_03",
+            "page": 3,
+            "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line.",
+            "section_id": "6.0",
+            "span_id": "span_7d843e53a0844892"
+          },
+          "unit": {
+            "evidence_id": "f1_retrieval_005_03",
+            "page": 3,
+            "quote": "6.0 m",
+            "section_id": "6.0",
+            "span_id": "span_7d843e53a0844892"
+          },
+          "value": {
+            "evidence_id": "f1_retrieval_005_03",
+            "page": 3,
+            "quote": "6.0 m",
+            "section_id": "6.0",
+            "span_id": "span_7d843e53a0844892"
+          }
+        },
+        "page": 3,
+        "query": "building separation",
+        "run_id": "checkpoint_5_verification",
+        "section_id": "6.0",
+        "span_id": "span_7d843e53a0844892"
+      },
+      "rule_id": "f1_candidate_0005",
+      "rule_object": "building_separation",
+      "rule_type": "building_separation",
+      "schema_version": "f1.artifacts.v0",
+      "status": "review_needed",
+      "unit": "m",
+      "value": "6",
+      "zone": ""
+    },
+    "evidence_ids": [
+      "f1_retrieval_005_03"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "rule_id": "f1_candidate_0005",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "candidate": {
+      "applies_to": "",
+      "city": "burnaby_r1",
+      "condition": "",
+      "constraint_scope": "floor area",
+      "evidence_ids": [
+        "f1_retrieval_006_01"
+      ],
+      "exception": "",
+      "operator": ">=",
+      "raw": {
+        "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+        "field_citations": {
+          "constraint_scope": {
+            "evidence_id": "f1_retrieval_006_01",
+            "page": 4,
+            "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+            "section_id": "",
+            "span_id": "span_819d31e00929e032"
+          },
+          "operator": {
+            "evidence_id": "f1_retrieval_006_01",
+            "page": 4,
+            "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+            "section_id": "",
+            "span_id": "span_819d31e00929e032"
+          },
+          "rule_object": {
+            "evidence_id": "f1_retrieval_006_01",
+            "page": 4,
+            "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+            "section_id": "",
+            "span_id": "span_819d31e00929e032"
+          },
+          "unit": {
+            "evidence_id": "f1_retrieval_006_01",
+            "page": 4,
+            "quote": "27 m 2",
+            "section_id": "",
+            "span_id": "span_819d31e00929e032"
+          },
+          "value": {
+            "evidence_id": "f1_retrieval_006_01",
+            "page": 4,
+            "quote": "27 m 2",
+            "section_id": "",
+            "span_id": "span_819d31e00929e032"
+          }
+        },
+        "page": 4,
+        "query": "floor area",
+        "run_id": "checkpoint_5_verification",
+        "section_id": "",
+        "span_id": "span_819d31e00929e032"
+      },
+      "rule_id": "f1_candidate_0006",
+      "rule_object": "floor_area",
+      "rule_type": "floor_area",
+      "schema_version": "f1.artifacts.v0",
+      "status": "review_needed",
+      "unit": "m2",
+      "value": "27",
+      "zone": ""
+    },
+    "evidence_ids": [
+      "f1_retrieval_006_01"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "rule_id": "f1_candidate_0006",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  }
+]

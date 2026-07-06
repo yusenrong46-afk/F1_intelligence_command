@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/burnaby_prototype/schemas/f1_artifact_manifest.schema.json",
+  "title": "F1 Artifact Manifest",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "city", "run_id", "artifact_names"],
+  "properties": {
+    "schema_version": {
+      "const": "f1.artifacts.v0"
+    },
+    "city": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "bylaw_version": {
+      "type": "string"
+    },
+    "artifact_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "contains": {
+        "const": "f1_summary.json"
+      }
+    }
+  }
+}

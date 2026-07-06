@@ -1,0 +1,242 @@
+[
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_01"
+    ],
+    "packet_id": "f1_review_0001",
+    "question": "What applicability or scope context is required before verifying this lot area candidate?",
+    "rule_id": "f1_candidate_0001",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_004_02"
+    ],
+    "packet_id": "f1_review_0002",
+    "question": "What applicability or scope context is required before verifying this lot area candidate?",
+    "rule_id": "f1_candidate_0002",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_005_02"
+    ],
+    "packet_id": "f1_review_0003",
+    "question": "Which source span exactly supports the missing fields for this height candidate?",
+    "rule_id": "f1_candidate_0003",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_006_01"
+    ],
+    "packet_id": "f1_review_0004",
+    "question": "What applicability or scope context is required before verifying this storeys candidate?",
+    "rule_id": "f1_candidate_0004",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_007_01"
+    ],
+    "packet_id": "f1_review_0005",
+    "question": "What applicability or scope context is required before verifying this setback candidate?",
+    "rule_id": "f1_candidate_0005",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_008_01"
+    ],
+    "packet_id": "f1_review_0006",
+    "question": "What applicability or scope context is required before verifying this lot coverage candidate?",
+    "rule_id": "f1_candidate_0006",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_009_01"
+    ],
+    "packet_id": "f1_review_0007",
+    "question": "What applicability or scope context is required before verifying this impervious surface candidate?",
+    "rule_id": "f1_candidate_0007",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_010_02"
+    ],
+    "packet_id": "f1_review_0008",
+    "question": "Which source span exactly supports the missing fields for this dwelling units candidate?",
+    "rule_id": "f1_candidate_0008",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_011_03"
+    ],
+    "packet_id": "f1_review_0009",
+    "question": "What applicability or scope context is required before verifying this building separation candidate?",
+    "rule_id": "f1_candidate_0009",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_012_01"
+    ],
+    "packet_id": "f1_review_0010",
+    "question": "What applicability or scope context is required before verifying this fire access corridor candidate?",
+    "rule_id": "f1_candidate_0010",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_015_01"
+    ],
+    "packet_id": "f1_review_0011",
+    "question": "What applicability or scope context is required before verifying this floor area candidate?",
+    "rule_id": "f1_candidate_0011",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_001_03"
+    ],
+    "packet_id": "f1_review_0012",
+    "question": "Which source span exactly supports the missing fields for this permitted use candidate?",
+    "rule_id": "f1_candidate_0012",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_001_03"
+    ],
+    "packet_id": "f1_review_0013",
+    "question": "Which source span exactly supports the missing fields for this permitted use candidate?",
+    "rule_id": "f1_candidate_0013",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "packet_id": "f1_review_0014",
+    "question": "Which source span exactly supports the missing fields for this lot coverage candidate?",
+    "rule_id": "f1_candidate_0017",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "packet_id": "f1_review_0015",
+    "question": "Which source span exactly supports the missing fields for this impervious surface candidate?",
+    "rule_id": "f1_candidate_0022",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_04"
+    ],
+    "packet_id": "f1_review_0016",
+    "question": "Which source span exactly supports the missing fields for this automatic sprinkler candidate?",
+    "rule_id": "f1_candidate_0046",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "suggested_actions": [
+      "inspect_source_context",
+      "improve_retrieval",
+      "prepare_proof_patch"
+    ]
+  }
+]

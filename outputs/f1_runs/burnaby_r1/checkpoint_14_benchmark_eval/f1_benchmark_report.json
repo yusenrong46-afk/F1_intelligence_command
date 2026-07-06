@@ -1,0 +1,1432 @@
+{
+  "artifact": "f1_benchmark_report.json",
+  "city_key": "burnaby_r1",
+  "generated_at": "2026-07-06T04:23:08.339512+00:00",
+  "gis_contract_metrics": {
+    "citation_missing_count": 0,
+    "citation_missing_rule_ids": [],
+    "export_matches_verified_count": true,
+    "export_rule_count": 38,
+    "review_rule_leak_count": 0,
+    "review_rule_leak_ids": [],
+    "verified_only": true,
+    "verified_rule_count": 38
+  },
+  "gold_rules_path": "/Users/thomas/Desktop/Capstone_prototype/Burnaby_prototype/benchmark/gold/burnaby_r1_gold_rules.json",
+  "proposal_cases_path": "/Users/thomas/Desktop/Capstone_prototype/Burnaby_prototype/benchmark/gold/burnaby_r1_proposal_cases.json",
+  "proposal_metrics": {
+    "false_approval_cases": [],
+    "false_approval_count": 0,
+    "false_rejection_cases": [],
+    "false_rejection_count": 0,
+    "field_expectation_mismatch_cases": [],
+    "field_expectation_mismatch_count": 0,
+    "needs_review_count": 2,
+    "proposal_case_accuracy": 1.0,
+    "proposal_case_count": 10,
+    "proposal_decision_accuracy": 1.0
+  },
+  "proposal_results": [
+    {
+      "actual_failed_checks": [],
+      "actual_review_checks": [],
+      "case_id": "approved_verified_core_flat",
+      "decision": "approved",
+      "decision_matches_expected": true,
+      "description": "A compliant flat-roof proposal where height, separations, and accessory rear-yard setback are covered by verified M7 rules.",
+      "expected_decision": "approved",
+      "expected_failed_checks": [],
+      "expected_review_checks": [],
+      "failed_checks": [],
+      "failed_checks_match_expected": true,
+      "matches_expected": true,
+      "passed_checks": [
+        {
+          "actual_value": 6.8,
+          "field": "rear_principal_height_m",
+          "label": "Rear principal building height",
+          "message": "6.8 must be <= 7.0.",
+          "operator": "<=",
+          "rule_id": "f1_candidate_0031",
+          "rule_unit": "m",
+          "rule_value": "7"
+        },
+        {
+          "actual_value": 6.2,
+          "field": "front_rear_principal_separation_m",
+          "label": "Front/rear principal building separation",
+          "message": "6.2 must be >= 6.0.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0009",
+          "rule_unit": "m",
+          "rule_value": "6"
+        },
+        {
+          "actual_value": 2.5,
+          "field": "rear_rear_principal_separation_m",
+          "label": "Rear/rear principal building separation",
+          "message": "2.5 must be >= 2.4.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0043",
+          "rule_unit": "m",
+          "rule_value": "2.4"
+        },
+        {
+          "actual_value": 3.2,
+          "field": "accessory_rear_yard_setback_m",
+          "label": "Accessory building interior rear-yard setback",
+          "message": "3.2 must be >= 1.5.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0039",
+          "rule_unit": "m",
+          "rule_value": "1.5"
+        }
+      ],
+      "review_checks": [],
+      "review_checks_match_expected": true
+    },
+    {
+      "actual_failed_checks": [],
+      "actual_review_checks": [],
+      "case_id": "approved_verified_core_sloping_exact",
+      "decision": "approved",
+      "decision_matches_expected": true,
+      "description": "Boundary-value proposal where height and separations are covered by verified rules and pass exactly.",
+      "expected_decision": "approved",
+      "expected_failed_checks": [],
+      "expected_review_checks": [],
+      "failed_checks": [],
+      "failed_checks_match_expected": true,
+      "matches_expected": true,
+      "passed_checks": [
+        {
+          "actual_value": 7.5,
+          "field": "rear_principal_height_m",
+          "label": "Rear principal building height",
+          "message": "7.5 must be <= 7.5.",
+          "operator": "<=",
+          "rule_id": "f1_candidate_0030",
+          "rule_unit": "m",
+          "rule_value": "7.5"
+        },
+        {
+          "actual_value": 6.0,
+          "field": "front_rear_principal_separation_m",
+          "label": "Front/rear principal building separation",
+          "message": "6.0 must be >= 6.0.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0009",
+          "rule_unit": "m",
+          "rule_value": "6"
+        },
+        {
+          "actual_value": 2.4,
+          "field": "rear_rear_principal_separation_m",
+          "label": "Rear/rear principal building separation",
+          "message": "2.4 must be >= 2.4.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0043",
+          "rule_unit": "m",
+          "rule_value": "2.4"
+        }
+      ],
+      "review_checks": [],
+      "review_checks_match_expected": true
+    },
+    {
+      "actual_failed_checks": [
+        "rear_principal_height_m"
+      ],
+      "actual_review_checks": [],
+      "case_id": "reject_flat_roof_height",
+      "decision": "rejected",
+      "decision_matches_expected": true,
+      "description": "The flat-roof rear-principal height exceeds the verified 7.0 m maximum.",
+      "expected_decision": "rejected",
+      "expected_failed_checks": [
+        "rear_principal_height_m"
+      ],
+      "expected_review_checks": [],
+      "failed_checks": [
+        {
+          "actual_value": 7.4,
+          "field": "rear_principal_height_m",
+          "label": "Rear principal building height",
+          "message": "7.4 must be <= 7.0.",
+          "operator": "<=",
+          "rule_id": "f1_candidate_0031",
+          "rule_unit": "m",
+          "rule_value": "7"
+        }
+      ],
+      "failed_checks_match_expected": true,
+      "matches_expected": true,
+      "passed_checks": [],
+      "review_checks": [],
+      "review_checks_match_expected": true
+    },
+    {
+      "actual_failed_checks": [
+        "front_rear_principal_separation_m"
+      ],
+      "actual_review_checks": [],
+      "case_id": "reject_front_rear_separation",
+      "decision": "rejected",
+      "decision_matches_expected": true,
+      "description": "Front-to-rear principal separation is below the verified 6.0 m minimum.",
+      "expected_decision": "rejected",
+      "expected_failed_checks": [
+        "front_rear_principal_separation_m"
+      ],
+      "expected_review_checks": [],
+      "failed_checks": [
+        {
+          "actual_value": 5.5,
+          "field": "front_rear_principal_separation_m",
+          "label": "Front/rear principal building separation",
+          "message": "5.5 must be >= 6.0.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0009",
+          "rule_unit": "m",
+          "rule_value": "6"
+        }
+      ],
+      "failed_checks_match_expected": true,
+      "matches_expected": true,
+      "passed_checks": [],
+      "review_checks": [],
+      "review_checks_match_expected": true
+    },
+    {
+      "actual_failed_checks": [
+        "accessory_rear_yard_setback_m"
+      ],
+      "actual_review_checks": [],
+      "case_id": "reject_accessory_rear_yard",
+      "decision": "rejected",
+      "decision_matches_expected": true,
+      "description": "Accessory rear-yard setback is below the verified 3.0 m minimum.",
+      "expected_decision": "rejected",
+      "expected_failed_checks": [
+        "accessory_rear_yard_setback_m"
+      ],
+      "expected_review_checks": [],
+      "failed_checks": [
+        {
+          "actual_value": 1.2,
+          "field": "accessory_rear_yard_setback_m",
+          "label": "Accessory building interior rear-yard setback",
+          "message": "1.2 must be >= 1.5.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0039",
+          "rule_unit": "m",
+          "rule_value": "1.5"
+        }
+      ],
+      "failed_checks_match_expected": true,
+      "matches_expected": true,
+      "passed_checks": [],
+      "review_checks": [],
+      "review_checks_match_expected": true
+    },
+    {
+      "actual_failed_checks": [
+        "lane_yard_setback_m"
+      ],
+      "actual_review_checks": [],
+      "case_id": "needs_review_lane_yard",
+      "decision": "rejected",
+      "decision_matches_expected": true,
+      "description": "Lane-yard setback is verified in the active Pipeline 5 GIS contract, so a proposal below 1.5 m should be rejected.",
+      "expected_decision": "rejected",
+      "expected_failed_checks": [
+        "lane_yard_setback_m"
+      ],
+      "expected_review_checks": [],
+      "failed_checks": [
+        {
+          "actual_value": 1.4,
+          "field": "lane_yard_setback_m",
+          "label": "Lane-yard setback",
+          "message": "1.4 must be >= 1.5.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0037",
+          "rule_unit": "m",
+          "rule_value": "1.5"
+        }
+      ],
+      "failed_checks_match_expected": true,
+      "matches_expected": true,
+      "passed_checks": [],
+      "review_checks": [],
+      "review_checks_match_expected": true
+    },
+    {
+      "actual_failed_checks": [],
+      "actual_review_checks": [
+        "rear_principal_rear_yard_setback_m"
+      ],
+      "case_id": "needs_review_rear_principal_rear_yard",
+      "decision": "needs_review",
+      "decision_matches_expected": true,
+      "description": "Rear-principal rear-yard setback is in the review queue, so the system must not approve it yet.",
+      "expected_decision": "needs_review",
+      "expected_failed_checks": [],
+      "expected_review_checks": [
+        "rear_principal_rear_yard_setback_m"
+      ],
+      "failed_checks": [],
+      "failed_checks_match_expected": true,
+      "matches_expected": true,
+      "passed_checks": [],
+      "review_checks": [
+        {
+          "actual_value": 3.2,
+          "field": "rear_principal_rear_yard_setback_m",
+          "label": "Rear principal building interior rear-yard setback",
+          "message": "A source-supported rule exists, but this proposal field requires human or site-context review before automatic approval or rejection.",
+          "reason": "site_role_requires_review",
+          "review_rule_id": "f1_candidate_0038"
+        }
+      ],
+      "review_checks_match_expected": true
+    },
+    {
+      "actual_failed_checks": [
+        "fire_access_corridor_width_m"
+      ],
+      "actual_review_checks": [
+        "fire_access_corridor_clearance_m"
+      ],
+      "case_id": "needs_review_fire_access",
+      "decision": "rejected",
+      "decision_matches_expected": true,
+      "description": "Fire access corridor WIDTH is verified (>=1.0 m) and this 0.8 m proposal fails it, so the proposal is rejected. The vertical CLEARANCE rule is correctly held in review: its only cited evidence ('clear of any projections or obstructions') does not deterministically support the fire_access_corridor family (rule_object_not_supported), so the verifier refuses to verify it rather than guess. The field disposition reflects that sound conservatism; the rejection decision is unchanged.",
+      "expected_decision": "rejected",
+      "expected_failed_checks": [
+        "fire_access_corridor_width_m"
+      ],
+      "expected_review_checks": [
+        "fire_access_corridor_clearance_m"
+      ],
+      "failed_checks": [
+        {
+          "actual_value": 0.8,
+          "field": "fire_access_corridor_width_m",
+          "label": "Fire access corridor width",
+          "message": "0.8 must be >= 1.0.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0047",
+          "rule_unit": "m",
+          "rule_value": "1"
+        }
+      ],
+      "failed_checks_match_expected": true,
+      "matches_expected": true,
+      "passed_checks": [],
+      "review_checks": [
+        {
+          "actual_value": 2.4,
+          "field": "fire_access_corridor_clearance_m",
+          "label": "Fire access corridor vertical clearance",
+          "message": "A source-supported rule exists, but this proposal field requires human or site-context review before automatic approval or rejection.",
+          "reason": "visual_clearance_requires_review",
+          "review_rule_id": "f1_candidate_0048"
+        }
+      ],
+      "review_checks_match_expected": true
+    },
+    {
+      "actual_failed_checks": [],
+      "actual_review_checks": [
+        "lot_coverage_percent"
+      ],
+      "case_id": "needs_review_heritage_coverage",
+      "decision": "needs_review",
+      "decision_matches_expected": true,
+      "description": "On a heritage lot, lot coverage remains review-routed because it is site/context-sensitive in the current compliance policy. The heritage impervious-surface limit is verified and can be applied: 69% passes the verified <=70% rule. The overall decision still stays needs_review because the lot-coverage field is not automatically approved.",
+      "expected_decision": "needs_review",
+      "expected_failed_checks": [],
+      "expected_review_checks": [
+        "lot_coverage_percent"
+      ],
+      "failed_checks": [],
+      "failed_checks_match_expected": true,
+      "matches_expected": true,
+      "passed_checks": [
+        {
+          "actual_value": 69,
+          "field": "impervious_surface_percent",
+          "label": "Impervious surface coverage",
+          "message": "69.0 must be <= 70.0.",
+          "operator": "<=",
+          "rule_id": "f1_candidate_0050",
+          "rule_unit": "%",
+          "rule_value": "70"
+        }
+      ],
+      "review_checks": [
+        {
+          "actual_value": 61,
+          "field": "lot_coverage_percent",
+          "label": "Lot coverage",
+          "message": "A source-supported rule exists, but this proposal field requires human or site-context review before automatic approval or rejection.",
+          "reason": "verified_rule_requires_review",
+          "review_rule_id": "f1_candidate_0049"
+        }
+      ],
+      "review_checks_match_expected": true
+    },
+    {
+      "actual_failed_checks": [],
+      "actual_review_checks": [],
+      "case_id": "approve_all_verified_setbacks_and_separations",
+      "decision": "approved",
+      "decision_matches_expected": true,
+      "description": "Positive control: every field is covered by a verified rule and passes it, so the proposal must be APPROVED. Falsifies 'the system can never approve'.",
+      "expected_decision": "approved",
+      "expected_failed_checks": [],
+      "expected_review_checks": [],
+      "failed_checks": [],
+      "failed_checks_match_expected": true,
+      "matches_expected": true,
+      "passed_checks": [
+        {
+          "actual_value": 2.0,
+          "field": "lane_yard_setback_m",
+          "label": "Lane-yard setback",
+          "message": "2.0 must be >= 1.5.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0037",
+          "rule_unit": "m",
+          "rule_value": "1.5"
+        },
+        {
+          "actual_value": 4.5,
+          "field": "street_front_yard_setback_m",
+          "label": "Front street-yard setback",
+          "message": "4.5 must be >= 4.0.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0035",
+          "rule_unit": "m",
+          "rule_value": "4"
+        },
+        {
+          "actual_value": 3.2,
+          "field": "street_flanking_yard_setback_m",
+          "label": "Flanking street-yard setback",
+          "message": "3.2 must be >= 3.0.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0036",
+          "rule_unit": "m",
+          "rule_value": "3"
+        },
+        {
+          "actual_value": 6.5,
+          "field": "front_rear_principal_separation_m",
+          "label": "Front/rear principal building separation",
+          "message": "6.5 must be >= 6.0.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0009",
+          "rule_unit": "m",
+          "rule_value": "6"
+        },
+        {
+          "actual_value": 3.0,
+          "field": "rear_rear_principal_separation_m",
+          "label": "Rear/rear principal building separation",
+          "message": "3.0 must be >= 2.4.",
+          "operator": ">=",
+          "rule_id": "f1_candidate_0043",
+          "rule_unit": "m",
+          "rule_value": "2.4"
+        }
+      ],
+      "review_checks": [],
+      "review_checks_match_expected": true
+    }
+  ],
+  "quality_gates": {
+    "failed_gates": [],
+    "gates": {
+      "candidate_recall_ge_0_90": true,
+      "false_approval_is_0": true,
+      "false_verified_is_0": true,
+      "gis_verified_only": true,
+      "proposal_case_accuracy_is_1": true,
+      "proposal_decision_accuracy_is_1": true,
+      "retrieval_recall_at_6_ge_0_95": true,
+      "verified_precision_is_1": true,
+      "verified_source_support_complete": true
+    },
+    "passed": true
+  },
+  "retrieval_benchmark": {
+    "gold_results": [
+      {
+        "gold_id": "br1_use_001",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_001_01",
+        "matched_span_id": "span_5e3abcc55ff57fbc",
+        "query": "permitted uses small scale multi unit permitted_use",
+        "required_evidence_terms": [
+          "permitted",
+          "uses",
+          "small",
+          "scale",
+          "multi",
+          "unit"
+        ]
+      },
+      {
+        "gold_id": "br1_units_001",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_002_01",
+        "matched_span_id": "span_f68dcc8a90b6f103",
+        "query": "maximum 6 dwelling units lot dwelling_units",
+        "required_evidence_terms": [
+          "maximum",
+          "6",
+          "dwelling",
+          "units",
+          "lot"
+        ]
+      },
+      {
+        "gold_id": "br1_lot_area_001",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_003_01",
+        "matched_span_id": "span_5b4be0511def1293",
+        "query": "minimum lot area 281 lot_area m2",
+        "required_evidence_terms": [
+          "minimum",
+          "lot",
+          "area",
+          "281"
+        ]
+      },
+      {
+        "gold_id": "br1_height_001",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_004_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "maximum height rear principal 7.5 m",
+        "required_evidence_terms": [
+          "maximum",
+          "height",
+          "rear",
+          "principal",
+          "7.5"
+        ]
+      },
+      {
+        "gold_id": "br1_height_002",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_005_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "maximum height rear principal 7.0 m",
+        "required_evidence_terms": [
+          "maximum",
+          "height",
+          "rear",
+          "principal",
+          "7.0"
+        ]
+      },
+      {
+        "gold_id": "br1_height_003",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_006_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "rear principal storeys 2",
+        "required_evidence_terms": [
+          "rear",
+          "principal",
+          "storeys",
+          "2"
+        ]
+      },
+      {
+        "gold_id": "br1_height_004",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_007_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "accessory buildings 4.0 height m",
+        "required_evidence_terms": [
+          "accessory",
+          "buildings",
+          "4.0"
+        ]
+      },
+      {
+        "gold_id": "br1_setback_001",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_008_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "street yard front 4.0 setback m",
+        "required_evidence_terms": [
+          "street",
+          "yard",
+          "front",
+          "4.0"
+        ]
+      },
+      {
+        "gold_id": "br1_setback_002",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_009_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "street yard flanking 3.0 setback m",
+        "required_evidence_terms": [
+          "street",
+          "yard",
+          "flanking",
+          "3.0"
+        ]
+      },
+      {
+        "gold_id": "br1_setback_003",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_010_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "lane yard 1.5 setback m",
+        "required_evidence_terms": [
+          "lane",
+          "yard",
+          "1.5"
+        ]
+      },
+      {
+        "gold_id": "br1_setback_004",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_011_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "interior rear yard 3.0 setback m",
+        "required_evidence_terms": [
+          "interior",
+          "rear",
+          "yard",
+          "3.0"
+        ]
+      },
+      {
+        "gold_id": "br1_setback_005",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_012_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "interior rear yard 1.5 accessory setback m",
+        "required_evidence_terms": [
+          "interior",
+          "rear",
+          "yard",
+          "1.5",
+          "accessory"
+        ]
+      },
+      {
+        "gold_id": "br1_setback_006",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_013_01",
+        "matched_span_id": "span_c9f4d821343aa034",
+        "query": "interior side yard 1.2 end unit setback m",
+        "required_evidence_terms": [
+          "interior",
+          "side",
+          "yard",
+          "1.2",
+          "end",
+          "unit"
+        ]
+      },
+      {
+        "gold_id": "br1_setback_007",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_014_03",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "interior side yard 0 setback m",
+        "required_evidence_terms": [
+          "interior",
+          "side",
+          "yard",
+          "0"
+        ]
+      },
+      {
+        "gold_id": "br1_sep_001",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_015_01",
+        "matched_span_id": "span_7d843e53a0844892",
+        "query": "between rear principals 2.4 building_separation m",
+        "required_evidence_terms": [
+          "between",
+          "rear",
+          "principals",
+          "2.4"
+        ]
+      },
+      {
+        "gold_id": "br1_sep_002",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_016_01",
+        "matched_span_id": "span_7d843e53a0844892",
+        "query": "between front rear principals 6.0 building_separation m",
+        "required_evidence_terms": [
+          "between",
+          "front",
+          "rear",
+          "principals",
+          "6.0"
+        ]
+      },
+      {
+        "gold_id": "br1_sep_003",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_017_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "between all other buildings 2.4 building_separation m",
+        "required_evidence_terms": [
+          "between",
+          "all",
+          "other",
+          "buildings",
+          "2.4"
+        ]
+      },
+      {
+        "gold_id": "br1_fire_001",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_018_01",
+        "matched_span_id": "span_8f4f3ffe2dcf7729",
+        "query": "45 street automatic sprinkler automatic_sprinkler m",
+        "required_evidence_terms": [
+          "45",
+          "street",
+          "automatic",
+          "sprinkler"
+        ]
+      },
+      {
+        "gold_id": "br1_fire_002",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_019_01",
+        "matched_span_id": "span_22f5e0f59d63579b",
+        "query": "minimum 1.0 fire access corridor fire_access_corridor m",
+        "required_evidence_terms": [
+          "minimum",
+          "1.0",
+          "fire",
+          "access",
+          "corridor"
+        ]
+      },
+      {
+        "gold_id": "br1_fire_003",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_020_01",
+        "matched_span_id": "span_a20ee106bd881a3f",
+        "query": "clear projections obstructions 2.5 fire_access_corridor m",
+        "required_evidence_terms": [
+          "clear",
+          "projections",
+          "obstructions",
+          "2.5"
+        ]
+      },
+      {
+        "gold_id": "br1_heritage_001",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_021_01",
+        "matched_span_id": "span_a20ee106bd881a3f",
+        "query": "heritage lot coverage 60 lot_coverage %",
+        "required_evidence_terms": [
+          "heritage",
+          "lot",
+          "coverage",
+          "60"
+        ]
+      },
+      {
+        "gold_id": "br1_heritage_002",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_022_01",
+        "matched_span_id": "span_a20ee106bd881a3f",
+        "query": "heritage impervious surface 70 impervious_surface %",
+        "required_evidence_terms": [
+          "heritage",
+          "impervious",
+          "surface",
+          "70"
+        ]
+      },
+      {
+        "gold_id": "br1_heritage_003",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_023_01",
+        "matched_span_id": "span_66d9d3bd47f4ad89",
+        "query": "street yards minimum 2.0 setback m",
+        "required_evidence_terms": [
+          "street",
+          "yards",
+          "minimum",
+          "2.0"
+        ]
+      },
+      {
+        "gold_id": "br1_use_002",
+        "hit_count": 6,
+        "matched": false,
+        "matched_evidence_id": null,
+        "matched_span_id": null,
+        "query": "group home permitted permitted_use",
+        "required_evidence_terms": [
+          "group",
+          "home",
+          "permitted"
+        ]
+      },
+      {
+        "gold_id": "br1_height_006",
+        "hit_count": 6,
+        "matched": false,
+        "matched_evidence_id": null,
+        "matched_span_id": null,
+        "query": "front principal sloping 10 height m",
+        "required_evidence_terms": [
+          "front",
+          "principal",
+          "sloping",
+          "10"
+        ]
+      },
+      {
+        "gold_id": "br1_height_005",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_026_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "front principal flat 9.5 height m",
+        "required_evidence_terms": [
+          "front",
+          "principal",
+          "flat",
+          "9.5"
+        ]
+      },
+      {
+        "gold_id": "br1_storeys_002",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_027_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "front principal storeys 3",
+        "required_evidence_terms": [
+          "front",
+          "principal",
+          "storeys",
+          "3"
+        ]
+      },
+      {
+        "gold_id": "br1_storeys_003",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_028_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "front principal storeys 2.5",
+        "required_evidence_terms": [
+          "front",
+          "principal",
+          "storeys",
+          "2.5"
+        ]
+      },
+      {
+        "gold_id": "br1_sep_004",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_029_01",
+        "matched_span_id": "span_7d843e53a0844892",
+        "query": "between front principals 2.4 building_separation m",
+        "required_evidence_terms": [
+          "between",
+          "front",
+          "principals",
+          "2.4"
+        ]
+      },
+      {
+        "gold_id": "br1_cov_001",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_030_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "maximum lot coverage lot_coverage 55 %",
+        "required_evidence_terms": [
+          "maximum",
+          "lot",
+          "coverage"
+        ]
+      },
+      {
+        "gold_id": "br1_cov_002",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_031_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "maximum lot coverage 567 lot_coverage 40 %",
+        "required_evidence_terms": [
+          "maximum",
+          "lot",
+          "coverage",
+          "567"
+        ]
+      },
+      {
+        "gold_id": "br1_cov_003",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_032_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "maximum lot coverage 567 lot_coverage 30 %",
+        "required_evidence_terms": [
+          "maximum",
+          "lot",
+          "coverage",
+          "567"
+        ]
+      },
+      {
+        "gold_id": "br1_cov_004",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_033_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "maximum lot coverage lot_coverage 40 %",
+        "required_evidence_terms": [
+          "maximum",
+          "lot",
+          "coverage"
+        ]
+      },
+      {
+        "gold_id": "br1_cov_005",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_034_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "maximum lot coverage lot_coverage 45 %",
+        "required_evidence_terms": [
+          "maximum",
+          "lot",
+          "coverage"
+        ]
+      },
+      {
+        "gold_id": "br1_storeys_004",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_035_01",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "accessory storey storeys 1",
+        "required_evidence_terms": [
+          "accessory",
+          "storey"
+        ]
+      },
+      {
+        "gold_id": "br1_units_002",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_036_01",
+        "matched_span_id": "span_ce0e3bb3aec52363",
+        "query": "permitted dwelling units dwelling_units 3",
+        "required_evidence_terms": [
+          "permitted",
+          "dwelling",
+          "units"
+        ]
+      },
+      {
+        "gold_id": "br1_units_003",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_037_01",
+        "matched_span_id": "span_ce0e3bb3aec52363",
+        "query": "permitted dwelling units dwelling_units 2",
+        "required_evidence_terms": [
+          "permitted",
+          "dwelling",
+          "units"
+        ]
+      },
+      {
+        "gold_id": "br1_units_004",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_038_01",
+        "matched_span_id": "span_ce0e3bb3aec52363",
+        "query": "permitted dwelling units dwelling_units 4",
+        "required_evidence_terms": [
+          "permitted",
+          "dwelling",
+          "units"
+        ]
+      },
+      {
+        "gold_id": "br1_imp_001",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_039_02",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "impervious surfaces impervious_surface 70 %",
+        "required_evidence_terms": [
+          "impervious",
+          "surfaces"
+        ]
+      },
+      {
+        "gold_id": "br1_imp_002",
+        "hit_count": 6,
+        "matched": true,
+        "matched_evidence_id": "f1_retrieval_040_02",
+        "matched_span_id": "span_e81e0e23450ce24f",
+        "query": "impervious surfaces impervious_surface 60 %",
+        "required_evidence_terms": [
+          "impervious",
+          "surfaces"
+        ]
+      }
+    ],
+    "method": "gold_term_queries_at_6",
+    "metrics": {
+      "gold_rule_count": 40,
+      "retrieval_recall_at_6": 0.95,
+      "retrieved_gold_rule_count": 38
+    },
+    "top_k": 6
+  },
+  "rule_metrics": {
+    "candidate_recall": 0.975,
+    "candidate_rule_count": 51,
+    "false_verified_count": 0,
+    "false_verified_rule_ids": [],
+    "gold_rule_count": 40,
+    "matched_candidates": [
+      {
+        "gold_id": "br1_use_001",
+        "rule_id": "f1_candidate_0012",
+        "score": 8
+      },
+      {
+        "gold_id": "br1_units_001",
+        "rule_id": "f1_candidate_0015",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_lot_area_001",
+        "rule_id": "f1_candidate_0001",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_height_001",
+        "rule_id": "f1_candidate_0030",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_height_002",
+        "rule_id": "f1_candidate_0031",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_height_003",
+        "rule_id": "f1_candidate_0032",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_height_004",
+        "rule_id": "f1_candidate_0033",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_001",
+        "rule_id": "f1_candidate_0035",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_002",
+        "rule_id": "f1_candidate_0036",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_003",
+        "rule_id": "f1_candidate_0037",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_setback_004",
+        "rule_id": "f1_candidate_0036",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_005",
+        "rule_id": "f1_candidate_0037",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_006",
+        "rule_id": "f1_candidate_0005",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_007",
+        "rule_id": "f1_candidate_0040",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_sep_001",
+        "rule_id": "f1_candidate_0042",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_sep_002",
+        "rule_id": "f1_candidate_0009",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_sep_003",
+        "rule_id": "f1_candidate_0042",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_fire_001",
+        "rule_id": "f1_candidate_0046",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_fire_002",
+        "rule_id": "f1_candidate_0010",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_fire_003",
+        "rule_id": "f1_candidate_0048",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_heritage_001",
+        "rule_id": "f1_candidate_0006",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_heritage_002",
+        "rule_id": "f1_candidate_0022",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_heritage_003",
+        "rule_id": "f1_candidate_0051",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_use_002",
+        "rule_id": "f1_candidate_0012",
+        "score": 7
+      },
+      {
+        "gold_id": "br1_height_006",
+        "rule_id": "f1_candidate_0003",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_height_005",
+        "rule_id": "f1_candidate_0027",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_storeys_002",
+        "rule_id": "f1_candidate_0004",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_storeys_003",
+        "rule_id": "f1_candidate_0029",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_sep_004",
+        "rule_id": "f1_candidate_0042",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_cov_001",
+        "rule_id": "f1_candidate_0017",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_cov_002",
+        "rule_id": "f1_candidate_0018",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_cov_003",
+        "rule_id": "f1_candidate_0019",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_cov_004",
+        "rule_id": "f1_candidate_0018",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_cov_005",
+        "rule_id": "f1_candidate_0021",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_storeys_004",
+        "rule_id": "f1_candidate_0034",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_units_002",
+        "rule_id": "f1_candidate_0008",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_units_004",
+        "rule_id": "f1_candidate_0014",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_imp_001",
+        "rule_id": "f1_candidate_0022",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_imp_002",
+        "rule_id": "f1_candidate_0023",
+        "score": 11
+      }
+    ],
+    "matched_verified": [
+      {
+        "gold_id": "br1_units_001",
+        "rule_id": "f1_candidate_0015",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_lot_area_001",
+        "rule_id": "f1_candidate_0016",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_height_001",
+        "rule_id": "f1_candidate_0030",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_height_002",
+        "rule_id": "f1_candidate_0031",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_height_003",
+        "rule_id": "f1_candidate_0032",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_height_004",
+        "rule_id": "f1_candidate_0033",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_001",
+        "rule_id": "f1_candidate_0035",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_002",
+        "rule_id": "f1_candidate_0036",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_003",
+        "rule_id": "f1_candidate_0037",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_setback_004",
+        "rule_id": "f1_candidate_0036",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_005",
+        "rule_id": "f1_candidate_0037",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_006",
+        "rule_id": "f1_candidate_0041",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_setback_007",
+        "rule_id": "f1_candidate_0040",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_sep_001",
+        "rule_id": "f1_candidate_0042",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_sep_002",
+        "rule_id": "f1_candidate_0009",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_sep_003",
+        "rule_id": "f1_candidate_0042",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_fire_002",
+        "rule_id": "f1_candidate_0010",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_fire_003",
+        "rule_id": "f1_candidate_0048",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_heritage_001",
+        "rule_id": "f1_candidate_0006",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_heritage_002",
+        "rule_id": "f1_candidate_0025",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_heritage_003",
+        "rule_id": "f1_candidate_0051",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_height_006",
+        "rule_id": "f1_candidate_0026",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_height_005",
+        "rule_id": "f1_candidate_0027",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_storeys_002",
+        "rule_id": "f1_candidate_0028",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_storeys_003",
+        "rule_id": "f1_candidate_0029",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_sep_004",
+        "rule_id": "f1_candidate_0042",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_cov_002",
+        "rule_id": "f1_candidate_0018",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_cov_003",
+        "rule_id": "f1_candidate_0019",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_cov_004",
+        "rule_id": "f1_candidate_0018",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_cov_005",
+        "rule_id": "f1_candidate_0021",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_storeys_004",
+        "rule_id": "f1_candidate_0034",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_units_004",
+        "rule_id": "f1_candidate_0014",
+        "score": 11
+      },
+      {
+        "gold_id": "br1_imp_001",
+        "rule_id": "f1_candidate_0025",
+        "score": 10
+      },
+      {
+        "gold_id": "br1_imp_002",
+        "rule_id": "f1_candidate_0023",
+        "score": 11
+      }
+    ],
+    "missed_candidate_gold_rule_ids": [
+      "br1_units_003"
+    ],
+    "missed_verified_gold_rule_ids": [
+      "br1_use_001",
+      "br1_fire_001",
+      "br1_use_002",
+      "br1_cov_001",
+      "br1_units_002",
+      "br1_units_003"
+    ],
+    "review_rule_count": 13,
+    "verified_precision": 1.0,
+    "verified_recall": 0.85,
+    "verified_rule_count": 38,
+    "verified_source_support_failed_count": 0,
+    "verified_source_support_failures": []
+  },
+  "run_id": "checkpoint_14_benchmark_eval",
+  "safety": {
+    "benchmark_approves_proposals": false,
+    "benchmark_promotes_rules": false,
+    "false_approval_count": 0,
+    "false_verified_count": 0
+  },
+  "schema_version": "f1.artifacts.v0"
+}

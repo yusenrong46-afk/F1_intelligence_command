@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M7 Technical Audit and M7.5 Upgrade Report</title>
+<style>
+:root {
+  --ink: #1f2430;
+  --muted: #667085;
+  --line: #d8dee9;
+  --bg: #f7f8fb;
+  --panel: #ffffff;
+  --blue: #5477C4;
+  --green: #2f8f55;
+  --amber: #b7791f;
+  --red: #c24135;
+  --grey: #7a828f;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, Aptos, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); line-height: 1.5; }
+a { color: #2e4780; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.hero { background: #ffffff; border-bottom: 1px solid var(--line); }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 24px; }
+.kicker { color: var(--blue); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: 12px; }
+h1 { margin: 8px 0 10px; font-size: clamp(30px, 5vw, 58px); line-height: .98; letter-spacing: 0; }
+.subtitle { max-width: 920px; font-size: 18px; color: var(--muted); margin: 0 0 18px; }
+.meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.pill { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; padding: 5px 10px; font-size: 12px; font-weight: 700; background: #fff; color: var(--ink); }
+.pill.green { color: #1d6b3a; border-color: #b7dfc4; background: #eef9f0; }
+.pill.amber { color: #855a13; border-color: #f1d497; background: #fff7e4; }
+.pill.red { color: #9f2d22; border-color: #efb5ae; background: #fff0ee; }
+.pill.blue { color: #2e4780; border-color: #bed0f7; background: #eef4ff; }
+section { padding: 28px 0; }
+h2 { font-size: 26px; margin: 0 0 10px; }
+h3 { font-size: 18px; margin: 22px 0 8px; }
+p { margin: 0 0 12px; }
+.lead { font-size: 17px; color: #333b4f; max-width: 980px; }
+.grid { display: grid; gap: 16px; }
+.grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.stat { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 16px; min-height: 112px; }
+.stat-label { color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.stat-value { font-size: 34px; font-weight: 800; margin-top: 7px; }
+.stat-note { color: var(--muted); font-size: 13px; margin-top: 4px; }
+.stat.good { border-top: 4px solid var(--green); }
+.stat.warn { border-top: 4px solid var(--amber); }
+.stat.info { border-top: 4px solid var(--blue); }
+.panel { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 18px; margin: 16px 0; overflow-x: auto; }
+.callout { background: #fff7e4; border-left: 5px solid var(--amber); padding: 14px 16px; border-radius: 6px; margin: 16px 0; }
+.goodcall { background: #eef9f0; border-left: 5px solid var(--green); padding: 14px 16px; border-radius: 6px; margin: 16px 0; }
+.badcall { background: #fff0ee; border-left: 5px solid var(--red); padding: 14px 16px; border-radius: 6px; margin: 16px 0; }
+.table-scroll { width: 100%; overflow-x: auto; margin: 12px 0; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.data-table th { text-align: left; background: #f2f4f8; color: #2d3445; border-bottom: 1px solid var(--line); padding: 9px; white-space: nowrap; }
+.data-table td { border-bottom: 1px solid #edf0f5; padding: 9px; vertical-align: top; }
+.data-table tr:hover td { background: #fbfcff; }
+pre { margin: 10px 0 0; padding: 14px; background: #111827; color: #e5e7eb; border-radius: 8px; overflow-x: auto; font-size: 12px; line-height: 1.45; }
+code { font-family: "SF Mono", Menlo, Consolas, monospace; }
+ul { padding-left: 19px; }
+li { margin: 5px 0; }
+svg { width: 100%; height: auto; display: block; }
+.svg-title { font: 700 17px Inter, sans-serif; fill: var(--ink); }
+.svg-subtitle { font: 400 12px Inter, sans-serif; fill: var(--muted); }
+.svg-legend, .svg-axis-label { font: 700 12px Inter, sans-serif; fill: #343b4c; }
+.svg-small { font: 500 11px Inter, sans-serif; fill: var(--muted); }
+.svg-tiny { font: 400 9px Inter, sans-serif; fill: var(--muted); }
+.svg-bar-label { font: 800 11px Inter, sans-serif; fill: white; }
+.svg-node-title { font: 800 13px Inter, sans-serif; fill: var(--ink); }
+.svg-node-sub { font: 500 10px Inter, sans-serif; fill: #343b4c; }
+.svg-callout { font: 700 13px Inter, sans-serif; fill: #334155; }
+.footer { color: var(--muted); font-size: 12px; padding: 32px 24px 48px; }
+@media (max-width: 860px) { .grid.two, .grid.three, .grid.four { grid-template-columns: 1fr; } .wrap { padding: 22px 16px; } h1 { font-size: 36px; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">M7 audit / M7.5 planning</div>
+    <h1>Burnaby zoning verification system audit</h1>
+    <p class="subtitle">A lead-engineer review of M7 structure, execution behavior, external Surrey portability, supporting research, and the next technical upgrade path from extraction to verification to dashboard and chatbot.</p>
+    <div class="meta">
+      <span class="pill blue">Date: 2026-06-24</span>
+      <span class="pill blue">Runtime: local repo + fresh no-cache runs</span>
+      <span class="pill green">Safety target: zero false verified / zero false approvals</span>
+      <span class="pill amber">External probe: Surrey R3</span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+<section>
+  <h2>Executive Verdict</h2>
+  <p class="lead"><strong>M7 is structurally sound and safety-ready for the benchmarked cities.</strong> The key design decision is correct: extraction is a candidate generator, while deterministic verification is the authority. The fresh runs, adversarial tests, proposal cases, and dashboard/chatbot policy checks all support that boundary.</p>
+  <div class="grid four">
+    <div class="stat good"><div class="stat-label">Release false verified</div><div class="stat-value">0</div><div class="stat-note">Burnaby + Vancouver + Calgary fresh runs</div></div>
+    <div class="stat good"><div class="stat-label">False approvals</div><div class="stat-value">0</div><div class="stat-note">Burnaby proposal benchmark and all zero-case cities</div></div>
+    <div class="stat good"><div class="stat-label">Full test suite</div><div class="stat-value">606</div><div class="stat-note">606 passed + 3 subtests</div></div>
+    <div class="stat warn"><div class="stat-label">Main bottleneck</div><div class="stat-value">coverage</div><div class="stat-note">scored legal-slot coverage and review throughput</div></div>
+  </div>
+  <div class="callout"><strong>Bottom line:</strong> do not loosen the verifier for M7.5. The upgrade should improve source discovery, table layout extraction, city-specific scope configuration, gold creation, and dashboard review loops while preserving the same fail-closed promotion policy.</div>
+</section>
+
+<section>
+  <h2>System Understanding</h2>
+  <p>M7 packages matrix-aware extraction on <code>google/gemini-3.1-flash-lite</code>, source repair, deterministic verification, M7 scored measurement, GIS exports, and the Civic Console dashboard. The product path is: <code>run_m7_bakeoff.py</code> -> <code>run_m7_bakeoff_engine.py --discovery-mode exhaustive</code> -> native extraction -> <code>slim_pipeline.py</code> -> verifier outputs.</p>
+  <div class="panel"><svg viewBox="0 0 920 260" role="img" aria-label="M7 architecture drawing"><rect width="920" height="260" fill="white"/><text x="0" y="24" class="svg-title">M7 trust boundary</text><text x="0" y="45" class="svg-subtitle">Candidate generation is intentionally separated from deterministic promotion.</text><rect x="20" y="82" width="132" height="70" rx="8" fill="#CEDFFE" stroke="#1f2430" stroke-width="1"/><text x="86.0" y="109" class="svg-node-title" text-anchor="middle">Source PDF</text><text x="86.0" y="132" class="svg-node-sub" text-anchor="middle">Official bylaw + provenance</text><line x1="156" y1="117.0" x2="166" y2="117.0" stroke="#1f2430" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="172" y="82" width="132" height="70" rx="8" fill="#fff4c2" stroke="#1f2430" stroke-width="1"/><text x="238.0" y="109" class="svg-node-title" text-anchor="middle">Discovery</text><text x="238.0" y="132" class="svg-node-sub" text-anchor="middle">Chunks + evidence packs</text><line x1="308" y1="117.0" x2="318" y2="117.0" stroke="#1f2430" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="324" y="82" width="132" height="70" rx="8" fill="#fdecc8" stroke="#1f2430" stroke-width="1"/><text x="390.0" y="109" class="svg-node-title" text-anchor="middle">Extraction</text><text x="390.0" y="132" class="svg-node-sub" text-anchor="middle">LLM candidates only</text><line x1="460" y1="117.0" x2="470" y2="117.0" stroke="#1f2430" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="476" y="82" width="132" height="70" rx="8" fill="#d8ecbd" stroke="#1f2430" stroke-width="1"/><text x="542.0" y="109" class="svg-node-title" text-anchor="middle">Repair</text><text x="542.0" y="132" class="svg-node-sub" text-anchor="middle">Source-backed context restore</text><line x1="612" y1="117.0" x2="622" y2="117.0" stroke="#1f2430" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="628" y="82" width="132" height="70" rx="8" fill="#cfead8" stroke="#1f2430" stroke-width="1"/><text x="694.0" y="109" class="svg-node-title" text-anchor="middle">Verification</text><text x="694.0" y="132" class="svg-node-sub" text-anchor="middle">Deterministic proof gate</text><line x1="764" y1="117.0" x2="774" y2="117.0" stroke="#1f2430" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="780" y="82" width="132" height="70" rx="8" fill="#fcdad6" stroke="#1f2430" stroke-width="1"/><text x="846.0" y="109" class="svg-node-title" text-anchor="middle">GIS + Chat</text><text x="846.0" y="132" class="svg-node-sub" text-anchor="middle">Verified/read-only outputs</text><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2430"/></marker></defs><text x="20" y="194" class="svg-callout">Hard invariant: extraction, RAG, repair, and chatbot can explain or propose. Only verification writes verified_rules.json and GIS contracts.</text></svg></div>
+  <div class="grid two">
+    <div class="goodcall"><strong>What works:</strong> the trust boundary is explicit in docs, code, tests, and output contracts. <code>decision_policy.py</code> centralizes final bucket policy rather than scattering promotion decisions.</div>
+    <div class="callout"><strong>What remains fragile:</strong> table-heavy bylaws still depend too much on flattened text and LLM candidate phrasing. Surrey exposed this immediately through operator and scope uncertainty.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Execution Outcome</h2>
+  <p>These results were produced from scratch or refreshed locally for this audit unless noted. The M7 measurement run with <code>--refresh-verifier</code> reproduced the current release scoreboard from canonical M7 artifacts; the fresh city runs used <code>--no-model-cache</code>.</p>
+  <div class="panel"><svg viewBox="0 0 920 330" role="img" aria-label="Decision mix by city"><rect width="920" height="330" fill="white"/><text x="0" y="24" class="svg-title">Decision mix by city</text><text x="0" y="45" class="svg-subtitle">Verifier output buckets from fresh audit runs; review is an intentional fail-closed state.</text><rect x="185" y="18" width="12" height="12" rx="2" fill="#2f8f55"/><text x="203" y="29" class="svg-legend">Verified</text><rect x="290" y="18" width="12" height="12" rx="2" fill="#b7791f"/><text x="308" y="29" class="svg-legend">Review</text><rect x="395" y="18" width="12" height="12" rx="2" fill="#c24135"/><text x="413" y="29" class="svg-legend">Rejected</text><rect x="500" y="18" width="12" height="12" rx="2" fill="#7a828f"/><text x="518" y="29" class="svg-legend">Not used</text><text x="0" y="92" class="svg-axis-label">Burnaby R1</text><rect x="185.0" y="65" width="360.8" height="30" rx="4" fill="#2f8f55"/><text x="365.4" y="85" class="svg-bar-label" text-anchor="middle">87</text><rect x="545.8" y="65" width="236.4" height="30" rx="4" fill="#b7791f"/><text x="664.0" y="85" class="svg-bar-label" text-anchor="middle">57</text><rect x="782.2" y="65" width="24.9" height="30" rx="4" fill="#c24135"/><text x="890" y="85" class="svg-small" text-anchor="end">total 150</text><text x="0" y="160" class="svg-axis-label">Vancouver RS</text><rect x="185.0" y="133" width="41.5" height="30" rx="4" fill="#2f8f55"/><text x="205.7" y="153" class="svg-bar-label" text-anchor="middle">10</text><rect x="226.5" y="133" width="132.7" height="30" rx="4" fill="#b7791f"/><text x="292.8" y="153" class="svg-bar-label" text-anchor="middle">32</text><rect x="359.2" y="133" width="58.1" height="30" rx="4" fill="#c24135"/><text x="388.2" y="153" class="svg-bar-label" text-anchor="middle">14</text><text x="890" y="153" class="svg-small" text-anchor="end">total 56</text><text x="0" y="228" class="svg-axis-label">Calgary R-CG</text><rect x="185.0" y="201" width="124.4" height="30" rx="4" fill="#2f8f55"/><text x="247.2" y="221" class="svg-bar-label" text-anchor="middle">30</text><rect x="309.4" y="201" width="182.5" height="30" rx="4" fill="#b7791f"/><text x="400.6" y="221" class="svg-bar-label" text-anchor="middle">44</text><rect x="491.9" y="201" width="103.7" height="30" rx="4" fill="#c24135"/><text x="543.7" y="221" class="svg-bar-label" text-anchor="middle">25</text><rect x="595.6" y="201" width="215.6" height="30" rx="4" fill="#7a828f"/><text x="703.4" y="221" class="svg-bar-label" text-anchor="middle">52</text><text x="890" y="221" class="svg-small" text-anchor="end">total 151</text><text x="0" y="296" class="svg-axis-label">Surrey R3 probe</text><rect x="185.0" y="269" width="128.6" height="30" rx="4" fill="#2f8f55"/><text x="249.3" y="289" class="svg-bar-label" text-anchor="middle">31</text><rect x="313.6" y="269" width="543.3" height="30" rx="4" fill="#b7791f"/><text x="585.2" y="289" class="svg-bar-label" text-anchor="middle">131</text><rect x="856.8" y="269" width="33.2" height="30" rx="4" fill="#c24135"/><text x="890" y="289" class="svg-small" text-anchor="end">total 170</text></svg></div>
+  <div class="panel"><svg viewBox="0 0 920 330" role="img" aria-label="Benchmark metrics by city"><rect width="920" height="330" fill="white"/><text x="0" y="24" class="svg-title">Release metrics and external probe</text><text x="0" y="45" class="svg-subtitle">Surrey uses sparse gold; its precision bar counts unlabelled verified rules as false by benchmark design.</text><line x1="95" x2="890" y1="282.0" y2="282.0" stroke="#e6e8f0" stroke-width="1"/><text x="83" y="286.0" class="svg-small" text-anchor="end">0%</text><line x1="95" x2="890" y1="239.6" y2="239.6" stroke="#e6e8f0" stroke-width="1"/><text x="83" y="243.6" class="svg-small" text-anchor="end">20%</text><line x1="95" x2="890" y1="197.2" y2="197.2" stroke="#e6e8f0" stroke-width="1"/><text x="83" y="201.2" class="svg-small" text-anchor="end">40%</text><line x1="95" x2="890" y1="154.8" y2="154.8" stroke="#e6e8f0" stroke-width="1"/><text x="83" y="158.8" class="svg-small" text-anchor="end">60%</text><line x1="95" x2="890" y1="112.4" y2="112.4" stroke="#e6e8f0" stroke-width="1"/><text x="83" y="116.4" class="svg-small" text-anchor="end">80%</text><line x1="95" x2="890" y1="70.0" y2="70.0" stroke="#e6e8f0" stroke-width="1"/><text x="83" y="74.0" class="svg-small" text-anchor="end">100%</text><rect x="123.4" y="70.0" width="42" height="212.0" rx="4" fill="#2f8f55"/><text x="144.4" y="82.0" class="svg-small" text-anchor="middle">100</text><rect x="173.4" y="75.3" width="42" height="206.7" rx="4" fill="#5477C4"/><text x="194.4" y="82.0" class="svg-small" text-anchor="middle">98</text><rect x="223.4" y="186.6" width="42" height="95.4" rx="4" fill="#b7791f"/><text x="244.4" y="180.6" class="svg-small" text-anchor="middle">45</text><text x="194.4" y="312" class="svg-axis-label" text-anchor="middle">Burnaby
+R1</text><rect x="322.1" y="70.0" width="42" height="212.0" rx="4" fill="#2f8f55"/><text x="343.1" y="82.0" class="svg-small" text-anchor="middle">100</text><rect x="372.1" y="70.0" width="42" height="212.0" rx="4" fill="#5477C4"/><text x="393.1" y="82.0" class="svg-small" text-anchor="middle">100</text><rect x="422.1" y="70.0" width="42" height="212.0" rx="4" fill="#b7791f"/><text x="443.1" y="82.0" class="svg-small" text-anchor="middle">100</text><text x="393.1" y="312" class="svg-axis-label" text-anchor="middle">Vancouver
+RS</text><rect x="520.9" y="70.0" width="42" height="212.0" rx="4" fill="#2f8f55"/><text x="541.9" y="82.0" class="svg-small" text-anchor="middle">100</text><rect x="570.9" y="70.0" width="42" height="212.0" rx="4" fill="#5477C4"/><text x="591.9" y="82.0" class="svg-small" text-anchor="middle">100</text><rect x="620.9" y="70.0" width="42" height="212.0" rx="4" fill="#b7791f"/><text x="641.9" y="82.0" class="svg-small" text-anchor="middle">100</text><text x="591.9" y="312" class="svg-axis-label" text-anchor="middle">Calgary
+R-CG</text><rect x="719.6" y="247.8" width="42" height="34.2" rx="4" fill="#2f8f55"/><text x="740.6" y="241.8" class="svg-small" text-anchor="middle">16</text><rect x="769.6" y="140.7" width="42" height="141.3" rx="4" fill="#5477C4"/><text x="790.6" y="134.7" class="svg-small" text-anchor="middle">67</text><rect x="819.6" y="164.2" width="42" height="117.8" rx="4" fill="#b7791f"/><text x="840.6" y="158.2" class="svg-small" text-anchor="middle">56</text><text x="790.6" y="312" class="svg-axis-label" text-anchor="middle">Surrey
+R3
+probe</text><rect x="95" y="18" width="12" height="12" rx="2" fill="#2f8f55"/><text x="113" y="29" class="svg-legend">Verified precision</text><rect x="265" y="18" width="12" height="12" rx="2" fill="#5477C4"/><text x="283" y="29" class="svg-legend">Coverage recall</text><rect x="435" y="18" width="12" height="12" rx="2" fill="#b7791f"/><text x="453" y="29" class="svg-legend">Raw candidate recall</text></svg></div>
+  <div class="table-scroll"><table class="data-table"><thead><tr><th>City</th><th>Candidates</th><th>Verified</th><th>Review</th><th>Rejected</th><th>Not used</th><th>Precision</th><th>False verified</th><th>Source failures</th><th>Coverage recall</th><th>False approvals</th><th>Gate</th><th>Note</th></tr></thead><tbody><tr><td>Burnaby R1</td><td>150</td><td>87</td><td>57</td><td>6</td><td>0</td><td>100.0%</td><td>0</td><td>0</td><td>97.5%</td><td>0</td><td>pass</td><td>official benchmark</td></tr><tr><td>Vancouver RS</td><td>56</td><td>10</td><td>32</td><td>14</td><td>0</td><td>100.0%</td><td>0</td><td>0</td><td>100.0%</td><td>0</td><td>pass</td><td>official benchmark</td></tr><tr><td>Calgary R-CG</td><td>151</td><td>30</td><td>44</td><td>25</td><td>52</td><td>100.0%</td><td>0</td><td>0</td><td>100.0%</td><td>0</td><td>pass</td><td>official benchmark</td></tr><tr><td>Surrey R3 probe</td><td>170</td><td>31</td><td>131</td><td>8</td><td>0</td><td>16.1%</td><td>26</td><td>0</td><td>66.7%</td><td>0</td><td>fail / not comparable</td><td>sparse-gold probe; precision not exhaustive</td></tr></tbody></table></div>
+  <h3>Runtime and Cost</h3>
+  <div class="table-scroll"><table class="data-table"><thead><tr><th>City</th><th>Candidates</th><th>Evidence units</th><th>Repair packs</th><th>Est. cost</th><th>Model latency</th></tr></thead><tbody><tr><td>Burnaby R1</td><td>150</td><td>150</td><td>16</td><td>$0.0156</td><td>71.7s</td></tr><tr><td>Vancouver RS</td><td>56</td><td>56</td><td>19</td><td>$0.0321</td><td>188.8s</td></tr><tr><td>Calgary R-CG</td><td>151</td><td>151</td><td>36</td><td>$0.0449</td><td>167.5s</td></tr><tr><td>Surrey R3 probe</td><td>170</td><td>170</td><td>0</td><td>$0.0283</td><td>131.4s</td></tr></tbody></table></div>
+  <h3>Adversarial Safety</h3>
+  <div class="table-scroll"><table class="data-table"><thead><tr><th>City</th><th>Cases</th><th>Blocked</th><th>Leaked</th><th>All blocked</th></tr></thead><tbody><tr><td>Burnaby R1</td><td>24</td><td>24</td><td>0</td><td>yes</td></tr><tr><td>Vancouver RS</td><td>4</td><td>4</td><td>0</td><td>yes</td></tr><tr><td>Calgary R-CG</td><td>6</td><td>6</td><td>0</td><td>yes</td></tr></tbody></table></div>
+  <h3>Chatbot and Dashboard</h3>
+  <p>The offline chatbot grounding benchmark passed <strong>15/15</strong> cases with mean reward <strong>1.000</strong> and hard failures <strong>0</strong>. The dashboard booted locally on Streamlit port 8620; root returned HTTP 200 and <code>/_stcore/health</code> returned <code>ok</code>. This proves boot/policy readiness, not complete LLM answer-quality validation.</p>
+</section>
+
+<section>
+  <h2>M7 scored Measurement Findings</h2>
+  <p>The measurement layer is one of the strongest parts of M7. It catches the right failure modes: overextraction, source anchoring, and scored legal-slot coverage. It also prevents blind prompt optimization.</p>
+  <div class="panel"><svg viewBox="0 0 920 270" role="img" aria-label="Scored verified coverage"><rect width="920" height="270" fill="white"/><text x="0" y="24" class="svg-title">Scored coverage remains the central M7.5 bottleneck</text><text x="0" y="45" class="svg-subtitle">M7 scored denominator: in-contract, recognized-family legal slots, target 50%.</text><line x1="535.0" x2="535.0" y1="54" y2="204" stroke="#1f2430" stroke-dasharray="5 5"/><text x="541.0" y="48" class="svg-small">50% target</text><text x="0" y="86" class="svg-axis-label">Burnaby R1</text><rect x="190" y="66" width="690" height="24" rx="4" fill="#e2e5ea"/><rect x="190" y="66" width="219.4" height="24" rx="4" fill="#5477C4"/><text x="417.4" y="83" class="svg-small">31.8% (21/205)</text><text x="0" y="132" class="svg-axis-label">Vancouver RS</text><rect x="190" y="112" width="690" height="24" rx="4" fill="#e2e5ea"/><rect x="190" y="112" width="62.8" height="24" rx="4" fill="#5477C4"/><text x="260.8" y="129" class="svg-small">9.1% (4/50)</text><text x="0" y="178" class="svg-axis-label">Calgary R-CG</text><rect x="190" y="158" width="690" height="24" rx="4" fill="#e2e5ea"/><rect x="190" y="158" width="111.1" height="24" rx="4" fill="#5477C4"/><text x="309.1" y="175" class="svg-small">16.1% (10/110)</text></svg></div>
+  <div class="table-scroll"><table class="data-table"><thead><tr><th>City</th><th>Stage</th><th>Metric</th><th>Value</th><th>Target</th><th>Recommendation</th></tr></thead><tbody><tr><td>Burnaby R1</td><td>overextraction</td><td>candidate_count_exceeds_loose_source_ceiling</td><td>144</td><td>&lt;= 136</td><td>Reduce candidate noise or split traceability-only records before verifier tuning.</td></tr><tr><td>Burnaby R1</td><td>measurement_contract</td><td>scored_verified_coverage</td><td>0.318</td><td>&gt;= 0.50</td><td>Grow verified coverage of in-contract, recognized-family source slots (the M7 scored scored denominator), not the raw numeric-token ceiling.</td></tr><tr><td>Burnaby R1</td><td>extraction_diagnostics</td><td>raw_candidate_artifact_recall</td><td>0.45</td><td>diagnostic only</td><td>Raw candidate artifacts do not include rules surfaced directly into review/rejected/not_used. Use release_candidate_recall/extraction_coverage_recall for the pre-M7 acceptance gate.</td></tr><tr><td>Vancouver RS</td><td>measurement_contract</td><td>scored_verified_coverage</td><td>0.091</td><td>&gt;= 0.50</td><td>Grow verified coverage of in-contract, recognized-family source slots (the M7 scored scored denominator), not the raw numeric-token ceiling.</td></tr><tr><td>Calgary R-CG</td><td>overextraction</td><td>candidate_count_exceeds_loose_source_ceiling</td><td>150</td><td>&lt;= 131</td><td>Reduce candidate noise or split traceability-only records before verifier tuning.</td></tr><tr><td>Calgary R-CG</td><td>evidence_quality</td><td>candidate_value_grounding_rate</td><td>0.927</td><td>0.95</td><td>Improve evidence text/source-context anchoring so candidate values are visible in cited evidence.</td></tr><tr><td>Calgary R-CG</td><td>measurement_contract</td><td>scored_verified_coverage</td><td>0.161</td><td>&gt;= 0.50</td><td>Grow verified coverage of in-contract, recognized-family source slots (the M7 scored scored denominator), not the raw numeric-token ceiling.</td></tr></tbody></table></div>
+</section>
+
+<section>
+  <h2>Surrey External Probe</h2>
+  <p>I fetched the official <a href="https://cosmos.surrey.ca/geo_ref/Images/Zoning/BYL_Zoning_12000.pdf">Surrey Zoning By-law 12000 PDF</a> and scoped the run to Part 15, R3 Urban Residential Zone pages. Surrey is a harder outside-city case because it has a long consolidated bylaw, dense tables, footnotes, roof/floodplain branches, and dwelling-unit conditions tied to lot size, transit, heritage, water, and sewer service.</p>
+  <div class="grid three">
+    <div class="stat info"><div class="stat-label">Evidence packs</div><div class="stat-value">112</div><div class="stat-note">Scoped R3 page sweep</div></div>
+    <div class="stat good"><div class="stat-label">Verified</div><div class="stat-value">31</div><div class="stat-note">from 170 candidates</div></div>
+    <div class="stat warn"><div class="stat-label">Review queue</div><div class="stat-value">131</div><div class="stat-note">fail-closed portability signal</div></div>
+  </div>
+  <div class="badcall"><strong>Important interpretation:</strong> the Surrey precision number is not a production safety score because the temporary gold file is sparse. The evaluator assumes exhaustive gold, so 26 unlabelled but often plausible verified rules are counted as false verified. The valid read is: source support failures were 0, false approvals were 0, sparse-gold coverage was 6/9 extracted and 5/9 verified, and a full Surrey port needs complete gold before using precision gates.</div>
+  <div class="table-scroll"><table class="data-table"><thead><tr><th>Top Surrey review reason</th><th>Count</th></tr></thead><tbody><tr><td>text_candidate_requires_review</td><td>139</td></tr><tr><td>operator_not_supported</td><td>116</td></tr><tr><td>constraint_scope_not_supported</td><td>92</td></tr><tr><td>upstream_extraction_requested_review</td><td>91</td></tr><tr><td>rule_object_not_supported</td><td>60</td></tr><tr><td>applies_to_not_supported</td><td>24</td></tr><tr><td>rule_family_direction_mismatch</td><td>21</td></tr><tr><td>unit_not_found_in_evidence</td><td>7</td></tr></tbody></table></div>
+  <p><strong>What held up:</strong> M7 did not blindly promote everything; it produced a large review queue and rejected unsupported dwelling-unit and setback claims. <strong>What did not hold up as production-ready:</strong> generic config missed table-scoped setbacks and low-slope height conditions, and one model pack returned invalid JSON. M7.5 needs a first-class new-city onboarding harness, not just a new PDF URL.</p>
+</section>
+
+<section>
+  <h2>Code Evidence</h2>
+  <p>The code matches the architecture: safety tiering, proposal tri-state checks, and benchmark decomposition are explicit and inspectable.</p>
+  <h3>Decision Policy: review vs hard rejection</h3>
+  <pre><code>  33  # Tiering rationale: scope/applies_to/operator failures land in REVIEW (these
+  34  # checks are absence-of-cue heuristics with limited recall — a miss often means
+  35  # &quot;wording not recognized&quot;, which a human or better evidence can repair), while
+  36  # a value or unit absent from the cited evidence is a hard REJECTION below: the
+  37  # citation itself is wrong, and no amount of context can make a number that is
+  38  # not in the evidence safe to act on.
+  39  MISSING_SCOPE_GAPS = {
+  40      &quot;applies_to_not_supported&quot;,
+  41      &quot;constraint_scope_not_supported&quot;,
+  42      &quot;table_rule_object_not_supported&quot;,
+  43      &quot;table_applies_to_not_supported&quot;,
+  44      &quot;table_condition_not_supported&quot;,
+  45      &quot;table_column_not_target_scope&quot;,
+  46      *TABLE_REVIEW_GAPS.values(),
+  47      &quot;rule_object_not_canonical&quot;,
+  48      &quot;rule_object_not_supported&quot;,
+  49      &quot;text_candidate_requires_review&quot;,
+  50      &quot;text_condition_not_supported&quot;,
+  51      &quot;unresolved_exception_cue&quot;,
+  52      &quot;cross_family_value_collision&quot;,
+  53      &quot;rule_family_direction_mismatch&quot;,
+  54      # &#x27;no maximum building depth where the minimum setback is 3.0 m&#x27; — the
+  55      # 3.0 m is the trigger of an allowance, not a requirement; a human may
+  56      # still decide it is worth recording, so review rather than rejection.
+  57      &quot;allowance_trigger_threshold&quot;,
+  58      # Matrix-column binding holds (geometry-aware, additive): the claimed
+  59      # column exists but the claim drops a binding qualifier, names a column
+  60      # the matrix cannot resolve, or sits on a row whose label names another
+  61      # rule family. All are repairable by a human or better extraction.
+  62      &quot;applicability_not_grounded&quot;,
+  63      &quot;column_qualifier_not_claimed&quot;,
+  64      &quot;conditional_cell_condition_missing&quot;,
+  65      &quot;anchored_row_family_mismatch&quot;,
+  66      # Prose enumerated multi-branch disjunction (&quot;(a) 5.0 m at a side
+  67      # property line; (b) 3.0 m at a rear property line; (c) ... 7.5 m&quot;): the
+  68      # claimed branch value&#x27;s discriminating condition is unproven or mispaired.
+  69      # A real rule under the wrong/absent qualifier — repairable, so review.
+  70      &quot;enumerated_branch_condition_missing&quot;,
+  71      # LLM-lane leak classes (found by running V2&#x27;s real model extraction): a
+  72      # ratio coefficient mis-extracted as an absolute cap (&quot;0.25 multiplied by
+  73      # the site area&quot;), and a count range-bound mis-extracted as the lot
+  74      # maximum (&quot;1 to 3 Units&quot; -&gt; lot max 3 when 4 to 6 also listed). Both are
+  75      # real values in the text under the wrong role — review, never reject.
+  76      &quot;coefficient_operand_not_value&quot;,
+  77      &quot;range_bound_not_maximum&quot;,
+  78      # An imperial/non-metric unit on a metric family. A real rule stated in feet
+  79      # is held for human review/conversion -- never silently verified against a
+  80      # metre threshold and never auto-converted by the verifier. Bylaw-agnostic.
+  81      &quot;non_metric_unit_requires_review&quot;,
+  82      # The extraction layer flagged a source-fidelity concern the deterministic
+  83      # gates cannot see on their own (e.g. a re-anchor mismatch / quote not in the
+  84      # retrieved pack: the provided evidence_text may contain a value that is NOT
+  85      # on the real source page). This stays blocking even though the generic
+  86      # extractor review request is advisory. See ADVISORY_GAPS.
+  87      &quot;extraction_source_fidelity_hold&quot;,
+  88  }
+  89
+  90  # Hard rejection is reserved for contradictions or unsafe malformed candidates.
+  91  # A rule family outside the current contract should be review/not_used, not a
+  92  # hard rejection, because future bylaws may add rule families we do not support
+  93  # yet.
+  94  CRITICAL_REJECTION_GAPS = {
+  95      &quot;source_evidence_id_not_found&quot;,
+  96      &quot;value_not_found_in_evidence&quot;,
+  97      &quot;unit_not_found_in_evidence&quot;,
+  98      &quot;rule_object_unit_not_compatible&quot;,
+  99      &quot;table_operator_refuted&quot;,
+ 100      # The cited number measures something else (&#x27;135 degrees&#x27; can never be a
+ 101      # dwelling-unit count) — same severity as a value that is absent.
+ 102      &quot;value_bound_to_foreign_unit&quot;,
+ 103      # Geometry refutation: the claimed table column does NOT hold the value
+ 104      # (55% claimed for the 5-6 unit column whose cell says 45%). The cited
+ 105      # column-value pairing is wrong, same severity as a wrong value.
+ 106      &quot;column_value_mismatch&quot;,
+ 107  }</code></pre>
+  <h3>Compliance checker: approve only from verified coverage</h3>
+  <pre><code>   1  &quot;&quot;&quot;Tri-state proposal checks against verified zoning rules.
+   2
+   3  The compliance layer is intentionally conservative: it can approve only when a
+   4  proposal field is covered by a verified rule and the value passes that rule.
+   5  Missing or review-only rules return needs_review, not approval.
+   6  &quot;&quot;&quot;</code></pre>
+  <pre><code> 144      for field, actual_value in proposal.items():
+ 145          if field not in CHECK_SPECS:
+ 146              if field not in CONTEXT_FIELDS:
+ 147                  review_checks.append(
+ 148                      {
+ 149                          &quot;field&quot;: field,
+ 150                          &quot;label&quot;: &quot;Unsupported proposal field&quot;,
+ 151                          &quot;actual_value&quot;: actual_value,
+ 152                          &quot;reason&quot;: &quot;unsupported_proposal_field&quot;,
+ 153                          &quot;review_rule_id&quot;: None,
+ 154                          &quot;message&quot;: &quot;No compliance check is defined for this proposal field.&quot;,
+ 155                      }
+ 156                  )
+ 157              continue
+ 158          spec = CHECK_SPECS[field]
+ 159          verified_rule = _find_best_rule(spec, verified_rules, proposal)
+ 160          if verified_rule:
+ 161              passed, message = _passes_rule(actual_value, verified_rule)
+ 162              detail = _check_detail(field, spec, actual_value, verified_rule, message)
+ 163              if passed:
+ 164                  passed_checks.append(detail)
+ 165              else:
+ 166                  failed_checks.append(detail)
+ 167              continue
+ 168
+ 169          review_rule = _find_best_rule(spec, review_rules, proposal)
+ 170          review_checks.append(
+ 171              {
+ 172                  &quot;field&quot;: field,
+ 173                  &quot;label&quot;: spec[&quot;label&quot;],
+ 174                  &quot;actual_value&quot;: actual_value,
+ 175                  &quot;reason&quot;: &quot;rule_not_verified&quot;,
+ 176                  &quot;review_rule_id&quot;: review_rule.get(&quot;rule_id&quot;) if review_rule else None,
+ 177                  &quot;message&quot;: &quot;No verified rule covers this proposal field.&quot;,
+ 178              }
+ 179          )</code></pre>
+  <h3>Benchmark: extraction ceiling vs verifier retention</h3>
+  <pre><code> 136      # Improvement #1: decompose recall into an *extraction ceiling* and a
+ 137      # *verifier retention rate*. The verifier is only responsible for gold rules
+ 138      # that extraction actually surfaced (matched by any output rule, normalized).
+ 139      # A gold rule that no candidate produced is an upstream coverage gap, not a
+ 140      # verifier failure. This separates &quot;we never saw it&quot; from &quot;we saw it and
+ 141      # dropped it&quot;, which is the honest way to read the recall number.
+ 142      extracted_gold_ids = matched_verified_or_review_ids | matched_rejected_ids | matched_not_used_ids
+ 143      verifier_rejected_gold_ids = sorted(extracted_gold_ids - matched_verified_or_review_ids)
+ 144      unextracted_gold_ids = sorted({gold[&quot;gold_id&quot;] for gold in gold_rules} - extracted_gold_ids)
+ 145
+ 146      false_verified = [
+ 147          _rule_identifier(rule)
+ 148          for rule in verified_rules
+ 149          if not _best_gold_match(rule, gold_rules)
+ 150      ]
+ 151      support_failures = _source_support_failures_from_rules(verified_rules, gold_rules)</code></pre>
+</section>
+
+<section>
+  <h2>Research and Similar Projects</h2>
+  <p>The outside research supports the direction M7 already took: separate retrieval quality from answer quality, optimize with metrics rather than prompt taste, and treat layout-rich legal documents as layout-rich evidence.</p>
+  <div class="table-scroll"><table class="data-table"><thead><tr><th>Reference</th><th>Source</th><th>Use for M7.5</th></tr></thead><tbody><tr><td>LegalBench-RAG</td><td><a href="https://arxiv.org/abs/2408.10343">arXiv 2408.10343</a></td><td>Supports M7.5 moving from coarse document retrieval to minimal, citation-ready legal snippets.</td></tr><tr><td>RAGAS</td><td><a href="https://arxiv.org/abs/2309.15217">arXiv 2309.15217</a></td><td>Supports separate retrieval, faithfulness, and answer-quality metrics for dashboard/chatbot evaluation.</td></tr><tr><td>ColPali / ViDoRe</td><td><a href="https://arxiv.org/abs/2407.01449">arXiv 2407.01449</a></td><td>Strong fit for table-heavy zoning PDFs because page layout and table geometry are evidence, not decoration.</td></tr><tr><td>DocETL</td><td><a href="https://arxiv.org/abs/2410.12189">arXiv 2410.12189</a></td><td>Supports decomposing complex document extraction tasks and validating pipeline rewrites instead of one-shot prompt tuning.</td></tr><tr><td>DSPy</td><td><a href="https://arxiv.org/abs/2310.03714">arXiv 2310.03714</a></td><td>Useful only after metrics are fixed: optimize candidate extraction modules against verifier-safe benchmark objectives.</td></tr><tr><td>National Zoning Atlas</td><td><a href="https://www.zoningatlas.org/">Project</a></td><td>Shows why normalized zoning categories and GIS-ready public outputs matter beyond one municipality.</td></tr><tr><td>B.C. SSMUH guidance</td><td><a href="https://www2.gov.bc.ca/gov/content/housing-tenancy/local-governments-and-housing/housing-initiatives/smale-scale-multi-unit-housing">Province page</a></td><td>Confirms the domain pressure: local bylaws now encode 3/4/6-unit SSMUH requirements and frequent-bus conditions.</td></tr><tr><td>Surrey Zoning Bylaw 12000</td><td><a href="https://cosmos.surrey.ca/geo_ref/Images/Zoning/BYL_Zoning_12000.pdf">Official PDF</a></td><td>External probe source: large consolidated bylaw, dense R3 tables, conditional unit and height rules.</td></tr></tbody></table></div>
+  <p>Official B.C. sources also explain why the problem is not static. The Province describes SSMUH as including secondary suites, ADUs, triplexes, townhomes, and house-plexes, and states that local governments had to update bylaws for Bill 44/Bill 25 requirements. That means multi-city support must expect fast-changing local rules and provenance refreshes.</p>
+</section>
+
+<section>
+  <h2>M7.5 Upgrade Plan</h2>
+  <div class="panel"><svg viewBox="0 0 920 360" role="img" aria-label="M7.5 roadmap priority matrix"><rect width="920" height="360" fill="white"/><text x="0" y="24" class="svg-title">M7.5 upgrade priority matrix</text><text x="0" y="45" class="svg-subtitle">Higher impact should still enter only through measured benchmark gates.</text><rect x="90" y="70" width="760" height="220" fill="#fcfcfd" stroke="#d8dee9"/><line x1="470.0" x2="470.0" y1="70" y2="290" stroke="#d8dee9"/><line x1="90" x2="850" y1="180.0" y2="180.0" stroke="#d8dee9"/><circle cx="530.8" cy="118.4" r="11" fill="#2f8f55" stroke="#1f2430"/><text x="545.8" y="114.4" class="svg-small">Visual table retrieval</text><text x="545.8" y="128.4" class="svg-tiny">ColPali-style page images as shadow evidence</text><circle cx="356.0" cy="131.6" r="11" fill="#2f8f55" stroke="#1f2430"/><text x="371.0" y="127.6" class="svg-small">Schema-constrained extraction</text><text x="371.0" y="141.6" class="svg-tiny">JSON schema + retry before verifier</text><circle cx="409.2" cy="149.2" r="11" fill="#5477C4" stroke="#1f2430"/><text x="424.2" y="145.2" class="svg-small">Evidence graph / proof DAG UI</text><text x="424.2" y="159.2" class="svg-tiny">Reviewer sees exact claim support</text><circle cx="561.2" cy="100.8" r="11" fill="#2f8f55" stroke="#1f2430"/><text x="576.2" y="96.8" class="svg-small">Gold expansion workbench</text><text x="576.2" y="110.8" class="svg-tiny">Human labels drive measured change</text><circle cx="318.0" cy="166.8" r="11" fill="#5477C4" stroke="#1f2430"/><text x="333.0" y="162.8" class="svg-small">Dashboard feedback loop</text><text x="333.0" y="176.8" class="svg-tiny">Review action -&gt; candidate/gold backlog</text><circle cx="432.0" cy="191.0" r="11" fill="#b7791f" stroke="#1f2430"/><text x="447.0" y="187.0" class="svg-small">Prompt optimizer only after gates</text><text x="447.0" y="201.0" class="svg-tiny">DSPy-style metric optimization</text><text x="470.0" y="342" class="svg-axis-label" text-anchor="middle">Implementation effort -></text><text x="18" y="180.0" class="svg-axis-label" transform="rotate(-90 18 180.0)" text-anchor="middle">Impact on verified coverage -></text></svg></div>
+  <h3>Extraction</h3>
+  <ul>
+    <li><strong>Add a city onboarding harness:</strong> fetch PDF, hash it, detect relevant zone pages, create provenance, run dry extraction, suggest gold candidates, and refuse precision scoring until gold is marked complete.</li>
+    <li><strong>Use schema-constrained extraction:</strong> validate every model pack against JSON schema, retry invalid JSON at pack scope, and classify errors by pack, page, table row, and family.</li>
+    <li><strong>Bring layout into evidence:</strong> add visual/table page snapshots and ColPali-style shadow retrieval for page/table recall. Do not let it verify; use it to retrieve better evidence for deterministic proof.</li>
+    <li><strong>Adopt DocETL-style decomposition:</strong> split “extract all rules” into family-specific, table-specific, branch-condition, and footnote tasks, then compare plans through the benchmark.</li>
+  </ul>
+  <h3>Verification</h3>
+  <ul>
+    <li><strong>Keep the verifier strict:</strong> no prompt change should promote a rule unless value, unit, operator, scope, applies_to, condition, and exception support are explicit.</li>
+    <li><strong>Improve table proof, not text looseness:</strong> preserve row/column headings, footnotes, and branch labels so Surrey-style setbacks can verify safely instead of landing in operator/scope review.</li>
+    <li><strong>Expand adversarial generation:</strong> auto-create traps from every new gold rule: direction flips, wrong row, wrong column, missing unit, exception ignored, and cross-source stitching.</li>
+    <li><strong>Separate sparse-gold and exhaustive-gold modes:</strong> sparse probes should report labeled recall and source-support spot checks, never official precision.</li>
+  </ul>
+  <h3>Dashboard and Chatbot</h3>
+  <ul>
+    <li><strong>Make review workflow first-class:</strong> every review card should show the exact missing support fields, stronger evidence candidates, and one-click “promote to gold/adversarial” backlog actions.</li>
+    <li><strong>Keep chatbot read-only:</strong> answers can cite, compare, and explain verified/review states, but cannot approve proposals or imply unverified rules are safe.</li>
+    <li><strong>Use chat_context.sqlite as the default context surface:</strong> it reduces scattered JSON joins and helps keep follow-ups pinned to the selected rule.</li>
+    <li><strong>Add answer regression tests:</strong> keep the 15 policy cases, then add LLM wording spot checks for follow-up grounding, citation completeness, and refusal of unsupported approvals.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Debugging and Fixing Priorities</h2>
+  <div class="grid two">
+    <div class="panel"><h3>Immediate fixes</h3><ul><li>Add extraction progress logs per pack and timeout handling around model calls.</li><li>Retry invalid JSON packs automatically and mark non-retryable failures in the report.</li><li>Expose source page range, pack count, cache status, and LLM error count in the dashboard run header.</li><li>Add sparse-gold warning mode to <code>evaluate_benchmark.py</code> for exploratory cities.</li></ul></div>
+    <div class="panel"><h3>High-leverage engineering</h3><ul><li>Build a table layout regression suite using Burnaby, Calgary, Vancouver, and Surrey page crops.</li><li>Track review-to-verified conversion by support gap family so M7.5 optimizes the right queue.</li><li>Version configs and gold sets together; every city port should have source hash, page scope, benchmark status, and known limitations.</li><li>Move generated run docs into a clearer artifact namespace so source docs are easier to audit.</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <h2>Commands and Evidence</h2>
+  <div class="table-scroll"><table class="data-table"><thead><tr><th>Step</th><th>Command / evidence</th><th>Outcome</th></tr></thead><tbody><tr><td>Read docs</td><td>Markdown sweep plus targeted full reads of AGENTS, README, M7, M7 scored, multi-city, verification, output, dashboard docs</td><td>171 md files / 11,556 lines inventoried; stable docs read in detail</td></tr><tr><td>Full tests</td><td>.venv/bin/python -m pytest -q</td><td>606 passed, 3 subtests passed in 9.18s</td></tr><tr><td>Fresh M7 runs</td><td>scripts/run_m7_bakeoff.py --refresh-source --refresh-packs --no-model-cache</td><td>Burnaby, Vancouver, Calgary all quality gates passed</td></tr><tr><td>Adversarial</td><td>benchmark/evaluate_adversarial.py for Burnaby, Vancouver, Calgary</td><td>34/34 cases blocked plus 3/3 Burnaby bundles blocked</td></tr><tr><td>M7 measure</td><td>scripts/run_m7_measure.py --run-id audit_fresh_20260624 --refresh-verifier</td><td>Hard gates passed; bottlenecks identified</td></tr><tr><td>Compliance/chatbot</td><td>benchmark/evaluate_chatbot.py --city burnaby_r1</td><td>15/15 policy cases passed; hard failures 0</td></tr><tr><td>Dashboard boot</td><td>streamlit run dashboard/streamlit_app.py --server.port 8620</td><td>HTTP 200 and _stcore/health ok</td></tr><tr><td>Surrey probe</td><td>run_m7_bakeoff.py + run_slim_verifier.py + evaluate_benchmark.py with Surrey R3 config/gold</td><td>170 candidates, 31 verified, 131 review; sparse-gold quality gate not comparable</td></tr></tbody></table></div>
+</section>
+
+<section>
+  <h2>Final Recommendation</h2>
+  <p class="lead">Move to M7.5, but define it as an evidence and workflow upgrade, not a verifier relaxation. The system is strongest where it says “no” or “needs review” when evidence is incomplete. The next massive improvement is to give the verifier better structured evidence and give reviewers/dashboard/chatbot users better ways to understand and close those gaps.</p>
+</section>
+</main>
+<div class="footer wrap">Generated from local artifacts under <code>outputs/m7_audit_fresh_20260624/</code> and official/research sources linked in the report. Static HTML; no external scripts required.</div>
+</body>
+</html>

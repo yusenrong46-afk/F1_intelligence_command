@@ -1,0 +1,14 @@
+{
+  "artifact": "verification_report.json",
+  "candidate_count": 3,
+  "false_verified_count": 0,
+  "note": "Checkpoint 7 applies only verifier-passed proof patches.",
+  "promoter": "deterministic_f1_verifier_after_guarded_repair",
+  "review_queue_count": 3,
+  "schema_version": "f1.artifacts.v0",
+  "status_counts": {
+    "context_required": 1,
+    "rejected": 2
+  },
+  "verified_count": 0
+}

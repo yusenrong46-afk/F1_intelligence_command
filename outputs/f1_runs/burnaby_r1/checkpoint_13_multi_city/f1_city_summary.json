@@ -1,0 +1,30 @@
+{
+  "artifact": "f1_city_summary.json",
+  "candidate_count": 6,
+  "city_key": "burnaby_r1",
+  "false_approval_count": 0,
+  "false_verified_count": 0,
+  "gis_export_rule_count": 3,
+  "gold_rule_count": 40,
+  "guarded_repair_promotion_count": 3,
+  "ingest_backend": "pdfplumber",
+  "output_dir": "outputs/f1_runs/burnaby_r1/checkpoint_13_multi_city",
+  "page_count": 7,
+  "proposal_case_count": 10,
+  "release_label": "benchmark_with_proposals",
+  "retrieval_queries_with_hits": 6,
+  "retrieval_query_count": 6,
+  "review_queue_count": 3,
+  "run_id": "checkpoint_13_multi_city",
+  "runtime_seconds": 0.352,
+  "schema_version": "f1.artifacts.v0",
+  "source_registry_status": "pass",
+  "source_span_count": 130,
+  "status": "completed",
+  "status_counts": {
+    "not_used": 2,
+    "rejected": 1,
+    "repaired_successfully": 3
+  },
+  "verified_count": 3
+}

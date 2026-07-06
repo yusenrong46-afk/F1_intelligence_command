@@ -1,0 +1,29 @@
+{
+  "artifact": "f1_city_summary.json",
+  "candidate_count": 3,
+  "city_key": "vancouver_rs",
+  "false_approval_count": 0,
+  "false_verified_count": 0,
+  "gis_export_rule_count": 0,
+  "gold_rule_count": 7,
+  "guarded_repair_promotion_count": 0,
+  "ingest_backend": "pdfplumber",
+  "output_dir": "outputs/f1_runs/vancouver_rs/checkpoint_13_multi_city",
+  "page_count": 22,
+  "proposal_case_count": 0,
+  "release_label": "partial_benchmark_no_proposals",
+  "retrieval_queries_with_hits": 6,
+  "retrieval_query_count": 6,
+  "review_queue_count": 3,
+  "run_id": "checkpoint_13_multi_city",
+  "runtime_seconds": 0.68,
+  "schema_version": "f1.artifacts.v0",
+  "source_registry_status": "pass",
+  "source_span_count": 518,
+  "status": "completed",
+  "status_counts": {
+    "context_required": 1,
+    "rejected": 2
+  },
+  "verified_count": 0
+}

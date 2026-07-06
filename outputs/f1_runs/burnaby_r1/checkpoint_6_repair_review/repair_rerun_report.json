@@ -1,0 +1,11 @@
+{
+  "artifact": "repair_rerun_report.json",
+  "attempt_count": 0,
+  "eligible_rule_count": 0,
+  "false_verified_count": 0,
+  "guarded_repair_promotion_count": 0,
+  "note": "Checkpoint 6 prepares repair/review work only; no proof patches were rerun through the verifier.",
+  "promotion_ready_count": 0,
+  "review_only_attempt_count": 6,
+  "schema_version": "f1.artifacts.v0"
+}

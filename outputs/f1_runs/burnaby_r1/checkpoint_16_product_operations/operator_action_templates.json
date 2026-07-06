@@ -1,0 +1,394 @@
+[
+  {
+    "action_template_id": "f1_op_f1_candidate_0001",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": ">= 281 m2",
+    "cannot_promote": true,
+    "current_status": "context_required",
+    "default_note": "Prepare a proof patch and rerun deterministic verification.",
+    "evidence_ids": [
+      "f1_retrieval_003_01"
+    ],
+    "recommended_action": "ready_for_repair_candidate",
+    "rule_id": "f1_candidate_0001",
+    "rule_object": "lot_area",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "applies_to_missing"
+    ],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0002",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": "<= 281 m2",
+    "cannot_promote": true,
+    "current_status": "context_required",
+    "default_note": "Prepare a proof patch and rerun deterministic verification.",
+    "evidence_ids": [
+      "f1_retrieval_004_02"
+    ],
+    "recommended_action": "ready_for_repair_candidate",
+    "rule_id": "f1_candidate_0002",
+    "rule_object": "lot_area",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "applies_to_missing"
+    ],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0003",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": "<= 10 m",
+    "cannot_promote": true,
+    "current_status": "rejected",
+    "default_note": "Prepare a proof patch and rerun deterministic verification.",
+    "evidence_ids": [
+      "f1_retrieval_005_02"
+    ],
+    "recommended_action": "ready_for_repair_candidate",
+    "rule_id": "f1_candidate_0003",
+    "rule_object": "height",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "unit_not_supported"
+    ],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0004",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": "<= 3 storeys",
+    "cannot_promote": true,
+    "current_status": "context_required",
+    "default_note": "Prepare a proof patch and rerun deterministic verification.",
+    "evidence_ids": [
+      "f1_retrieval_006_01"
+    ],
+    "recommended_action": "ready_for_repair_candidate",
+    "rule_id": "f1_candidate_0004",
+    "rule_object": "storeys",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "applies_to_missing"
+    ],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0005",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": ">= 1.2 m",
+    "cannot_promote": true,
+    "current_status": "context_required",
+    "default_note": "Prepare a proof patch and rerun deterministic verification.",
+    "evidence_ids": [
+      "f1_retrieval_007_01"
+    ],
+    "recommended_action": "ready_for_repair_candidate",
+    "rule_id": "f1_candidate_0005",
+    "rule_object": "setback",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "applies_to_missing"
+    ],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0007",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": "<= 55 %",
+    "cannot_promote": true,
+    "current_status": "context_required",
+    "default_note": "Prepare a proof patch and rerun deterministic verification.",
+    "evidence_ids": [
+      "f1_retrieval_009_01"
+    ],
+    "recommended_action": "ready_for_repair_candidate",
+    "rule_id": "f1_candidate_0007",
+    "rule_object": "impervious_surface",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "applies_to_missing"
+    ],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0008",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": "<= 3 units",
+    "cannot_promote": true,
+    "current_status": "rejected",
+    "default_note": "Find exact quoted source support for the blocked field before rerunning repair.",
+    "evidence_ids": [
+      "f1_retrieval_010_02"
+    ],
+    "recommended_action": "needs_source_research",
+    "rule_id": "f1_candidate_0008",
+    "rule_object": "dwelling_units",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "operator_not_supported"
+    ],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0011",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": ">= 27 m2",
+    "cannot_promote": true,
+    "current_status": "not_used",
+    "default_note": "Prepare a proof patch and rerun deterministic verification.",
+    "evidence_ids": [
+      "f1_retrieval_015_01"
+    ],
+    "recommended_action": "ready_for_repair_candidate",
+    "rule_id": "f1_candidate_0011",
+    "rule_object": "floor_area",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0012",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": "allowed",
+    "cannot_promote": true,
+    "current_status": "rejected",
+    "default_note": "Find exact quoted source support for the blocked field before rerunning repair.",
+    "evidence_ids": [
+      "f1_retrieval_001_03"
+    ],
+    "recommended_action": "needs_source_research",
+    "rule_id": "f1_candidate_0012",
+    "rule_object": "permitted_use",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "value_citation_missing",
+      "unit_citation_missing",
+      "operator_not_supported"
+    ],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0013",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": "allowed",
+    "cannot_promote": true,
+    "current_status": "rejected",
+    "default_note": "Find exact quoted source support for the blocked field before rerunning repair.",
+    "evidence_ids": [
+      "f1_retrieval_001_03"
+    ],
+    "recommended_action": "needs_source_research",
+    "rule_id": "f1_candidate_0013",
+    "rule_object": "permitted_use",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "value_citation_missing",
+      "unit_citation_missing",
+      "operator_not_supported"
+    ],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0017",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": "<= 55 %",
+    "cannot_promote": true,
+    "current_status": "rejected",
+    "default_note": "Prepare a proof patch and rerun deterministic verification.",
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "recommended_action": "ready_for_repair_candidate",
+    "rule_id": "f1_candidate_0017",
+    "rule_object": "lot_coverage",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "applies_to_not_supported"
+    ],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0022",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": "<= 70 %",
+    "cannot_promote": true,
+    "current_status": "rejected",
+    "default_note": "Prepare a proof patch and rerun deterministic verification.",
+    "evidence_ids": [
+      "f1_retrieval_003_02"
+    ],
+    "recommended_action": "ready_for_repair_candidate",
+    "rule_id": "f1_candidate_0022",
+    "rule_object": "impervious_surface",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "applies_to_not_supported"
+    ],
+    "writes_to": "operator_review_actions.json"
+  },
+  {
+    "action_template_id": "f1_op_f1_candidate_0046",
+    "allowed_actions": [
+      "needs_source_research",
+      "ready_for_repair_candidate",
+      "request_legal_review",
+      "mark_duplicate_candidate",
+      "defer"
+    ],
+    "blocked_outputs": [
+      "verified_rules.json",
+      "verification_decisions.json",
+      "gis_rule_contract.json"
+    ],
+    "candidate_limit": "> 45 m",
+    "cannot_promote": true,
+    "current_status": "rejected",
+    "default_note": "Confirm condition, exception, or dependency interpretation before any verifier rerun.",
+    "evidence_ids": [
+      "f1_retrieval_003_04"
+    ],
+    "recommended_action": "request_legal_review",
+    "rule_id": "f1_candidate_0046",
+    "rule_object": "automatic_sprinkler",
+    "schema_version": "f1.artifacts.v0",
+    "support_gaps": [
+      "operator_not_supported"
+    ],
+    "writes_to": "operator_review_actions.json"
+  }
+]

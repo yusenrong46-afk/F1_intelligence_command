@@ -1,0 +1,2598 @@
+{
+  "app_version": "checkpoint_16",
+  "artifact": "command_center_app_manifest.json",
+  "benchmark_metrics": {
+    "candidate_recall": 0.975,
+    "failed_gates": [],
+    "false_approval_count": 0,
+    "false_verified_count": 0,
+    "gis_review_rule_leak_count": 0,
+    "proposal_case_accuracy": 1.0,
+    "proposal_decision_accuracy": 1.0,
+    "quality_gates_passed": true,
+    "retrieval_recall_at_6": 0.95,
+    "verified_precision": 1.0,
+    "verified_recall": 0.85,
+    "verified_source_support_failed_count": 0
+  },
+  "cards": [
+    {
+      "label": "Verified Rules",
+      "tone": "good",
+      "value": 38
+    },
+    {
+      "label": "Review Queue",
+      "tone": "warn",
+      "value": 13
+    },
+    {
+      "label": "Verified Recall",
+      "tone": "neutral",
+      "value": "85.0%"
+    },
+    {
+      "label": "Retrieval Recall",
+      "tone": "good",
+      "value": "95.0%"
+    },
+    {
+      "label": "Proposal Accuracy",
+      "tone": "good",
+      "value": "100.0%"
+    },
+    {
+      "label": "False Verified",
+      "tone": "good",
+      "value": 0
+    },
+    {
+      "label": "False Approvals",
+      "tone": "good",
+      "value": 0
+    },
+    {
+      "label": "Chat Safety",
+      "tone": "good",
+      "value": "0 claims"
+    },
+    {
+      "label": "Verifier Output",
+      "tone": "neutral",
+      "value": 38
+    }
+  ],
+  "chatbot_metrics": {
+    "answered_count": 2,
+    "approval_claim_count": 0,
+    "case_count": 3,
+    "cited_answer_count": 2,
+    "false_approval_count": 0,
+    "source_citation_required": true,
+    "uncertain_count": 1
+  },
+  "city_key": "burnaby_r1",
+  "compliance_decisions": [
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0014_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0014"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0014_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0014"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0015_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0015"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0015_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0015"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0016_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0016"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0016_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0016"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0018_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0018"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0018_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0018"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0019_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0019"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0019_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0019"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0020_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0020"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0020_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0020"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0021_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0021"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0021_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0021"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0023_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0023"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0023_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0023"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0024_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0024"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0024_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0024"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0025_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0025"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0025_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0025"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0026_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0026"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0026_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0026"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0027_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0027"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0027_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0027"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0028_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0028"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0028_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0028"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0029_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0029"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0029_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0029"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0030_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0030"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0030_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0030"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0031_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0031"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0031_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0031"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0032_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0032"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0032_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0032"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0033_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0033"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0033_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0033"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0034_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0034"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0034_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0034"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0035_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0035"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0035_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0035"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0036_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0036"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0036_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0036"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0037_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0037"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0037_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0037"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0038_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0038"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0038_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0038"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0039_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0039"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0039_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0039"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0040_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0040"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0040_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0040"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0041_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0041"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0041_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0041"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0042_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0042"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0042_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0042"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0043_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0043"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0043_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0043"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0044_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0044"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0044_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0044"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0045_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0045"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0045_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0045"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0047_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0047"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0047_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0047"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0048_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0048"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0048_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0048"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0049_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0049"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0049_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0049"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0050_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0050"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0050_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0050"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0051_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0051"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0051_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0051"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0006_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0006"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0006_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0006"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0009_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0009"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0009_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0009"
+      ]
+    },
+    {
+      "reason": "Scenario passes the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0010_pass",
+      "status": "approved",
+      "verified_rule_ids": [
+        "f1_candidate_0010"
+      ]
+    },
+    {
+      "reason": "Scenario fails the verified rule.",
+      "review_rule_ids": [],
+      "scenario_id": "f1_smoke_f1_candidate_0010_fail",
+      "status": "rejected",
+      "verified_rule_ids": [
+        "f1_candidate_0010"
+      ]
+    },
+    {
+      "reason": "No verified rule covers this scenario.",
+      "review_rule_ids": [
+        "f1_candidate_0001"
+      ],
+      "scenario_id": "f1_smoke_f1_candidate_0001_needs_review",
+      "status": "needs_review",
+      "verified_rule_ids": []
+    }
+  ],
+  "compliance_status_counts": {
+    "approved": 38,
+    "needs_review": 1,
+    "rejected": 38
+  },
+  "generated_at": "2026-07-06T05:37:55.678738+00:00",
+  "operation_artifacts": {
+    "evidence_navigation": "evidence_navigation.json",
+    "operations_report": "operations_report.json",
+    "operator_action_templates": "operator_action_templates.json",
+    "operator_review_actions": "operator_review_actions.json",
+    "scenario_templates": "scenario_templates.json"
+  },
+  "operation_metrics": {
+    "action_template_count": 13,
+    "artifact": "operations_report.json",
+    "city_key": "burnaby_r1",
+    "evidence_navigation_count": 77,
+    "generated_at": "2026-07-06T05:37:55.678197+00:00",
+    "note": "Checkpoint 16 adds operator-facing drafts and scenario templates. It does not promote, approve, or edit verified outputs.",
+    "operator_actions_persisted_count": 0,
+    "run_id": "checkpoint_16_product_operations",
+    "scenario_template_count": 38,
+    "schema_version": "f1.artifacts.v0",
+    "verified_only_boundary_preserved": true,
+    "writes_gis_contract": false,
+    "writes_rule_status": false,
+    "writes_verified_rules": false
+  },
+  "product_workflows": [
+    {
+      "id": "rule_explorer",
+      "label": "Rule Explorer",
+      "status": "available"
+    },
+    {
+      "id": "review_workbench",
+      "label": "Review Workbench",
+      "status": "available"
+    },
+    {
+      "id": "evidence_inspector",
+      "label": "Evidence Inspector",
+      "status": "available"
+    },
+    {
+      "id": "single_rule_compliance",
+      "label": "Single-Rule Compliance Sandbox",
+      "status": "available"
+    },
+    {
+      "id": "chatbot_safety",
+      "label": "Chatbot Safety Monitor",
+      "status": "available"
+    },
+    {
+      "id": "review_action_drafting",
+      "label": "Review Action Drafting",
+      "status": "available"
+    },
+    {
+      "id": "scenario_builder",
+      "label": "Compliance Scenario Builder",
+      "status": "available"
+    },
+    {
+      "id": "evidence_navigation",
+      "label": "Evidence Navigation",
+      "status": "available"
+    }
+  ],
+  "review_queue": [
+    {
+      "applies_to": "",
+      "condition": "",
+      "constraint_scope": "minimum lot area",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_003_01",
+          "field": "rule_object",
+          "page": 1,
+          "quote": "| Dwelling Type | Dwelling Type | Rowhouse .1 | Small-Scale Multi-Unit Minimum Lot Width .2 | Minimum Lot Width .2 | Minimum Lot Width .2 Interior Lot | 5 m, except 6.2m for end unit lots | 10 m Corner Lot - Street | 8 m | 10 m Corner Lot - Lane | 6.2m | 10 m Lot Area .3 | Lot Area .3 | Lot Area .3 Minimum Lot Area | - | 281 m 2 Maximum Lot Area | 280 m 2 | -",
+          "section_id": "",
+          "span_id": "span_5b4be0511def1293"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_01",
+          "field": "operator",
+          "page": 1,
+          "quote": "| Dwelling Type | Dwelling Type | Rowhouse .1 | Small-Scale Multi-Unit Minimum Lot Width .2 | Minimum Lot Width .2 | Minimum Lot Width .2 Interior Lot | 5 m, except 6.2m for end unit lots | 10 m Corner Lot - Street | 8 m | 10 m Corner Lot - Lane | 6.2m | 10 m Lot Area .3 | Lot Area .3 | Lot Area .3 Minimum Lot Area | - | 281 m 2 Maximum Lot Area | 280 m 2 | -",
+          "section_id": "",
+          "span_id": "span_5b4be0511def1293"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_01",
+          "field": "value",
+          "page": 1,
+          "quote": "281 m 2",
+          "section_id": "",
+          "span_id": "span_5b4be0511def1293"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_01",
+          "field": "unit",
+          "page": 1,
+          "quote": "281 m 2",
+          "section_id": "",
+          "span_id": "span_5b4be0511def1293"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_01",
+          "field": "constraint_scope",
+          "page": 1,
+          "quote": "| Dwelling Type | Dwelling Type | Rowhouse .1 | Small-Scale Multi-Unit Minimum Lot Width .2 | Minimum Lot Width .2 | Minimum Lot Width .2 Interior Lot | 5 m, except 6.2m for end unit lots | 10 m Corner Lot - Street | 8 m | 10 m Corner Lot - Lane | 6.2m | 10 m Lot Area .3 | Lot Area .3 | Lot Area .3 Minimum Lot Area | - | 281 m 2 Maximum Lot Area | 280 m 2 | -",
+          "section_id": "",
+          "span_id": "span_5b4be0511def1293"
+        }
+      ],
+      "exception": "",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0001",
+      "rule_object": "lot_area",
+      "search_text": "f1_candidate_0001 context_required lot_area  minimum lot area 281 m2 {'field': 'rule_object', 'evidence_id': 'f1_retrieval_003_01', 'span_id': 'span_5b4be0511def1293', 'section_id': '', 'page': 1, 'quote': '| dwelling type | dwelling type | rowhouse .1 | small-scale multi-unit minimum lot width .2 | minimum lot width .2 | minimum lot width .2 interior lot | 5 m, except 6.2m for end unit lots | 10 m corner lot - street | 8 m | 10 m corner lot - lane | 6.2m | 10 m lot area .3 | lot area .3 | lot area .3 minimum lot area | - | 281 m 2 maximum lot area | 280 m 2 | -'} {'field': 'operator', 'evidence_id': 'f1_retrieval_003_01', 'span_id': 'span_5b4be0511def1293', 'section_id': '', 'page': 1, 'quote': '| dwelling type | dwelling type | rowhouse .1 | small-scale multi-unit minimum lot width .2 | minimum lot width .2 | minimum lot width .2 interior lot | 5 m, except 6.2m for end unit lots | 10 m corner lot - street | 8 m | 10 m corner lot - lane | 6.2m | 10 m lot area .3 | lot area .3 | lot area .3 minimum lot area | - | 281 m 2 maximum lot area | 280 m 2 | -'} {'field': 'value', 'evidence_id': 'f1_retrieval_003_01', 'span_id': 'span_5b4be0511def1293', 'section_id': '', 'page': 1, 'quote': '281 m 2'} {'field': 'unit', 'evidence_id': 'f1_retrieval_003_01', 'span_id': 'span_5b4be0511def1293', 'section_id': '', 'page': 1, 'quote': '281 m 2'} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_003_01', 'span_id': 'span_5b4be0511def1293', 'section_id': '', 'page': 1, 'quote': '| dwelling type | dwelling type | rowhouse .1 | small-scale multi-unit minimum lot width .2 | minimum lot width .2 | minimum lot width .2 interior lot | 5 m, except 6.2m for end unit lots | 10 m corner lot - street | 8 m | 10 m corner lot - lane | 6.2m | 10 m lot area .3 | lot area .3 | lot area .3 minimum lot area | - | 281 m 2 maximum lot area | 280 m 2 | -'}",
+      "status": "context_required",
+      "support_gaps": [],
+      "unit": "m2",
+      "unresolved_dependencies": [
+        "applies_to_missing"
+      ],
+      "value": "281"
+    },
+    {
+      "applies_to": "",
+      "condition": "",
+      "constraint_scope": "maximum lot area",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_004_02",
+          "field": "rule_object",
+          "page": 1,
+          "quote": "| Dwelling Type | Dwelling Type | Rowhouse .1 | Small-Scale Multi-Unit Minimum Lot Width .2 | Minimum Lot Width .2 | Minimum Lot Width .2 Interior Lot | 5 m, except 6.2m for end unit lots | 10 m Corner Lot - Street | 8 m | 10 m Corner Lot - Lane | 6.2m | 10 m Lot Area .3 | Lot Area .3 | Lot Area .3 Minimum Lot Area | - | 281 m 2 Maximum Lot Area | 280 m 2 | -",
+          "section_id": "",
+          "span_id": "span_5b4be0511def1293"
+        },
+        {
+          "evidence_id": "f1_retrieval_004_02",
+          "field": "operator",
+          "page": 1,
+          "quote": "| Dwelling Type | Dwelling Type | Rowhouse .1 | Small-Scale Multi-Unit Minimum Lot Width .2 | Minimum Lot Width .2 | Minimum Lot Width .2 Interior Lot | 5 m, except 6.2m for end unit lots | 10 m Corner Lot - Street | 8 m | 10 m Corner Lot - Lane | 6.2m | 10 m Lot Area .3 | Lot Area .3 | Lot Area .3 Minimum Lot Area | - | 281 m 2 Maximum Lot Area | 280 m 2 | -",
+          "section_id": "",
+          "span_id": "span_5b4be0511def1293"
+        },
+        {
+          "evidence_id": "f1_retrieval_004_02",
+          "field": "value",
+          "page": 1,
+          "quote": "281 m 2",
+          "section_id": "",
+          "span_id": "span_5b4be0511def1293"
+        },
+        {
+          "evidence_id": "f1_retrieval_004_02",
+          "field": "unit",
+          "page": 1,
+          "quote": "281 m 2",
+          "section_id": "",
+          "span_id": "span_5b4be0511def1293"
+        },
+        {
+          "evidence_id": "f1_retrieval_004_02",
+          "field": "constraint_scope",
+          "page": 1,
+          "quote": "| Dwelling Type | Dwelling Type | Rowhouse .1 | Small-Scale Multi-Unit Minimum Lot Width .2 | Minimum Lot Width .2 | Minimum Lot Width .2 Interior Lot | 5 m, except 6.2m for end unit lots | 10 m Corner Lot - Street | 8 m | 10 m Corner Lot - Lane | 6.2m | 10 m Lot Area .3 | Lot Area .3 | Lot Area .3 Minimum Lot Area | - | 281 m 2 Maximum Lot Area | 280 m 2 | -",
+          "section_id": "",
+          "span_id": "span_5b4be0511def1293"
+        }
+      ],
+      "exception": "",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0002",
+      "rule_object": "lot_area",
+      "search_text": "f1_candidate_0002 context_required lot_area  maximum lot area 281 m2 {'field': 'rule_object', 'evidence_id': 'f1_retrieval_004_02', 'span_id': 'span_5b4be0511def1293', 'section_id': '', 'page': 1, 'quote': '| dwelling type | dwelling type | rowhouse .1 | small-scale multi-unit minimum lot width .2 | minimum lot width .2 | minimum lot width .2 interior lot | 5 m, except 6.2m for end unit lots | 10 m corner lot - street | 8 m | 10 m corner lot - lane | 6.2m | 10 m lot area .3 | lot area .3 | lot area .3 minimum lot area | - | 281 m 2 maximum lot area | 280 m 2 | -'} {'field': 'operator', 'evidence_id': 'f1_retrieval_004_02', 'span_id': 'span_5b4be0511def1293', 'section_id': '', 'page': 1, 'quote': '| dwelling type | dwelling type | rowhouse .1 | small-scale multi-unit minimum lot width .2 | minimum lot width .2 | minimum lot width .2 interior lot | 5 m, except 6.2m for end unit lots | 10 m corner lot - street | 8 m | 10 m corner lot - lane | 6.2m | 10 m lot area .3 | lot area .3 | lot area .3 minimum lot area | - | 281 m 2 maximum lot area | 280 m 2 | -'} {'field': 'value', 'evidence_id': 'f1_retrieval_004_02', 'span_id': 'span_5b4be0511def1293', 'section_id': '', 'page': 1, 'quote': '281 m 2'} {'field': 'unit', 'evidence_id': 'f1_retrieval_004_02', 'span_id': 'span_5b4be0511def1293', 'section_id': '', 'page': 1, 'quote': '281 m 2'} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_004_02', 'span_id': 'span_5b4be0511def1293', 'section_id': '', 'page': 1, 'quote': '| dwelling type | dwelling type | rowhouse .1 | small-scale multi-unit minimum lot width .2 | minimum lot width .2 | minimum lot width .2 interior lot | 5 m, except 6.2m for end unit lots | 10 m corner lot - street | 8 m | 10 m corner lot - lane | 6.2m | 10 m lot area .3 | lot area .3 | lot area .3 minimum lot area | - | 281 m 2 maximum lot area | 280 m 2 | -'}",
+      "status": "context_required",
+      "support_gaps": [],
+      "unit": "m2",
+      "unresolved_dependencies": [
+        "applies_to_missing"
+      ],
+      "value": "281"
+    },
+    {
+      "applies_to": "",
+      "condition": "",
+      "constraint_scope": "maximum height",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_005_02",
+          "field": "rule_object",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_005_02",
+          "field": "operator",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_005_02",
+          "field": "value",
+          "page": 2,
+          "quote": "10m",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_005_02",
+          "field": "unit",
+          "page": 2,
+          "quote": "10m",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_005_02",
+          "field": "constraint_scope",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        }
+      ],
+      "exception": "",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0003",
+      "rule_object": "height",
+      "search_text": "f1_candidate_0003 rejected unit_not_supported height  maximum height 10 m {'field': 'rule_object', 'evidence_id': 'f1_retrieval_005_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'operator', 'evidence_id': 'f1_retrieval_005_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'value', 'evidence_id': 'f1_retrieval_005_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '10m'} {'field': 'unit', 'evidence_id': 'f1_retrieval_005_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '10m'} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_005_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'}",
+      "status": "rejected",
+      "support_gaps": [
+        "unit_not_supported"
+      ],
+      "unit": "m",
+      "unresolved_dependencies": [],
+      "value": "10"
+    },
+    {
+      "applies_to": "",
+      "condition": "",
+      "constraint_scope": "maximum storeys",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_006_01",
+          "field": "rule_object",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_006_01",
+          "field": "operator",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_006_01",
+          "field": "value",
+          "page": 2,
+          "quote": "3 storeys",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_006_01",
+          "field": "unit",
+          "page": 2,
+          "quote": "3 storeys",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_006_01",
+          "field": "constraint_scope",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        }
+      ],
+      "exception": "",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0004",
+      "rule_object": "storeys",
+      "search_text": "f1_candidate_0004 context_required storeys  maximum storeys 3 storeys {'field': 'rule_object', 'evidence_id': 'f1_retrieval_006_01', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'operator', 'evidence_id': 'f1_retrieval_006_01', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'value', 'evidence_id': 'f1_retrieval_006_01', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '3 storeys'} {'field': 'unit', 'evidence_id': 'f1_retrieval_006_01', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '3 storeys'} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_006_01', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'}",
+      "status": "context_required",
+      "support_gaps": [],
+      "unit": "storeys",
+      "unresolved_dependencies": [
+        "applies_to_missing"
+      ],
+      "value": "3"
+    },
+    {
+      "applies_to": "",
+      "condition": "",
+      "constraint_scope": "minimum setback",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_007_01",
+          "field": "rule_object",
+          "page": 2,
+          "quote": "101.4 Development Regulations (B/L No. 14783-25-12-09) .1 Maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a Section 219 Covenant prohibiting the construction of more than 3 dwelling units on the lot. .2 See Sections 101.6.1 and 6.12 for permitted projections into required yards and see Section 6.13 for additional setbacks that may be required for vision clearance areas. .3 Interior side yard setbacks are not required for rowhouse dwelling units on a lot line between two adjoining rowhouse dwellings with a shared party wall. For an end unit of a rowhouse development, the interior side yard setback is 1.2 m. .4 Accessory buildings are not permitted within the minimum separations between principal buildings - see Section 101.6.1 for permitted projections into minimum separations.",
+          "section_id": "101.4",
+          "span_id": "span_ce0e3bb3aec52363"
+        },
+        {
+          "evidence_id": "f1_retrieval_007_01",
+          "field": "operator",
+          "page": 2,
+          "quote": "101.4 Development Regulations (B/L No. 14783-25-12-09) .1 Maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a Section 219 Covenant prohibiting the construction of more than 3 dwelling units on the lot. .2 See Sections 101.6.1 and 6.12 for permitted projections into required yards and see Section 6.13 for additional setbacks that may be required for vision clearance areas. .3 Interior side yard setbacks are not required for rowhouse dwelling units on a lot line between two adjoining rowhouse dwellings with a shared party wall. For an end unit of a rowhouse development, the interior side yard setback is 1.2 m. .4 Accessory buildings are not permitted within the minimum separations between principal buildings - see Section 101.6.1 for permitted projections into minimum separations.",
+          "section_id": "101.4",
+          "span_id": "span_ce0e3bb3aec52363"
+        },
+        {
+          "evidence_id": "f1_retrieval_007_01",
+          "field": "value",
+          "page": 2,
+          "quote": "1.2 m",
+          "section_id": "101.4",
+          "span_id": "span_ce0e3bb3aec52363"
+        },
+        {
+          "evidence_id": "f1_retrieval_007_01",
+          "field": "unit",
+          "page": 2,
+          "quote": "1.2 m",
+          "section_id": "101.4",
+          "span_id": "span_ce0e3bb3aec52363"
+        },
+        {
+          "evidence_id": "f1_retrieval_007_01",
+          "field": "constraint_scope",
+          "page": 2,
+          "quote": "101.4 Development Regulations (B/L No. 14783-25-12-09) .1 Maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a Section 219 Covenant prohibiting the construction of more than 3 dwelling units on the lot. .2 See Sections 101.6.1 and 6.12 for permitted projections into required yards and see Section 6.13 for additional setbacks that may be required for vision clearance areas. .3 Interior side yard setbacks are not required for rowhouse dwelling units on a lot line between two adjoining rowhouse dwellings with a shared party wall. For an end unit of a rowhouse development, the interior side yard setback is 1.2 m. .4 Accessory buildings are not permitted within the minimum separations between principal buildings - see Section 101.6.1 for permitted projections into minimum separations.",
+          "section_id": "101.4",
+          "span_id": "span_ce0e3bb3aec52363"
+        }
+      ],
+      "exception": "",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0005",
+      "rule_object": "setback",
+      "search_text": "f1_candidate_0005 context_required setback  minimum setback 1.2 m {'field': 'rule_object', 'evidence_id': 'f1_retrieval_007_01', 'span_id': 'span_ce0e3bb3aec52363', 'section_id': '101.4', 'page': 2, 'quote': '101.4 development regulations (b/l no. 14783-25-12-09) .1 maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a section 219 covenant prohibiting the construction of more than 3 dwelling units on the lot. .2 see sections 101.6.1 and 6.12 for permitted projections into required yards and see section 6.13 for additional setbacks that may be required for vision clearance areas. .3 interior side yard setbacks are not required for rowhouse dwelling units on a lot line between two adjoining rowhouse dwellings with a shared party wall. for an end unit of a rowhouse development, the interior side yard setback is 1.2 m. .4 accessory buildings are not permitted within the minimum separations between principal buildings - see section 101.6.1 for permitted projections into minimum separations.'} {'field': 'operator', 'evidence_id': 'f1_retrieval_007_01', 'span_id': 'span_ce0e3bb3aec52363', 'section_id': '101.4', 'page': 2, 'quote': '101.4 development regulations (b/l no. 14783-25-12-09) .1 maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a section 219 covenant prohibiting the construction of more than 3 dwelling units on the lot. .2 see sections 101.6.1 and 6.12 for permitted projections into required yards and see section 6.13 for additional setbacks that may be required for vision clearance areas. .3 interior side yard setbacks are not required for rowhouse dwelling units on a lot line between two adjoining rowhouse dwellings with a shared party wall. for an end unit of a rowhouse development, the interior side yard setback is 1.2 m. .4 accessory buildings are not permitted within the minimum separations between principal buildings - see section 101.6.1 for permitted projections into minimum separations.'} {'field': 'value', 'evidence_id': 'f1_retrieval_007_01', 'span_id': 'span_ce0e3bb3aec52363', 'section_id': '101.4', 'page': 2, 'quote': '1.2 m'} {'field': 'unit', 'evidence_id': 'f1_retrieval_007_01', 'span_id': 'span_ce0e3bb3aec52363', 'section_id': '101.4', 'page': 2, 'quote': '1.2 m'} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_007_01', 'span_id': 'span_ce0e3bb3aec52363', 'section_id': '101.4', 'page': 2, 'quote': '101.4 development regulations (b/l no. 14783-25-12-09) .1 maximum lot area for rowhouse dwellings may exceed 280 m 2 , subject to registration of a section 219 covenant prohibiting the construction of more than 3 dwelling units on the lot. .2 see sections 101.6.1 and 6.12 for permitted projections into required yards and see section 6.13 for additional setbacks that may be required for vision clearance areas. .3 interior side yard setbacks are not required for rowhouse dwelling units on a lot line between two adjoining rowhouse dwellings with a shared party wall. for an end unit of a rowhouse development, the interior side yard setback is 1.2 m. .4 accessory buildings are not permitted within the minimum separations between principal buildings - see section 101.6.1 for permitted projections into minimum separations.'}",
+      "status": "context_required",
+      "support_gaps": [],
+      "unit": "m",
+      "unresolved_dependencies": [
+        "applies_to_missing"
+      ],
+      "value": "1.2"
+    },
+    {
+      "applies_to": "",
+      "condition": "",
+      "constraint_scope": "impervious surfaces",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_009_01",
+          "field": "rule_object",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_009_01",
+          "field": "operator",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_009_01",
+          "field": "value",
+          "page": 2,
+          "quote": "55%",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_009_01",
+          "field": "unit",
+          "page": 2,
+          "quote": "55%",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_009_01",
+          "field": "constraint_scope",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        }
+      ],
+      "exception": "",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0007",
+      "rule_object": "impervious_surface",
+      "search_text": "f1_candidate_0007 context_required impervious_surface  impervious surfaces 55 % {'field': 'rule_object', 'evidence_id': 'f1_retrieval_009_01', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'operator', 'evidence_id': 'f1_retrieval_009_01', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'value', 'evidence_id': 'f1_retrieval_009_01', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '55%'} {'field': 'unit', 'evidence_id': 'f1_retrieval_009_01', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '55%'} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_009_01', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'}",
+      "status": "context_required",
+      "support_gaps": [],
+      "unit": "%",
+      "unresolved_dependencies": [
+        "applies_to_missing"
+      ],
+      "value": "55"
+    },
+    {
+      "applies_to": "",
+      "condition": "",
+      "constraint_scope": "dwelling units",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_010_02",
+          "field": "rule_object",
+          "page": 4,
+          "quote": "| Total Dwelling Units on a Lot | Total Dwelling Units on a Lot | 1 to 3 Units | 4 to 6 Units Minimum 3+ Bedroom Units: | 1 Unit | 2 Units",
+          "section_id": "101.5",
+          "span_id": "span_5d92ccba38582fdf"
+        },
+        {
+          "evidence_id": "f1_retrieval_010_02",
+          "field": "operator",
+          "page": 4,
+          "quote": "| Total Dwelling Units on a Lot | Total Dwelling Units on a Lot | 1 to 3 Units | 4 to 6 Units Minimum 3+ Bedroom Units: | 1 Unit | 2 Units",
+          "section_id": "101.5",
+          "span_id": "span_5d92ccba38582fdf"
+        },
+        {
+          "evidence_id": "f1_retrieval_010_02",
+          "field": "value",
+          "page": 4,
+          "quote": "3 Units",
+          "section_id": "101.5",
+          "span_id": "span_5d92ccba38582fdf"
+        },
+        {
+          "evidence_id": "f1_retrieval_010_02",
+          "field": "unit",
+          "page": 4,
+          "quote": "3 Units",
+          "section_id": "101.5",
+          "span_id": "span_5d92ccba38582fdf"
+        },
+        {
+          "evidence_id": "f1_retrieval_010_02",
+          "field": "constraint_scope",
+          "page": 4,
+          "quote": "| Total Dwelling Units on a Lot | Total Dwelling Units on a Lot | 1 to 3 Units | 4 to 6 Units Minimum 3+ Bedroom Units: | 1 Unit | 2 Units",
+          "section_id": "101.5",
+          "span_id": "span_5d92ccba38582fdf"
+        }
+      ],
+      "exception": "",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0008",
+      "rule_object": "dwelling_units",
+      "search_text": "f1_candidate_0008 rejected operator_not_supported dwelling_units  dwelling units 3 units {'field': 'rule_object', 'evidence_id': 'f1_retrieval_010_02', 'span_id': 'span_5d92ccba38582fdf', 'section_id': '101.5', 'page': 4, 'quote': '| total dwelling units on a lot | total dwelling units on a lot | 1 to 3 units | 4 to 6 units minimum 3+ bedroom units: | 1 unit | 2 units'} {'field': 'operator', 'evidence_id': 'f1_retrieval_010_02', 'span_id': 'span_5d92ccba38582fdf', 'section_id': '101.5', 'page': 4, 'quote': '| total dwelling units on a lot | total dwelling units on a lot | 1 to 3 units | 4 to 6 units minimum 3+ bedroom units: | 1 unit | 2 units'} {'field': 'value', 'evidence_id': 'f1_retrieval_010_02', 'span_id': 'span_5d92ccba38582fdf', 'section_id': '101.5', 'page': 4, 'quote': '3 units'} {'field': 'unit', 'evidence_id': 'f1_retrieval_010_02', 'span_id': 'span_5d92ccba38582fdf', 'section_id': '101.5', 'page': 4, 'quote': '3 units'} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_010_02', 'span_id': 'span_5d92ccba38582fdf', 'section_id': '101.5', 'page': 4, 'quote': '| total dwelling units on a lot | total dwelling units on a lot | 1 to 3 units | 4 to 6 units minimum 3+ bedroom units: | 1 unit | 2 units'}",
+      "status": "rejected",
+      "support_gaps": [
+        "operator_not_supported"
+      ],
+      "unit": "units",
+      "unresolved_dependencies": [],
+      "value": "3"
+    },
+    {
+      "applies_to": "living unit",
+      "condition": "",
+      "constraint_scope": "floor area",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_015_01",
+          "field": "rule_object",
+          "page": 4,
+          "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+          "section_id": "",
+          "span_id": "span_819d31e00929e032"
+        },
+        {
+          "evidence_id": "f1_retrieval_015_01",
+          "field": "operator",
+          "page": 4,
+          "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+          "section_id": "",
+          "span_id": "span_819d31e00929e032"
+        },
+        {
+          "evidence_id": "f1_retrieval_015_01",
+          "field": "value",
+          "page": 4,
+          "quote": "27 m 2",
+          "section_id": "",
+          "span_id": "span_819d31e00929e032"
+        },
+        {
+          "evidence_id": "f1_retrieval_015_01",
+          "field": "unit",
+          "page": 4,
+          "quote": "27 m 2",
+          "section_id": "",
+          "span_id": "span_819d31e00929e032"
+        },
+        {
+          "evidence_id": "f1_retrieval_015_01",
+          "field": "constraint_scope",
+          "page": 4,
+          "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+          "section_id": "",
+          "span_id": "span_819d31e00929e032"
+        },
+        {
+          "evidence_id": "f1_retrieval_015_01",
+          "field": "applies_to",
+          "page": 4,
+          "quote": "(a) each living unit shall have a minimum floor area of 27 m 2 ;",
+          "section_id": "",
+          "span_id": "span_819d31e00929e032"
+        }
+      ],
+      "exception": "",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0011",
+      "rule_object": "floor_area",
+      "search_text": "f1_candidate_0011 not_used floor_area living unit floor area 27 m2 {'field': 'rule_object', 'evidence_id': 'f1_retrieval_015_01', 'span_id': 'span_819d31e00929e032', 'section_id': '', 'page': 4, 'quote': '(a) each living unit shall have a minimum floor area of 27 m 2 ;'} {'field': 'operator', 'evidence_id': 'f1_retrieval_015_01', 'span_id': 'span_819d31e00929e032', 'section_id': '', 'page': 4, 'quote': '(a) each living unit shall have a minimum floor area of 27 m 2 ;'} {'field': 'value', 'evidence_id': 'f1_retrieval_015_01', 'span_id': 'span_819d31e00929e032', 'section_id': '', 'page': 4, 'quote': '27 m 2'} {'field': 'unit', 'evidence_id': 'f1_retrieval_015_01', 'span_id': 'span_819d31e00929e032', 'section_id': '', 'page': 4, 'quote': '27 m 2'} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_015_01', 'span_id': 'span_819d31e00929e032', 'section_id': '', 'page': 4, 'quote': '(a) each living unit shall have a minimum floor area of 27 m 2 ;'} {'field': 'applies_to', 'evidence_id': 'f1_retrieval_015_01', 'span_id': 'span_819d31e00929e032', 'section_id': '', 'page': 4, 'quote': '(a) each living unit shall have a minimum floor area of 27 m 2 ;'}",
+      "status": "not_used",
+      "support_gaps": [],
+      "unit": "m2",
+      "unresolved_dependencies": [],
+      "value": "27"
+    },
+    {
+      "applies_to": "Small-Scale Multi-Unit Housing",
+      "condition": "",
+      "constraint_scope": "district",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "rule_object",
+          "page": 1,
+          "quote": "Principal Use | Use-Specific Regulations Small-Scale Multi-Unit Housing | - Rowhouse Dwellings | 101.5.2 Boarding, Lodging, or Rooming House | 101.5.3 Group Home | - Supportive Housing (Category A) | 101.5.4 Child Care Facilities | 101.5.6 Accessory Use | Use-Specific Regulations Boarding Use (up to 2 boarders) | - Home Occupations | 6.8, 6.8A Urban Agriculture | 6.30 Accessory Buildings, Structures, and Uses | 101.5.5, 6.6",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        },
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "operator",
+          "page": 1,
+          "quote": "Principal Use | Use-Specific Regulations Small-Scale Multi-Unit Housing | - Rowhouse Dwellings | 101.5.2 Boarding, Lodging, or Rooming House | 101.5.3 Group Home | - Supportive Housing (Category A) | 101.5.4 Child Care Facilities | 101.5.6 Accessory Use | Use-Specific Regulations Boarding Use (up to 2 boarders) | - Home Occupations | 6.8, 6.8A Urban Agriculture | 6.30 Accessory Buildings, Structures, and Uses | 101.5.5, 6.6",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        },
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "value",
+          "page": 1,
+          "quote": "",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        },
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "unit",
+          "page": 1,
+          "quote": "",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        },
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "constraint_scope",
+          "page": 1,
+          "quote": "Principal Use | Use-Specific Regulations Small-Scale Multi-Unit Housing | - Rowhouse Dwellings | 101.5.2 Boarding, Lodging, or Rooming House | 101.5.3 Group Home | - Supportive Housing (Category A) | 101.5.4 Child Care Facilities | 101.5.6 Accessory Use | Use-Specific Regulations Boarding Use (up to 2 boarders) | - Home Occupations | 6.8, 6.8A Urban Agriculture | 6.30 Accessory Buildings, Structures, and Uses | 101.5.5, 6.6",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        },
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "applies_to",
+          "page": 1,
+          "quote": "Principal Use | Use-Specific Regulations Small-Scale Multi-Unit Housing | - Rowhouse Dwellings | 101.5.2 Boarding, Lodging, or Rooming House | 101.5.3 Group Home | - Supportive Housing (Category A) | 101.5.4 Child Care Facilities | 101.5.6 Accessory Use | Use-Specific Regulations Boarding Use (up to 2 boarders) | - Home Occupations | 6.8, 6.8A Urban Agriculture | 6.30 Accessory Buildings, Structures, and Uses | 101.5.5, 6.6",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        }
+      ],
+      "exception": "",
+      "operator": "allowed",
+      "rule_id": "f1_candidate_0012",
+      "rule_object": "permitted_use",
+      "search_text": "f1_candidate_0012 rejected value_citation_missing unit_citation_missing operator_not_supported permitted_use small-scale multi-unit housing district   {'field': 'rule_object', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': 'principal use | use-specific regulations small-scale multi-unit housing | - rowhouse dwellings | 101.5.2 boarding, lodging, or rooming house | 101.5.3 group home | - supportive housing (category a) | 101.5.4 child care facilities | 101.5.6 accessory use | use-specific regulations boarding use (up to 2 boarders) | - home occupations | 6.8, 6.8a urban agriculture | 6.30 accessory buildings, structures, and uses | 101.5.5, 6.6'} {'field': 'operator', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': 'principal use | use-specific regulations small-scale multi-unit housing | - rowhouse dwellings | 101.5.2 boarding, lodging, or rooming house | 101.5.3 group home | - supportive housing (category a) | 101.5.4 child care facilities | 101.5.6 accessory use | use-specific regulations boarding use (up to 2 boarders) | - home occupations | 6.8, 6.8a urban agriculture | 6.30 accessory buildings, structures, and uses | 101.5.5, 6.6'} {'field': 'value', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': ''} {'field': 'unit', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': ''} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': 'principal use | use-specific regulations small-scale multi-unit housing | - rowhouse dwellings | 101.5.2 boarding, lodging, or rooming house | 101.5.3 group home | - supportive housing (category a) | 101.5.4 child care facilities | 101.5.6 accessory use | use-specific regulations boarding use (up to 2 boarders) | - home occupations | 6.8, 6.8a urban agriculture | 6.30 accessory buildings, structures, and uses | 101.5.5, 6.6'} {'field': 'applies_to', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': 'principal use | use-specific regulations small-scale multi-unit housing | - rowhouse dwellings | 101.5.2 boarding, lodging, or rooming house | 101.5.3 group home | - supportive housing (category a) | 101.5.4 child care facilities | 101.5.6 accessory use | use-specific regulations boarding use (up to 2 boarders) | - home occupations | 6.8, 6.8a urban agriculture | 6.30 accessory buildings, structures, and uses | 101.5.5, 6.6'}",
+      "status": "rejected",
+      "support_gaps": [
+        "value_citation_missing",
+        "unit_citation_missing",
+        "operator_not_supported"
+      ],
+      "unit": "",
+      "unresolved_dependencies": [],
+      "value": ""
+    },
+    {
+      "applies_to": "Group Home",
+      "condition": "",
+      "constraint_scope": "district",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "rule_object",
+          "page": 1,
+          "quote": "Principal Use | Use-Specific Regulations Small-Scale Multi-Unit Housing | - Rowhouse Dwellings | 101.5.2 Boarding, Lodging, or Rooming House | 101.5.3 Group Home | - Supportive Housing (Category A) | 101.5.4 Child Care Facilities | 101.5.6 Accessory Use | Use-Specific Regulations Boarding Use (up to 2 boarders) | - Home Occupations | 6.8, 6.8A Urban Agriculture | 6.30 Accessory Buildings, Structures, and Uses | 101.5.5, 6.6",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        },
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "operator",
+          "page": 1,
+          "quote": "Principal Use | Use-Specific Regulations Small-Scale Multi-Unit Housing | - Rowhouse Dwellings | 101.5.2 Boarding, Lodging, or Rooming House | 101.5.3 Group Home | - Supportive Housing (Category A) | 101.5.4 Child Care Facilities | 101.5.6 Accessory Use | Use-Specific Regulations Boarding Use (up to 2 boarders) | - Home Occupations | 6.8, 6.8A Urban Agriculture | 6.30 Accessory Buildings, Structures, and Uses | 101.5.5, 6.6",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        },
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "value",
+          "page": 1,
+          "quote": "",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        },
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "unit",
+          "page": 1,
+          "quote": "",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        },
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "constraint_scope",
+          "page": 1,
+          "quote": "Principal Use | Use-Specific Regulations Small-Scale Multi-Unit Housing | - Rowhouse Dwellings | 101.5.2 Boarding, Lodging, or Rooming House | 101.5.3 Group Home | - Supportive Housing (Category A) | 101.5.4 Child Care Facilities | 101.5.6 Accessory Use | Use-Specific Regulations Boarding Use (up to 2 boarders) | - Home Occupations | 6.8, 6.8A Urban Agriculture | 6.30 Accessory Buildings, Structures, and Uses | 101.5.5, 6.6",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        },
+        {
+          "evidence_id": "f1_retrieval_001_03",
+          "field": "applies_to",
+          "page": 1,
+          "quote": "Principal Use | Use-Specific Regulations Small-Scale Multi-Unit Housing | - Rowhouse Dwellings | 101.5.2 Boarding, Lodging, or Rooming House | 101.5.3 Group Home | - Supportive Housing (Category A) | 101.5.4 Child Care Facilities | 101.5.6 Accessory Use | Use-Specific Regulations Boarding Use (up to 2 boarders) | - Home Occupations | 6.8, 6.8A Urban Agriculture | 6.30 Accessory Buildings, Structures, and Uses | 101.5.5, 6.6",
+          "section_id": "",
+          "span_id": "span_d12a894ec614dbb9"
+        }
+      ],
+      "exception": "",
+      "operator": "allowed",
+      "rule_id": "f1_candidate_0013",
+      "rule_object": "permitted_use",
+      "search_text": "f1_candidate_0013 rejected value_citation_missing unit_citation_missing operator_not_supported permitted_use group home district   {'field': 'rule_object', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': 'principal use | use-specific regulations small-scale multi-unit housing | - rowhouse dwellings | 101.5.2 boarding, lodging, or rooming house | 101.5.3 group home | - supportive housing (category a) | 101.5.4 child care facilities | 101.5.6 accessory use | use-specific regulations boarding use (up to 2 boarders) | - home occupations | 6.8, 6.8a urban agriculture | 6.30 accessory buildings, structures, and uses | 101.5.5, 6.6'} {'field': 'operator', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': 'principal use | use-specific regulations small-scale multi-unit housing | - rowhouse dwellings | 101.5.2 boarding, lodging, or rooming house | 101.5.3 group home | - supportive housing (category a) | 101.5.4 child care facilities | 101.5.6 accessory use | use-specific regulations boarding use (up to 2 boarders) | - home occupations | 6.8, 6.8a urban agriculture | 6.30 accessory buildings, structures, and uses | 101.5.5, 6.6'} {'field': 'value', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': ''} {'field': 'unit', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': ''} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': 'principal use | use-specific regulations small-scale multi-unit housing | - rowhouse dwellings | 101.5.2 boarding, lodging, or rooming house | 101.5.3 group home | - supportive housing (category a) | 101.5.4 child care facilities | 101.5.6 accessory use | use-specific regulations boarding use (up to 2 boarders) | - home occupations | 6.8, 6.8a urban agriculture | 6.30 accessory buildings, structures, and uses | 101.5.5, 6.6'} {'field': 'applies_to', 'evidence_id': 'f1_retrieval_001_03', 'span_id': 'span_d12a894ec614dbb9', 'section_id': '', 'page': 1, 'quote': 'principal use | use-specific regulations small-scale multi-unit housing | - rowhouse dwellings | 101.5.2 boarding, lodging, or rooming house | 101.5.3 group home | - supportive housing (category a) | 101.5.4 child care facilities | 101.5.6 accessory use | use-specific regulations boarding use (up to 2 boarders) | - home occupations | 6.8, 6.8a urban agriculture | 6.30 accessory buildings, structures, and uses | 101.5.5, 6.6'}",
+      "status": "rejected",
+      "support_gaps": [
+        "value_citation_missing",
+        "unit_citation_missing",
+        "operator_not_supported"
+      ],
+      "unit": "",
+      "unresolved_dependencies": [],
+      "value": ""
+    },
+    {
+      "applies_to": "Rowhouse",
+      "condition": "",
+      "constraint_scope": "lot",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "rule_object",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "operator",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "value",
+          "page": 2,
+          "quote": "55%",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "unit",
+          "page": 2,
+          "quote": "55%",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "constraint_scope",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "applies_to",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        }
+      ],
+      "exception": "",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0017",
+      "rule_object": "lot_coverage",
+      "search_text": "f1_candidate_0017 rejected applies_to_not_supported lot_coverage rowhouse lot 55 % {'field': 'rule_object', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'operator', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'value', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '55%'} {'field': 'unit', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '55%'} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'applies_to', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'}",
+      "status": "rejected",
+      "support_gaps": [
+        "applies_to_not_supported"
+      ],
+      "unit": "%",
+      "unresolved_dependencies": [],
+      "value": "55"
+    },
+    {
+      "applies_to": "Rowhouse",
+      "condition": "",
+      "constraint_scope": "lot",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "rule_object",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "operator",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "value",
+          "page": 2,
+          "quote": "70%",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "unit",
+          "page": 2,
+          "quote": "70%",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "constraint_scope",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_02",
+          "field": "applies_to",
+          "page": 2,
+          "quote": "| Dwelling Type | Dwelling Type | Dwelling Type | Dwelling Type Permitted Dwelling Units (including secondary suites) | 1 to 3 Units | 1 to 2 Units | 3 to 4 Units | 5 to 6 Units Frequent Transit Network Area Only Minimum Lot Area | - | - | 4 Units Only: 281m 2 | 281m 2 Maximum Lot Area .1 | 280m 2 | - | - | - Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage | Maximum Lot Coverage All Buildings | 55% | Lots < 567 m 2 : 40% Lots > 567 m 2 : 30% | 40% | 45% Impervious Surfaces | 70% | 60% | 60% | 70% Maximum Height | Maximum Height | Maximum Height | Maximum Height | Maximum Height Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings | Front Principal Buildings Height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...",
+          "section_id": "101.4",
+          "span_id": "span_e81e0e23450ce24f"
+        }
+      ],
+      "exception": "",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0022",
+      "rule_object": "impervious_surface",
+      "search_text": "f1_candidate_0022 rejected applies_to_not_supported impervious_surface rowhouse lot 70 % {'field': 'rule_object', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'operator', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'value', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '70%'} {'field': 'unit', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '70%'} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'} {'field': 'applies_to', 'evidence_id': 'f1_retrieval_003_02', 'span_id': 'span_e81e0e23450ce24f', 'section_id': '101.4', 'page': 2, 'quote': '| dwelling type | dwelling type | dwelling type | dwelling type permitted dwelling units (including secondary suites) | 1 to 3 units | 1 to 2 units | 3 to 4 units | 5 to 6 units frequent transit network area only minimum lot area | - | - | 4 units only: 281m 2 | 281m 2 maximum lot area .1 | 280m 2 | - | - | - maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage | maximum lot coverage all buildings | 55% | lots < 567 m 2 : 40% lots > 567 m 2 : 30% | 40% | 45% impervious surfaces | 70% | 60% | 60% | 70% maximum height | maximum height | maximum height | maximum height | maximum height front principal buildings | front principal buildings | front principal buildings | front principal buildings | front principal buildings height | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roof: 10m | flat roof: 9.5m | sloping roo...'}",
+      "status": "rejected",
+      "support_gaps": [
+        "applies_to_not_supported"
+      ],
+      "unit": "%",
+      "unresolved_dependencies": [],
+      "value": "70"
+    },
+    {
+      "applies_to": "dwelling units located more than 45 m from a street lot line",
+      "condition": "automatic sprinkler system required beyond this distance",
+      "constraint_scope": "fire_safety",
+      "evidence": [
+        {
+          "evidence_id": "f1_retrieval_003_04",
+          "field": "rule_object",
+          "page": 6,
+          "quote": "101.6.3 Access and Fire Safety Dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; and (b) is clear of any projections or obstructions to a minimum of 2.5 m in height. 101.6.4 Heritage Notwithstanding the R1 District regulations otherwise stated in this Bylaw, subject to approval of the Director of Planning and Development and the registration of a Section 219 Covenant to prohibit any works on the lot which would destroy, or irreversibly alter or damage the heritage resource and its heritage character, some or all of the following regulations may apply to...",
+          "section_id": "101.6.3",
+          "span_id": "span_a20ee106bd881a3f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_04",
+          "field": "operator",
+          "page": 6,
+          "quote": "101.6.3 Access and Fire Safety Dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; and (b) is clear of any projections or obstructions to a minimum of 2.5 m in height. 101.6.4 Heritage Notwithstanding the R1 District regulations otherwise stated in this Bylaw, subject to approval of the Director of Planning and Development and the registration of a Section 219 Covenant to prohibit any works on the lot which would destroy, or irreversibly alter or damage the heritage resource and its heritage character, some or all of the following regulations may apply to...",
+          "section_id": "101.6.3",
+          "span_id": "span_a20ee106bd881a3f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_04",
+          "field": "value",
+          "page": 6,
+          "quote": "45 m",
+          "section_id": "101.6.3",
+          "span_id": "span_a20ee106bd881a3f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_04",
+          "field": "unit",
+          "page": 6,
+          "quote": "45 m",
+          "section_id": "101.6.3",
+          "span_id": "span_a20ee106bd881a3f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_04",
+          "field": "constraint_scope",
+          "page": 6,
+          "quote": "101.6.3 Access and Fire Safety Dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; and (b) is clear of any projections or obstructions to a minimum of 2.5 m in height. 101.6.4 Heritage Notwithstanding the R1 District regulations otherwise stated in this Bylaw, subject to approval of the Director of Planning and Development and the registration of a Section 219 Covenant to prohibit any works on the lot which would destroy, or irreversibly alter or damage the heritage resource and its heritage character, some or all of the following regulations may apply to...",
+          "section_id": "101.6.3",
+          "span_id": "span_a20ee106bd881a3f"
+        },
+        {
+          "evidence_id": "f1_retrieval_003_04",
+          "field": "applies_to",
+          "page": 6,
+          "quote": "101.6.3 Access and Fire Safety Dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. All dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; and (b) is clear of any projections or obstructions to a minimum of 2.5 m in height. 101.6.4 Heritage Notwithstanding the R1 District regulations otherwise stated in this Bylaw, subject to approval of the Director of Planning and Development and the registration of a Section 219 Covenant to prohibit any works on the lot which would destroy, or irreversibly alter or damage the heritage resource and its heritage character, some or all of the following regulations may apply to...",
+          "section_id": "101.6.3",
+          "span_id": "span_a20ee106bd881a3f"
+        }
+      ],
+      "exception": "",
+      "operator": ">",
+      "rule_id": "f1_candidate_0046",
+      "rule_object": "automatic_sprinkler",
+      "search_text": "f1_candidate_0046 rejected operator_not_supported automatic_sprinkler dwelling units located more than 45 m from a street lot line fire_safety 45 m {'field': 'rule_object', 'evidence_id': 'f1_retrieval_003_04', 'span_id': 'span_a20ee106bd881a3f', 'section_id': '101.6.3', 'page': 6, 'quote': '101.6.3 access and fire safety dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. all dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; and (b) is clear of any projections or obstructions to a minimum of 2.5 m in height. 101.6.4 heritage notwithstanding the r1 district regulations otherwise stated in this bylaw, subject to approval of the director of planning and development and the registration of a section 219 covenant to prohibit any works on the lot which would destroy, or irreversibly alter or damage the heritage resource and its heritage character, some or all of the following regulations may apply to...'} {'field': 'operator', 'evidence_id': 'f1_retrieval_003_04', 'span_id': 'span_a20ee106bd881a3f', 'section_id': '101.6.3', 'page': 6, 'quote': '101.6.3 access and fire safety dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. all dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; and (b) is clear of any projections or obstructions to a minimum of 2.5 m in height. 101.6.4 heritage notwithstanding the r1 district regulations otherwise stated in this bylaw, subject to approval of the director of planning and development and the registration of a section 219 covenant to prohibit any works on the lot which would destroy, or irreversibly alter or damage the heritage resource and its heritage character, some or all of the following regulations may apply to...'} {'field': 'value', 'evidence_id': 'f1_retrieval_003_04', 'span_id': 'span_a20ee106bd881a3f', 'section_id': '101.6.3', 'page': 6, 'quote': '45 m'} {'field': 'unit', 'evidence_id': 'f1_retrieval_003_04', 'span_id': 'span_a20ee106bd881a3f', 'section_id': '101.6.3', 'page': 6, 'quote': '45 m'} {'field': 'constraint_scope', 'evidence_id': 'f1_retrieval_003_04', 'span_id': 'span_a20ee106bd881a3f', 'section_id': '101.6.3', 'page': 6, 'quote': '101.6.3 access and fire safety dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. all dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; and (b) is clear of any projections or obstructions to a minimum of 2.5 m in height. 101.6.4 heritage notwithstanding the r1 district regulations otherwise stated in this bylaw, subject to approval of the director of planning and development and the registration of a section 219 covenant to prohibit any works on the lot which would destroy, or irreversibly alter or damage the heritage resource and its heritage character, some or all of the following regulations may apply to...'} {'field': 'applies_to', 'evidence_id': 'f1_retrieval_003_04', 'span_id': 'span_a20ee106bd881a3f', 'section_id': '101.6.3', 'page': 6, 'quote': '101.6.3 access and fire safety dwelling units located more than 45 m from a lot line abutting a street shall contain an automatic sprinkler system. all dwelling units shall have a minimum 1.0 m paved or gravel fire access corridor that: (a) provides direct pedestrian access from the dwelling unit entrance to a lot line abutting a street, or abutting a constructed lane where direct access to a street is not feasible; and (b) is clear of any projections or obstructions to a minimum of 2.5 m in height. 101.6.4 heritage notwithstanding the r1 district regulations otherwise stated in this bylaw, subject to approval of the director of planning and development and the registration of a section 219 covenant to prohibit any works on the lot which would destroy, or irreversibly alter or damage the heritage resource and its heritage character, some or all of the following regulations may apply to...'}",
+      "status": "rejected",
+      "support_gaps": [
+        "operator_not_supported"
+      ],
+      "unit": "m",
+      "unresolved_dependencies": [],
+      "value": "45"
+    }
+  ],
+  "run_id": "checkpoint_16_product_operations",
+  "schema_version": "f1.artifacts.v0",
+  "source_artifacts": {
+    "benchmark_eval": "f1_benchmark_report.json",
+    "chatbot_eval": "chatbot_eval.json",
+    "compliance_decisions": "compliance_decisions.json",
+    "compliance_report": "compliance_report.json",
+    "evidence_navigation": "evidence_navigation.json",
+    "gis_rule_contract": "gis_rule_contract.json",
+    "operations_report": "operations_report.json",
+    "operator_action_templates": "operator_action_templates.json",
+    "operator_review_actions": "operator_review_actions.json",
+    "review_queue": "review_queue.json",
+    "scenario_templates": "scenario_templates.json",
+    "summary": "f1_summary.json"
+  },
+  "title": "F1 Bylaw Intelligence Command Center",
+  "verified_rules": [
+    {
+      "applies_to": "Small-Scale Multi-Unit 3 to 4 Units",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "4 units",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "parcel_polygon",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0014",
+      "rule_object": "dwelling_units",
+      "search_text": "f1_candidate_0014 dwelling_units small-scale multi-unit 3 to 4 units lot   f1_retrieval_003_02 4 units",
+      "unit": "units",
+      "value": "4",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Small-Scale Multi-Unit 5 to 6 Units",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "6 units",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "Frequent Transit Network Area Only",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "parcel_polygon",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0015",
+      "rule_object": "dwelling_units",
+      "search_text": "f1_candidate_0015 dwelling_units small-scale multi-unit 5 to 6 units lot frequent transit network area only  f1_retrieval_003_02 6 units",
+      "unit": "units",
+      "value": "6",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Small-Scale Multi-Unit",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "281 m 2",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "4 Units Only",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0016",
+      "rule_object": "lot_area",
+      "search_text": "f1_candidate_0016 lot_area small-scale multi-unit lot 4 units only  f1_retrieval_003_02 281 m 2",
+      "unit": "m2",
+      "value": "281",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Small-Scale Multi-Unit 1 to 2 Units",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "40%",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "Lots < 567 m2",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "parcel_polygon",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0018",
+      "rule_object": "lot_coverage",
+      "search_text": "f1_candidate_0018 lot_coverage small-scale multi-unit 1 to 2 units lot lots < 567 m2  f1_retrieval_003_02 40%",
+      "unit": "%",
+      "value": "40",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Small-Scale Multi-Unit 1 to 2 Units",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "30%",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "Lots > 567 m2",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "parcel_polygon",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0019",
+      "rule_object": "lot_coverage",
+      "search_text": "f1_candidate_0019 lot_coverage small-scale multi-unit 1 to 2 units lot lots > 567 m2  f1_retrieval_003_02 30%",
+      "unit": "%",
+      "value": "30",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Small-Scale Multi-Unit 3 to 4 Units",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "40%",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "parcel_polygon",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0020",
+      "rule_object": "lot_coverage",
+      "search_text": "f1_candidate_0020 lot_coverage small-scale multi-unit 3 to 4 units lot   f1_retrieval_003_02 40%",
+      "unit": "%",
+      "value": "40",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Small-Scale Multi-Unit 5 to 6 Units",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "45%",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "Frequent Transit Network Area Only",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "parcel_polygon",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0021",
+      "rule_object": "lot_coverage",
+      "search_text": "f1_candidate_0021 lot_coverage small-scale multi-unit 5 to 6 units lot frequent transit network area only  f1_retrieval_003_02 45%",
+      "unit": "%",
+      "value": "45",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Small-Scale Multi-Unit 1 to 2 Units",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "60%",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0023",
+      "rule_object": "impervious_surface",
+      "search_text": "f1_candidate_0023 impervious_surface small-scale multi-unit 1 to 2 units lot   f1_retrieval_003_02 60%",
+      "unit": "%",
+      "value": "60",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Small-Scale Multi-Unit 3 to 4 Units",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "60%",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0024",
+      "rule_object": "impervious_surface",
+      "search_text": "f1_candidate_0024 impervious_surface small-scale multi-unit 3 to 4 units lot   f1_retrieval_003_02 60%",
+      "unit": "%",
+      "value": "60",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Small-Scale Multi-Unit 5 to 6 Units",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "70%",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0025",
+      "rule_object": "impervious_surface",
+      "search_text": "f1_candidate_0025 impervious_surface small-scale multi-unit 5 to 6 units lot   f1_retrieval_003_02 70%",
+      "unit": "%",
+      "value": "70",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Front Principal Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "10 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "sloping roof",
+      "constraint_scope": "building",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "building_footprint",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0026",
+      "rule_object": "height",
+      "search_text": "f1_candidate_0026 height front principal buildings building sloping roof  f1_retrieval_003_02 10 m",
+      "unit": "m",
+      "value": "10",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Front Principal Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "9.5 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "flat roof",
+      "constraint_scope": "building",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "building_footprint",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0027",
+      "rule_object": "height",
+      "search_text": "f1_candidate_0027 height front principal buildings building flat roof  f1_retrieval_003_02 9.5 m",
+      "unit": "m",
+      "value": "9.5",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Front Principal Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "3 storeys",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "building",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0028",
+      "rule_object": "storeys",
+      "search_text": "f1_candidate_0028 storeys front principal buildings building   f1_retrieval_003_02 3 storeys",
+      "unit": "storeys",
+      "value": "3",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Front Principal Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "2.5 storeys",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "building",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0029",
+      "rule_object": "storeys",
+      "search_text": "f1_candidate_0029 storeys front principal buildings building   f1_retrieval_003_02 2.5 storeys",
+      "unit": "storeys",
+      "value": "2.5",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Rear Principal Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "7.5 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "sloping roof",
+      "constraint_scope": "building",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "building_footprint",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0030",
+      "rule_object": "height",
+      "search_text": "f1_candidate_0030 height rear principal buildings building sloping roof  f1_retrieval_003_02 7.5 m",
+      "unit": "m",
+      "value": "7.5",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Rear Principal Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "7 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "flat roof",
+      "constraint_scope": "building",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "building_footprint",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0031",
+      "rule_object": "height",
+      "search_text": "f1_candidate_0031 height rear principal buildings building flat roof  f1_retrieval_003_02 7 m",
+      "unit": "m",
+      "value": "7",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Rear Principal Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "2 storeys",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "basement inclusive",
+      "constraint_scope": "building",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0032",
+      "rule_object": "storeys",
+      "search_text": "f1_candidate_0032 storeys rear principal buildings building basement inclusive  f1_retrieval_003_02 2 storeys",
+      "unit": "storeys",
+      "value": "2",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Accessory Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "4 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "building",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "building_footprint",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0033",
+      "rule_object": "height",
+      "search_text": "f1_candidate_0033 height accessory buildings building   f1_retrieval_003_02 4 m",
+      "unit": "m",
+      "value": "4",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Accessory Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "1 storeys",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "building",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0034",
+      "rule_object": "storeys",
+      "search_text": "f1_candidate_0034 storeys accessory buildings building   f1_retrieval_003_02 1 storeys",
+      "unit": "storeys",
+      "value": "1",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "All Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "4 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "front street yard",
+      "constraint_scope": "street_yard_front",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "lot_line",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0035",
+      "rule_object": "setback",
+      "search_text": "f1_candidate_0035 setback all buildings street_yard_front front street yard  f1_retrieval_003_02 4 m",
+      "unit": "m",
+      "value": "4",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "All Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "3 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "flanking street yard",
+      "constraint_scope": "street_yard_flanking",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "lot_line",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0036",
+      "rule_object": "setback",
+      "search_text": "f1_candidate_0036 setback all buildings street_yard_flanking flanking street yard  f1_retrieval_003_02 3 m",
+      "unit": "m",
+      "value": "3",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "All Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "1.5 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "lane_yard",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "lot_line",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0037",
+      "rule_object": "setback",
+      "search_text": "f1_candidate_0037 setback all buildings lane_yard   f1_retrieval_003_02 1.5 m",
+      "unit": "m",
+      "value": "1.5",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Rear Principal Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "3 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "interior_rear_yard",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "lot_line",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0038",
+      "rule_object": "setback",
+      "search_text": "f1_candidate_0038 setback rear principal buildings interior_rear_yard   f1_retrieval_003_02 3 m",
+      "unit": "m",
+      "value": "3",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Accessory Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "1.5 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "accessory buildings exception",
+      "constraint_scope": "interior_rear_yard",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "lot_line",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0039",
+      "rule_object": "setback",
+      "search_text": "f1_candidate_0039 setback accessory buildings interior_rear_yard accessory buildings exception  f1_retrieval_003_02 1.5 m",
+      "unit": "m",
+      "value": "1.5",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "All Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "0 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "",
+      "constraint_scope": "interior_side_yard",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "lot_line",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0040",
+      "rule_object": "setback",
+      "search_text": "f1_candidate_0040 setback all buildings interior_side_yard   f1_retrieval_003_02 0 m",
+      "unit": "m",
+      "value": "0",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "End unit lots",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "1.2 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "end unit lots",
+      "constraint_scope": "interior_side_yard",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "lot_line",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0041",
+      "rule_object": "setback",
+      "search_text": "f1_candidate_0041 setback end unit lots interior_side_yard end unit lots  f1_retrieval_003_02 1.2 m",
+      "unit": "m",
+      "value": "1.2",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Front Principal Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "2.4 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "between front principals",
+      "constraint_scope": "building_separation",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "building_footprint",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0042",
+      "rule_object": "building_separation",
+      "search_text": "f1_candidate_0042 building_separation front principal buildings building_separation between front principals  f1_retrieval_003_02 2.4 m",
+      "unit": "m",
+      "value": "2.4",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Rear Principal Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "2.4 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "between rear principals",
+      "constraint_scope": "building_separation",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "building_footprint",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0043",
+      "rule_object": "building_separation",
+      "search_text": "f1_candidate_0043 building_separation rear principal buildings building_separation between rear principals  f1_retrieval_003_02 2.4 m",
+      "unit": "m",
+      "value": "2.4",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Front and Rear Principal Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "6 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "between front and rear principals",
+      "constraint_scope": "building_separation",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "building_footprint",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0044",
+      "rule_object": "building_separation",
+      "search_text": "f1_candidate_0044 building_separation front and rear principal buildings building_separation between front and rear principals  f1_retrieval_003_02 6 m",
+      "unit": "m",
+      "value": "6",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "All Other Buildings",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_02",
+        "page": 2,
+        "quote": "2.4 m",
+        "section_id": "101.4",
+        "span_id": "span_e81e0e23450ce24f"
+      },
+      "condition": "between all other buildings",
+      "constraint_scope": "building_separation",
+      "evidence_ids": [
+        "f1_retrieval_003_02"
+      ],
+      "exception": "",
+      "geometry_target": "building_footprint",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0045",
+      "rule_object": "building_separation",
+      "search_text": "f1_candidate_0045 building_separation all other buildings building_separation between all other buildings  f1_retrieval_003_02 2.4 m",
+      "unit": "m",
+      "value": "2.4",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "All dwelling units",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_04",
+        "page": 6,
+        "quote": "1 m",
+        "section_id": "101.6.3",
+        "span_id": "span_a20ee106bd881a3f"
+      },
+      "condition": "paved or gravel fire access corridor",
+      "constraint_scope": "corridor_width",
+      "evidence_ids": [
+        "f1_retrieval_003_04"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0047",
+      "rule_object": "fire_access_corridor",
+      "search_text": "f1_candidate_0047 fire_access_corridor all dwelling units corridor_width paved or gravel fire access corridor  f1_retrieval_003_04 1 m",
+      "unit": "m",
+      "value": "1",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "All dwelling units",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_04",
+        "page": 6,
+        "quote": "2.5 m",
+        "section_id": "101.6.3",
+        "span_id": "span_a20ee106bd881a3f"
+      },
+      "condition": "clear of projections or obstructions",
+      "constraint_scope": "vertical_clearance",
+      "evidence_ids": [
+        "f1_retrieval_003_04"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0048",
+      "rule_object": "fire_access_corridor",
+      "search_text": "f1_candidate_0048 fire_access_corridor all dwelling units vertical_clearance clear of projections or obstructions  f1_retrieval_003_04 2.5 m",
+      "unit": "m",
+      "value": "2.5",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Community Heritage Register lots",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_04",
+        "page": 6,
+        "quote": "60%",
+        "section_id": "101.6.3",
+        "span_id": "span_a20ee106bd881a3f"
+      },
+      "condition": "heritage exception",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_04"
+      ],
+      "exception": "",
+      "geometry_target": "parcel_polygon",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0049",
+      "rule_object": "lot_coverage",
+      "search_text": "f1_candidate_0049 lot_coverage community heritage register lots lot heritage exception  f1_retrieval_003_04 60%",
+      "unit": "%",
+      "value": "60",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Community Heritage Register lots",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_04",
+        "page": 6,
+        "quote": "70%",
+        "section_id": "101.6.3",
+        "span_id": "span_a20ee106bd881a3f"
+      },
+      "condition": "heritage exception",
+      "constraint_scope": "lot",
+      "evidence_ids": [
+        "f1_retrieval_003_04"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0050",
+      "rule_object": "impervious_surface",
+      "search_text": "f1_candidate_0050 impervious_surface community heritage register lots lot heritage exception  f1_retrieval_003_04 70%",
+      "unit": "%",
+      "value": "70",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "Community Heritage Register lots",
+      "citation": {
+        "evidence_id": "f1_retrieval_003_04",
+        "page": 6,
+        "quote": "2 m",
+        "section_id": "101.6.3",
+        "span_id": "span_a20ee106bd881a3f"
+      },
+      "condition": "heritage exception",
+      "constraint_scope": "street_yard",
+      "evidence_ids": [
+        "f1_retrieval_003_04"
+      ],
+      "exception": "",
+      "geometry_target": "lot_line",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0051",
+      "rule_object": "setback",
+      "search_text": "f1_candidate_0051 setback community heritage register lots street_yard heritage exception  f1_retrieval_003_04 2 m",
+      "unit": "m",
+      "value": "2",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "maximum lot coverage as set out in Section 101.4",
+      "citation": {
+        "evidence_id": "f1_retrieval_008_01",
+        "page": 6,
+        "quote": "60%",
+        "section_id": "101.4",
+        "span_id": "span_5b9983c378a883e1"
+      },
+      "condition": "",
+      "constraint_scope": "lot coverage",
+      "evidence_ids": [
+        "f1_retrieval_008_01"
+      ],
+      "exception": "",
+      "geometry_target": "parcel_polygon",
+      "operator": "<=",
+      "rule_id": "f1_candidate_0006",
+      "rule_object": "lot_coverage",
+      "search_text": "f1_candidate_0006 lot_coverage maximum lot coverage as set out in section 101.4 lot coverage   f1_retrieval_008_01 60%",
+      "unit": "%",
+      "value": "60",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "principal building located between a front and rear principal",
+      "citation": {
+        "evidence_id": "f1_retrieval_011_03",
+        "page": 3,
+        "quote": "6.0 m",
+        "section_id": "6.0",
+        "span_id": "span_7d843e53a0844892"
+      },
+      "condition": "",
+      "constraint_scope": "building separation",
+      "evidence_ids": [
+        "f1_retrieval_011_03"
+      ],
+      "exception": "",
+      "geometry_target": "building_footprint",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0009",
+      "rule_object": "building_separation",
+      "search_text": "f1_candidate_0009 building_separation principal building located between a front and rear principal building separation   f1_retrieval_011_03 6.0 m",
+      "unit": "m",
+      "value": "6",
+      "verification_status": "verified"
+    },
+    {
+      "applies_to": "dwelling units",
+      "citation": {
+        "evidence_id": "f1_retrieval_012_01",
+        "page": 6,
+        "quote": "1.0 m",
+        "section_id": "1.0",
+        "span_id": "span_22f5e0f59d63579b"
+      },
+      "condition": "",
+      "constraint_scope": "fire access corridor",
+      "evidence_ids": [
+        "f1_retrieval_012_01"
+      ],
+      "exception": "",
+      "geometry_target": "unknown",
+      "operator": ">=",
+      "rule_id": "f1_candidate_0010",
+      "rule_object": "fire_access_corridor",
+      "search_text": "f1_candidate_0010 fire_access_corridor dwelling units fire access corridor   f1_retrieval_012_01 1.0 m",
+      "unit": "m",
+      "value": "1",
+      "verification_status": "verified"
+    }
+  ],
+  "workflow_health": {
+    "false_approval_count": 0,
+    "false_verified_count": 0,
+    "quality_gates_passed": true,
+    "review_queue_count": 13,
+    "verified_rule_count": 38
+  }
+}

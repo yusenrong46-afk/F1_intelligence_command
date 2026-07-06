@@ -1,0 +1,1841 @@
+{
+  "artifact": "retrieval_report.json",
+  "city_key": "vancouver_rs",
+  "evidence": [
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_001_01",
+      "page": 11,
+      "query": "maximum height",
+      "quote": "Section 11 (c) notify adjacent property owners and any others that the Director of Planning deems necessary. 11.4.2.2 In the case of a specifically designed facility not being a conversion: (a) the site area must be at least 3,700 m2 except as provided in section 11.4.2.2(b); (b) the Director of Planning may increase the building height permitted by the applicable district schedule if the Director of Planning conside",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.023268,
+      "section_id": "11.4.2.2",
+      "signals": {
+        "bm25_rank": 24,
+        "lexical_rank": 28,
+        "overlap_count": 2
+      },
+      "span_id": "span_45b313a845ee1ea9",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_001_02",
+      "page": 8,
+      "query": "maximum height",
+      "quote": "Section 11 11.3.7.1 Computation of floor area, floor space ratio, yards, site coverage, impermeability, number of buildings on site and dwelling unit density must be based on the site width and area at the time of development, prior to any subdivision into individual freehold rowhouse parcels. 11.3.7.2 For the purpose of fee simple subdivision, the minimum site width and frontage for each freehold rowhouse parcel is ",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.022106,
+      "section_id": "11.3.7.1",
+      "signals": {
+        "bm25_rank": 32,
+        "lexical_rank": 29,
+        "overlap_count": 2
+      },
+      "span_id": "span_6b17ba05b51c6858",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_001_03",
+      "page": 11,
+      "query": "maximum height",
+      "quote": "(b) the Director of Planning may increase the building height permitted by the applicable district",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031754,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 4,
+        "overlap_count": 1
+      },
+      "span_id": "span_51996a33a925b51a",
+      "supports_fields": [
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_001_04",
+      "page": 19,
+      "query": "maximum height",
+      "quote": "11.9.2.1 A maximum of 2 bedrooms accommodating a maximum of 4 bed and breakfast guests may be permitted",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031099,
+      "section_id": "11.9.2.1",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 8,
+        "overlap_count": 1
+      },
+      "span_id": "span_1e8a1e0f6acdb423",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_001_05",
+      "page": 11,
+      "query": "maximum height",
+      "quote": "11.4.4.2 The Director of Planning may increase the building height permitted by the applicable district schedule",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030777,
+      "section_id": "11.4.4.2",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 6,
+        "overlap_count": 1
+      },
+      "span_id": "span_e190e9e60fac8374",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_001_06",
+      "page": 8,
+      "query": "maximum height",
+      "quote": "house, the maximum site coverage is 50% of the site area.",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030478,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 11,
+        "lexical_rank": 1,
+        "overlap_count": 1
+      },
+      "span_id": "span_3150c03b09702906",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_002_01",
+      "page": 8,
+      "query": "minimum setback",
+      "quote": "the minimum site width if:",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032787,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 1,
+        "overlap_count": 1
+      },
+      "span_id": "span_972a796c03b73ef1",
+      "supports_fields": [
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_002_02",
+      "page": 11,
+      "query": "minimum setback",
+      "quote": "11.4.4.1 The site must have a minimum frontage of 20.1 m.",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031754,
+      "section_id": "11.4.4.1",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 2,
+        "overlap_count": 1
+      },
+      "span_id": "span_23e2d27f2a26d8e2",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_002_03",
+      "page": 11,
+      "query": "minimum setback",
+      "quote": "11.4.3.1 The site must have a minimum frontage of 20.1 m.",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031258,
+      "section_id": "11.4.3.1",
+      "signals": {
+        "bm25_rank": 5,
+        "lexical_rank": 3,
+        "overlap_count": 1
+      },
+      "span_id": "span_8b7795b08b813c0d",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_002_04",
+      "page": 8,
+      "query": "minimum setback",
+      "quote": "11.3.7.2 For the purpose of fee simple subdivision, the minimum site width and frontage for each freehold",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030777,
+      "section_id": "11.3.7.2",
+      "signals": {
+        "bm25_rank": 6,
+        "lexical_rank": 4,
+        "overlap_count": 1
+      },
+      "span_id": "span_2b52b92735f25a5b",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_002_05",
+      "page": 8,
+      "query": "minimum setback",
+      "quote": "(b) at least 1 bedroom with a minimum size of 8.4 m2 and a minimum dimension of 2.1 m measured",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030622,
+      "section_id": "8.4",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 9,
+        "overlap_count": 1
+      },
+      "span_id": "span_793916eec7df575e",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_002_06",
+      "page": 8,
+      "query": "minimum setback",
+      "quote": "(a) 1 main habitable room that is not a bedroom, with a minimum size of 16.7 m2 and a minimum",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030579,
+      "section_id": "16.7",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 8,
+        "overlap_count": 1
+      },
+      "span_id": "span_f8e681beec6c086e",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_003_01",
+      "page": 8,
+      "query": "lot coverage",
+      "quote": "house, the maximum site coverage is 50% of the site area.",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032787,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 1,
+        "overlap_count": 1
+      },
+      "span_id": "span_3150c03b09702906",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_003_02",
+      "page": 8,
+      "query": "lot coverage",
+      "quote": "11.3.7.1 Computation of floor area, floor space ratio, yards, site coverage, impermeability, number of buildings on",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032258,
+      "section_id": "11.3.7.1",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 2,
+        "overlap_count": 1
+      },
+      "span_id": "span_fbbf4fac3750221f",
+      "supports_fields": [
+        "value",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_003_03",
+      "page": 8,
+      "query": "lot coverage",
+      "quote": "11.3.8.5 Despite the maximum permitted site coverage in an applicable district schedule, for a site with a laneway",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031746,
+      "section_id": "11.3.8.5",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 3,
+        "overlap_count": 1
+      },
+      "span_id": "span_fdf970549a170060",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_003_04",
+      "page": 13,
+      "query": "lot coverage",
+      "quote": "and the applicable district schedules with regard to setbacks, floor space ratio or site coverage in order to facilitate the rehabilitation of an existing neighbourhood grocery store.",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.03125,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 4,
+        "overlap_count": 1
+      },
+      "span_id": "span_c08f416a7bb7e30f",
+      "supports_fields": [
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_003_05",
+      "page": 8,
+      "query": "lot coverage",
+      "quote": "Section 11 11.3.7.1 Computation of floor area, floor space ratio, yards, site coverage, impermeability, number of buildings on site and dwelling unit density must be based on the site width and area at the time of development, prior to any subdivision into individual freehold rowhouse parcels. 11.3.7.2 For the purpose of fee simple subdivision, the minimum site width and frontage for each freehold rowhouse parcel is ",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030769,
+      "section_id": "11.3.7.1",
+      "signals": {
+        "bm25_rank": 5,
+        "lexical_rank": 5,
+        "overlap_count": 1
+      },
+      "span_id": "span_6b17ba05b51c6858",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_003_06",
+      "page": 13,
+      "query": "lot coverage",
+      "quote": "Section 11 11.8.1.4 A vendor at a farmers\u2019 market must only sell: local fresh, dried or frozen fruit and vegetables; local dried or frozen meat and seafood; local eggs; local dairy products; local plants; local prepared foods; local ready- to-eat foods; local artisan crafts; or local wine, cider, beer or spirits. 11.8.1.5 No more than 40% of the total number of stalls or booths in a farmers\u2019 market may be used for th",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030303,
+      "section_id": "11.8.1.4",
+      "signals": {
+        "bm25_rank": 6,
+        "lexical_rank": 6,
+        "overlap_count": 1
+      },
+      "span_id": "span_f84a592aa0dd29a9",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_004_01",
+      "page": 5,
+      "query": "dwelling units",
+      "quote": "29.7 m2 for dwelling units except lock-off units and 19 m2 for lock-off units.",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032787,
+      "section_id": "29.7",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 1,
+        "overlap_count": 2
+      },
+      "span_id": "span_e8f40b7d6aa615b4",
+      "supports_fields": [
+        "value",
+        "unit",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_004_02",
+      "page": 20,
+      "query": "dwelling units",
+      "quote": "11.13.1.5 Home-based businesses must not include any activity that impacts neighbouring dwelling units including",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031514,
+      "section_id": "11.13.1.5",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 5,
+        "overlap_count": 2
+      },
+      "span_id": "span_72a7fbb949eb2c98",
+      "supports_fields": [
+        "value",
+        "unit",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_004_03",
+      "page": 18,
+      "query": "dwelling units",
+      "quote": "11.9.1.6 Short term rental accommodation is only permitted in dwelling units that comply with all applicable",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030798,
+      "section_id": "11.9.1.6",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 7,
+        "overlap_count": 2
+      },
+      "span_id": "span_e02bd5329cf9cfee",
+      "supports_fields": [
+        "value",
+        "unit",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_004_04",
+      "page": 5,
+      "query": "dwelling units",
+      "quote": "Section 11 (b) lock-off unit must be at least 26 m2, measured from the inside of all outer walls, except that if the Director of Planning is satisfied that the design and location of the unit provides satisfactory living accommodation with regard to the type of occupancy proposed, the Director of Planning may reduce the required floor area to a minimum of 29.7 m2 for dwelling units except lock-off units and 19 m2 for",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.022627,
+      "section_id": "29.7",
+      "signals": {
+        "bm25_rank": 13,
+        "lexical_rank": 52,
+        "overlap_count": 2
+      },
+      "span_id": "span_4abccf9a15e91474",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_004_05",
+      "page": 20,
+      "query": "dwelling units",
+      "quote": "Section 11 (c) in the area of the I-1 district west of Columbia Street, south of West 5th Avenue, and south of East 5th Avenue; or (d) in the area of the IC-1 district south of East 5th Avenue and north of East 6th Avenue. 11.11 Utility and Communication Uses 11.11.1 [reserved] 11.12 Wholesale Uses 11.12.1 [reserved] 11.13 Uncategorized 11.13.1 Home-Based Business 11.13.1.1 Home-based businesses may only be carried o",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.021591,
+      "section_id": "11.11",
+      "signals": {
+        "bm25_rank": 20,
+        "lexical_rank": 50,
+        "overlap_count": 2
+      },
+      "span_id": "span_0f1a8396f2a7dce8",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "page_text",
+      "evidence_id": "f1_retrieval_004_06",
+      "page": 18,
+      "query": "dwelling units",
+      "quote": "Section 11 11.8.12 Tobacco and Electronic Cigarettes 11.8.12.1 Retail uses that include the sale of tobacco leaves or products produced from tobacco in any form or for any use are not permitted as a home-based business. 11.8.12.2 Retail uses that include the sale of electronic cigarettes, electronic pipes, electronic hookahs, or similar devices that can be used to deliver nicotine or other substances, and replaceable",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.018284,
+      "section_id": "11.8.12",
+      "signals": {
+        "bm25_rank": 46,
+        "lexical_rank": 53,
+        "overlap_count": 2
+      },
+      "span_id": "span_d885176fb0487c01",
+      "supports_fields": [
+        "value",
+        "unit",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_005_01",
+      "page": 10,
+      "query": "building separation",
+      "quote": "(a) the size of the site and building; and",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032266,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 3,
+        "lexical_rank": 1,
+        "overlap_count": 1
+      },
+      "span_id": "span_17e8926f14ef8d42",
+      "supports_fields": [
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_005_02",
+      "page": 13,
+      "query": "building separation",
+      "quote": "(i) the design of any proposed building addition,",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.032002,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 2,
+        "lexical_rank": 3,
+        "overlap_count": 1
+      },
+      "span_id": "span_071a69f51252ce1a",
+      "supports_fields": [
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_005_03",
+      "page": 7,
+      "query": "building separation",
+      "quote": "(a) the size of the site and the building; and",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031754,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 2,
+        "overlap_count": 1
+      },
+      "span_id": "span_64ec8f9cd8075388",
+      "supports_fields": [
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "paragraph",
+      "evidence_id": "f1_retrieval_005_04",
+      "page": 20,
+      "query": "building separation",
+      "quote": "materials related to a home-based business may be stored in a building or accessory building.",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031099,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 1,
+        "lexical_rank": 8,
+        "overlap_count": 1
+      },
+      "span_id": "span_2e858dcccced0c0c",
+      "supports_fields": [
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_005_05",
+      "page": 14,
+      "query": "building separation",
+      "quote": "(b) if located adjacent to the principal building, tires and vending machines; and",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030777,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 6,
+        "lexical_rank": 4,
+        "overlap_count": 1
+      },
+      "span_id": "span_f507d0f6405715fc",
+      "supports_fields": [
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "list_item",
+      "evidence_id": "f1_retrieval_005_06",
+      "page": 12,
+      "query": "building separation",
+      "quote": "(c) stalls or booths in a building approved for use as a farmers\u2019 market.",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.029857,
+      "section_id": "",
+      "signals": {
+        "bm25_rank": 8,
+        "lexical_rank": 6,
+        "overlap_count": 1
+      },
+      "span_id": "span_67f1763dba35f2e7",
+      "supports_fields": [
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_006_01",
+      "page": 9,
+      "query": "floor area",
+      "quote": "11.3.8.8 Computation of floor area for a laneway house must include:",
+      "rank": 1,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031778,
+      "section_id": "11.3.8.8",
+      "signals": {
+        "bm25_rank": 5,
+        "lexical_rank": 1,
+        "overlap_count": 2
+      },
+      "span_id": "span_1b06344064cdeaf4",
+      "supports_fields": [
+        "value",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_006_02",
+      "page": 9,
+      "query": "floor area",
+      "quote": "11.3.8.9 Computation of floor area for a laneway house must exclude:",
+      "rank": 2,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.031025,
+      "section_id": "11.3.8.9",
+      "signals": {
+        "bm25_rank": 6,
+        "lexical_rank": 3,
+        "overlap_count": 2
+      },
+      "span_id": "span_99a57872041d4b43",
+      "supports_fields": [
+        "value",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_006_03",
+      "page": 4,
+      "query": "floor area",
+      "quote": "11.3.1.2 Subject to the provisions of section 11.3.1.7, the floor area of each:",
+      "rank": 3,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030835,
+      "section_id": "11.3.1.2",
+      "signals": {
+        "bm25_rank": 8,
+        "lexical_rank": 2,
+        "overlap_count": 2
+      },
+      "span_id": "span_5da2a2a14e5c6584",
+      "supports_fields": [
+        "value",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_006_04",
+      "page": 8,
+      "query": "floor area",
+      "quote": "11.3.7.1 Computation of floor area, floor space ratio, yards, site coverage, impermeability, number of buildings on",
+      "rank": 4,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.030777,
+      "section_id": "11.3.7.1",
+      "signals": {
+        "bm25_rank": 4,
+        "lexical_rank": 6,
+        "overlap_count": 2
+      },
+      "span_id": "span_fbbf4fac3750221f",
+      "supports_fields": [
+        "value",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_006_05",
+      "page": 8,
+      "query": "floor area",
+      "quote": "11.3.8.2 The floor area for a laneway house must not exceed the lesser of:",
+      "rank": 5,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.029911,
+      "section_id": "11.3.8.2",
+      "signals": {
+        "bm25_rank": 10,
+        "lexical_rank": 4,
+        "overlap_count": 2
+      },
+      "span_id": "span_188ba745775b6586",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    },
+    {
+      "block_type": "heading",
+      "evidence_id": "f1_retrieval_006_06",
+      "page": 5,
+      "query": "floor area",
+      "quote": "11.3.1.3 The maximum floor area of a lock-off unit is 29.7 m2.",
+      "rank": 6,
+      "reranker": "lexical_overlap",
+      "retrieval_method": "lexical_bm25_rrf",
+      "schema_version": "f1.artifacts.v0",
+      "score": 0.029877,
+      "section_id": "11.3.1.3",
+      "signals": {
+        "bm25_rank": 9,
+        "lexical_rank": 5,
+        "overlap_count": 2
+      },
+      "span_id": "span_706407403f7486a1",
+      "supports_fields": [
+        "value",
+        "operator",
+        "rule_object",
+        "constraint_scope"
+      ]
+    }
+  ],
+  "generated_at": "2026-07-06T03:21:24.318337+00:00",
+  "queries": [
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_001_01",
+          "page": 11,
+          "query": "maximum height",
+          "quote": "Section 11 (c) notify adjacent property owners and any others that the Director of Planning deems necessary. 11.4.2.2 In the case of a specifically designed facility not being a conversion: (a) the site area must be at least 3,700 m2 except as provided in section 11.4.2.2(b); (b) the Director of Planning may increase the building height permitted by the applicable district schedule if the Director of Planning conside",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.023268,
+          "section_id": "11.4.2.2",
+          "signals": {
+            "bm25_rank": 24,
+            "lexical_rank": 28,
+            "overlap_count": 2
+          },
+          "span_id": "span_45b313a845ee1ea9",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_001_02",
+          "page": 8,
+          "query": "maximum height",
+          "quote": "Section 11 11.3.7.1 Computation of floor area, floor space ratio, yards, site coverage, impermeability, number of buildings on site and dwelling unit density must be based on the site width and area at the time of development, prior to any subdivision into individual freehold rowhouse parcels. 11.3.7.2 For the purpose of fee simple subdivision, the minimum site width and frontage for each freehold rowhouse parcel is ",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.022106,
+          "section_id": "11.3.7.1",
+          "signals": {
+            "bm25_rank": 32,
+            "lexical_rank": 29,
+            "overlap_count": 2
+          },
+          "span_id": "span_6b17ba05b51c6858",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_001_03",
+          "page": 11,
+          "query": "maximum height",
+          "quote": "(b) the Director of Planning may increase the building height permitted by the applicable district",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031754,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 4,
+            "overlap_count": 1
+          },
+          "span_id": "span_51996a33a925b51a",
+          "supports_fields": [
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_001_04",
+          "page": 19,
+          "query": "maximum height",
+          "quote": "11.9.2.1 A maximum of 2 bedrooms accommodating a maximum of 4 bed and breakfast guests may be permitted",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031099,
+          "section_id": "11.9.2.1",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 8,
+            "overlap_count": 1
+          },
+          "span_id": "span_1e8a1e0f6acdb423",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_001_05",
+          "page": 11,
+          "query": "maximum height",
+          "quote": "11.4.4.2 The Director of Planning may increase the building height permitted by the applicable district schedule",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030777,
+          "section_id": "11.4.4.2",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 6,
+            "overlap_count": 1
+          },
+          "span_id": "span_e190e9e60fac8374",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_001_06",
+          "page": 8,
+          "query": "maximum height",
+          "quote": "house, the maximum site coverage is 50% of the site area.",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030478,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 11,
+            "lexical_rank": 1,
+            "overlap_count": 1
+          },
+          "span_id": "span_3150c03b09702906",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "maximum height",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_002_01",
+          "page": 8,
+          "query": "minimum setback",
+          "quote": "the minimum site width if:",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032787,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 1,
+            "overlap_count": 1
+          },
+          "span_id": "span_972a796c03b73ef1",
+          "supports_fields": [
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_002_02",
+          "page": 11,
+          "query": "minimum setback",
+          "quote": "11.4.4.1 The site must have a minimum frontage of 20.1 m.",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031754,
+          "section_id": "11.4.4.1",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 2,
+            "overlap_count": 1
+          },
+          "span_id": "span_23e2d27f2a26d8e2",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_002_03",
+          "page": 11,
+          "query": "minimum setback",
+          "quote": "11.4.3.1 The site must have a minimum frontage of 20.1 m.",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031258,
+          "section_id": "11.4.3.1",
+          "signals": {
+            "bm25_rank": 5,
+            "lexical_rank": 3,
+            "overlap_count": 1
+          },
+          "span_id": "span_8b7795b08b813c0d",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_002_04",
+          "page": 8,
+          "query": "minimum setback",
+          "quote": "11.3.7.2 For the purpose of fee simple subdivision, the minimum site width and frontage for each freehold",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030777,
+          "section_id": "11.3.7.2",
+          "signals": {
+            "bm25_rank": 6,
+            "lexical_rank": 4,
+            "overlap_count": 1
+          },
+          "span_id": "span_2b52b92735f25a5b",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_002_05",
+          "page": 8,
+          "query": "minimum setback",
+          "quote": "(b) at least 1 bedroom with a minimum size of 8.4 m2 and a minimum dimension of 2.1 m measured",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030622,
+          "section_id": "8.4",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 9,
+            "overlap_count": 1
+          },
+          "span_id": "span_793916eec7df575e",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_002_06",
+          "page": 8,
+          "query": "minimum setback",
+          "quote": "(a) 1 main habitable room that is not a bedroom, with a minimum size of 16.7 m2 and a minimum",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030579,
+          "section_id": "16.7",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 8,
+            "overlap_count": 1
+          },
+          "span_id": "span_f8e681beec6c086e",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "minimum setback",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_003_01",
+          "page": 8,
+          "query": "lot coverage",
+          "quote": "house, the maximum site coverage is 50% of the site area.",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032787,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 1,
+            "overlap_count": 1
+          },
+          "span_id": "span_3150c03b09702906",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_003_02",
+          "page": 8,
+          "query": "lot coverage",
+          "quote": "11.3.7.1 Computation of floor area, floor space ratio, yards, site coverage, impermeability, number of buildings on",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032258,
+          "section_id": "11.3.7.1",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 2,
+            "overlap_count": 1
+          },
+          "span_id": "span_fbbf4fac3750221f",
+          "supports_fields": [
+            "value",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_003_03",
+          "page": 8,
+          "query": "lot coverage",
+          "quote": "11.3.8.5 Despite the maximum permitted site coverage in an applicable district schedule, for a site with a laneway",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031746,
+          "section_id": "11.3.8.5",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 3,
+            "overlap_count": 1
+          },
+          "span_id": "span_fdf970549a170060",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_003_04",
+          "page": 13,
+          "query": "lot coverage",
+          "quote": "and the applicable district schedules with regard to setbacks, floor space ratio or site coverage in order to facilitate the rehabilitation of an existing neighbourhood grocery store.",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.03125,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 4,
+            "overlap_count": 1
+          },
+          "span_id": "span_c08f416a7bb7e30f",
+          "supports_fields": [
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_003_05",
+          "page": 8,
+          "query": "lot coverage",
+          "quote": "Section 11 11.3.7.1 Computation of floor area, floor space ratio, yards, site coverage, impermeability, number of buildings on site and dwelling unit density must be based on the site width and area at the time of development, prior to any subdivision into individual freehold rowhouse parcels. 11.3.7.2 For the purpose of fee simple subdivision, the minimum site width and frontage for each freehold rowhouse parcel is ",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030769,
+          "section_id": "11.3.7.1",
+          "signals": {
+            "bm25_rank": 5,
+            "lexical_rank": 5,
+            "overlap_count": 1
+          },
+          "span_id": "span_6b17ba05b51c6858",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_003_06",
+          "page": 13,
+          "query": "lot coverage",
+          "quote": "Section 11 11.8.1.4 A vendor at a farmers\u2019 market must only sell: local fresh, dried or frozen fruit and vegetables; local dried or frozen meat and seafood; local eggs; local dairy products; local plants; local prepared foods; local ready- to-eat foods; local artisan crafts; or local wine, cider, beer or spirits. 11.8.1.5 No more than 40% of the total number of stalls or booths in a farmers\u2019 market may be used for th",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030303,
+          "section_id": "11.8.1.4",
+          "signals": {
+            "bm25_rank": 6,
+            "lexical_rank": 6,
+            "overlap_count": 1
+          },
+          "span_id": "span_f84a592aa0dd29a9",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "lot coverage",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_004_01",
+          "page": 5,
+          "query": "dwelling units",
+          "quote": "29.7 m2 for dwelling units except lock-off units and 19 m2 for lock-off units.",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032787,
+          "section_id": "29.7",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 1,
+            "overlap_count": 2
+          },
+          "span_id": "span_e8f40b7d6aa615b4",
+          "supports_fields": [
+            "value",
+            "unit",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_004_02",
+          "page": 20,
+          "query": "dwelling units",
+          "quote": "11.13.1.5 Home-based businesses must not include any activity that impacts neighbouring dwelling units including",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031514,
+          "section_id": "11.13.1.5",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 5,
+            "overlap_count": 2
+          },
+          "span_id": "span_72a7fbb949eb2c98",
+          "supports_fields": [
+            "value",
+            "unit",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_004_03",
+          "page": 18,
+          "query": "dwelling units",
+          "quote": "11.9.1.6 Short term rental accommodation is only permitted in dwelling units that comply with all applicable",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030798,
+          "section_id": "11.9.1.6",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 7,
+            "overlap_count": 2
+          },
+          "span_id": "span_e02bd5329cf9cfee",
+          "supports_fields": [
+            "value",
+            "unit",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_004_04",
+          "page": 5,
+          "query": "dwelling units",
+          "quote": "Section 11 (b) lock-off unit must be at least 26 m2, measured from the inside of all outer walls, except that if the Director of Planning is satisfied that the design and location of the unit provides satisfactory living accommodation with regard to the type of occupancy proposed, the Director of Planning may reduce the required floor area to a minimum of 29.7 m2 for dwelling units except lock-off units and 19 m2 for",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.022627,
+          "section_id": "29.7",
+          "signals": {
+            "bm25_rank": 13,
+            "lexical_rank": 52,
+            "overlap_count": 2
+          },
+          "span_id": "span_4abccf9a15e91474",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_004_05",
+          "page": 20,
+          "query": "dwelling units",
+          "quote": "Section 11 (c) in the area of the I-1 district west of Columbia Street, south of West 5th Avenue, and south of East 5th Avenue; or (d) in the area of the IC-1 district south of East 5th Avenue and north of East 6th Avenue. 11.11 Utility and Communication Uses 11.11.1 [reserved] 11.12 Wholesale Uses 11.12.1 [reserved] 11.13 Uncategorized 11.13.1 Home-Based Business 11.13.1.1 Home-based businesses may only be carried o",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.021591,
+          "section_id": "11.11",
+          "signals": {
+            "bm25_rank": 20,
+            "lexical_rank": 50,
+            "overlap_count": 2
+          },
+          "span_id": "span_0f1a8396f2a7dce8",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "page_text",
+          "evidence_id": "f1_retrieval_004_06",
+          "page": 18,
+          "query": "dwelling units",
+          "quote": "Section 11 11.8.12 Tobacco and Electronic Cigarettes 11.8.12.1 Retail uses that include the sale of tobacco leaves or products produced from tobacco in any form or for any use are not permitted as a home-based business. 11.8.12.2 Retail uses that include the sale of electronic cigarettes, electronic pipes, electronic hookahs, or similar devices that can be used to deliver nicotine or other substances, and replaceable",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.018284,
+          "section_id": "11.8.12",
+          "signals": {
+            "bm25_rank": 46,
+            "lexical_rank": 53,
+            "overlap_count": 2
+          },
+          "span_id": "span_d885176fb0487c01",
+          "supports_fields": [
+            "value",
+            "unit",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "dwelling units",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_005_01",
+          "page": 10,
+          "query": "building separation",
+          "quote": "(a) the size of the site and building; and",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032266,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 3,
+            "lexical_rank": 1,
+            "overlap_count": 1
+          },
+          "span_id": "span_17e8926f14ef8d42",
+          "supports_fields": [
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_005_02",
+          "page": 13,
+          "query": "building separation",
+          "quote": "(i) the design of any proposed building addition,",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.032002,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 2,
+            "lexical_rank": 3,
+            "overlap_count": 1
+          },
+          "span_id": "span_071a69f51252ce1a",
+          "supports_fields": [
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_005_03",
+          "page": 7,
+          "query": "building separation",
+          "quote": "(a) the size of the site and the building; and",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031754,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 2,
+            "overlap_count": 1
+          },
+          "span_id": "span_64ec8f9cd8075388",
+          "supports_fields": [
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "paragraph",
+          "evidence_id": "f1_retrieval_005_04",
+          "page": 20,
+          "query": "building separation",
+          "quote": "materials related to a home-based business may be stored in a building or accessory building.",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031099,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 1,
+            "lexical_rank": 8,
+            "overlap_count": 1
+          },
+          "span_id": "span_2e858dcccced0c0c",
+          "supports_fields": [
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_005_05",
+          "page": 14,
+          "query": "building separation",
+          "quote": "(b) if located adjacent to the principal building, tires and vending machines; and",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030777,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 6,
+            "lexical_rank": 4,
+            "overlap_count": 1
+          },
+          "span_id": "span_f507d0f6405715fc",
+          "supports_fields": [
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "list_item",
+          "evidence_id": "f1_retrieval_005_06",
+          "page": 12,
+          "query": "building separation",
+          "quote": "(c) stalls or booths in a building approved for use as a farmers\u2019 market.",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.029857,
+          "section_id": "",
+          "signals": {
+            "bm25_rank": 8,
+            "lexical_rank": 6,
+            "overlap_count": 1
+          },
+          "span_id": "span_67f1763dba35f2e7",
+          "supports_fields": [
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "building separation",
+      "top_k": 6
+    },
+    {
+      "hit_count": 6,
+      "hits": [
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_006_01",
+          "page": 9,
+          "query": "floor area",
+          "quote": "11.3.8.8 Computation of floor area for a laneway house must include:",
+          "rank": 1,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031778,
+          "section_id": "11.3.8.8",
+          "signals": {
+            "bm25_rank": 5,
+            "lexical_rank": 1,
+            "overlap_count": 2
+          },
+          "span_id": "span_1b06344064cdeaf4",
+          "supports_fields": [
+            "value",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_006_02",
+          "page": 9,
+          "query": "floor area",
+          "quote": "11.3.8.9 Computation of floor area for a laneway house must exclude:",
+          "rank": 2,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.031025,
+          "section_id": "11.3.8.9",
+          "signals": {
+            "bm25_rank": 6,
+            "lexical_rank": 3,
+            "overlap_count": 2
+          },
+          "span_id": "span_99a57872041d4b43",
+          "supports_fields": [
+            "value",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_006_03",
+          "page": 4,
+          "query": "floor area",
+          "quote": "11.3.1.2 Subject to the provisions of section 11.3.1.7, the floor area of each:",
+          "rank": 3,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030835,
+          "section_id": "11.3.1.2",
+          "signals": {
+            "bm25_rank": 8,
+            "lexical_rank": 2,
+            "overlap_count": 2
+          },
+          "span_id": "span_5da2a2a14e5c6584",
+          "supports_fields": [
+            "value",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_006_04",
+          "page": 8,
+          "query": "floor area",
+          "quote": "11.3.7.1 Computation of floor area, floor space ratio, yards, site coverage, impermeability, number of buildings on",
+          "rank": 4,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.030777,
+          "section_id": "11.3.7.1",
+          "signals": {
+            "bm25_rank": 4,
+            "lexical_rank": 6,
+            "overlap_count": 2
+          },
+          "span_id": "span_fbbf4fac3750221f",
+          "supports_fields": [
+            "value",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_006_05",
+          "page": 8,
+          "query": "floor area",
+          "quote": "11.3.8.2 The floor area for a laneway house must not exceed the lesser of:",
+          "rank": 5,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.029911,
+          "section_id": "11.3.8.2",
+          "signals": {
+            "bm25_rank": 10,
+            "lexical_rank": 4,
+            "overlap_count": 2
+          },
+          "span_id": "span_188ba745775b6586",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        },
+        {
+          "block_type": "heading",
+          "evidence_id": "f1_retrieval_006_06",
+          "page": 5,
+          "query": "floor area",
+          "quote": "11.3.1.3 The maximum floor area of a lock-off unit is 29.7 m2.",
+          "rank": 6,
+          "reranker": "lexical_overlap",
+          "retrieval_method": "lexical_bm25_rrf",
+          "schema_version": "f1.artifacts.v0",
+          "score": 0.029877,
+          "section_id": "11.3.1.3",
+          "signals": {
+            "bm25_rank": 9,
+            "lexical_rank": 5,
+            "overlap_count": 2
+          },
+          "span_id": "span_706407403f7486a1",
+          "supports_fields": [
+            "value",
+            "operator",
+            "rule_object",
+            "constraint_scope"
+          ]
+        }
+      ],
+      "query": "floor area",
+      "top_k": 6
+    }
+  ],
+  "reranker": "lexical_overlap",
+  "retrieval_method": "lexical_bm25_rrf",
+  "run_id": "checkpoint_13_multi_city",
+  "schema_version": "f1.artifacts.v0",
+  "summary": {
+    "note": "Checkpoint 3 retrieval quality is a smoke metric, not legal verification.",
+    "queries_with_hits": 6,
+    "query_count": 6,
+    "retrieval_quality_status": "pass",
+    "source_span_count": 518,
+    "total_hit_count": 36
+  }
+}

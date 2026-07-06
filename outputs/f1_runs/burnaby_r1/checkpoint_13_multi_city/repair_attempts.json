@@ -1,0 +1,169 @@
+[
+  {
+    "action": "proof_patch",
+    "changed_fields": {
+      "applies_to": "accessory structure not being a building, excluding a fence or a retaining wall, located outside of a required yard"
+    },
+    "city_key": "burnaby_r1",
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_001_06",
+        "page": 5,
+        "quote": "(2) An accessory structure not being a building, excluding a fence or a retaining wall, located outside of a required yard, shall not exceed 4.6 m in height. 101.5.6 Child Care Facilities (1) A child care facility in the R1 District must: (a) be limited to a maximum of 25 children; (b) be located on a corner lot; (c) comply with the development regulations under section 101.4 for 1 to 3 small-scale multi-unit dwellin",
+        "section_id": "4.6",
+        "span_id": "span_74067e46d2ff39be"
+      }
+    },
+    "gap_types": [],
+    "model": "deterministic_context_patch",
+    "no_patch_reason": "",
+    "patch_id": "f1_guarded_repair_0001",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0001",
+    "schema_version": "f1.artifacts.v0",
+    "status": "proof_patch_ready",
+    "suggested_retrieval_queries": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": true
+  },
+  {
+    "action": "proof_patch",
+    "changed_fields": {
+      "applies_to": "lot line setbacks for street yards"
+    },
+    "city_key": "burnaby_r1",
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_002_06",
+        "page": 6,
+        "quote": "(d) lot line setbacks for street yards may meet a minimum of 2.0 m;",
+        "section_id": "2.0",
+        "span_id": "span_96f7888616883e11"
+      }
+    },
+    "gap_types": [],
+    "model": "deterministic_context_patch",
+    "no_patch_reason": "",
+    "patch_id": "f1_guarded_repair_0002",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0002",
+    "schema_version": "f1.artifacts.v0",
+    "status": "proof_patch_ready",
+    "suggested_retrieval_queries": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": true
+  },
+  {
+    "action": "proof_patch",
+    "changed_fields": {
+      "applies_to": "maximum lot coverage as set out in Section 101.4"
+    },
+    "city_key": "burnaby_r1",
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_003_01",
+        "page": 6,
+        "quote": "(b) maximum lot coverage as set out in Section 101.4 may be increased up to 60%",
+        "section_id": "101.4",
+        "span_id": "span_75aa1d5cd765c6aa"
+      }
+    },
+    "gap_types": [],
+    "model": "deterministic_context_patch",
+    "no_patch_reason": "",
+    "patch_id": "f1_guarded_repair_0003",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0003",
+    "schema_version": "f1.artifacts.v0",
+    "status": "proof_patch_ready",
+    "suggested_retrieval_queries": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": true
+  },
+  {
+    "action": "review_only",
+    "changed_fields": {},
+    "city_key": "burnaby_r1",
+    "field_proofs": {},
+    "gap_types": [
+      "operator_not_supported"
+    ],
+    "model": "deterministic_gap_router",
+    "no_patch_reason": "candidate has unsupported field evidence; retrieve stronger proof before patching",
+    "patch_id": "f1_repair_0004",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0004",
+    "schema_version": "f1.artifacts.v0",
+    "status": "review_only",
+    "suggested_retrieval_queries": [
+      "dwelling units maximum minimum shall not exceed at least",
+      "dwelling units"
+    ],
+    "unresolved_dependencies": [],
+    "verifier_rerun_ready": false
+  },
+  {
+    "action": "proof_patch",
+    "changed_fields": {
+      "applies_to": "principal building located between a front and rear principal"
+    },
+    "city_key": "burnaby_r1",
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_005_02",
+        "page": 3,
+        "quote": ".5 Any principal building located between a front and rear principal must have a minimum 6.0 m separation from each of the front and rear principals, or, in the case of through lots, from each opposing front principal, and a minimum 2.4 m separation from any other principals between it and a side lot line. Diagram: Separation between buildings Diagram: Separation between detached units on a wider lot (B/L No. 14783-2",
+        "section_id": "6.0",
+        "span_id": "span_6d33ce0a64ff7992"
+      }
+    },
+    "gap_types": [],
+    "model": "deterministic_context_patch",
+    "no_patch_reason": "",
+    "patch_id": "f1_guarded_repair_0005",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0005",
+    "schema_version": "f1.artifacts.v0",
+    "status": "proof_patch_ready",
+    "suggested_retrieval_queries": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": true
+  },
+  {
+    "action": "proof_patch",
+    "changed_fields": {
+      "applies_to": "living unit"
+    },
+    "city_key": "burnaby_r1",
+    "field_proofs": {
+      "applies_to": {
+        "evidence_id": "f1_retrieval_006_01",
+        "page": 4,
+        "quote": "(a) each living unit shall have a minimum floor area of 27 m2;",
+        "section_id": "",
+        "span_id": "span_81150e2ee4b608e7"
+      }
+    },
+    "gap_types": [],
+    "model": "deterministic_context_patch",
+    "no_patch_reason": "",
+    "patch_id": "f1_guarded_repair_0006",
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0006",
+    "schema_version": "f1.artifacts.v0",
+    "status": "proof_patch_ready",
+    "suggested_retrieval_queries": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ],
+    "verifier_rerun_ready": true
+  }
+]

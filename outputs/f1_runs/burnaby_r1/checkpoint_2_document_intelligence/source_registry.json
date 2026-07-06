@@ -1,0 +1,43 @@
+{
+  "artifact": "source_registry.json",
+  "city": "Burnaby",
+  "city_key": "burnaby_r1",
+  "documents": [
+    {
+      "bylaw_version": "R1Small-Scale-Multi-Unit-Housing-District.pdf",
+      "bytes": 443033,
+      "city": "Burnaby",
+      "fetched_at": "2026-06-10T20:17:03+00:00",
+      "hash_verified": true,
+      "local_path": "data/bylaws/burnaby_r1/source.pdf",
+      "page_count": 7,
+      "pages_rationale": "",
+      "schema_version": "f1.artifacts.v0",
+      "scoped_pages": [],
+      "sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac",
+      "source_id": "burnaby_r1:source",
+      "source_url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-07/R1Small-Scale-Multi-Unit-Housing-District.pdf",
+      "status": "registered",
+      "target_concept": "small-scale multi-unit housing development regulations for GIS buildable-area analysis",
+      "title": "R1Small-Scale-Multi-Unit-Housing-District.pdf"
+    }
+  ],
+  "generated_at": "2026-07-05T22:58:38.176439+00:00",
+  "run_id": "checkpoint_2_document_intelligence",
+  "schema_version": "f1.artifacts.v0",
+  "source_count": 1,
+  "validation": {
+    "actual_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac",
+    "config_path": "configs/burnaby_r1.json",
+    "expected_sha256": "4eb9ad463edaba70dba6cadaa47939726c6a539933053912ce881cc2d4ee4bac",
+    "provenance_exists": true,
+    "provenance_path": "data/bylaws/burnaby_r1/provenance.json",
+    "provenance_url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-07/R1Small-Scale-Multi-Unit-Housing-District.pdf",
+    "sha256_matches": true,
+    "source_pdf_exists": true,
+    "source_pdf_path": "data/bylaws/burnaby_r1/source.pdf",
+    "source_url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-07/R1Small-Scale-Multi-Unit-Housing-District.pdf",
+    "source_url_matches_provenance": true,
+    "status": "pass"
+  }
+}

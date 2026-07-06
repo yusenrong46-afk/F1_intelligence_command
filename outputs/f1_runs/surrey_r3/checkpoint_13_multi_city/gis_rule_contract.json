@@ -1,0 +1,11 @@
+{
+  "artifact": "gis_rule_contract.json",
+  "city_key": "surrey_r3",
+  "excluded_review_rule_count": 5,
+  "export_rule_count": 0,
+  "input_verified_rule_count": 0,
+  "rules": [],
+  "run_id": "checkpoint_13_multi_city",
+  "schema_version": "f1.artifacts.v0",
+  "verified_only": true
+}

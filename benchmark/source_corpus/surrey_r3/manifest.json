@@ -1,0 +1,21 @@
+{
+  "corpus_version": "m7_source_corpus_1",
+  "city": "surrey_r3",
+  "zone": "R3",
+  "configured_source_document": "Surrey Zoning By-law 12000 — Part 15 R3 Urban Residential Zone",
+  "configured_source_url": "https://www.surrey.ca/sites/default/files/bylaws/BYL_Zoning_12000.pdf",
+  "provenance_url": "https://www.surrey.ca/sites/default/files/bylaws/BYL_Zoning_12000.pdf",
+  "fetched_at": "2026-07-05T19:44:00Z",
+  "source_pdf": "/Users/thomas/Desktop/Capstone_prototype/Burnaby_prototype/data/bylaws/surrey_r3/source.pdf",
+  "pdf_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+  "provenance_sha256": "b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd",
+  "pdf_bytes": 3281006,
+  "page_count": 369,
+  "config_hash": "3bc744b1600b27d8fff8729f33a981bee2494cdb884470f144b7162620edde6a",
+  "source_chunk_count": 125,
+  "rag_chunk_count": 125,
+  "table_entry_count": 124,
+  "numeric_clause_count": 81,
+  "rule_like_numeric_clause_count": 37,
+  "gold_leakage_guard": "No benchmark gold, expected dispositions, or verified outputs are stored in this source corpus."
+}

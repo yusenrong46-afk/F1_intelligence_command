@@ -1,0 +1,233 @@
+[
+  {
+    "candidate": {
+      "applies_to": "",
+      "city": "calgary_rcg",
+      "condition": "",
+      "constraint_scope": "lot coverage",
+      "evidence_ids": [
+        "f1_retrieval_003_03"
+      ],
+      "exception": "",
+      "operator": "<=",
+      "raw": {
+        "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+        "field_citations": {
+          "constraint_scope": {
+            "evidence_id": "f1_retrieval_003_03",
+            "page": 470,
+            "quote": "(4) For all other uses, the maximum parcel coverage is 45.0 percent.",
+            "section_id": "45.0",
+            "span_id": "span_756aac65b472609f"
+          },
+          "operator": {
+            "evidence_id": "f1_retrieval_003_03",
+            "page": 470,
+            "quote": "(4) For all other uses, the maximum parcel coverage is 45.0 percent.",
+            "section_id": "45.0",
+            "span_id": "span_756aac65b472609f"
+          },
+          "rule_object": {
+            "evidence_id": "f1_retrieval_003_03",
+            "page": 470,
+            "quote": "(4) For all other uses, the maximum parcel coverage is 45.0 percent.",
+            "section_id": "45.0",
+            "span_id": "span_756aac65b472609f"
+          },
+          "unit": {
+            "evidence_id": "f1_retrieval_003_03",
+            "page": 470,
+            "quote": "45.0 percent",
+            "section_id": "45.0",
+            "span_id": "span_756aac65b472609f"
+          },
+          "value": {
+            "evidence_id": "f1_retrieval_003_03",
+            "page": 470,
+            "quote": "45.0 percent",
+            "section_id": "45.0",
+            "span_id": "span_756aac65b472609f"
+          }
+        },
+        "page": 470,
+        "query": "lot coverage",
+        "run_id": "checkpoint_13_multi_city",
+        "section_id": "45.0",
+        "span_id": "span_756aac65b472609f"
+      },
+      "rule_id": "f1_candidate_0001",
+      "rule_object": "lot_coverage",
+      "rule_type": "lot_coverage",
+      "schema_version": "f1.artifacts.v0",
+      "status": "review_needed",
+      "unit": "%",
+      "value": "45",
+      "zone": ""
+    },
+    "evidence_ids": [
+      "f1_retrieval_003_03"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "rule_id": "f1_candidate_0001",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "candidate": {
+      "applies_to": "",
+      "city": "calgary_rcg",
+      "condition": "",
+      "constraint_scope": "dwelling units",
+      "evidence_ids": [
+        "f1_retrieval_004_03"
+      ],
+      "exception": "",
+      "operator": "<=",
+      "raw": {
+        "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+        "field_citations": {
+          "constraint_scope": {
+            "evidence_id": "f1_retrieval_004_03",
+            "page": 469,
+            "quote": "529 Density 529 The maximum density for parcels designated R-CG District is 75 units per hectare. 530 Number of Main Residential Buildings on a Parcel 4P2017 530 deleted 531 Parcel Width 15P2016 531 The minimum parcel width is 7.5 metres for a parcel containing a Duplex Dwelling. 532 Facade Width 15P2016 532 The minimum width of a street facing fa\u00e7ade of a unit is 4.2 metres. 533 At Grade Orientation of Units 56P2022",
+            "section_id": "7.5",
+            "span_id": "span_5273ca97388658e0"
+          },
+          "operator": {
+            "evidence_id": "f1_retrieval_004_03",
+            "page": 469,
+            "quote": "529 Density 529 The maximum density for parcels designated R-CG District is 75 units per hectare. 530 Number of Main Residential Buildings on a Parcel 4P2017 530 deleted 531 Parcel Width 15P2016 531 The minimum parcel width is 7.5 metres for a parcel containing a Duplex Dwelling. 532 Facade Width 15P2016 532 The minimum width of a street facing fa\u00e7ade of a unit is 4.2 metres. 533 At Grade Orientation of Units 56P2022",
+            "section_id": "7.5",
+            "span_id": "span_5273ca97388658e0"
+          },
+          "rule_object": {
+            "evidence_id": "f1_retrieval_004_03",
+            "page": 469,
+            "quote": "529 Density 529 The maximum density for parcels designated R-CG District is 75 units per hectare. 530 Number of Main Residential Buildings on a Parcel 4P2017 530 deleted 531 Parcel Width 15P2016 531 The minimum parcel width is 7.5 metres for a parcel containing a Duplex Dwelling. 532 Facade Width 15P2016 532 The minimum width of a street facing fa\u00e7ade of a unit is 4.2 metres. 533 At Grade Orientation of Units 56P2022",
+            "section_id": "7.5",
+            "span_id": "span_5273ca97388658e0"
+          },
+          "unit": {
+            "evidence_id": "f1_retrieval_004_03",
+            "page": 469,
+            "quote": "75 units",
+            "section_id": "7.5",
+            "span_id": "span_5273ca97388658e0"
+          },
+          "value": {
+            "evidence_id": "f1_retrieval_004_03",
+            "page": 469,
+            "quote": "75 units",
+            "section_id": "7.5",
+            "span_id": "span_5273ca97388658e0"
+          }
+        },
+        "page": 469,
+        "query": "dwelling units",
+        "run_id": "checkpoint_13_multi_city",
+        "section_id": "7.5",
+        "span_id": "span_5273ca97388658e0"
+      },
+      "rule_id": "f1_candidate_0002",
+      "rule_object": "dwelling_units",
+      "rule_type": "dwelling_units",
+      "schema_version": "f1.artifacts.v0",
+      "status": "review_needed",
+      "unit": "units",
+      "value": "75",
+      "zone": ""
+    },
+    "evidence_ids": [
+      "f1_retrieval_004_03"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "rule_id": "f1_candidate_0002",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "candidate": {
+      "applies_to": "",
+      "city": "calgary_rcg",
+      "condition": "",
+      "constraint_scope": "floor area",
+      "evidence_ids": [
+        "f1_retrieval_006_01"
+      ],
+      "exception": "",
+      "operator": ">=",
+      "raw": {
+        "extraction_note": "Candidate only; deterministic verification has not promoted this rule.",
+        "field_citations": {
+          "constraint_scope": {
+            "evidence_id": "f1_retrieval_006_01",
+            "page": 401,
+            "quote": "(i) 40.0 square metres in floor area for any portion at a",
+            "section_id": "40.0",
+            "span_id": "span_6fef4283e96cf22b"
+          },
+          "operator": {
+            "evidence_id": "f1_retrieval_006_01",
+            "page": 401,
+            "quote": "(i) 40.0 square metres in floor area for any portion at a",
+            "section_id": "40.0",
+            "span_id": "span_6fef4283e96cf22b"
+          },
+          "rule_object": {
+            "evidence_id": "f1_retrieval_006_01",
+            "page": 401,
+            "quote": "(i) 40.0 square metres in floor area for any portion at a",
+            "section_id": "40.0",
+            "span_id": "span_6fef4283e96cf22b"
+          },
+          "unit": {
+            "evidence_id": "f1_retrieval_006_01",
+            "page": 401,
+            "quote": "40.0 square metres",
+            "section_id": "40.0",
+            "span_id": "span_6fef4283e96cf22b"
+          },
+          "value": {
+            "evidence_id": "f1_retrieval_006_01",
+            "page": 401,
+            "quote": "40.0 square metres",
+            "section_id": "40.0",
+            "span_id": "span_6fef4283e96cf22b"
+          }
+        },
+        "page": 401,
+        "query": "floor area",
+        "run_id": "checkpoint_13_multi_city",
+        "section_id": "40.0",
+        "span_id": "span_6fef4283e96cf22b"
+      },
+      "rule_id": "f1_candidate_0003",
+      "rule_object": "floor_area",
+      "rule_type": "floor_area",
+      "schema_version": "f1.artifacts.v0",
+      "status": "review_needed",
+      "unit": "m2",
+      "value": "40",
+      "zone": ""
+    },
+    "evidence_ids": [
+      "f1_retrieval_006_01"
+    ],
+    "reason": "candidate fields are not fully supported by cited evidence",
+    "rule_id": "f1_candidate_0003",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "support_gaps": [
+      "operator_not_supported"
+    ],
+    "unresolved_dependencies": []
+  }
+]

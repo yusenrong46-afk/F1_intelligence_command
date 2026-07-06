@@ -1,0 +1,47 @@
+[
+  {
+    "evidence_ids": [
+      "f1_retrieval_003_03"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0001",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_004_03"
+    ],
+    "reason": "field evidence is present, but applicability or scope needs more context",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0002",
+    "schema_version": "f1.artifacts.v0",
+    "status": "context_required",
+    "support_gaps": [],
+    "unresolved_dependencies": [
+      "applies_to_missing"
+    ]
+  },
+  {
+    "evidence_ids": [
+      "f1_retrieval_006_01"
+    ],
+    "reason": "candidate fields are not fully supported by cited evidence",
+    "repair_history": [],
+    "risk_flags": [],
+    "rule_id": "f1_candidate_0003",
+    "schema_version": "f1.artifacts.v0",
+    "status": "rejected",
+    "support_gaps": [
+      "operator_not_supported"
+    ],
+    "unresolved_dependencies": []
+  }
+]
