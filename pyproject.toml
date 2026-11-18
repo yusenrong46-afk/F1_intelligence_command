@@ -47,3 +47,8 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 burnaby_prototype = ["py.typed"]
+
+[tool.pytest.ini_options]
+# Every repository test lives in tests/. exercises/ holds learner stubs whose
+# tests fail on purpose until solved; run them explicitly (see exercises/README.md).
+testpaths = ["tests"]

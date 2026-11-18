@@ -14,7 +14,8 @@ CONFIG_CITIES := $(filter-out _%,$(basename $(notdir $(wildcard configs/*.json))
 .PHONY: setup derived test fetch-sources verify-artifacts check-readme secret-scan \
         benchmark-check gate-l1 demo demo-deps demo-check demo-health gate-l2 \
         eval eval-repro eval-guard docs check-docs extract l3-checks gate-l3 \
-        onboard-deps onboard cli-contract docker-smoke l4-checks gate-l4 help
+        onboard-deps onboard cli-contract docker-smoke l4-checks gate-l4 \
+        walkthrough-check exercises-check l5-checks gate-l5 help
 
 help:
 	@echo "make setup | test | fetch-sources | demo | demo-check | gate-l1 .. gate-l5"
@@ -159,3 +160,18 @@ l4-checks: cli-contract docker-smoke
 
 gate-l4: gate-l3 l4-checks
 	@echo "gate-l4 PASS"
+
+# --- L5: teach and present -------------------------------------------------
+walkthrough-check: setup
+	$(PY) scripts/check_walkthrough.py
+
+# Every exercise test must FAIL on the committed stub (no solution in the repo).
+exercises-check: setup
+	$(PY) scripts/check_exercises.py
+
+l5-checks: walkthrough-check exercises-check
+	$(PY) scripts/check_l5_docs.py
+	@echo "L5 checks PASS"
+
+gate-l5: gate-l4 l5-checks
+	@echo "gate-l5 PASS"

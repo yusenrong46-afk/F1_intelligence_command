@@ -56,8 +56,12 @@ make test           # full test suite
 make demo           # command center on http://localhost:8631
 make eval           # offline benchmark + poisoned cases -> outputs/eval_summary.json
 make docs           # regenerate the results above from that file
-make gate-l3        # portfolio-standard gates (gate-l1 .. gate-l5)
+make onboard CITY=<id> URL=<pdf> PAGES=<a-b>   # set up a new city from config alone
+make gate-l5        # portfolio-standard gates (gate-l1 .. gate-l5)
 ```
+
+Other code can call the verifier through `bylaw-verify` (contract 1.0, JSON
+schemas, exit codes): see [docs/ONBOARDING.md](docs/ONBOARDING.md).
 
 Real-model extraction is `make extract CITY=<city> CONFIRM_PAID=yes`. It makes
 paid OpenRouter calls (US$0.015 to US$0.045 per city in the recorded M7 runs)
@@ -73,4 +77,8 @@ Tests that need a bylaw PDF skip with the reason
 - [Documentation index](docs/README.md) and the M7 release story in
   [docs/M7_FINAL_RELEASE.md](docs/M7_FINAL_RELEASE.md).
 - [Evaluation](docs/EVALUATION.md): every evaluation, its cost and whether it ran.
+- [Onboarding and the CLI contract](docs/ONBOARDING.md).
+- Learn it: [code walkthrough](docs/WALKTHROUGH.md) (ten questions),
+  [exercises](exercises/README.md), [case study](docs/CASE_STUDY.md) and
+  [demo script](docs/DEMO_SCRIPT.md).
 - [Upgrade status](upgrade/STATUS.md): what this branch adds and how each gate was checked.
