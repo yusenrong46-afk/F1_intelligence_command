@@ -12,7 +12,8 @@ MODEL_DIR := google_gemini_3_1_flash_lite
 CONFIG_CITIES := $(filter-out _%,$(basename $(notdir $(wildcard configs/*.json))))
 
 .PHONY: setup derived test fetch-sources verify-artifacts check-readme secret-scan \
-        benchmark-check gate-l1 demo demo-deps demo-check demo-health gate-l2 help
+        benchmark-check gate-l1 demo demo-deps demo-check demo-health gate-l2 \
+        eval eval-repro eval-guard docs check-docs extract l3-checks gate-l3 help
 
 help:
 	@echo "make setup | test | fetch-sources | demo | demo-check | gate-l1 .. gate-l5"
@@ -85,3 +86,44 @@ demo-check: setup demo-deps
 gate-l2: gate-l1 demo-health demo-check
 	@test -f docs/DEPLOY_DEMO.md
 	@echo "gate-l2 PASS"
+
+# ---- L3 Measured -----------------------------------------------------------
+EVAL := outputs/eval_summary.json
+
+# Offline, no model call: benchmark + adversarial cases for the three cities.
+eval: setup
+	$(PY) scripts/run_eval.py --out $(EVAL)
+
+# Two fresh runs must give byte-identical summaries, equal to the committed one.
+# Timings and the run date live in the .meta.json sidecar and are excluded.
+eval-repro: setup
+	$(PY) scripts/run_eval.py --repro --out $(EVAL)
+
+# Guarded numbers against benchmark/eval_baseline.json.
+eval-guard: setup
+	$(PY) scripts/check_eval_baseline.py --summary $(EVAL)
+
+# Regenerate the README result line and table from the committed summary.
+docs: setup
+	$(PY) scripts/render_results.py
+
+check-docs: setup
+	$(PY) scripts/render_results.py --check
+
+# Real-model extraction for one city. PAID (OpenRouter; recorded M7 cost
+# US$0.015 to US$0.045 per city, see model_cost_report.json). Needs
+# OPENROUTER_API_KEY, the source PDF (make fetch-sources) and CONFIRM_PAID=yes.
+# Writes to outputs/extract_runs/, never to the committed outputs/m7_runs/.
+# Status on upgrade/2026-11: NOT RUN.
+extract: setup
+	@test -n "$(CITY)" || { echo "usage: make extract CITY=<city> CONFIRM_PAID=yes"; exit 2; }
+	@test "$(CONFIRM_PAID)" = yes || { echo "make extract makes paid model calls; rerun with CONFIRM_PAID=yes"; exit 2; }
+	$(PY) scripts/run_m7_bakeoff_engine.py --discovery-mode exhaustive --out-root outputs/extract_runs \
+	  --city $(CITY) --models google/gemini-3.1-flash-lite
+
+# The L3 checks alone (CI runs these in the gates job; gate-l3 adds L2's browser check).
+l3-checks: eval-repro eval-guard check-docs
+	@echo "L3 checks PASS"
+
+gate-l3: gate-l2 l3-checks
+	@echo "gate-l3 PASS"

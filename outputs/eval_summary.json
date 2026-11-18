@@ -1,0 +1,115 @@
+{
+  "cities": {
+    "burnaby_r1": {
+      "adversarial": {
+        "blocked": 24,
+        "bundle_blocked": 3,
+        "bundle_cases": 3,
+        "bundle_leaked": 0,
+        "cases": 24,
+        "decision_mismatches": 0,
+        "leaked": 0
+      },
+      "adversarial_leaked_case_ids": [],
+      "artifacts": "outputs/m7_runs/burnaby_r1/google_gemini_3_1_flash_lite",
+      "benchmark": {
+        "candidate_rule_count": 144,
+        "extraction_coverage_recall": 0.975,
+        "false_verified_count": 0,
+        "gold_rule_count": 40,
+        "not_used_rule_count": 0,
+        "rejected_rule_count": 0,
+        "review_rule_count": 57,
+        "verified_gold_recall": 0.825,
+        "verified_precision": 1.0,
+        "verified_rule_count": 87,
+        "verified_source_support_failed_count": 0
+      },
+      "label": "Burnaby R1",
+      "proposals": {
+        "false_approval_count": 0,
+        "proposal_case_accuracy": 0.9,
+        "proposal_case_count": 10
+      },
+      "quality_gates_passed": false
+    },
+    "calgary_rcg": {
+      "adversarial": {
+        "blocked": 6,
+        "bundle_blocked": 0,
+        "bundle_cases": 0,
+        "bundle_leaked": 0,
+        "cases": 6,
+        "decision_mismatches": 0,
+        "leaked": 0
+      },
+      "adversarial_leaked_case_ids": [],
+      "artifacts": "outputs/m7_runs/calgary_rcg/google_gemini_3_1_flash_lite",
+      "benchmark": {
+        "candidate_rule_count": 150,
+        "extraction_coverage_recall": 1.0,
+        "false_verified_count": 0,
+        "gold_rule_count": 19,
+        "not_used_rule_count": 52,
+        "rejected_rule_count": 27,
+        "review_rule_count": 42,
+        "verified_gold_recall": 0.9474,
+        "verified_precision": 1.0,
+        "verified_rule_count": 29,
+        "verified_source_support_failed_count": 0
+      },
+      "label": "Calgary R-CG",
+      "proposals": {
+        "false_approval_count": 0,
+        "proposal_case_accuracy": 0.0,
+        "proposal_case_count": 0
+      },
+      "quality_gates_passed": true
+    },
+    "vancouver_rs": {
+      "adversarial": {
+        "blocked": 4,
+        "bundle_blocked": 0,
+        "bundle_cases": 0,
+        "bundle_leaked": 0,
+        "cases": 4,
+        "decision_mismatches": 0,
+        "leaked": 0
+      },
+      "adversarial_leaked_case_ids": [],
+      "artifacts": "outputs/m7_runs/vancouver_rs/google_gemini_3_1_flash_lite",
+      "benchmark": {
+        "candidate_rule_count": 56,
+        "extraction_coverage_recall": 1.0,
+        "false_verified_count": 0,
+        "gold_rule_count": 7,
+        "not_used_rule_count": 0,
+        "rejected_rule_count": 15,
+        "review_rule_count": 31,
+        "verified_gold_recall": 1.0,
+        "verified_precision": 1.0,
+        "verified_rule_count": 10,
+        "verified_source_support_failed_count": 0
+      },
+      "label": "Vancouver RS",
+      "proposals": {
+        "false_approval_count": 0,
+        "proposal_case_accuracy": 0.0,
+        "proposal_case_count": 0
+      },
+      "quality_gates_passed": true
+    }
+  },
+  "model_calls": 0,
+  "paid_cost_usd": 0.0,
+  "summary_version": 1,
+  "totals": {
+    "adversarial_bundles": 3,
+    "adversarial_cases": 34,
+    "adversarial_leaked": 0,
+    "false_verified_count": 0,
+    "min_verified_precision": 1.0,
+    "review_rule_count": 130,
+    "verified_rule_count": 126
+  }
+}

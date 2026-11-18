@@ -150,8 +150,13 @@ source PDF: run `make fetch-sources` first):
 ```
 
 Run extraction with full-bylaw discovery and verification. This makes paid
-model calls (needs `OPENROUTER_API_KEY` and the source PDF). Status on
-2026-11-18: NOT RUN on this branch. Recipe: `make extract CITY=<city>`.
+model calls (needs `OPENROUTER_API_KEY` and the source PDF). Recipe:
+`make extract CITY=<city> CONFIRM_PAID=yes`, which writes to
+`outputs/extract_runs/` so the committed `outputs/m7_runs/` stays untouched.
+Budget: the recorded M7 runs cost US$0.014857 (Burnaby), US$0.044801 (Calgary)
+and US$0.032056 (Vancouver) per `model_cost_report.json` (estimated from
+character counts; OpenRouter billing is authoritative). Status on 2026-11-18:
+NOT RUN on this branch.
 
 ```bash
 .venv/bin/python scripts/run_m7_bakeoff.py --city burnaby_r1 --models google/gemini-3.1-flash-lite

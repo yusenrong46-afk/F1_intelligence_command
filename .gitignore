@@ -18,6 +18,8 @@ outputs/*raw*/
 # artifacts visible for staging; historical records live under archive/pre_m7_records.
 outputs/*
 !outputs/README.md
+!outputs/eval_summary.json
+!outputs/eval_summary.meta.json
 !outputs/m7_status_report/
 !outputs/m7_status_report/**
 !outputs/m7_runs/

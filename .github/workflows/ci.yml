@@ -51,6 +51,8 @@ jobs:
         run: make fetch-sources
       - name: Gate L1 (tests, README, secret scan, benchmark)
         run: make gate-l1
+      - name: L3 checks (eval reproducible, guarded numbers, README generated)
+        run: make l3-checks
 
   demo:
     runs-on: ubuntu-24.04
