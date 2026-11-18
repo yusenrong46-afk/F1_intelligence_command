@@ -153,8 +153,16 @@ jobs:
             sed 's/^/|/' "$f"
             echo "===== END $f"
           done
+      - name: Toronto draft gold quotes occur on their cited pages
+        id: quotes
+        if: steps.toronto.outcome == 'success'
+        continue-on-error: true
+        run: >-
+          .venv/bin/python scripts/check_draft_gold_quotes.py --min-rules 30
+          --gold benchmark/gold/toronto_rd_gold_rules.DRAFT.json
+          --pages outputs/onboarding/toronto_rd/source_pages.txt
       - name: Fail if an onboarding did not pass
-        if: steps.surrey.outcome != 'success' || steps.locate.outcome != 'success' || steps.toronto.outcome != 'success'
+        if: steps.surrey.outcome != 'success' || steps.locate.outcome != 'success' || steps.toronto.outcome != 'success' || steps.quotes.outcome == 'failure'
         run: |
-          echo "surrey=${{ steps.surrey.outcome }} locate=${{ steps.locate.outcome }} toronto=${{ steps.toronto.outcome }}"
+          echo "surrey=${{ steps.surrey.outcome }} locate=${{ steps.locate.outcome }} toronto=${{ steps.toronto.outcome }} quotes=${{ steps.quotes.outcome }}"
           exit 1

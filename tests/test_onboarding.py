@@ -108,3 +108,22 @@ def test_locate_pages_suggests_the_largest_run(tmp_path: Path) -> None:
     assert locate_pages.largest_run([2, 3, 4, 9, 30, 31], max_gap=1) == (2, 4)
     assert locate_pages.largest_run([5, 7, 8], max_gap=1) == (5, 8)
     assert locate_pages.largest_run([], max_gap=1) is None
+
+
+def test_draft_gold_quote_check_catches_invented_quotes_and_values():
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import check_draft_gold_quotes as q  # noqa: PLC0415
+
+    pages = q.parse_pages("===== page 7 =====\nThe maximum height of a\nbuilding is 10.0 metres.\n===== page 8 =====\nOther text.\n")
+    rule = {"gold_id": "t1", "rule_object": "height", "constraint_type": "max", "value": "10.0", "unit": "m",
+            "operator": "<=", "source_page": 7, "quote": "maximum height of a building is 10.0 metres",
+            "label_source": "agent_draft_unreviewed"}
+    draft = {"label_source": "agent_draft_unreviewed", "rules": [rule]}
+    assert q.check(draft, pages) == []
+    assert any("not found on page 8" in p for p in q.check({**draft, "rules": [{**rule, "source_page": 8}]}, pages))
+    assert any("does not occur" in p for p in q.check({**draft, "rules": [{**rule, "value": "12.0"}]}, pages))
+    assert any("fewer than" in p for p in q.check(draft, pages, min_rules=30))
+    assert any("label_source" in p for p in q.check({**draft, "rules": [{**rule, "label_source": "human"}]}, pages))
+    two = {**rule, "value": "2", "quote": "may have no more than two storeys"}
+    pages2 = q.parse_pages("===== page 7 =====\nthe building may have no more than two storeys; at least 2,000 square metres\n")
+    assert q.check({**draft, "rules": [two, {**two, "gold_id": "t2", "value": "2000", "quote": "at least 2,000 square metres"}]}, pages2) == []
