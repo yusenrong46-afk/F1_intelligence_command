@@ -161,11 +161,17 @@ def run_browser(port: int, out: Path) -> dict:
     return {"visited": visited, "verified_quote": quote_seen, "hosts_contacted": sorted(contacted)}
 
 
+def resolve_out(path: Path) -> Path:
+    """A relative ``--out`` is relative to the repository root, like the Makefile's paths."""
+    return path if path.is_absolute() else ROOT / path
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--port", type=int, default=8631)
     parser.add_argument("--out", type=Path, default=ROOT / "docs" / "demo")
     args = parser.parse_args(argv)
+    args.out = resolve_out(args.out)
     args.out.mkdir(parents=True, exist_ok=True)
 
     env = {k: v for k, v in os.environ.items() if k not in SECRET_ENV}

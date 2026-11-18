@@ -64,3 +64,11 @@ def test_demo_command_matches_spec() -> None:
     cmd = demo_check.demo_command(8631)
     assert cmd[1:4] == ["-m", "streamlit", "run"]
     assert "streamlit_app.py" in cmd and "--server.headless" in cmd and "8631" in cmd
+
+
+def test_relative_demo_out_dir_resolves_under_repo_root():
+    # CI ran `demo_check.py --out docs/demo` and crashed printing the saved paths.
+    out = demo_check.resolve_out(Path("docs/demo"))
+    assert out == demo_check.ROOT / "docs" / "demo"
+    assert out.relative_to(demo_check.ROOT) == Path("docs/demo")
+    assert demo_check.resolve_out(out) == out
