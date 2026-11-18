@@ -208,7 +208,7 @@ class ExclusionExceptionFieldDodgeTests(unittest.TestCase):
         self.assertIn("unresolved_exception_cue", rule["support_gaps"])
 
 
-@unittest.skipUnless(CALGARY_PDF.exists(), "cached Calgary source.pdf not present")
+@unittest.skipUnless(CALGARY_PDF.exists(), "source PDF not fetched (run make fetch-sources)")
 class ReanchorHallucinatedValueTests(unittest.TestCase):
     def test_p9_reanchor_value_not_on_page_forces_review(self) -> None:
         from burnaby_prototype.pipeline9_adapter import reanchor_to_source

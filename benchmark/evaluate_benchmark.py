@@ -46,13 +46,45 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Gold proposal-case JSON file (defaults to benchmark/gold/<city>_proposal_cases.json).",
     )
+    parser.add_argument(
+        "--report-dir",
+        default=None,
+        help=(
+            "Where to write benchmark_report.{json,md} (defaults to --output-dir). "
+            "Use a separate directory to keep committed run artifacts byte-identical."
+        ),
+    )
     return parser.parse_args()
+
+
+# The slim pipeline always writes this compatibility file with
+# retrieval_backend=not_applicable (see slim_pipeline.py). Curated release
+# artifacts do not ship it, so a missing file means "no retrieval stage ran",
+# not "retrieval ran and found nothing" (which would score recall 0.0).
+_RETRIEVAL_NOT_RECORDED = {"retrieval_backend": "not_applicable", "deduped_blocks_for_llm": []}
+
+
+def missing_output_message(output_dir: Path) -> str | None:
+    """Return an error message when ``output_dir`` cannot be evaluated."""
+    if not (output_dir / "verified_rules.json").is_file():
+        return (
+            f"error: no verified_rules.json in {_display_path(output_dir)}. "
+            "Nothing to evaluate. Restore the committed M7 artifacts "
+            "(see outputs/m7_runs/MANIFEST.sha256) or run the verifier first."
+        )
+    return None
 
 
 def main() -> None:
     args = parse_args()
     city = resolve_city_paths(ROOT, args.city)
     output_dir = Path(args.output_dir) if args.output_dir else city.output_dir
+    problem = missing_output_message(output_dir)
+    if problem:
+        print(problem, file=sys.stderr)
+        raise SystemExit(2)
+    report_dir = Path(args.report_dir) if args.report_dir else output_dir
+    report_dir.mkdir(parents=True, exist_ok=True)
     gold_rules = _read_json(Path(args.gold_rules) if args.gold_rules else city.gold_rules, [])
     proposal_cases = _read_json(
         Path(args.proposal_cases) if args.proposal_cases else city.proposal_cases, []
@@ -64,7 +96,7 @@ def main() -> None:
     review_rules = _read_json(output_dir / "review_needed.json", [])
     rejected_rules = _read_json(output_dir / "rejected_rules.json", [])
     not_used_rules = _read_json(output_dir / "not_used.json", [])
-    retrieval = _read_json(output_dir / "retrieved_blocks.json", {})
+    retrieval = _read_json(output_dir / "retrieved_blocks.json", _RETRIEVAL_NOT_RECORDED)
     # The GIS contract is a deduped SLIM export (no source.evidence_text / proof
     # detail), so proposal compliance reads the rich verified_rules audit trail.
     # Contract dedupe is external-facing only and cannot move proposal metrics.
@@ -89,12 +121,12 @@ def main() -> None:
         "quality_gates": _quality_gates(rule_metrics, proposal_metrics),
     }
 
-    _write_json(output_dir / "benchmark_report.json", report)
-    _write_markdown(output_dir / "benchmark_report.md", report)
-    _write_diagram(output_dir / "benchmark_diagram.mmd")
+    _write_json(report_dir / "benchmark_report.json", report)
+    _write_markdown(report_dir / "benchmark_report.md", report)
+    _write_diagram(report_dir / "benchmark_diagram.mmd")
 
     print("Benchmark complete")
-    print(f"Report: {output_dir / 'benchmark_report.md'}")
+    print(f"Report: {report_dir / 'benchmark_report.md'}")
     print(f"Verified precision: {rule_metrics['verified_precision']:.2f}")
     print(f"Extraction coverage recall: {rule_metrics['extraction_coverage_recall']:.2f}")
     print(f"Raw candidate artifact recall: {rule_metrics['raw_candidate_artifact_recall']:.2f}")

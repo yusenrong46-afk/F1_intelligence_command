@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main, "upgrade/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gates:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # secret scan compares new large files against origin/main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Setup
+        run: make setup
+      - name: Fetch official bylaw PDFs (SHA-256 checked against provenance.json)
+        run: make fetch-sources
+      - name: Gate L1 (tests, README, secret scan, benchmark)
+        run: make gate-l1

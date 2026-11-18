@@ -1,0 +1,216 @@
+{
+  "city": "Calgary",
+  "zone": "RCG",
+  "source_document": null,
+  "derived_from": "gis_felt_export.json (verified-only)",
+  "lot_line_setbacks_m": {
+    "front_lot_line": [
+      {
+        "rule_id": "calgary_rcg_081",
+        "value_numeric": 6.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "Developed Area and R-C1L or R-C1Ls districts",
+        "applies_to": "Duplex Dwelling, Semi-detached Dwelling or Single Detached Dwelling"
+      }
+    ],
+    "rear_lot_line": [
+      {
+        "rule_id": "calgary_rcg_006",
+        "value_numeric": 1.5,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "rear property line",
+        "applies_to": "Backyard Suite"
+      },
+      {
+        "rule_id": "calgary_rcg_069",
+        "value_numeric": 1.2,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "laned or corner parcel",
+        "applies_to": "building"
+      },
+      {
+        "rule_id": "calgary_rcg_074",
+        "value_numeric": 7.5,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "rear property line"
+      }
+    ],
+    "side_lot_line": [
+      {
+        "rule_id": "calgary_rcg_004",
+        "value_numeric": 3.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "main residential building on a corner parcel",
+        "applies_to": "side property line shared with another parcel"
+      },
+      {
+        "rule_id": "calgary_rcg_013",
+        "value_numeric": 1.2,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "side property line"
+      },
+      {
+        "rule_id": "calgary_rcg_064",
+        "value_numeric": 0.6,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "on a laned parcel",
+        "applies_to": "private garage attached to a main residential building"
+      },
+      {
+        "rule_id": "calgary_rcg_067",
+        "value_numeric": 3.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "side property line"
+      },
+      {
+        "rule_id": "calgary_rcg_073",
+        "value_numeric": 0.6,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "corner parcel",
+        "applies_to": "side property line shared with a street"
+      }
+    ]
+  },
+  "max_height_m_by_role": {
+    "Backyard Suite": [
+      {
+        "rule_id": "calgary_rcg_012",
+        "value_numeric": 7.5,
+        "unit": "m",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Backyard Suite"
+      },
+      {
+        "rule_id": "calgary_rcg_079",
+        "value_numeric": 5.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "measured from grade at a side property line shared with a parcel designated with a low density residential district",
+        "applies_to": "Backyard Suite"
+      }
+    ],
+    "building": [
+      {
+        "rule_id": "calgary_rcg_055",
+        "value_numeric": 11.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "building"
+      }
+    ],
+    "main residential building": [
+      {
+        "rule_id": "calgary_rcg_056",
+        "value_numeric": 8.6,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "not located on a corner parcel, for any portion of a main residential building located between the rear property line and 60.0 per cent parcel depth or the contextual building depth average",
+        "applies_to": "main residential building"
+      },
+      {
+        "rule_id": "calgary_rcg_130",
+        "value_numeric": 8.6,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "not located on a corner parcel",
+        "applies_to": "main residential building"
+      }
+    ]
+  },
+  "max_storeys_by_role": {},
+  "building_separations_m": [
+    {
+      "rule_id": "calgary_rcg_020",
+      "value_numeric": 5.0,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "between the closest façade of the main residential building to the closest façade of a Backyard Suite"
+    },
+    {
+      "rule_id": "calgary_rcg_028",
+      "value_numeric": 6.5,
+      "unit": "m",
+      "operator": ">=",
+      "condition": "on a laned parcel",
+      "applies_to": "main residential buildings"
+    },
+    {
+      "rule_id": "calgary_rcg_082",
+      "value_numeric": 5.0,
+      "unit": "m",
+      "operator": ">=",
+      "condition": "between the closest façade of the main residential building to the closest façade of a Backyard Suite. 10P2019",
+      "applies_to": "Backyard Suite"
+    },
+    {
+      "rule_id": "calgary_rcg_138",
+      "value_numeric": 5.0,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "between the closest façade of the main residential building to the closest façade of a Backyard Suite"
+    }
+  ],
+  "max_lot_coverage_pct": [
+    {
+      "rule_id": "calgary_rcg_026",
+      "value_numeric": 45.0,
+      "unit": "%",
+      "operator": "<=",
+      "condition": null,
+      "applies_to": "all other uses"
+    }
+  ],
+  "max_impervious_surface_pct": [],
+  "parcel_level": {},
+  "context_and_triggers": [
+    {
+      "rule_id": "calgary_rcg_008",
+      "value_numeric": 0.6,
+      "unit": "m",
+      "operator": ">=",
+      "condition": "into a setback area from a property line shared with a street or a lane",
+      "applies_to": "Backyard Suite",
+      "operation": null
+    },
+    {
+      "rule_id": "calgary_rcg_083",
+      "value_numeric": 100.0,
+      "unit": "m2",
+      "operator": "<=",
+      "condition": "(a) in the R-C1L, R-C1Ls, R-C1, R-C1s, R-C1N, R-1, R-1s and 24P2018 R-1N Districts; or (b) when located on a parcel with a parcel width less than 13.0 metres",
+      "applies_to": "Secondary Suite",
+      "operation": "floor_area_cap"
+    },
+    {
+      "rule_id": "calgary_rcg_084",
+      "value_numeric": 75.0,
+      "unit": "m2",
+      "operator": "<=",
+      "condition": null,
+      "applies_to": "Backyard Suite",
+      "operation": "floor_area_cap"
+    }
+  ],
+  "notes": [
+    "Read-only projection of verified rules; not a verification artifact.",
+    "Setbacks are keyed by lot line; multiple entries reflect conditional variants (e.g. end-unit, accessory).",
+    "Heights/storeys are grouped by building role; roof-type condition is preserved, not collapsed.",
+    "Parcel-level entries are lists so conditional variants (e.g. a '4 Units Only' lot-area floor) are kept alongside the base rule."
+  ]
+}

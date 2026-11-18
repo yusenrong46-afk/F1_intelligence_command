@@ -22,6 +22,7 @@ outputs/*
 !outputs/m7_status_report/**
 !outputs/m7_runs/
 outputs/m7_runs/*
+!outputs/m7_runs/MANIFEST.sha256
 !outputs/m7_runs/burnaby_r1/
 !outputs/m7_runs/vancouver_rs/
 !outputs/m7_runs/calgary_rcg/

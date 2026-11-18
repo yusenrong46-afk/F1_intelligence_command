@@ -1,0 +1,736 @@
+{
+  "city": "Burnaby",
+  "zone": "R1",
+  "source_document": "R1Small-Scale-Multi-Unit-Housing-District.pdf",
+  "derived_from": "gis_felt_export.json (verified-only)",
+  "lot_line_setbacks_m": {
+    "front_lot_line": [
+      {
+        "rule_id": "burnaby_r1_078",
+        "value_numeric": 4.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "front",
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_080",
+        "value_numeric": 4.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "front",
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_082",
+        "value_numeric": 4.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "front",
+        "applies_to": "All Buildings"
+      }
+    ],
+    "lane_lot_line": [
+      {
+        "rule_id": "burnaby_r1_084",
+        "value_numeric": 1.5,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_085",
+        "value_numeric": 1.5,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_086",
+        "value_numeric": 1.5,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_087",
+        "value_numeric": 1.5,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "All Buildings"
+      }
+    ],
+    "rear_lot_line": [
+      {
+        "rule_id": "burnaby_r1_089",
+        "value_numeric": 3.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_090",
+        "value_numeric": 3.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_091",
+        "value_numeric": 3.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "All Buildings"
+      }
+    ],
+    "side_lot_line": [
+      {
+        "rule_id": "burnaby_r1_079",
+        "value_numeric": 3.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "flanking",
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_081",
+        "value_numeric": 3.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "flanking",
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_083",
+        "value_numeric": 3.0,
+        "unit": "m",
+        "operator": ">=",
+        "condition": "flanking",
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_093",
+        "value_numeric": 1.2,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_094",
+        "value_numeric": 1.2,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "All Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_095",
+        "value_numeric": 1.2,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "All Buildings"
+      }
+    ]
+  },
+  "max_height_m_by_role": {
+    "Accessory Buildings": [
+      {
+        "rule_id": "burnaby_r1_069",
+        "value_numeric": 4.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Accessory Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_071",
+        "value_numeric": 4.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Accessory Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_073",
+        "value_numeric": 4.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Accessory Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_075",
+        "value_numeric": 4.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Accessory Buildings"
+      }
+    ],
+    "Rowhouse 1 to 3 Units": [
+      {
+        "rule_id": "burnaby_r1_045",
+        "value_numeric": 10.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "sloping roof",
+        "applies_to": "Rowhouse 1 to 3 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_046",
+        "value_numeric": 9.5,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "flat roof",
+        "applies_to": "Rowhouse 1 to 3 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_057",
+        "value_numeric": 7.5,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "sloping roof",
+        "applies_to": "Rowhouse 1 to 3 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_058",
+        "value_numeric": 7.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "flat roof",
+        "applies_to": "Rowhouse 1 to 3 Units"
+      }
+    ],
+    "Small-Scale Multi-Unit 1 to 2 Units": [
+      {
+        "rule_id": "burnaby_r1_047",
+        "value_numeric": 10.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "sloping roof",
+        "applies_to": "Small-Scale Multi-Unit 1 to 2 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_048",
+        "value_numeric": 9.5,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "flat roof",
+        "applies_to": "Small-Scale Multi-Unit 1 to 2 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_059",
+        "value_numeric": 7.5,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "sloping roof",
+        "applies_to": "Small-Scale Multi-Unit 1 to 2 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_060",
+        "value_numeric": 7.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "flat roof",
+        "applies_to": "Small-Scale Multi-Unit 1 to 2 Units"
+      }
+    ],
+    "Small-Scale Multi-Unit 3 to 4 Units": [
+      {
+        "rule_id": "burnaby_r1_049",
+        "value_numeric": 10.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "sloping roof",
+        "applies_to": "Small-Scale Multi-Unit 3 to 4 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_050",
+        "value_numeric": 9.5,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "flat roof",
+        "applies_to": "Small-Scale Multi-Unit 3 to 4 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_061",
+        "value_numeric": 7.5,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "sloping roof",
+        "applies_to": "Small-Scale Multi-Unit 3 to 4 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_062",
+        "value_numeric": 7.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "flat roof",
+        "applies_to": "Small-Scale Multi-Unit 3 to 4 Units"
+      }
+    ],
+    "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only": [
+      {
+        "rule_id": "burnaby_r1_051",
+        "value_numeric": 10.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "sloping roof",
+        "applies_to": "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only"
+      },
+      {
+        "rule_id": "burnaby_r1_052",
+        "value_numeric": 9.5,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "flat roof",
+        "applies_to": "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only"
+      },
+      {
+        "rule_id": "burnaby_r1_063",
+        "value_numeric": 7.5,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "sloping roof",
+        "applies_to": "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only"
+      },
+      {
+        "rule_id": "burnaby_r1_064",
+        "value_numeric": 7.0,
+        "unit": "m",
+        "operator": "<=",
+        "condition": "flat roof",
+        "applies_to": "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only"
+      }
+    ]
+  },
+  "max_storeys_by_role": {
+    "Accessory Buildings": [
+      {
+        "rule_id": "burnaby_r1_070",
+        "value_numeric": 1.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Accessory Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_072",
+        "value_numeric": 1.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Accessory Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_074",
+        "value_numeric": 1.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Accessory Buildings"
+      },
+      {
+        "rule_id": "burnaby_r1_076",
+        "value_numeric": 1.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Accessory Buildings"
+      }
+    ],
+    "Rowhouse 1 to 3 Units": [
+      {
+        "rule_id": "burnaby_r1_053",
+        "value_numeric": 3.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Rowhouse 1 to 3 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_065",
+        "value_numeric": 2.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Rowhouse 1 to 3 Units"
+      }
+    ],
+    "Small-Scale Multi-Unit 1 to 2 Units": [
+      {
+        "rule_id": "burnaby_r1_054",
+        "value_numeric": 2.5,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Small-Scale Multi-Unit 1 to 2 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_066",
+        "value_numeric": 2.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Small-Scale Multi-Unit 1 to 2 Units"
+      }
+    ],
+    "Small-Scale Multi-Unit 3 to 4 Units": [
+      {
+        "rule_id": "burnaby_r1_055",
+        "value_numeric": 3.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Small-Scale Multi-Unit 3 to 4 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_067",
+        "value_numeric": 2.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Small-Scale Multi-Unit 3 to 4 Units"
+      }
+    ],
+    "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only": [
+      {
+        "rule_id": "burnaby_r1_056",
+        "value_numeric": 3.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only"
+      },
+      {
+        "rule_id": "burnaby_r1_068",
+        "value_numeric": 2.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only"
+      }
+    ]
+  },
+  "building_separations_m": [
+    {
+      "rule_id": "burnaby_r1_096",
+      "value_numeric": 2.4,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "Small-Scale Multi-Unit 1 to 2 Units"
+    },
+    {
+      "rule_id": "burnaby_r1_097",
+      "value_numeric": 2.4,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "Small-Scale Multi-Unit 3 to 4 Units"
+    },
+    {
+      "rule_id": "burnaby_r1_098",
+      "value_numeric": 2.4,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only"
+    },
+    {
+      "rule_id": "burnaby_r1_099",
+      "value_numeric": 2.4,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "Rear Principal Buildings"
+    },
+    {
+      "rule_id": "burnaby_r1_100",
+      "value_numeric": 2.4,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "Rear Principal Buildings"
+    },
+    {
+      "rule_id": "burnaby_r1_101",
+      "value_numeric": 2.4,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "Rear Principal Buildings"
+    },
+    {
+      "rule_id": "burnaby_r1_102",
+      "value_numeric": 6.0,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "Front and Rear Principal Buildings"
+    },
+    {
+      "rule_id": "burnaby_r1_103",
+      "value_numeric": 6.0,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "Front and Rear Principal Buildings"
+    },
+    {
+      "rule_id": "burnaby_r1_104",
+      "value_numeric": 6.0,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "Front and Rear Principal Buildings"
+    },
+    {
+      "rule_id": "burnaby_r1_105",
+      "value_numeric": 6.0,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "Front and Rear Principal Buildings"
+    },
+    {
+      "rule_id": "burnaby_r1_106",
+      "value_numeric": 2.4,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "All Other Buildings"
+    },
+    {
+      "rule_id": "burnaby_r1_107",
+      "value_numeric": 2.4,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "All Other Buildings"
+    },
+    {
+      "rule_id": "burnaby_r1_108",
+      "value_numeric": 2.4,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "All Other Buildings"
+    },
+    {
+      "rule_id": "burnaby_r1_109",
+      "value_numeric": 2.4,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "All Other Buildings"
+    }
+  ],
+  "max_lot_coverage_pct": [
+    {
+      "rule_id": "burnaby_r1_036",
+      "value_numeric": 55.0,
+      "unit": "%",
+      "operator": "<=",
+      "condition": null,
+      "applies_to": "Rowhouse 1 to 3 Units"
+    },
+    {
+      "rule_id": "burnaby_r1_037",
+      "value_numeric": 40.0,
+      "unit": "%",
+      "operator": "<=",
+      "condition": "Lots < 567 m2",
+      "applies_to": "Small-Scale Multi-Unit 1 to 2 Units"
+    },
+    {
+      "rule_id": "burnaby_r1_038",
+      "value_numeric": 30.0,
+      "unit": "%",
+      "operator": "<=",
+      "condition": "Lots > 567 m2",
+      "applies_to": "Small-Scale Multi-Unit 1 to 2 Units"
+    },
+    {
+      "rule_id": "burnaby_r1_039",
+      "value_numeric": 40.0,
+      "unit": "%",
+      "operator": "<=",
+      "condition": null,
+      "applies_to": "Small-Scale Multi-Unit 3 to 4 Units"
+    },
+    {
+      "rule_id": "burnaby_r1_040",
+      "value_numeric": 45.0,
+      "unit": "%",
+      "operator": "<=",
+      "condition": null,
+      "applies_to": "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only"
+    }
+  ],
+  "max_impervious_surface_pct": [
+    {
+      "rule_id": "burnaby_r1_041",
+      "value_numeric": 70.0,
+      "unit": "%",
+      "operator": "<=",
+      "condition": null,
+      "applies_to": "Rowhouse 1 to 3 Units"
+    },
+    {
+      "rule_id": "burnaby_r1_042",
+      "value_numeric": 60.0,
+      "unit": "%",
+      "operator": "<=",
+      "condition": null,
+      "applies_to": "Small-Scale Multi-Unit 1 to 2 Units"
+    },
+    {
+      "rule_id": "burnaby_r1_043",
+      "value_numeric": 60.0,
+      "unit": "%",
+      "operator": "<=",
+      "condition": null,
+      "applies_to": "Small-Scale Multi-Unit 3 to 4 Units"
+    },
+    {
+      "rule_id": "burnaby_r1_044",
+      "value_numeric": 70.0,
+      "unit": "%",
+      "operator": "<=",
+      "condition": null,
+      "applies_to": "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only"
+    }
+  ],
+  "parcel_level": {
+    "max_dwelling_units": [
+      {
+        "rule_id": "burnaby_r1_011",
+        "value_numeric": 3.0,
+        "unit": "units",
+        "operator": "<=",
+        "condition": "Total Dwelling Units on a Lot 1 to 3 Units",
+        "applies_to": "dwelling units"
+      },
+      {
+        "rule_id": "burnaby_r1_029",
+        "value_numeric": 3.0,
+        "unit": "units",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "lot"
+      },
+      {
+        "rule_id": "burnaby_r1_030",
+        "value_numeric": 2.0,
+        "unit": "units",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "lot"
+      },
+      {
+        "rule_id": "burnaby_r1_031",
+        "value_numeric": 4.0,
+        "unit": "units",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "lot"
+      },
+      {
+        "rule_id": "burnaby_r1_032",
+        "value_numeric": 6.0,
+        "unit": "units",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "lot"
+      }
+    ],
+    "min_lot_area": [
+      {
+        "rule_id": "burnaby_r1_001",
+        "value_numeric": 281.0,
+        "unit": "m2",
+        "operator": ">=",
+        "condition": "Minimum Lot Area",
+        "applies_to": "lot"
+      },
+      {
+        "rule_id": "burnaby_r1_033",
+        "value_numeric": 281.0,
+        "unit": "m2",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "Small-Scale Multi-Unit 3 to 4 Units"
+      },
+      {
+        "rule_id": "burnaby_r1_034",
+        "value_numeric": 281.0,
+        "unit": "m2",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "Small-Scale Multi-Unit 5 to 6 Units Frequent Transit Network Area Only"
+      },
+      {
+        "rule_id": "burnaby_r1_113",
+        "value_numeric": 281.0,
+        "unit": "m2",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "Minimum Lot Area"
+      }
+    ]
+  },
+  "context_and_triggers": [
+    {
+      "rule_id": "burnaby_r1_023",
+      "value_numeric": 1.0,
+      "unit": "m",
+      "operator": ">=",
+      "condition": "paved or gravel fire access corridor",
+      "applies_to": "All dwelling units",
+      "operation": "clearance"
+    },
+    {
+      "rule_id": "burnaby_r1_025",
+      "value_numeric": 45.0,
+      "unit": "m",
+      "operator": ">",
+      "condition": "located more than 45 m from a lot line abutting a street",
+      "applies_to": "Dwelling units more than 45 m from a street lot line",
+      "operation": "trigger_predicate"
+    },
+    {
+      "rule_id": "burnaby_r1_077",
+      "value_numeric": 3.0,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "All Buildings",
+      "operation": null
+    },
+    {
+      "rule_id": "burnaby_r1_110",
+      "value_numeric": 45.0,
+      "unit": "m",
+      "operator": ">",
+      "condition": "distance from lot line abutting a street",
+      "applies_to": "Dwelling units more than 45 m from a street lot line",
+      "operation": "trigger_predicate"
+    }
+  ],
+  "notes": [
+    "Read-only projection of verified rules; not a verification artifact.",
+    "Setbacks are keyed by lot line; multiple entries reflect conditional variants (e.g. end-unit, accessory).",
+    "Heights/storeys are grouped by building role; roof-type condition is preserved, not collapsed.",
+    "Parcel-level entries are lists so conditional variants (e.g. a '4 Units Only' lot-area floor) are kept alongside the base rule."
+  ]
+}

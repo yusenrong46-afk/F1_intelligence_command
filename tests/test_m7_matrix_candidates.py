@@ -65,7 +65,7 @@ class CountQualifierGuardTests(unittest.TestCase):
                          [(1.0, "", "1")])
 
 
-@unittest.skipUnless(SOURCE_PDF.exists(), "cached Burnaby source.pdf not present")
+@unittest.skipUnless(SOURCE_PDF.exists(), "source PDF not fetched (run make fetch-sources)")
 class RealPdfRecallTests(unittest.TestCase):
     def test_burnaby_matrix_recall_and_zero_false_verified(self) -> None:
         import json
