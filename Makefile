@@ -12,10 +12,10 @@ MODEL_DIR := google_gemini_3_1_flash_lite
 CONFIG_CITIES := $(filter-out _%,$(basename $(notdir $(wildcard configs/*.json))))
 
 .PHONY: setup derived test fetch-sources verify-artifacts check-readme secret-scan \
-        benchmark-check gate-l1 help
+        benchmark-check gate-l1 demo demo-deps demo-check demo-health gate-l2 help
 
 help:
-	@echo "make setup | test | fetch-sources | demo | gate-l1"
+	@echo "make setup | test | fetch-sources | demo | demo-check | gate-l1 .. gate-l5"
 
 $(STAMP): requirements.txt pyproject.toml
 	$(PYTHON) -m venv $(VENV)
@@ -59,3 +59,29 @@ benchmark-check: $(STAMP)
 
 gate-l1: setup verify-artifacts test check-readme secret-scan benchmark-check
 	@echo "gate-l1 PASS"
+
+# ---- L2 Demonstrable -------------------------------------------------------
+DEMO_PORT ?= 8631
+
+# The command center on localhost with committed artifacts only: no API key
+# (chat uses its artifact-grounded fallback), no paid call.
+demo: setup
+	env -u OPENROUTER_API_KEY -u ANTHROPIC_API_KEY -u GEMINI_API_KEY -u GOOGLE_API_KEY \
+	  $(PY) -m streamlit run streamlit_app.py --server.port $(DEMO_PORT) --server.headless true \
+	  --browser.gatherUsageStats false
+
+# Starts the demo in the background, requires /_stcore/health == ok, stops it.
+demo-health: setup
+	$(PY) scripts/demo_health.py --port $(DEMO_PORT)
+
+demo-deps: $(STAMP)
+	$(PY) -m pip install --quiet -r requirements-demo.txt
+	$(PY) -m playwright install chromium
+
+demo-check: setup demo-deps
+	$(PY) scripts/demo_check.py --port $(DEMO_PORT) --out docs/demo
+
+# gate-l2 runs the browser journey; demo-check needs Chromium (see docs/DEPLOY_DEMO.md).
+gate-l2: gate-l1 demo-health demo-check
+	@test -f docs/DEPLOY_DEMO.md
+	@echo "gate-l2 PASS"
