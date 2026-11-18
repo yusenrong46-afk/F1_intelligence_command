@@ -78,3 +78,69 @@ jobs:
           name: demo-media
           path: docs/demo/
           if-no-files-found: warn
+
+  docker:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image and smoke test (bylaw-verify --help, golden fixture, demo health)
+        run: make docker-smoke
+
+  # Runs the onboarding kit for the two exploratory cities and uploads what it
+  # wrote. Not on pull_request: it downloads full bylaw PDFs from city sites.
+  onboarding:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Setup
+        run: make setup onboard-deps
+      - name: Onboard surrey_r3 (committed config and provenance)
+        id: surrey
+        continue-on-error: true
+        run: make onboard CITY=surrey_r3
+      - name: Locate the Residential Detached zone (Chapter 10.20) in Toronto By-law 569-2013
+        id: locate
+        continue-on-error: true
+        run: |
+          .venv/bin/python scripts/locate_pages.py --url "$TORONTO_URL" --pattern '^\s*10\.20\.\d+' | tee toronto_locate.json
+          echo "pages=$(python3 -c "import json;print(json.load(open('toronto_locate.json'))['suggested'] or '')")" >> "$GITHUB_OUTPUT"
+        env:
+          TORONTO_URL: https://www.toronto.ca/legdocs/bylaws/2013/law0569-schedule-a-vol1-ch1-800.pdf
+      - name: Onboard toronto_rd
+        id: toronto
+        if: steps.locate.outputs.pages != ''
+        continue-on-error: true
+        run: >-
+          make onboard CITY=toronto_rd URL="$TORONTO_URL" PAGES="${{ steps.locate.outputs.pages }}"
+          TITLE=Toronto ZONE="RD Residential Detached Zone"
+          BYLAW="City of Toronto Zoning By-law 569-2013, Chapter 10.20 Residential Detached Zone"
+        env:
+          TORONTO_URL: https://www.toronto.ca/legdocs/bylaws/2013/law0569-schedule-a-vol1-ch1-800.pdf
+      - name: Upload onboarding outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: onboarding
+          path: |
+            toronto_locate.json
+            configs/surrey_r3.json
+            configs/toronto_rd.json
+            data/bylaws/*/provenance.json
+            outputs/onboarding/*/ONBOARDING_REPORT.md
+            outputs/onboarding/*/onboarding_summary.json
+            outputs/onboarding/*/source_pages.txt
+            outputs/onboarding/*/dry_run.log
+            benchmark/gold/*.DRAFT.json
+          if-no-files-found: warn
+      - name: Fail if an onboarding did not pass
+        if: steps.surrey.outcome != 'success' || steps.locate.outcome != 'success' || steps.toronto.outcome != 'success'
+        run: |
+          echo "surrey=${{ steps.surrey.outcome }} locate=${{ steps.locate.outcome }} toronto=${{ steps.toronto.outcome }}"
+          exit 1

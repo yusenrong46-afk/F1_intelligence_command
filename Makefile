@@ -13,7 +13,8 @@ CONFIG_CITIES := $(filter-out _%,$(basename $(notdir $(wildcard configs/*.json))
 
 .PHONY: setup derived test fetch-sources verify-artifacts check-readme secret-scan \
         benchmark-check gate-l1 demo demo-deps demo-check demo-health gate-l2 \
-        eval eval-repro eval-guard docs check-docs extract l3-checks gate-l3 help
+        eval eval-repro eval-guard docs check-docs extract l3-checks gate-l3 \
+        onboard-deps onboard cli-contract docker-smoke l4-checks gate-l4 help
 
 help:
 	@echo "make setup | test | fetch-sources | demo | demo-check | gate-l1 .. gate-l5"
@@ -127,3 +128,34 @@ l3-checks: eval-repro eval-guard check-docs
 
 gate-l3: gate-l2 l3-checks
 	@echo "gate-l3 PASS"
+
+# ---- L4 Connectable ----------------------------------------------------------
+# make onboard CITY=<id> URL=<official PDF URL> [PAGES=a-b] [LOCATE=<regex>]
+#   [TITLE=<display name>] [ZONE=<zone>] [BYLAW=<bylaw name>]
+# NAME=<id> is accepted as a synonym for CITY. No model call.
+ONBOARD_ID := $(or $(CITY),$(NAME))
+
+onboard-deps: $(STAMP)
+	$(PY) -m pip install --quiet "pdfplumber>=0.11"
+
+onboard: setup onboard-deps
+	@test -n "$(ONBOARD_ID)" || { echo "usage: make onboard CITY=<id> URL=<official PDF URL> [PAGES=a-b]"; exit 2; }
+	$(PY) scripts/onboard_city.py --city $(ONBOARD_ID) $(if $(URL),--url "$(URL)") \
+	  $(if $(PAGES),--pages "$(PAGES)") $(if $(LOCATE),--locate "$(LOCATE)") \
+	  $(if $(TITLE),--name "$(TITLE)") $(if $(ZONE),--zone "$(ZONE)") $(if $(BYLAW),--bylaw "$(BYLAW)")
+
+# CLI contract tests (golden example per decision bucket, exit codes).
+cli-contract: setup
+	$(PY) -m pytest -q -p no:cacheprovider tests/test_cli_contract.py tests/test_onboarding.py
+
+# Container image: build, bylaw-verify --help, a golden fixture, demo health.
+# Needs a Docker daemon. EXTRA_CA_BUNDLE=<file> for a TLS-intercepting proxy.
+docker-smoke:
+	scripts/docker_smoke.sh
+
+l4-checks: cli-contract docker-smoke
+	@test -f docs/ONBOARDING.md
+	@echo "L4 checks PASS"
+
+gate-l4: gate-l3 l4-checks
+	@echo "gate-l4 PASS"

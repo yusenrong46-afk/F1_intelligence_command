@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bylaw_verify_result.schema.json",
+  "title": "bylaw-verify output envelope",
+  "description": "Written to <out-dir>/bylaw_verify_result.json and printed on stdout. One decision per candidate. The detailed per-bucket files listed in artifacts are the existing slim-pipeline outputs, unchanged.",
+  "type": "object",
+  "required": ["contract_version", "tool", "city", "config", "inputs", "source_pdf_used", "counts", "decisions", "artifacts"],
+  "additionalProperties": false,
+  "properties": {
+    "contract_version": {"const": "1.0"},
+    "tool": {"const": "bylaw-verify"},
+    "city": {"type": "string"},
+    "config": {"type": "string"},
+    "inputs": {
+      "type": "object",
+      "required": ["candidates", "evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {"$ref": "#/$defs/input_file"},
+        "evidence": {"$ref": "#/$defs/input_file"}
+      }
+    },
+    "source_pdf_used": {"type": "boolean"},
+    "counts": {
+      "type": "object",
+      "required": ["candidates", "verified", "review_needed", "rejected", "not_used"],
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {"type": "integer", "minimum": 0},
+        "verified": {"type": "integer", "minimum": 0},
+        "review_needed": {"type": "integer", "minimum": 0},
+        "rejected": {"type": "integer", "minimum": 0},
+        "not_used": {"type": "integer", "minimum": 0}
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "rule_id", "decision", "evidence_id", "page", "support_gaps"],
+        "additionalProperties": false,
+        "properties": {
+          "candidate_id": {"type": ["string", "null"]},
+          "rule_id": {"type": "string"},
+          "decision": {"enum": ["verified", "review_needed", "rejected", "not_used"]},
+          "evidence_id": {"type": ["string", "null"]},
+          "page": {"type": ["integer", "null"]},
+          "support_gaps": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "artifacts": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "input_file": {
+      "type": "object",
+      "required": ["path", "sha256", "count"],
+      "additionalProperties": false,
+      "properties": {
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "count": {"type": "integer", "minimum": 0}
+      }
+    }
+  }
+}

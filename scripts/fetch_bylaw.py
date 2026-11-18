@@ -49,7 +49,7 @@ def fetch_bylaw(
     provenance_path = base / "provenance.json"
 
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request) as response:
+    with cookie_opener()(request) as response:
         payload = response.read()
 
     page_range = _parse_page_range(pages)

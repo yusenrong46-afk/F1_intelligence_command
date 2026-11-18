@@ -17,6 +17,10 @@ dependencies = [
     "rank-bm25>=0.2.2",
 ]
 
+[project.scripts]
+# Versioned CLI contract over the verifier (docs/ONBOARDING.md, schemas/bylaw_verify_*.schema.json).
+bylaw-verify = "burnaby_prototype.cli_verify:main"
+
 [project.optional-dependencies]
 dashboard = ["streamlit>=1.46", "plotly>=5.24"]
 # Optional pydeck map tab in the dashboard; the dashboard degrades gracefully without it.

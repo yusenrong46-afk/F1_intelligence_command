@@ -1,0 +1,34 @@
+[
+  {
+    "evidence_id": "m4_pack_0040_ev_001",
+    "page": 391,
+    "section": "347.1 (1)",
+    "evidence_type": "clause",
+    "evidence_text": "the principal front façade of one unit staggered a minimum of 0.6 metres behind the principal front façade of the other unit",
+    "source_context": "PART 5 - DIVISION 1: GENERAL RULES 347.1 Contextual Semi-detached Dwelling 347.1 (1) A Contextual Semi-detached Dwelling: 27P2011 (a) must have: (i) the principal front façade of one unit staggered a minimum of 0.6 metres behind the principal front façade of the other unit; and (ii) the principal rear façade of one unit staggered a minimum of 0.6 metres behind the principal rear façade of the other unit; (b) must have façade articulation for each unit, by including: (i) a portion of the front façade, with an area less than or 45P2015 equal to 50% of the area of all front façades of each unit, recessed or projecting forward from the remainder of the front façade of that unit, with the projecting or recessed portion",
+    "source_stream": "native_rag_llm",
+    "native_provenance": {
+      "pack_id": "m4_pack_0040",
+      "chunk_id": "calgary_rcg_347.1 .1_007",
+      "retrieval_queries": [
+        "RCG Residential – Grade-Oriented Infill (R-CG) District dimensional envelope: building setbacks from front, side, and rear property lines; building height; parcel coverage; building depth; and street-facing facade width; including the secondary suite and backyard suite provisions height building height maximum height"
+      ],
+      "retrieval_score": 17.0,
+      "rerank_score": null,
+      "v2_run_id": "calgary_rcg_google_gemini_3_1_flash_lite_f222ff438c4b",
+      "model": "google/gemini-3.1-flash-lite",
+      "v3_final": true
+    },
+    "source_repair": {
+      "status": "reanchored",
+      "page": 391,
+      "actions": [
+        "reanchored_to_source_page"
+      ],
+      "forced_review": false
+    },
+    "reanchored_to_source": true,
+    "evidence_quality_score": 1.0,
+    "evidence_quality_issues": []
+  }
+]

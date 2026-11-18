@@ -1,0 +1,21 @@
+{
+  "source": "outputs/m7_runs/calgary_rcg/google_gemini_3_1_flash_lite (committed M7 run, candidate calgary_rcg_native_m4_pack_0002_001)",
+  "config": "configs/calgary_rcg.json",
+  "counts": {
+    "candidates": 1,
+    "verified": 1,
+    "review_needed": 0,
+    "rejected": 0,
+    "not_used": 0
+  },
+  "decisions": [
+    {
+      "candidate_id": "calgary_rcg_native_m4_pack_0002_001",
+      "rule_id": "calgary_rcg_001",
+      "decision": "verified",
+      "evidence_id": "m4_pack_0002_ev_001",
+      "page": 470,
+      "support_gaps": []
+    }
+  ]
+}

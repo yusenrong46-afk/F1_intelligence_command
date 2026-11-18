@@ -1,0 +1,27 @@
+[
+  {
+    "candidate_id": "calgary_rcg_native_m4_pack_0006_002",
+    "evidence_id": "m4_pack_0006_ev_002",
+    "rule_object": "floor_area",
+    "constraint_type": "maximum",
+    "constraint_scope": "floor_area",
+    "applies_to": "Backyard Suite projections",
+    "operator": "<=",
+    "value": "40.0",
+    "unit": "%",
+    "condition": "length of the façade on each storey",
+    "exception": "",
+    "source_stream": "native_rag_llm",
+    "extraction_method": "native_rag_llm_v3",
+    "extraction_final_action": "",
+    "extraction_review_reasons": [],
+    "native_provenance": {
+      "pack_id": "m4_pack_0006",
+      "chunk_id": "calgary_rcg_352.3.2_026",
+      "source_quote_supported": true,
+      "v2_run_id": "calgary_rcg_google_gemini_3_1_flash_lite_f222ff438c4b",
+      "model": "google/gemini-3.1-flash-lite",
+      "v3_final": true
+    }
+  }
+]

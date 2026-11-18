@@ -1,0 +1,34 @@
+[
+  {
+    "evidence_id": "m4_pack_0002_ev_001",
+    "page": 470,
+    "section": "534(3)",
+    "evidence_type": "clause",
+    "evidence_text": "minimum building setback from the side property line shared with another parcel is 3.0 metres",
+    "source_context": " units on the parcel are contained in main residential buildings located within the first 60.0 per cent of the parcel depth; and (c) where the minimum separation distance of the main residential buildings on the front portion of the parcel and the main residential buildings contained on the rear portion of the parcel is 6.5 metres. (3) For a main residential building that is located on a corner parcel there is no maximum building depth where the minimum building setback from the side property line shared with another parcel is 3.0 metres for any portion of the building located between the rear property line and: (a) 50.0 per cent parcel depth; or (b) the building depth of the main residential building on the adjoining parcel; whichever is closer to the rear property line. 356 LAND USE BYLAW – 1P2007 July 23, 2007",
+    "source_stream": "native_rag_llm",
+    "native_provenance": {
+      "pack_id": "m4_pack_0002",
+      "chunk_id": "calgary_rcg_534.3_075",
+      "retrieval_queries": [
+        "target section 534(3)"
+      ],
+      "retrieval_score": 25.25,
+      "rerank_score": null,
+      "v2_run_id": "calgary_rcg_google_gemini_3_1_flash_lite_f222ff438c4b",
+      "model": "google/gemini-3.1-flash-lite",
+      "v3_final": true
+    },
+    "source_repair": {
+      "status": "reanchored",
+      "page": 470,
+      "actions": [
+        "reanchored_to_source_page"
+      ],
+      "forced_review": false
+    },
+    "reanchored_to_source": true,
+    "evidence_quality_score": 1.0,
+    "evidence_quality_issues": []
+  }
+]

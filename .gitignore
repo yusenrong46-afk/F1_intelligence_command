@@ -20,6 +20,10 @@ outputs/*
 !outputs/README.md
 !outputs/eval_summary.json
 !outputs/eval_summary.meta.json
+!outputs/onboarding/
+outputs/onboarding/*/*
+!outputs/onboarding/*/ONBOARDING_REPORT.md
+!outputs/onboarding/*/onboarding_summary.json
 !outputs/m7_status_report/
 !outputs/m7_status_report/**
 !outputs/m7_runs/
