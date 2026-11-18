@@ -117,3 +117,47 @@ def test_fetch_verified_source_refuses_hash_mismatch(tmp_path: Path) -> None:
         )
     assert not (base / "source.pdf").exists()
     assert (base / "provenance.json").read_bytes() == provenance_before
+
+
+def test_fetch_verified_source_follows_cookie_gated_redirect(tmp_path: Path) -> None:
+    """calgary.ca sets a cookie in a 302 to the same URL; plain urlopen loops."""
+    import hashlib
+    import http.server
+    import threading
+
+    payload = b"%PDF-1.4 cookie gated fixture"
+
+    class Handler(http.server.BaseHTTPRequestHandler):
+        def do_GET(self) -> None:  # noqa: N802 - stdlib API
+            if "visited=1" in (self.headers.get("Cookie") or ""):
+                self.send_response(200)
+                self.send_header("Content-Length", str(len(payload)))
+                self.end_headers()
+                self.wfile.write(payload)
+            else:
+                self.send_response(302)
+                self.send_header("Set-Cookie", "visited=1; Path=/")
+                self.send_header("Location", self.path)
+                self.end_headers()
+
+        def log_message(self, *args) -> None:
+            pass
+
+    server = http.server.HTTPServer(("127.0.0.1", 0), Handler)
+    thread = threading.Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+    try:
+        city_dir = tmp_path / "data" / "bylaws" / "cookieville"
+        city_dir.mkdir(parents=True)
+        provenance = {
+            "url": f"http://127.0.0.1:{server.server_port}/bylaw.pdf",
+            "sha256": hashlib.sha256(payload).hexdigest(),
+        }
+        (city_dir / "provenance.json").write_text(json.dumps(provenance), encoding="utf-8")
+        before = (city_dir / "provenance.json").read_bytes()
+        result = fetch_bylaw.fetch_verified_source("cookieville", root=tmp_path)
+        assert result["status"] == "fetched"
+        assert (city_dir / "source.pdf").read_bytes() == payload
+        assert (city_dir / "provenance.json").read_bytes() == before
+    finally:
+        server.shutdown()

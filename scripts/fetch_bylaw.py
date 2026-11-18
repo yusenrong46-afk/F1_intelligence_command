@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import http.cookiejar
 import io
 import json
 import sys
@@ -83,6 +84,17 @@ class ProvenanceMismatch(RuntimeError):
     """Downloaded bytes do not match the SHA-256 committed in provenance.json."""
 
 
+def cookie_opener():
+    """Return an ``open`` callable that keeps cookies across redirects.
+
+    Some municipal sites (calgary.ca) answer the first request with a 302 that
+    sets a session cookie and redirects to the same URL. Plain ``urlopen``
+    drops the cookie and reports an infinite redirect loop.
+    """
+    jar = http.cookiejar.CookieJar()
+    return urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar)).open
+
+
 def fetch_verified_source(city: str, *, root: Path | None = None, opener=None) -> dict[str, Any]:
     """Fetch the PDF named in committed provenance and check its SHA-256.
 
@@ -103,7 +115,7 @@ def fetch_verified_source(city: str, *, root: Path | None = None, opener=None) -
         return {"status": "unchanged", "city": city, "sha256": expected, "pdf_path": str(pdf_path)}
 
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with (opener or urllib.request.urlopen)(request) as response:
+    with (opener or cookie_opener())(request) as response:
         payload = response.read()
     actual = hashlib.sha256(payload).hexdigest()
     if actual != expected:

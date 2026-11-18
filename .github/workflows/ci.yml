@@ -14,6 +14,23 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # Fails whenever a city's published PDF no longer matches the SHA-256 in
+  # data/bylaws/<city>/provenance.json. Kept as its own check so upstream
+  # source drift stays visible without hiding the code gates below.
+  sources:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Setup
+        run: make setup
+      - name: Fetch official bylaw PDFs (SHA-256 checked against provenance.json)
+        run: make fetch-sources
+
   gates:
     runs-on: ubuntu-24.04
     timeout-minutes: 30
@@ -27,7 +44,35 @@ jobs:
           cache: pip
       - name: Setup
         run: make setup
-      - name: Fetch official bylaw PDFs (SHA-256 checked against provenance.json)
+      - name: Fetch official bylaw PDFs where they still match provenance
+        # A drifted or unreachable source fails the `sources` job above; here
+        # any PDF that does match is used and PDF tests skip for the rest.
+        continue-on-error: true
         run: make fetch-sources
       - name: Gate L1 (tests, README, secret scan, benchmark)
         run: make gate-l1
+
+  demo:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Setup
+        run: make setup
+      - name: Browser dependencies
+        run: |
+          .venv/bin/python -m pip install -r requirements-demo.txt
+          .venv/bin/python -m playwright install --with-deps chromium
+      - name: Demo health and browser journey (no API key)
+        run: make demo-health demo-check
+      - name: Upload screenshots and video
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: demo-media
+          path: docs/demo/
+          if-no-files-found: warn
