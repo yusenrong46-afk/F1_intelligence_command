@@ -791,11 +791,30 @@ def _review_evidence_table(item: dict[str, Any]) -> list[dict[str, Any]]:
 def _rule_sentence_list(st: Any, rules: list[dict[str, Any]], *, limit: int = 80) -> None:
     for index, rule in enumerate(rules[:limit], start=1):
         st.markdown(
-            f"<div class='rule-card'><span>{index}</span><p>{html.escape(_rule_sentence(rule))}</p></div>",
+            f"<div class='rule-card'><span>{index}</span><div><p>{html.escape(_rule_sentence(rule))}</p>"
+            f"{_rule_quote_html(rule)}</div></div>",
             unsafe_allow_html=True,
         )
     if len(rules) > limit:
         st.caption(f"Showing first {limit} of {len(rules)} rules.")
+
+
+def _rule_quote_html(rule: dict[str, Any]) -> str:
+    """The cited bylaw text behind a rule, so a reader sees what the verifier checked."""
+    citation = rule.get("citation") or {}
+    quote = str(citation.get("quote") or "").strip()
+    if not quote:
+        return ""
+    where = ", ".join(
+        part
+        for part in (
+            f"page {citation['page']}" if citation.get("page") else "",
+            f"section {citation['section_id']}" if citation.get("section_id") else "",
+        )
+        if part
+    )
+    label = f"Source text ({where})" if where else "Source text"
+    return f"<p class='rule-quote'>{html.escape(label)}: “{html.escape(quote)}”</p>"
 
 
 def _rule_sentence(rule: dict[str, Any]) -> str:
@@ -1053,6 +1072,7 @@ def _style(st: Any) -> None:
         .rule-card {display:grid; grid-template-columns:34px 1fr; gap:12px; padding:12px 0; border-bottom:1px solid var(--hair);}
         .rule-card span {display:flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:7px; background:#eef2f6; font-family:"IBM Plex Mono", monospace !important; font-weight:800; color:#526170;}
         .rule-card p {margin:2px 0 0; font-size:15px; line-height:1.45;}
+        .rule-card p.rule-quote {font-size:13px; color:#526170; font-style:italic;}
         .review-grid {display:grid; grid-template-columns:1fr 1fr; gap:16px;} .kv {display:grid; grid-template-columns:130px 1fr; border-top:1px solid var(--hair); padding:10px 0; gap:12px;} .kv b {color:#526170; font-family:"IBM Plex Mono", monospace !important; text-transform:uppercase; font-size:11px; letter-spacing:.06em !important;} .claim {font-size:17px; line-height:1.5;}
         .quality-row {display:grid; grid-template-columns:110px 1fr 44px; gap:12px; align-items:center; margin:10px 0;} .quality-row div {height:12px; background:#edf0f4; border-radius:999px; overflow:hidden;} .quality-row i {display:block; height:100%; background:var(--green);}
         .result-box {border:1px solid var(--line); border-radius:8px; padding:14px; margin:14px 0; display:grid; gap:4px;}

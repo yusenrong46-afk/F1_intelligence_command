@@ -1,0 +1,47 @@
+{
+  "city": "surrey_r3",
+  "steps": [
+    {
+      "step": "config",
+      "status": "PASS",
+      "seconds": 0.0,
+      "detail": "kept existing reviewed config configs/surrey_r3.json unchanged"
+    },
+    {
+      "step": "source",
+      "status": "FAIL",
+      "seconds": 0.17,
+      "detail": "source hash no longer matches committed provenance (not rewritten): surrey_r3: downloaded 3299125 bytes from https://www.surrey.ca/sites/default/files/bylaws/BYL_Zoning_12000.pdf with sha256 9b696693d30864cf27e8f9ca458b5be66fe15f98c9f300bb71011217cb14ea6c, but provenance.json records b18d03c1b07b8e39fd582fb07e8811b50fc02d733aab43f18b8f5ad1a659a3cd. Nothing was written."
+    },
+    {
+      "step": "validate_config",
+      "status": "PASS",
+      "seconds": 0.03,
+      "detail": "exit 0: all configs structurally valid (trust model: configs are reviewed artifacts)"
+    },
+    {
+      "step": "locate",
+      "status": "NOT RUN",
+      "seconds": null,
+      "detail": "no LOCATE given"
+    },
+    {
+      "step": "page_text",
+      "status": "NOT RUN",
+      "seconds": null,
+      "detail": "needs a source PDF that matches provenance"
+    },
+    {
+      "step": "dry_run",
+      "status": "NOT RUN",
+      "seconds": null,
+      "detail": "needs a source PDF that matches provenance and a valid config"
+    },
+    {
+      "step": "gold_draft",
+      "status": "PASS",
+      "seconds": 0.0,
+      "detail": "created an empty draft for review"
+    }
+  ]
+}

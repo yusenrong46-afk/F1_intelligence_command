@@ -1,0 +1,29 @@
+{
+  "_note": "Guarded numbers for make eval-guard (upgrade/SPEC.md P1 L3.3). Counts equal the committed M7 benchmark reports. Raise a floor only with evidence; never lower one to make CI pass.",
+  "cities": {
+    "burnaby_r1": {
+      "false_verified_count_max": 0,
+      "verified_precision_min": 1.0,
+      "adversarial_leaked_max": 0,
+      "extraction_coverage_recall_min": 0.975,
+      "verified_rule_count": 87,
+      "review_rule_count": 57
+    },
+    "calgary_rcg": {
+      "false_verified_count_max": 0,
+      "verified_precision_min": 1.0,
+      "adversarial_leaked_max": 0,
+      "extraction_coverage_recall_min": 1.0,
+      "verified_rule_count": 29,
+      "review_rule_count": 42
+    },
+    "vancouver_rs": {
+      "false_verified_count_max": 0,
+      "verified_precision_min": 1.0,
+      "adversarial_leaked_max": 0,
+      "extraction_coverage_recall_min": 1.0,
+      "verified_rule_count": 10,
+      "review_rule_count": 31
+    }
+  }
+}

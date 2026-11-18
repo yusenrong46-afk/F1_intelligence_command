@@ -1,0 +1,18 @@
+{
+  "measured_on": "2026-11-18",
+  "python": "3.12.3",
+  "timings_seconds": {
+    "burnaby_r1": {
+      "adversarial_seconds": 0.108,
+      "benchmark_seconds": 0.349
+    },
+    "calgary_rcg": {
+      "adversarial_seconds": 0.1,
+      "benchmark_seconds": 0.235
+    },
+    "vancouver_rs": {
+      "adversarial_seconds": 0.093,
+      "benchmark_seconds": 0.101
+    }
+  }
+}

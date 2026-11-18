@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bylaw_verify_candidates.schema.json",
+  "title": "bylaw-verify input: rule candidates",
+  "description": "Rule candidates proposed by an extractor (rule_candidates.json). Proposals only: the verifier decides every bucket. Extra fields are allowed and passed through.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["candidate_id", "evidence_id", "rule_object"],
+    "properties": {
+      "candidate_id": {"type": "string", "minLength": 1},
+      "evidence_id": {"type": "string", "minLength": 1},
+      "rule_object": {"type": ["string", "null"]},
+      "value": {},
+      "unit": {"type": ["string", "null"]},
+      "operator": {"type": ["string", "null"]},
+      "constraint_type": {"type": ["string", "null"]},
+      "constraint_scope": {"type": ["string", "null"]},
+      "applies_to": {},
+      "condition": {},
+      "exception": {}
+    }
+  }
+}

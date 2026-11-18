@@ -163,7 +163,7 @@ class ReanchoringContractTests(unittest.TestCase):
         # carrying text that is NOT on that page.
         source = ROOT / "data" / "bylaws" / "calgary_rcg" / "source.pdf"
         if not source.exists():
-            self.skipTest("calgary source.pdf not cached")
+            self.skipTest("source PDF not fetched (run make fetch-sources)")
         unit = {
             "evidence_id": "e1", "page": 396, "evidence_type": "clause",
             "evidence_text": "the quick brown fox jumps over the lazy zoning bylaw",
@@ -180,7 +180,7 @@ class ReanchoringContractTests(unittest.TestCase):
     def test_successful_reanchor_repairs_context_but_verifier_still_decides(self) -> None:
         source = ROOT / "data" / "bylaws" / "calgary_rcg" / "source.pdf"
         if not source.exists():
-            self.skipTest("calgary source.pdf not cached")
+            self.skipTest("source PDF not fetched (run make fetch-sources)")
         # Real s.352(3) sentence: re-anchor finds it on page 396.
         unit = {
             "evidence_id": "e2", "page": 396, "evidence_type": "clause",
@@ -207,7 +207,7 @@ class ReanchoringContractTests(unittest.TestCase):
     def test_reanchored_text_that_refutes_never_verifies(self) -> None:
         source = ROOT / "data" / "bylaws" / "calgary_rcg" / "source.pdf"
         if not source.exists():
-            self.skipTest("calgary source.pdf not cached")
+            self.skipTest("source PDF not fetched (run make fetch-sources)")
         # Candidate claims a 99.0 m separation; the authentic page text
         # (re-anchored from the real evidence sentence) states 5.0 m.
         unit = {

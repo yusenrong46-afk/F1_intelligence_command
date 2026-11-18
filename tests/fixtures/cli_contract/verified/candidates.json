@@ -1,0 +1,27 @@
+[
+  {
+    "candidate_id": "calgary_rcg_native_m4_pack_0002_001",
+    "evidence_id": "m4_pack_0002_ev_001",
+    "rule_object": "setback",
+    "constraint_type": "minimum",
+    "constraint_scope": "setback",
+    "applies_to": "side property line shared with another parcel",
+    "operator": ">=",
+    "value": "3.0",
+    "unit": "m",
+    "condition": "main residential building on a corner parcel",
+    "exception": "",
+    "source_stream": "native_rag_llm",
+    "extraction_method": "native_rag_llm_v3",
+    "extraction_final_action": "",
+    "extraction_review_reasons": [],
+    "native_provenance": {
+      "pack_id": "m4_pack_0002",
+      "chunk_id": "calgary_rcg_534.3_075",
+      "source_quote_supported": true,
+      "v2_run_id": "calgary_rcg_google_gemini_3_1_flash_lite_f222ff438c4b",
+      "model": "google/gemini-3.1-flash-lite",
+      "v3_final": true
+    }
+  }
+]

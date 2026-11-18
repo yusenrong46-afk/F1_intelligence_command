@@ -1,0 +1,89 @@
+{
+  "city": "Vancouver",
+  "zone": "RS",
+  "source_document": "Vancouver Zoning and Development By-law — Section 11.3 (Laneway Houses)",
+  "derived_from": "gis_felt_export.json (verified-only)",
+  "lot_line_setbacks_m": {
+    "lane_lot_line": [
+      {
+        "rule_id": "vancouver_rs_029",
+        "value_numeric": 0.9,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "laneway house"
+      },
+      {
+        "rule_id": "vancouver_rs_030",
+        "value_numeric": 1.2,
+        "unit": "m",
+        "operator": ">=",
+        "condition": null,
+        "applies_to": "laneway house"
+      }
+    ]
+  },
+  "max_height_m_by_role": {
+    "laneway house": [
+      {
+        "rule_id": "vancouver_rs_006",
+        "value_numeric": 8.5,
+        "unit": "m",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "laneway house"
+      }
+    ]
+  },
+  "max_storeys_by_role": {
+    "laneway house": [
+      {
+        "rule_id": "vancouver_rs_007",
+        "value_numeric": 2.0,
+        "unit": "storeys",
+        "operator": "<=",
+        "condition": null,
+        "applies_to": "laneway house"
+      }
+    ]
+  },
+  "building_separations_m": [
+    {
+      "rule_id": "vancouver_rs_028",
+      "value_numeric": 4.9,
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "applies_to": "laneway house"
+    }
+  ],
+  "max_lot_coverage_pct": [
+    {
+      "rule_id": "vancouver_rs_016",
+      "value_numeric": 50.0,
+      "unit": "%",
+      "operator": "<=",
+      "condition": null,
+      "applies_to": "site with a laneway house"
+    }
+  ],
+  "max_impervious_surface_pct": [],
+  "parcel_level": {},
+  "context_and_triggers": [
+    {
+      "rule_id": "vancouver_rs_027",
+      "value_numeric": 186.0,
+      "unit": "m2",
+      "operator": "<=",
+      "condition": null,
+      "applies_to": "laneway house",
+      "operation": "floor_area_cap"
+    }
+  ],
+  "notes": [
+    "Read-only projection of verified rules; not a verification artifact.",
+    "Setbacks are keyed by lot line; multiple entries reflect conditional variants (e.g. end-unit, accessory).",
+    "Heights/storeys are grouped by building role; roof-type condition is preserved, not collapsed.",
+    "Parcel-level entries are lists so conditional variants (e.g. a '4 Units Only' lot-area floor) are kept alongside the base rule."
+  ]
+}

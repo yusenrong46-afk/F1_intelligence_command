@@ -1,0 +1,29 @@
+[
+  {
+    "candidate_id": "calgary_rcg_native_m4_pack_0040_001",
+    "evidence_id": "m4_pack_0040_ev_001",
+    "rule_object": "setback",
+    "constraint_type": "minimum",
+    "constraint_scope": "setback",
+    "applies_to": "principal front façade",
+    "operator": ">=",
+    "value": "0.6",
+    "unit": "m",
+    "condition": "Contextual Semi-detached Dwelling",
+    "exception": "",
+    "source_stream": "native_rag_llm",
+    "extraction_method": "native_rag_llm_v3",
+    "extraction_final_action": "REVIEW",
+    "extraction_review_reasons": [
+      "outside_target_section_context"
+    ],
+    "native_provenance": {
+      "pack_id": "m4_pack_0040",
+      "chunk_id": "calgary_rcg_347.1 .1_007",
+      "source_quote_supported": true,
+      "v2_run_id": "calgary_rcg_google_gemini_3_1_flash_lite_f222ff438c4b",
+      "model": "google/gemini-3.1-flash-lite",
+      "v3_final": true
+    }
+  }
+]

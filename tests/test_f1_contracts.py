@@ -40,6 +40,11 @@ from burnaby_prototype.bylaw_command_center.document_intelligence import _ingest
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
+BURNABY_SOURCE_PDF = ROOT / "data" / "bylaws" / "burnaby_r1" / "source.pdf"
+# The bylaw PDF is gitignored (URL + SHA-256 are committed in provenance.json).
+needs_burnaby_pdf = pytest.mark.skipif(
+    not BURNABY_SOURCE_PDF.exists(), reason="source PDF not fetched (run make fetch-sources)"
+)
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
@@ -57,6 +62,7 @@ def test_f1_artifact_manifest_matches_schema() -> None:
     assert "f1_summary.json" in manifest["artifact_names"]
 
 
+@needs_burnaby_pdf
 def test_f1_source_registry_matches_schema_for_burnaby() -> None:
     registry = build_source_registry(city_key="burnaby_r1", run_id="checkpoint_1_source_registry", root=ROOT)
     schema = json.loads((ROOT / "schemas" / "f1_source_registry.schema.json").read_text(encoding="utf-8"))
@@ -131,6 +137,7 @@ def test_f1_document_intelligence_from_intermediate_emits_blocks_and_spans() -> 
     assert all(span["schema_version"] == ARTIFACT_SCHEMA_VERSION for span in payload["source_spans"])
 
 
+@needs_burnaby_pdf
 def test_f1_document_intelligence_fallback_parses_real_burnaby_pdf() -> None:
     registry = build_source_registry(city_key="burnaby_r1", run_id="checkpoint_2_document_intelligence", root=ROOT)
     payload = build_document_intelligence(

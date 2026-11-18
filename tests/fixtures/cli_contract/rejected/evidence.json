@@ -1,0 +1,34 @@
+[
+  {
+    "evidence_id": "m4_pack_0006_ev_002",
+    "page": 396,
+    "section": "352(3.2)",
+    "evidence_type": "clause",
+    "evidence_text": "not exceed 40.0 per cent of the length of the façade on each storey for the total combined length of all projections",
+    "source_context": " (3.2) (a) Where portions of a Backyard Suite meet the requirements of subsection (b) these portions may project: (i) into a setback area from a property line shared with a street or a lane to a minimum building setback of 0.6 metres from the shared property line; and (ii) 0.6 metres into the minimum separation area required in subsection (3) or the amenity space required in subsection (3.1); (b) Projections described in subsection (a) must: (i) not exceed 40.0 per cent of the length of the façade on each storey for the total combined length of all projections; (ii) each contain a window; and (iii) each have a maximum length of 3.1 metres 10P2019 (4) Unless otherwise referenced in subsection (4.1), the maximum building height for a Backyard Suite is 7.5 metres. 10P2019 (4.1) The maximum building height for a Backyard Suite is: (a) 5.0 metres measured from grade at a side property line shared with a parcel designated with a low density residential district; (b) 3.0 metres measured from grade at a rear ",
+    "source_stream": "native_rag_llm",
+    "native_provenance": {
+      "pack_id": "m4_pack_0006",
+      "chunk_id": "calgary_rcg_352.3.2_026",
+      "retrieval_queries": [
+        "target section 352(3.2)"
+      ],
+      "retrieval_score": 23.0,
+      "rerank_score": null,
+      "v2_run_id": "calgary_rcg_google_gemini_3_1_flash_lite_f222ff438c4b",
+      "model": "google/gemini-3.1-flash-lite",
+      "v3_final": true
+    },
+    "source_repair": {
+      "status": "reanchored",
+      "page": 396,
+      "actions": [
+        "reanchored_to_source_page"
+      ],
+      "forced_review": false
+    },
+    "reanchored_to_source": true,
+    "evidence_quality_score": 1.0,
+    "evidence_quality_issues": []
+  }
+]

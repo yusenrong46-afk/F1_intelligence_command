@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import http.cookiejar
 import io
 import json
 import sys
@@ -48,7 +49,7 @@ def fetch_bylaw(
     provenance_path = base / "provenance.json"
 
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request) as response:
+    with cookie_opener()(request) as response:
         payload = response.read()
 
     page_range = _parse_page_range(pages)
@@ -77,6 +78,54 @@ def fetch_bylaw(
     _ensure_gitignore((root or ROOT) / "data" / "bylaws")
     print(f"Fetched {len(payload)} bytes -> {pdf_path} (sha256 {sha256[:12]}…)")
     return {"status": "fetched", "pdf_path": str(pdf_path), "sha256": sha256, **provenance}
+
+
+class ProvenanceMismatch(RuntimeError):
+    """Downloaded bytes do not match the SHA-256 committed in provenance.json."""
+
+
+def cookie_opener():
+    """Return an ``open`` callable that keeps cookies across redirects.
+
+    Some municipal sites (calgary.ca) answer the first request with a 302 that
+    sets a session cookie and redirects to the same URL. Plain ``urlopen``
+    drops the cookie and reports an infinite redirect loop.
+    """
+    jar = http.cookiejar.CookieJar()
+    return urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar)).open
+
+
+def fetch_verified_source(city: str, *, root: Path | None = None, opener=None) -> dict[str, Any]:
+    """Fetch the PDF named in committed provenance and check its SHA-256.
+
+    This is the read-only counterpart of :func:`fetch_bylaw` used by
+    ``make fetch-sources``. It NEVER writes ``provenance.json``: the committed
+    URL and hash are the source of truth. ``source.pdf`` is written only when
+    the downloaded bytes hash to the committed value; on a mismatch nothing is
+    written and :class:`ProvenanceMismatch` is raised.
+    """
+    base = (root or ROOT) / "data" / "bylaws" / _slug(city)
+    provenance_path = base / "provenance.json"
+    if not provenance_path.exists():
+        raise FileNotFoundError(f"no committed provenance for {city}: {provenance_path}")
+    provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
+    url, expected = provenance["url"], str(provenance["sha256"]).lower()
+    pdf_path = base / "source.pdf"
+    if pdf_path.exists() and _file_sha256(pdf_path) == expected:
+        return {"status": "unchanged", "city": city, "sha256": expected, "pdf_path": str(pdf_path)}
+
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with (opener or cookie_opener())(request) as response:
+        payload = response.read()
+    actual = hashlib.sha256(payload).hexdigest()
+    if actual != expected:
+        raise ProvenanceMismatch(
+            f"{city}: downloaded {len(payload)} bytes from {url} with sha256 {actual}, "
+            f"but provenance.json records {expected}. Nothing was written."
+        )
+    pdf_path.write_bytes(payload)
+    _ensure_gitignore((root or ROOT) / "data" / "bylaws")
+    return {"status": "fetched", "city": city, "sha256": actual, "pdf_path": str(pdf_path)}
 
 
 def _parse_page_range(pages: str | None) -> tuple[int, int] | None:
@@ -144,7 +193,15 @@ def _slug(value: str) -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--city", required=True, help="City slug, e.g. calgary (folders key off this).")
-    parser.add_argument("--url", required=True, help="Bylaw PDF URL (http(s):// or file://).")
+    parser.add_argument("--url", default=None, help="Bylaw PDF URL (http(s):// or file://).")
+    parser.add_argument(
+        "--verify-provenance",
+        action="store_true",
+        help=(
+            "Fetch the URL recorded in the committed provenance.json and require its "
+            "SHA-256 to match. Never rewrites provenance. Exit 1 on mismatch or failure."
+        ),
+    )
     parser.add_argument(
         "--pages",
         default=None,
@@ -153,11 +210,25 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def main() -> None:
+def main() -> int:
     args = parse_args()
+    if args.verify_provenance:
+        try:
+            result = fetch_verified_source(args.city)
+        except ProvenanceMismatch as exc:
+            print(f"MISMATCH {exc}", file=sys.stderr)
+            return 1
+        except (OSError, ValueError) as exc:  # URLError/HTTPError are OSError
+            print(f"UNAVAILABLE {args.city}: {type(exc).__name__}: {exc}", file=sys.stderr)
+            return 1
+        print(f"OK {args.city} {result['status']} sha256 {result['sha256'][:12]}… matches provenance.json")
+        return 0
+    if not args.url:
+        raise SystemExit("--url is required unless --verify-provenance is given")
     result = fetch_bylaw(args.city, args.url, pages=args.pages)
     if result["status"] == "fetched":
         print(f"Provenance: {Path(result['pdf_path']).parent / 'provenance.json'}")
+    return 0
 
 
 if __name__ == "__main__":

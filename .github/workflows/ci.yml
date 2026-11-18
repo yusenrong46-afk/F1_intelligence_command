@@ -1,0 +1,168 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main, "upgrade/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Fails whenever a city's published PDF no longer matches the SHA-256 in
+  # data/bylaws/<city>/provenance.json. Kept as its own check so upstream
+  # source drift stays visible without hiding the code gates below.
+  sources:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Setup
+        run: make setup
+      - name: Fetch official bylaw PDFs (SHA-256 checked against provenance.json)
+        run: make fetch-sources
+
+  gates:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # secret scan compares new large files against origin/main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Setup
+        run: make setup
+      - name: Fetch official bylaw PDFs where they still match provenance
+        # A drifted or unreachable source fails the `sources` job above; here
+        # any PDF that does match is used and PDF tests skip for the rest.
+        continue-on-error: true
+        run: make fetch-sources
+      - name: Gate L1 (tests, README, secret scan, benchmark)
+        run: make gate-l1
+      - name: L3 checks (eval reproducible, guarded numbers, README generated)
+        run: make l3-checks
+      - name: L5 checks (walkthrough pointers, exercises fail on stubs, case study citations)
+        run: make l5-checks
+
+  demo:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Setup
+        run: make setup
+      - name: Browser dependencies
+        run: |
+          .venv/bin/python -m pip install -r requirements-demo.txt
+          .venv/bin/python -m playwright install --with-deps chromium
+      - name: Demo health and browser journey (no API key)
+        run: make demo-health demo-check
+      - name: Upload screenshots and video
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: demo-media
+          path: docs/demo/
+          if-no-files-found: warn
+
+  docker:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image and smoke test (bylaw-verify --help, golden fixture, demo health)
+        run: make docker-smoke
+
+  # Runs the onboarding kit for the two exploratory cities and uploads what it
+  # wrote. Not on pull_request: it downloads full bylaw PDFs from city sites.
+  onboarding:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Setup
+        run: make setup onboard-deps
+      - name: Onboard surrey_r3 (committed config and provenance)
+        id: surrey
+        continue-on-error: true
+        run: make onboard CITY=surrey_r3
+      - name: Locate the Residential Detached zone (Chapter 10.20) in Toronto By-law 569-2013
+        id: locate
+        continue-on-error: true
+        run: |
+          .venv/bin/python scripts/locate_pages.py --url "$TORONTO_URL" --pattern '^\s*10\.20\.\d+' | tee toronto_locate.json
+          echo "pages=$(python3 -c "import json;print(json.load(open('toronto_locate.json'))['suggested'] or '')")" >> "$GITHUB_OUTPUT"
+        env:
+          TORONTO_URL: https://www.toronto.ca/legdocs/bylaws/2013/law0569-schedule-a-vol1-ch1-800.pdf
+      - name: Onboard toronto_rd
+        id: toronto
+        if: steps.locate.outputs.pages != ''
+        continue-on-error: true
+        run: >-
+          make onboard CITY=toronto_rd URL="$TORONTO_URL" PAGES="${{ steps.locate.outputs.pages }}"
+          TITLE=Toronto ZONE="RD Residential Detached Zone"
+          BYLAW="City of Toronto Zoning By-law 569-2013, Chapter 10.20 Residential Detached Zone"
+        env:
+          TORONTO_URL: https://www.toronto.ca/legdocs/bylaws/2013/law0569-schedule-a-vol1-ch1-800.pdf
+      - name: Upload onboarding outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: onboarding
+          path: |
+            toronto_locate.json
+            configs/surrey_r3.json
+            configs/toronto_rd.json
+            data/bylaws/*/provenance.json
+            outputs/onboarding/*/ONBOARDING_REPORT.md
+            outputs/onboarding/*/onboarding_summary.json
+            outputs/onboarding/*/source_pages.txt
+            outputs/onboarding/*/dry_run.log
+            benchmark/gold/*.DRAFT.json
+          if-no-files-found: warn
+      - name: Print onboarding outputs (readable in the job log without downloading the artifact)
+        if: always()
+        run: |
+          for f in toronto_locate.json configs/toronto_rd.json data/bylaws/toronto_rd/provenance.json \
+                   outputs/onboarding/toronto_rd/onboarding_summary.json outputs/onboarding/toronto_rd/ONBOARDING_REPORT.md \
+                   outputs/onboarding/surrey_r3/onboarding_summary.json outputs/onboarding/surrey_r3/ONBOARDING_REPORT.md \
+                   outputs/onboarding/toronto_rd/source_pages.txt; do
+            [ -f "$f" ] || { echo "===== MISSING $f"; continue; }
+            echo "===== BEGIN $f sha256=$(sha256sum "$f" | cut -c1-64)"
+            sed 's/^/|/' "$f"
+            echo "===== END $f"
+          done
+      - name: Toronto draft gold quotes occur on their cited pages
+        id: quotes
+        if: steps.toronto.outcome == 'success'
+        continue-on-error: true
+        run: >-
+          .venv/bin/python scripts/check_draft_gold_quotes.py --min-rules 30
+          --gold benchmark/gold/toronto_rd_gold_rules.DRAFT.json
+          --pages outputs/onboarding/toronto_rd/source_pages.txt
+      - name: Fail if an onboarding did not pass
+        if: steps.surrey.outcome != 'success' || steps.locate.outcome != 'success' || steps.toronto.outcome != 'success' || steps.quotes.outcome == 'failure'
+        run: |
+          echo "surrey=${{ steps.surrey.outcome }} locate=${{ steps.locate.outcome }} toronto=${{ steps.toronto.outcome }} quotes=${{ steps.quotes.outcome }}"
+          exit 1

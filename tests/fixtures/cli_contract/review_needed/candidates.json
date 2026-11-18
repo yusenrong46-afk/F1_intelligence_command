@@ -1,0 +1,29 @@
+[
+  {
+    "candidate_id": "calgary_rcg_native_m4_pack_0001_001",
+    "evidence_id": "m4_pack_0001_ev_001",
+    "rule_object": "height",
+    "constraint_type": "maximum",
+    "constraint_scope": "height",
+    "applies_to": "Backyard Suite",
+    "operator": "<=",
+    "value": "5.0",
+    "unit": "m",
+    "condition": "measured from grade at a side property line shared with a parcel designated with a low density residential district",
+    "exception": "",
+    "source_stream": "native_rag_llm",
+    "extraction_method": "native_rag_llm_v3",
+    "extraction_final_action": "REVIEW",
+    "extraction_review_reasons": [
+      "outside_target_zone_context"
+    ],
+    "native_provenance": {
+      "pack_id": "m4_pack_0001",
+      "chunk_id": "calgary_rcg_352.4.1_028",
+      "source_quote_supported": true,
+      "v2_run_id": "calgary_rcg_google_gemini_3_1_flash_lite_f222ff438c4b",
+      "model": "google/gemini-3.1-flash-lite",
+      "v3_final": true
+    }
+  }
+]

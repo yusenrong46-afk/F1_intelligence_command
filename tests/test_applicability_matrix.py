@@ -188,7 +188,7 @@ class AnchorEvidenceTests(unittest.TestCase):
         self.assertNotIn("matrix_anchor", evidence[0])
 
 
-@unittest.skipUnless(SOURCE_PDF.exists(), "cached Burnaby source.pdf not present")
+@unittest.skipUnless(SOURCE_PDF.exists(), "source PDF not fetched (run make fetch-sources)")
 class RealPdfGeometryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:

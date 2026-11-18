@@ -1,0 +1,2 @@
+# Browser automation for `make demo-check` only (not needed to run the demo).
+playwright==1.48.0
