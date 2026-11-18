@@ -1,0 +1,8 @@
+{
+  "city": "surrey_r3",
+  "status": "exploratory",
+  "label_source": "agent_draft_unreviewed",
+  "note": "Draft gold rules. Not a benchmark until a person reviews every rule against the source PDF. Each rule needs source_page and an exact quoted span.",
+  "source": "data/bylaws/surrey_r3/provenance.json",
+  "rules": []
+}

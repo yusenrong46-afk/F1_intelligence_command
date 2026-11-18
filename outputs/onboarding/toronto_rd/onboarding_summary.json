@@ -1,0 +1,66 @@
+{
+  "city": "toronto_rd",
+  "steps": [
+    {
+      "step": "config",
+      "status": "PASS",
+      "seconds": 0.0,
+      "detail": "created configs/toronto_rd.json from the template"
+    },
+    {
+      "step": "source",
+      "status": "PASS",
+      "seconds": 0.27,
+      "detail": "fetched 1218396 bytes, sha256 f19ca4cedf780abe91d192f90f934af5cc4c7e3851e2c954fdcf1651b99b11c7, 328 pages; recorded new provenance"
+    },
+    {
+      "step": "validate_config",
+      "status": "PASS",
+      "seconds": 0.03,
+      "detail": "exit 0: all configs structurally valid (trust model: configs are reviewed artifacts)"
+    },
+    {
+      "step": "locate",
+      "status": "NOT RUN",
+      "seconds": null,
+      "detail": "no LOCATE given"
+    },
+    {
+      "step": "page_text",
+      "status": "PASS",
+      "seconds": 2.95,
+      "detail": "pages 61-66 written to source_pages.txt (gitignored)"
+    },
+    {
+      "step": "dry_run",
+      "status": "PASS",
+      "seconds": 41.42,
+      "detail": "exit 0; no API key in env; log dry_run.log; [m7] built 70 evidence packs | [m7] model=dry_run output=/home/runner/work/F1_intelligence_command/F1_intelligence_command/outputs/onboarding/toronto_rd/bakeoff_dry_run/toronto_rd/dry_run | [m7] wrote /home/runner/work/F1_intelligence_command/F1_intelligence_command/outputs/onboarding/toronto_rd/bakeoff_dry_run/toronto_rd/bakeoff_summary.json"
+    },
+    {
+      "step": "gold_draft",
+      "status": "PASS",
+      "seconds": 0.0,
+      "detail": "created an empty draft for review"
+    }
+  ],
+  "dry_run_summary": {
+    "pipeline": "native_rag_llm_extraction_m7",
+    "city": "toronto_rd",
+    "model": null,
+    "dry_run": true,
+    "discovery_mode": "exhaustive",
+    "retrieval_pack_count": 70,
+    "seed_pack_count": 70,
+    "repair_pack_count": 0,
+    "evidence_unit_count": 0,
+    "candidate_rule_count": 0,
+    "pass1_candidate_rule_count": 0,
+    "repair_candidate_rule_count": 0,
+    "matrix_candidate_count": 0,
+    "cache_hit_count": 0,
+    "extraction_error_count": 0,
+    "safety_contract": "EXHAUSTIVE extraction proposes candidates only. Deterministic verification decides."
+  },
+  "dry_run_cost": 0.0
+}

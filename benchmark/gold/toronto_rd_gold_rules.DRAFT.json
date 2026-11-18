@@ -1,0 +1,766 @@
+{
+  "city": "toronto_rd",
+  "status": "exploratory",
+  "label_source": "agent_draft_unreviewed",
+  "note": "Draft gold rules for City of Toronto Zoning By-law 569-2013, Chapter 10.20 Residential Detached Zone (RD), drafted by an agent from the text of PDF pages 61 to 66 (by-law page numbers 47 to 52). Not a benchmark until a person reviews every rule against the source PDF. source_page is the PDF page number. Each quote occurs on its cited page (scripts/check_draft_gold_quotes.py). Rules whose value comes from an overlay map (HT, ST, a, f, d, lot coverage) are not listed because the value is not in the text. required_rule_terms is left for the reviewer.",
+  "source": "data/bylaws/toronto_rd/provenance.json",
+  "rules": [
+    {
+      "gold_id": "tor_dist_001",
+      "rule_object": "distance_to_major_street_intersection",
+      "constraint_type": "max",
+      "constraint_scope": "lot",
+      "applies_to": "ambulance depot, fire hall or police station",
+      "value": "250",
+      "unit": "m",
+      "operator": "<=",
+      "condition": "lot fronts on a street which intersects a major street on the Policy Areas Overlay Map",
+      "source_page": 62,
+      "quote": "is no more than 250 metres from that intersection",
+      "required_evidence_terms": [
+        "intersection",
+        "250"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_lotarea_001",
+      "rule_object": "lot_area",
+      "constraint_type": "max",
+      "constraint_scope": "lot",
+      "applies_to": "community centre or library",
+      "value": "1500",
+      "unit": "m2",
+      "operator": "<=",
+      "condition": null,
+      "source_page": 62,
+      "quote": "be on a lot with a lot area of 1500 square metres or less",
+      "required_evidence_terms": [
+        "lot area",
+        "1500"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_dist_002",
+      "rule_object": "distance_to_major_street_intersection",
+      "constraint_type": "max",
+      "constraint_scope": "lot",
+      "applies_to": "community centre or library",
+      "value": "80.0",
+      "unit": "m",
+      "operator": "<=",
+      "condition": "lot line abuts a street which intersects a major street on the Policy Areas Overlay Map",
+      "source_page": 62,
+      "quote": "within 80.0 metres of that intersection",
+      "required_evidence_terms": [
+        "intersection",
+        "80.0"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_lotarea_002",
+      "rule_object": "lot_area",
+      "constraint_type": "min",
+      "constraint_scope": "lot",
+      "applies_to": "place of worship",
+      "value": "2000",
+      "unit": "m2",
+      "operator": ">=",
+      "condition": null,
+      "source_page": 62,
+      "quote": "a lot area of at least 2,000 square metres",
+      "required_evidence_terms": [
+        "lot area",
+        "2,000"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_frontage_001",
+      "rule_object": "lot_frontage",
+      "constraint_type": "min",
+      "constraint_scope": "lot",
+      "applies_to": "place of worship",
+      "value": "30",
+      "unit": "m",
+      "operator": ">=",
+      "condition": null,
+      "source_page": 62,
+      "quote": "a lot frontage of at least 30 metres",
+      "required_evidence_terms": [
+        "lot frontage",
+        "30"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_gfa_001",
+      "rule_object": "floor_area",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "place of worship",
+      "value": "2000",
+      "unit": "m2",
+      "operator": "<=",
+      "condition": "does not apply to a lawfully existing place of worship",
+      "source_page": 62,
+      "quote": "be in a building with no more than 2,000 square metres of gross floor area",
+      "required_evidence_terms": [
+        "gross floor area",
+        "2,000"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_frontage_002",
+      "rule_object": "lot_frontage",
+      "constraint_type": "min",
+      "constraint_scope": "lot",
+      "applies_to": "lot in the RD zone",
+      "value": "12.0",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "zone label has no \"f\" value on the Zoning By-law Map",
+      "source_page": 63,
+      "quote": "the required minimum lot frontage is 12.0 metres",
+      "required_evidence_terms": [
+        "lot frontage",
+        "12.0"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_bldgcount_001",
+      "rule_object": "residential_buildings_per_lot",
+      "constraint_type": "max",
+      "constraint_scope": "lot",
+      "applies_to": "lot in the RD zone",
+      "value": "1",
+      "unit": "buildings",
+      "operator": "<=",
+      "condition": null,
+      "source_page": 64,
+      "quote": "A maximum of one residential building is permitted on a lot in the RD zone.",
+      "required_evidence_terms": [
+        "one residential building"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_height_001",
+      "rule_object": "height",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "building or structure in the RD zone",
+      "value": "10.0",
+      "unit": "m",
+      "operator": "<=",
+      "condition": "lot has no numerical value following \"HT\" on the Height Overlay Map",
+      "source_page": 64,
+      "quote": "following the letters \"HT\" on the Height Overlay Map, 10.0 metres",
+      "required_evidence_terms": [
+        "HT",
+        "10.0"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_height_002",
+      "rule_object": "main_wall_height",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "exterior portion of main walls of a detached house",
+      "value": "7.0",
+      "unit": "m",
+      "operator": "<=",
+      "condition": "the higher of 7.0 m above established grade or 2.5 m less than the permitted maximum height; applies to the walls listed in 10.20.40.10(2)(A) or (B)",
+      "source_page": 64,
+      "quote": "the higher of 7.0 metres above established grade",
+      "required_evidence_terms": [
+        "main walls",
+        "7.0"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_wallshare_001",
+      "rule_object": "main_wall_width_share",
+      "constraint_type": "min",
+      "constraint_scope": "building",
+      "applies_to": "front and rear main walls of a detached house",
+      "value": "60",
+      "unit": "%",
+      "operator": ">=",
+      "condition": "share of total width subject to the main wall height limit in 10.20.40.10(2)(A)",
+      "source_page": 64,
+      "quote": "(A) for no less than 60% of the total width of: (i) all front main walls; and (ii) all rear main walls",
+      "required_evidence_terms": [
+        "60%",
+        "front main walls"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_wallshare_002",
+      "rule_object": "main_wall_width_share",
+      "constraint_type": "min",
+      "constraint_scope": "building",
+      "applies_to": "side main walls of a detached house facing a side lot line that abuts a street",
+      "value": "60",
+      "unit": "%",
+      "operator": ">=",
+      "condition": "alternative (B) in 10.20.40.10(2)",
+      "source_page": 64,
+      "quote": "for no less than 60% of the total width of the side main walls facing a side lot line that abuts a street",
+      "required_evidence_terms": [
+        "60%",
+        "side main walls"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_wallshare_003",
+      "rule_object": "main_wall_width_share",
+      "constraint_type": "min",
+      "constraint_scope": "building",
+      "applies_to": "side main walls of a detached house not facing a side lot line that abuts a street",
+      "value": "100",
+      "unit": "%",
+      "operator": ">=",
+      "condition": "alternative (B) in 10.20.40.10(2)",
+      "source_page": 64,
+      "quote": "for no less than 100% of the total width of the side main walls that do not face a side lot line that abuts a street",
+      "required_evidence_terms": [
+        "100%",
+        "side main walls"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_height_003",
+      "rule_object": "height",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "detached house with a flat or shallow roof",
+      "value": "7.2",
+      "unit": "m",
+      "operator": "<=",
+      "condition": "roof slope less than 1.0 vertical per 4.0 horizontal for more than 50% of the total horizontal roof area",
+      "source_page": 64,
+      "quote": "the permitted maximum height of the building is 7.2 metres",
+      "required_evidence_terms": [
+        "7.2",
+        "height"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_storeys_001",
+      "rule_object": "storeys",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "detached house with a flat or shallow roof",
+      "value": "2",
+      "unit": "storeys",
+      "operator": "<=",
+      "condition": "roof slope less than 1.0 vertical per 4.0 horizontal for more than 50% of the total horizontal roof area",
+      "source_page": 64,
+      "quote": "the building may have no more than two storeys",
+      "required_evidence_terms": [
+        "two storeys"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_parapet_001",
+      "rule_object": "parapet_height_exceedance",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "parapet on a detached house with a flat or shallow roof",
+      "value": "0.3",
+      "unit": "m",
+      "operator": "<=",
+      "condition": "above the maximum height in 10.20.40.10(4)",
+      "source_page": 64,
+      "quote": "by a maximum of 0.3 metres",
+      "required_evidence_terms": [
+        "parapet",
+        "0.3"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_height_004",
+      "rule_object": "first_floor_height",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "first floor of a building in the RD zone",
+      "value": "1.2",
+      "unit": "m",
+      "operator": "<=",
+      "condition": null,
+      "source_page": 64,
+      "quote": "the permitted maximum height of the first floor above established grade is 1.2 metres",
+      "required_evidence_terms": [
+        "first floor",
+        "1.2"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_dormer_001",
+      "rule_object": "dormer_width_share",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "dormers on a detached house with two or more storeys",
+      "value": "40",
+      "unit": "%",
+      "operator": "<=",
+      "condition": "dormer exterior sides are not main walls only within this share of the main wall width on the same side",
+      "source_page": 65,
+      "quote": "does not occupy more than 40% of the total width of the building's main walls",
+      "required_evidence_terms": [
+        "dormers",
+        "40%"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_attic_001",
+      "rule_object": "floor_area",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "attic floor area used for mechanical equipment",
+      "value": "20",
+      "unit": "m2",
+      "operator": "<=",
+      "condition": "floor area meets 10.5.40.40(1); such space is then not a storey",
+      "source_page": 65,
+      "quote": "the floor area does not exceed 20 square metres",
+      "required_evidence_terms": [
+        "mechanical equipment",
+        "20"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_length_001",
+      "rule_object": "building_length",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "detached house",
+      "value": "17.0",
+      "unit": "m",
+      "operator": "<=",
+      "condition": "required minimum lot frontage of 18.0 m or less",
+      "source_page": 65,
+      "quote": "the permitted maximum building length for a detached house is 17.0 metres",
+      "required_evidence_terms": [
+        "building length",
+        "17.0"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_length_002",
+      "rule_object": "building_length_extension",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "one-storey extension of a detached house",
+      "value": "2.0",
+      "unit": "m",
+      "operator": "<=",
+      "condition": "required minimum lot frontage of more than 12.0 m to 18.0 m; extension meets 10.20.40.20(2)(A) to (C)",
+      "source_page": 65,
+      "quote": "may extend beyond the permitted maximum building length by a maximum of 2.0 metres",
+      "required_evidence_terms": [
+        "extend",
+        "2.0"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_height_005",
+      "rule_object": "height",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "one-storey extension of a detached house",
+      "value": "5.0",
+      "unit": "m",
+      "operator": "<=",
+      "condition": "extension beyond the maximum building length under 10.20.40.20(2)",
+      "source_page": 65,
+      "quote": "has a maximum height of 5.0 metres and one storey",
+      "required_evidence_terms": [
+        "extended part",
+        "5.0"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_extwidth_001",
+      "rule_object": "extension_width_share",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "one-storey extension of a detached house",
+      "value": "50",
+      "unit": "%",
+      "operator": "<=",
+      "condition": "share of the building width at its widest point",
+      "source_page": 65,
+      "quote": "is no wider than 50% of the width of the building at its widest point",
+      "required_evidence_terms": [
+        "50%",
+        "widest point"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_001",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "side_yard",
+      "applies_to": "one-storey extension of a detached house",
+      "value": "3.0",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "from each side lot line",
+      "source_page": 65,
+      "quote": "is at least 3.0 metres from each side lot line",
+      "required_evidence_terms": [
+        "side lot line",
+        "3.0"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_depth_001",
+      "rule_object": "building_depth",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "rear main wall of a detached house",
+      "value": "19.0",
+      "unit": "m",
+      "operator": "<=",
+      "condition": "required minimum lot frontage of 18.0 m or less; measured from the required front yard setback, excluding a complying one-storey extension",
+      "source_page": 65,
+      "quote": "may be no more than 19.0 metres from the required front yard setback",
+      "required_evidence_terms": [
+        "rear main wall",
+        "19.0"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_platform_001",
+      "rule_object": "platform_count",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "platforms at or above the second storey of a detached house",
+      "value": "4",
+      "unit": "platforms",
+      "operator": "<=",
+      "condition": "no more than one on each of the front, rear and each side",
+      "source_page": 65,
+      "quote": "there may be no more than a total of four platforms",
+      "required_evidence_terms": [
+        "four platforms"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_platform_002",
+      "rule_object": "platform_area",
+      "constraint_type": "max",
+      "constraint_scope": "building",
+      "applies_to": "each platform at or above the second storey of a detached house",
+      "value": "4.0",
+      "unit": "m2",
+      "operator": "<=",
+      "condition": null,
+      "source_page": 66,
+      "quote": "the maximum area of each platform is 4.0 square metres",
+      "required_evidence_terms": [
+        "platform",
+        "4.0"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_002",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "front_yard",
+      "applies_to": "building in the RD zone",
+      "value": "6.0",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "regulation 10.5.40.70(1) does not apply",
+      "source_page": 66,
+      "quote": "the required minimum front yard setback in the RD zone is 6.0 metres",
+      "required_evidence_terms": [
+        "front yard",
+        "6.0"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_003",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "rear_yard",
+      "applies_to": "building in the RD zone",
+      "value": "7.5",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "the greater of 7.5 m or 25% of the lot depth",
+      "source_page": 66,
+      "quote": "The required minimum rear yard setback in the RD zone is the greater of: (A) 7.5 metres",
+      "required_evidence_terms": [
+        "rear yard",
+        "7.5"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_004",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "rear_yard",
+      "applies_to": "building in the RD zone",
+      "value": "25",
+      "unit": "% of lot depth",
+      "operator": ">=",
+      "condition": "the greater of 7.5 m or 25% of the lot depth",
+      "source_page": 66,
+      "quote": "(B) 25% of the lot depth",
+      "required_evidence_terms": [
+        "25%",
+        "lot depth"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_005",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "side_yard",
+      "applies_to": "building in the RD zone",
+      "value": "0.6",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "required minimum lot frontage less than 6.0 m",
+      "source_page": 66,
+      "quote": "(A) 0.6 metres if the required minimum lot frontage is less than 6.0 metres",
+      "required_evidence_terms": [
+        "side yard",
+        "0.6"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_006",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "side_yard",
+      "applies_to": "building in the RD zone",
+      "value": "0.9",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "required minimum lot frontage 6.0 m to less than 12.0 m",
+      "source_page": 66,
+      "quote": "(B) 0.9 metres if the required minimum lot frontage is 6.0 metres to less than 12.0 metres",
+      "required_evidence_terms": [
+        "side yard",
+        "0.9"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_007",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "side_yard",
+      "applies_to": "building in the RD zone",
+      "value": "1.2",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "required minimum lot frontage 12.0 m to less than 15.0 m",
+      "source_page": 66,
+      "quote": "(C) 1.2 metres if the required minimum lot frontage is 12.0 metres to less than 15.0 metres",
+      "required_evidence_terms": [
+        "side yard",
+        "1.2"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_008",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "side_yard",
+      "applies_to": "building in the RD zone",
+      "value": "1.5",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "required minimum lot frontage 15.0 m to less than 18.0 m",
+      "source_page": 66,
+      "quote": "(D) 1.5 metres if the required minimum lot frontage is 15.0 metres to less than 18.0 metres",
+      "required_evidence_terms": [
+        "side yard",
+        "1.5"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_009",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "side_yard",
+      "applies_to": "building in the RD zone",
+      "value": "1.8",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "required minimum lot frontage 18.0 m to less than 24.0 m",
+      "source_page": 66,
+      "quote": "(E) 1.8 metres if the required minimum lot frontage is 18.0 metres to less than 24.0 metres",
+      "required_evidence_terms": [
+        "side yard",
+        "1.8"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_010",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "side_yard",
+      "applies_to": "building in the RD zone",
+      "value": "2.4",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "required minimum lot frontage 24.0 m to less than 30.0 m",
+      "source_page": 66,
+      "quote": "(F) 2.4 metres if the required minimum lot frontage is 24.0 metres to less than 30.0 metres",
+      "required_evidence_terms": [
+        "side yard",
+        "2.4"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_011",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "side_yard",
+      "applies_to": "building in the RD zone",
+      "value": "3.0",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "required minimum lot frontage 30.0 m or greater",
+      "source_page": 66,
+      "quote": "(G) 3.0 metres if the required minimum lot frontage is 30.0 metres or greater",
+      "required_evidence_terms": [
+        "side yard",
+        "3.0"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_012",
+      "rule_object": "side_yard_shift",
+      "constraint_type": "max",
+      "constraint_scope": "side_yard",
+      "applies_to": "detached house",
+      "value": "0.3",
+      "unit": "m",
+      "operator": "<=",
+      "condition": "required minimum lot frontage 12.0 m to less than 18.0 m, and the other side yard is increased by the same amount",
+      "source_page": 66,
+      "quote": "reduced by a maximum of 0.3 metres",
+      "required_evidence_terms": [
+        "side yard",
+        "0.3"
+      ],
+      "gis_relevance": "indirect",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_013",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "side_yard",
+      "applies_to": "portion of a building beyond the specified depth",
+      "value": "7.5",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "required minimum lot frontage greater than 18.0 m; portion farther from the front lot line than the lesser of 17.0 m from the front main wall or 19.0 m from the required front yard setback",
+      "source_page": 66,
+      "quote": "the required minimum side yard setback is 7.5 metres for any portion of a building",
+      "required_evidence_terms": [
+        "side yard",
+        "7.5"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    },
+    {
+      "gold_id": "tor_setback_014",
+      "rule_object": "setback",
+      "constraint_type": "min",
+      "constraint_scope": "street_side_yard",
+      "applies_to": "corner lot in the RD zone",
+      "value": "3.0",
+      "unit": "m",
+      "operator": ">=",
+      "condition": "required minimum lot frontage 12.0 m or more, and an adjacent lot fronts on the street abutting the side lot line",
+      "source_page": 66,
+      "quote": "setback from a side lot line abutting a street is 3.0 metres",
+      "required_evidence_terms": [
+        "abutting a street",
+        "3.0"
+      ],
+      "gis_relevance": "direct",
+      "label_source": "agent_draft_unreviewed"
+    }
+  ]
+}
