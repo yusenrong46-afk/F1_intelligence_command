@@ -1,0 +1,36 @@
+# One-off measurement for the owner's PDF decision (not part of the PR):
+# fetch today's official PDFs into the runner only (never committed), re-verify
+# the committed M7 candidates against them, and score with the committed gold.
+# No model call, no paid call.
+name: PDF drift measurement
+
+on:
+  push:
+    branches: ["measure/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  measure:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Setup
+        run: make setup
+      - name: Committed numbers, no source PDF
+        run: .venv/bin/python scripts/measure_pdf_drift.py
+      - name: Fetch today's PDFs into the runner (provenance is rewritten only inside this runner)
+        continue-on-error: true
+        run: |
+          for c in burnaby_r1 calgary_rcg vancouver_rs; do
+            url=$(python3 -c "import json;print(json.load(open('data/bylaws/$c/provenance.json'))['url'])")
+            .venv/bin/python -c "import sys;sys.path.insert(0,'scripts');import fetch_bylaw as f;r=f.fetch_bylaw('$c','$url');print('$c',r['bytes'],r['sha256'])" || echo "$c FETCH FAILED"
+          done
+      - name: Re-verified on today's PDFs
+        run: .venv/bin/python scripts/measure_pdf_drift.py
