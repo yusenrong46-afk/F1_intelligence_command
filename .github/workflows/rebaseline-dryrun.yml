@@ -1,0 +1,25 @@
+name: Re-baseline dry run (scratch, measure/** only)
+
+on:
+  push:
+    branches: ["measure/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  dryrun:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: make setup
+      - name: Dry run per city (downloads, writes nothing)
+        run: |
+          for city in burnaby_r1 calgary_rcg surrey_r3 vancouver_rs; do
+            .venv/bin/python scripts/rebaseline_source.py --city "$city" || echo "$city: FAILED (exit $?)"
+          done
